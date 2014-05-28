@@ -19,7 +19,6 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
-packages/Xamarin.*
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
