@@ -8,10 +8,11 @@ using Android.Widget;
 using Android.OS;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
+using Android.Content.PM;
 
 namespace HanselmanAndroid
 {
-	[Activity (Label = "Hanselman", MainLauncher = true)]
+	[Activity (Label = "Hanselman", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : AndroidActivity
 	{
 
