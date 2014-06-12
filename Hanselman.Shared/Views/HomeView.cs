@@ -68,7 +68,7 @@ namespace Hanselman.Shared
 			this.Icon = "slideout.png";
 			BindingContext = viewModel;
 
-
+      
 			var layout = new StackLayout { Spacing = 0 };
 
 			var label = new ContentView {

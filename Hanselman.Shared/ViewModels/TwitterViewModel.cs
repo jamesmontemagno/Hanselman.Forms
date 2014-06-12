@@ -45,8 +45,7 @@ namespace Hanselman.Shared
 
 				var twitterContext = new TwitterContext (auth);
 
-#if __IOS__
-        //Temp work around, will investigate
+#if !WINDOWS_PHONE
         IQueryable<LinqToTwitter.Status> queryResponse =
 					(from tweet in twitterContext.Status
 					where tweet.Type == StatusType.User &&
