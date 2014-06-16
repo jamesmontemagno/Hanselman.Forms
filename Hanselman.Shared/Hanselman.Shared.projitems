@@ -9,19 +9,19 @@
     <Import_RootNamespace>Hanselman.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\ListImageCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BlogFeedItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PodcastFeedItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Tweet.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Scott.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PodcastFeedViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TwitterViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BlogFeedViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\FeedItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HanselmanApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PodcastDetailsView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PodcastView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\HomeView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\BaseView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomeViewModel.cs" />

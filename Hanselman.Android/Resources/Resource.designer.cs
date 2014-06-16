@@ -63,19 +63,25 @@ namespace Hanselman.Android
 			public const int instagram = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int refresh = 2130837510;
+			public const int monoandroidsplash = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int scott = 2130837511;
+			public const int podcast = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int slideout = 2130837512;
+			public const int refresh = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int twitter = 2130837513;
+			public const int scott = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int twitternav = 2130837514;
+			public const int slideout = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int twitter = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int twitternav = 2130837516;
 			
 			static Drawable()
 			{
@@ -140,6 +146,9 @@ namespace Hanselman.Android
 		
 		public partial class Style
 		{
+			
+			// aapt resource value: 0x7f050003
+			public const int Mono_Android_Theme_Splash = 2131034115;
 			
 			// aapt resource value: 0x7f050000
 			public const int MyTheme = 2131034112;

@@ -24,6 +24,9 @@ namespace Hanselman.Shared
 			MenuItems.Add (new HomeMenuItem {
 				Id = 2, Title = "Twitter", MenuType = MenuType.Twitter,  Icon = "twitternav.png"
 			});
+            MenuItems.Add(new HomeMenuItem {
+                Id = 3, Title = "Podcast", MenuType = MenuType.Podcast, Icon = "podcast.png"
+            });
 		}
 
 	}

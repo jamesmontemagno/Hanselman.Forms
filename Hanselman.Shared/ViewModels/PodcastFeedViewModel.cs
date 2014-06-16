@@ -9,31 +9,31 @@ using System.Linq;
 
 namespace Hanselman.Shared
 {
-	public class BlogFeedViewModel : BaseViewModel
+	public class PodcastFeedViewModel : BaseViewModel
 	{
-		public BlogFeedViewModel ()
+        public PodcastFeedViewModel()
 		{
-			Title = "Blog";
-			Icon = "blog.png";
+			Title = "Podcast";
+			Icon = "podcast.png";
 		}
 
 
-        private ObservableCollection<BlogFeedItem> feedItems = new ObservableCollection<BlogFeedItem>();
+        private ObservableCollection<PodcastFeedItem> feedItems = new ObservableCollection<PodcastFeedItem>();
 
 		/// <summary>
 		/// gets or sets the feed items
 		/// </summary>
-        public ObservableCollection<BlogFeedItem> FeedItems
+        public ObservableCollection<PodcastFeedItem> FeedItems
 		{
 			get { return feedItems; }
 			set { feedItems = value; OnPropertyChanged("FeedItems"); }
 		}
 
-        private BlogFeedItem selectedFeedItem;
+        private PodcastFeedItem selectedFeedItem;
 		/// <summary>
 		/// Gets or sets the selected feed item
 		/// </summary>
-        public BlogFeedItem SelectedFeedItem
+        public PodcastFeedItem SelectedFeedItem
 		{
 			get{ return selectedFeedItem; }
 			set
@@ -61,7 +61,7 @@ namespace Hanselman.Shared
 
 			try{
 				var httpClient = new HttpClient();
-				var feed = "http://feeds.hanselman.com/ScottHanselman";
+                var feed = "http://pwop.com/feed.aspx?show=hanselminutes&filetype=master";
 				var responseString = await httpClient.GetStringAsync(feed);
 
 				FeedItems.Clear();
@@ -72,7 +72,7 @@ namespace Hanselman.Shared
 				}
 			} catch (Exception ex) {
 				var page = new ContentPage();
-				var result = page.DisplayAlert ("Error", "Unable to load blog.", "OK", null);
+				var result = page.DisplayAlert ("Error", "Unable to load podcast.", "OK", null);
 			}
 
 			IsBusy = false;
@@ -85,20 +85,22 @@ namespace Hanselman.Shared
 		/// </summary>
 		/// <param name="rss"></param>
 		/// <returns></returns>
-        private async Task<List<BlogFeedItem>> ParseFeed(string rss)
+        private async Task<List<PodcastFeedItem>> ParseFeed(string rss)
 		{
 			return await Task.Run(() =>
 				{
 					var xdoc = XDocument.Parse(rss);
 					var id = 0;
 					return (from item in xdoc.Descendants("item")
-                        select new BlogFeedItem
+					    let enclosureElement = item.Element("enclosure")
+					    where enclosureElement != null
+					    select new PodcastFeedItem
 						{
 							Title = (string)item.Element("title"),
 							Description = (string)item.Element("description"),
 							Link = (string)item.Element("link"),
 							PublishDate = (string)item.Element("pubDate"),
-							Category = (string)item.Element("category"),
+                            PodcastLink = (string)enclosureElement.Attribute("url"),
 							Id = id++
 						}).ToList();
 				});
@@ -109,7 +111,7 @@ namespace Hanselman.Shared
 		/// </summary>
 		/// <param name="id"></param>
 		/// <returns></returns>
-        public BlogFeedItem GetFeedItem(int id)
+        public PodcastFeedItem GetFeedItem(int id)
 		{
 			return FeedItems.FirstOrDefault(i => i.Id == id);
 		}
