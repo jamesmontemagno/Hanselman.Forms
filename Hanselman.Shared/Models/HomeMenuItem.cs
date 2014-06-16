@@ -6,7 +6,8 @@ namespace Hanselman.Shared
 	{
 		About,
 		Blog,
-		Twitter
+		Twitter,
+        Podcast
 	}
 	public class HomeMenuItem : BaseModel
 	{

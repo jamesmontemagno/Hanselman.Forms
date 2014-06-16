@@ -5,7 +5,7 @@ namespace Hanselman.Shared
 {
 	public class BlogDetailsView : BaseView
 	{
-		public BlogDetailsView (FeedItem item)
+		public BlogDetailsView (BlogFeedItem item)
 		{
 			BindingContext = item;
 			var webView = new WebView ();

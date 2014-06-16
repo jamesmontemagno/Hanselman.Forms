@@ -157,6 +157,9 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\podcast.png" />
+  </ItemGroup>
   <Import Project="..\Hanselman.Shared\Hanselman.Shared.projitems" Label="Shared" Condition="Exists('..\Hanselman.Shared\Hanselman.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

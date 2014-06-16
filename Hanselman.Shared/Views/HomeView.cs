@@ -63,6 +63,7 @@ namespace Hanselman.Shared
 		private AboutView about;
 		private BlogView blog;
 		private TwitterView twitter;
+	    private PodcastView podcast;
 		public HomeMasterView(HomeViewModel viewModel)
 		{
 			this.Icon = "slideout.png";
@@ -120,6 +121,12 @@ namespace Hanselman.Shared
 
 					PageSelection = twitter;
 					break;
+                    case MenuType.Podcast:
+				        if (podcast == null)
+				            podcast = new PodcastView();
+                    
+                    PageSelection = podcast;
+                    break;
 				}
 			};
 

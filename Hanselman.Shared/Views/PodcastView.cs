@@ -3,15 +3,15 @@ using Xamarin.Forms;
 
 namespace Hanselman.Shared
 {
-	public class BlogView : BaseView
+	public class PodcastView : BaseView
 	{
-		private BlogFeedViewModel ViewModel
+        private PodcastFeedViewModel ViewModel
 		{
-			get { return BindingContext as BlogFeedViewModel; }
+            get { return BindingContext as PodcastFeedViewModel; }
 		}
-		public BlogView ()
+        public PodcastView()
 		{
-			BindingContext = new BlogFeedViewModel ();
+            BindingContext = new PodcastFeedViewModel();
 
 			var refresh = new ToolbarItem {
 				Command = ViewModel.LoadItemsCommand,
@@ -48,7 +48,7 @@ namespace Hanselman.Shared
 			listView.ItemTapped +=  (sender, args) => {
 				if(listView.SelectedItem == null)
 					return;
-				this.Navigation.PushAsync(new BlogDetailsView(listView.SelectedItem as BlogFeedItem));
+				this.Navigation.PushAsync(new PodcastDetailsView(listView.SelectedItem as PodcastFeedItem));
 				listView.SelectedItem = null;
 			};
 
