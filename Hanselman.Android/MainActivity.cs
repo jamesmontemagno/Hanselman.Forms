@@ -12,7 +12,7 @@ using Android.Content.PM;
 
 namespace HanselmanAndroid
 {
-	[Activity (Label = "Hanselman", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity (Label = "Hanselman", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : AndroidActivity
 	{
 

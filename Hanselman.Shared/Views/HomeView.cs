@@ -20,7 +20,8 @@ namespace Hanselman.Shared
 			Master = master = new HomeMasterView (ViewModel);
 
 			var homeNav = new NavigationPage(master.PageSelection) {
-				Tint = Helpers.Color.DarkBlue.ToFormsColor()
+        BarBackgroundColor = Helpers.Color.DarkBlue.ToFormsColor(),
+        BarTextColor = Color.White
 			};
 			Detail = homeNav;
 
@@ -34,7 +35,8 @@ namespace Hanselman.Shared
 				}
 				else{
 					newPage = new NavigationPage(master.PageSelection){
-						Tint = Helpers.Color.DarkBlue.ToFormsColor()
+						BarBackgroundColor = Helpers.Color.DarkBlue.ToFormsColor(),
+            BarTextColor = Color.White
 					};
 					pages.Add (menuType, newPage);
 				}

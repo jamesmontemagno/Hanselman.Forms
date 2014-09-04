@@ -40,7 +40,7 @@ namespace Hanselman.Shared
 
 			listView.ItemsSource = ViewModel.FeedItems;
 
-			var cell = new DataTemplate(typeof(ListTextCell));
+			var cell = new DataTemplate(typeof(TextCell));
 
 			cell.SetBinding (TextCell.TextProperty, "Title");
 			cell.SetBinding (TextCell.DetailProperty, "PublishDate");

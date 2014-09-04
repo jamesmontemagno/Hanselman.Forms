@@ -40,7 +40,7 @@ namespace Hanselman.Shared
 
 			listView.ItemsSource = ViewModel.Tweets;
 
-			var cell = new DataTemplate(typeof(ListTextCell));
+			var cell = new DataTemplate(typeof(TextCell));
 			cell.SetBinding (TextCell.TextProperty, "Text");
 			cell.SetBinding (TextCell.DetailProperty, "Date");
 			listView.ItemTemplate = cell;

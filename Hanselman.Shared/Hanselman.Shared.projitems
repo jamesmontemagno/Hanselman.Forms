@@ -33,6 +33,5 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\AboutView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\BlogDetailsView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\WebsiteView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ListTextCell.cs" />
   </ItemGroup>
 </Project>
