@@ -63,7 +63,7 @@ namespace Hanselman.Shared
 						ScreenName = tweet.User.ScreenNameResponse,
 						Text = tweet.Text, 
 						CurrentUserRetweet = tweet.CurrentUserRetweet, 
-						CreatedAt = tweet.User.CreatedAt,
+						CreatedAt = tweet.CreatedAt,
             Image = (tweet.RetweetedStatus != null && tweet.RetweetedStatus.User != null ?
                            tweet.RetweetedStatus.User.ProfileImageUrl : tweet.User.ProfileImageUrl)
 					}).ToList ();
