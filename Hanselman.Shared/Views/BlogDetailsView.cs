@@ -8,11 +8,7 @@ namespace Hanselman.Shared
 		public BlogDetailsView (FeedItem item)
 		{
 			BindingContext = item;
-			var webView = new WebView ();
-			webView.Source = new HtmlWebViewSource {
-				Html = item.Description
-			};
-			Content = webView;
+		    Content = new WebView { Source = item.Link };
 		}
 	}
 }
