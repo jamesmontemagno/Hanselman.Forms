@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.Android", "Hanselman.Android\Hanselman.Android.csproj", "{6BE27B2E-552F-43B2-82D5-058D7F180CEC}"
 EndProject
@@ -179,9 +179,9 @@ Global
 		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|ARM.Deploy.0 = Debug|ARM
 		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|Mixed Platforms.ActiveCfg = Debug|ARM
-		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|Mixed Platforms.Build.0 = Debug|ARM
-		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|Mixed Platforms.Deploy.0 = Debug|ARM
+		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
 		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|x86.ActiveCfg = Debug|x86
 		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|x86.Build.0 = Debug|x86
 		{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}.Debug|x86.Deploy.0 = Debug|x86

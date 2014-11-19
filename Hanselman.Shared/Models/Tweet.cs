@@ -18,7 +18,7 @@ namespace Hanselman.Shared
 		public string Date {get { return CreatedAt.ToString("f");}}
 		public string RTCount { get { return CurrentUserRetweet == 0 ? string.Empty : CurrentUserRetweet + " RT"; } }
 
-
+    public string Image { get; set; }
 
 		public DateTime CreatedAt {
 			get;

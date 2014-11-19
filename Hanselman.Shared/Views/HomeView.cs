@@ -27,7 +27,12 @@ namespace Hanselman.Shared
 
 			pages.Add (MenuType.About, homeNav);
 
-			master.PageSelectionChanged = (menuType) => {
+			master.PageSelectionChanged = async (menuType) => {
+
+        if (Detail != null && Device.OS == TargetPlatform.WinPhone)
+        {
+          await Detail.Navigation.PopToRootAsync();
+        }
 			
 				NavigationPage newPage;
 				if(pages.ContainsKey(menuType)){

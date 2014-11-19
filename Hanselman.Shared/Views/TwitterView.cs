@@ -40,9 +40,10 @@ namespace Hanselman.Shared
 
 			listView.ItemsSource = ViewModel.Tweets;
 
-			var cell = new DataTemplate(typeof(TextCell));
-			cell.SetBinding (TextCell.TextProperty, "Text");
-			cell.SetBinding (TextCell.DetailProperty, "Date");
+			var cell = new DataTemplate(typeof(ImageCell));
+      cell.SetBinding(ImageCell.TextProperty, "Text");
+      cell.SetBinding(ImageCell.DetailProperty, "Date");
+      cell.SetBinding(ImageCell.ImageSourceProperty, "Image");
 			listView.ItemTemplate = cell;
 
 			listView.ItemTapped +=  (sender, args) => {

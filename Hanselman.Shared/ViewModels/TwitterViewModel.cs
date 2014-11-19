@@ -63,7 +63,9 @@ namespace Hanselman.Shared
 						ScreenName = tweet.User.ScreenNameResponse,
 						Text = tweet.Text, 
 						CurrentUserRetweet = tweet.CurrentUserRetweet, 
-						CreatedAt = tweet.CreatedAt
+						CreatedAt = tweet.User.CreatedAt,
+            Image = (tweet.RetweetedStatus != null && tweet.RetweetedStatus.User != null ?
+                           tweet.RetweetedStatus.User.ProfileImageUrl : tweet.User.ProfileImageUrl)
 					}).ToList ();
 #else
 
@@ -80,7 +82,10 @@ namespace Hanselman.Shared
                    ScreenName = tweet.User.ScreenNameResponse,
                    Text = tweet.Text,
                    CurrentUserRetweet = tweet.CurrentUserRetweet,
-                   CreatedAt = tweet.CreatedAt
+                   CreatedAt = tweet.CreatedAt,
+                   Image = (tweet.RetweetedStatus != null && tweet.RetweetedStatus.User != null ?
+                           tweet.RetweetedStatus.User.ProfileImageUrl : tweet.User.ProfileImageUrl)
+					
                  }).ToListAsync();
 
 #endif
