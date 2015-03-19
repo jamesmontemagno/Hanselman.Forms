@@ -26,7 +26,7 @@ Windows Store Preview
 ===
 Xamarin.Forms is now available in PREVIEW for Windows Store and Windows Phone 8.1 RT platforms. You can see a full example now for Hanselman.Forms and read the full documentation at: http://developer.xamarin.com/guides/cross-platform/xamarin-forms/windows/getting-started/
 
-![HanselStore](Screenshots/HanselStore.png)
+![HanselStore](Screenshots/HanselmanStore.png)
 
 Android Wear
 ===
