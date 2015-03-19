@@ -1,6 +1,8 @@
 Hanselman.Forms: Hanselman Everywhere
 ===============
 
+[![Join the chat at https://gitter.im/jamesmontemagno/Hanselman.Forms](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jamesmontemagno/Hanselman.Forms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## IMPORTANT
 This branch is using the new Preview release of Xamarin.Forms for Windows Store.Please see documentation here:  http://developer.xamarin.com/guides/cross-platform/xamarin-forms/windows/getting-started/
 
