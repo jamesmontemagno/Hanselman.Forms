@@ -9,11 +9,15 @@ using Android.OS;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using Android.Content.PM;
+using Hanselman.Portable;
 
 namespace HanselmanAndroid
 {
-	[Activity (Label = "Hanselman", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-	public class MainActivity : AndroidActivity
+	[Activity (Label = "Hanselman", 
+    MainLauncher = true, 
+    ScreenOrientation = ScreenOrientation.Portrait, 
+    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+  public class MainActivity : FormsApplicationActivity
 	{
 
 		protected override void OnCreate (Bundle bundle)
@@ -22,8 +26,7 @@ namespace HanselmanAndroid
 
 
 			Forms.Init(this, bundle);
-
-			SetPage (Hanselman.Shared.HanselmanApp.RootPage);
+      LoadApplication(new App());
 		}
 	}
 }

@@ -9,10 +9,11 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Hanselman.WindowsPhone.Resources;
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.WinPhone;
 
 namespace Hanselman.WindowsPhone
 {
-  public partial class MainPage : PhoneApplicationPage
+  public partial class MainPage : FormsApplicationPage
   {
     // Constructor
     public MainPage()
@@ -20,11 +21,8 @@ namespace Hanselman.WindowsPhone
       InitializeComponent();
 
       Forms.Init();
-      
-      // Set our view from the "main" layout resource
-      Content = Hanselman.Shared.HanselmanApp.RootPage.ConvertPageToUIElement(this);
-      // Sample code to localize the ApplicationBar
-      //BuildLocalizedApplicationBar();
+      global::Xamarin.Forms.Forms.Init();
+      LoadApplication(new Hanselman.Portable.App());
     }
 
     // Sample code for building a localized ApplicationBar

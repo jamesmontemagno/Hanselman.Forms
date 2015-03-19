@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hanselman.Portable.Views.PodcastPlaybackPage"
+             xmlns:controls="clr-namespace:Hanselman.Portable.Helpers;assembly=Hanselman.Portable"
+             Title ="{Binding Title}">
+  <StackLayout Padding="10" Spacing="5">
+      <Label Text="{Binding Title}" FontSize="Medium" x:Name="title" />
+      <Label Text="{Binding PublishDate}" x:Name="date"/>
+      <controls:AudioPlayer x:Name="player" 
+                            Url="{Binding Mp3Url}" 
+                            Progress="{Binding Progress, Mode=TwoWay}"
+                            HeightRequest="1" 
+                            HasShadow="False"/>
+    <ProgressBar Progress="{Binding Progress}"/>
+      
+      <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
+        <Button  x:Name="play" Image="ic_play.png" HorizontalOptions="Center"/>
+        <Button  x:Name="pause" Image="ic_pause.png" HorizontalOptions="Center"/>
+        <Button  x:Name="stop" Image="ic_stop.png" HorizontalOptions="Center"/>
+      </StackLayout>
+    <WebView x:Name="webView" VerticalOptions="FillAndExpand"></WebView>
+    </StackLayout>
+ 
+</ContentPage>

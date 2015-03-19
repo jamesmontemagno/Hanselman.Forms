@@ -19,7 +19,12 @@
 
 <resources>
 
-  <style name="MyTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+  <style name="MyTheme.Base" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+  
+    
+  </style>
+  
+  <style name="MyTheme" parent="MyTheme.Base">
     <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
   </style>
 
