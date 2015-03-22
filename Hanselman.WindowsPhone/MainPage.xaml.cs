@@ -21,8 +21,8 @@ namespace Hanselman.WindowsPhone
       InitializeComponent();
 
       Forms.Init();
-      global::Xamarin.Forms.Forms.Init();
-      LoadApplication(new Hanselman.Portable.App());
+      
+	  LoadApplication(new Hanselman.Portable.App());
     }
 
     // Sample code for building a localized ApplicationBar
