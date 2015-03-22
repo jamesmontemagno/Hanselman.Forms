@@ -22,7 +22,7 @@ namespace Hanselman.WindowsPhone
 
       Forms.Init();
       
-	  LoadApplication(new Hanselman.Portable.App());
+      LoadApplication(new Hanselman.Portable.App());
     }
 
     // Sample code for building a localized ApplicationBar
