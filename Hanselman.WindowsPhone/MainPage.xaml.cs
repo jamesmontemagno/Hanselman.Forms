@@ -21,7 +21,7 @@ namespace Hanselman.WindowsPhone
       InitializeComponent();
 
       Forms.Init();
-      global::Xamarin.Forms.Forms.Init();
+      
       LoadApplication(new Hanselman.Portable.App());
     }
 
