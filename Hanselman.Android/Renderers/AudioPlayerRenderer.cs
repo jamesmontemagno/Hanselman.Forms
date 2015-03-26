@@ -33,9 +33,15 @@ namespace HanselmanAndroid.Renderers
 
       player.Prepared += (sender, args) =>
         {
-          player.SeekTo(0);
-          player.Start();
-          timer.Start();
+          try
+          {
+            player.SeekTo(0);
+            player.Start();
+            timer.Start();
+          }
+          catch(Exception ex)
+          {
+          }
         };
 
       if (string.IsNullOrWhiteSpace(Player.Url))

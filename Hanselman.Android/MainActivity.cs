@@ -10,6 +10,7 @@ using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using Android.Content.PM;
 using Hanselman.Portable;
+using Android.Graphics.Drawables;
 
 namespace HanselmanAndroid
 {
@@ -27,6 +28,11 @@ namespace HanselmanAndroid
 
 			Forms.Init(this, bundle);
       LoadApplication(new App());
+
+      if ((int)Android.OS.Build.VERSION.SdkInt >= 21) {
+        ActionBar.SetIcon (
+          new ColorDrawable (Resources.GetColor (Android.Resource.Color.Transparent)));
+      }
 		}
 	}
 }
