@@ -13,22 +13,17 @@ using Hanselman.Portable;
 
 namespace HanselmanAndroid
 {
-	[Activity (Label = "Hanselman", 
-    MainLauncher = true, 
-    ScreenOrientation = ScreenOrientation.Portrait, 
+    [Activity(Label = "Hanselman",
+    MainLauncher = true,
+    ScreenOrientation = ScreenOrientation.Portrait,
     ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-  public class MainActivity : FormsApplicationActivity
-	{
-
-		protected override void OnCreate (Bundle bundle)
-		{
-			base.OnCreate (bundle);
-
-
-			Forms.Init(this, bundle);
-      LoadApplication(new App());
-		}
-	}
+    public class MainActivity : FormsApplicationActivity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            Forms.Init(this, bundle);
+            LoadApplication(new App());
+        }
+    }
 }
-
-
