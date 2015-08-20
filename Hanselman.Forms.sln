@@ -9,13 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.iOS", "Hanselman.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.WindowsPhone", "Hanselman.WindowsPhone\Hanselman.WindowsPhone.csproj", "{93E46D0B-295C-4F17-9E8C-D4176C5ACD2B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{280FA5FD-68AC-40DE-9226-0415F179B28D}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.Portable", "Hanselman.Portable\Hanselman.Portable.csproj", "{028799A4-E2FD-4901-B950-666C00EFBF63}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Hanselman.Shared", "Hanselman.Shared\Hanselman.Shared.shproj", "{D9607889-00BB-4F68-8CAE-0918BE03E403}"
@@ -448,8 +441,6 @@ Global
 		{E670552C-727C-4D70-A5DC-807CA1808DAD}.Release|x86.ActiveCfg = Release|x86
 		{E670552C-727C-4D70-A5DC-807CA1808DAD}.Release|x86.Build.0 = Release|x86
 		{E670552C-727C-4D70-A5DC-807CA1808DAD}.Release|x86.Deploy.0 = Release|x86
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Hanselman.Shared\Hanselman.Shared.projitems*{d9607889-00bb-4f68-8cae-0918be03e403}*SharedItemsImports = 13

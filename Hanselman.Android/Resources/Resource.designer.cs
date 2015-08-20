@@ -26,6 +26,8 @@ namespace HanselmanAndroid
 		
 		public static void UpdateIdValues()
 		{
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::HanselmanAndroid.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::HanselmanAndroid.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -1949,6 +1951,12 @@ namespace HanselmanAndroid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f07003a
+			public const int ApplicationName = 2131165242;
+			
+			// aapt resource value: 0x7f070039
+			public const int Hello = 2131165241;
+			
 			// aapt resource value: 0x7f070006
 			public const int abc_action_bar_home_description = 2131165190;
 			
@@ -2000,8 +2008,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f070018
 			public const int accept = 2131165208;
 			
-			// aapt resource value: 0x7f07003a
-			public const int app_name = 2131165242;
+			// aapt resource value: 0x7f07003c
+			public const int app_name = 2131165244;
 			
 			// aapt resource value: 0x7f07001f
 			public const int common_android_wear_notification_needs_update_text = 2131165215;
@@ -2096,8 +2104,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f070019
 			public const int decline = 2131165209;
 			
-			// aapt resource value: 0x7f070039
-			public const int hello = 2131165241;
+			// aapt resource value: 0x7f07003b
+			public const int hello = 2131165243;
 			
 			// aapt resource value: 0x7f070000
 			public const int mr_media_route_button_content_description = 2131165184;
