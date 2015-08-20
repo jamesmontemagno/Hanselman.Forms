@@ -57,20 +57,17 @@ namespace Hanselman.Portable
 
         var twitterContext = new TwitterContext(auth);
 
-        if (Device.OS != TargetPlatform.WinPhone)
-        {
-          IQueryable<LinqToTwitter.Status> queryResponse =
-            (from tweet in twitterContext.Status
-             where tweet.Type == StatusType.User &&
-               tweet.ScreenName == "shanselman" &&
-               tweet.Count == 100 &&
-               tweet.IncludeRetweets == true &&
-               tweet.ExcludeReplies == true
-             select tweet);
+        var queryResponse = await
+          (from tweet in twitterContext.Status
+           where tweet.Type == StatusType.User &&
+             tweet.ScreenName == "shanselman" &&
+             tweet.Count == 100 &&
+             tweet.IncludeRetweets == true &&
+             tweet.ExcludeReplies == true
+           select tweet).ToListAsync();
 
-          var queryTweets = queryResponse.ToList();
           var tweets =
-            (from tweet in queryTweets
+            (from tweet in queryResponse
              select new Tweet
              {
                StatusID = tweet.StatusID,
@@ -91,33 +88,7 @@ namespace Hanselman.Portable
             // only does anything on iOS, for the Watch
             DependencyService.Get<ITweetStore>().Save(tweets);
           }
-        }
-        else
-        {
 
-          var tweets =
-            await (from tweet in twitterContext.Status
-                   where tweet.Type == StatusType.User &&
-                     tweet.ScreenName == "shanselman" &&
-                     tweet.Count == 100 &&
-                     tweet.IncludeRetweets == true &&
-                     tweet.ExcludeReplies == true
-                   select new Tweet
-                   {
-                     StatusID = tweet.StatusID,
-                     ScreenName = tweet.User.ScreenNameResponse,
-                     Text = tweet.Text,
-                     CurrentUserRetweet = tweet.CurrentUserRetweet,
-                     CreatedAt = tweet.CreatedAt,
-                     Image = tweet.RetweetedStatus != null && tweet.RetweetedStatus.User != null ?
-                              tweet.RetweetedStatus.User.ProfileImageUrl : (tweet.User.ScreenNameResponse == "shanselman" ? "scott159.png" : tweet.User.ProfileImageUrl)
-
-                   }).ToListAsync();
-          foreach (var tweet in tweets)
-          {
-            Tweets.Add(tweet);
-          }
-        }
 
 
       }

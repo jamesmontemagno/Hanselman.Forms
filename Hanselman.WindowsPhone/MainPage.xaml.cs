@@ -10,6 +10,7 @@ using Microsoft.Phone.Shell;
 using Hanselman.WindowsPhone.Resources;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.WinPhone;
+using ImageCircle.Forms.Plugin.WindowsPhone;
 
 namespace Hanselman.WindowsPhone
 {
@@ -21,7 +22,7 @@ namespace Hanselman.WindowsPhone
       InitializeComponent();
 
       Forms.Init();
-      
+      ImageCircleRenderer.Init();
       LoadApplication(new Hanselman.Portable.App());
     }
 

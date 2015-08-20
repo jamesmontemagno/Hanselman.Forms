@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageCircle.Forms.Plugin.WindowsStore;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace Hanselman.WindowsStore
         public MainPage()
         {
             this.InitializeComponent();
-
+            ImageCircleRenderer.Init();
             LoadApplication(new Portable.App());
         }
     }
