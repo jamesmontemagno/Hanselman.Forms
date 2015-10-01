@@ -7,33 +7,34 @@ using CoreGraphics;
 
 namespace Hanselman.Portable.Helpers
 {
-	public struct Color
-	{
-		public static readonly Color Purple = 0xB455B6;
-		public static readonly Color Blue = 0x3498DB;
-		public static readonly Color DarkBlue = 0x3498DB;
-		public static readonly Color Green = 0x77D065;
-		public static readonly Color Gray = 0x738182;
-		public static readonly Color LightGray = 0xB4BCBC;
+    public struct Color
+    {
+        public static readonly Color Purple = 0xB455B6;
+        public static readonly Color Blue = 0x3498DB;
+        public static readonly Color DarkBlue = 0x3498DB;
+        public static readonly Color Green = 0x77D065;
+        public static readonly Color Gray = 0x738182;
+        public static readonly Color LightGray = 0xB4BCBC;
 
-		public double R, G, B;
+        public double R, G, B;
 
-		public static Color FromHex (int hex)
-		{
-			Func<int, int> at = offset => (hex >> offset) & 0xFF;
-			return new Color {
-				R = at (16) / 255.0,
-				G = at (8) / 255.0,
-				B = at (0) / 255.0
-			};
-		}
+        public static Color FromHex(int hex)
+        {
+            Func<int, int> at = offset => (hex >> offset) & 0xFF;
+            return new Color
+            {
+                R = at(16) / 255.0,
+                G = at(8) / 255.0,
+                B = at(0) / 255.0
+            };
+        }
 
-		public static implicit operator Color (int hex)
-		{
-			return FromHex (hex);
-		}
+        public static implicit operator Color(int hex)
+        {
+            return FromHex(hex);
+        }
 
-		#if __IOS__
+#if __IOS__
 		public UIColor ToUIColor ()
 		{
 			return UIColor.FromRGB ((float)R, (float)G, (float)B);
@@ -48,14 +49,14 @@ namespace Hanselman.Portable.Helpers
 		{
 			return color.ToUIColor ().CGColor;
 		}
-		#endif
+#endif
 
-		public Xamarin.Forms.Color ToFormsColor ()
-		{
-			return Xamarin.Forms.Color.FromRgb ((int)(255 * R), (int)(255 * G), (int)(255 * B));
-		}
+        public Xamarin.Forms.Color ToFormsColor()
+        {
+            return Xamarin.Forms.Color.FromRgb((int)(255 * R), (int)(255 * G), (int)(255 * B));
+        }
 
-		#if __ANDROID__
+#if __ANDROID__
 		public global::Android.Graphics.Color ToAndroidColor ()
 		{
 			return global::Android.Graphics.Color.Rgb ((int)(255 * R), (int)(255 * G), (int)(255 * B));
@@ -65,6 +66,6 @@ namespace Hanselman.Portable.Helpers
 		{
 			return color.ToAndroidColor ();
 		}
-		#endif
-	}
+#endif
+    }
 }

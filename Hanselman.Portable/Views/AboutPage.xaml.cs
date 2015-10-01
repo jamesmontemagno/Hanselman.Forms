@@ -8,43 +8,47 @@ using Xamarin.Forms;
 
 namespace Hanselman.Portable.Views
 {
-  public partial class AboutPage : ContentPage
-  {
-    public AboutPage()
+    public partial class AboutPage : ContentPage
     {
-      InitializeComponent();
-
-      twitter.GestureRecognizers.Add(new TapGestureRecognizer()
-        { 
-          Command = new Command(() =>
-          {
-            this.Navigation.PushAsync(new WebsiteView("http://m.twitter.com/shanselman", "@shanselman"));
-          })
-        });
-
-     facebook.GestureRecognizers.Add(new TapGestureRecognizer()
-      {
-        Command= new Command(() =>
+        public AboutPage()
         {
-          this.Navigation.PushAsync(new WebsiteView("http://facebook.com/scott.hanselman", "Scott @Facebook"));
-        })
-      });
+            InitializeComponent();
 
-     instagram.GestureRecognizers.Add(new TapGestureRecognizer()
-      {
-        Command = new Command(() =>
-        {
-          this.Navigation.PushAsync(new WebsiteView("http://instagram.com/shanselman", "Scott @Instagram"));
-        })
-      });
+            twitter.GestureRecognizers.Add(new TapGestureRecognizer()
+              {
+                  Command = new Command(async () =>
+                  {
+                      
+                        await this.Navigation.PushAsync(new WebsiteView("https://m.twitter.com/shanselman", "@shanselman"));
+                  })
+              });
 
-      google.GestureRecognizers.Add(new TapGestureRecognizer()
-      {
-        Command = new Command(() =>
-        {
-          this.Navigation.PushAsync(new WebsiteView("http://plus.google.com/108573066018819777334?rel=me", "Hanselman+"));
-        })
-      });
+            facebook.GestureRecognizers.Add(new TapGestureRecognizer()
+             {
+                 Command = new Command(async () =>
+                 {
+                     
+                        await this.Navigation.PushAsync(new WebsiteView("https://facebook.com/scott.hanselman", "Scott @Facebook"));
+                 })
+             });
+
+            instagram.GestureRecognizers.Add(new TapGestureRecognizer()
+             {
+                 Command = new Command(async () =>
+                 {
+                    
+                        await this.Navigation.PushAsync(new WebsiteView("https://instagram.com/shanselman", "Scott @Instagram"));
+                 })
+             });
+
+            google.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(async () =>
+                {
+                    
+                        await this.Navigation.PushAsync(new WebsiteView("https://plus.google.com/108573066018819777334?rel=me", "Hanselman+"));
+                })
+            });
+        }
     }
-  }
 }

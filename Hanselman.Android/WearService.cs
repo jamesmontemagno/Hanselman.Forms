@@ -15,83 +15,83 @@ using Android.Gms.Common.Apis;
 
 namespace HanselmanAndroid
 {
-  [Service]
-	[IntentFilter (new[] { "com.google.android.gms.wearable.BIND_LISTENER" })]
-	public class WearService : WearableListenerService
-  {
-    const string TweetsPath = "/hanselman/Tweets";
-
-    Handler handler;
-    public override void OnCreate()
+    [Service]
+    [IntentFilter(new[] { "com.google.android.gms.wearable.BIND_LISTENER" })]
+    public class WearService : WearableListenerService
     {
-      base.OnCreate();
-    	this.handler = new Handler ();
-			Android.Util.Log.Error ("WearIntegration", "Created");
-		}
+        const string TweetsPath = "/hanselman/Tweets";
 
-		public override void OnMessageReceived (IMessageEvent messageEvent)
-		{
-			base.OnMessageReceived (messageEvent);
-			if (!messageEvent.Path.StartsWith (TweetsPath))
-				return;
-
-			HandleMessage (messageEvent);
-		}
-
-    async void HandleMessage(IMessageEvent message)
-    {
-      try
-      {
-        Android.Util.Log.Info("WearIntegration", "Received Message");
-        var client = new GoogleApiClientBuilder(this)
-          .AddApi(WearableClass.Api)
-          .Build();
-
-        var result = client.BlockingConnect(30, Java.Util.Concurrent.TimeUnit.Seconds);
-        if (!result.IsSuccess)
-          return;
-
-        var path = message.Path;
-
-        try
+        Handler handler;
+        public override void OnCreate()
         {
-          
-          if (path.StartsWith(TweetsPath))
-          {
+            base.OnCreate();
+            this.handler = new Handler();
+            Android.Util.Log.Error("WearIntegration", "Created");
+        }
 
-            var viewModel = new TwitterViewModel();
+        public override void OnMessageReceived(IMessageEvent messageEvent)
+        {
+            base.OnMessageReceived(messageEvent);
+            if (!messageEvent.Path.StartsWith(TweetsPath))
+                return;
 
-            await viewModel.ExecuteLoadTweetsCommand();
+            HandleMessage(messageEvent);
+        }
 
-            var request = PutDataMapRequest.Create(TweetsPath + "/Answer");
-            var map = request.DataMap;
-
-            var tweetMap = new List<DataMap>();
-            foreach (var tweet in viewModel.Tweets)
+        async void HandleMessage(IMessageEvent message)
+        {
+            try
             {
-              var itemMap = new DataMap();
+                Android.Util.Log.Info("WearIntegration", "Received Message");
+                var client = new GoogleApiClientBuilder(this)
+                  .AddApi(WearableClass.API)
+                  .Build();
 
-              itemMap.PutLong("CreatedAt", tweet.CreatedAt.Ticks);
-              itemMap.PutString("ScreenName", tweet.ScreenName);
-              itemMap.PutString("Text", tweet.Text);
+                var result = client.BlockingConnect(30, Java.Util.Concurrent.TimeUnit.Seconds);
+                if (!result.IsSuccess)
+                    return;
 
-              tweetMap.Add(itemMap);
+                var path = message.Path;
+
+                try
+                {
+
+                    if (path.StartsWith(TweetsPath))
+                    {
+
+                        var viewModel = new TwitterViewModel();
+
+                        await viewModel.ExecuteLoadTweetsCommand();
+
+                        var request = PutDataMapRequest.Create(TweetsPath + "/Answer");
+                        var map = request.DataMap;
+
+                        var tweetMap = new List<DataMap>();
+                        foreach (var tweet in viewModel.Tweets)
+                        {
+                            var itemMap = new DataMap();
+
+                            itemMap.PutLong("CreatedAt", tweet.CreatedAt.Ticks);
+                            itemMap.PutString("ScreenName", tweet.ScreenName);
+                            itemMap.PutString("Text", tweet.Text);
+
+                            tweetMap.Add(itemMap);
+                        }
+                        map.PutDataMapArrayList("Tweets", tweetMap);
+                        map.PutLong("UpdatedAt", DateTime.UtcNow.Ticks);
+
+                        await WearableClass.DataApi.PutDataItem(client, request.AsPutDataRequest());
+                    }
+                }
+                finally
+                {
+                    client.Disconnect();
+                }
             }
-            map.PutDataMapArrayList("Tweets", tweetMap);
-            map.PutLong("UpdatedAt", DateTime.UtcNow.Ticks);
-
-            WearableClass.DataApi.PutDataItem(client, request.AsPutDataRequest());
-          }
+            catch (Exception e)
+            {
+                Android.Util.Log.Error("WearIntegration", e.ToString());
+            }
         }
-        finally
-        {
-          client.Disconnect();
-        }
-      }
-      catch (Exception e)
-      {
-        Android.Util.Log.Error("WearIntegration", e.ToString());
-      }
     }
-  }
 }

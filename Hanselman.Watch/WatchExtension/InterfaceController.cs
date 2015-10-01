@@ -69,7 +69,7 @@ namespace WatchExtension
 
 			
       }
-      catch(Exception ex)
+      catch
       {
         Console.WriteLine("Unable to load tweets, verify xml has been written.");
         Tweets.Add(new Tweet

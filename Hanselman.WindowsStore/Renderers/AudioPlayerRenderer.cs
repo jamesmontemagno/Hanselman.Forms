@@ -57,7 +57,7 @@ namespace Hanselman.WindowsStore.Renderers
      
     }
 
-    protected override async void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+    protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
     {
       base.OnElementPropertyChanged(sender, e);
       if(e.PropertyName == AudioPlayer.UrlProperty.PropertyName)

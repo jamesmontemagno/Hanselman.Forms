@@ -2,11 +2,11 @@
 
 namespace Hanselman.Portable
 {
-	public class Scott
-	{
-		public Scott ()
-		{
-		}
-	}
+    public class Scott
+    {
+        public Scott()
+        {
+        }
+    }
 }
 

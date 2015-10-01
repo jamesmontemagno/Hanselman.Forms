@@ -40,7 +40,7 @@ namespace WearApp
       base.OnCreate(bundle);
       handler = new Handler();
       client = new GoogleApiClientBuilder(this, this, this)
-        .AddApi(WearableClass.Api)
+        .AddApi(WearableClass.API)
         .Build();
       // Set our view from the "main" layout resource
       SetContentView(Resource.Layout.Main);

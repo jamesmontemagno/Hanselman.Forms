@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hanselman.Portable.Helpers
 {
-  public interface IShare
-  {
-    void ShareText(string text);
-	  void LaunchBrowser(string url);
-  }
+    public interface IShare
+    {
+        void ShareText(string text);
+        void LaunchBrowser(string url);
+    }
 }

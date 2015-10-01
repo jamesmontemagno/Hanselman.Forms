@@ -75,7 +75,7 @@ namespace Hanselman.iOS.Renderers
             player.Pause();
             timer.Stop();
             Player.Progress = 0.0M;
-            player.SeekAsync(new CoreMedia.CMTime(0, 1));
+            await player.SeekAsync(new CoreMedia.CMTime(0, 1));
             break;
         }
 

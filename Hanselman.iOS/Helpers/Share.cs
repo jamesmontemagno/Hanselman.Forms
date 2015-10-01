@@ -28,7 +28,7 @@ namespace Hanselman.iOS.Helpers
 			try {
 				UIApplication.SharedApplication.OpenUrl (new NSUrl (url));
 			}
-			catch (Exception ex) {
+			catch {
 			}
 		}
 	}
