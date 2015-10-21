@@ -8,36 +8,8 @@
     Icon="{Binding Icon}"
     BackgroundColor="#03A9F4">
      <ContentPage.Content>
-      <ScrollView>
-          <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="10"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="5"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
 
-            <BoxView Grid.ColumnSpan="3" 
-                     Grid.RowSpan="4"
-                     BackgroundColor="#03A9F4"/>
-            <controls:CircleImage
-                Grid.Column="1"
-                Grid.Row="1"
-                HorizontalOptions="Start"
-                VerticalOptions="End"
-                Source="scott159.png"
-                WidthRequest="75" HeightRequest="75"/>
-            <Label 
-                Grid.Column="1"
-                Grid.Row="2"
-                Text="Hanselman.Forms"
-                Style="{DynamicResource SubtitleStyle}"/>
+          
             <ListView 
                 BackgroundColor="#F5F5F5"
                 SeparatorColor="Transparent"
@@ -45,6 +17,37 @@
                 Grid.Row="4"
                 HasUnevenRows="true"
                 x:Name="ListViewMenu">
+                <ListView.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="5"/>
+                        </Grid.RowDefinitions>
+
+                        <BoxView Grid.ColumnSpan="3" 
+                                 Grid.RowSpan="4"
+                                 BackgroundColor="#03A9F4"/>
+                        <controls:CircleImage
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            HorizontalOptions="Start"
+                            VerticalOptions="End"
+                            Source="scott159.png"
+                                WidthRequest="75" HeightRequest="75"/>
+                        <Label 
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            Text="Hanselman.Forms"
+                            Style="{DynamicResource SubtitleStyle}"/>
+                    </Grid>
+                </ListView.Header>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -56,7 +59,5 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </Grid>
-      </ScrollView>
     </ContentPage.Content>
 </ContentPage>

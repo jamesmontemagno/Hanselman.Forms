@@ -1,13 +1,6 @@
 ﻿<Properties StartupItem="Hanselman.Android/Hanselman.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.9.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument=".nuget/NuGet.targets">
-    <Files>
-      <File FileName="Hanselman.Portable/App.cs" Line="1" Column="1" />
-      <File FileName="Hanselman.Portable/Views/MenuPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Hanselman.Portable/Views/MenuPage.xaml" Line="1" Column="1" />
-      <File FileName=".nuget/NuGet.targets" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Lollipop)" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
