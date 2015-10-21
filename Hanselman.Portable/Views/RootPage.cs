@@ -8,9 +8,10 @@ namespace Hanselman.Portable.Views
 {
     public class RootPage : MasterDetailPage
     {
-        Dictionary<MenuType, NavigationPage> Pages { get; } = new Dictionary<MenuType, NavigationPage>();
+        Dictionary<MenuType, NavigationPage> Pages { get; set;} 
         public RootPage()
         {
+            Pages = new Dictionary<MenuType, NavigationPage>();
             Master = new MenuPage(this);
             BindingContext = new BaseViewModel
                 {

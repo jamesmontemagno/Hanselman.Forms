@@ -32,6 +32,7 @@ namespace Hanselman.WindowsStore
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            this.RequestedTheme = ApplicationTheme.Light;
         }
 
         /// <summary>
