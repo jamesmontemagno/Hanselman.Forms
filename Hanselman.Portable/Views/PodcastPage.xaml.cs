@@ -16,7 +16,7 @@ namespace Hanselman.Portable.Views
         }
 
 
-        public PodcastPage(HomeMenuItem item)
+        public PodcastPage(MenuType item)
         {
             InitializeComponent();
             BindingContext = new PodcastViewModel(item);

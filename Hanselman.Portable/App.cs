@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Hanselman.Portable.Views;
 
 namespace Hanselman.Portable
 {
@@ -12,7 +13,7 @@ namespace Hanselman.Portable
         public App()
         {
             // The root page of your application
-            MainPage = new HomeView();
+            MainPage = new RootPage();
         }
 
         protected override void OnStart()

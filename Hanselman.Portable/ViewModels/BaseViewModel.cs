@@ -24,15 +24,15 @@ namespace Hanselman.Portable
             set { SetProperty(ref title, value); }
         }
 
-        private string subTitle = string.Empty;
+        private string subtitle = string.Empty;
         /// <summary>
         /// Gets or sets the "Subtitle" property
         /// </summary>
         public const string SubtitlePropertyName = "Subtitle";
         public string Subtitle
         {
-            get { return subTitle; }
-            set { SetProperty(ref subTitle, value); }
+            get { return subtitle; }
+            set { SetProperty(ref subtitle, value); }
         }
 
         private string icon = null;
@@ -92,10 +92,11 @@ namespace Hanselman.Portable
 
         public void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            if (PropertyChanged == null)
+            var chagned = PropertyChanged;
+            if (chagned == null)
                 return;
 
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            chagned(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

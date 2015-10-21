@@ -19,7 +19,7 @@ namespace HanselmanAndroid
         MainLauncher = true,
         ScreenOrientation = ScreenOrientation.Portrait,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : FormsApplicationActivity
+    public class MainActivity : FormsAppCompatActivity
     {
 
         protected override void OnCreate(Bundle bundle)
@@ -29,13 +29,11 @@ namespace HanselmanAndroid
 
             Forms.Init(this, bundle);
             ImageCircleRenderer.Init();
+            FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
+            FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
             LoadApplication(new App());
 
-            if ((int)Android.OS.Build.VERSION.SdkInt >= 21)
-            {
-                ActionBar.SetIcon(
-                    new ColorDrawable(Resources.GetColor(Android.Resource.Color.Transparent)));
-            }
+         
         }
     }
 }

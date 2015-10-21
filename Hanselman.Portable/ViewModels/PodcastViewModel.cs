@@ -12,23 +12,25 @@ namespace Hanselman.Portable.ViewModels
 {
     public class PodcastViewModel : BaseViewModel
     {
-        HomeMenuItem item;
+        MenuType item;
         private string image;
-        public PodcastViewModel(HomeMenuItem item)
+        public PodcastViewModel(MenuType item)
         {
             this.item = item;
-            Title = item.Title;
 
-            switch (item.MenuType)
+            switch (item)
             {
                 case MenuType.Hanselminutes:
                     image = "hm_full.jpg";
+                    Title = "Hanselminutes";
                     break;
                 case MenuType.Ratchet:
                     image = "ratchet_full.jpg";
+                    Title= "Ratchet & The Geek";
                     break;
                 case MenuType.DeveloperLife:
                     image = "tdl_full.jpg";
+                    Title = "This Developer Life";
                     break;
             }
         }
@@ -80,7 +82,7 @@ namespace Hanselman.Portable.ViewModels
                 var httpClient = new HttpClient();
                 var feed = string.Empty;
 
-                switch (item.MenuType)
+                switch (item)
                 {
                     case MenuType.Hanselminutes:
                         feed = "http://feeds.podtrac.com/9dPm65vdpLL1";
