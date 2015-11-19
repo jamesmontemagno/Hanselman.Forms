@@ -11,8 +11,14 @@ namespace Hanselman.Portable.Views
         List<HomeMenuItem> menuItems;
         public MenuPage(RootPage root)
         {
+            
             this.root = root;
             InitializeComponent();
+            if (!App.IsWindows10)
+            {
+                BackgroundColor = Color.FromHex("#03A9F4");
+                ListViewMenu.BackgroundColor = Color.FromHex("#F5F5F5");
+            }
             BindingContext = new BaseViewModel
                 {
                     Title = "Hanselman.Forms",

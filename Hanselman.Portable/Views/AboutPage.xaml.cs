@@ -41,14 +41,7 @@ namespace Hanselman.Portable.Views
                  })
              });
 
-            google.GestureRecognizers.Add(new TapGestureRecognizer()
-            {
-                Command = new Command(async () =>
-                {
-                    
-                        await this.Navigation.PushAsync(new WebsiteView("https://plus.google.com/108573066018819777334?rel=me", "Hanselman+"));
-                })
-            });
+            
         }
     }
 }

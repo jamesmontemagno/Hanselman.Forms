@@ -36,14 +36,14 @@ namespace Hanselman.Portable.Views
       pause.Clicked += (sender, args) => player.PlaybackState = 1;
       stop.Clicked += (sender, args) => player.PlaybackState = 2;
 
-      if(Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.WinPhone)
+      if(Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.WinPhone || App.IsWindows10)
       {
         play.Text = "Play";
         pause.Text = "Pause";
         stop.Text = "Stop";
       }
 
-      if(Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+      if((Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows) && !App.IsWindows10)
       {
         this.BackgroundColor = Color.White;
         this.title.TextColor = Color.Black;

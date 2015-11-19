@@ -5,17 +5,12 @@
     x:Class="Hanselman.Portable.Views.MenuPage"
     xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     Title="{Binding Title}"
-    Icon="{Binding Icon}"
-    BackgroundColor="#03A9F4">
+    Icon="{Binding Icon}">
      <ContentPage.Content>
-
-          
-            <ListView 
-                BackgroundColor="#F5F5F5"
+         <ListView 
+                CachingStrategy="RecycleElement"
                 SeparatorColor="Transparent"
-                Grid.ColumnSpan="3"
-                Grid.Row="4"
-                HasUnevenRows="true"
+                HasUnevenRows="True"
                 x:Name="ListViewMenu">
                 <ListView.Header>
                     <Grid>
@@ -40,7 +35,7 @@
                             HorizontalOptions="Start"
                             VerticalOptions="End"
                             Source="scott159.png"
-                                WidthRequest="75" HeightRequest="75"/>
+                            WidthRequest="75" HeightRequest="75"/>
                         <Label 
                             Grid.Column="1"
                             Grid.Row="2"
@@ -51,10 +46,14 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Padding="20" Spacing="10" Orientation="Horizontal">
+                            <Grid Padding="20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
                                 <Image Source="{Binding Icon}" HeightRequest="25" WidthRequest="25"/>
-                                <Label Text="{Binding Title}" FontSize="24"/>
-                            </StackLayout>
+                                <Label Grid.Column="1" Text="{Binding Title}" FontSize="24"/>
+                            </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

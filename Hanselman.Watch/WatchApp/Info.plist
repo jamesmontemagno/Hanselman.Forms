@@ -35,5 +35,7 @@
 	<array>
 		<integer>1</integer>
 	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<string>watch-companion</string>
 </dict>
 </plist>

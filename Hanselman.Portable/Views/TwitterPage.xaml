@@ -5,7 +5,9 @@
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              Title="{Binding Title}" Icon="{Binding Icon}"  IsBusy="{Binding IsBusy}">
   <StackLayout Orientation="Vertical">
-    <ListView x:Name="listView" 
+    <ListView 
+               CachingStrategy="RecycleElement"
+              x:Name="listView" 
               ItemsSource="{Binding Tweets}"
               HasUnevenRows="True"
               IsPullToRefreshEnabled="True"
@@ -19,7 +21,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
               </Grid.ColumnDefinitions>
-              <controls:CircleImage Source="{Binding Image}" VerticalOptions="Start">
+              <controls:CircleImage Source="{Binding Image}" VerticalOptions="Center">
                 <controls:CircleImage.WidthRequest>
                   <OnPlatform x:TypeArguments="x:Double">
                     <OnPlatform.iOS>55</OnPlatform.iOS>
@@ -47,6 +49,17 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-
+      <StackLayout HorizontalOptions="Center" Orientation="Vertical" Spacing="10" Padding="10" IsVisible="{Binding IsBusy}">
+          <StackLayout.Orientation>
+              <OnPlatform x:TypeArguments="StackOrientation" iOS="Horizontal" Android="Horizontal" />
+          </StackLayout.Orientation>
+          <ActivityIndicator  HorizontalOptions="CenterAndExpand"
+                             IsRunning="{Binding IsBusy}"
+                             IsVisible="{Binding IsBusy}"
+                             />
+          <Label HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Text="Loading..."/>
+      </StackLayout>
   </StackLayout>
 </ContentPage>
