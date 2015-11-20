@@ -1,4 +1,5 @@
 ﻿using Hanselman.Portable.Helpers;
+using Plugin.Share;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,8 +26,7 @@ namespace Hanselman.Portable.Views
         Text = "Share",
         Command = new Command(() =>
           {
-            DependencyService.Get<IShare>()
-          .ShareText("Listening to @shanselman's " + item.Title + " " + item.Link);
+           CrossShare.Current.Share("Listening to @shanselman's " + item.Title + " " + item.Link, "Share");
           })
       };
 

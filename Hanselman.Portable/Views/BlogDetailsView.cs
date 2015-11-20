@@ -1,4 +1,5 @@
 ﻿using Hanselman.Portable.Helpers;
+using Plugin.Share;
 using System;
 using Xamarin.Forms;
 
@@ -29,8 +30,8 @@ namespace Hanselman.Portable
             {
                 Icon = "ic_share.png",
                 Text = "Share",
-                Command = new Command(() => DependencyService.Get<IShare>()
-                  .ShareText("Be sure to read @shanselman's " + item.Title + " " + item.Link))
+                Command = new Command(() => CrossShare.Current
+                  .Share("Be sure to read @shanselman's " + item.Title + " " + item.Link))
             };
 
             ToolbarItems.Add(share);

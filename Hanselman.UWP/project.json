@@ -4,6 +4,7 @@
     "Microsoft.Net.Http": "2.2.29",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "Newtonsoft.Json": "7.0.1",
+    "Plugin.Share": "3.0.1",
     "Xam.Plugins.Forms.ImageCircle": "1.2.0",
     "Xamarin.Forms": "2.0.0.6482"
   },
