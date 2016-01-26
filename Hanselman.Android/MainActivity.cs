@@ -24,7 +24,6 @@ namespace HanselmanAndroid
 
         protected override void OnCreate(Bundle bundle)
         {
-            
             FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
             FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
             base.OnCreate(bundle);

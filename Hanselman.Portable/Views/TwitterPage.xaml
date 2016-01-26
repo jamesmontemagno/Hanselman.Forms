@@ -4,13 +4,17 @@
              x:Class="Hanselman.Portable.Views.TwitterPage"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              Title="{Binding Title}" Icon="{Binding Icon}"  IsBusy="{Binding IsBusy}">
-  <StackLayout Orientation="Vertical">
-    <ListView x:Name="listView" 
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ListView 
+               CachingStrategy="RecycleElement"
+              x:Name="listView" 
               ItemsSource="{Binding Tweets}"
               HasUnevenRows="True"
               IsPullToRefreshEnabled="True"
               RefreshCommand="{Binding LoadTweetsCommand}"
-              IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            AbsoluteLayout.LayoutFlags="All"
+            AbsoluteLayout.LayoutBounds="0,0,1,1">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
@@ -19,7 +23,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
               </Grid.ColumnDefinitions>
-              <controls:CircleImage Source="{Binding Image}" VerticalOptions="Start">
+              <controls:CircleImage Source="{Binding Image}" VerticalOptions="Center">
                 <controls:CircleImage.WidthRequest>
                   <OnPlatform x:TypeArguments="x:Double">
                     <OnPlatform.iOS>55</OnPlatform.iOS>
@@ -47,6 +51,12 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-
-  </StackLayout>
+        <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="#80000000" Padding="12"
+                                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                                 AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White">
+            </ActivityIndicator>
+            <Label Text="Loading Twitter..." HorizontalOptions="Center" TextColor="White"/>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>

@@ -1,4 +1,5 @@
 ﻿using Hanselman.Portable.Helpers;
+using Plugin.Share;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,8 +26,7 @@ namespace Hanselman.Portable.Views
         Text = "Share",
         Command = new Command(() =>
           {
-            DependencyService.Get<IShare>()
-          .ShareText("Listening to @shanselman's " + item.Title + " " + item.Link);
+           CrossShare.Current.Share("Listening to @shanselman's " + item.Title + " " + item.Link, "Share");
           })
       };
 
@@ -36,14 +36,14 @@ namespace Hanselman.Portable.Views
       pause.Clicked += (sender, args) => player.PlaybackState = 1;
       stop.Clicked += (sender, args) => player.PlaybackState = 2;
 
-      if(Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.WinPhone)
+      if(Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.WinPhone || App.IsWindows10)
       {
         play.Text = "Play";
         pause.Text = "Pause";
         stop.Text = "Stop";
       }
 
-      if(Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+      if((Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows) && !App.IsWindows10)
       {
         this.BackgroundColor = Color.White;
         this.title.TextColor = Color.Black;

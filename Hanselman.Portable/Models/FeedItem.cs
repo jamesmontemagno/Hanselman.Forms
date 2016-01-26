@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using Xamarin.Forms;
 
 namespace Hanselman.Portable
 {
@@ -112,6 +113,15 @@ namespace Hanselman.Portable
                     firstImage = matches[0].Value;
 
                 return firstImage;
+            }
+        }
+
+        public ImageSource FirstImageSource
+        {
+            get
+            {
+                var image = FirstImage;
+                return UriImageSource.FromUri(new Uri(image));
             }
         }
 

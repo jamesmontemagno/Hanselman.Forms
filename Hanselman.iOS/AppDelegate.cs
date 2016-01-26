@@ -38,6 +38,8 @@ namespace Hanselman.iOS
             ImageCircleRenderer.Init();
             LoadApplication(new App());
 
+            Plugin.Share.ShareImplementation.UseSafariViewController = true;
+
             return base.FinishedLaunching(app, options);
         }
 

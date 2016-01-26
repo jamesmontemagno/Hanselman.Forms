@@ -8,6 +8,7 @@ namespace Hanselman.Portable.Views
 {
     public class RootPage : MasterDetailPage
     {
+        public static bool IsUWPDesktop { get; set; }
         Dictionary<MenuType, NavigationPage> Pages { get; set;} 
         public RootPage()
         {
@@ -20,6 +21,8 @@ namespace Hanselman.Portable.Views
                 };
             //setup home page
             NavigateAsync(MenuType.About);
+
+            InvalidateMeasure();
         }
 
 
@@ -64,6 +67,9 @@ namespace Hanselman.Portable.Views
             }
 
             Detail = newPage;
+
+            if (IsUWPDesktop)
+                return;
 
             if(Device.Idiom != TargetIdiom.Tablet)
                 IsPresented = false;
