@@ -24,13 +24,13 @@ namespace HanselmanAndroid
 
         protected override void OnCreate(Bundle bundle)
         {
+            FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
+            FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
             base.OnCreate(bundle);
 
 
             Forms.Init(this, bundle);
             ImageCircleRenderer.Init();
-            FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
-            FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
             LoadApplication(new App());
 
          

@@ -46,15 +46,32 @@ namespace Hanselman.Portable
             set { SetProperty(ref icon, value); }
         }
 
-        private bool isBusy;
+        bool isBusy;
+
         /// <summary>
-        /// Gets or sets if the view is busy.
+        /// Gets or sets a value indicating whether this instance is busy.
         /// </summary>
-        public const string IsBusyPropertyName = "IsBusy";
+        /// <value><c>true</c> if this instance is busy; otherwise, <c>false</c>.</value>
         public bool IsBusy
         {
             get { return isBusy; }
-            set { SetProperty(ref isBusy, value); }
+            set
+            {
+                if (SetProperty(ref isBusy, value))
+                    IsNotBusy = !isBusy;
+            }
+        }
+
+        bool isNotBusy = true;
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is not busy.
+        /// </summary>
+        /// <value><c>true</c> if this instance is not busy; otherwise, <c>false</c>.</value>
+        public bool IsNotBusy
+        {
+            get { return isNotBusy; }
+            private set { SetProperty(ref isNotBusy, value); }
         }
 
         private bool canLoadMore = true;
@@ -68,7 +85,7 @@ namespace Hanselman.Portable
             set { SetProperty(ref canLoadMore, value); }
         }
 
-        protected void SetProperty<T>(
+        protected bool SetProperty<T>(
             ref T backingStore, T value,
             [CallerMemberName]string propertyName = "",
             Action onChanged = null)
@@ -76,7 +93,7 @@ namespace Hanselman.Portable
 
 
             if (EqualityComparer<T>.Default.Equals(backingStore, value))
-                return;
+                return false;
 
             backingStore = value;
 
@@ -84,6 +101,7 @@ namespace Hanselman.Portable
                 onChanged();
 
             OnPropertyChanged(propertyName);
+            return true;
         }
 
         #region INotifyPropertyChanged implementation
@@ -92,11 +110,11 @@ namespace Hanselman.Portable
 
         public void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
-            var chagned = PropertyChanged;
-            if (chagned == null)
+            var changed = PropertyChanged;
+            if (changed == null)
                 return;
 
-            chagned(this, new PropertyChangedEventArgs(propertyName));
+            changed(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

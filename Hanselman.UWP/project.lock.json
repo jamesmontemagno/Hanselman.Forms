@@ -259,7 +259,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/8.0.2": {
         "compile": {
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         },
@@ -267,7 +267,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/3.0.1": {
+      "Plugin.Share/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -1663,9 +1663,9 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugins.Forms.ImageCircle/1.2.0": {
+      "Xam.Plugins.Forms.ImageCircle/1.4.0": {
         "dependencies": {
-          "Xamarin.Forms": "[2.0.0.6482, )"
+          "Xamarin.Forms": "[2.0.1.6495, )"
         },
         "compile": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
@@ -1676,7 +1676,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6482": {
+      "Xamarin.Forms/2.0.1.6495": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -1991,7 +1991,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/8.0.2": {
         "compile": {
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         },
@@ -1999,7 +1999,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/3.0.1": {
+      "Plugin.Share/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -3442,9 +3442,9 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugins.Forms.ImageCircle/1.2.0": {
+      "Xam.Plugins.Forms.ImageCircle/1.4.0": {
         "dependencies": {
-          "Xamarin.Forms": "[2.0.0.6482, )"
+          "Xamarin.Forms": "[2.0.1.6495, )"
         },
         "compile": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
@@ -3455,7 +3455,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6482": {
+      "Xamarin.Forms/2.0.1.6495": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -3756,7 +3756,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/8.0.2": {
         "compile": {
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         },
@@ -3764,7 +3764,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/3.0.1": {
+      "Plugin.Share/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -5193,9 +5193,9 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugins.Forms.ImageCircle/1.2.0": {
+      "Xam.Plugins.Forms.ImageCircle/1.4.0": {
         "dependencies": {
-          "Xamarin.Forms": "[2.0.0.6482, )"
+          "Xamarin.Forms": "[2.0.1.6495, )"
         },
         "compile": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
@@ -5206,7 +5206,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6482": {
+      "Xamarin.Forms/2.0.1.6495": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -5526,7 +5526,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/8.0.2": {
         "compile": {
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         },
@@ -5534,7 +5534,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/3.0.1": {
+      "Plugin.Share/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -6977,9 +6977,9 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugins.Forms.ImageCircle/1.2.0": {
+      "Xam.Plugins.Forms.ImageCircle/1.4.0": {
         "dependencies": {
-          "Xamarin.Forms": "[2.0.0.6482, )"
+          "Xamarin.Forms": "[2.0.1.6495, )"
         },
         "compile": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
@@ -6990,7 +6990,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6482": {
+      "Xamarin.Forms/2.0.1.6495": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -7291,7 +7291,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/8.0.2": {
         "compile": {
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         },
@@ -7299,7 +7299,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/3.0.1": {
+      "Plugin.Share/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -8728,9 +8728,9 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugins.Forms.ImageCircle/1.2.0": {
+      "Xam.Plugins.Forms.ImageCircle/1.4.0": {
         "dependencies": {
-          "Xamarin.Forms": "[2.0.0.6482, )"
+          "Xamarin.Forms": "[2.0.1.6495, )"
         },
         "compile": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
@@ -8741,7 +8741,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6482": {
+      "Xamarin.Forms/2.0.1.6495": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -9061,7 +9061,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/8.0.2": {
         "compile": {
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         },
@@ -9069,7 +9069,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/3.0.1": {
+      "Plugin.Share/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -10512,9 +10512,9 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugins.Forms.ImageCircle/1.2.0": {
+      "Xam.Plugins.Forms.ImageCircle/1.4.0": {
         "dependencies": {
-          "Xamarin.Forms": "[2.0.0.6482, )"
+          "Xamarin.Forms": "[2.0.1.6495, )"
         },
         "compile": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
@@ -10525,7 +10525,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6482": {
+      "Xamarin.Forms/2.0.1.6495": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -10826,7 +10826,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1": {
+      "Newtonsoft.Json/8.0.2": {
         "compile": {
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         },
@@ -10834,7 +10834,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/3.0.1": {
+      "Plugin.Share/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -12263,9 +12263,9 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugins.Forms.ImageCircle/1.2.0": {
+      "Xam.Plugins.Forms.ImageCircle/1.4.0": {
         "dependencies": {
-          "Xamarin.Forms": "[2.0.0.6482, )"
+          "Xamarin.Forms": "[2.0.1.6495, )"
         },
         "compile": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
@@ -12276,7 +12276,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6482": {
+      "Xamarin.Forms/2.0.1.6495": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -13168,8 +13168,8 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "Newtonsoft.Json/7.0.1": {
-      "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
+    "Newtonsoft.Json/8.0.2": {
+      "sha512": "e5yWmEfu68rmtG431zl9N/7PlNKQDIuiDW5MHlEFAZcecakcxrIGnKqrPAtWNILzK2oNanRB5cD150MYhECK3g==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -13187,12 +13187,12 @@
         "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
         "Newtonsoft.Json.nuspec",
-        "package/services/metadata/core-properties/49e907fc018c4c7ab632e6d4ad4766f8.psmdcp",
+        "package/services/metadata/core-properties/cc8c591d554640789c6a6ef6456f7772.psmdcp",
         "tools/install.ps1"
       ]
     },
-    "Plugin.Share/3.0.1": {
-      "sha512": "GDKtIZ7uEJz1Souuk0k6DaIZUxMVyivraBlft1DR8GJvi0EnnzyMDPdm2tPWL+k9ua3qRg/Ng2zAoyijOVdgNQ==",
+    "Plugin.Share/3.2.1": {
+      "sha512": "iWsEKCd9GbnYpMZt4fhFEG8pPMADo8qP2cglwD80wTZyHGY6Pz6jT7sJFoasv7RKUu5DGMNSTI0eFIzt3Wsjig==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -13237,7 +13237,7 @@
         "lib/Xamarin.iOS10/Plugin.Share.Abstractions.xml",
         "lib/Xamarin.iOS10/Plugin.Share.dll",
         "lib/Xamarin.iOS10/Plugin.Share.xml",
-        "package/services/metadata/core-properties/a4b03fefac6e46028941c2d0e0581c6a.psmdcp",
+        "package/services/metadata/core-properties/7eb96abf88f94c80bf44b2d7e9811574.psmdcp",
         "Plugin.Share.nuspec"
       ]
     },
@@ -16066,8 +16066,8 @@
         "System.Xml.XmlSerializer.nuspec"
       ]
     },
-    "Xam.Plugins.Forms.ImageCircle/1.2.0": {
-      "sha512": "gmM/gtdYpdqfPnIwbGTr2TEMtIXUb4daLE3xwnH4c4VXFaakOWQuDYvX8oa6N5CYgHxr0W0oUdNwvB2hZ6iy+g==",
+    "Xam.Plugins.Forms.ImageCircle/1.4.0": {
+      "sha512": "UuSGm6JG4BIAJyR3haIquP699T7pWtfr//EpB6JF33ZbpMjzxfeofYknPARk0bjnJtw0V79jvhNhR1BVvDMtdw==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -16113,12 +16113,12 @@
         "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.Abstractions.xml",
         "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.iOS.dll",
         "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.iOS.xml",
-        "package/services/metadata/core-properties/b001bea97d3446cbb89cb8e65c3c917c.psmdcp",
+        "package/services/metadata/core-properties/bb8980eb357145ffb7ab031014797ecf.psmdcp",
         "Xam.Plugins.Forms.ImageCircle.nuspec"
       ]
     },
-    "Xamarin.Forms/2.0.0.6482": {
-      "sha512": "ZE9oH3uZY1gUwFiBB4Wr9y2CD73nWgJTHkSx2EZC9MrchSevV5SKTeP4UG4iy3NyuAPtXzBFgXfKCtRIN7ZR/g==",
+    "Xamarin.Forms/2.0.1.6495": {
+      "sha512": "kylEtGeoZuv7nIMJ8Ge6ydnuL01nNsPpEi5afBzpQCvPL2Mw77EnAzrperjGsKRY+kSDWklHrc8pyhOON2HG0g==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -16194,6 +16194,7 @@
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.dll",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone.dll",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone.pri",
+        "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/FormsTextBoxStyle.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/PhoneResources.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/Resources.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/SearchBox.xbf",
@@ -16211,7 +16212,7 @@
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
-        "package/services/metadata/core-properties/d30c4c06c20b4f1592d2217f698fe25a.psmdcp",
+        "package/services/metadata/core-properties/06bfeba8e93e4e3b8a5779d53c35c1ef.psmdcp",
         "tools/init.ps1",
         "tools/Xamarin.Forms.Core.Design.dll",
         "tools/Xamarin.Forms.Xaml.Design.dll",
@@ -16224,10 +16225,10 @@
       "LinqToTwitter >= 3.1.2",
       "Microsoft.Net.Http >= 2.2.29",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
-      "Newtonsoft.Json >= 7.0.1",
-      "Plugin.Share >= 3.0.1",
-      "Xam.Plugins.Forms.ImageCircle >= 1.2.0",
-      "Xamarin.Forms >= 2.0.0.6482"
+      "Newtonsoft.Json >= 8.0.2",
+      "Plugin.Share >= 3.2.1",
+      "Xam.Plugins.Forms.ImageCircle >= 1.4.0",
+      "Xamarin.Forms >= 2.0.1.6495"
     ],
     "UAP,Version=v10.0": []
   }
