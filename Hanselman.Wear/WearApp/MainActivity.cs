@@ -25,21 +25,21 @@ namespace WearApp
              NoHistory = true,
              StateNotNeeded = true)]
   public class MainActivity : Activity,
-    IDataApiDataListener, IGoogleApiClientConnectionCallbacks, 
-    IGoogleApiClientOnConnectionFailedListener, IResultCallback
+    IDataApiDataListener, GoogleApiClient.IConnectionCallbacks, 
+    GoogleApiClient.IOnConnectionFailedListener, IResultCallback
   {
     const string TweetsPath = "/hanselman/Tweets";
 
     GridViewPager viewPager;
     ProgressBar progress;
-    IGoogleApiClient client;
+    GoogleApiClient client;
     INode phoneNode;
     Handler handler;
     protected override void OnCreate(Bundle bundle)
     {
       base.OnCreate(bundle);
       handler = new Handler();
-      client = new GoogleApiClientBuilder(this, this, this)
+      client = new GoogleApiClient.Builder(this, this, this)
         .AddApi(WearableClass.API)
         .Build();
       // Set our view from the "main" layout resource

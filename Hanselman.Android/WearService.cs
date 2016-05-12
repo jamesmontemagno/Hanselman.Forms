@@ -43,7 +43,7 @@ namespace HanselmanAndroid
             try
             {
                 Android.Util.Log.Info("WearIntegration", "Received Message");
-                var client = new GoogleApiClientBuilder(this)
+                var client = new GoogleApiClient.Builder(this)
                   .AddApi(WearableClass.API)
                   .Build();
 

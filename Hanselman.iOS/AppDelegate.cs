@@ -37,8 +37,7 @@ namespace Hanselman.iOS
             Forms.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
-
-            Plugin.Share.ShareImplementation.UseSafariViewController = true;
+            
 
             return base.FinishedLaunching(app, options);
         }

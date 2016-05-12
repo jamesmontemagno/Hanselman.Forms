@@ -2,11 +2,11 @@
   "dependencies": {
     "LinqToTwitter": "3.1.2",
     "Microsoft.Net.Http": "2.2.29",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Newtonsoft.Json": "8.0.2",
-    "Plugin.Share": "3.2.1",
-    "Xam.Plugins.Forms.ImageCircle": "1.4.0",
-    "Xamarin.Forms": "2.0.1.6495"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
+    "Newtonsoft.Json": "8.0.3",
+    "Plugin.Share": "4.0.0",
+    "Xam.Plugins.Forms.ImageCircle": "1.4.1",
+    "Xamarin.Forms": "2.2.0.31"
   },
   "frameworks": {
     "uap10.0": {}
