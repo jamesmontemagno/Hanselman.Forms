@@ -1,9 +1,0 @@
-﻿<Properties StartupItem="Hanselman.Android/Hanselman.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Hanselman.Android AndroidDesignerPreferredDevice="Nexus 4" />
-</Properties>

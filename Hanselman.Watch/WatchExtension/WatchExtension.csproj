@@ -107,14 +107,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WatchApp\WatchApp.csproj">
-      <Project>{8dedc875-b3a8-4305-8894-f1bee88a3658}</Project>
-      <Name>WatchApp</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>true</IsWatchApp>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="Info.plist">
       <SubType>Designer</SubType>
