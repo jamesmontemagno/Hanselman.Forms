@@ -328,7 +328,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/4.0.0": {
+      "Plugin.Share/4.0.2": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -1918,7 +1918,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.0.107": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -2209,7 +2209,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/4.0.0": {
+      "Plugin.Share/4.0.2": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -3710,7 +3710,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.0.107": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -3998,7 +3998,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/4.0.0": {
+      "Plugin.Share/4.0.2": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -5460,7 +5460,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.0.107": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -5756,7 +5756,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/4.0.0": {
+      "Plugin.Share/4.0.2": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -7260,7 +7260,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.0.107": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -7548,7 +7548,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/4.0.0": {
+      "Plugin.Share/4.0.2": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -9010,7 +9010,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.0.107": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -9306,7 +9306,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/4.0.0": {
+      "Plugin.Share/4.0.2": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -10810,7 +10810,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.0.107": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -11098,7 +11098,7 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Share/4.0.0": {
+      "Plugin.Share/4.0.2": {
         "compile": {
           "lib/UAP10/Plugin.Share.Abstractions.dll": {},
           "lib/UAP10/Plugin.Share.dll": {}
@@ -12560,7 +12560,7 @@
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.0.107": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -13424,11 +13424,11 @@
         "tools/install.ps1"
       ]
     },
-    "Plugin.Share/4.0.0": {
-      "sha512": "1Gvy/tJdFFXI6bKRHobWgUbgqa81ycqbdODkXmHjfy5oXBGhOMO2zgjkB25/oqu3AgJUcP8x+yKlSuHvZeW+fw==",
+    "Plugin.Share/4.0.2": {
+      "sha512": "FO50hy3MT2Pn3qmjxO7JTcckI1fd1qXN3A2GHwLZ1DMtDyn+CA8D+KrU/c30lGC+BXF6msZev8ERNaiE2nyr+Q==",
       "type": "package",
       "files": [
-        "Plugin.Share.4.0.0.nupkg.sha512",
+        "Plugin.Share.4.0.2.nupkg.sha512",
         "Plugin.Share.nuspec",
         "lib/MonoAndroid10/Plugin.Share.Abstractions.dll",
         "lib/MonoAndroid10/Plugin.Share.Abstractions.pdb",
@@ -16505,11 +16505,11 @@
         "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.xml"
       ]
     },
-    "Xamarin.Forms/2.2.0.31": {
-      "sha512": "UQ3Km0Lway+n0b9lfZczE+sPtRzMyY9oJHCKSSjsoTeEOiZfQkBDIcL7SzNYEdBCFaU9He4lnASgfRD6yHdEtg==",
+    "Xamarin.Forms/2.3.0.107": {
+      "sha512": "M8PeslwD6Ngr1Qku5nRuk/kL2TmJKJx7DscHWPGH8Z9HR1hpb2vk0tKN0COqTJUtD0+458VKRMewWdQm14Zd6g==",
       "type": "package",
       "files": [
-        "Xamarin.Forms.2.2.0.31.nupkg.sha512",
+        "Xamarin.Forms.2.3.0.107.nupkg.sha512",
         "Xamarin.Forms.nuspec",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.Decompiler.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.NRefactory.CSharp.dll",
@@ -16707,9 +16707,9 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Microsoft.Net.Http >= 2.2.29",
       "Newtonsoft.Json >= 8.0.3",
-      "Plugin.Share >= 4.0.0",
+      "Plugin.Share >= 4.0.2",
       "Xam.Plugins.Forms.ImageCircle >= 1.4.1",
-      "Xamarin.Forms >= 2.2.0.31"
+      "Xamarin.Forms >= 2.3.0.107"
     ],
     "UAP,Version=v10.0": []
   }

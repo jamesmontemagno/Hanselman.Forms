@@ -2503,8 +2503,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0200d5
 			public const int mr_ic_play_light = 2130837717;
 			
-			// aapt resource value: 0x7f0200df
-			public const int notification_template_icon_bg = 2130837727;
+			// aapt resource value: 0x7f0200e0
+			public const int notification_template_icon_bg = 2130837728;
 			
 			// aapt resource value: 0x7f0200d6
 			public const int ratchet = 2130837718;
@@ -2522,16 +2522,19 @@ namespace HanselmanAndroid
 			public const int scott159 = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int tdl = 2130837723;
+			public const int slideout = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int tdl_full = 2130837724;
+			public const int tdl = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int twitter = 2130837725;
+			public const int tdl_full = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int twitternav = 2130837726;
+			public const int twitter = 2130837726;
+			
+			// aapt resource value: 0x7f0200df
+			public const int twitternav = 2130837727;
 			
 			static Drawable()
 			{
