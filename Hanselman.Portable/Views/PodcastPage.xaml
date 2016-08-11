@@ -11,6 +11,7 @@
                CachingStrategy="RecycleElement"
               ItemsSource="{Binding FeedItems}"
               HasUnevenRows="True"
+              RowHeight="250"
               IsPullToRefreshEnabled="True"
               RefreshCommand="{Binding LoadItemsCommand}"
               IsRefreshing="{Binding IsBusy, Mode=OneWay}"

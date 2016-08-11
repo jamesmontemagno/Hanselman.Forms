@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.Android", "Hanselman.Android\Hanselman.Android.csproj", "{6BE27B2E-552F-43B2-82D5-058D7F180CEC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.iOS", "Hanselman.iOS\Hanselman.iOS.csproj", "{E5B4A6E4-CAAA-4E33-BC65-4D8214905BB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.Portable", "Hanselman.Portable\Hanselman.Portable.csproj", "{028799A4-E2FD-4901-B950-666C00EFBF63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman", "Hanselman.Portable\Hanselman.csproj", "{028799A4-E2FD-4901-B950-666C00EFBF63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.UWP", "Hanselman.UWP\Hanselman.UWP.csproj", "{36964AAD-4E8B-4072-8205-6EB8FE871425}"
 EndProject
