@@ -4,9 +4,9 @@
     "Microsoft.Net.Http": "2.2.29",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
     "Newtonsoft.Json": "9.0.1",
-    "Plugin.Share": "4.0.2",
-    "Xam.Plugins.Forms.ImageCircle": "1.6.1-beta10",
-    "Xamarin.Forms": "2.3.1.114"
+    "Plugin.Share": "4.0.3",
+    "Xam.Plugins.Forms.ImageCircle": "1.8.0.5",
+    "Xamarin.Forms": "2.3.2.127"
   },
   "frameworks": {
     "uap10.0": {}

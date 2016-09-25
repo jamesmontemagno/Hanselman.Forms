@@ -6,7 +6,7 @@
              Title="{Binding Title}" Icon="{Binding Icon}"  IsBusy="{Binding IsBusy}">
     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ListView 
-               CachingStrategy="RecycleElement"
+              CachingStrategy="RecycleElement"
               x:Name="listView" 
               ItemsSource="{Binding Tweets}"
               HasUnevenRows="True"
@@ -24,7 +24,11 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
               </Grid.ColumnDefinitions>
-              <controls:CircleImage Source="{Binding Image}" VerticalOptions="Center">
+              <controls:CircleImage Source="{Binding Image}"
+                                    VerticalOptions="Center"
+                                    BorderColor="#03A9F4"
+                                    BorderThickness="2"
+                                    FillColor="#03A9F4">
                 <controls:CircleImage.WidthRequest>
                   <OnPlatform x:TypeArguments="x:Double">
                     <OnPlatform.iOS>55</OnPlatform.iOS>

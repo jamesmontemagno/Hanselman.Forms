@@ -12,6 +12,7 @@ namespace Hanselman.Portable.Views
         Dictionary<MenuType, NavigationPage> Pages { get; set;} 
         public RootPage()
         {
+            
             Pages = new Dictionary<MenuType, NavigationPage>();
             Master = new MenuPage(this);
             BindingContext = new BaseViewModel
@@ -29,6 +30,16 @@ namespace Hanselman.Portable.Views
 
         public async Task NavigateAsync(MenuType id)
         {
+
+            if (Detail != null)
+            {
+                if (IsUWPDesktop || Device.Idiom != TargetIdiom.Tablet)
+                    IsPresented = false;
+
+                if (Device.OS == TargetPlatform.Android)
+                    await Task.Delay(300);
+            }
+
             Page newPage;
             if (!Pages.ContainsKey(id))
             {
@@ -67,12 +78,6 @@ namespace Hanselman.Portable.Views
             }
 
             Detail = newPage;
-
-            if (IsUWPDesktop)
-                return;
-
-            if(Device.Idiom != TargetIdiom.Tablet)
-                IsPresented = false;
         }
     }
 }
