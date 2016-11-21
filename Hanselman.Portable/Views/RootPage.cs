@@ -64,6 +64,9 @@ namespace Hanselman.Portable.Views
                     case MenuType.Twitter:
                         Pages.Add(id, new HanselmanNavigationPage(new TwitterPage()));
                         break;
+                    case MenuType.Videos:
+                        Pages.Add(id, new HanselmanNavigationPage(new Channel9VideosPage()));
+                        break;
                 }
             }
 

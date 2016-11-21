@@ -34,6 +34,7 @@ namespace Hanselman.Portable.Views
                     new HomeMenuItem { Title = "Hanselminutes", MenuType = MenuType.Hanselminutes, Icon = "hm.png" },
                     new HomeMenuItem { Title = "Ratchet", MenuType = MenuType.Ratchet, Icon = "ratchet.png" },
                     new HomeMenuItem { Title = "Developers Life", MenuType = MenuType.DeveloperLife, Icon = "tdl.png"},
+                    new HomeMenuItem { Title = "Channel9 Videos", MenuType = MenuType.Videos, Icon = "channel9.png"},
 
                 };
 

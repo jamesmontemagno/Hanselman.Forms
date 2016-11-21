@@ -58,6 +58,14 @@ namespace Hanselman.Portable
                 MenuType = MenuType.DeveloperLife,
                 Icon = "tdl.png"
             });
+
+            MenuItems.Add(new HomeMenuItem
+            {
+                Id = 5,
+                Title = "Channel 9 videos",
+                MenuType = MenuType.Videos,
+                Icon = "channel9.png"
+            });
         }
 
     }

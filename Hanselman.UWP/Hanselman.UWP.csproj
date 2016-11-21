@@ -112,6 +112,7 @@
   <ItemGroup>
     <Content Include="about.png" />
     <Content Include="blog.png" />
+    <Content Include="channel9.png" />
     <Content Include="facebook.png" />
     <Content Include="googleplus.png" />
     <Content Include="hm.png" />

@@ -9,7 +9,8 @@ namespace Hanselman.Portable
         Twitter,
         Hanselminutes,
         Ratchet,
-        DeveloperLife
+        DeveloperLife,
+        Videos
     }
     public class HomeMenuItem : BaseModel
     {
