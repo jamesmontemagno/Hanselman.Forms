@@ -31,8 +31,8 @@ namespace Hanselman.Portable.Views
                     new HomeMenuItem { Title = "About", MenuType = MenuType.About, Icon ="about.png" },
                     new HomeMenuItem { Title = "Blog", MenuType = MenuType.Blog, Icon = "blog.png" },
                     new HomeMenuItem { Title = "Twitter", MenuType = MenuType.Twitter, Icon = "twitternav.png" },
-                    new HomeMenuItem { Title = "Hanselminues", MenuType = MenuType.Hanselminutes, Icon = "hm.png" },
-                    new HomeMenuItem { Title = "Ratchet", MenuType =MenuType.Ratchet, Icon = "ratchet.png" },
+                    new HomeMenuItem { Title = "Hanselminutes", MenuType = MenuType.Hanselminutes, Icon = "hm.png" },
+                    new HomeMenuItem { Title = "Ratchet", MenuType = MenuType.Ratchet, Icon = "ratchet.png" },
                     new HomeMenuItem { Title = "Developers Life", MenuType = MenuType.DeveloperLife, Icon = "tdl.png"},
 
                 };
