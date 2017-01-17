@@ -13,7 +13,7 @@ namespace $safeprojectname$.Portable
         public HomeViewModel()
         {
             CanLoadMore = true;
-            Title = "Hanselman";
+            Title = "$safeprojectname$";
             MenuItems = new ObservableCollection<HomeMenuItem>();
             MenuItems.Add(new HomeMenuItem
             {

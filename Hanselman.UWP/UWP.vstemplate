@@ -1,0 +1,65 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Hanselman.UWP</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Cross-Platform</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Hanselman.UWP</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="Hanselman.UWP.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="about.png">about.png</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <Folder Name="Assets" TargetFolderName="Assets">
+        <ProjectItem ReplaceParameters="false" TargetFileName="LockScreenLogo.scale-200.png">LockScreenLogo.scale-200.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SplashScreen.scale-200.png">SplashScreen.scale-200.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Square150x150Logo.scale-200.png">Square150x150Logo.scale-200.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.scale-200.png">Square44x44Logo.scale-200.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.targetsize-24_altform-unplated.png">Square44x44Logo.targetsize-24_altform-unplated.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="StoreLogo.png">StoreLogo.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Wide310x150Logo.scale-200.png">Wide310x150Logo.scale-200.png</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="blog.png">blog.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="facebook.png">facebook.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="googleplus.png">googleplus.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="$safeprojectname$_TemporaryKey.pfx">Hanselman.UWP_TemporaryKey.pfx</ProjectItem>
+      <Folder Name="Helpers" TargetFolderName="Helpers" />
+      <ProjectItem ReplaceParameters="false" TargetFileName="hm.png">hm.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="hm_full.jpg">hm_full.jpg</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ic_play.png">ic_play.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ic_share.png">ic_share.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ic_stop.png">ic_stop.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="instagram.png">instagram.png</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml">MainPage.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml.cs">MainPage.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Package.appxmanifest">Package.appxmanifest</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">project.json</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Default.rd.xml">Default.rd.xml</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ratchet.png">ratchet.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ratchet_full.jpg">ratchet_full.jpg</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="refresh.png">refresh.png</ProjectItem>
+      <Folder Name="Renderers" TargetFolderName="Renderers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AudioPlayerRenderer.cs">AudioPlayerRenderer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ImageCircle.cs">ImageCircle.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="scott.png">scott.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="scott159.png">scott159.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="scotticon.png">scotticon.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="slideout.png">slideout.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="tdl.png">tdl.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="tdl_full.jpg">tdl_full.jpg</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="twitter.png">twitter.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="twitternav.png">twitternav.png</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

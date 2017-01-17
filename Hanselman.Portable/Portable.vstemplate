@@ -1,0 +1,66 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Hanselman.Portable</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Cross-Platform</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Hanselman.Portable</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="Hanselman.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.cs">App.cs</ProjectItem>
+      <Folder Name="Controls" TargetFolderName="Controls">
+        <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$NavigationPage.cs">HanselmanNavigationPage.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Helpers" TargetFolderName="Helpers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AudioPlayer.cs">AudioPlayer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FancyListCell.cs">FancyListCell.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ILaunchTwitter.cs">ILaunchTwitter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ITweetStore.cs">ITweetStore.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ListImageCell.cs">ListImageCell.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseModel.cs">BaseModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FeedItem.cs">FeedItem.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeMenuItem.cs">HomeMenuItem.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Scott.cs">Scott.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Tweet.cs">Tweet.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseViewModel.cs">BaseViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlogFeedViewModel.cs">BlogFeedViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeViewModel.cs">HomeViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PodcastViewModel.cs">PodcastViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TwitterViewModel.cs">TwitterViewModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AboutPage.xaml">AboutPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AboutPage.xaml.cs">AboutPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseView.cs">BaseView.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlogDetailsView.cs">BlogDetailsView.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlogPage.xaml">BlogPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlogPage.xaml.cs">BlogPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MenuPage.xaml">MenuPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MenuPage.xaml.cs">MenuPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PodcastPage.xaml">PodcastPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PodcastPage.xaml.cs">PodcastPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PodcastPlaybackPage.xaml">PodcastPlaybackPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PodcastPlaybackPage.xaml.cs">PodcastPlaybackPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RootPage.cs">RootPage.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TwitterPage.xaml">TwitterPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TwitterPage.xaml.cs">TwitterPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WebsiteView.cs">WebsiteView.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

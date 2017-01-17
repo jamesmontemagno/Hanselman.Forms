@@ -1,0 +1,81 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Hanselman.iOS</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Cross-Platform</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Hanselman.iOS</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="Hanselman.iOS.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AppDelegate.cs">AppDelegate.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Entitlements.plist">Entitlements.plist</ProjectItem>
+      <Folder Name="Helpers" TargetFolderName="Helpers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Color.cs">Color.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LaunchTwitter.cs">LaunchTwitter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TweetStore.cs">TweetStore.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Info.plist">Info.plist</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LaunchScreen.storyboard">LaunchScreen.storyboard</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Main.cs">Main.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Renderers" TargetFolderName="Renderers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AudioPlayerRenderer.cs">AudioPlayerRenderer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="false" TargetFileName="about.png">about.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="about@2x.png">about@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="blog.png">blog.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="blog@2x.png">blog@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Default-568h@2x.png">Default-568h@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Default@2x.png">Default@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="facebook.png">facebook.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="facebook@2x.png">facebook@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="googleplus.png">googleplus.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="googleplus@2x.png">googleplus@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hm.png">hm.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hm@2x.png">hm@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hm_full.jpg">hm_full.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ic_pause.png">ic_pause.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ic_pause@2x.png">ic_pause@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ic_play.png">ic_play.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ic_play@2x.png">ic_play@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ic_share.png">ic_share.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ic_share@2x.png">ic_share@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ic_stop.png">ic_stop.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ic_stop@2x.png">ic_stop@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Icon-60@2x.png">Icon-60@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Icon-Small-40@2x.png">Icon-Small-40@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Icon-Small.png">Icon-Small.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Icon-Small@2x.png">Icon-Small@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Icon.png">Icon.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Icon@2x.png">Icon@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="instagram.png">instagram.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="instagram@2x.png">instagram@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ratchet.png">ratchet.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ratchet@2x.png">ratchet@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ratchet_full.jpg">ratchet_full.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="refresh.png">refresh.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="refresh@2x.png">refresh@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="scott.png">scott.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="scott159.png">scott159.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="slideout.png">slideout.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="slideout@2x.png">slideout@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="tdl.png">tdl.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="tdl@2x.png">tdl@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="tdl_full.jpg">tdl_full.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="twitter.png">twitter.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="twitter@2x.png">twitter@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="twitternav.png">twitternav.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="twitternav@2x.png">twitternav@2x.png</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

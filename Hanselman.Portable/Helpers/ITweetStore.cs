@@ -1,7 +1,7 @@
 using System;
 
 
-namespace $safeprojectname$
+namespace $safeprojectname$.Portable
 {
     public interface ITweetStore
     {

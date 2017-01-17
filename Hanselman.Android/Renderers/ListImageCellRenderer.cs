@@ -11,12 +11,12 @@ using View = global::Android.Views.View;
 using ViewGroup = global::Android.Views.ViewGroup;
 using Context = global::Android.Content.Context;
 using ListView = global::Android.Widget.ListView;
-using $safeprojectname$.Portable;
-using $safeprojectname$Android;
+using $ext_safeprojectname$.Portable;
+using $safeprojectname$;
 
 [assembly: ExportCell(typeof(ListImageCell), typeof(ListImageCellRenderer))]
 
-namespace $safeprojectname$Android
+namespace $safeprojectname$
 {
     public class ListImageCellRenderer : ImageCellRenderer
     {

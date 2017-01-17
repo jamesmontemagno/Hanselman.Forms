@@ -9,10 +9,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("$safeprojectname$Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("$safeprojectname$.Resource", IsApplication=true)]
 [assembly: global::Android.Runtime.ResourceDesignerAttribute("$safeprojectname$Android.Resource", IsApplication=true)]
 
-namespace $safeprojectname$Android
+namespace $safeprojectname$
 namespace $safeprojectname$Android
 {
 	
@@ -28,7 +28,7 @@ namespace $safeprojectname$Android
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::$safeprojectname$Android.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::$safeprojectname$.Resource.Attribute.actionBarSize;
 			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_fade_in = global::$safeprojectname$Android.Resource.Animation.abc_fade_in;
 			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_fade_out = global::$safeprojectname$Android.Resource.Animation.abc_fade_out;
 			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::$safeprojectname$Android.Resource.Animation.abc_grow_fade_in_from_bottom;

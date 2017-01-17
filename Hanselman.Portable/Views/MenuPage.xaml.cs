@@ -21,8 +21,8 @@ namespace $safeprojectname$.Portable.Views
             }
             BindingContext = new BaseViewModel
                 {
-                    Title = "Hanselman.Forms",
-                    Subtitle="Hanselman.Forms",
+                    Title = "$safeprojectname$",
+                    Subtitle="$safeprojectname$",
                     Icon = "slideout.png"
                 };
 

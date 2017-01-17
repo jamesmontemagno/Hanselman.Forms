@@ -19,7 +19,7 @@ namespace $safeprojectname$.Portable.Views
             Master = new MenuPage(this);
             BindingContext = new BaseViewModel
                 {
-                    Title = "Hanselman",
+                    Title = "$safeprojectname$",
                     Icon = "slideout.png"
                 };
             //setup home page
