@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D101BB67-56F2-4CB5-94FE-FE9B59A5D898}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Hanselman_Starter</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hanselman.Android\app.config" />
+    <None Include="Hanselman.Android\packages.config" />
+    <None Include="Hanselman.Android\Resources\layout\tabs.axml" />
+    <None Include="Hanselman.Android\Resources\layout\toolbar.axml" />
+    <None Include="Hanselman.iOS\app.config" />
+    <None Include="Hanselman.iOS\LaunchScreen.storyboard" />
+    <None Include="Hanselman.iOS\packages.config" />
+    <None Include="Hanselman.Portable\packages.config" />
+    <None Include="Hanselman.UWP\bin\x86\Debug\AppX\WinMetadata\Windows.winmd" />
+    <None Include="Hanselman.UWP\Hanselman.UWP.nuget.targets" />
+    <None Include="Hanselman.UWP\Hanselman.UWP_TemporaryKey.pfx" />
+    <None Include="Hanselman.UWP\Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hanselman.UWP\project.json" />
+    <None Include="Hanselman.UWP\project.lock.json" />
+    <None Include="Hanselman.Watch\WatchApp\Interface.storyboard" />
+    <None Include="Hanselman.Watch\WatchExtension\app.config" />
+    <None Include="Hanselman.Watch\WatchExtension\packages.config" />
+    <None Include="Hanselman.Watch\WatchExtension\PushNotificationPayload.json" />
+    <None Include="Hanselman.Wear\WearApp\app.config" />
+    <None Include="Hanselman.Wear\WearApp\packages.config" />
+    <None Include="Hanselman.Wear\WearApp\Resources\layout\Main.axml" />
+    <None Include="LICENSE.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hanselman.Android\Assets\AboutAssets.txt" />
+    <Content Include="Hanselman.Android\Hanselman.Android.csproj" />
+    <Content Include="Hanselman.Android\Hanselman.Android.csproj.user" />
+    <Content Include="Hanselman.Android\Properties\AndroidManifest.xml" />
+    <Content Include="Hanselman.Android\Resources\AboutResources.txt" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\about.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\blog.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\ic_launcher.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\ic_pause.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\ic_play.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\ic_share.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\ic_stop.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\refresh.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-hdpi\twitternav.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\about.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\blog.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\ic_launcher.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\ic_pause.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\ic_play.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\ic_share.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\ic_stop.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\refresh.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-mdpi\twitternav.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\about.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\blog.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\ic_launcher.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\ic_pause.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\ic_play.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\ic_share.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\ic_stop.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\refresh.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xhdpi\twitternav.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\about.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\blog.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\ic_launcher.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\ic_pause.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\ic_play.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\ic_share.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\ic_stop.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\refresh.png" />
+    <Content Include="Hanselman.Android\Resources\drawable-xxhdpi\twitternav.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\facebook.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\googleplus.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\hm.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\hm_full.jpg" />
+    <Content Include="Hanselman.Android\Resources\drawable\instagram.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\ratchet.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\ratchet_full.jpg" />
+    <Content Include="Hanselman.Android\Resources\drawable\scott.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\scott159.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\slideout.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\tdl.png" />
+    <Content Include="Hanselman.Android\Resources\drawable\tdl_full.jpg" />
+    <Content Include="Hanselman.Android\Resources\drawable\twitter.png" />
+    <Content Include="Hanselman.Android\Resources\values-v21\styles.xml" />
+    <Content Include="Hanselman.Android\Resources\values\Colors.xml" />
+    <Content Include="Hanselman.Android\Resources\values\Strings.xml" />
+    <Content Include="Hanselman.Android\Resources\values\styles.xml" />
+    <Content Include="Hanselman.Android\Resources\xml\wearable_app_desc.xml" />
+    <Content Include="Hanselman.iOS\Entitlements.plist" />
+    <Content Include="Hanselman.iOS\Hanselman.iOS.csproj" />
+    <Content Include="Hanselman.iOS\Info.plist" />
+    <Content Include="Hanselman.iOS\Resources\about%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\about.png" />
+    <Content Include="Hanselman.iOS\Resources\blog%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\blog.png" />
+    <Content Include="Hanselman.iOS\Resources\Default%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\Default-568h%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\facebook%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\facebook.png" />
+    <Content Include="Hanselman.iOS\Resources\googleplus%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\googleplus.png" />
+    <Content Include="Hanselman.iOS\Resources\hm%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\hm.png" />
+    <Content Include="Hanselman.iOS\Resources\hm_full.jpg" />
+    <Content Include="Hanselman.iOS\Resources\Icon%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\Icon-60%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\Icon-Small%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\Icon-Small-40%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\Icon-Small.png" />
+    <Content Include="Hanselman.iOS\Resources\Icon.png" />
+    <Content Include="Hanselman.iOS\Resources\ic_pause%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\ic_pause.png" />
+    <Content Include="Hanselman.iOS\Resources\ic_play%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\ic_play.png" />
+    <Content Include="Hanselman.iOS\Resources\ic_share%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\ic_share.png" />
+    <Content Include="Hanselman.iOS\Resources\ic_stop%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\ic_stop.png" />
+    <Content Include="Hanselman.iOS\Resources\instagram%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\instagram.png" />
+    <Content Include="Hanselman.iOS\Resources\ratchet%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\ratchet.png" />
+    <Content Include="Hanselman.iOS\Resources\ratchet_full.jpg" />
+    <Content Include="Hanselman.iOS\Resources\refresh%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\refresh.png" />
+    <Content Include="Hanselman.iOS\Resources\scott.png" />
+    <Content Include="Hanselman.iOS\Resources\scott159.png" />
+    <Content Include="Hanselman.iOS\Resources\slideout%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\slideout.png" />
+    <Content Include="Hanselman.iOS\Resources\tdl%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\tdl.png" />
+    <Content Include="Hanselman.iOS\Resources\tdl_full.jpg" />
+    <Content Include="Hanselman.iOS\Resources\twitter%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\twitter.png" />
+    <Content Include="Hanselman.iOS\Resources\twitternav%402x.png" />
+    <Content Include="Hanselman.iOS\Resources\twitternav.png" />
+    <Content Include="Hanselman.Portable\Hanselman.csproj" />
+    <Content Include="Hanselman.UWP\about.png" />
+    <Content Include="Hanselman.UWP\Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Hanselman.UWP\Assets\SplashScreen.scale-200.png" />
+    <Content Include="Hanselman.UWP\Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Hanselman.UWP\Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Hanselman.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Hanselman.UWP\Assets\StoreLogo.png" />
+    <Content Include="Hanselman.UWP\Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Hanselman.UWP\bin\x86\Debug\AppX\Properties\Default.rd.xml" />
+    <Content Include="Hanselman.UWP\bin\x86\Debug\AppX\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml" />
+    <Content Include="Hanselman.UWP\bin\x86\Debug\AppX\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml" />
+    <Content Include="Hanselman.UWP\bin\x86\Debug\Core\AppxManifest.xml" />
+    <Content Include="Hanselman.UWP\bin\x86\Debug\Core\Hanselman.UWP.exe" />
+    <Content Include="Hanselman.UWP\blog.png" />
+    <Content Include="Hanselman.UWP\facebook.png" />
+    <Content Include="Hanselman.UWP\googleplus.png" />
+    <Content Include="Hanselman.UWP\Hanselman.UWP.csproj" />
+    <Content Include="Hanselman.UWP\Hanselman.UWP.csproj.user" />
+    <Content Include="Hanselman.UWP\hm.png" />
+    <Content Include="Hanselman.UWP\hm_full.jpg" />
+    <Content Include="Hanselman.UWP\ic_play.png" />
+    <Content Include="Hanselman.UWP\ic_share.png" />
+    <Content Include="Hanselman.UWP\ic_stop.png" />
+    <Content Include="Hanselman.UWP\instagram.png" />
+    <Content Include="Hanselman.UWP\Properties\Default.rd.xml" />
+    <Content Include="Hanselman.UWP\ratchet.png" />
+    <Content Include="Hanselman.UWP\ratchet_full.jpg" />
+    <Content Include="Hanselman.UWP\refresh.png" />
+    <Content Include="Hanselman.UWP\scott.png" />
+    <Content Include="Hanselman.UWP\scott159.png" />
+    <Content Include="Hanselman.UWP\scotticon.png" />
+    <Content Include="Hanselman.UWP\slideout.png" />
+    <Content Include="Hanselman.UWP\tdl.png" />
+    <Content Include="Hanselman.UWP\tdl_full.jpg" />
+    <Content Include="Hanselman.UWP\twitter.png" />
+    <Content Include="Hanselman.UWP\twitternav.png" />
+    <Content Include="Hanselman.Watch\WatchApp\Entitlements.plist" />
+    <Content Include="Hanselman.Watch\WatchApp\Info.plist" />
+    <Content Include="Hanselman.Watch\WatchApp\Resources\scott.png" />
+    <Content Include="Hanselman.Watch\WatchApp\WatchApp.csproj" />
+    <Content Include="Hanselman.Watch\WatchExtension\Entitlements.plist" />
+    <Content Include="Hanselman.Watch\WatchExtension\Info.plist" />
+    <Content Include="Hanselman.Watch\WatchExtension\Resources\scott.png" />
+    <Content Include="Hanselman.Watch\WatchExtension\WatchExtension.csproj" />
+    <Content Include="Hanselman.Wear\WearApp\Assets\AboutAssets.txt" />
+    <Content Include="Hanselman.Wear\WearApp\Properties\AndroidManifest.xml" />
+    <Content Include="Hanselman.Wear\WearApp\Resources\AboutResources.txt" />
+    <Content Include="Hanselman.Wear\WearApp\Resources\drawable-hdpi\ic_launcher.png" />
+    <Content Include="Hanselman.Wear\WearApp\Resources\drawable-mdpi\ic_launcher.png" />
+    <Content Include="Hanselman.Wear\WearApp\Resources\drawable-xhdpi\ic_launcher.png" />
+    <Content Include="Hanselman.Wear\WearApp\Resources\drawable-xxhdpi\ic_launcher.png" />
+    <Content Include="Hanselman.Wear\WearApp\Resources\drawable\scott.jpeg" />
+    <Content Include="Hanselman.Wear\WearApp\Resources\values\strings.xml" />
+    <Content Include="Hanselman.Wear\WearApp\WearApp.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hanselman.Android\Helpers\Color.cs" />
+    <Compile Include="Hanselman.Android\MainActivity.cs" />
+    <Compile Include="Hanselman.Android\MainApplication.cs" />
+    <Compile Include="Hanselman.Android\Properties\AssemblyInfo.cs" />
+    <Compile Include="Hanselman.Android\Renderers\AudioPlayerRenderer.cs" />
+    <Compile Include="Hanselman.Android\Renderers\ListImageCellRenderer.cs" />
+    <Compile Include="Hanselman.Android\Resources\Resource.designer.cs" />
+    <Compile Include="Hanselman.Android\WearService.cs" />
+    <Compile Include="Hanselman.iOS\AppDelegate.cs" />
+    <Compile Include="Hanselman.iOS\Helpers\Color.cs" />
+    <Compile Include="Hanselman.iOS\Helpers\LaunchTwitter.cs" />
+    <Compile Include="Hanselman.iOS\Helpers\TweetStore.cs" />
+    <Compile Include="Hanselman.iOS\Main.cs" />
+    <Compile Include="Hanselman.iOS\Renderers\AudioPlayerRenderer.cs" />
+    <Compile Include="Hanselman.Portable\App.cs" />
+    <Compile Include="Hanselman.Portable\Controls\HanselmanNavigationPage.cs" />
+    <Compile Include="Hanselman.Portable\HanselmanApp.cs" />
+    <Compile Include="Hanselman.Portable\Helpers\AudioPlayer.cs" />
+    <Compile Include="Hanselman.Portable\Helpers\FancyListCell.cs" />
+    <Compile Include="Hanselman.Portable\Helpers\ILaunchTwitter.cs" />
+    <Compile Include="Hanselman.Portable\Helpers\ITweetStore.cs" />
+    <Compile Include="Hanselman.Portable\Helpers\ListImageCell.cs" />
+    <Compile Include="Hanselman.Portable\Models\BaseModel.cs" />
+    <Compile Include="Hanselman.Portable\Models\FeedItem.cs" />
+    <Compile Include="Hanselman.Portable\Models\HomeMenuItem.cs" />
+    <Compile Include="Hanselman.Portable\Models\Scott.cs" />
+    <Compile Include="Hanselman.Portable\Models\Tweet.cs" />
+    <Compile Include="Hanselman.Portable\Properties\AssemblyInfo.cs" />
+    <Compile Include="Hanselman.Portable\ViewModels\BaseViewModel.cs" />
+    <Compile Include="Hanselman.Portable\ViewModels\BlogFeedViewModel.cs" />
+    <Compile Include="Hanselman.Portable\ViewModels\HomeViewModel.cs" />
+    <Compile Include="Hanselman.Portable\ViewModels\PodcastViewModel.cs" />
+    <Compile Include="Hanselman.Portable\ViewModels\TwitterViewModel.cs" />
+    <Compile Include="Hanselman.Portable\Views\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Portable\Views\BaseView.cs" />
+    <Compile Include="Hanselman.Portable\Views\BlogDetailsView.cs" />
+    <Compile Include="Hanselman.Portable\Views\BlogPage.xaml.cs">
+      <DependentUpon>BlogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Portable\Views\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Portable\Views\PodcastPage.xaml.cs">
+      <DependentUpon>PodcastPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Portable\Views\PodcastPlaybackPage.xaml.cs">
+      <DependentUpon>PodcastPlaybackPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Portable\Views\RootPage.cs" />
+    <Compile Include="Hanselman.Portable\Views\TwitterPage.xaml.cs">
+      <DependentUpon>TwitterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Portable\Views\WebsiteView.cs" />
+    <Compile Include="Hanselman.UWP\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.UWP\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.UWP\Properties\AssemblyInfo.cs" />
+    <Compile Include="Hanselman.UWP\Renderers\AudioPlayerRenderer.cs" />
+    <Compile Include="Hanselman.UWP\Renderers\ImageCircle.cs" />
+    <Compile Include="Hanselman.Watch\WatchExtension\GlanceController.cs" />
+    <Compile Include="Hanselman.Watch\WatchExtension\GlanceController.designer.cs">
+      <DependentUpon>GlanceController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Watch\WatchExtension\InterfaceController.cs" />
+    <Compile Include="Hanselman.Watch\WatchExtension\InterfaceController.designer.cs">
+      <DependentUpon>InterfaceController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Watch\WatchExtension\NotificationController.cs" />
+    <Compile Include="Hanselman.Watch\WatchExtension\NotificationController.designer.cs">
+      <DependentUpon>NotificationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Watch\WatchExtension\TweetController.cs" />
+    <Compile Include="Hanselman.Watch\WatchExtension\TweetController.designer.cs">
+      <DependentUpon>TweetController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Watch\WatchExtension\TwitterRow.cs" />
+    <Compile Include="Hanselman.Watch\WatchExtension\TwitterRow.designer.cs">
+      <DependentUpon>TwitterRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hanselman.Wear\WearApp\MainActivity.cs" />
+    <Compile Include="Hanselman.Wear\WearApp\Properties\AssemblyInfo.cs" />
+    <Compile Include="Hanselman.Wear\WearApp\Resources\Resource.designer.cs" />
+    <Compile Include="Hanselman.Wear\WearApp\TweetAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Hanselman.Portable\Views\AboutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hanselman.Portable\Views\BlogPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hanselman.Portable\Views\MenuPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hanselman.Portable\Views\PodcastPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hanselman.Portable\Views\PodcastPlaybackPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hanselman.Portable\Views\TwitterPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hanselman.UWP\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Hanselman.UWP\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Hanselman.UWP\Helpers\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
