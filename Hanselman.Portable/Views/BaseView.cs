@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class BaseView : ContentPage
     {

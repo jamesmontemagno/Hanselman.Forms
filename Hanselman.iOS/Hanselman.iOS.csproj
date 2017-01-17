@@ -6,9 +6,9 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{E5B4A6E4-CAAA-4E33-BC65-4D8214905BB3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Hanselman.iOS</RootNamespace>
+    <RootNamespace>$safeprojectname$.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>HanselmaniOS</AssemblyName>
+    <AssemblyName>$safeprojectname$iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -247,9 +247,9 @@
     <Compile Include="Helpers\Color.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hanselman.Portable\Hanselman.csproj">
+    <ProjectReference Include="..\$safeprojectname$.Portable\$safeprojectname$.csproj">
       <Project>{028799A4-E2FD-4901-B950-666C00EFBF63}</Project>
-      <Name>Hanselman</Name>
+      <Name>$safeprojectname$</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -9,14 +9,14 @@ using Android.OS;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using Android.Content.PM;
-using Hanselman.Portable;
+using $safeprojectname$.Portable;
 using Android.Graphics.Drawables;
 using ImageCircle.Forms.Plugin.Droid;
 using Plugin.MediaManager.Forms;
 
-namespace HanselmanAndroid
+namespace $safeprojectname$Android
 {
-    [Activity(Label = "Hanselman",
+    [Activity(Label = "$safeprojectname$",
         MainLauncher = true,
         ScreenOrientation = ScreenOrientation.Portrait,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

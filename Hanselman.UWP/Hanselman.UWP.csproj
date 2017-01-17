@@ -7,8 +7,8 @@
     <ProjectGuid>{36964AAD-4E8B-4072-8205-6EB8FE871425}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hanselman.UWP</RootNamespace>
-    <AssemblyName>Hanselman.UWP</AssemblyName>
+    <RootNamespace>$safeprojectname$.UWP</RootNamespace>
+    <AssemblyName>$safeprojectname$.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
@@ -17,7 +17,7 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Hanselman.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>$safeprojectname$.UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -106,7 +106,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="Hanselman.UWP_TemporaryKey.pfx" />
+    <None Include="$safeprojectname$.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.png" />
@@ -151,9 +151,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hanselman.Portable\Hanselman.csproj">
+    <ProjectReference Include="..\$safeprojectname$.Portable\$safeprojectname$.csproj">
       <Project>{028799a4-e2fd-4901-b950-666c00efbf63}</Project>
-      <Name>Hanselman</Name>
+      <Name>$safeprojectname$</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

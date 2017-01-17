@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class WebsiteView : BaseView
     {

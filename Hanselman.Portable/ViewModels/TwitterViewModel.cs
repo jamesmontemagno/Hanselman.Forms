@@ -5,7 +5,7 @@ using LinqToTwitter;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class TwitterViewModel : BaseViewModel
     {

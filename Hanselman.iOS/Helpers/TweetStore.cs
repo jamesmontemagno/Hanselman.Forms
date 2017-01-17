@@ -1,18 +1,18 @@
 using System;
 using System.Xml.Serialization;
 using System.Collections.Generic;
-using Hanselman.Portable;
+using $safeprojectname$.Portable;
 using System.IO;
 using Newtonsoft.Json;
 
-[assembly: Xamarin.Forms.Dependency (typeof (Hanselman.iOS.iOSTweetStore))]
+[assembly: Xamarin.Forms.Dependency (typeof ($safeprojectname$.iOS.iOSTweetStore))]
 
 
-namespace Hanselman.iOS
+namespace $safeprojectname$.iOS
 {
 	public class iOSTweetStore : ITweetStore
 	{
-		public void Save (System.Collections.Generic.List<Hanselman.Portable.Tweet> tweets)
+		public void Save (System.Collections.Generic.List<$safeprojectname$.Portable.Tweet> tweets)
 		{
 
 			var FileManager = new Foundation.NSFileManager ();
@@ -38,7 +38,7 @@ namespace Hanselman.iOS
 				serializer.Serialize(stream, tweets);
 			}*/
 		}
-		//System.Collections.Generic.List<Hanselman.Shared.Tweet> Load ();
+		//System.Collections.Generic.List<$safeprojectname$.Shared.Tweet> Load ();
 	}
 }
 

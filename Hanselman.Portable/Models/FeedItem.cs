@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Text.RegularExpressions;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class FeedItem : INotifyPropertyChanged
     {

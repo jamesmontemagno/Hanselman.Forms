@@ -5,7 +5,7 @@ using System.Windows.Input;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class HomeViewModel : BaseViewModel
     {

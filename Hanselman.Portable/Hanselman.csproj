@@ -8,8 +8,8 @@
     <ProjectGuid>{028799A4-E2FD-4901-B950-666C00EFBF63}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hanselman.Portable</RootNamespace>
-    <AssemblyName>Hanselman.Portable</AssemblyName>
+    <RootNamespace>$safeprojectname$.Portable</RootNamespace>
+    <AssemblyName>$safeprojectname$.Portable</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -86,7 +86,7 @@
     </Compile>
     <Compile Include="Views\WebsiteView.cs" />
     <Compile Include="Views\RootPage.cs" />
-    <Compile Include="Controls\HanselmanNavigationPage.cs" />
+    <Compile Include="Controls\$safeprojectname$NavigationPage.cs" />
     <Compile Include="Views\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>

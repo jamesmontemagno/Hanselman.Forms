@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.Collections.Generic;
-using Hanselman.Portable.Controls;
+using $safeprojectname$.Portable.Controls;
 
-namespace Hanselman.Portable.Views
+namespace $safeprojectname$.Portable.Views
 {
     public class RootPage : MasterDetailPage
     {
@@ -49,22 +49,22 @@ namespace Hanselman.Portable.Views
                 switch (id)
                 {
                     case MenuType.About:
-                        Pages.Add(id, new HanselmanNavigationPage(new AboutPage()));
+                        Pages.Add(id, new $safeprojectname$NavigationPage(new AboutPage()));
                         break;
                     case MenuType.Blog:
-                        Pages.Add(id, new HanselmanNavigationPage(new BlogPage()));
+                        Pages.Add(id, new $safeprojectname$NavigationPage(new BlogPage()));
                         break;
                     case MenuType.DeveloperLife:
-                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage(id)));
+                        Pages.Add(id, new $safeprojectname$NavigationPage(new PodcastPage(id)));
                         break;
                     case MenuType.Hanselminutes:
-                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage(id)));
+                        Pages.Add(id, new $safeprojectname$NavigationPage(new PodcastPage(id)));
                         break;
                     case MenuType.Ratchet:
-                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage(id)));
+                        Pages.Add(id, new $safeprojectname$NavigationPage(new PodcastPage(id)));
                         break;
                     case MenuType.Twitter:
-                        Pages.Add(id, new HanselmanNavigationPage(new TwitterPage()));
+                        Pages.Add(id, new $safeprojectname$NavigationPage(new TwitterPage()));
                         break;
                     case MenuType.Videos:
                         Pages.Add(id, new HanselmanNavigationPage(new Channel9VideosPage()));

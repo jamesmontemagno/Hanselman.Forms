@@ -1,4 +1,4 @@
-﻿using Hanselman.Portable;
+﻿using $safeprojectname$.Portable;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Plugin.Share;
-using Hanselman.Portable.Helpers;
+using $safeprojectname$.Portable.Helpers;
 
-namespace Hanselman.Portable.Views
+namespace $safeprojectname$.Portable.Views
 {
     public partial class AboutPage : ContentPage
     {

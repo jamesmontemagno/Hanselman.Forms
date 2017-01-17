@@ -3,7 +3,7 @@
 using WatchKit;
 using Foundation;
 using System.Xml.Serialization;
-using Hanselman.Portable;
+using $safeprojectname$.Portable;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;

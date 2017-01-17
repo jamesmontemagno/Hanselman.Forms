@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Views
+namespace $safeprojectname$.Portable.Views
 {
     public partial class MenuPage : ContentPage
     {
