@@ -7,6 +7,9 @@
 
 </Description>
     <MoreInfo>https://github.com/AweSamNet/Hanselman.Forms-Starter-Project-Template-for-VS-2015</MoreInfo>
+    <Icon>HanselmanStore.png</Icon>
+    <PreviewImage>HanselmanStore.png</PreviewImage>
+    <Tags>cross-platform xamarin</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
