@@ -2,6 +2,7 @@
 using System.Linq;
 using Hanselman.Portable.Models;
 using Plugin.MediaManager;
+using Plugin.MediaManager.Abstractions.Enums;
 using Plugin.MediaManager.Abstractions.EventArguments;
 using Plugin.MediaManager.Abstractions.Implementations;
 using Xamarin.Forms;
@@ -30,9 +31,9 @@ namespace Hanselman.Portable.Views
             stop.IsEnabled = false;
         }
 
-        private void OnPlayClicked(object sender, EventArgs e)
+        private async void OnPlayClicked(object sender, EventArgs e)
         {
-            CrossMediaManager.Current.PlayPause();
+            await CrossMediaManager.Current.PlaybackController.PlayPause();
             pause.IsEnabled = true;
             stop.IsEnabled = true;
         }
