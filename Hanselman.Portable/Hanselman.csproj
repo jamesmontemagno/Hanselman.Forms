@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Helpers\AudioPlayer.cs" />
     <Compile Include="Helpers\FancyListCell.cs" />
     <Compile Include="Helpers\ILaunchTwitter.cs" />
     <Compile Include="Helpers\ITweetStore.cs" />

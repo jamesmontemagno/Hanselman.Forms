@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms"
              x:Class="Hanselman.Portable.Views.Channel9VideoPlaybackPage">
+	<Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
   <forms:VideoView x:Name="player"
-                   AspectMode="AspectFit"
+                   AspectMode="AspectFill"
                    HorizontalOptions="FillAndExpand"
-                   VerticalOptions="FillAndExpand"
-                            />
+                   VerticalOptions="FillAndExpand"/>
   <StackLayout VerticalOptions="End" HorizontalOptions="FillAndExpand">
     <ProgressBar x:Name="progress" HeightRequest="10"></ProgressBar>
     <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10" VerticalOptions="End">
@@ -16,4 +16,5 @@
       <Button  x:Name="stop" Image="ic_stop.png" HorizontalOptions="Center"/>
     </StackLayout>
    </StackLayout>
+	</Grid>
 </ContentPage>

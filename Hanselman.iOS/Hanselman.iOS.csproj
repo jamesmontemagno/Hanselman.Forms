@@ -250,7 +250,6 @@
     <Compile Include="Helpers\LaunchTwitter.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Renderers\AudioPlayerRenderer.cs" />
     <Compile Include="Helpers\TweetStore.cs" />
     <Compile Include="Helpers\Color.cs" />
   </ItemGroup>

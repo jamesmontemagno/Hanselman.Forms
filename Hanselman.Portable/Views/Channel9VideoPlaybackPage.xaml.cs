@@ -4,8 +4,8 @@ using Hanselman.Portable.Models;
 using Plugin.MediaManager;
 using Plugin.MediaManager.Abstractions.Enums;
 using Plugin.MediaManager.Abstractions.EventArguments;
-using Plugin.MediaManager.Abstractions.Implementations;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace Hanselman.Portable.Views
 {
@@ -15,7 +15,8 @@ namespace Hanselman.Portable.Views
         {
             InitializeComponent();
             BindingContext = item;
-            
+            CrossMediaManager.Current.StatusChanged += CurrentOnStatusChanged;
+            CrossMediaManager.Current.PlayingChanged += OnPlayingChanged;
         }
 
         private void OnPauseClicked(object sender, EventArgs e)
@@ -33,7 +34,8 @@ namespace Hanselman.Portable.Views
 
         private async void OnPlayClicked(object sender, EventArgs e)
         {
-            await CrossMediaManager.Current.PlaybackController.PlayPause();
+            await CrossMediaManager.Current.VideoPlayer.Play();
+            CrossMediaManager.Current.StatusChanged += (v, x) => Debug.WriteLine("STATUS: " + x.Status.ToString());
             pause.IsEnabled = true;
             stop.IsEnabled = true;
         }
@@ -42,12 +44,11 @@ namespace Hanselman.Portable.Views
         {
             base.OnAppearing();
             var item = (VideoFeedItem) BindingContext;
-            CrossMediaManager.Current.StatusChanged += CurrentOnStatusChanged;
-            CrossMediaManager.Current.PlayingChanged += OnPlayingChanged;
             player.Source = item.VideoUrls.First().Url;
             play.Clicked += OnPlayClicked;
             stop.Clicked += OnStopClicked;
             pause.Clicked += OnPauseClicked;
+            player.AspectMode = VideoAspectMode.AspectFit;
         }
 
         private void OnPlayingChanged(object sender, PlayingChangedEventArgs e)
