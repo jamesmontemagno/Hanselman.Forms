@@ -5,7 +5,6 @@ using Plugin.MediaManager;
 using Plugin.MediaManager.Abstractions.Enums;
 using Plugin.MediaManager.Abstractions.EventArguments;
 using Xamarin.Forms;
-using System.Diagnostics;
 
 namespace Hanselman.Portable.Views
 {
@@ -15,8 +14,6 @@ namespace Hanselman.Portable.Views
         {
             InitializeComponent();
             BindingContext = item;
-            CrossMediaManager.Current.StatusChanged += CurrentOnStatusChanged;
-            CrossMediaManager.Current.PlayingChanged += OnPlayingChanged;
         }
 
         private void OnPauseClicked(object sender, EventArgs e)
@@ -35,7 +32,6 @@ namespace Hanselman.Portable.Views
         private async void OnPlayClicked(object sender, EventArgs e)
         {
             await CrossMediaManager.Current.VideoPlayer.Play();
-            CrossMediaManager.Current.StatusChanged += (v, x) => Debug.WriteLine("STATUS: " + x.Status.ToString());
             pause.IsEnabled = true;
             stop.IsEnabled = true;
         }
@@ -44,6 +40,9 @@ namespace Hanselman.Portable.Views
         {
             base.OnAppearing();
             var item = (VideoFeedItem) BindingContext;
+            CrossMediaManager.Current.Stop();
+            CrossMediaManager.Current.StatusChanged += CurrentOnStatusChanged;
+            CrossMediaManager.Current.PlayingChanged += OnPlayingChanged;
             player.Source = item.VideoUrls.First().Url;
             play.Clicked += OnPlayClicked;
             stop.Clicked += OnStopClicked;
@@ -72,7 +71,7 @@ namespace Hanselman.Portable.Views
 
         private void CurrentOnStatusChanged(object sender, StatusChangedEventArgs statusChangedEventArgs)
         {
-            Device.BeginInvokeOnMainThread(() =>
+            Device.BeginInvokeOnMainThread(async () =>
             {
                 var status = statusChangedEventArgs.Status;
                 switch (status)
@@ -80,26 +79,37 @@ namespace Hanselman.Portable.Views
                     case MediaPlayerStatus.Stopped:
                         pause.IsEnabled = false;
                         stop.IsEnabled = false;
+                        StatusLabel.Text = "Stopped";
+                        await StatusLabel.FadeTo(1);
                         break;
                     case MediaPlayerStatus.Paused:
                         pause.IsEnabled = true;
                         stop.IsEnabled = true;
+                        StatusLabel.Text = "Paused";
+                        await StatusLabel.FadeTo(1);
                         break;
                     case MediaPlayerStatus.Playing:
                         pause.IsEnabled = true;
                         stop.IsEnabled = true;
+                        await StatusLabel.FadeTo(0);
                         break;
                     case MediaPlayerStatus.Loading:
                         pause.IsEnabled = false;
                         stop.IsEnabled = false;
+                        StatusLabel.Text = "Loading";
+                        await StatusLabel.FadeTo(1);
                         break;
                     case MediaPlayerStatus.Buffering:
                         pause.IsEnabled = false;
                         stop.IsEnabled = true;
+                        StatusLabel.Text = "Buffering";
+                        await StatusLabel.FadeTo(1);
                         break;
                     case MediaPlayerStatus.Failed:
                         pause.IsEnabled = false;
                         stop.IsEnabled = false;
+                        StatusLabel.Text = "Failed";
+                        await StatusLabel.FadeTo(1);
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
