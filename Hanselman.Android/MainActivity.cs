@@ -12,6 +12,7 @@ using Android.Content.PM;
 using Hanselman.Portable;
 using Android.Graphics.Drawables;
 using ImageCircle.Forms.Plugin.Droid;
+using Plugin.MediaManager.Forms;
 
 namespace HanselmanAndroid
 {
@@ -28,6 +29,7 @@ namespace HanselmanAndroid
             FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
+            Plugin.MediaManager.Forms.Android.VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
 
