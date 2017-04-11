@@ -27,7 +27,12 @@ namespace Hanselman.Portable.Views
         Text = "Share",
         Command = new Command(() =>
           {
-           CrossShare.Current.Share("Listening to @shanselman's " + item.Title + " " + item.Link, "Share");
+           CrossShare.Current.Share(new Plugin.Share.Abstractions.ShareMessage
+           {
+               Text = "Listening to @shanselman's " + item.Title + " " + item.Link,
+               Title = "Share",
+               Url = item.Link
+           });
           })
       };
 

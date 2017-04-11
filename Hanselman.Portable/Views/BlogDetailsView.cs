@@ -31,7 +31,12 @@ namespace Hanselman.Portable
                 Icon = "ic_share.png",
                 Text = "Share",
                 Command = new Command(() => CrossShare.Current
-                  .Share("Be sure to read @shanselman's " + item.Title + " " + item.Link))
+                  .Share(new Plugin.Share.Abstractions.ShareMessage
+                  {
+                      Text = "Be sure to read @shanselman's " + item.Title + " " + item.Link,
+                      Title = "Share",
+                      Url = item.Link
+                  }))
             };
 
             ToolbarItems.Add(share);

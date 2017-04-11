@@ -23,7 +23,7 @@ namespace Hanselman.Portable.Views
             {
                 ChromeShowTitle = true,
                 ChromeToolbarColor = new Plugin.Share.Abstractions.ShareColor { R = 3, G = 169, B = 244, A = 255 },
-                UseSafairReaderMode = true,
+                UseSafariReaderMode = true,
                 UseSafariWebViewController = true
             });
         }
