@@ -12,7 +12,9 @@ namespace Hanselman.Portable.Views
         Dictionary<MenuType, NavigationPage> Pages { get; set;} 
         public RootPage()
         {
-            
+            if(IsUWPDesktop)
+                this.MasterBehavior = MasterBehavior.Popover;
+
             Pages = new Dictionary<MenuType, NavigationPage>();
             Master = new MenuPage(this);
             BindingContext = new BaseViewModel
@@ -36,7 +38,7 @@ namespace Hanselman.Portable.Views
                 if (IsUWPDesktop || Device.Idiom != TargetIdiom.Tablet)
                     IsPresented = false;
 
-                if (Device.OS == TargetPlatform.Android)
+                if (Device.RuntimePlatform == Device.Android)
                     await Task.Delay(300);
             }
 
@@ -75,7 +77,7 @@ namespace Hanselman.Portable.Views
                 return;
 
             //pop to root for Windows Phone
-            if (Detail != null && Device.OS == TargetPlatform.WinPhone)
+            if (Detail != null && Device.RuntimePlatform == Device.WinPhone)
             {
                 await Detail.Navigation.PopToRootAsync();
             }
