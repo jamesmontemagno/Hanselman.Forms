@@ -26,14 +26,12 @@
       <ProjectItem ReplaceParameters="false" TargetFileName="LaunchScreen.storyboard">LaunchScreen.storyboard</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Main.cs">Main.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
-      <Folder Name="Renderers" TargetFolderName="Renderers">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AudioPlayerRenderer.cs">AudioPlayerRenderer.cs</ProjectItem>
-      </Folder>
       <Folder Name="Resources" TargetFolderName="Resources">
         <ProjectItem ReplaceParameters="false" TargetFileName="about.png">about.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="about@2x.png">about@2x.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="blog.png">blog.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="blog@2x.png">blog@2x.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="channel9.png">channel9.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="Default-568h@2x.png">Default-568h@2x.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="Default@2x.png">Default@2x.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="facebook.png">facebook.png</ProjectItem>

@@ -19,7 +19,6 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$NavigationPage.cs">HanselmanNavigationPage.cs</ProjectItem>
       </Folder>
       <Folder Name="Helpers" TargetFolderName="Helpers">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AudioPlayer.cs">AudioPlayer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="FancyListCell.cs">FancyListCell.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ILaunchTwitter.cs">ILaunchTwitter.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ITweetStore.cs">ITweetStore.cs</ProjectItem>
@@ -31,6 +30,8 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="HomeMenuItem.cs">HomeMenuItem.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Scott.cs">Scott.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Tweet.cs">Tweet.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="VideoContentItem.cs">VideoContentItem.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="VideoFeedItem.cs">VideoFeedItem.cs</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
@@ -39,6 +40,7 @@
       <Folder Name="ViewModels" TargetFolderName="ViewModels">
         <ProjectItem ReplaceParameters="true" TargetFileName="BaseViewModel.cs">BaseViewModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="BlogFeedViewModel.cs">BlogFeedViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Channel9VideosViewModel.cs">Channel9VideosViewModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="HomeViewModel.cs">HomeViewModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="PodcastViewModel.cs">PodcastViewModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="TwitterViewModel.cs">TwitterViewModel.cs</ProjectItem>
@@ -50,6 +52,10 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="BlogDetailsView.cs">BlogDetailsView.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="BlogPage.xaml">BlogPage.xaml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="BlogPage.xaml.cs">BlogPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Channel9VideoPlaybackPage.xaml">Channel9VideoPlaybackPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Channel9VideoPlaybackPage.xaml.cs">Channel9VideoPlaybackPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Channel9VideosPage.xaml">Channel9VideosPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Channel9VideosPage.xaml.cs">Channel9VideosPage.xaml.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="MenuPage.xaml">MenuPage.xaml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="MenuPage.xaml.cs">MenuPage.xaml.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="PodcastPage.xaml">PodcastPage.xaml</ProjectItem>

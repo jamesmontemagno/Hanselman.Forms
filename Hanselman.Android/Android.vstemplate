@@ -29,12 +29,12 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
       <Folder Name="Renderers" TargetFolderName="Renderers">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AudioPlayerRenderer.cs">AudioPlayerRenderer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ListImageCellRenderer.cs">ListImageCellRenderer.cs</ProjectItem>
       </Folder>
       <Folder Name="Resources" TargetFolderName="Resources">
         <ProjectItem ReplaceParameters="true" TargetFileName="AboutResources.txt">AboutResources.txt</ProjectItem>
         <Folder Name="drawable" TargetFolderName="drawable">
+          <ProjectItem ReplaceParameters="false" TargetFileName="channel9.png">channel9.png</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="facebook.png">facebook.png</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="googleplus.png">googleplus.png</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="hm.png">hm.png</ProjectItem>
@@ -110,7 +110,6 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="wearable_app_desc.xml">wearable_app_desc.xml</ProjectItem>
         </Folder>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="WearService.cs">WearService.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
