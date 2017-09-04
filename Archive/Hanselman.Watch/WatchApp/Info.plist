@@ -7,11 +7,11 @@
 	<key>CFBundleDisplayName</key>
 	<string>WatchApp</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.refractored.hanselman.watchkitapp</string>
+	<string>com.refractored.$safeprojectname$.watchkitapp</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>com.refractored.hanselman.watchkitapp</string>
+	<string>com.refractored.$safeprojectname$.watchkitapp</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.refractored.hanselman</string>
+	<string>com.refractored.$safeprojectname$</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 	<key>UIDeviceFamily</key>

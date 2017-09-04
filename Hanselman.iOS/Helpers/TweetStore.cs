@@ -16,7 +16,7 @@ namespace $safeprojectname$
 		{
 
 			var FileManager = new Foundation.NSFileManager ();
-      var appGroupContainer = FileManager.GetContainerUrl("group.com.refractored.hanselman");
+      var appGroupContainer = FileManager.GetContainerUrl("group.com.refractored.$safeprojectname$");
       if(appGroupContainer == null)
       {
         Console.WriteLine("You must go into apple developer console and create a new app group");

@@ -7,10 +7,10 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
-using Hanselman.Portable.Models;
+using $safeprojectname$.Portable.Models;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.ViewModels
+namespace $safeprojectname$.Portable.ViewModels
 {
     public class Channel9VideosViewModel : BaseViewModel
     {

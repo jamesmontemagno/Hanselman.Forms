@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms"
-             x:Class="Hanselman.Portable.Views.Channel9VideoPlaybackPage">
+             x:Class="$safeprojectname$.Portable.Views.Channel9VideoPlaybackPage">
 	<Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
   <forms:VideoView x:Name="player"
                    AspectMode="AspectFill"

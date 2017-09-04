@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDisplayName</key>
-	<string>Hanselman</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.plugin.hanselman</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -47,5 +43,9 @@
 	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen.storyboard</string>
+	<key>CFBundleDisplayName</key>
+	<string>$safeprojectname$</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.plugin.$safeprojectname$</string>
 </dict>
 </plist>

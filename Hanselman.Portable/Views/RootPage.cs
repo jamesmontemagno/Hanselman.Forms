@@ -67,7 +67,7 @@ namespace $safeprojectname$.Portable.Views
                         Pages.Add(id, new $safeprojectname$NavigationPage(new TwitterPage()));
                         break;
                     case MenuType.Videos:
-                        Pages.Add(id, new HanselmanNavigationPage(new Channel9VideosPage()));
+                        Pages.Add(id, new $safeprojectname$NavigationPage(new Channel9VideosPage()));
                         break;
                 }
             }

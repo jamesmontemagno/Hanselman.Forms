@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<wearableApp package="com.refractored.hanselman">
+<wearableApp package="com.refractored.$safeprojectname$">
   <versionCode>1</versionCode>
   <versionName>1.0</versionName>
   <rawPathResId>wearable_app</rawPathResId>

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Hanselman.Portable.Models
+namespace $safeprojectname$.Portable.Models
 {
     public class VideoFeedItem
     {
