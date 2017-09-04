@@ -2638,6 +2638,9 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
+      },
+      "Hanselman/1.0.0": {
+        "type": "project"
       }
     },
     "UAP,Version=v10.0.10240/win10-arm": {
@@ -5307,6 +5310,9 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
+      },
+      "Hanselman/1.0.0": {
+        "type": "project"
       }
     },
     "UAP,Version=v10.0.10240/win10-arm-aot": {
@@ -8012,6 +8018,9 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
+      },
+      "Hanselman/1.0.0": {
+        "type": "project"
       }
     },
     "UAP,Version=v10.0.10240/win10-x64": {
@@ -10690,6 +10699,9 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
+      },
+      "Hanselman/1.0.0": {
+        "type": "project"
       }
     },
     "UAP,Version=v10.0.10240/win10-x64-aot": {
@@ -13404,6 +13416,9 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
+      },
+      "Hanselman/1.0.0": {
+        "type": "project"
       }
     },
     "UAP,Version=v10.0.10240/win10-x86": {
@@ -16082,6 +16097,9 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
+      },
+      "Hanselman/1.0.0": {
+        "type": "project"
       }
     },
     "UAP,Version=v10.0.10240/win10-x86-aot": {
@@ -18796,6 +18814,9 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
+      },
+      "Hanselman/1.0.0": {
+        "type": "project"
       }
     }
   },
@@ -28166,6 +28187,11 @@
         "xamarin.forms.2.3.4.247.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Hanselman/1.0.0": {
+      "type": "project",
+      "path": "../Hanselman.Portable/Hanselman.csproj",
+      "msbuildProject": "../Hanselman.Portable/Hanselman.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -28200,6 +28226,15 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "uap10.0.10240": {
+          "projectReferences": {
+            "C:\\Git Workspace\\AweSamNet\\Hanselman.Forms\\Hanselman.Forms-VSTemplate\\Hanselman.Portable\\Hanselman.csproj": {
+              "projectPath": "C:\\Git Workspace\\AweSamNet\\Hanselman.Forms\\Hanselman.Forms-VSTemplate\\Hanselman.Portable\\Hanselman.csproj"
+            }
+          }
+        }
       }
     },
     "dependencies": {

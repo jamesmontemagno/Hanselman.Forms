@@ -6,7 +6,7 @@
         <Description xml:space="preserve">A Cross-Platform starter project based on the sample app Hanselman.Forms.  
 
 </Description>
-        <MoreInfo>https://github.com/AweSamNet/Hanselman.Forms-Starter-Project-Template-for-VS-2015</MoreInfo>
+        <MoreInfo>https://github.com/AweSamNet/Hanselman.Forms-VSTemplate</MoreInfo>
         <Icon>HanselmanStore.png</Icon>
         <PreviewImage>HanselmanStore.png</PreviewImage>
         <Tags>cross-platform xamarin</Tags>

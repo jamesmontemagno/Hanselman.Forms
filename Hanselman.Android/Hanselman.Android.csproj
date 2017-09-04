@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{$guid1$}</ProjectGuid>
+    <ProjectGuid>{6BE27B2E-552F-43B2-82D5-058D7F180CEC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>$safeprojectname$</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -15,7 +15,7 @@
     <AndroidApplication>True</AndroidApplication>
     <AssemblyName>$safeprojectname$</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -93,6 +93,8 @@
     </Reference>
     <Reference Include="Plugin.MediaManager.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Plugin.MediaManager.Forms.0.4.0\lib\MonoAndroid\Plugin.MediaManager.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Plugin.Share, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Plugin.Share.4.0.3\lib\MonoAndroid10\Plugin.Share.dll</HintPath>
       <Private>True</Private>
@@ -201,6 +203,8 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
       <HintPath>..\..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
       <Private>True</Private>
@@ -285,7 +289,6 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Helpers\Color.cs" />
-    <Compile Include="WearService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -329,9 +332,9 @@
     <AndroidResource Include="Resources\values-v21\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$ext_safeprojectname$\$ext_safeprojectname$.csproj">
+    <ProjectReference Include="..\Hanselman.Portable\Hanselman.csproj">
       <Project>{028799A4-E2FD-4901-B950-666C00EFBF63}</Project>
-      <Name>$ext_safeprojectname$</Name>
+      <Name>%24ext_safeprojectname%24</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
