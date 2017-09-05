@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Hanselman.iOS
+namespace $safeprojectname$
 {
 	public class Application
 	{

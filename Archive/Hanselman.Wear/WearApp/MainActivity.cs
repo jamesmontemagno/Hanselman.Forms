@@ -10,7 +10,7 @@ using Android.Support.Wearable.Views;
 using Android.Support.V4.App;
 using Android.Support.V4.View;
 using Android.Views.Animations;
-using Hanselman.Portable;
+using $safeprojectname$.Portable;
 using System.Linq;
 using Android.Gms.Common.Apis;
 using Android.Gms.Wearable;

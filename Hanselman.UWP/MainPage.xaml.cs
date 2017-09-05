@@ -17,7 +17,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace Hanselman.UWP
+namespace $safeprojectname$
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -30,7 +30,7 @@ namespace Hanselman.UWP
 
             Portable.App.IsWindows10 = true;
             Portable.Views.RootPage.IsUWPDesktop = AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Desktop";
-            LoadApplication(new Hanselman.Portable.App());
+            LoadApplication(new $ext_safeprojectname$.Portable.App());
 
             ApplicationView.PreferredLaunchViewSize = new Size(800, 600);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;

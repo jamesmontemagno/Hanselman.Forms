@@ -1,3 +1,15 @@
+Hanselman Starter Project for Visual Studio
+===============
+
+This repository is a fork of https://github.com/jamesmontemagno/Hanselman.Forms converted to a Visual Studio 2015 project template called Hanselman Starter Project.  Its main purpose is to help new cross-platform projects hit the floor running with a framework based on the original sample Hanselman app (see below). 
+
+To manually install this template into your Visual Studio:
+---------------
+
+1. Download [HanselmanStarter.zip](https://github.com/AweSamNet/Hanselman.Forms-Starter-Project-Template-for-VS-2015/raw/master/HanselmanStarter.zip)
+1. Copy it to `C:\Users\{your-user-account}\Documents\{Visual Studio Version}\Templates\ProjectTemplates`
+1. The template can be found in Visual Studio: `File -> New -> Project -> Visual C#`
+
 Hanselman.Forms: Hanselman Everywhere
 ===============
 

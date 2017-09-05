@@ -8,7 +8,7 @@ using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Xml.Linq;
 
-namespace Hanselman.Portable.ViewModels
+namespace $safeprojectname$.Portable.ViewModels
 {
     public class PodcastViewModel : BaseViewModel
     {

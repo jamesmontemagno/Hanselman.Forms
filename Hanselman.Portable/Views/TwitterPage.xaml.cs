@@ -1,4 +1,4 @@
-﻿using Hanselman.Portable.Helpers;
+﻿using $safeprojectname$.Portable.Helpers;
 using Plugin.Share;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Views
+namespace $safeprojectname$.Portable.Views
 {
     public partial class TwitterPage : ContentPage
     {

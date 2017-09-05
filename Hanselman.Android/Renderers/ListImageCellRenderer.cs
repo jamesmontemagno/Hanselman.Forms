@@ -11,12 +11,12 @@ using View = global::Android.Views.View;
 using ViewGroup = global::Android.Views.ViewGroup;
 using Context = global::Android.Content.Context;
 using ListView = global::Android.Widget.ListView;
-using Hanselman.Portable;
-using HanselmanAndroid;
+using $ext_safeprojectname$.Portable;
+using $safeprojectname$;
 
 [assembly: ExportCell(typeof(ListImageCell), typeof(ListImageCellRenderer))]
 
-namespace HanselmanAndroid
+namespace $safeprojectname$
 {
     public class ListImageCellRenderer : ImageCellRenderer
     {

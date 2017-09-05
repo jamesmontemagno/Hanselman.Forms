@@ -1,8 +1,8 @@
-﻿using Hanselman.Portable.Models;
-using Hanselman.Portable.ViewModels;
+﻿using $safeprojectname$.Portable.Models;
+using $safeprojectname$.Portable.ViewModels;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Views
+namespace $safeprojectname$.Portable.Views
 {
     public partial class Channel9VideosPage : ContentPage
     {

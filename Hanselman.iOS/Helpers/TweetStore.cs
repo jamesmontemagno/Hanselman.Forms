@@ -1,22 +1,22 @@
 using System;
 using System.Xml.Serialization;
 using System.Collections.Generic;
-using Hanselman.Portable;
+using $ext_safeprojectname$.Portable;
 using System.IO;
 using Newtonsoft.Json;
 
-[assembly: Xamarin.Forms.Dependency (typeof (Hanselman.iOS.iOSTweetStore))]
+[assembly: Xamarin.Forms.Dependency (typeof ($safeprojectname$.iOSTweetStore))]
 
 
-namespace Hanselman.iOS
+namespace $safeprojectname$
 {
 	public class iOSTweetStore : ITweetStore
 	{
-		public void Save (System.Collections.Generic.List<Hanselman.Portable.Tweet> tweets)
+		public void Save (System.Collections.Generic.List<$ext_safeprojectname$.Portable.Tweet> tweets)
 		{
 
 			var FileManager = new Foundation.NSFileManager ();
-      var appGroupContainer = FileManager.GetContainerUrl("group.com.refractored.hanselman");
+      var appGroupContainer = FileManager.GetContainerUrl("group.com.refractored.$safeprojectname$");
       if(appGroupContainer == null)
       {
         Console.WriteLine("You must go into apple developer console and create a new app group");
@@ -38,7 +38,7 @@ namespace Hanselman.iOS
 				serializer.Serialize(stream, tweets);
 			}*/
 		}
-		//System.Collections.Generic.List<Hanselman.Shared.Tweet> Load ();
+		//System.Collections.Generic.List<$ext_safeprojectname$.Shared.Tweet> Load ();
 	}
 }
 

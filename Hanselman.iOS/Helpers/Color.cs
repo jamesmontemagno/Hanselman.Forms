@@ -5,7 +5,7 @@ using UIKit;
 using CoreGraphics;
 #endif
 
-namespace Hanselman.Portable.Helpers
+namespace $ext_safeprojectname$.Portable.Helpers
 {
     public struct Color
     {

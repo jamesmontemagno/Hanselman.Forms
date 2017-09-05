@@ -92,7 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Hanselman.Portable\Models\Tweet.cs">
+    <Compile Include="..\..\$safeprojectname$.Portable\Models\Tweet.cs">
       <Link>Tweet.cs</Link>
     </Compile>
     <Compile Include="MainActivity.cs" />

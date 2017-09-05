@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Linq;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class BlogFeedViewModel : BaseViewModel
     {

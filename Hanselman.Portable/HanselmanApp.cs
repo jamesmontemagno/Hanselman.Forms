@@ -1,9 +1,9 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace Hanselman.Shared
+namespace $safeprojectname$.Shared
 {
-	public static class HanselmanApp
+	public static class $safeprojectname$App
 	{
 
 

@@ -5,7 +5,7 @@ using System.Windows.Input;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class HomeViewModel : BaseViewModel
     {
@@ -13,7 +13,7 @@ namespace Hanselman.Portable
         public HomeViewModel()
         {
             CanLoadMore = true;
-            Title = "Hanselman";
+            Title = "$safeprojectname$";
             MenuItems = new ObservableCollection<HomeMenuItem>();
             MenuItems.Add(new HomeMenuItem
             {

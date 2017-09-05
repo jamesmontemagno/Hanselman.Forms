@@ -1,11 +1,12 @@
-﻿using Plugin.Share;
+﻿using $safeprojectname$.Portable.Helpers;
+using Plugin.Share;
 using Plugin.MediaManager;
 using Plugin.MediaManager.Abstractions;
 using Plugin.MediaManager.Abstractions.Enums;
 using Plugin.MediaManager.Abstractions.Implementations;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Views
+namespace $safeprojectname$.Portable.Views
 {
   public partial class PodcastPlaybackPage : ContentPage
   {

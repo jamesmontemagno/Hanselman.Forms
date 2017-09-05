@@ -1,12 +1,12 @@
 using System;
 
 
-namespace Hanselman
+namespace $safeprojectname$.Portable
 {
     public interface ITweetStore
     {
-        void Save(System.Collections.Generic.List<Hanselman.Portable.Tweet> tweets);
-        //System.Collections.Generic.List<Hanselman.Shared.Tweet> Load ();
+        void Save(System.Collections.Generic.List<$safeprojectname$.Portable.Tweet> tweets);
+        //System.Collections.Generic.List<$safeprojectname$.Shared.Tweet> Load ();
     }
 }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Views
+namespace $safeprojectname$.Portable.Views
 {
     public partial class MenuPage : ContentPage
     {
@@ -21,8 +21,8 @@ namespace Hanselman.Portable.Views
             }
             BindingContext = new BaseViewModel
                 {
-                    Title = "Hanselman.Forms",
-                    Subtitle="Hanselman.Forms",
+                    Title = "$safeprojectname$",
+                    Subtitle="$safeprojectname$",
                     Icon = "slideout.png"
                 };
 

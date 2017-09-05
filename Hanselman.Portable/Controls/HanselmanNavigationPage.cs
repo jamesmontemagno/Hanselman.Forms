@@ -1,16 +1,16 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Controls
+namespace $safeprojectname$.Portable.Controls
 {
-    public class HanselmanNavigationPage :NavigationPage
+    public class $safeprojectname$NavigationPage :NavigationPage
     {
-        public HanselmanNavigationPage(Page root) : base(root)
+        public $safeprojectname$NavigationPage(Page root) : base(root)
         {
             Init();
         }
 
-        public HanselmanNavigationPage()
+        public $safeprojectname$NavigationPage()
         {
             Init();
         }

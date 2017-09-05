@@ -3,7 +3,7 @@
 using WatchKit;
 using Foundation;
 using System.Xml.Serialization;
-using Hanselman.Portable;
+using $safeprojectname$.Portable;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
@@ -28,7 +28,7 @@ namespace WatchExtension
 			Console.WriteLine ("{0} awake with context", this);
 
 			var FileManager = new NSFileManager ();
-			var appGroupContainer = FileManager.GetContainerUrl ("group.com.refractored.hanselman");
+			var appGroupContainer = FileManager.GetContainerUrl ("group.com.refractored.$safeprojectname$");
       if (appGroupContainer == null)
       {
         Console.WriteLine("You must go into apple developer console and create a new app group");

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

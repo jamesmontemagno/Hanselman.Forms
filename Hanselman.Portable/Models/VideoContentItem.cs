@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hanselman.Portable.Models
+namespace $safeprojectname$.Portable.Models
 {
     public class VideoContentItem
     {

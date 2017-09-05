@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public enum MenuType
     {

@@ -9,11 +9,11 @@ using Xamarin.Forms.Xaml;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Hanselman.Portable")]
+[assembly: AssemblyTitle("$safeprojectname$.Portable")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Hanselman.Portable")]
+[assembly: AssemblyProduct("$safeprojectname$.Portable")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Hanselman.Portable.Views;
+using $safeprojectname$.Portable.Views;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class App : Application
     {

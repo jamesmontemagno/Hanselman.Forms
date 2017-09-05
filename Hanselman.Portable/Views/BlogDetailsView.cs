@@ -1,9 +1,9 @@
-﻿using Hanselman.Portable.Helpers;
+﻿using $safeprojectname$.Portable.Helpers;
 using Plugin.Share;
 using System;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable
+namespace $safeprojectname$.Portable
 {
     public class BlogDetailsView : BaseView
     {

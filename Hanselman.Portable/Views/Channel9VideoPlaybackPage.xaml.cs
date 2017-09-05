@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
-using Hanselman.Portable.Models;
+using $safeprojectname$.Portable.Models;
 using Plugin.MediaManager;
 using Plugin.MediaManager.Abstractions.Enums;
 using Plugin.MediaManager.Abstractions.EventArguments;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Views
+namespace $safeprojectname$.Portable.Views
 {
     public partial class Channel9VideoPlaybackPage : ContentPage
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 using Foundation;
-using Hanselman.Portable;
+using $safeprojectname$.Portable;
 
 namespace WatchExtension
 {

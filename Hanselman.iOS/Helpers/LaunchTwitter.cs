@@ -1,6 +1,6 @@
 using Foundation;
-using Hanselman.iOS.Helpers;
-using Hanselman.Portable.Helpers;
+using $safeprojectname$.Helpers;
+using $ext_safeprojectname$.Portable.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using UIKit;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(LaunchTwitter))]
-namespace Hanselman.iOS.Helpers
+namespace $safeprojectname$.Helpers
 {
     public class LaunchTwitter : ILaunchTwitter
     {
