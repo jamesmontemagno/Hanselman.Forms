@@ -6,10 +6,10 @@
              Title="Scott Hanselman">
   <ScrollView>
     <StackLayout Orientation="Vertical" Spacing="10" Padding="10">
-      <Image Aspect="AspectFill" Source="scott.png" Margin="-10,0"/>
+      <Image Aspect="AspectFill" Source="scott.png" Margin="-10,-10,-10,0"/>
  
 
-        <Label Margin="0,50"
+        <Label Margin="0,25"
                Text="My name is Scott Hanselman. I'm a programmer, teacher, and speaker. I work out of my home office in Portland, Oregon for the Web Platform Team at Microsoft, but this blog, its content and opinions are my own. I blog about technology, culture, gadgets, diversity, code, the web, where we're going and where we've been. I'm excited about community, social equity, media, entrepreneurship and above all, the open web."
                LineBreakMode="WordWrap"/>
 
