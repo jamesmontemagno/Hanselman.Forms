@@ -9,13 +9,13 @@ namespace Hanselman.Portable.Views
     public class RootPage : MasterDetailPage
     {
         public static bool IsUWPDesktop { get; set; }
-        Dictionary<MenuType, NavigationPage> Pages { get; set;} 
+        Dictionary<int, NavigationPage> Pages { get; set;} 
         public RootPage()
         {
             if(IsUWPDesktop)
                 this.MasterBehavior = MasterBehavior.Popover;
 
-            Pages = new Dictionary<MenuType, NavigationPage>();
+            Pages = new Dictionary<int, NavigationPage>();
             Master = new MenuPage(this);
             BindingContext = new BaseViewModel
                 {
@@ -23,14 +23,15 @@ namespace Hanselman.Portable.Views
                     Icon = "slideout.png"
                 };
             //setup home page
-            NavigateAsync(MenuType.About);
+            Pages.Add((int)MenuType.About, new HanselmanNavigationPage(new AboutPage()));
+            Detail = Pages[(int)MenuType.About];
 
             InvalidateMeasure();
         }
 
 
 
-        public async Task NavigateAsync(MenuType id)
+        public async Task NavigateAsync(int id)
         {
 
             if (Detail != null)
@@ -48,25 +49,25 @@ namespace Hanselman.Portable.Views
 
                 switch (id)
                 {
-                    case MenuType.About:
+                    case (int)MenuType.About:
                         Pages.Add(id, new HanselmanNavigationPage(new AboutPage()));
                         break;
-                    case MenuType.Blog:
+                    case (int)MenuType.Blog:
                         Pages.Add(id, new HanselmanNavigationPage(new BlogPage()));
                         break;
-                    case MenuType.DeveloperLife:
-                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage(id)));
+                    case (int)MenuType.DeveloperLife:
+                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage((MenuType)id)));
                         break;
-                    case MenuType.Hanselminutes:
-                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage(id)));
+                    case (int)MenuType.Hanselminutes:
+                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage((MenuType)id)));
                         break;
-                    case MenuType.Ratchet:
-                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage(id)));
+                    case (int)MenuType.Ratchet:
+                        Pages.Add(id, new HanselmanNavigationPage(new PodcastPage((MenuType)id)));
                         break;
-                    case MenuType.Twitter:
+                    case (int)MenuType.Twitter:
                         Pages.Add(id, new HanselmanNavigationPage(new TwitterPage()));
                         break;
-                    case MenuType.Videos:
+                    case (int)MenuType.Videos:
                         Pages.Add(id, new HanselmanNavigationPage(new Channel9VideosPage()));
                         break;
                 }

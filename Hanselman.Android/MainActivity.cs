@@ -25,8 +25,8 @@ namespace HanselmanAndroid
 
         protected override void OnCreate(Bundle bundle)
         {
-            FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
-            FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
+            FormsAppCompatActivity.ToolbarResource = Resource.Layout.Toolbar;
+            FormsAppCompatActivity.TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
             Plugin.MediaManager.Forms.Android.VideoViewRenderer.Init();

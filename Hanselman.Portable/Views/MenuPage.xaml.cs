@@ -45,7 +45,7 @@ namespace Hanselman.Portable.Views
                     if(ListViewMenu.SelectedItem == null)
                         return;
 
-                    await this.root.NavigateAsync(((HomeMenuItem)e.SelectedItem).MenuType);
+                    await this.root.NavigateAsync((int)((HomeMenuItem)e.SelectedItem).MenuType);
                 };
         }
     }
