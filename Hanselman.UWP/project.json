@@ -7,7 +7,7 @@
     "Plugin.MediaManager.Forms": "0.4.5",
     "Plugin.Share": "7.0.1",
     "Xam.Plugins.Forms.ImageCircle": "1.8.2.19-beta",
-    "Xamarin.Forms": "2.5.0.91635"
+    "Xamarin.Forms": "2.5.0.121934"
   },
   "frameworks": {
     "uap10.0.10240": {}
