@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Linq;
+using MvvmHelpers;
 
 namespace Hanselman.Portable
 {
@@ -16,18 +15,12 @@ namespace Hanselman.Portable
             Title = "Blog";
             Icon = "blog.png";
         }
-
-
-        private ObservableCollection<FeedItem> feedItems = new ObservableCollection<FeedItem>();
+        
 
         /// <summary>
         /// gets or sets the feed items
         /// </summary>
-        public ObservableCollection<FeedItem> FeedItems
-        {
-            get { return feedItems; }
-            set { feedItems = value; OnPropertyChanged(); }
-        }
+        public ObservableRangeCollection<FeedItem> FeedItems { get; } = new ObservableRangeCollection<FeedItem>();
 
         private FeedItem selectedFeedItem;
         /// <summary>
@@ -35,22 +28,16 @@ namespace Hanselman.Portable
         /// </summary>
         public FeedItem SelectedFeedItem
         {
-            get { return selectedFeedItem; }
-            set
-            {
-                selectedFeedItem = value;
-                OnPropertyChanged();
-            }
+            get => selectedFeedItem;
+            set => SetProperty(ref selectedFeedItem, value);
         }
 
         private Command loadItemsCommand;
         /// <summary>
         /// Command to load/refresh items
         /// </summary>
-        public Command LoadItemsCommand
-        {
-            get { return loadItemsCommand ?? (loadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand())); }
-        }
+        public Command LoadItemsCommand => 
+            loadItemsCommand ?? (loadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand()));
 
         private async Task ExecuteLoadItemsCommand()
         {
@@ -58,7 +45,6 @@ namespace Hanselman.Portable
                 return;
 
             IsBusy = true;
-            var error = false;
             try
             {
                 var responseString = string.Empty;
@@ -67,25 +53,15 @@ namespace Hanselman.Portable
                     var feed = "http://feeds.hanselman.com/ScottHanselman";
                     responseString = await httpClient.GetStringAsync(feed);
                 }
-
-                FeedItems.Clear();
+                
                 var items = await ParseFeed(responseString);
-                foreach (var item in items)
-                {
-                    FeedItems.Add(item);
-                }
+                FeedItems.ReplaceRange(items);
             }
             catch
             {
-                error = true;
+                await Application.Current.MainPage.DisplayAlert("Error", "Unable to load blog.", "OK");
             }
-
-            if (error)
-            {
-                var page = new ContentPage();
-                await page.DisplayAlert("Error", "Unable to load blog.", "OK");
-
-            }
+            
 
             IsBusy = false;
         }
@@ -121,10 +97,7 @@ namespace Hanselman.Portable
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public FeedItem GetFeedItem(int id)
-        {
-            return FeedItems.FirstOrDefault(i => i.Id == id);
-        }
+        public FeedItem GetFeedItem(int id) => FeedItems.FirstOrDefault(i => i.Id == id);
     }
 }
 

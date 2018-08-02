@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using System.Collections.Generic;
 using Hanselman.Portable.Controls;
+using MvvmHelpers;
 
 namespace Hanselman.Portable.Views
 {
@@ -76,12 +77,6 @@ namespace Hanselman.Portable.Views
             newPage = Pages[id];
             if(newPage == null)
                 return;
-
-            //pop to root for Windows Phone
-            if (Detail != null && Device.RuntimePlatform == Device.WinPhone)
-            {
-                await Detail.Navigation.PopToRootAsync();
-            }
 
             Detail = newPage;
         }

@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using MvvmHelpers;
+using Xamarin.Forms;
 
 namespace Hanselman.Portable
 {
@@ -6,8 +7,6 @@ namespace Hanselman.Portable
     {
         public BaseView()
         {
-            SetBinding(Page.TitleProperty, new Binding(BaseViewModel.TitlePropertyName));
-            SetBinding(Page.IconProperty, new Binding(BaseViewModel.IconPropertyName));
         }
     }
 }

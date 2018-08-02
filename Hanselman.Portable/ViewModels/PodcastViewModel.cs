@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Xml.Linq;
+using MvvmHelpers;
 
 namespace Hanselman.Portable.ViewModels
 {
@@ -26,7 +24,7 @@ namespace Hanselman.Portable.ViewModels
                     break;
                 case MenuType.Ratchet:
                     image = "ratchet_full.jpg";
-                    Title= "Ratchet & The Geek";
+                    Title = "Ratchet & The Geek";
                     break;
                 case MenuType.DeveloperLife:
                     image = "tdl_full.jpg";
@@ -36,16 +34,8 @@ namespace Hanselman.Portable.ViewModels
         }
 
 
-        private ObservableCollection<FeedItem> feedItems = new ObservableCollection<FeedItem>();
+        public ObservableRangeCollection<FeedItem> FeedItems { get; } = new ObservableRangeCollection<FeedItem>();
 
-        /// <summary>
-        /// gets or sets the feed items
-        /// </summary>
-        public ObservableCollection<FeedItem> FeedItems
-        {
-            get { return feedItems; }
-            set { feedItems = value; OnPropertyChanged(); }
-        }
 
         private FeedItem selectedFeedItem;
         /// <summary>
@@ -53,22 +43,15 @@ namespace Hanselman.Portable.ViewModels
         /// </summary>
         public FeedItem SelectedFeedItem
         {
-            get { return selectedFeedItem; }
-            set
-            {
-                selectedFeedItem = value;
-                OnPropertyChanged();
-            }
+            get => selectedFeedItem;
+            set => SetProperty(ref selectedFeedItem, value);
         }
 
         private Command loadItemsCommand;
         /// <summary>
         /// Command to load/refresh items
         /// </summary>
-        public Command LoadItemsCommand
-        {
-            get { return loadItemsCommand ?? (loadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand())); }
-        }
+        public Command LoadItemsCommand => loadItemsCommand ?? (loadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand()));
 
         private async Task ExecuteLoadItemsCommand()
         {
@@ -76,7 +59,6 @@ namespace Hanselman.Portable.ViewModels
                 return;
 
             IsBusy = true;
-            var error = false;
             try
             {
                 var httpClient = new HttpClient();
@@ -95,26 +77,14 @@ namespace Hanselman.Portable.ViewModels
                         break;
                 }
                 var responseString = await httpClient.GetStringAsync(feed);
-
-                FeedItems.Clear();
+                
                 var items = await ParseFeed(responseString);
-                foreach (var feedItem in items)
-                {
-                    FeedItems.Add(feedItem);
-                }
+                FeedItems.ReplaceRange(items);
             }
             catch
             {
-                error = true;
+                await Application.Current.MainPage.DisplayAlert("Error", "Unable to load podcast feed.", "OK");
             }
-
-            if (error)
-            {
-                var page = new ContentPage();
-                var result = page.DisplayAlert("Error", "Unable to load podcast feed.", "OK");
-
-            }
-
 
             IsBusy = false;
         }
@@ -153,9 +123,6 @@ namespace Hanselman.Portable.ViewModels
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public FeedItem GetFeedItem(int id)
-        {
-            return FeedItems.FirstOrDefault(i => i.Id == id);
-        }
+        public FeedItem GetFeedItem(int id) => FeedItems.FirstOrDefault(i => i.Id == id);
     }
 }

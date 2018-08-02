@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
@@ -8,18 +7,18 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
 using Hanselman.Portable.Models;
+using MvvmHelpers;
 using Xamarin.Forms;
 
 namespace Hanselman.Portable.ViewModels
 {
     public class Channel9VideosViewModel : BaseViewModel
     {
-        private VideoFeedItem _selectedFeedItem;
+        private VideoFeedItem selectedFeedItem;
 
         public Channel9VideosViewModel()
         {
-            Title = "Channel 9 videos";
-            FeedItems = new ObservableCollection<VideoFeedItem>();
+            Title = "Channel 9 Videos";
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }
 
@@ -28,49 +27,36 @@ namespace Hanselman.Portable.ViewModels
         /// </summary>
         public VideoFeedItem SelectedFeedItem
         {
-            get { return _selectedFeedItem; }
-            set
-            {
-                _selectedFeedItem = value;
-                OnPropertyChanged();
-            }
+            get => selectedFeedItem;
+            set => SetProperty(ref selectedFeedItem, value);
         }
 
         public ICommand LoadItemsCommand { get; }
-        public ObservableCollection<VideoFeedItem> FeedItems { get; }
+        public ObservableRangeCollection<VideoFeedItem> FeedItems { get; } = new ObservableRangeCollection<VideoFeedItem>();
 
-        private async Task ExecuteLoadItemsCommand()
+        async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
                 return;
 
             IsBusy = true;
-            var error = false;
             try
             {
                 var httpClient = new HttpClient();
 
-                var feed = "https://channel9.msdn.com/Feeds/RSS";
+                var feed = "https://channel9.msdn.com/Shows/Azure-Friday/feed";
                 var responseString = await httpClient.GetStringAsync(feed);
 
-                FeedItems.Clear();
                 var items = await ParseFeed(responseString);
-                foreach (var feedItem in items)
-                    FeedItems.Add(feedItem);
+                FeedItems.ReplaceRange(items);
             }
             catch
             {
-                error = true;
+                await Application.Current.MainPage.DisplayAlert("Error", "Unable to load channel 9 videos feed.", "OK");
             }
             finally
             {
                 IsBusy = false;
-            }
-
-            if (error)
-            {
-                var page = new ContentPage();
-                await page.DisplayAlert("Error", "Unable to load channel 9 videos feed.", "OK");
             }
         }
 
@@ -110,23 +96,23 @@ namespace Hanselman.Portable.ViewModels
                             var fileSize = mediaUrl.Attribute("fileSize").Value;
                             var url = mediaUrl.Attribute("url").Value;
                             videoUrls.Add(new VideoContentItem()
-                                {
-                                    Duration = TimeSpan.FromSeconds(Convert.ToInt32(duration)),
-                                    FileSize = long.Parse(fileSize),
-                                    Url = url,
-                                }
+                            {
+                                Duration = TimeSpan.FromSeconds(Convert.ToInt32(duration)),
+                                FileSize = long.Parse(fileSize),
+                                Url = url,
+                            }
                             );
                         }
 
                         var videoFeedItem = new VideoFeedItem
                         {
                             VideoUrls = videoUrls.OrderByDescending(url => url.FileSize).ToList(),
-                            Title = (string) item.Element("title"),
-                            Description = (string) item.Element(itunes + "summary")?.Value,
-                            Link = (string) item.Element("link"),
-                            PublishDate = (string) item.Element("pubDate"),
-                            Category = (string) item.Element("category"),
-                            ThumbnailUrl = (string) item.Element(media + "thumbnail")?.Attribute("url")?.Value
+                            Title = (string)item.Element("title"),
+                            Description = (string)item.Element(itunes + "summary")?.Value,
+                            Link = (string)item.Element("link"),
+                            PublishDate = (string)item.Element("pubDate"),
+                            Category = (string)item.Element("category"),
+                            ThumbnailUrl = (string)item.Element(media + "thumbnail")?.Attribute("url")?.Value
                         };
 
                         list.Add(videoFeedItem);

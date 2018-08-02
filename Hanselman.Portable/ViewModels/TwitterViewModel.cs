@@ -1,22 +1,29 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Collections.ObjectModel;
-using LinqToTwitter;
+//using LinqToTwitter;
 using System.Threading.Tasks;
 using System.Linq;
+using MvvmHelpers;
+using System.Net.Http;
+using System.Text;
+using System.Json;
+using System.Collections.Generic;
+using QuickType;
+using System.Globalization;
 
 namespace Hanselman.Portable
 {
     public class TwitterViewModel : BaseViewModel
     {
 
-        public ObservableCollection<Tweet> Tweets { get; set; }
+        public ObservableRangeCollection<Tweet> Tweets { get; set; }
 
         public TwitterViewModel()
         {
             Title = "Twitter";
             Icon = "slideout.png";
-            Tweets = new ObservableCollection<Tweet>();
+            Tweets = new ObservableRangeCollection<Tweet>();
 
         }
 
@@ -37,6 +44,43 @@ namespace Hanselman.Portable
             }
         }
 
+        public async Task<string> GetAccessToken()
+        {
+            var httpClient = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Post, "https://api.twitter.com/oauth2/token ");
+            var customerInfo = Convert.ToBase64String(new UTF8Encoding()
+                                      .GetBytes("ZTmEODUCChOhLXO4lnUCEbH2I" + ":" + "Y8z2Wouc5ckFb1a0wjUDT9KAI6DUat5tFNdmIkPLl8T4Nyaa2J"));
+            request.Headers.Add("Authorization", "Basic " + customerInfo);
+            request.Content = new StringContent("grant_type=client_credentials",
+                                                    Encoding.UTF8, "application/x-www-form-urlencoded");
+
+            var response = await httpClient.SendAsync(request);
+
+            var json = await response.Content.ReadAsStringAsync();
+            var result = JsonValue.Parse(json);
+
+            return result["access_token"];
+        }
+
+
+        async Task<IEnumerable<TweetRaw>> GetTweets(string accessToken = null)
+        {
+            if (accessToken == null)
+            {
+                accessToken = await GetAccessToken();
+            }
+
+            var requestUserTimeline = new HttpRequestMessage(HttpMethod.Get,
+                $"https://api.twitter.com/1.1/statuses/user_timeline.json?count=25&screen_name=shanselman&trim_user=0&exclude_replies=1");
+
+            requestUserTimeline.Headers.Add("Authorization", "Bearer " + accessToken);
+            var httpClient = new HttpClient();
+            HttpResponseMessage responseUserTimeLine = await httpClient.SendAsync(requestUserTimeline);
+            string json = await responseUserTimeLine.Content.ReadAsStringAsync();
+
+            return TweetRaw.FromJson(json);
+        }
+
         public async Task ExecuteLoadTweetsCommand()
         {
             if (IsBusy)
@@ -44,71 +88,59 @@ namespace Hanselman.Portable
 
             IsBusy = true;
             LoadTweetsCommand.ChangeCanExecute();
-            var error = false;
+
             try
             {
 
-                Tweets.Clear();
-                var auth = new ApplicationOnlyAuthorizer()
+               
+                var tweetsRaw = await GetTweets();
+
+                
+                var tweets = tweetsRaw.Select(t => new Tweet
                 {
-                    CredentialStore = new InMemoryCredentialStore
-                    {
-                        ConsumerKey = "ZTmEODUCChOhLXO4lnUCEbH2I",
-                        ConsumerSecret = "Y8z2Wouc5ckFb1a0wjUDT9KAI6DUat5tFNdmIkPLl8T4Nyaa2J",
-                    },
-                };
-                await auth.AuthorizeAsync();
+                    StatusID = (ulong)t.Id,
+                    ScreenName = t.User.ScreenName,
+                    Text = t.Text,
+                    CurrentUserRetweet = (ulong)t.RetweetCount,
+                    CreatedAt = GetDate(t.CreatedAt, DateTime.MinValue),
+                    Image = t.RetweetedStatus != null && t.RetweetedStatus.User != null ?
+                                      t.RetweetedStatus.User.ProfileImageUrlHttps : (t.User.ScreenName == "shanselman" ? "scott159.png" : t.User.ProfileImageUrlHttps)
+                });
 
-                var twitterContext = new TwitterContext(auth);
-
-                var queryResponse = await
-                  (from tweet in twitterContext.Status
-                   where tweet.Type == StatusType.User &&
-                     tweet.ScreenName == "shanselman" &&
-                     tweet.Count == 100 &&
-                     tweet.IncludeRetweets == true &&
-                     tweet.ExcludeReplies == true
-                   select tweet).ToListAsync();
-
-                var tweets =
-                  (from tweet in queryResponse
-                   select new Tweet
-                   {
-                       StatusID = tweet.StatusID,
-                       ScreenName = tweet.User.ScreenNameResponse,
-                       Text = tweet.Text,
-                       CurrentUserRetweet = tweet.CurrentUserRetweet,
-                       CreatedAt = tweet.CreatedAt,
-                       Image = tweet.RetweetedStatus != null && tweet.RetweetedStatus.User != null ?
-                                      tweet.RetweetedStatus.User.ProfileImageUrl.Replace("http://", "https://") : (tweet.User.ScreenNameResponse == "shanselman" ? "scott159.png" : tweet.User.ProfileImageUrl.Replace("http://", "https://"))
-                   }).ToList();
-                foreach (var tweet in tweets)
-                {
-                    Tweets.Add(tweet);
-                }
-
-                if (Device.OS == TargetPlatform.iOS)
+                if (Device.RuntimePlatform == Device.iOS)
                 {
                     // only does anything on iOS, for the Watch
-                    DependencyService.Get<ITweetStore>().Save(tweets);
+                    DependencyService.Get<ITweetStore>().Save(tweets.ToList());
                 }
 
-
+                Tweets.ReplaceRange(tweets);
 
             }
             catch
             {
-                error = true;
-            }
-
-            if (error)
-            {
-                var page = new ContentPage();
-                await page.DisplayAlert("Error", "Unable to load tweets.", "OK");
+                await Application.Current.MainPage.DisplayAlert("Error", "Unable to load tweets.", "OK");
             }
 
             IsBusy = false;
             LoadTweetsCommand.ChangeCanExecute();
+        }
+
+        public static readonly string[] DateFormats = { "ddd MMM dd HH:mm:ss %zzzz yyyy",
+                                                         "yyyy-MM-dd\\THH:mm:ss\\Z",
+                                                         "yyyy-MM-dd HH:mm:ss",
+                                                         "yyyy-MM-dd HH:mm"};
+
+        public static DateTime GetDate(string date, DateTime defaultValue)
+        {
+            DateTime result;
+
+            return String.IsNullOrWhiteSpace(date) ||
+                !DateTime.TryParseExact(date,
+                        DateFormats,
+                        CultureInfo.InvariantCulture,
+                        DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal, out result)
+                    ? defaultValue
+                    : result;
         }
     }
 }

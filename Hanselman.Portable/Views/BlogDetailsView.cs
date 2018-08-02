@@ -1,6 +1,4 @@
-﻿using Hanselman.Portable.Helpers;
-using Plugin.Share;
-using System;
+﻿using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Hanselman.Portable
@@ -9,6 +7,7 @@ namespace Hanselman.Portable
     {
         public BlogDetailsView(FeedItem item)
         {
+            Title = item.Title;
             BindingContext = item;
             var webView = new WebView
             {
@@ -30,13 +29,7 @@ namespace Hanselman.Portable
             {
                 Icon = "ic_share.png",
                 Text = "Share",
-                Command = new Command(() => CrossShare.Current
-                  .Share(new Plugin.Share.Abstractions.ShareMessage
-                  {
-                      Text = "Be sure to read @shanselman's " + item.Title + " " + item.Link,
-                      Title = "Share",
-                      Url = item.Link
-                  }))
+                Command = new Command(async () => await DataTransfer.RequestAsync(new ShareTextRequest(item.Title, item.Link)))
             };
 
             ToolbarItems.Add(share);
