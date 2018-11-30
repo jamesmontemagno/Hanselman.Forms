@@ -31,7 +31,7 @@ namespace Hanselman.Portable.Views
 
         private async void OnPlayClicked(object sender, EventArgs e)
         {
-            await CrossMediaManager.Current.VideoPlayer.Play();
+            await CrossMediaManager.Current.Play();
             pause.IsEnabled = true;
             stop.IsEnabled = true;
         }
