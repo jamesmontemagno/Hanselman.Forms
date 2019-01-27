@@ -71,7 +71,7 @@ namespace Hanselman.Portable
             }
 
             var requestUserTimeline = new HttpRequestMessage(HttpMethod.Get,
-                $"https://api.twitter.com/1.1/statuses/user_timeline.json?count=25&screen_name=shanselman&trim_user=0&exclude_replies=1");
+                $"https://api.twitter.com/1.1/statuses/user_timeline.json?count=100&screen_name=shanselman&trim_user=0&exclude_replies=1");
 
             requestUserTimeline.Headers.Add("Authorization", "Bearer " + accessToken);
             var httpClient = new HttpClient();
@@ -104,7 +104,7 @@ namespace Hanselman.Portable
                     CurrentUserRetweet = (ulong)t.RetweetCount,
                     CreatedAt = GetDate(t.CreatedAt, DateTime.MinValue),
                     Image = t.RetweetedStatus != null && t.RetweetedStatus.User != null ?
-                                      t.RetweetedStatus.User.ProfileImageUrlHttps : (t.User.ScreenName == "shanselman" ? "scott159.png" : t.User.ProfileImageUrlHttps)
+                                      t.RetweetedStatus.User.ProfileImageUrlHttps.ToString() : (t.User.ScreenName == "shanselman" ? "scott159.png" : t.User.ProfileImageUrlHttps.ToString())
                 });
 
                 if (Device.RuntimePlatform == Device.iOS)
