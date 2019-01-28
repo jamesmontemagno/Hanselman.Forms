@@ -106,12 +106,12 @@ namespace Hanselman.Portable.ViewModels
                         where enclosure != null
                         select new FeedItem
                         {
-                            Title = (string)item.Element("title"),
-                            Description = (string)item.Element("description"),
-                            Link = (string)item.Element("link"),
-                            PublishDate = (string)item.Element("pubDate"),
-                            Category = (string)item.Element("category"),
-                            Mp3Url = (string)enclosure.Attribute("url"),
+                            Title = (string)item.Element("title") ?? "",
+                            Description = (string)item.Element("description") ?? "",
+                            Link = (string)item.Element("link") ?? "",
+                            PublishDate = (string)item.Element("pubDate") ?? "",
+                            Category = (string)item.Element("category") ?? "",
+                            Mp3Url = (string)enclosure.Attribute("url") ?? "",
                             Image = image,
                             Id = id++
                         }).ToList();
