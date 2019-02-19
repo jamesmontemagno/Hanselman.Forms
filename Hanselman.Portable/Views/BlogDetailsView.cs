@@ -29,7 +29,7 @@ namespace Hanselman.Portable
             {
                 Icon = "ic_share.png",
                 Text = "Share",
-                Command = new Command(async () => await DataTransfer.RequestAsync(new ShareTextRequest(item.Title, item.Link)))
+                Command = new Command(async () => await Share.RequestAsync(new ShareTextRequest(item.Title, item.Link)))
             };
 
             ToolbarItems.Add(share);

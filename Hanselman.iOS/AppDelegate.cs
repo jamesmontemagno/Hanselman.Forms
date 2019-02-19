@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 using Foundation;
 using UIKit;
@@ -8,7 +6,6 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using Hanselman.Portable;
 using ImageCircle.Forms.Plugin.iOS;
-using Plugin.MediaManager.Forms;
 using Plugin.MediaManager.Forms.iOS;
 
 namespace Hanselman.iOS
@@ -32,15 +29,15 @@ namespace Hanselman.iOS
             UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(43, 132, 211); //bar background
             UINavigationBar.Appearance.TintColor = UIColor.White; //Tint color of button items
             UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes()
-                {
-                    Font = UIFont.FromName("HelveticaNeue-Light", (nfloat)20f),
-                    TextColor = UIColor.White
-                });
+            {
+                Font = UIFont.FromName("HelveticaNeue-Light", (nfloat)20f),
+                TextColor = UIColor.White
+            });
             Forms.Init();
             VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
-            
+
 
             return base.FinishedLaunching(app, options);
         }

@@ -1,19 +1,11 @@
 ﻿using Hanselman.Portable.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Hanselman.Portable.Views
 {
     public partial class PodcastPage : ContentPage
     {
-        private PodcastViewModel ViewModel
-        {
-            get { return BindingContext as PodcastViewModel; }
-        }
+        PodcastViewModel ViewModel => BindingContext as PodcastViewModel;
 
 
         public PodcastPage(MenuType item)
@@ -25,7 +17,7 @@ namespace Hanselman.Portable.Views
             {
                 if (listView.SelectedItem == null)
                     return;
-                this.Navigation.PushAsync(new PodcastPlaybackPage
+                Navigation.PushAsync(new PodcastPlaybackPage
                   (listView.SelectedItem as FeedItem));
                 listView.SelectedItem = null;
             };

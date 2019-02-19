@@ -14,7 +14,7 @@ namespace Hanselman.Portable.ViewModels
 {
     public class Channel9VideosViewModel : BaseViewModel
     {
-        private VideoFeedItem selectedFeedItem;
+        VideoFeedItem selectedFeedItem;
 
         public Channel9VideosViewModel()
         {
@@ -60,7 +60,7 @@ namespace Hanselman.Portable.ViewModels
             }
         }
 
-        private async Task<IEnumerable<VideoFeedItem>> ParseFeed(string rss)
+        async Task<IEnumerable<VideoFeedItem>> ParseFeed(string rss)
         {
             return await Task.Run(() =>
             {
@@ -72,7 +72,7 @@ namespace Hanselman.Portable.ViewModels
                 {
                     try
                     {
-                        bool foundTheMagicKeyword = false;
+                        var foundTheMagicKeyword = false;
                         foreach (var element in item.Elements())
                         {
                             var keyword = "hanselman".ToLowerInvariant();
@@ -89,7 +89,7 @@ namespace Hanselman.Portable.ViewModels
                         if (mediaGroup == null)
                             continue;
 
-                        List<VideoContentItem> videoUrls = new List<VideoContentItem>();
+                        var videoUrls = new List<VideoContentItem>();
                         foreach (var mediaUrl in mediaGroup.Elements())
                         {
                             var duration = mediaUrl.Attribute("duration").Value;

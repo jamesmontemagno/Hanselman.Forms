@@ -13,32 +13,32 @@
               IsRefreshing="{Binding IsBusy, Mode=OneWay}"
             AbsoluteLayout.LayoutFlags="All"
             AbsoluteLayout.LayoutBounds="0,0,1,1">
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          <Grid Padding="5">
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="70"/>
-              <ColumnDefinition Width="5"/>
-              <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Image Source="{Binding ThumbnailUrl}" HeightRequest="70" WidthRequest="70"
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="5"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding ThumbnailUrl}" HeightRequest="70" WidthRequest="70"
                    VerticalOptions="StartAndExpand"
                    HorizontalOptions="StartAndExpand" Aspect="AspectFill"/>
 
-            <StackLayout Grid.Column="2"
+                        <StackLayout Grid.Column="2"
                          Spacing="4"
                          VerticalOptions="StartAndExpand">
-              <Label Text="{Binding Title}" TextColor="#3498DB" FontSize="Medium" LineBreakMode="WordWrap"/>
-              <Label Text="{Binding Description}" FontSize="Small" LineBreakMode="WordWrap"/>
-              <Label Text="{Binding PublishDate}" TextColor="#3498DB" FontSize="Small" LineBreakMode="NoWrap"/>
-              <Label Text="{Binding Caption}" FontSize="Small" LineBreakMode="WordWrap"/>
-            </StackLayout>
+                            <Label Text="{Binding Title}" TextColor="#3498DB" FontSize="Medium" LineBreakMode="WordWrap"/>
+                            <Label Text="{Binding Description}" FontSize="Small" LineBreakMode="WordWrap"/>
+                            <Label Text="{Binding PublishDate}" TextColor="#3498DB" FontSize="Small" LineBreakMode="NoWrap"/>
+                            <Label Text="{Binding Caption}" FontSize="Small" LineBreakMode="WordWrap"/>
+                        </StackLayout>
 
 
-          </Grid>
-        </ViewCell>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-  </ListView>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

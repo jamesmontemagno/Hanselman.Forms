@@ -1,6 +1,5 @@
 ﻿using System;
 using Xamarin.Forms;
-using System.Collections.ObjectModel;
 //using LinqToTwitter;
 using System.Threading.Tasks;
 using System.Linq;
@@ -27,13 +26,9 @@ namespace Hanselman.Portable
 
         }
 
-        private Command loadTweetsCommand;
+        Command loadTweetsCommand;
 
-        public Command LoadTweetsCommand
-        {
-            get
-            {
-                return loadTweetsCommand ??
+        public Command LoadTweetsCommand => loadTweetsCommand ??
                   (loadTweetsCommand = new Command(async () =>
                   {
                       await ExecuteLoadTweetsCommand();
@@ -41,8 +36,6 @@ namespace Hanselman.Portable
                   {
                       return !IsBusy;
                   }));
-            }
-        }
 
         public async Task<string> GetAccessToken()
         {
@@ -75,8 +68,8 @@ namespace Hanselman.Portable
 
             requestUserTimeline.Headers.Add("Authorization", "Bearer " + accessToken);
             var httpClient = new HttpClient();
-            HttpResponseMessage responseUserTimeLine = await httpClient.SendAsync(requestUserTimeline);
-            string json = await responseUserTimeLine.Content.ReadAsStringAsync();
+            var responseUserTimeLine = await httpClient.SendAsync(requestUserTimeline);
+            var json = await responseUserTimeLine.Content.ReadAsStringAsync();
 
             return TweetRaw.FromJson(json);
         }
@@ -92,10 +85,10 @@ namespace Hanselman.Portable
             try
             {
 
-               
+
                 var tweetsRaw = await GetTweets();
 
-                
+
                 var tweets = tweetsRaw.Select(t => new Tweet
                 {
                     StatusID = (ulong)t.Id,
@@ -116,7 +109,7 @@ namespace Hanselman.Portable
                 Tweets.ReplaceRange(tweets);
 
             }
-            catch
+            catch(Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Unable to load tweets.", "OK");
             }
@@ -132,13 +125,11 @@ namespace Hanselman.Portable
 
         public static DateTime GetDate(string date, DateTime defaultValue)
         {
-            DateTime result;
-
-            return String.IsNullOrWhiteSpace(date) ||
+            return string.IsNullOrWhiteSpace(date) ||
                 !DateTime.TryParseExact(date,
                         DateFormats,
                         CultureInfo.InvariantCulture,
-                        DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal, out result)
+                        DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal, out var result)
                     ? defaultValue
                     : result;
         }

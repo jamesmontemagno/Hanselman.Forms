@@ -10,7 +10,7 @@ namespace Hanselman.Portable.Views
 {
     public partial class PodcastPlaybackPage : ContentPage
     {
-        private IPlaybackController PlaybackController => CrossMediaManager.Current.PlaybackController;
+        IPlaybackController PlaybackController => CrossMediaManager.Current.PlaybackController;
         FeedItem item;
         public PodcastPlaybackPage(FeedItem item)
         {
@@ -23,8 +23,8 @@ namespace Hanselman.Portable.Views
                 {
                     ProgressBar.Progress = args.Progress;
                 });
-            }; 
-            
+            };
+
             webView.Source = new HtmlWebViewSource
             {
                 Html = item.Description

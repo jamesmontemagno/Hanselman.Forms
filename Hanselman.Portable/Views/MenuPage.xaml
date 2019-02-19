@@ -6,9 +6,9 @@
     xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
     Title="{Binding Title}"
     Icon="{Binding Icon}">
-     <ContentPage.Content>
-       <StackLayout VerticalOptions="FillAndExpand">
-         <ListView 
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <ListView 
                 CachingStrategy="RecycleElement"
                 SeparatorColor="Transparent"
                 HasUnevenRows="True"
@@ -59,6 +59,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-       </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

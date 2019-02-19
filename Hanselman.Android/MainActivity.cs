@@ -1,18 +1,12 @@
-﻿using System;
-
+﻿
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using Android.Content.PM;
 using Hanselman.Portable;
-using Android.Graphics.Drawables;
 using ImageCircle.Forms.Plugin.Droid;
-using Plugin.MediaManager.Forms;
+using Android.Runtime;
 
 namespace HanselmanAndroid
 {
@@ -25,15 +19,21 @@ namespace HanselmanAndroid
 
         protected override void OnCreate(Bundle bundle)
         {
-            FormsAppCompatActivity.ToolbarResource = Resource.Layout.Toolbar;
-            FormsAppCompatActivity.TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
+            TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
+            Xamarin.Essentials.Platform.Init(this, bundle);
             Plugin.MediaManager.Forms.Android.VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
+        }
 
-         
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

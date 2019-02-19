@@ -12,7 +12,7 @@ namespace Hanselman.Portable.Views
         List<HomeMenuItem> menuItems;
         public MenuPage(RootPage root)
         {
-            
+
             this.root = root;
             InitializeComponent();
             if (!App.IsWindows10)
@@ -21,11 +21,11 @@ namespace Hanselman.Portable.Views
                 ListViewMenu.BackgroundColor = Color.FromHex("#F5F5F5");
             }
             BindingContext = new BaseViewModel
-                {
-                    Title = "Hanselman.Forms",
-                    Subtitle="Hanselman.Forms",
-                    Icon = "slideout.png"
-                };
+            {
+                Title = "Hanselman.Forms",
+                Subtitle = "Hanselman.Forms",
+                Icon = "slideout.png"
+            };
 
             ListViewMenu.ItemsSource = menuItems = new List<HomeMenuItem>
                 {
@@ -41,9 +41,9 @@ namespace Hanselman.Portable.Views
 
             ListViewMenu.SelectedItem = menuItems[0];
 
-            ListViewMenu.ItemSelected += async (sender, e) => 
+            ListViewMenu.ItemSelected += async (sender, e) =>
                 {
-                    if(ListViewMenu.SelectedItem == null)
+                    if (ListViewMenu.SelectedItem == null)
                         return;
 
                     await this.root.NavigateAsync((int)((HomeMenuItem)e.SelectedItem).MenuType);

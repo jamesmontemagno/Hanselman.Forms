@@ -6,11 +6,8 @@ namespace Hanselman.Portable.Views
 {
     public partial class Channel9VideosPage : ContentPage
     {
-        private Channel9VideosViewModel ViewModel
-        {
-            get { return BindingContext as Channel9VideosViewModel; }
-        }
-        
+        Channel9VideosViewModel ViewModel => BindingContext as Channel9VideosViewModel;
+
 
         public Channel9VideosPage()
         {
@@ -21,7 +18,7 @@ namespace Hanselman.Portable.Views
             {
                 if (listView.SelectedItem == null)
                     return;
-                this.Navigation.PushAsync(new Channel9VideoPlaybackPage
+                Navigation.PushAsync(new Channel9VideoPlaybackPage
                   (listView.SelectedItem as VideoFeedItem));
                 listView.SelectedItem = null;
             };

@@ -11,10 +11,7 @@ namespace Hanselman.Portable.Views
     public partial class BlogPage : ContentPage
     {
 
-        private BlogFeedViewModel ViewModel
-        {
-            get { return BindingContext as BlogFeedViewModel; }
-        }
+        BlogFeedViewModel ViewModel => BindingContext as BlogFeedViewModel;
 
 
         public BlogPage()
@@ -26,7 +23,7 @@ namespace Hanselman.Portable.Views
             {
                 if (listView.SelectedItem == null)
                     return;
-                this.Navigation.PushAsync(new BlogDetailsView(listView.SelectedItem as FeedItem));
+                Navigation.PushAsync(new BlogDetailsView(listView.SelectedItem as FeedItem));
                 listView.SelectedItem = null;
             };
         }

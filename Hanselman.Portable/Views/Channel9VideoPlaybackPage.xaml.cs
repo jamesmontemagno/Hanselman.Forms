@@ -16,20 +16,20 @@ namespace Hanselman.Portable.Views
             BindingContext = item;
         }
 
-        private void OnPauseClicked(object sender, EventArgs e)
+        void OnPauseClicked(object sender, EventArgs e)
         {
             CrossMediaManager.Current.Pause();
             pause.IsEnabled = false;
         }
 
-        private void OnStopClicked(object sender, EventArgs e)
+        void OnStopClicked(object sender, EventArgs e)
         {
             CrossMediaManager.Current.Stop();
             pause.IsEnabled = false;
             stop.IsEnabled = false;
         }
 
-        private async void OnPlayClicked(object sender, EventArgs e)
+        async void OnPlayClicked(object sender, EventArgs e)
         {
             await CrossMediaManager.Current.Play();
             pause.IsEnabled = true;
@@ -39,7 +39,7 @@ namespace Hanselman.Portable.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            var item = (VideoFeedItem) BindingContext;
+            var item = (VideoFeedItem)BindingContext;
             CrossMediaManager.Current.Stop();
             CrossMediaManager.Current.StatusChanged += CurrentOnStatusChanged;
             CrossMediaManager.Current.PlayingChanged += OnPlayingChanged;
@@ -50,7 +50,7 @@ namespace Hanselman.Portable.Views
             player.AspectMode = VideoAspectMode.AspectFit;
         }
 
-        private void OnPlayingChanged(object sender, PlayingChangedEventArgs e)
+        void OnPlayingChanged(object sender, PlayingChangedEventArgs e)
         {
             Device.BeginInvokeOnMainThread(() =>
             {
@@ -69,7 +69,7 @@ namespace Hanselman.Portable.Views
             CrossMediaManager.Current.PlayingChanged -= OnPlayingChanged;
         }
 
-        private void CurrentOnStatusChanged(object sender, StatusChangedEventArgs statusChangedEventArgs)
+        void CurrentOnStatusChanged(object sender, StatusChangedEventArgs statusChangedEventArgs)
         {
             Device.BeginInvokeOnMainThread(async () =>
             {

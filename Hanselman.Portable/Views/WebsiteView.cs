@@ -7,7 +7,7 @@ namespace Hanselman.Portable
     {
         public WebsiteView(string site, string title)
         {
-            this.Title = title;
+            Title = title;
             var webView = new WebView();
             webView.Source = new UrlWebViewSource
             {

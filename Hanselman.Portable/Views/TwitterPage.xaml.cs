@@ -6,10 +6,7 @@ namespace Hanselman.Portable.Views
 {
     public partial class TwitterPage : ContentPage
     {
-        private TwitterViewModel ViewModel
-        {
-            get { return BindingContext as TwitterViewModel; }
-        }
+        TwitterViewModel ViewModel => BindingContext as TwitterViewModel;
 
         public TwitterPage()
         {
@@ -22,7 +19,7 @@ namespace Hanselman.Portable.Views
             {
                 if (listView.SelectedItem == null)
                     return;
-               
+
 
                 var tweet = listView.SelectedItem as Tweet;
 

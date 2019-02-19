@@ -57,15 +57,15 @@ namespace Hanselman.Portable.Helpers
         }
 
 #if __ANDROID__
-		public global::Android.Graphics.Color ToAndroidColor ()
-		{
-			return global::Android.Graphics.Color.Rgb ((int)(255 * R), (int)(255 * G), (int)(255 * B));
-		}
+        public global::Android.Graphics.Color ToAndroidColor()
+        {
+            return global::Android.Graphics.Color.Rgb((int)(255 * R), (int)(255 * G), (int)(255 * B));
+        }
 
-		public static implicit operator global::Android.Graphics.Color (Color color)
-		{
-			return color.ToAndroidColor ();
-		}
+        public static implicit operator global::Android.Graphics.Color(Color color)
+        {
+            return color.ToAndroidColor();
+        }
 #endif
     }
 }

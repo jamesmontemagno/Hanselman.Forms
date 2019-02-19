@@ -17,9 +17,9 @@ namespace Hanselman.Portable
         public string Text { get; set; }
 
         [JsonIgnore]
-        public string Date { get { return CreatedAt.ToString("g"); } }
+        public string Date => CreatedAt.ToString("g");
         [JsonIgnore]
-        public string RTCount { get { return CurrentUserRetweet == 0 ? string.Empty : CurrentUserRetweet + " RT"; } }
+        public string RTCount => CurrentUserRetweet == 0 ? string.Empty : CurrentUserRetweet + " RT";
 
         public string Image { get; set; }
 

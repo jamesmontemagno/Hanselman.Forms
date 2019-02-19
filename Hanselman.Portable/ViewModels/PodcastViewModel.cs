@@ -10,8 +10,8 @@ namespace Hanselman.Portable.ViewModels
 {
     public class PodcastViewModel : BaseViewModel
     {
-        MenuType item;
-        private string image;
+        readonly MenuType item;
+        string image;
         public PodcastViewModel(MenuType item)
         {
             this.item = item;
@@ -37,7 +37,7 @@ namespace Hanselman.Portable.ViewModels
         public ObservableRangeCollection<FeedItem> FeedItems { get; } = new ObservableRangeCollection<FeedItem>();
 
 
-        private FeedItem selectedFeedItem;
+        FeedItem selectedFeedItem;
         /// <summary>
         /// Gets or sets the selected feed item
         /// </summary>
@@ -47,13 +47,13 @@ namespace Hanselman.Portable.ViewModels
             set => SetProperty(ref selectedFeedItem, value);
         }
 
-        private Command loadItemsCommand;
+        Command loadItemsCommand;
         /// <summary>
         /// Command to load/refresh items
         /// </summary>
         public Command LoadItemsCommand => loadItemsCommand ?? (loadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand()));
 
-        private async Task ExecuteLoadItemsCommand()
+        async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
                 return;
@@ -95,7 +95,7 @@ namespace Hanselman.Portable.ViewModels
         /// </summary>
         /// <param name="rss"></param>
         /// <returns></returns>
-        private async Task<List<FeedItem>> ParseFeed(string rss)
+        async Task<List<FeedItem>> ParseFeed(string rss)
         {
             return await Task.Run(() =>
             {

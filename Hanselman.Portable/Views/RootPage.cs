@@ -10,19 +10,19 @@ namespace Hanselman.Portable.Views
     public class RootPage : MasterDetailPage
     {
         public static bool IsUWPDesktop { get; set; }
-        Dictionary<int, NavigationPage> Pages { get; set;} 
+        Dictionary<int, NavigationPage> Pages { get; set; }
         public RootPage()
         {
-            if(IsUWPDesktop)
-                this.MasterBehavior = MasterBehavior.Popover;
+            if (IsUWPDesktop)
+                MasterBehavior = MasterBehavior.Popover;
 
             Pages = new Dictionary<int, NavigationPage>();
             Master = new MenuPage(this);
             BindingContext = new BaseViewModel
-                {
-                    Title = "Hanselman",
-                    Icon = "slideout.png"
-                };
+            {
+                Title = "Hanselman",
+                Icon = "slideout.png"
+            };
             //setup home page
             Pages.Add((int)MenuType.About, new HanselmanNavigationPage(new AboutPage()));
             Detail = Pages[(int)MenuType.About];
@@ -75,7 +75,7 @@ namespace Hanselman.Portable.Views
             }
 
             newPage = Pages[id];
-            if(newPage == null)
+            if (newPage == null)
                 return;
 
             Detail = newPage;

@@ -7,19 +7,16 @@ namespace Hanselman.Portable
 {
     public class FeedItem : INotifyPropertyChanged
     {
-
-
-
         public string Description { get; set; }
         public string Link { get; set; }
-        private string publishDate;
+
+        string publishDate;
         public string PublishDate
         {
-            get { return publishDate; }
+            get => publishDate;
             set
             {
-                DateTime time;
-                if (DateTime.TryParse(value, out time))
+                if (DateTime.TryParse(value, out var time))
                     publishDate = time.ToLocalTime().ToString("D");
                 else
                     publishDate = value;
@@ -33,21 +30,14 @@ namespace Hanselman.Portable
 
         public string Mp3Url { get; set; }
 
-        private string title;
+        string title;
         public string Title
         {
-            get
-            {
-                return title;
-            }
-            set
-            {
-                title = value;
-
-            }
+            get => title;
+            set => title = value;
         }
 
-        private string caption;
+        string caption;
 
         public string Caption
         {
@@ -71,31 +61,25 @@ namespace Hanselman.Portable
 
         public string Length { get; set; }
 
-        private bool showImage = true;
+        public bool ShowImage { get; set; } = true;
 
-        public bool ShowImage
-        {
-            get { return showImage; }
-            set { showImage = value; }
-        }
-
-        private string image = @"https://secure.gravatar.com/avatar/70148d964bb389d42547834e1062c886?s=60&r=x&d=http%3a%2f%2fd1iqk4d73cu9hh.cloudfront.net%2fcomponents%2fimg%2fuser-icon.png";
+        string image = @"https://secure.gravatar.com/avatar/70148d964bb389d42547834e1062c886?s=60&r=x&d=http%3a%2f%2fd1iqk4d73cu9hh.cloudfront.net%2fcomponents%2fimg%2fuser-icon.png";
 
         /// <summary>
         /// When we set the image, mark show image as true
         /// </summary>
         public string Image
         {
-            get { return image; }
+            get => image;
             set
             {
                 image = value;
-                showImage = true;
+                ShowImage = true;
             }
 
         }
 
-        private string firstImage;
+        string firstImage;
         public string FirstImage
         {
             get
@@ -125,18 +109,18 @@ namespace Hanselman.Portable
             }
         }
 
-        public string ScottHead { get { return "http://www.hanselman.com/images/photo-scott-tall.jpg"; } }
+        public string ScottHead => "http://www.hanselman.com/images/photo-scott-tall.jpg";
 
-        private decimal progress = 0.0M;
+        decimal progress = 0.0M;
         public decimal Progress
         {
-            get { return progress; }
+            get => progress;
             set { progress = value; OnPropertyChanged("Progress"); }
         }
 
 
         public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(string name)
+        void OnPropertyChanged(string name)
         {
             if (PropertyChanged == null)
                 return;

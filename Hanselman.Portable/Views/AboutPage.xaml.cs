@@ -2,7 +2,6 @@
 using Xamarin.Forms;
 using Hanselman.Portable.Helpers;
 using Xamarin.Essentials;
-using System.Threading.Tasks;
 
 namespace Hanselman.Portable.Views
 {
@@ -18,7 +17,7 @@ namespace Hanselman.Portable.Views
                 {
                     //try to launch twitter or tweetbot app, else launch browser
                     var launch = DependencyService.Get<ILaunchTwitter>();
-                    if(launch == null || !launch.OpenUserName("shanselman"))
+                    if (launch == null || !launch.OpenUserName("shanselman"))
                         await Browser.OpenAsync("http://m.twitter.com/shanselman");
                 })
             });
