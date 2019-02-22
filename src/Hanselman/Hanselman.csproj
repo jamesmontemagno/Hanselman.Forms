@@ -13,6 +13,6 @@
     <PackageReference Include="System.Json" Version="4.5.0" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
-    <PackageReference Include="Xamarin.Forms" Version="3.5.0.129452" />
+    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
   </ItemGroup>
 </Project>

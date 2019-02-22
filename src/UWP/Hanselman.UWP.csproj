@@ -147,7 +147,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hanselman.Portable\Hanselman.csproj">
+    <ProjectReference Include="..\Hanselman\Hanselman.csproj">
       <Project>{028799a4-e2fd-4901-b950-666c00efbf63}</Project>
       <Name>Hanselman</Name>
     </ProjectReference>
@@ -166,7 +166,7 @@
     </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
-    <PackageReference Include="Xamarin.Forms" Version="3.5.0.129452" />
+    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

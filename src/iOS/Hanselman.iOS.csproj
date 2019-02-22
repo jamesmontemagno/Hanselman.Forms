@@ -179,7 +179,7 @@
     <Compile Include="Helpers\Color.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hanselman.Portable\Hanselman.csproj">
+    <ProjectReference Include="..\Hanselman\Hanselman.csproj">
       <Project>{028799A4-E2FD-4901-B950-666C00EFBF63}</Project>
       <Name>Hanselman</Name>
     </ProjectReference>
@@ -323,7 +323,7 @@
     </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
-    <PackageReference Include="Xamarin.Forms" Version="3.5.0.129452" />
+    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
