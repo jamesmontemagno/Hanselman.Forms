@@ -6,7 +6,7 @@ using System.Xml.Linq;
 using System.Linq;
 using MvvmHelpers;
 
-namespace Hanselman.Portable
+namespace Hanselman
 {
     public class BlogFeedViewModel : BaseViewModel
     {

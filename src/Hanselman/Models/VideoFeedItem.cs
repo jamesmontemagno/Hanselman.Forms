@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Hanselman.Portable.Models
+namespace Hanselman.Models
 {
     public class VideoFeedItem
     {

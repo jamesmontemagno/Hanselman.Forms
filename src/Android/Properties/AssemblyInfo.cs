@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using Android.App;
+using Xamarin.Forms;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
@@ -25,4 +26,6 @@ using Android.App;
 
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
+
+[assembly: ResolutionGroupName("Hanselman")]
 

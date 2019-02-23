@@ -4,7 +4,7 @@ using Android.OS;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using Android.Content.PM;
-using Hanselman.Portable;
+using Hanselman;
 using ImageCircle.Forms.Plugin.Droid;
 using Android.Runtime;
 

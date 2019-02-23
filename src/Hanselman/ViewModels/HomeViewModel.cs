@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using MvvmHelpers;
 
-namespace Hanselman.Portable
+namespace Hanselman
 {
     public class HomeViewModel : BaseViewModel
     {

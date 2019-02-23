@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace Hanselman.Portable
+namespace Hanselman
 {
     public class Tweet
     {

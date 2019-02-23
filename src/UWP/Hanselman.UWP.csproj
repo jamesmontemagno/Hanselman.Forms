@@ -105,12 +105,8 @@
     <None Include="Hanselman.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.png" />
-    <Content Include="blog.png" />
-    <Content Include="channel9.png" />
     <Content Include="facebook.png" />
     <Content Include="googleplus.png" />
-    <Content Include="hm.png" />
     <Content Include="hm_full.jpg" />
     <Content Include="ic_play.png" />
     <Content Include="ic_share.png" />
@@ -124,17 +120,13 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="ratchet.png" />
     <Content Include="ratchet_full.jpg" />
     <Content Include="refresh.png" />
     <Content Include="scott.png" />
     <Content Include="scott159.png" />
     <Content Include="scotticon.png" />
-    <Content Include="slideout.png" />
-    <Content Include="tdl.png" />
     <Content Include="tdl_full.jpg" />
     <Content Include="twitter.png" />
-    <Content Include="twitternav.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

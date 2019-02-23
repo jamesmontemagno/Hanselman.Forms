@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Controls
+namespace Hanselman.Controls
 {
     public class HanselmanNavigationPage :NavigationPage
     {
