@@ -15,9 +15,7 @@ namespace Hanselman.UWP
         {
             InitializeComponent();
 
-            Portable.App.IsWindows10 = true;
-            Portable.Views.RootPage.IsUWPDesktop = AnalyticsInfo.VersionInfo.DeviceFamily == "Windows.Desktop";
-            LoadApplication(new Hanselman.Portable.App());
+            LoadApplication(new Hanselman.App());
 
             ApplicationView.PreferredLaunchViewSize = new Size(800, 600);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;

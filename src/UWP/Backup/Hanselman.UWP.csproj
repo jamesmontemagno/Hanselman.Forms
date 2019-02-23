@@ -151,7 +151,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hanselman.Portable\Hanselman.csproj">
+    <ProjectReference Include="..\Hanselman\Hanselman.csproj">
       <Project>{028799a4-e2fd-4901-b950-666c00efbf63}</Project>
       <Name>Hanselman</Name>
     </ProjectReference>

@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using QuickType;
 using System.Globalization;
 
-namespace Hanselman.Portable
+namespace Hanselman
 {
     public class TwitterViewModel : BaseViewModel
     {

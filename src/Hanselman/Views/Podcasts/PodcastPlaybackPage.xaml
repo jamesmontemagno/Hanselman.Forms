@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hanselman.Views.PodcastPlaybackPage"
+             Title ="{Binding Title}">
+    <StackLayout Padding="10" Spacing="5">
+        <Label Text="{Binding Title}" FontSize="Medium" x:Name="title" />
+        <Label Text="{Binding PublishDate}" x:Name="date"/>
+        <ProgressBar x:Name="ProgressBar"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
+            <Button  x:Name="play" Image="ic_play.png" HorizontalOptions="Center"/>
+            <Button  x:Name="pause" Image="ic_pause.png" HorizontalOptions="Center"/>
+            <Button  x:Name="stop" Image="ic_stop.png" HorizontalOptions="Center"/>
+        </StackLayout>
+        <WebView x:Name="webView" VerticalOptions="FillAndExpand"></WebView>
+    </StackLayout>
+
+</ContentPage>

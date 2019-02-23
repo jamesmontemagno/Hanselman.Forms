@@ -1,9 +1,11 @@
 ﻿using Xamarin.Forms;
-using Hanselman.Portable.Views;
+using Hanselman.Views;
+using Xamarin.Forms.Xaml;
+using Hanselman.Views;
 
-[assembly: Xamarin.Forms.Xaml.XamlCompilation(Xamarin.Forms.Xaml.XamlCompilationOptions.Compile)]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
-namespace Hanselman.Portable
+namespace Hanselman
 {
     public class App : Application
     {
@@ -11,7 +13,7 @@ namespace Hanselman.Portable
         public App()
         {
             // The root page of your application
-            MainPage = new RootPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()

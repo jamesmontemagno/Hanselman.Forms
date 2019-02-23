@@ -1,6 +1,6 @@
 using Foundation;
 using Hanselman.iOS.Helpers;
-using Hanselman.Portable.Helpers;
+using Hanselman.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
