@@ -7,6 +7,13 @@
     <ContentPage.BindingContext>
         <viewmodels:AboutViewModel/>
     </ContentPage.BindingContext>
+  <ContentPage.Resources>
+    <ResourceDictionary>
+        <Style x:Key="ImageButtonSocial" TargetType="ImageButton">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+        </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
   <ScrollView>
     <StackLayout Orientation="Vertical" Spacing="10" Padding="10">
       <Image Aspect="AspectFill" Source="scott.png" Margin="-10,-10,-10,0"/>
@@ -21,12 +28,9 @@
                      Spacing="10" BindableLayout.ItemsSource="{Binding SocialItems}">
                   <BindableLayout.ItemTemplate>
                       <DataTemplate>
-                        <Image Source="{Binding Icon}">
-                          <Image.GestureRecognizers>
-                                <TapGestureRecognizer
-                                        Command="{Binding OpenUrlCommand}" />
-                          </Image.GestureRecognizers>
-                        </Image>
+                        <ImageButton  Source="{Binding Icon}"
+                                      Command="{Binding OpenUrlCommand}"
+                                      Style="{StaticResource ImageButtonSocial}"/>
                       </DataTemplate>
                   </BindableLayout.ItemTemplate>
             </StackLayout>
