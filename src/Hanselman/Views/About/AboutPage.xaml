@@ -1,8 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Hanselman.Views.AboutPage"
+             xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+             x:Class="Hanselman.Views.AboutPage"             
              Title="Scott Hanselman">
+    <ContentPage.BindingContext>
+        <viewmodels:AboutViewModel/>
+    </ContentPage.BindingContext>
+  <ContentPage.Resources>
+    <ResourceDictionary>
+        <Style x:Key="ImageButtonSocial" TargetType="ImageButton">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+        </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
   <ScrollView>
     <StackLayout Orientation="Vertical" Spacing="10" Padding="10">
       <Image Aspect="AspectFill" Source="scott.png" Margin="-10,-10,-10,0"/>
@@ -14,11 +25,14 @@
 
             <StackLayout Orientation="Horizontal"
                      HorizontalOptions="CenterAndExpand"
-                     Spacing="10">
-
-                <Image x:Name="twitter" Source="twitter.png"/>
-                <Image x:Name="facebook" Source="facebook.png"/>
-                <Image x:Name="instagram" Source="instagram.png"/>
+                     Spacing="10" BindableLayout.ItemsSource="{Binding SocialItems}">
+                  <BindableLayout.ItemTemplate>
+                      <DataTemplate>
+                        <ImageButton  Source="{Binding Icon}"
+                                      Command="{Binding OpenUrlCommand}"
+                                      Style="{StaticResource ImageButtonSocial}"/>
+                      </DataTemplate>
+                  </BindableLayout.ItemTemplate>
             </StackLayout>
 
         </StackLayout>
