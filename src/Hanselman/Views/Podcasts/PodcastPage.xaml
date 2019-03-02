@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hanselman.Views.PodcastPage" Title="{Binding Title}"
@@ -33,7 +33,7 @@
                            Spacing="4"
                            VerticalOptions="Center">
                                 <Label Text="{Binding Title}" FontSize="Small" LineBreakMode="WordWrap"/>
-                                <Label Text="{Binding PublishDate}" TextColor="#3498DB" FontSize="Small" LineBreakMode="NoWrap"/>
+                                <Label Text="{Binding PublishDate}" Style="{StaticResource DateTimeLabel}"/>
                                 <Label Text="{Binding Caption}" FontSize="Small" LineBreakMode="WordWrap"/>
                             </StackLayout>
 

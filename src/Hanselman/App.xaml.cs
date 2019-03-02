@@ -1,17 +1,17 @@
 ﻿using Xamarin.Forms;
 using Hanselman.Views;
 using Xamarin.Forms.Xaml;
-using Hanselman.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-
 namespace Hanselman
 {
-    public class App : Application
+    public partial class App : Application
     {
         public static bool IsWindows10 { get; set; }
         public App()
         {
+            InitializeComponent();
+
             // The root page of your application
             MainPage = new HomePage();
         }

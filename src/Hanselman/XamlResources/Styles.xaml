@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hanselman.XamlResources.Styles">
+    <Color x:Key="Blue">#3498DB</Color>
+    
+    <Style x:Key="DateTimeLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Blue}" />
+        <Setter Property="FontSize" Value="Small" />
+        <Setter Property="LineBreakMode" Value="NoWrap" />
+    </Style>
+</ResourceDictionary>
