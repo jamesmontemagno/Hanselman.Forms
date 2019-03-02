@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using Humanizer;
 using Xamarin.Forms;
 
 namespace Hanselman
@@ -17,7 +18,7 @@ namespace Hanselman
             set
             {
                 if (DateTime.TryParse(value, out var time))
-                    publishDate = time.ToLocalTime().ToString("D");
+                    publishDate = time.ToLocalTime().Humanize();
                 else
                     publishDate = value;
             }
