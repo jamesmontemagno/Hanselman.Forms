@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Humanizer;
+using Newtonsoft.Json;
 using System;
 
 namespace Hanselman
@@ -18,6 +19,8 @@ namespace Hanselman
 
         [JsonIgnore]
         public string Date => CreatedAt.ToString("g");
+        [JsonIgnore]
+        public string DateHuminazed => CreatedAt.Humanize();
         [JsonIgnore]
         public string RTCount => CurrentUserRetweet == 0 ? string.Empty : CurrentUserRetweet + " RT";
 
