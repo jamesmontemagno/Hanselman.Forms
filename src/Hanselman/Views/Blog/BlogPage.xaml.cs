@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Hanselman.Interfaces;
 using Xamarin.Forms;
 
 namespace Hanselman.Views
 {
-    public partial class BlogPage : ContentPage
+    public partial class BlogPage : ContentPage, IPageHelpers
     {
 
         BlogFeedViewModel ViewModel => BindingContext as BlogFeedViewModel;
@@ -31,6 +31,10 @@ namespace Hanselman.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+        }
+
+        public void OnPageVisible()
+        {
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.FeedItems.Count > 0)
                 return;
 

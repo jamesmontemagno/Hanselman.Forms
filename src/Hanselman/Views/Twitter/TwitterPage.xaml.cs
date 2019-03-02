@@ -1,10 +1,11 @@
 ﻿using Hanselman.Helpers;
+using Hanselman.Interfaces;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Hanselman.Views
 {
-    public partial class TwitterPage : ContentPage
+    public partial class TwitterPage : ContentPage, IPageHelpers
     {
         TwitterViewModel ViewModel => BindingContext as TwitterViewModel;
 
@@ -36,6 +37,10 @@ namespace Hanselman.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+        }
+
+        public void OnPageVisible()
+        {
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.Tweets.Count > 0)
                 return;
 

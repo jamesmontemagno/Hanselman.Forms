@@ -6,6 +6,7 @@
             xmlns:pages="clr-namespace:Hanselman.Views"
             x:Class="Hanselman.Views.HomePage"
             BarBackgroundColor="{OnPlatform Android=White}"
+            android:TabbedPage.IsSwipePagingEnabled="False"
             android:TabbedPage.ToolbarPlacement="Bottom">
     <TabbedPage.Effects>
         <effects:TabbedPageNoShiftEffect />
