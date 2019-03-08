@@ -28,7 +28,7 @@
                            Spacing="4"
                            VerticalOptions="Center">
                 <Label Text="{Binding Title}" FontSize="Small" LineBreakMode="WordWrap"/>
-                <Label Text="{Binding PublishDate}" Style="{StaticResource DateTimeLabel}"/>
+                <Label Text="{Binding PublishDate}" Style="{StaticResource DateTimeLabelStyle}"/>
                 <Label Text="{Binding Caption}" FontSize="Small" LineBreakMode="WordWrap"/>
               </StackLayout>
 
@@ -37,21 +37,21 @@
                      Source="{Binding FirstImage}"
                      Aspect="AspectFill"
                      VerticalOptions="Center"
-                    BorderColor="#03A9F4"
+                    BorderColor="{StaticResource PrimaryColor}"
                     BorderThickness="2"
-                    FillColor="#03A9F4"/>
+                    FillColor="{StaticResource PrimaryColor}"/>
 
             </Grid>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-        <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="#80000000" Padding="12"
+        <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="{StaticResource LoadingBackgroundColor}" Padding="12"
                                   AbsoluteLayout.LayoutFlags="PositionProportional"
                                   AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White">
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="{StaticResource LoadingTextColor}">
             </ActivityIndicator>
-            <Label Text="Loading Blog..." HorizontalOptions="Center" TextColor="White"/>
+            <Label Text="Loading Blog..." HorizontalOptions="Center" TextColor="{StaticResource LoadingTextColor}"/>
         </StackLayout>
     </AbsoluteLayout>
 </ContentPage>
