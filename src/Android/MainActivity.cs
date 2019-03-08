@@ -19,10 +19,11 @@ namespace HanselmanAndroid
 
         protected override void OnCreate(Bundle bundle)
         {
-            ToolbarResource = Resource.Layout.Toolbar;
+            ToolbarResource = Resource.Layout.toolbar;
             TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
+            FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
             Plugin.MediaManager.Forms.Android.VideoViewRenderer.Init();
             ImageCircleRenderer.Init();

@@ -28,21 +28,9 @@
                                     VerticalOptions="Center"
                                     BorderColor="#03A9F4"
                                     BorderThickness="2"
-                                    FillColor="#03A9F4">
-                                <controls:CircleImage.WidthRequest>
-                                    <OnPlatform x:TypeArguments="x:Double">
-                                        <On Platform="iOS">55</On>
-                                        <On Platform="Android">55</On>
-                                        <On Platform="UWP">75</On>
-                                    </OnPlatform>
-                                </controls:CircleImage.WidthRequest>
-                                <controls:CircleImage.HeightRequest>
-                                    <OnPlatform x:TypeArguments="x:Double">
-                                        <On Platform="iOS">55</On>
-                                        <On Platform="Android">55</On>
-                                        <On Platform="UWP">75</On>
-                                    </OnPlatform>
-                                </controls:CircleImage.HeightRequest>
+                                    FillColor="#03A9F4"
+                                    WidthRequest="{OnPlatform UWP=75, Default=55}"
+                                    HeightRequest="{OnPlatform UWP=75, Default=55}">
                             </controls:CircleImage>
                             <StackLayout Grid.Column="1" 
                            Padding="8" 
@@ -59,8 +47,7 @@
         <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="#80000000" Padding="12"
                                  AbsoluteLayout.LayoutFlags="PositionProportional"
                                  AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White">
-            </ActivityIndicator>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White" Visual="Material"/>
             <Label Text="Loading Twitter..." HorizontalOptions="Center" TextColor="White"/>
         </StackLayout>
     </AbsoluteLayout>

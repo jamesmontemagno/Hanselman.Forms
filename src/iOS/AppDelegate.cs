@@ -34,6 +34,7 @@ namespace Hanselman.iOS
                 TextColor = UIColor.White
             });
             Forms.Init();
+            FormsMaterial.Init();
             VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
