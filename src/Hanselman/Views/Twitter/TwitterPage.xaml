@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hanselman.Views.TwitterPage"
@@ -48,7 +48,7 @@
                            Padding="8" 
                            Spacing="4"
                            VerticalOptions="Center">
-                                <Label Text="{Binding Date}" FontSize="Medium"  TextColor="#3498DB" LineBreakMode="NoWrap"/>
+                                <Label Text="{Binding DateHumanized}" FontSize="Medium"  TextColor="#3498DB" LineBreakMode="NoWrap"/>
                                 <Label Text="{Binding Text}" x:Name="TweetText" FontSize="Small" LineBreakMode="WordWrap"/>
                             </StackLayout>
                         </Grid>
