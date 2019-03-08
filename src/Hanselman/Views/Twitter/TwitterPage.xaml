@@ -48,7 +48,7 @@
                            Padding="8" 
                            Spacing="4"
                            VerticalOptions="Center">
-                                <Label Text="{Binding DateHuminazed}" FontSize="Medium"  TextColor="#3498DB" LineBreakMode="NoWrap"/>
+                                <Label Text="{Binding DateHumanized}" FontSize="Medium"  TextColor="#3498DB" LineBreakMode="NoWrap"/>
                                 <Label Text="{Binding Text}" x:Name="TweetText" FontSize="Small" LineBreakMode="WordWrap"/>
                             </StackLayout>
                         </Grid>
