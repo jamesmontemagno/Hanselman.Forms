@@ -17,15 +17,4 @@
     <PackageReference Include="Humanizer" Version="2.5.16" />
     <PackageReference Include="Xamarin.Forms.Visual.Material" Version="3.6.0.220655" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="Views\Podcasts\PodcastDirectoryPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Root\HomePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Videos\VideoDirectoryPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
 </Project>

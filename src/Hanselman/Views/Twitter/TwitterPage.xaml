@@ -26,9 +26,9 @@
                             </Grid.ColumnDefinitions>
                             <controls:CircleImage Source="{Binding Image}"
                                     VerticalOptions="Center"
-                                    BorderColor="#03A9F4"
+                                    BorderColor="{StaticResource PrimaryColor}"
                                     BorderThickness="2"
-                                    FillColor="#03A9F4"
+                                   FillColor="{StaticResource PrimaryColor}"
                                     WidthRequest="{OnPlatform UWP=75, Default=55}"
                                     HeightRequest="{OnPlatform UWP=75, Default=55}">
                             </controls:CircleImage>
@@ -36,7 +36,7 @@
                            Padding="8" 
                            Spacing="4"
                            VerticalOptions="Center">
-                                <Label Text="{Binding DateHumanized}" FontSize="Medium"  TextColor="#3498DB" LineBreakMode="NoWrap"/>
+                                <Label Text="{Binding DateHumanized}" FontSize="Medium"  Style="{StaticResource DateTimeLabelStyle}"/>
                                 <Label Text="{Binding Text}" x:Name="TweetText" FontSize="Small" LineBreakMode="WordWrap"/>
                             </StackLayout>
                         </Grid>
@@ -44,11 +44,11 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="#80000000" Padding="12"
+        <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="{StaticResource LoadingBackgroundColor}" Padding="12"
                                  AbsoluteLayout.LayoutFlags="PositionProportional"
                                  AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White" Visual="Material"/>
-            <Label Text="Loading Twitter..." HorizontalOptions="Center" TextColor="White"/>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="{StaticResource LoadingTextColor}" TextColor="White"/>
+            <Label Text="Loading Twitter..." HorizontalOptions="Center" TextColor="{StaticResource LoadingTextColor}"/>
         </StackLayout>
     </AbsoluteLayout>
 </ContentPage>

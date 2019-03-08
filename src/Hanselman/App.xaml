@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xamlresources="clr-namespace:Hanselman.XamlResources;assembly=Hanselman"
+             x:Class="Hanselman.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryColor">#03A9F4</Color>
+            <Color x:Key="PrimaryDarkColor">#1976D2</Color>
+            <Color x:Key="AccentColor">#FFC107</Color>
+            <Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
+            <Color x:Key="LoadingBackgroundColor">#80000000</Color>
+            <Color x:Key="LoadingTextColor">White</Color>
+
+            <Style x:Key="DateTimeLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="LineBreakMode" Value="NoWrap" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
