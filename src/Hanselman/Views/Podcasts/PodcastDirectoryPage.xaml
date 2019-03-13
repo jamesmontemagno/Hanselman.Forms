@@ -25,7 +25,8 @@
                                 <Frame 
                                     Padding="0"
                                     VerticalOptions="Start"
-                                    HasShadow="{OnPlatform Android=true, iOS=false}">
+                                    HasShadow="True"
+                                     Visual="Material">
                                     <Grid Padding="0">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="Auto"/>
