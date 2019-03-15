@@ -12163,10 +12163,13 @@ namespace HanselmanAndroid
 			public const int TextInputLayoutFilledBox = 2130903125;
 			
 			// aapt resource value: 0x7f030056
-			public const int textinputlayoutoutlinedbox = 2130903126;
+			public const int TextInputLayoutOutlinedBox = 2130903126;
 			
 			// aapt resource value: 0x7f030057
 			public const int Toolbar = 2130903127;
+			
+			// aapt resource value: 0x7f030058
+			public const int Toolbar2 = 2130903128;
 			
 			static Layout()
 			{
