@@ -19,7 +19,7 @@ namespace HanselmanAndroid
 
         protected override void OnCreate(Bundle bundle)
         {
-            ToolbarResource = Resource.Layout.Toolbar2;
+            ToolbarResource = Resource.Layout.Toolbar;
             TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
             Forms.Init(this, bundle);

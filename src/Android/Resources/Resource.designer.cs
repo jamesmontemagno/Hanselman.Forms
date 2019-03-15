@@ -12168,9 +12168,6 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f030057
 			public const int Toolbar = 2130903127;
 			
-			// aapt resource value: 0x7f030058
-			public const int Toolbar2 = 2130903128;
-			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
