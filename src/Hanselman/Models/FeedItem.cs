@@ -2,7 +2,6 @@
 using System.ComponentModel;
 using System.Text.RegularExpressions;
 using Hanselman.Helpers;
-using Humanizer;
 using Xamarin.Forms;
 
 namespace Hanselman
@@ -16,13 +15,7 @@ namespace Hanselman
         public string PublishDate
         {
             get => publishDate;
-            set
-            {
-                if (DateTime.TryParse(value, out var time))
-                    publishDate = time.HumanizeTodayOnly();
-                else
-                    publishDate = value;
-            }
+            set => publishDate = DateTime.TryParse(value, out var time) ? time.TwitterHumanize() : value;
         }
         public string Author { get; set; }
         public string AuthorEmail { get; set; }
