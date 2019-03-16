@@ -19,7 +19,7 @@
             <Style x:Key="CloseButtonStyle" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Setter Property="FontSize" Value="12"/>
-                <Setter Property="CornerRadius" Value="60"/>
+                <Setter Property="CornerRadius" Value="20"/>
                 <Setter Property="Visual" Value="Material"/>
                 <Setter Property="TextColor" Value="{StaticResource PrimaryDarkColor}"/>
             </Style>
