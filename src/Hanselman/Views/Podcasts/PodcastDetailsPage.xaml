@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+             x:Class="Hanselman.Views.Podcasts.PodcastDetailsPage">
+    <ContentPage.BindingContext>
+        <viewmodels:PodcastDetailsViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Padding="{OnPlatform iOS='0,20,0,0'}"
+                     VerticalOptions="Start"
+                     BackgroundColor="{StaticResource PrimaryColor}">
+            <Button Style="{StaticResource CloseButtonStyle}"
+                    Text="Close"
+                    Margin="10"
+                    HorizontalOptions="End"
+                    x:Name="ButtonClose"
+                    Clicked="ButtonClose_Clicked"/>
+            <Grid HorizontalOptions="FillAndExpand"
+                     Padding="20"
+                     ColumnSpacing="20"
+                     BackgroundColor="{StaticResource PrimaryColor}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Frame Grid.RowSpan="3" 
+                   HasShadow="True" 
+                   Padding="0"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   CornerRadius="10"
+                   Visual="Material"
+                   BackgroundColor="Red">
+                    <Image Source="{Binding Podcast.Art}"
+                       WidthRequest="125"
+                       HeightRequest="125"
+                       Aspect="AspectFill"/>
+                </Frame>
+                <Label Text="{Binding Podcast.Title}" 
+                   Grid.Column="1"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+                <Label Text="{Binding Podcast.HostsNames}"
+                   FontSize="14"
+                   Grid.Column="1" Grid.Row="1"/>
+                <Button Style="{StaticResource SubscribeButtonStyle}"
+                    Text="Subscribe"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Grid.Column="1" 
+                    Grid.Row="2"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -46,7 +46,7 @@ namespace Hanselman.Services
             });
             podcasts.Add(new Podcast
             {
-                Title = "This Developer's Live",
+                Title = "This Developer's Life",
                 Art = "tdl_full.jpg",
                 Hosts = new List<Host> { hanselman },
                 Category = "Tech News",

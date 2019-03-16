@@ -59,6 +59,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Effects\RippleEffect.cs" />
     <Compile Include="Effects\TabbedPageNoShiftEffect.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\ListImageCellRenderer.cs" />

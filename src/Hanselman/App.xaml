@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xamlresources="clr-namespace:Hanselman.XamlResources;assembly=Hanselman"
              x:Class="Hanselman.App">
     <Application.Resources>
         <ResourceDictionary>
@@ -16,6 +15,20 @@
                 <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
                 <Setter Property="FontSize" Value="Small" />
                 <Setter Property="LineBreakMode" Value="NoWrap" />
+            </Style>
+            <Style x:Key="CloseButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="CornerRadius" Value="60"/>
+                <Setter Property="Visual" Value="Material"/>
+                <Setter Property="TextColor" Value="{StaticResource PrimaryDarkColor}"/>
+            </Style>
+            <Style x:Key="SubscribeButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryDarkColor}"/>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="Visual" Value="Material"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="Padding" Value="20,0"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
