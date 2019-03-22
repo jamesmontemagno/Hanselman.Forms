@@ -262,6 +262,9 @@
     </BundleResource>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Humanizer">
+      <Version>2.6.2</Version>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="Plugin.MediaManager.Forms" Version="0.4.5" />
     <PackageReference Include="Refractored.MvvmHelpers">
