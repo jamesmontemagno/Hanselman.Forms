@@ -23,7 +23,8 @@
                     Margin="10"
                     Clicked="ButtonClose_Clicked"
                     HorizontalOptions="End"
-                    Style="{StaticResource CloseButtonStyle}"
+                    Style="{OnPlatform iOS={StaticResource CloseButtonStyle},
+                                       Android={StaticResource CloseButtonStyle}}"
                     Text="Close" />
             </StackLayout>
             <ListView
@@ -104,7 +105,8 @@
                             Grid.Column="1"
                             Command="{Binding SubscribeCommand}"
                             HorizontalOptions="Center"
-                            Style="{StaticResource SubscribeButtonStyle}"
+                            Style="{OnPlatform iOS={StaticResource SubscribeButtonStyle},
+                                               Android={StaticResource SubscribeButtonStyle}}"
                             Text="Subscribe"
                             VerticalOptions="End" />
                     </Grid>
