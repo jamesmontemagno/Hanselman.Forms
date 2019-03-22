@@ -33,5 +33,7 @@ namespace Hanselman.Models
         public string Category { get; set; }
         public string WebsiteUrl { get; set; }
         public string TwitterUrl { get; set; }
+
+        public List<PodcastService> PodcastServices { get; set; }
     }
 }

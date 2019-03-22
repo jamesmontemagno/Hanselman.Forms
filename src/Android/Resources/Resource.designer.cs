@@ -2095,6 +2095,188 @@ namespace HanselmanAndroid
 			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_id = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_layout = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Xamarin.Essentials.Resource.Attribute.alpha = global::HanselmanAndroid.Resource.Attribute.alpha;
+			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::HanselmanAndroid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Xamarin.Essentials.Resource.Attribute.font = global::HanselmanAndroid.Resource.Attribute.font;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::HanselmanAndroid.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderCerts = global::HanselmanAndroid.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderFetchStrategy = global::HanselmanAndroid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderFetchTimeout = global::HanselmanAndroid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderPackage = global::HanselmanAndroid.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Attribute.fontProviderQuery = global::HanselmanAndroid.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Essentials.Resource.Attribute.fontStyle = global::HanselmanAndroid.Resource.Attribute.fontStyle;
+			global::Xamarin.Essentials.Resource.Attribute.fontVariationSettings = global::HanselmanAndroid.Resource.Attribute.fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Attribute.fontWeight = global::HanselmanAndroid.Resource.Attribute.fontWeight;
+			global::Xamarin.Essentials.Resource.Attribute.keylines = global::HanselmanAndroid.Resource.Attribute.keylines;
+			global::Xamarin.Essentials.Resource.Attribute.layout_anchor = global::HanselmanAndroid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Essentials.Resource.Attribute.layout_anchorGravity = global::HanselmanAndroid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Essentials.Resource.Attribute.layout_behavior = global::HanselmanAndroid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Essentials.Resource.Attribute.layout_dodgeInsetEdges = global::HanselmanAndroid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Essentials.Resource.Attribute.layout_insetEdge = global::HanselmanAndroid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Essentials.Resource.Attribute.layout_keyline = global::HanselmanAndroid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Essentials.Resource.Attribute.statusBarBackground = global::HanselmanAndroid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Essentials.Resource.Attribute.ttcIndex = global::HanselmanAndroid.Resource.Attribute.ttcIndex;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_bg_grey = global::HanselmanAndroid.Resource.Color.browser_actions_bg_grey;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_divider_color = global::HanselmanAndroid.Resource.Color.browser_actions_divider_color;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_text_color = global::HanselmanAndroid.Resource.Color.browser_actions_text_color;
+			global::Xamarin.Essentials.Resource.Color.browser_actions_title_color = global::HanselmanAndroid.Resource.Color.browser_actions_title_color;
+			global::Xamarin.Essentials.Resource.Color.notification_action_color_filter = global::HanselmanAndroid.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Essentials.Resource.Color.notification_icon_bg_color = global::HanselmanAndroid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Essentials.Resource.Color.ripple_material_light = global::HanselmanAndroid.Resource.Color.ripple_material_light;
+			global::Xamarin.Essentials.Resource.Color.secondary_text_default_material_light = global::HanselmanAndroid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Essentials.Resource.Dimension.browser_actions_context_menu_max_width = global::HanselmanAndroid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Xamarin.Essentials.Resource.Dimension.browser_actions_context_menu_min_padding = global::HanselmanAndroid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_inset_horizontal_material = global::HanselmanAndroid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_inset_vertical_material = global::HanselmanAndroid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_padding_horizontal_material = global::HanselmanAndroid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_button_padding_vertical_material = global::HanselmanAndroid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_control_corner_material = global::HanselmanAndroid.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Essentials.Resource.Dimension.compat_notification_large_icon_max_height = global::HanselmanAndroid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Xamarin.Essentials.Resource.Dimension.compat_notification_large_icon_max_width = global::HanselmanAndroid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Xamarin.Essentials.Resource.Dimension.notification_action_icon_size = global::HanselmanAndroid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_action_text_size = global::HanselmanAndroid.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_big_circle_margin = global::HanselmanAndroid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Essentials.Resource.Dimension.notification_content_margin_start = global::HanselmanAndroid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Essentials.Resource.Dimension.notification_large_icon_height = global::HanselmanAndroid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Essentials.Resource.Dimension.notification_large_icon_width = global::HanselmanAndroid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Essentials.Resource.Dimension.notification_main_column_padding_top = global::HanselmanAndroid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Essentials.Resource.Dimension.notification_media_narrow_margin = global::HanselmanAndroid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Essentials.Resource.Dimension.notification_right_icon_size = global::HanselmanAndroid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_right_side_padding_top = global::HanselmanAndroid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Essentials.Resource.Dimension.notification_small_icon_background_padding = global::HanselmanAndroid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Essentials.Resource.Dimension.notification_small_icon_size_as_large = global::HanselmanAndroid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Essentials.Resource.Dimension.notification_subtext_size = global::HanselmanAndroid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Essentials.Resource.Dimension.notification_top_pad = global::HanselmanAndroid.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Essentials.Resource.Dimension.notification_top_pad_large_text = global::HanselmanAndroid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Essentials.Resource.Drawable.notification_action_background = global::HanselmanAndroid.Resource.Drawable.notification_action_background;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg = global::HanselmanAndroid.Resource.Drawable.notification_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low = global::HanselmanAndroid.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low_normal = global::HanselmanAndroid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_low_pressed = global::HanselmanAndroid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_normal = global::HanselmanAndroid.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Essentials.Resource.Drawable.notification_bg_normal_pressed = global::HanselmanAndroid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Essentials.Resource.Drawable.notification_icon_background = global::HanselmanAndroid.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_bg = global::HanselmanAndroid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::HanselmanAndroid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::HanselmanAndroid.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::HanselmanAndroid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.action_container = global::HanselmanAndroid.Resource.Id.action_container;
+			global::Xamarin.Essentials.Resource.Id.action_divider = global::HanselmanAndroid.Resource.Id.action_divider;
+			global::Xamarin.Essentials.Resource.Id.action_image = global::HanselmanAndroid.Resource.Id.action_image;
+			global::Xamarin.Essentials.Resource.Id.action_text = global::HanselmanAndroid.Resource.Id.action_text;
+			global::Xamarin.Essentials.Resource.Id.actions = global::HanselmanAndroid.Resource.Id.actions;
+			global::Xamarin.Essentials.Resource.Id.all = global::HanselmanAndroid.Resource.Id.all;
+			global::Xamarin.Essentials.Resource.Id.async = global::HanselmanAndroid.Resource.Id.async;
+			global::Xamarin.Essentials.Resource.Id.blocking = global::HanselmanAndroid.Resource.Id.blocking;
+			global::Xamarin.Essentials.Resource.Id.bottom = global::HanselmanAndroid.Resource.Id.bottom;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_header_text = global::HanselmanAndroid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_icon = global::HanselmanAndroid.Resource.Id.browser_actions_menu_item_icon;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_text = global::HanselmanAndroid.Resource.Id.browser_actions_menu_item_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::HanselmanAndroid.Resource.Id.browser_actions_menu_items;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_view = global::HanselmanAndroid.Resource.Id.browser_actions_menu_view;
+			global::Xamarin.Essentials.Resource.Id.center = global::HanselmanAndroid.Resource.Id.center;
+			global::Xamarin.Essentials.Resource.Id.center_horizontal = global::HanselmanAndroid.Resource.Id.center_horizontal;
+			global::Xamarin.Essentials.Resource.Id.center_vertical = global::HanselmanAndroid.Resource.Id.center_vertical;
+			global::Xamarin.Essentials.Resource.Id.chronometer = global::HanselmanAndroid.Resource.Id.chronometer;
+			global::Xamarin.Essentials.Resource.Id.clip_horizontal = global::HanselmanAndroid.Resource.Id.clip_horizontal;
+			global::Xamarin.Essentials.Resource.Id.clip_vertical = global::HanselmanAndroid.Resource.Id.clip_vertical;
+			global::Xamarin.Essentials.Resource.Id.end = global::HanselmanAndroid.Resource.Id.end;
+			global::Xamarin.Essentials.Resource.Id.fill = global::HanselmanAndroid.Resource.Id.fill;
+			global::Xamarin.Essentials.Resource.Id.fill_horizontal = global::HanselmanAndroid.Resource.Id.fill_horizontal;
+			global::Xamarin.Essentials.Resource.Id.fill_vertical = global::HanselmanAndroid.Resource.Id.fill_vertical;
+			global::Xamarin.Essentials.Resource.Id.forever = global::HanselmanAndroid.Resource.Id.forever;
+			global::Xamarin.Essentials.Resource.Id.icon = global::HanselmanAndroid.Resource.Id.icon;
+			global::Xamarin.Essentials.Resource.Id.icon_group = global::HanselmanAndroid.Resource.Id.icon_group;
+			global::Xamarin.Essentials.Resource.Id.info = global::HanselmanAndroid.Resource.Id.info;
+			global::Xamarin.Essentials.Resource.Id.italic = global::HanselmanAndroid.Resource.Id.italic;
+			global::Xamarin.Essentials.Resource.Id.left = global::HanselmanAndroid.Resource.Id.left;
+			global::Xamarin.Essentials.Resource.Id.line1 = global::HanselmanAndroid.Resource.Id.line1;
+			global::Xamarin.Essentials.Resource.Id.line3 = global::HanselmanAndroid.Resource.Id.line3;
+			global::Xamarin.Essentials.Resource.Id.none = global::HanselmanAndroid.Resource.Id.none;
+			global::Xamarin.Essentials.Resource.Id.normal = global::HanselmanAndroid.Resource.Id.normal;
+			global::Xamarin.Essentials.Resource.Id.notification_background = global::HanselmanAndroid.Resource.Id.notification_background;
+			global::Xamarin.Essentials.Resource.Id.notification_main_column = global::HanselmanAndroid.Resource.Id.notification_main_column;
+			global::Xamarin.Essentials.Resource.Id.notification_main_column_container = global::HanselmanAndroid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Essentials.Resource.Id.right = global::HanselmanAndroid.Resource.Id.right;
+			global::Xamarin.Essentials.Resource.Id.right_icon = global::HanselmanAndroid.Resource.Id.right_icon;
+			global::Xamarin.Essentials.Resource.Id.right_side = global::HanselmanAndroid.Resource.Id.right_side;
+			global::Xamarin.Essentials.Resource.Id.start = global::HanselmanAndroid.Resource.Id.start;
+			global::Xamarin.Essentials.Resource.Id.tag_transition_group = global::HanselmanAndroid.Resource.Id.tag_transition_group;
+			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_event_manager = global::HanselmanAndroid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_listeners = global::HanselmanAndroid.Resource.Id.tag_unhandled_key_listeners;
+			global::Xamarin.Essentials.Resource.Id.text = global::HanselmanAndroid.Resource.Id.text;
+			global::Xamarin.Essentials.Resource.Id.text2 = global::HanselmanAndroid.Resource.Id.text2;
+			global::Xamarin.Essentials.Resource.Id.time = global::HanselmanAndroid.Resource.Id.time;
+			global::Xamarin.Essentials.Resource.Id.title = global::HanselmanAndroid.Resource.Id.title;
+			global::Xamarin.Essentials.Resource.Id.top = global::HanselmanAndroid.Resource.Id.top;
+			global::Xamarin.Essentials.Resource.Integer.status_bar_notification_info_maxnum = global::HanselmanAndroid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_page = global::HanselmanAndroid.Resource.Layout.browser_actions_context_menu_page;
+			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_row = global::HanselmanAndroid.Resource.Layout.browser_actions_context_menu_row;
+			global::Xamarin.Essentials.Resource.Layout.notification_action = global::HanselmanAndroid.Resource.Layout.notification_action;
+			global::Xamarin.Essentials.Resource.Layout.notification_action_tombstone = global::HanselmanAndroid.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_custom_big = global::HanselmanAndroid.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_icon_group = global::HanselmanAndroid.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_part_chronometer = global::HanselmanAndroid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Essentials.Resource.Layout.notification_template_part_time = global::HanselmanAndroid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Essentials.Resource.String.status_bar_notification_info_overflow = global::HanselmanAndroid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Info = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Time = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Essentials.Resource.Style.TextAppearance_Compat_Notification_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::HanselmanAndroid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::HanselmanAndroid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Essentials.Resource.Style.Widget_Support_CoordinatorLayout = global::HanselmanAndroid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::HanselmanAndroid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_alpha = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_alpha = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_color = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_keylines = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::HanselmanAndroid.Resource.Styleable.FontFamily;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_font = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontStyle = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontWeight = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_font = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontStyle = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontWeight = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_ttcIndex = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor = global::HanselmanAndroid.Resource.Styleable.GradientColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerColor = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerX = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_centerX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerY = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_centerY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endColor = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_endColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endX = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_endX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_endY = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_endY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_gradientRadius = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startColor = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_startColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startX = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_startX;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startY = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_startY;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::HanselmanAndroid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::HanselmanAndroid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::HanselmanAndroid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_in = global::HanselmanAndroid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_out = global::HanselmanAndroid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::HanselmanAndroid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -10253,26 +10435,26 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f02014b
-			public const int avd_hide_password_1 = 2130837835;
-			
 			// aapt resource value: 0x7f02014c
-			public const int avd_hide_password_2 = 2130837836;
+			public const int avd_hide_password_1 = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int avd_hide_password_3 = 2130837837;
+			public const int avd_hide_password_2 = 2130837837;
+			
+			// aapt resource value: 0x7f02014e
+			public const int avd_hide_password_3 = 2130837838;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f02014e
-			public const int avd_show_password_1 = 2130837838;
-			
 			// aapt resource value: 0x7f02014f
-			public const int avd_show_password_2 = 2130837839;
+			public const int avd_show_password_1 = 2130837839;
 			
 			// aapt resource value: 0x7f020150
-			public const int avd_show_password_3 = 2130837840;
+			public const int avd_show_password_2 = 2130837840;
+			
+			// aapt resource value: 0x7f020151
+			public const int avd_show_password_3 = 2130837841;
 			
 			// aapt resource value: 0x7f020056
 			public const int design_bottom_navigation_item_background = 2130837590;
@@ -10836,178 +11018,181 @@ namespace HanselmanAndroid
 			public const int ic_play = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_podcast = 2130837777;
+			public const int ic_play_circle_outline = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_rss = 2130837778;
+			public const int ic_podcast = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int ic_share = 2130837779;
+			public const int ic_rss = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int ic_stop = 2130837780;
+			public const int ic_share = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int ic_twitter = 2130837781;
+			public const int ic_stop = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int ic_video = 2130837782;
+			public const int ic_twitter = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int ic_vol_type_speaker_dark = 2130837783;
+			public const int ic_video = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int ic_vol_type_speaker_group_dark = 2130837784;
+			public const int ic_vol_type_speaker_dark = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int ic_vol_type_speaker_group_light = 2130837785;
+			public const int ic_vol_type_speaker_group_dark = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int ic_vol_type_speaker_light = 2130837786;
+			public const int ic_vol_type_speaker_group_light = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int ic_vol_type_tv_dark = 2130837787;
+			public const int ic_vol_type_speaker_light = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int ic_vol_type_tv_light = 2130837788;
+			public const int ic_vol_type_tv_dark = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int instagram = 2130837789;
+			public const int ic_vol_type_tv_light = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int MaterialActivityIndicatorBackground = 2130837790;
+			public const int instagram = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int MaterialProgressBar = 2130837791;
+			public const int MaterialActivityIndicatorBackground = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int mr_button_connected_dark = 2130837792;
+			public const int MaterialProgressBar = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int mr_button_connected_light = 2130837793;
+			public const int mr_button_connected_dark = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int mr_button_connecting_dark = 2130837794;
+			public const int mr_button_connected_light = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int mr_button_connecting_light = 2130837795;
+			public const int mr_button_connecting_dark = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int mr_button_dark = 2130837796;
+			public const int mr_button_connecting_light = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int mr_button_light = 2130837797;
+			public const int mr_button_dark = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int mr_dialog_close_dark = 2130837798;
+			public const int mr_button_light = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int mr_dialog_close_light = 2130837799;
+			public const int mr_dialog_close_dark = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int mr_dialog_material_background_dark = 2130837800;
+			public const int mr_dialog_close_light = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int mr_dialog_material_background_light = 2130837801;
+			public const int mr_dialog_material_background_dark = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_group_collapse = 2130837802;
+			public const int mr_dialog_material_background_light = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_group_expand = 2130837803;
+			public const int mr_group_collapse = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_media_pause_dark = 2130837804;
+			public const int mr_group_expand = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_media_pause_light = 2130837805;
+			public const int mr_media_pause_dark = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int mr_media_play_dark = 2130837806;
+			public const int mr_media_pause_light = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int mr_media_play_light = 2130837807;
+			public const int mr_media_play_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int mr_media_stop_dark = 2130837808;
+			public const int mr_media_play_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mr_media_stop_light = 2130837809;
+			public const int mr_media_stop_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mr_vol_type_audiotrack_dark = 2130837810;
+			public const int mr_media_stop_light = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_vol_type_audiotrack_light = 2130837811;
+			public const int mr_vol_type_audiotrack_dark = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mtrl_snackbar_background = 2130837812;
+			public const int mr_vol_type_audiotrack_light = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mtrl_tabs_default_indicator = 2130837813;
+			public const int mtrl_snackbar_background = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int navigation_empty_icon = 2130837814;
+			public const int mtrl_tabs_default_indicator = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int notification_action_background = 2130837815;
+			public const int navigation_empty_icon = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int notification_bg = 2130837816;
+			public const int notification_action_background = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int notification_bg_low = 2130837817;
+			public const int notification_bg = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int notification_bg_low_normal = 2130837818;
+			public const int notification_bg_low = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int notification_bg_low_pressed = 2130837819;
+			public const int notification_bg_low_normal = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int notification_bg_normal = 2130837820;
+			public const int notification_bg_low_pressed = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int notification_bg_normal_pressed = 2130837821;
+			public const int notification_bg_normal = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int notification_icon_background = 2130837822;
-			
-			// aapt resource value: 0x7f020149
-			public const int notification_template_icon_bg = 2130837833;
-			
-			// aapt resource value: 0x7f02014a
-			public const int notification_template_icon_low_bg = 2130837834;
+			public const int notification_bg_normal_pressed = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int notification_tile_bg = 2130837823;
+			public const int notification_icon_background = 2130837823;
+			
+			// aapt resource value: 0x7f02014a
+			public const int notification_template_icon_bg = 2130837834;
+			
+			// aapt resource value: 0x7f02014b
+			public const int notification_template_icon_low_bg = 2130837835;
 			
 			// aapt resource value: 0x7f020140
-			public const int notify_panel_notification_icon_bg = 2130837824;
+			public const int notification_tile_bg = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int ratchet_full = 2130837825;
+			public const int notify_panel_notification_icon_bg = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int refresh = 2130837826;
+			public const int ratchet_full = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int scott = 2130837827;
+			public const int refresh = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int scott159 = 2130837828;
+			public const int scott = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int tdl_full = 2130837829;
+			public const int scott159 = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int tooltip_frame_dark = 2130837830;
+			public const int tdl_full = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int tooltip_frame_light = 2130837831;
+			public const int tooltip_frame_dark = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int twitter = 2130837832;
+			public const int tooltip_frame_light = 2130837832;
+			
+			// aapt resource value: 0x7f020149
+			public const int twitter = 2130837833;
 			
 			static Drawable()
 			{
@@ -14012,6 +14197,9 @@ namespace HanselmanAndroid
 			
 			// aapt resource value: 0x7f070000
 			public const int wearable_app_desc = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int xamarin_essentials_fileprovider_file_paths = 2131165185;
 			
 			static Xml()
 			{

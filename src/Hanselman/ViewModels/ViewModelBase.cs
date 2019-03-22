@@ -10,6 +10,8 @@ namespace Hanselman.ViewModels
     public class ViewModelBase : BaseViewModel
     {
         IDataService dataService;
-        public IDataService DataService => dataService ?? (dataService = DependencyService.Get<IDataService>());
+        protected IDataService DataService => dataService ?? (dataService = DependencyService.Get<IDataService>());
+
+        protected Page CurrentPage => Application.Current.MainPage;
     }
 }

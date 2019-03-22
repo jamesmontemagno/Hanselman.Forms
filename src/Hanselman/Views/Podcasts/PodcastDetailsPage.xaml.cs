@@ -9,11 +9,15 @@ using Hanselman.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+// chrisntr cheered 200 on March 22nd 2019
+
+
 namespace Hanselman.Views.Podcasts
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PodcastDetailsPage : ContentPage
     {
+        PodcastDetailsViewModel VM => (PodcastDetailsViewModel)BindingContext;
         public PodcastDetailsPage()
         {
             InitializeComponent();
@@ -27,6 +31,17 @@ namespace Hanselman.Views.Podcasts
         private async void ButtonClose_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            VM.LoadEpisodesCommand.Execute(null);
+        }
+
+        void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            ((ListView)sender).SelectedItem = null;
         }
     }
 }
