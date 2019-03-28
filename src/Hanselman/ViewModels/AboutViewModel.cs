@@ -15,17 +15,17 @@ namespace Hanselman.ViewModels
             {
                 new SocialItem
                 {
-                    Icon = "twitter.png",
+                    Icon = IconConstants.Twitter,
                     Url = "https://www.twitter.com/shanselman"
                 },
                 new SocialItem
                 {
-                    Icon = "facebook.png",
+                    Icon = IconConstants.Facebook,
                     Url = "https://www.facebook.com/shanselman"
                 },
                 new SocialItem
                 {
-                    Icon = "instagram.png",
+                    Icon = IconConstants.Instagram,
                     Url = "https://www.instagram.com/shanselman"
                 }
             };

@@ -144,6 +144,7 @@
     <BundleResource Include="Resources\instagram%402x.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
+    <BundleResource Include="Resources\materialdesignicons-webfont.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

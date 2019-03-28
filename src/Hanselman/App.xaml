@@ -5,6 +5,11 @@
              x:Class="Hanselman.App">
     <Application.Resources>
         <ResourceDictionary>
+            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Material Design Icons" />
+                <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+            </OnPlatform>
+            
             <Color x:Key="PrimaryColor">#03A9F4</Color>
             <Color x:Key="PrimaryDarkColor">#1976D2</Color>
             <Color x:Key="AccentColor">#FFC107</Color>
@@ -16,6 +21,18 @@
                 <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
                 <Setter Property="FontSize" Value="Small" />
                 <Setter Property="LineBreakMode" Value="NoWrap" />
+            </Style>
+            
+            <Style x:Key="MaterialButton" TargetType="Button">
+                <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamily}" />
+                <Setter Property="FontSize" Value="42" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="WidthRequest" Value="65" />
+                <Setter Property="HeightRequest" Value="65" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>
