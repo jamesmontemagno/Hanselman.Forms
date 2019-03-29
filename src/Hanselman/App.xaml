@@ -36,6 +36,20 @@
                 <Setter Property="BorderColor" Value="Transparent" />
                 <Setter Property="BackgroundColor" Value="Transparent" />
             </Style>
+            <Style x:Key="CloseButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="Visual" Value="Material"/>
+                <Setter Property="TextColor" Value="{StaticResource PrimaryDarkColor}"/>
+            </Style>
+            <Style x:Key="SubscribeButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryDarkColor}"/>
+                <Setter Property="CornerRadius" Value="20"/>
+                <Setter Property="Visual" Value="Material"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="Padding" Value="20,0"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -58,6 +58,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Effects\RippleEffect.cs" />
     <Compile Include="Effects\TabbedPageNoShiftEffect.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\ListImageCellRenderer.cs" />
@@ -181,10 +182,10 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>3.0.0.5</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.1.0</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.1" />
@@ -278,5 +279,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\materialdesignicons-webfont.ttf" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_play_circle_outline.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_play_circle_outline.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_play_circle_outline.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_play_circle_outline.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_play_circle_outline.png" />
+    <AndroidResource Include="Resources\drawable\ic_play_circle_outline.png" />
   </ItemGroup>
 </Project>

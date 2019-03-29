@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Hanselman.Controls;
 using Hanselman.Interfaces;
+using Hanselman.Models;
 using Hanselman.ViewModels;
+using Hanselman.Views.Podcasts;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -33,6 +36,14 @@ namespace Hanselman.Views
                 return;
 
             VM.LoadPodcastsCommand.Execute(null);
+        }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            if(sender is View view && view.BindingContext is Podcast podcast)
+            {
+                await Navigation.PushModalAsync(new PodcastDetailsPage(podcast));
+            }
         }
     }
 }
