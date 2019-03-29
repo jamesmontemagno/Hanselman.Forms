@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Hanselman.Helpers;
 using Hanselman.Models;
 using MvvmHelpers;
 
@@ -15,12 +16,12 @@ namespace Hanselman.ViewModels
             {
                 new SocialItem
                 {
-                    Icon = IconConstants.Twitter,
+                    Icon = IconConstants.TwitterCircle,
                     Url = "https://www.twitter.com/shanselman"
                 },
                 new SocialItem
                 {
-                    Icon = IconConstants.Facebook,
+                    Icon = IconConstants.FacebookBox,
                     Url = "https://www.facebook.com/shanselman"
                 },
                 new SocialItem
