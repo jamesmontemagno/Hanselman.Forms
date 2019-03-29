@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="Hanselman.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xamlresources="clr-namespace:Hanselman.XamlResources;assembly=Hanselman">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Material Design Icons" />
+                <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+                <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons" />
+            </OnPlatform>
+
+            <Color x:Key="PrimaryColor">#03A9F4</Color>
+            <Color x:Key="PrimaryDarkColor">#1976D2</Color>
+            <Color x:Key="AccentColor">#FFC107</Color>
+            <Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
+            <Color x:Key="LoadingBackgroundColor">#80000000</Color>
+            <Color x:Key="LoadingTextColor">White</Color>
+
+            <x:String x:Key="PlayCircleOutline">&#xf05a;</x:String>
+
+            <Style x:Key="DateTimeLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="LineBreakMode" Value="NoWrap" />
+            </Style>
+
+            <Style x:Key="MaterialButton" TargetType="Button">
+                <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamily}" />
+                <Setter Property="FontSize" Value="42" />
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="WidthRequest" Value="65" />
+                <Setter Property="HeightRequest" Value="65" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+            </Style>
+            <Style x:Key="CloseButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="TextColor" Value="{StaticResource PrimaryDarkColor}" />
+            </Style>
+            <Style x:Key="SubscribeButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryDarkColor}" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Padding" Value="20,0" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

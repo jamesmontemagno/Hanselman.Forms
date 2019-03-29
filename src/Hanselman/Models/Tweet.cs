@@ -1,7 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using Hanselman.Helpers;
+using Newtonsoft.Json;
 using System;
 
-namespace Hanselman.Portable
+namespace Hanselman
 {
     public class Tweet
     {
@@ -18,6 +19,8 @@ namespace Hanselman.Portable
 
         [JsonIgnore]
         public string Date => CreatedAt.ToString("g");
+        [JsonIgnore]
+        public string DateHumanized => CreatedAt.TwitterHumanize();
         [JsonIgnore]
         public string RTCount => CurrentUserRetweet == 0 ? string.Empty : CurrentUserRetweet + " RT";
 

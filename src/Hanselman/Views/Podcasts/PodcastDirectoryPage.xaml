@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+             xmlns:effects="clr-namespace:Hanselman.Effects"
+             x:Class="Hanselman.Views.PodcastDirectoryPage"
+             Title="Podcasts">
+    <ContentPage.BindingContext>
+        <viewmodels:PodcastDirectoryViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView>
+                <FlexLayout BindableLayout.ItemsSource="{Binding Podcasts}" 
+                       Wrap="Wrap"
+                       Direction="Row"
+                       JustifyContent="Start"
+                       AlignItems="Start"
+                       AlignContent="Start"
+                       Padding="8">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Margin="4,4,4,4"
+                                  FlexLayout.Basis="{OnIdiom Phone='50%', Tablet='33%'}"
+                                  FlexLayout.AlignSelf="Start">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                </StackLayout.GestureRecognizers>
+                                <StackLayout.Effects>
+                                    <effects:RippleEffect/>
+                                </StackLayout.Effects>
+                                <Frame 
+                                    Padding="0"
+                                    VerticalOptions="Start"
+                                    HasShadow="True"
+                                     Visual="Material">
+                                    <Grid Padding="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Image Source="{Binding Art}" Aspect="AspectFill"/>
+                                        <Label Grid.Row="1" Margin="10,0" Text="{Binding Title}"/>
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </FlexLayout>
+            </ScrollView>
+            <ActivityIndicator 
+                           IsRunning="{Binding IsBusy}"
+                           IsVisible="{Binding IsBusy}"
+                           VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

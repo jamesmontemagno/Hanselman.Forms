@@ -1,7 +1,7 @@
 using System;
 using System.Xml.Serialization;
 using System.Collections.Generic;
-using Hanselman.Portable;
+using Hanselman;
 using System.IO;
 using Newtonsoft.Json;
 
@@ -12,7 +12,7 @@ namespace Hanselman.iOS
 {
 	public class iOSTweetStore : ITweetStore
 	{
-		public void Save (System.Collections.Generic.List<Hanselman.Portable.Tweet> tweets)
+		public void Save (System.Collections.Generic.List<Hanselman.Tweet> tweets)
 		{
 
 			var FileManager = new Foundation.NSFileManager ();

@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Xml.Linq;
 using MvvmHelpers;
 
-namespace Hanselman.Portable.ViewModels
+namespace Hanselman.ViewModels
 {
     public class PodcastViewModel : BaseViewModel
     {

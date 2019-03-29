@@ -6,11 +6,11 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
-using Hanselman.Portable.Models;
+using Hanselman.Models;
 using MvvmHelpers;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.ViewModels
+namespace Hanselman.ViewModels
 {
     public class Channel9VideosViewModel : BaseViewModel
     {

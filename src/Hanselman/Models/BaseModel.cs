@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hanselman.Portable
+namespace Hanselman
 {
     public class BaseModel
     {

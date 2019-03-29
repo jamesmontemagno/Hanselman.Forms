@@ -1,9 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using Hanselman.Helpers;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable
+namespace Hanselman
 {
     public class FeedItem : INotifyPropertyChanged
     {
@@ -14,13 +15,7 @@ namespace Hanselman.Portable
         public string PublishDate
         {
             get => publishDate;
-            set
-            {
-                if (DateTime.TryParse(value, out var time))
-                    publishDate = time.ToLocalTime().ToString("D");
-                else
-                    publishDate = value;
-            }
+            set => publishDate = DateTime.TryParse(value, out var time) ? time.TwitterHumanize() : value;
         }
         public string Author { get; set; }
         public string AuthorEmail { get; set; }

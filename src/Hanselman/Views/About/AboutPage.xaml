@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Hanselman.Views.AboutPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    Title="Scott Hanselman">
+    <ContentPage.BindingContext>
+        <viewmodels:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ImageButtonSocial" TargetType="ImageButton">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout
+            Padding="10"
+            Orientation="Vertical"
+            Spacing="10">
+            <Image
+                Margin="-10,-10,-10,0"
+                Aspect="AspectFill"
+                Source="scott.png" />
+            <Label
+                Margin="0,25"
+                LineBreakMode="WordWrap"
+                Text="My name is Scott Hanselman. I'm a programmer, teacher, and speaker. I work out of my home office in Portland, Oregon for the Web Platform Team at Microsoft, but this blog, its content and opinions are my own. I blog about technology, culture, gadgets, diversity, code, the web, where we're going and where we've been. I'm excited about community, social equity, media, entrepreneurship and above all, the open web." />
+            <StackLayout
+                BindableLayout.ItemsSource="{Binding SocialItems}"
+                HorizontalOptions="CenterAndExpand"
+                Orientation="Horizontal"
+                Spacing="5">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Button
+                            Command="{Binding OpenUrlCommand}"
+                            Style="{StaticResource MaterialButton}"
+                            Text="{Binding Icon}" />
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

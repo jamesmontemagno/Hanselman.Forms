@@ -4,7 +4,7 @@ using Android.OS;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using Android.Content.PM;
-using Hanselman.Portable;
+using Hanselman;
 using ImageCircle.Forms.Plugin.Droid;
 using Android.Runtime;
 
@@ -23,6 +23,7 @@ namespace HanselmanAndroid
             TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
+            FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
             Plugin.MediaManager.Forms.Android.VideoViewRenderer.Init();
             ImageCircleRenderer.Init();

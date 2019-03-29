@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Hanselman.Portable.Helpers
+namespace Hanselman.Helpers
 {
     class FancyListCell : ViewCell
     {

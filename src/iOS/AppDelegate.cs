@@ -4,7 +4,7 @@ using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using Hanselman.Portable;
+using Hanselman;
 using ImageCircle.Forms.Plugin.iOS;
 using Plugin.MediaManager.Forms.iOS;
 
@@ -34,6 +34,7 @@ namespace Hanselman.iOS
                 TextColor = UIColor.White
             });
             Forms.Init();
+            FormsMaterial.Init();
             VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());

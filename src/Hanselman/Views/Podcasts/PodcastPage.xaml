@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hanselman.Views.PodcastPage" Title="{Binding Title}"
+             Icon="{Binding Icon}"  IsBusy="{Binding IsBusy}">
+
+
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ListView x:Name="listView"
+               CachingStrategy="RecycleElement"
+              ItemsSource="{Binding FeedItems}"
+              HasUnevenRows="True"
+              RowHeight="250"
+              IsPullToRefreshEnabled="True"
+              RefreshCommand="{Binding LoadItemsCommand}"
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            AbsoluteLayout.LayoutFlags="All"
+            AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding Image}" HeightRequest="70" 
+                     VerticalOptions="StartAndExpand"
+                     HorizontalOptions="StartAndExpand" Aspect="AspectFill"/>
+
+                            <StackLayout Grid.Column="2"
+                           Spacing="4"
+                           VerticalOptions="Center">
+                                <Label Text="{Binding Title}" FontSize="Small" LineBreakMode="WordWrap"/>
+                                <Label Text="{Binding PublishDate}" Style="{StaticResource DateTimeLabelStyle}"/>
+                                <Label Text="{Binding Caption}" FontSize="Small" LineBreakMode="WordWrap"/>
+                            </StackLayout>
+
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="{StaticResource LoadingBackgroundColor}" Padding="12"
+                                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                                    AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="{StaticResource LoadingTextColor}">
+            </ActivityIndicator>
+            <Label Text="Loading Podcasts..." HorizontalOptions="Center" TextColor="{StaticResource LoadingTextColor}"/>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
