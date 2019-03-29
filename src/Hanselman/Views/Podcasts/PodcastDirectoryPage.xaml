@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+             xmlns:effects="clr-namespace:Hanselman.Effects"
              x:Class="Hanselman.Views.PodcastDirectoryPage"
              Title="Podcasts">
     <ContentPage.BindingContext>
@@ -19,9 +20,15 @@
                        Padding="8">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
-                            <Grid Margin="4,4,4,4"
+                            <StackLayout Margin="4,4,4,4"
                                   FlexLayout.Basis="{OnIdiom Phone='50%', Tablet='33%'}"
                                   FlexLayout.AlignSelf="Start">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                </StackLayout.GestureRecognizers>
+                                <StackLayout.Effects>
+                                    <effects:RippleEffect/>
+                                </StackLayout.Effects>
                                 <Frame 
                                     Padding="0"
                                     VerticalOptions="Start"
@@ -36,7 +43,7 @@
                                         <Label Grid.Row="1" Margin="10,0" Text="{Binding Title}"/>
                                     </Grid>
                                 </Frame>
-                            </Grid>
+                            </StackLayout>
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>
                 </FlexLayout>
