@@ -4,6 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:helpers="clr-namespace:Hanselman.Helpers"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="clr-namespace:Hanselman.Models"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
@@ -115,46 +116,55 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10">
+                            <Grid Padding="10" ColumnSpacing="10">
                                 <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80" />
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="50" />
                                 </Grid.ColumnDefinitions>
-                                <StackLayout 
-                                    Orientation="Horizontal"
-                                    Spacing="20">
-                                    <Frame
-                                        Padding="0"
-                                        CornerRadius="10"
-                                        HasShadow="True"
-                                        Visual="Material">
-                                        <Image 
-                                            Source="{Binding ArtworkUrl}"
-                                            Aspect="AspectFill"
-                                            HeightRequest="100"
-                                            WidthRequest="100"/>    
-                                    </Frame>
-                                    <StackLayout>
-                                        <Label
-                                            FontAttributes="Bold"
-                                            FontSize="12"
-                                            Text="{Binding Date}"
-                                            TextColor="{StaticResource PrimaryColor}" />
-                                        <Label
-                                            FontSize="16"
-                                            LineBreakMode="TailTruncation"
-                                            MaxLines="2"
-                                            Text="{Binding Title}" />
-                                        <Label FontSize="12" Text="{Binding Duration}" />
-                                    </StackLayout>
+                                <Frame
+                                    Padding="0"
+                                    CornerRadius="40"
+                                    HasShadow="True"
+                                    HeightRequest="80"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Visual="Material"
+                                    WidthRequest="80">
+                                    <Image
+                                        d:Source="scott.png"
+                                        Aspect="AspectFill"
+                                        HorizontalOptions="FillAndExpand"
+                                        Source="{Binding ArtworkUrl}" />
+                                </Frame>
+                                <StackLayout Grid.Column="1">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontSize="12"
+                                        Text="{Binding Date}"
+                                        TextColor="{StaticResource PrimaryColor}" />
+                                    <Label
+                                        FontSize="16"
+                                        LineBreakMode="TailTruncation"
+                                        MaxLines="2"
+                                        Text="{Binding Title}" />
+                                    <Label FontSize="12" Text="{Binding Duration}" />
                                 </StackLayout>
                                 <Image
-                                    Grid.Column="1"
+                                    Grid.Column="2"
                                     HeightRequest="44"
                                     HorizontalOptions="Center"
-                                    Source="ic_play_circle_outline.png"
                                     VerticalOptions="Center"
-                                    WidthRequest="44" />
+                                    WidthRequest="44">
+                                    <Image.Source>
+                                        <FontImageSource
+                                            FontFamily="{DynamicResource MaterialFontFamily}"
+                                            Glyph="{StaticResource PlayCircleOutline}"
+                                            Size="44"
+                                            Color="{StaticResource PrimaryColor}" />
+
+                                    </Image.Source>
+                                </Image>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
