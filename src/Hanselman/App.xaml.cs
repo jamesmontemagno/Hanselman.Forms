@@ -2,6 +2,10 @@
 using Hanselman.Views;
 using Xamarin.Forms.Xaml;
 
+// ElectricHavoc cheered 10 March 29, 2019
+// KymPhillpotts cheered 50 March 29, 2019
+// ElecticHavoc cheered 40 March 29, 2019
+
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Hanselman
 {

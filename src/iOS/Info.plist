@@ -47,5 +47,11 @@
 	<string>LaunchScreen.storyboard</string>
 	<key>MinimumOSVersion</key>
 	<string>10.0</string>
+	<key>CFBundleName</key>
+	<string>Hanselman</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>materialdesignicons-webfont.ttf</string>
+	</array>
 </dict>
 </plist>
