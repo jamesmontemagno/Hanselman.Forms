@@ -1,7 +1,7 @@
 Hanselman.Forms: Hanselman Everywhere
 ===============
 
-Built with C# 6 features, you must be running VS 2015 or Xamarin Studio to compile.
+**UPDATES IN PROGRESS** Go to [vNext Branch!](https://github.com/jamesmontemagno/Hanselman.Forms/tree/vnext)
 
 The most awesome Hanselman app built in about 4 hours to showcase a sample of [Xamarin.Forms](http://www.xamarin.com/forms). Be sure to read [Scott's](http://www.twitter.com/shanselman) blog: http://www.hanselman.com/blog/XamarinFormsWriteOnceRunEverywhereANDBeNative.aspx
 
