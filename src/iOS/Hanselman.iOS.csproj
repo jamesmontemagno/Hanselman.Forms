@@ -31,6 +31,7 @@
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
     <MtouchExtraArgs>--linkskip=ImageCircle.Forms.Plugin.iOS --linkskip=ImageCircle.Forms.Plugin.Abstractions</MtouchExtraArgs>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>

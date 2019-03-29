@@ -37,7 +37,7 @@
     <MonoDroidExtraArgs>
     </MonoDroidExtraArgs>
     <RunCodeAnalysis>false</RunCodeAnalysis>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
