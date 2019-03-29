@@ -20,6 +20,7 @@
             <Color x:Key="LoadingTextColor">White</Color>
 
             <x:String x:Key="PlayCircleOutline">&#xf05a;</x:String>
+            <x:String x:Key="Play">&#xf40a;</x:String>
 
             <Style x:Key="DateTimeLabelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />

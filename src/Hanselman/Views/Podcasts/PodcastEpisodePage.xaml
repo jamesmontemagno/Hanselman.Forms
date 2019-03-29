@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Hanselman.Views.Podcasts.PodcastEpisodePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:Hanselman.Models"
+    mc:Ignorable="d">
+    <d:ContentPage.BindingContext>
+        <models:PodcastEpisode
+            Title="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
+            ArtworkUrl="scott.png"
+            Date="Today"
+            Description="This is a description for a podcast! It is pretty long, but that is awesome."
+            EpisodeNumber="3"
+            Duration="15 mins remaining" />
+    </d:ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="{OnPlatform iOS='0,20,0,0'}" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout BackgroundColor="{StaticResource PrimaryColor}">
+                    <Button
+                        x:Name="ButtonClose"
+                        Margin="10"
+                        Clicked="ButtonClose_Clicked"
+                        HorizontalOptions="End"
+                        Style="{OnPlatform iOS={StaticResource CloseButtonStyle},
+                                           Android={StaticResource CloseButtonStyle}}"
+                        Text="Close" />
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Padding="20"
+                    BackgroundColor="{StaticResource PrimaryColor}"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Start">
+                    <Frame
+                        Grid.RowSpan="3"
+                        Padding="0"
+                        BackgroundColor="Red"
+                        CornerRadius="10"
+                        HasShadow="True"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Visual="Material">
+                        <Image
+                            Aspect="AspectFill"
+                            AutomationProperties.IsInAccessibleTree="True"
+                            AutomationProperties.Name="Podcast Artwork"
+                            HeightRequest="125"
+                            Source="{Binding ArtworkUrl}"
+                            WidthRequest="125" />
+                    </Frame>
+                    <Label
+                        d:Text="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding Title}" />
+                    <Label
+                        d:Text="Hanselminutes"
+                        AutomationProperties.HelpText="Podcast host names"
+                        FontSize="14"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding PodcastName}" />
+                    <Frame
+                        Margin="0,0,0,-50"
+                        Padding="0"
+                        CornerRadius="30"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        Visual="Material"
+                        WidthRequest="60">
+                        <Image
+                            Grid.Column="2"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <Image.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{StaticResource Play}"
+                                    Size="35"
+                                    Color="{StaticResource PrimaryColor}" />
+
+                            </Image.Source>
+                        </Image>
+                    </Frame>
+                </StackLayout>
+
+                <ActivityIndicator
+                    Grid.Row="1"
+                    d:IsRunning="True"
+                    d:IsVisible="True"
+                    HorizontalOptions="CenterAndExpand"
+                    IsRunning="{Binding IsBusy}"
+                    IsVisible="{Binding IsBusy}"
+                    VerticalOptions="CenterAndExpand"
+                    Visual="Material"
+                    Color="{StaticResource AccentColor}" />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
