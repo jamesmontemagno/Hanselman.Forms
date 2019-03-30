@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Hanselman.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -24,7 +20,7 @@ namespace Hanselman.Views.Podcasts
 
         private async void ButtonClose_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
     }
 }
