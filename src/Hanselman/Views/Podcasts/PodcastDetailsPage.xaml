@@ -149,7 +149,7 @@
                                     <Image.Source>
                                         <FontImageSource
                                             FontFamily="{DynamicResource MaterialFontFamily}"
-                                            Glyph="{StaticResource PlayCircleOutline}"
+                                            Glyph="{StaticResource IconPlayCircleOutline}"
                                             Size="44"
                                             Color="{StaticResource PrimaryColor}" />
 

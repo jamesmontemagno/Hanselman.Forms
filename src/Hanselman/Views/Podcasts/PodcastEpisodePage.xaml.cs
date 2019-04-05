@@ -1,4 +1,5 @@
 ﻿using System;
+using Hanselman.Helpers;
 using Hanselman.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

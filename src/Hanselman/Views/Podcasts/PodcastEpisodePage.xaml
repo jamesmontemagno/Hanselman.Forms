@@ -21,6 +21,7 @@
             <Grid Margin="{OnPlatform iOS='0,20,0,0'}" RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackLayout BackgroundColor="{StaticResource PrimaryColor}">
@@ -83,7 +84,7 @@
                             <Image.Source>
                                 <FontImageSource
                                     FontFamily="{DynamicResource MaterialFontFamily}"
-                                    Glyph="{StaticResource Play}"
+                                    Glyph="{StaticResource IconPlay}"
                                     Size="35"
                                     Color="{StaticResource PrimaryColor}" />
 
@@ -92,10 +93,156 @@
                     </Frame>
                 </StackLayout>
 
+                <Grid
+                    Grid.Row="2"
+                    Padding="10,5"
+                    ColumnSpacing="0"
+                    RowSpacing="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="125" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <!--  Buttons  -->
+                        <RowDefinition Height="Auto" />
+                        <!--  Button Labels  -->
+                        <RowDefinition Height="Auto" />
+                        <!--  Line  -->
+                        <RowDefinition Height="Auto" />
+                        <!--  Release Date/TimeLeft  -->
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <ImageButton
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        d:BackgroundColor=""
+                        BackgroundColor="Transparent"
+                        HeightRequest="24"
+                        WidthRequest="24">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                Glyph="{StaticResource IconDownload}"
+                                Color="{StaticResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="0,-5,0,0"
+                        FontSize="Micro"
+                        HorizontalOptions="Center"
+                        Text="Download" />
+
+                    <ImageButton
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        d:BackgroundColor=""
+                        BackgroundColor="Transparent"
+                        HeightRequest="24"
+                        WidthRequest="24">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                Glyph="{StaticResource IconUpNext}"
+                                Color="{StaticResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="0,-5,0,0"
+                        FontSize="Micro"
+                        HorizontalOptions="Center"
+                        Text="Up Next" />
+
+                    <ImageButton
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        d:BackgroundColor=""
+                        BackgroundColor="Transparent"
+                        HeightRequest="24"
+                        WidthRequest="24">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                Glyph="{StaticResource IconMarkPlayed}"
+                                Color="{StaticResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Margin="0,-5,0,0"
+                        FontSize="Micro"
+                        HorizontalOptions="Center"
+                        Text="Mark Played" />
+
+                    <ImageButton
+                        Grid.Row="0"
+                        Grid.Column="4"
+                        d:BackgroundColor=""
+                        BackgroundColor="Transparent"
+                        HeightRequest="24"
+                        WidthRequest="24">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                Glyph="{StaticResource IconArchived}"
+                                Color="{StaticResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Margin="0,-5,0,0"
+                        FontSize="Micro"
+                        HorizontalOptions="Center"
+                        Text="Archive" />
+
+                    <BoxView
+                        Grid.Row="2"
+                        Grid.ColumnSpan="5"
+                        Margin="-10,10"
+                        BackgroundColor="{StaticResource AccentColor}"
+                        HeightRequest="1"
+                        HorizontalOptions="FillAndExpand" />
+
+                    <Label
+                        Grid.Row="3"
+                        Grid.ColumnSpan="2"
+                        FontSize="Small"
+                        Text="{Binding Date}"
+                        TextColor="DarkGray" />
+
+                    <Label
+                        Grid.Row="3"
+                        Grid.Column="3"
+                        Grid.ColumnSpan="2"
+                        FontSize="Small"
+                        HorizontalOptions="End"
+                        Text="{Binding Duration}"
+                        TextColor="DarkGray" />
+
+                    <Label
+                        Grid.Row="4"
+                        Grid.ColumnSpan="5"
+                        Margin="0,5,0,0"
+                        FontSize="Medium"
+                        Text="{Binding Description}" />
+                </Grid>
+
                 <ActivityIndicator
                     Grid.Row="1"
                     d:IsRunning="True"
-                    d:IsVisible="True"
+                    d:IsVisible="False"
                     HorizontalOptions="CenterAndExpand"
                     IsRunning="{Binding IsBusy}"
                     IsVisible="{Binding IsBusy}"
