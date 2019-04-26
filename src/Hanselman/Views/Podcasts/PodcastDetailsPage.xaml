@@ -12,25 +12,15 @@
     <ContentPage.BindingContext>
         <viewmodels:PodcastDetailsViewModel />
     </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Share" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <Grid Margin="{OnPlatform iOS='0,20,0,0'}" RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <StackLayout BackgroundColor="{StaticResource PrimaryColor}">
-                <Button
-                    x:Name="ButtonClose"
-                    Margin="10"
-                    Clicked="ButtonClose_Clicked"
-                    HorizontalOptions="End"
-                    Style="{OnPlatform iOS={StaticResource CloseButtonStyle},
-                                       Android={StaticResource CloseButtonStyle}}"
-                    Text="Close" />
-            </StackLayout>
+        <Grid>
             <ListView
-                Grid.Row="1"
+                CachingStrategy="RecycleElement"
                 HasUnevenRows="True"
+                ItemSelected="ListView_ItemSelected"
                 ItemTapped="ListView_ItemTapped"
                 ItemsSource="{Binding Episodes}">
                 <d:ListView.ItemsSource>
@@ -159,7 +149,7 @@
                                     <Image.Source>
                                         <FontImageSource
                                             FontFamily="{DynamicResource MaterialFontFamily}"
-                                            Glyph="{StaticResource PlayCircleOutline}"
+                                            Glyph="{StaticResource IconPlayCircleOutline}"
                                             Size="44"
                                             Color="{StaticResource PrimaryColor}" />
 
@@ -170,9 +160,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
             <ActivityIndicator
-                Grid.Row="1"
                 d:IsRunning="True"
                 d:IsVisible="True"
                 HorizontalOptions="CenterAndExpand"

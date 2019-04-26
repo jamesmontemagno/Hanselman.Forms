@@ -62,5 +62,6 @@ namespace Hanselman.Helpers
         public const string Linkedin = "\uf33b";
         public const string LinkedinBox = "\uf33c";
         public const string Skype = "\uf4af";
+        public const string Archive = "\uf03c";
     }
 }

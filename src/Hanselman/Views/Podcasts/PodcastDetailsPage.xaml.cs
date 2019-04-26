@@ -28,11 +28,6 @@ namespace Hanselman.Views.Podcasts
             BindingContext = new PodcastDetailsViewModel(podcast);
         }
 
-        private async void ButtonClose_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PopModalAsync();
-        }
-
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -42,6 +37,18 @@ namespace Hanselman.Views.Podcasts
         void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ((ListView)sender).SelectedItem = null;
+        }
+
+        private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var listView = sender as ListView;
+            if (!(listView?.SelectedItem is PodcastEpisode episode))
+                return;
+
+            await Navigation.PushModalAsync(new PodcastEpisodePage(episode));
+
+
+            listView.SelectedItem = null;
         }
     }
 }

@@ -19,7 +19,12 @@
             <Color x:Key="LoadingBackgroundColor">#80000000</Color>
             <Color x:Key="LoadingTextColor">White</Color>
 
-            <x:String x:Key="PlayCircleOutline">&#xf05a;</x:String>
+            <x:String x:Key="IconPlayCircleOutline">&#xf05a;</x:String>
+            <x:String x:Key="IconPlay">&#xf40a;</x:String>
+            <x:String x:Key="IconDownload">&#xf1da;</x:String>
+            <x:String x:Key="IconUpNext">&#xfb8d;</x:String>
+            <x:String x:Key="IconMarkPlayed">&#xf134;</x:String>
+            <x:String x:Key="IconArchived">&#xf03c;</x:String>
 
             <Style x:Key="DateTimeLabelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />

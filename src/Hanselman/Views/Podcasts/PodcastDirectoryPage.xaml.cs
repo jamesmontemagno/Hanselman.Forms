@@ -42,7 +42,7 @@ namespace Hanselman.Views
         {
             if(sender is View view && view.BindingContext is Podcast podcast)
             {
-                await Navigation.PushModalAsync(new PodcastDetailsPage(podcast));
+                await Navigation.PushAsync(new PodcastDetailsPage(podcast));
             }
         }
     }
