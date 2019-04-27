@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using System.Net.Http;
 using System.Xml.Linq;
 using MvvmHelpers;
+using Hanselman.Models;
 
 namespace Hanselman.ViewModels
 {

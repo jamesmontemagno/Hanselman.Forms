@@ -1,4 +1,5 @@
-﻿using Xamarin.Essentials;
+﻿using Hanselman.Models;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Hanselman

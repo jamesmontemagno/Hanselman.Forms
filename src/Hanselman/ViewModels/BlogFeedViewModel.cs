@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Linq;
 using MvvmHelpers;
+using Hanselman.Models;
 
-namespace Hanselman
+namespace Hanselman.ViewModels
 {
     public class BlogFeedViewModel : BaseViewModel
     {
@@ -53,7 +54,7 @@ namespace Hanselman
                     var feed = "http://feeds.hanselman.com/ScottHanselman";
                     responseString = await httpClient.GetStringAsync(feed);
                 }
-
+                await Task.Delay(1000);
                 var items = await ParseFeed(responseString);
                 FeedItems.ReplaceRange(items);
             }

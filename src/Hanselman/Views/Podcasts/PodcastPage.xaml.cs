@@ -1,4 +1,5 @@
-﻿using Hanselman.ViewModels;
+﻿using Hanselman.Models;
+using Hanselman.ViewModels;
 using Xamarin.Forms;
 
 namespace Hanselman.Views

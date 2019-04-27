@@ -4,9 +4,9 @@ using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using Hanselman;
 using ImageCircle.Forms.Plugin.iOS;
-using Plugin.MediaManager.Forms.iOS;
+using MediaManager.Forms.Platforms.iOS;
+using Refractored.XamForms.PullToRefresh.iOS;
 
 namespace Hanselman.iOS
 {
@@ -33,8 +33,11 @@ namespace Hanselman.iOS
                 Font = UIFont.FromName("HelveticaNeue-Light", (nfloat)20f),
                 TextColor = UIColor.White
             });
+
+            Forms.SetFlags("CollectionView_Experimental");
             Forms.Init();
             FormsMaterial.Init();
+            PullToRefreshLayoutRenderer.Init();
             VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());

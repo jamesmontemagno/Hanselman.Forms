@@ -1,5 +1,7 @@
 ﻿using Hanselman.Helpers;
 using Hanselman.Interfaces;
+using Hanselman.Models;
+using Hanselman.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 

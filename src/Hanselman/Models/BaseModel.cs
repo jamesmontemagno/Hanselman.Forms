@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hanselman
+namespace Hanselman.Models
 {
     public class BaseModel
     {
