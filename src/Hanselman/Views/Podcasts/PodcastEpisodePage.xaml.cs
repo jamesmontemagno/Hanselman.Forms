@@ -6,7 +6,6 @@ using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views.Podcasts
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PodcastEpisodePage : ContentPage
     {
         public PodcastEpisodePage(PodcastEpisode episode)

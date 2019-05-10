@@ -38,6 +38,7 @@ namespace Hanselman.Helpers
         public const string Rocket = "\uf463";
         public const string Rss = "\uf46b";
         public const string RssBox = "\uf46c";
+        public const string ShareVariant = "\uF497";
         public const string Spotify = "\uf4c7";
         public const string StackOverflow = "\uf4cc";
         public const string ThumbUp = "\uf513";

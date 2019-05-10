@@ -6,41 +6,37 @@
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     xmlns:effects="clr-namespace:Hanselman.Effects"
     xmlns:pages="clr-namespace:Hanselman.Views"
+    xmlns:controls="clr-namespace:Hanselman.Controls"
     android:TabbedPage.IsSwipePagingEnabled="False"
     android:TabbedPage.ToolbarPlacement="Bottom"
     BarBackgroundColor="{OnPlatform Android=White}">
     <TabbedPage.Effects>
         <effects:TabbedPageNoShiftEffect />
     </TabbedPage.Effects>
-    <NavigationPage Title="About" Icon="ic_about.png">
+    <controls:HanselmanNavigationPage Title="About" Icon="ic_about.png">
         <x:Arguments>
             <pages:AboutPage />
         </x:Arguments>
-    </NavigationPage>
+    </controls:HanselmanNavigationPage>
 
-    <NavigationPage Title="Blog" Icon="ic_rss.png">
-        <x:Arguments>
-            <pages:BlogCollectionPage />
-        </x:Arguments>
-    </NavigationPage>
 
-    <NavigationPage Title="Twitter" Icon="ic_twitter.png">
+    <controls:HanselmanNavigationPage Title="Twitter" Icon="ic_twitter.png">
         <x:Arguments>
             <pages:TwitterPage />
         </x:Arguments>
-    </NavigationPage>
+    </controls:HanselmanNavigationPage>
 
 
-    <NavigationPage Title="Podcasts" Icon="ic_podcast.png">
+    <controls:HanselmanNavigationPage Title="Podcasts" Icon="ic_podcast.png">
         <x:Arguments>
             <pages:PodcastDirectoryPage />
         </x:Arguments>
-    </NavigationPage>
+    </controls:HanselmanNavigationPage>
 
 
-    <NavigationPage Title="Videos" Icon="ic_video.png">
+    <controls:HanselmanNavigationPage Title="Videos" Icon="ic_video.png">
         <x:Arguments>
             <pages:VideoDirectoryPage />
         </x:Arguments>
-    </NavigationPage>
+    </controls:HanselmanNavigationPage>
 </TabbedPage>

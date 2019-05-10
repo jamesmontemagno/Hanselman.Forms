@@ -25,7 +25,7 @@ namespace Hanselman.Views
             {
                 if (listView.SelectedItem == null)
                     return;
-                Navigation.PushAsync(new BlogDetailsView(listView.SelectedItem as FeedItem));
+                ViewModel.BlogSelectedCommand.Execute(null);
                 listView.SelectedItem = null;
             };
         }

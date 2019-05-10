@@ -93,7 +93,7 @@ namespace Hanselman.ViewModels
                 var tweets = tweetsRaw.Select(t => new Tweet
                 {
                     StatusID = (ulong)t.Id,
-                    ScreenName = t.User.ScreenName,
+                    ScreenName = t?.RetweetedStatus?.User?.ScreenName ?? t.User.ScreenName,
                     Text = t.Text,
                     CurrentUserRetweet = (ulong)t.RetweetCount,
                     CreatedAt = GetDate(t.CreatedAt, DateTime.MinValue),

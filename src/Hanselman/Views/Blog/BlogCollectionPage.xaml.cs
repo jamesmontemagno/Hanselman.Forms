@@ -21,14 +21,6 @@ namespace Hanselman.Views
         {
             InitializeComponent();
 
-            CollectionViewBlog.SelectionChanged += (sender, args) =>
-            {
-                if (CollectionViewBlog.SelectedItem == null)
-                    return;
-                Navigation.PushAsync(new BlogDetailsView(CollectionViewBlog.SelectedItem as FeedItem));
-                CollectionViewBlog.SelectedItem = null;
-            };
-
             orientation = DeviceDisplay.MainDisplayInfo.Orientation;
             if (DeviceInfo.Idiom == DeviceIdiom.Phone)
             {

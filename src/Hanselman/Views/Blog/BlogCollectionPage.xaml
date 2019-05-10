@@ -8,11 +8,11 @@
     xmlns:models="clr-namespace:Hanselman.Models"
     xmlns:pulltorefresh="clr-namespace:Refractored.XamForms.PullToRefresh;assembly=Refractored.XamForms.PullToRefresh"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     Title="{Binding Title}"
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
-    NavigationPage.HasNavigationBar="{OnPlatform Android=false,
-                                                 iOS=true}"
+    NavigationPage.HasNavigationBar="{OnPlatform Android=false, iOS=true}"
     mc:Ignorable="d">
     <ContentPage.BindingContext>
         <viewmodels:BlogFeedViewModel />
@@ -27,7 +27,7 @@
                 x:Name="CollectionViewBlog"
                 HorizontalOptions="FillAndExpand"
                 ItemSizingStrategy="MeasureAllItems"
-                SelectionMode="Single"
+                SelectionMode="None"
                 VerticalOptions="FillAndExpand">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" Span="{OnIdiom Phone=1, Tablet=3, Desktop=3, TV=5, Watch=1}" />
@@ -55,12 +55,13 @@
                     <DataTemplate>
                         <Grid Padding="8">
                             <Frame
-                                Padding="0,0,0,8"
+                                Padding="0,0,0,0"
                                 CornerRadius="8"
                                 Visual="Material">
                                 <Grid RowSpacing="0">
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="150" />
+                                        <RowDefinition Height="125" />
+                                        <RowDefinition Height="Auto" />
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
                                     <Grid>
@@ -70,7 +71,7 @@
                                             Source="shadow.png"
                                             VerticalOptions="End" />
                                         <Label
-                                            Margin="8"
+                                            Margin="16,8"
                                             FontAttributes="Bold"
                                             FontSize="Small"
                                             Text="{Binding Title}"
@@ -79,7 +80,7 @@
                                     </Grid>
                                     <StackLayout
                                         Grid.Row="1"
-                                        Padding="8,4"
+                                        Padding="16,4"
                                         Spacing="0">
                                         <Label
                                             Margin="0,4,0,0"
@@ -87,8 +88,38 @@
                                             Text="{Binding PublishDate}" />
                                         <Label
                                             Margin="0,8,0,0"
-                                            FontSize="Micro"
+                                            FontSize="Small"
                                             Text="{Binding Caption}" />
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Row="2"
+                                        Padding="0,4,8,0"
+                                        HorizontalOptions="FillAndExpand"
+                                        Orientation="Horizontal"
+                                        Spacing="8">
+                                        <Button
+                                            BackgroundColor="Transparent"
+                                            BorderColor="Transparent"
+                                            BorderWidth="0"
+                                            Margin="-8,0,0,0"
+                                            Padding="0"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="End"
+                                            Visual="Default"
+                                            Text="READ"
+                                            android:Button.UseDefaultPadding="true"
+                                            android:Button.UseDefaultShadow="true"
+                                            Command="{Binding ReadCommand}"
+                                            TextColor="{StaticResource PrimaryColor}" />
+                                        <Button HorizontalOptions="EndAndExpand"
+                                                VerticalOptions="End"
+                                                Style="{StaticResource MaterialNormalButton}"
+                                                Text="{StaticResource IconShare}"
+                                                Command="{Binding ShareCommand}"
+                                                Visual="Default"
+                                                Padding="0"
+                                                FontSize="24"
+                                                Margin="0,0,-20,0"/>
                                     </StackLayout>
                                 </Grid>
                             </Frame>
