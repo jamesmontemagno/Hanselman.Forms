@@ -10,8 +10,9 @@ using System.Json;
 using System.Collections.Generic;
 using QuickType;
 using System.Globalization;
+using Hanselman.Models;
 
-namespace Hanselman
+namespace Hanselman.ViewModels
 {
     public class TwitterViewModel : BaseViewModel
     {
@@ -92,7 +93,7 @@ namespace Hanselman
                 var tweets = tweetsRaw.Select(t => new Tweet
                 {
                     StatusID = (ulong)t.Id,
-                    ScreenName = t.User.ScreenName,
+                    ScreenName = t?.RetweetedStatus?.User?.ScreenName ?? t.User.ScreenName,
                     Text = t.Text,
                     CurrentUserRetweet = (ulong)t.RetweetCount,
                     CreatedAt = GetDate(t.CreatedAt, DateTime.MinValue),

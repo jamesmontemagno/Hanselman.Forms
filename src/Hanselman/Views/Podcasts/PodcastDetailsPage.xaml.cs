@@ -14,7 +14,6 @@ using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views.Podcasts
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PodcastDetailsPage : ContentPage
     {
         PodcastDetailsViewModel VM => (PodcastDetailsViewModel)BindingContext;

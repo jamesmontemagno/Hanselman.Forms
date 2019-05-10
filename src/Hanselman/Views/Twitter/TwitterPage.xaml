@@ -1,54 +1,106 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Hanselman.Views.TwitterPage"
-             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
-             Title="{Binding Title}" Icon="{Binding Icon}"  IsBusy="{Binding IsBusy}">
-    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <ListView 
-              CachingStrategy="RecycleElement"
-              x:Name="listView" 
-              ItemsSource="{Binding Tweets}"
-              HasUnevenRows="True"
-              RowHeight="150"
-              IsPullToRefreshEnabled="True"
-              RefreshCommand="{Binding LoadTweetsCommand}"
-              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-            AbsoluteLayout.LayoutFlags="All"
-            AbsoluteLayout.LayoutBounds="0,0,1,1">
+<ContentPage
+    x:Class="Hanselman.Views.TwitterPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:Hanselman.Models"
+    Title="{Binding Title}"
+    Icon="{Binding Icon}"
+    IsBusy="{Binding IsBusy}"
+    NavigationPage.HasNavigationBar="{OnPlatform Android=false, iOS=true}"
+    mc:Ignorable="d">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ListView
+            x:Name="listView"
+            CachingStrategy="RecycleElement"
+            HasUnevenRows="True"
+            IsPullToRefreshEnabled="True"
+            IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            ItemsSource="{Binding Tweets}"
+            RefreshCommand="{Binding LoadTweetsCommand}"
+            SeparatorColor="Transparent">
+            <d:ListView.ItemsSource>
+                <x:Array Type="{x:Type models:Tweet}">
+                    <models:Tweet  ScreenName="scotthanselman" Text="Hello world this is a tweet, james is pretty awesome, and this app is amazing!!!!"
+                                   Image="scott.png"/>
+                </x:Array>
+            </d:ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="10,5">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <controls:CircleImage Source="{Binding Image}"
-                                    VerticalOptions="Center"
-                                    BorderColor="{StaticResource PrimaryColor}"
-                                    BorderThickness="2"
-                                   FillColor="{StaticResource PrimaryColor}"
-                                    WidthRequest="{OnPlatform UWP=75, Default=55}"
-                                    HeightRequest="{OnPlatform UWP=75, Default=55}">
-                            </controls:CircleImage>
-                            <StackLayout Grid.Column="1" 
-                           Padding="8" 
-                           Spacing="4"
-                           VerticalOptions="Center">
-                                <Label Text="{Binding DateHumanized}" FontSize="Medium"  Style="{StaticResource DateTimeLabelStyle}"/>
-                                <Label Text="{Binding Text}" x:Name="TweetText" FontSize="Small" LineBreakMode="WordWrap"/>
-                            </StackLayout>
-                        </Grid>
+                        <Frame
+                            Margin="8,4"
+                            Padding="12"
+                            HasShadow="True"
+                            Visual="Material">
+                            <Grid ColumnSpacing="12">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Frame
+                                    Margin="0"
+                                    Padding="0"
+                                    CornerRadius="22"
+                                    HasShadow="True"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Start"
+                                    Visual="Material">
+                                    <Image
+                                        Aspect="AspectFill"
+                                        HeightRequest="44"
+                                        Source="{Binding Image}"
+                                        VerticalOptions="Center"
+                                        WidthRequest="44" />
+                                </Frame>
+                                <StackLayout
+                                    Grid.Column="1"
+                                    Padding="0"
+                                    Spacing="4"
+                                    VerticalOptions="Start">
+                                    <Label
+                                        FontSize="Micro"
+                                        Style="{StaticResource DateTimeLabelStyle}"
+                                        Text="{Binding DateHumanized}" />
+                                    <Label
+                                        FontSize="Micro"
+                                        Text="{Binding ScreenName}" />
+                                    <Label
+                                        x:Name="TweetText"
+                                        FontSize="Small"
+                                        LineBreakMode="WordWrap"
+                                        Text="{Binding Text}" />
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackLayout IsVisible="{Binding IsBusy}" BackgroundColor="{StaticResource LoadingBackgroundColor}" Padding="12"
-                                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                                 AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
-            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="{StaticResource LoadingTextColor}" Visual="Material"/>
-            <Label Text="Loading Twitter..." HorizontalOptions="Center" TextColor="{StaticResource LoadingTextColor}"/>
-        </StackLayout>
-    </AbsoluteLayout>
+        <Frame
+            Padding="12"
+            d:IsVisible="true"
+            BackgroundColor="{StaticResource LoadingBackgroundColor}"
+            CornerRadius="10"
+            HasShadow="False"
+            HorizontalOptions="Center"
+            IsVisible="{Binding IsBusy}"
+            VerticalOptions="Center"
+            Visual="Material">
+            <StackLayout>
+                <ActivityIndicator
+                    d:IsRunning="true"
+                    IsRunning="{Binding IsBusy}"
+                    Visual="Material"
+                    Color="{StaticResource LoadingTextColor}" />
+                <Label
+                    HorizontalOptions="Center"
+                    Text="Loading tweets..."
+                    TextColor="{StaticResource LoadingTextColor}" />
+            </StackLayout>
+        </Frame>
+    </Grid>
 </ContentPage>

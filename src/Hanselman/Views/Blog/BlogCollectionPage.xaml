@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Hanselman.Views.BlogCollectionPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:Hanselman.Models"
+    xmlns:pulltorefresh="clr-namespace:Refractored.XamForms.PullToRefresh;assembly=Refractored.XamForms.PullToRefresh"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    Title="{Binding Title}"
+    Icon="{Binding Icon}"
+    IsBusy="{Binding IsBusy}"
+    NavigationPage.HasNavigationBar="{OnPlatform Android=false, iOS=true}"
+    mc:Ignorable="d">
+    <ContentPage.BindingContext>
+        <viewmodels:BlogFeedViewModel />
+    </ContentPage.BindingContext>
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <pulltorefresh:PullToRefreshLayout
+            IsPullToRefreshEnabled="True"
+            IsRefreshing="{Binding IsBusy}"
+            RefreshColor="Black"
+            RefreshCommand="{Binding LoadItemsCommand}">
+            <CollectionView
+                x:Name="CollectionViewBlog"
+                HorizontalOptions="FillAndExpand"
+                ItemSizingStrategy="MeasureAllItems"
+                SelectionMode="None"
+                VerticalOptions="FillAndExpand">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="{OnIdiom Phone=1, Tablet=3, Desktop=3, TV=5, Watch=1}" />
+                </CollectionView.ItemsLayout>
+                <d:CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type models:FeedItem}">
+                        <models:FeedItem
+                            Title="Awesome Title"
+                            Caption="This is a caption of the blog article."
+                            FirstImage="scott.png"
+                            PublishDate="Today" />
+                        <models:FeedItem
+                            Title="Awesome Title"
+                            Caption="This is a caption of the blog article."
+                            FirstImage="scott.png"
+                            PublishDate="Today" />
+                        <models:FeedItem
+                            Title="Awesome Title"
+                            Caption="This is a caption of the blog article."
+                            FirstImage="scott.png"
+                            PublishDate="Today" />
+                    </x:Array>
+                </d:CollectionView.ItemsSource>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="8">
+                            <Frame
+                                Padding="0,0,0,0"
+                                CornerRadius="8"
+                                Visual="Material">
+                                <Grid RowSpacing="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="125" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid>
+                                        <Image Aspect="AspectFill" Source="{Binding FirstImage}" />
+                                        <Image
+                                            Aspect="AspectFill"
+                                            Source="shadow.png"
+                                            VerticalOptions="End" />
+                                        <Label
+                                            Margin="16,8"
+                                            FontAttributes="Bold"
+                                            FontSize="Small"
+                                            Text="{Binding Title}"
+                                            TextColor="White"
+                                            VerticalOptions="End" />
+                                    </Grid>
+                                    <StackLayout
+                                        Grid.Row="1"
+                                        Padding="16,4"
+                                        Spacing="0">
+                                        <Label
+                                            Margin="0,4,0,0"
+                                            FontSize="Micro"
+                                            Text="{Binding PublishDate}" />
+                                        <Label
+                                            Margin="0,8,0,0"
+                                            FontSize="Small"
+                                            Text="{Binding Caption}" />
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Row="2"
+                                        Padding="0,4,8,0"
+                                        HorizontalOptions="FillAndExpand"
+                                        Orientation="Horizontal"
+                                        Spacing="8">
+                                        <Button
+                                            BackgroundColor="Transparent"
+                                            BorderColor="Transparent"
+                                            BorderWidth="0"
+                                            Margin="-8,0,0,0"
+                                            Padding="0"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="End"
+                                            Visual="Default"
+                                            Text="READ"
+                                            android:Button.UseDefaultPadding="true"
+                                            android:Button.UseDefaultShadow="true"
+                                            Command="{Binding ReadCommand}"
+                                            TextColor="{StaticResource PrimaryColor}" />
+                                        <Button HorizontalOptions="EndAndExpand"
+                                                VerticalOptions="End"
+                                                Style="{StaticResource MaterialNormalButton}"
+                                                Text="{StaticResource IconShare}"
+                                                Command="{Binding ShareCommand}"
+                                                Visual="Default"
+                                                Padding="0"
+                                                FontSize="24"
+                                                Margin="0,0,-20,0"/>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </pulltorefresh:PullToRefreshLayout>
+        <Frame
+            Padding="12"
+            d:IsVisible="true"
+            BackgroundColor="{StaticResource LoadingBackgroundColor}"
+            CornerRadius="10"
+            HasShadow="False"
+            HorizontalOptions="Center"
+            IsVisible="{Binding IsBusy}"
+            VerticalOptions="Center"
+            Visual="Material">
+            <StackLayout>
+                <ActivityIndicator
+                    d:IsRunning="true"
+                    IsRunning="{Binding IsBusy}"
+                    Visual="Material"
+                    Color="{StaticResource LoadingTextColor}" />
+                <Label
+                    HorizontalOptions="Center"
+                    Text="Loading Blog..."
+                    TextColor="{StaticResource LoadingTextColor}" />
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>
