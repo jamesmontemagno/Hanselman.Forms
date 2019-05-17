@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System;
 
-namespace Hanselman
+namespace Hanselman.Models
 {
     public class Tweet
     {

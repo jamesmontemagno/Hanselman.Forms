@@ -141,6 +141,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hanselman.Shared.Models\Hanselman.Shared.Models.csproj">
+      <Project>{f19765e1-d819-4bdf-a662-1a489a4caef2}</Project>
+      <Name>Hanselman.Shared.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hanselman\Hanselman.csproj">
       <Project>{028799a4-e2fd-4901-b950-666c00efbf63}</Project>
       <Name>Hanselman</Name>

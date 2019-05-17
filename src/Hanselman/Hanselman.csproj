@@ -23,4 +23,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hanselman.Shared.Models\Hanselman.Shared.Models.csproj" />
+  </ItemGroup>
 </Project>

@@ -1,13 +1,50 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using Hanselman.Helpers;
+using MvvmHelpers;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
-namespace Hanselman
+namespace Hanselman.Models
 {
-    public class FeedItem : INotifyPropertyChanged
+    public class FeedItem : ObservableObject
     {
+
+        public ICommand ShareCommand { get; }
+        public ICommand ReadCommand { get; }
+        public FeedItem()
+        {
+            ShareCommand = new Command(async () => await ExecuteShareCommand());
+            ReadCommand = new Command(async () => await ExecuteReadCommand());
+        }
+
+        async Task ExecuteShareCommand()
+        {
+            await Share.RequestAsync(new ShareTextRequest
+            {
+                Uri = Link,
+                Title = "Share",
+                Text = Title,
+                Subject = Caption
+            });
+        }
+
+        async Task ExecuteReadCommand()
+        {
+            await Browser.OpenAsync(Link, new BrowserLaunchOptions
+            {
+                LaunchMode = BrowserLaunchMode.SystemPreferred,
+                TitleMode = BrowserTitleMode.Show,
+                PreferredControlColor = Color.White,
+                PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryColor"]
+            });
+        }
+
+
+
         public string Description { get; set; }
         public string Link { get; set; }
 
@@ -24,13 +61,7 @@ namespace Hanselman
         public string Category { get; set; }
 
         public string Mp3Url { get; set; }
-
-        string title;
-        public string Title
-        {
-            get => title;
-            set => title = value;
-        }
+        public string Title { get; set; }
 
         string caption;
 
@@ -49,9 +80,10 @@ namespace Hanselman
                 //get rid of multiple blank lines
                 caption = Regex.Replace(caption, @"^\s*$\n", string.Empty, RegexOptions.Multiline);
 
-                caption = caption.Substring(0, caption.Length < 200 ? caption.Length : 200).Trim() + "...";
+                caption = caption.Substring(0, caption.Length < 100 ? caption.Length : 100).Trim() + "...";
                 return caption;
             }
+            set => caption = value;
         }
 
         public string Length { get; set; }
@@ -83,7 +115,7 @@ namespace Hanselman
                     return firstImage;
 
 
-                var regx = new Regex("http://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
+                var regx = new Regex("https://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
                 var matches = regx.Matches(Description);
 
                 if (matches.Count == 0)
@@ -93,6 +125,7 @@ namespace Hanselman
 
                 return firstImage;
             }
+            set => firstImage = value;
         }
 
         public ImageSource FirstImageSource
@@ -110,16 +143,7 @@ namespace Hanselman
         public decimal Progress
         {
             get => progress;
-            set { progress = value; OnPropertyChanged("Progress"); }
-        }
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        void OnPropertyChanged(string name)
-        {
-            if (PropertyChanged == null)
-                return;
-            PropertyChanged(this, new PropertyChangedEventArgs(name));
+            set => SetProperty(ref progress, value);
         }
     }
 }
