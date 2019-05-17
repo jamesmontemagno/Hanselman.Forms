@@ -6,27 +6,43 @@ using System.Xml.Linq;
 using System.Linq;
 using MvvmHelpers;
 using Hanselman.Models;
+using System.Windows.Input;
+using System;
+using Xamarin.Essentials;
 
-namespace Hanselman
+namespace Hanselman.ViewModels
 {
     public class BlogFeedViewModel : BaseViewModel
     {
+        public ObservableRangeCollection<FeedItem> FeedItems { get; }
+        public ICommand BlogSelectedCommand { get; }
+
         public BlogFeedViewModel()
         {
             Title = "Blog";
             Icon = "blog.png";
+            FeedItems = new ObservableRangeCollection<FeedItem>();
+            BlogSelectedCommand = new Command(async () => await ExecuteBlogSelectedCommand());
         }
 
+        async Task ExecuteBlogSelectedCommand()
+        {
+            if (SelectedFeedItem == null)
+                return;
 
-        /// <summary>
-        /// gets or sets the feed items
-        /// </summary>
-        public ObservableRangeCollection<FeedItem> FeedItems { get; } = new ObservableRangeCollection<FeedItem>();
+            await Browser.OpenAsync(SelectedFeedItem.Link, new BrowserLaunchOptions
+            {
+                LaunchMode = BrowserLaunchMode.SystemPreferred,
+                TitleMode = BrowserTitleMode.Show,
+                PreferredControlColor = Color.White,
+                PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryColor"]
+            });
+
+            SelectedFeedItem = null;
+        }
 
         FeedItem selectedFeedItem;
-        /// <summary>
-        /// Gets or sets the selected feed item
-        /// </summary>
+
         public FeedItem SelectedFeedItem
         {
             get => selectedFeedItem;
@@ -54,7 +70,7 @@ namespace Hanselman
                     var feed = "http://feeds.hanselman.com/ScottHanselman";
                     responseString = await httpClient.GetStringAsync(feed);
                 }
-
+                await Task.Delay(1000);
                 var items = await ParseFeed(responseString);
                 FeedItems.ReplaceRange(items);
             }

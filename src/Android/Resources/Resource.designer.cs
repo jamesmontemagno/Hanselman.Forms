@@ -26,2075 +26,1698 @@ namespace HanselmanAndroid
 		
 		public static void UpdateIdValues()
 		{
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_fade_in = global::HanselmanAndroid.Resource.Animation.abc_fade_in;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_fade_out = global::HanselmanAndroid.Resource.Animation.abc_fade_out;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::HanselmanAndroid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_popup_enter = global::HanselmanAndroid.Resource.Animation.abc_popup_enter;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_popup_exit = global::HanselmanAndroid.Resource.Animation.abc_popup_exit;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::HanselmanAndroid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_slide_in_bottom = global::HanselmanAndroid.Resource.Animation.abc_slide_in_bottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_slide_in_top = global::HanselmanAndroid.Resource.Animation.abc_slide_in_top;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_slide_out_bottom = global::HanselmanAndroid.Resource.Animation.abc_slide_out_bottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_slide_out_top = global::HanselmanAndroid.Resource.Animation.abc_slide_out_top;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_bottom_sheet_slide_in = global::HanselmanAndroid.Resource.Animation.design_bottom_sheet_slide_in;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_bottom_sheet_slide_out = global::HanselmanAndroid.Resource.Animation.design_bottom_sheet_slide_out;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_snackbar_in = global::HanselmanAndroid.Resource.Animation.design_snackbar_in;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_snackbar_out = global::HanselmanAndroid.Resource.Animation.design_snackbar_out;
-			global::Plugin.MediaManager.Forms.Android.Resource.Animator.design_appbar_state_list_animator = global::HanselmanAndroid.Resource.Animator.design_appbar_state_list_animator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarDivider = global::HanselmanAndroid.Resource.Attribute.actionBarDivider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarItemBackground = global::HanselmanAndroid.Resource.Attribute.actionBarItemBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarPopupTheme = global::HanselmanAndroid.Resource.Attribute.actionBarPopupTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarSize = global::HanselmanAndroid.Resource.Attribute.actionBarSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarSplitStyle = global::HanselmanAndroid.Resource.Attribute.actionBarSplitStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarStyle = global::HanselmanAndroid.Resource.Attribute.actionBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarTabBarStyle = global::HanselmanAndroid.Resource.Attribute.actionBarTabBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarTabStyle = global::HanselmanAndroid.Resource.Attribute.actionBarTabStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarTabTextStyle = global::HanselmanAndroid.Resource.Attribute.actionBarTabTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarTheme = global::HanselmanAndroid.Resource.Attribute.actionBarTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarWidgetTheme = global::HanselmanAndroid.Resource.Attribute.actionBarWidgetTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionButtonStyle = global::HanselmanAndroid.Resource.Attribute.actionButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionDropDownStyle = global::HanselmanAndroid.Resource.Attribute.actionDropDownStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionLayout = global::HanselmanAndroid.Resource.Attribute.actionLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionMenuTextAppearance = global::HanselmanAndroid.Resource.Attribute.actionMenuTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionMenuTextColor = global::HanselmanAndroid.Resource.Attribute.actionMenuTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeBackground = global::HanselmanAndroid.Resource.Attribute.actionModeBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeCloseButtonStyle = global::HanselmanAndroid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeCloseDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeCloseDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeCopyDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeCopyDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeCutDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeCutDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeFindDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeFindDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModePasteDrawable = global::HanselmanAndroid.Resource.Attribute.actionModePasteDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModePopupWindowStyle = global::HanselmanAndroid.Resource.Attribute.actionModePopupWindowStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeSelectAllDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeShareDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeShareDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeSplitBackground = global::HanselmanAndroid.Resource.Attribute.actionModeSplitBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeStyle = global::HanselmanAndroid.Resource.Attribute.actionModeStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeWebSearchDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionOverflowButtonStyle = global::HanselmanAndroid.Resource.Attribute.actionOverflowButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionOverflowMenuStyle = global::HanselmanAndroid.Resource.Attribute.actionOverflowMenuStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionProviderClass = global::HanselmanAndroid.Resource.Attribute.actionProviderClass;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionViewClass = global::HanselmanAndroid.Resource.Attribute.actionViewClass;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.activityChooserViewStyle = global::HanselmanAndroid.Resource.Attribute.activityChooserViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::HanselmanAndroid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alertDialogCenterButtons = global::HanselmanAndroid.Resource.Attribute.alertDialogCenterButtons;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alertDialogStyle = global::HanselmanAndroid.Resource.Attribute.alertDialogStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alertDialogTheme = global::HanselmanAndroid.Resource.Attribute.alertDialogTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.allowStacking = global::HanselmanAndroid.Resource.Attribute.allowStacking;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alpha = global::HanselmanAndroid.Resource.Attribute.alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.arrowHeadLength = global::HanselmanAndroid.Resource.Attribute.arrowHeadLength;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.arrowShaftLength = global::HanselmanAndroid.Resource.Attribute.arrowShaftLength;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.autoCompleteTextViewStyle = global::HanselmanAndroid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.background = global::HanselmanAndroid.Resource.Attribute.background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.backgroundSplit = global::HanselmanAndroid.Resource.Attribute.backgroundSplit;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.backgroundStacked = global::HanselmanAndroid.Resource.Attribute.backgroundStacked;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.backgroundTint = global::HanselmanAndroid.Resource.Attribute.backgroundTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.backgroundTintMode = global::HanselmanAndroid.Resource.Attribute.backgroundTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.barLength = global::HanselmanAndroid.Resource.Attribute.barLength;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_autoHide = global::HanselmanAndroid.Resource.Attribute.behavior_autoHide;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_hideable = global::HanselmanAndroid.Resource.Attribute.behavior_hideable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_overlapTop = global::HanselmanAndroid.Resource.Attribute.behavior_overlapTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_peekHeight = global::HanselmanAndroid.Resource.Attribute.behavior_peekHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_skipCollapsed = global::HanselmanAndroid.Resource.Attribute.behavior_skipCollapsed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.borderWidth = global::HanselmanAndroid.Resource.Attribute.borderWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.borderlessButtonStyle = global::HanselmanAndroid.Resource.Attribute.borderlessButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.bottomSheetDialogTheme = global::HanselmanAndroid.Resource.Attribute.bottomSheetDialogTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.bottomSheetStyle = global::HanselmanAndroid.Resource.Attribute.bottomSheetStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarButtonStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonGravity = global::HanselmanAndroid.Resource.Attribute.buttonGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonPanelSideLayout = global::HanselmanAndroid.Resource.Attribute.buttonPanelSideLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonStyle = global::HanselmanAndroid.Resource.Attribute.buttonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonStyleSmall = global::HanselmanAndroid.Resource.Attribute.buttonStyleSmall;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonTint = global::HanselmanAndroid.Resource.Attribute.buttonTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonTintMode = global::HanselmanAndroid.Resource.Attribute.buttonTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardBackgroundColor = global::HanselmanAndroid.Resource.Attribute.cardBackgroundColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardCornerRadius = global::HanselmanAndroid.Resource.Attribute.cardCornerRadius;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardElevation = global::HanselmanAndroid.Resource.Attribute.cardElevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardMaxElevation = global::HanselmanAndroid.Resource.Attribute.cardMaxElevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardPreventCornerOverlap = global::HanselmanAndroid.Resource.Attribute.cardPreventCornerOverlap;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardUseCompatPadding = global::HanselmanAndroid.Resource.Attribute.cardUseCompatPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.checkboxStyle = global::HanselmanAndroid.Resource.Attribute.checkboxStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.checkedTextViewStyle = global::HanselmanAndroid.Resource.Attribute.checkedTextViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.closeIcon = global::HanselmanAndroid.Resource.Attribute.closeIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.closeItemLayout = global::HanselmanAndroid.Resource.Attribute.closeItemLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.collapseContentDescription = global::HanselmanAndroid.Resource.Attribute.collapseContentDescription;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.collapseIcon = global::HanselmanAndroid.Resource.Attribute.collapseIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.collapsedTitleGravity = global::HanselmanAndroid.Resource.Attribute.collapsedTitleGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.collapsedTitleTextAppearance = global::HanselmanAndroid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.color = global::HanselmanAndroid.Resource.Attribute.color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorAccent = global::HanselmanAndroid.Resource.Attribute.colorAccent;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorBackgroundFloating = global::HanselmanAndroid.Resource.Attribute.colorBackgroundFloating;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorButtonNormal = global::HanselmanAndroid.Resource.Attribute.colorButtonNormal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorControlActivated = global::HanselmanAndroid.Resource.Attribute.colorControlActivated;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorControlHighlight = global::HanselmanAndroid.Resource.Attribute.colorControlHighlight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorControlNormal = global::HanselmanAndroid.Resource.Attribute.colorControlNormal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorPrimary = global::HanselmanAndroid.Resource.Attribute.colorPrimary;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorPrimaryDark = global::HanselmanAndroid.Resource.Attribute.colorPrimaryDark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorSwitchThumbNormal = global::HanselmanAndroid.Resource.Attribute.colorSwitchThumbNormal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.commitIcon = global::HanselmanAndroid.Resource.Attribute.commitIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetEnd = global::HanselmanAndroid.Resource.Attribute.contentInsetEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetEndWithActions = global::HanselmanAndroid.Resource.Attribute.contentInsetEndWithActions;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetLeft = global::HanselmanAndroid.Resource.Attribute.contentInsetLeft;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetRight = global::HanselmanAndroid.Resource.Attribute.contentInsetRight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetStart = global::HanselmanAndroid.Resource.Attribute.contentInsetStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetStartWithNavigation = global::HanselmanAndroid.Resource.Attribute.contentInsetStartWithNavigation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPadding = global::HanselmanAndroid.Resource.Attribute.contentPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPaddingBottom = global::HanselmanAndroid.Resource.Attribute.contentPaddingBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPaddingLeft = global::HanselmanAndroid.Resource.Attribute.contentPaddingLeft;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPaddingRight = global::HanselmanAndroid.Resource.Attribute.contentPaddingRight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPaddingTop = global::HanselmanAndroid.Resource.Attribute.contentPaddingTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentScrim = global::HanselmanAndroid.Resource.Attribute.contentScrim;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.controlBackground = global::HanselmanAndroid.Resource.Attribute.controlBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.counterEnabled = global::HanselmanAndroid.Resource.Attribute.counterEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.counterMaxLength = global::HanselmanAndroid.Resource.Attribute.counterMaxLength;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.counterOverflowTextAppearance = global::HanselmanAndroid.Resource.Attribute.counterOverflowTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.counterTextAppearance = global::HanselmanAndroid.Resource.Attribute.counterTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.customNavigationLayout = global::HanselmanAndroid.Resource.Attribute.customNavigationLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.defaultQueryHint = global::HanselmanAndroid.Resource.Attribute.defaultQueryHint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dialogPreferredPadding = global::HanselmanAndroid.Resource.Attribute.dialogPreferredPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dialogTheme = global::HanselmanAndroid.Resource.Attribute.dialogTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.displayOptions = global::HanselmanAndroid.Resource.Attribute.displayOptions;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.divider = global::HanselmanAndroid.Resource.Attribute.divider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dividerHorizontal = global::HanselmanAndroid.Resource.Attribute.dividerHorizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dividerPadding = global::HanselmanAndroid.Resource.Attribute.dividerPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dividerVertical = global::HanselmanAndroid.Resource.Attribute.dividerVertical;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.drawableSize = global::HanselmanAndroid.Resource.Attribute.drawableSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.drawerArrowStyle = global::HanselmanAndroid.Resource.Attribute.drawerArrowStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dropDownListViewStyle = global::HanselmanAndroid.Resource.Attribute.dropDownListViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::HanselmanAndroid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.editTextBackground = global::HanselmanAndroid.Resource.Attribute.editTextBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.editTextColor = global::HanselmanAndroid.Resource.Attribute.editTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.editTextStyle = global::HanselmanAndroid.Resource.Attribute.editTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.elevation = global::HanselmanAndroid.Resource.Attribute.elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.errorEnabled = global::HanselmanAndroid.Resource.Attribute.errorEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.errorTextAppearance = global::HanselmanAndroid.Resource.Attribute.errorTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::HanselmanAndroid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expanded = global::HanselmanAndroid.Resource.Attribute.expanded;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleGravity = global::HanselmanAndroid.Resource.Attribute.expandedTitleGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMargin = global::HanselmanAndroid.Resource.Attribute.expandedTitleMargin;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMarginBottom = global::HanselmanAndroid.Resource.Attribute.expandedTitleMarginBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMarginEnd = global::HanselmanAndroid.Resource.Attribute.expandedTitleMarginEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMarginStart = global::HanselmanAndroid.Resource.Attribute.expandedTitleMarginStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMarginTop = global::HanselmanAndroid.Resource.Attribute.expandedTitleMarginTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleTextAppearance = global::HanselmanAndroid.Resource.Attribute.expandedTitleTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.externalRouteEnabledDrawable = global::HanselmanAndroid.Resource.Attribute.externalRouteEnabledDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.fabSize = global::HanselmanAndroid.Resource.Attribute.fabSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.foregroundInsidePadding = global::HanselmanAndroid.Resource.Attribute.foregroundInsidePadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.gapBetweenBars = global::HanselmanAndroid.Resource.Attribute.gapBetweenBars;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.goIcon = global::HanselmanAndroid.Resource.Attribute.goIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.headerLayout = global::HanselmanAndroid.Resource.Attribute.headerLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.height = global::HanselmanAndroid.Resource.Attribute.height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.hideOnContentScroll = global::HanselmanAndroid.Resource.Attribute.hideOnContentScroll;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.hintAnimationEnabled = global::HanselmanAndroid.Resource.Attribute.hintAnimationEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.hintEnabled = global::HanselmanAndroid.Resource.Attribute.hintEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.hintTextAppearance = global::HanselmanAndroid.Resource.Attribute.hintTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.homeAsUpIndicator = global::HanselmanAndroid.Resource.Attribute.homeAsUpIndicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.homeLayout = global::HanselmanAndroid.Resource.Attribute.homeLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.icon = global::HanselmanAndroid.Resource.Attribute.icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.iconifiedByDefault = global::HanselmanAndroid.Resource.Attribute.iconifiedByDefault;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.imageButtonStyle = global::HanselmanAndroid.Resource.Attribute.imageButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.indeterminateProgressStyle = global::HanselmanAndroid.Resource.Attribute.indeterminateProgressStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.initialActivityCount = global::HanselmanAndroid.Resource.Attribute.initialActivityCount;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.insetForeground = global::HanselmanAndroid.Resource.Attribute.insetForeground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.isLightTheme = global::HanselmanAndroid.Resource.Attribute.isLightTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemBackground = global::HanselmanAndroid.Resource.Attribute.itemBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemIconTint = global::HanselmanAndroid.Resource.Attribute.itemIconTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemPadding = global::HanselmanAndroid.Resource.Attribute.itemPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemTextAppearance = global::HanselmanAndroid.Resource.Attribute.itemTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemTextColor = global::HanselmanAndroid.Resource.Attribute.itemTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.keylines = global::HanselmanAndroid.Resource.Attribute.keylines;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout = global::HanselmanAndroid.Resource.Attribute.layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layoutManager = global::HanselmanAndroid.Resource.Attribute.layoutManager;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_anchor = global::HanselmanAndroid.Resource.Attribute.layout_anchor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_anchorGravity = global::HanselmanAndroid.Resource.Attribute.layout_anchorGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_behavior = global::HanselmanAndroid.Resource.Attribute.layout_behavior;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_collapseMode = global::HanselmanAndroid.Resource.Attribute.layout_collapseMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::HanselmanAndroid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_dodgeInsetEdges = global::HanselmanAndroid.Resource.Attribute.layout_dodgeInsetEdges;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_insetEdge = global::HanselmanAndroid.Resource.Attribute.layout_insetEdge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_keyline = global::HanselmanAndroid.Resource.Attribute.layout_keyline;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_scrollFlags = global::HanselmanAndroid.Resource.Attribute.layout_scrollFlags;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_scrollInterpolator = global::HanselmanAndroid.Resource.Attribute.layout_scrollInterpolator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::HanselmanAndroid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listDividerAlertDialog = global::HanselmanAndroid.Resource.Attribute.listDividerAlertDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listItemLayout = global::HanselmanAndroid.Resource.Attribute.listItemLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listLayout = global::HanselmanAndroid.Resource.Attribute.listLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listMenuViewStyle = global::HanselmanAndroid.Resource.Attribute.listMenuViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPopupWindowStyle = global::HanselmanAndroid.Resource.Attribute.listPopupWindowStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemHeight = global::HanselmanAndroid.Resource.Attribute.listPreferredItemHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemHeightLarge = global::HanselmanAndroid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemHeightSmall = global::HanselmanAndroid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::HanselmanAndroid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemPaddingRight = global::HanselmanAndroid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.logo = global::HanselmanAndroid.Resource.Attribute.logo;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.logoDescription = global::HanselmanAndroid.Resource.Attribute.logoDescription;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.maxActionInlineWidth = global::HanselmanAndroid.Resource.Attribute.maxActionInlineWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.maxButtonHeight = global::HanselmanAndroid.Resource.Attribute.maxButtonHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.measureWithLargestChild = global::HanselmanAndroid.Resource.Attribute.measureWithLargestChild;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteAudioTrackDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRouteAudioTrackDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteButtonStyle = global::HanselmanAndroid.Resource.Attribute.mediaRouteButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteCloseDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRouteCloseDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::HanselmanAndroid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteDefaultIconDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRouteDefaultIconDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRoutePauseDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRoutePauseDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRoutePlayDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRoutePlayDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteStopDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRouteStopDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteTheme = global::HanselmanAndroid.Resource.Attribute.mediaRouteTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteTvIconDrawable = global::HanselmanAndroid.Resource.Attribute.mediaRouteTvIconDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.menu = global::HanselmanAndroid.Resource.Attribute.menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.multiChoiceItemLayout = global::HanselmanAndroid.Resource.Attribute.multiChoiceItemLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.navigationContentDescription = global::HanselmanAndroid.Resource.Attribute.navigationContentDescription;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.navigationIcon = global::HanselmanAndroid.Resource.Attribute.navigationIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.navigationMode = global::HanselmanAndroid.Resource.Attribute.navigationMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.overlapAnchor = global::HanselmanAndroid.Resource.Attribute.overlapAnchor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.paddingBottomNoButtons = global::HanselmanAndroid.Resource.Attribute.paddingBottomNoButtons;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.paddingEnd = global::HanselmanAndroid.Resource.Attribute.paddingEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.paddingStart = global::HanselmanAndroid.Resource.Attribute.paddingStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.paddingTopNoTitle = global::HanselmanAndroid.Resource.Attribute.paddingTopNoTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.panelBackground = global::HanselmanAndroid.Resource.Attribute.panelBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.panelMenuListTheme = global::HanselmanAndroid.Resource.Attribute.panelMenuListTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.panelMenuListWidth = global::HanselmanAndroid.Resource.Attribute.panelMenuListWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleContentDescription = global::HanselmanAndroid.Resource.Attribute.passwordToggleContentDescription;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleDrawable = global::HanselmanAndroid.Resource.Attribute.passwordToggleDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleEnabled = global::HanselmanAndroid.Resource.Attribute.passwordToggleEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleTint = global::HanselmanAndroid.Resource.Attribute.passwordToggleTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleTintMode = global::HanselmanAndroid.Resource.Attribute.passwordToggleTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.popupMenuStyle = global::HanselmanAndroid.Resource.Attribute.popupMenuStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.popupTheme = global::HanselmanAndroid.Resource.Attribute.popupTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.popupWindowStyle = global::HanselmanAndroid.Resource.Attribute.popupWindowStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.preserveIconSpacing = global::HanselmanAndroid.Resource.Attribute.preserveIconSpacing;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.pressedTranslationZ = global::HanselmanAndroid.Resource.Attribute.pressedTranslationZ;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.progressBarPadding = global::HanselmanAndroid.Resource.Attribute.progressBarPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.progressBarStyle = global::HanselmanAndroid.Resource.Attribute.progressBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.queryBackground = global::HanselmanAndroid.Resource.Attribute.queryBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.queryHint = global::HanselmanAndroid.Resource.Attribute.queryHint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.radioButtonStyle = global::HanselmanAndroid.Resource.Attribute.radioButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.ratingBarStyle = global::HanselmanAndroid.Resource.Attribute.ratingBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.ratingBarStyleIndicator = global::HanselmanAndroid.Resource.Attribute.ratingBarStyleIndicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.ratingBarStyleSmall = global::HanselmanAndroid.Resource.Attribute.ratingBarStyleSmall;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.reverseLayout = global::HanselmanAndroid.Resource.Attribute.reverseLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.rippleColor = global::HanselmanAndroid.Resource.Attribute.rippleColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.scrimAnimationDuration = global::HanselmanAndroid.Resource.Attribute.scrimAnimationDuration;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::HanselmanAndroid.Resource.Attribute.scrimVisibleHeightTrigger;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.searchHintIcon = global::HanselmanAndroid.Resource.Attribute.searchHintIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.searchIcon = global::HanselmanAndroid.Resource.Attribute.searchIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.searchViewStyle = global::HanselmanAndroid.Resource.Attribute.searchViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.seekBarStyle = global::HanselmanAndroid.Resource.Attribute.seekBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.selectableItemBackground = global::HanselmanAndroid.Resource.Attribute.selectableItemBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::HanselmanAndroid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.showAsAction = global::HanselmanAndroid.Resource.Attribute.showAsAction;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.showDividers = global::HanselmanAndroid.Resource.Attribute.showDividers;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.showText = global::HanselmanAndroid.Resource.Attribute.showText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.showTitle = global::HanselmanAndroid.Resource.Attribute.showTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.singleChoiceItemLayout = global::HanselmanAndroid.Resource.Attribute.singleChoiceItemLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.spanCount = global::HanselmanAndroid.Resource.Attribute.spanCount;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.spinBars = global::HanselmanAndroid.Resource.Attribute.spinBars;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.spinnerDropDownItemStyle = global::HanselmanAndroid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.spinnerStyle = global::HanselmanAndroid.Resource.Attribute.spinnerStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.splitTrack = global::HanselmanAndroid.Resource.Attribute.splitTrack;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.srcCompat = global::HanselmanAndroid.Resource.Attribute.srcCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.stackFromEnd = global::HanselmanAndroid.Resource.Attribute.stackFromEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.state_above_anchor = global::HanselmanAndroid.Resource.Attribute.state_above_anchor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.state_collapsed = global::HanselmanAndroid.Resource.Attribute.state_collapsed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.state_collapsible = global::HanselmanAndroid.Resource.Attribute.state_collapsible;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.statusBarBackground = global::HanselmanAndroid.Resource.Attribute.statusBarBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.statusBarScrim = global::HanselmanAndroid.Resource.Attribute.statusBarScrim;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subMenuArrow = global::HanselmanAndroid.Resource.Attribute.subMenuArrow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.submitBackground = global::HanselmanAndroid.Resource.Attribute.submitBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subtitle = global::HanselmanAndroid.Resource.Attribute.subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subtitleTextAppearance = global::HanselmanAndroid.Resource.Attribute.subtitleTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subtitleTextColor = global::HanselmanAndroid.Resource.Attribute.subtitleTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subtitleTextStyle = global::HanselmanAndroid.Resource.Attribute.subtitleTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.suggestionRowLayout = global::HanselmanAndroid.Resource.Attribute.suggestionRowLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.switchMinWidth = global::HanselmanAndroid.Resource.Attribute.switchMinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.switchPadding = global::HanselmanAndroid.Resource.Attribute.switchPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.switchStyle = global::HanselmanAndroid.Resource.Attribute.switchStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.switchTextAppearance = global::HanselmanAndroid.Resource.Attribute.switchTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabBackground = global::HanselmanAndroid.Resource.Attribute.tabBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabContentStart = global::HanselmanAndroid.Resource.Attribute.tabContentStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabGravity = global::HanselmanAndroid.Resource.Attribute.tabGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabIndicatorColor = global::HanselmanAndroid.Resource.Attribute.tabIndicatorColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabIndicatorHeight = global::HanselmanAndroid.Resource.Attribute.tabIndicatorHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabMaxWidth = global::HanselmanAndroid.Resource.Attribute.tabMaxWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabMinWidth = global::HanselmanAndroid.Resource.Attribute.tabMinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabMode = global::HanselmanAndroid.Resource.Attribute.tabMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPadding = global::HanselmanAndroid.Resource.Attribute.tabPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPaddingBottom = global::HanselmanAndroid.Resource.Attribute.tabPaddingBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPaddingEnd = global::HanselmanAndroid.Resource.Attribute.tabPaddingEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPaddingStart = global::HanselmanAndroid.Resource.Attribute.tabPaddingStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPaddingTop = global::HanselmanAndroid.Resource.Attribute.tabPaddingTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabSelectedTextColor = global::HanselmanAndroid.Resource.Attribute.tabSelectedTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabTextAppearance = global::HanselmanAndroid.Resource.Attribute.tabTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabTextColor = global::HanselmanAndroid.Resource.Attribute.tabTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAllCaps = global::HanselmanAndroid.Resource.Attribute.textAllCaps;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::HanselmanAndroid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceListItem = global::HanselmanAndroid.Resource.Attribute.textAppearanceListItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceListItemSmall = global::HanselmanAndroid.Resource.Attribute.textAppearanceListItemSmall;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::HanselmanAndroid.Resource.Attribute.textAppearancePopupMenuHeader;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::HanselmanAndroid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::HanselmanAndroid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::HanselmanAndroid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textColorAlertDialogListItem = global::HanselmanAndroid.Resource.Attribute.textColorAlertDialogListItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textColorSearchUrl = global::HanselmanAndroid.Resource.Attribute.textColorSearchUrl;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.theme = global::HanselmanAndroid.Resource.Attribute.theme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.thickness = global::HanselmanAndroid.Resource.Attribute.thickness;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.thumbTextPadding = global::HanselmanAndroid.Resource.Attribute.thumbTextPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.thumbTint = global::HanselmanAndroid.Resource.Attribute.thumbTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.thumbTintMode = global::HanselmanAndroid.Resource.Attribute.thumbTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tickMark = global::HanselmanAndroid.Resource.Attribute.tickMark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tickMarkTint = global::HanselmanAndroid.Resource.Attribute.tickMarkTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tickMarkTintMode = global::HanselmanAndroid.Resource.Attribute.tickMarkTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.title = global::HanselmanAndroid.Resource.Attribute.title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleEnabled = global::HanselmanAndroid.Resource.Attribute.titleEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMargin = global::HanselmanAndroid.Resource.Attribute.titleMargin;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMarginBottom = global::HanselmanAndroid.Resource.Attribute.titleMarginBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMarginEnd = global::HanselmanAndroid.Resource.Attribute.titleMarginEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMarginStart = global::HanselmanAndroid.Resource.Attribute.titleMarginStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMarginTop = global::HanselmanAndroid.Resource.Attribute.titleMarginTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMargins = global::HanselmanAndroid.Resource.Attribute.titleMargins;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleTextAppearance = global::HanselmanAndroid.Resource.Attribute.titleTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleTextColor = global::HanselmanAndroid.Resource.Attribute.titleTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleTextStyle = global::HanselmanAndroid.Resource.Attribute.titleTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.toolbarId = global::HanselmanAndroid.Resource.Attribute.toolbarId;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::HanselmanAndroid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.toolbarStyle = global::HanselmanAndroid.Resource.Attribute.toolbarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.track = global::HanselmanAndroid.Resource.Attribute.track;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.trackTint = global::HanselmanAndroid.Resource.Attribute.trackTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.trackTintMode = global::HanselmanAndroid.Resource.Attribute.trackTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.useCompatPadding = global::HanselmanAndroid.Resource.Attribute.useCompatPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.voiceIcon = global::HanselmanAndroid.Resource.Attribute.voiceIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowActionBar = global::HanselmanAndroid.Resource.Attribute.windowActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowActionBarOverlay = global::HanselmanAndroid.Resource.Attribute.windowActionBarOverlay;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowActionModeOverlay = global::HanselmanAndroid.Resource.Attribute.windowActionModeOverlay;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowFixedHeightMajor = global::HanselmanAndroid.Resource.Attribute.windowFixedHeightMajor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowFixedHeightMinor = global::HanselmanAndroid.Resource.Attribute.windowFixedHeightMinor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowFixedWidthMajor = global::HanselmanAndroid.Resource.Attribute.windowFixedWidthMajor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowFixedWidthMinor = global::HanselmanAndroid.Resource.Attribute.windowFixedWidthMinor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowMinWidthMajor = global::HanselmanAndroid.Resource.Attribute.windowMinWidthMajor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowMinWidthMinor = global::HanselmanAndroid.Resource.Attribute.windowMinWidthMinor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowNoTitle = global::HanselmanAndroid.Resource.Attribute.windowNoTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::HanselmanAndroid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Plugin.MediaManager.Forms.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::HanselmanAndroid.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::HanselmanAndroid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::HanselmanAndroid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::HanselmanAndroid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::HanselmanAndroid.Resource.Color.abc_btn_colored_borderless_text_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_btn_colored_text_material = global::HanselmanAndroid.Resource.Color.abc_btn_colored_text_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_color_highlight_material = global::HanselmanAndroid.Resource.Color.abc_color_highlight_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_hint_foreground_material_dark = global::HanselmanAndroid.Resource.Color.abc_hint_foreground_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_hint_foreground_material_light = global::HanselmanAndroid.Resource.Color.abc_hint_foreground_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_input_method_navigation_guard = global::HanselmanAndroid.Resource.Color.abc_input_method_navigation_guard;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::HanselmanAndroid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::HanselmanAndroid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_primary_text_material_dark = global::HanselmanAndroid.Resource.Color.abc_primary_text_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_primary_text_material_light = global::HanselmanAndroid.Resource.Color.abc_primary_text_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_search_url_text = global::HanselmanAndroid.Resource.Color.abc_search_url_text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_search_url_text_normal = global::HanselmanAndroid.Resource.Color.abc_search_url_text_normal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_search_url_text_pressed = global::HanselmanAndroid.Resource.Color.abc_search_url_text_pressed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_search_url_text_selected = global::HanselmanAndroid.Resource.Color.abc_search_url_text_selected;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_secondary_text_material_dark = global::HanselmanAndroid.Resource.Color.abc_secondary_text_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_secondary_text_material_light = global::HanselmanAndroid.Resource.Color.abc_secondary_text_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_btn_checkable = global::HanselmanAndroid.Resource.Color.abc_tint_btn_checkable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_default = global::HanselmanAndroid.Resource.Color.abc_tint_default;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_edittext = global::HanselmanAndroid.Resource.Color.abc_tint_edittext;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_seek_thumb = global::HanselmanAndroid.Resource.Color.abc_tint_seek_thumb;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_spinner = global::HanselmanAndroid.Resource.Color.abc_tint_spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_switch_track = global::HanselmanAndroid.Resource.Color.abc_tint_switch_track;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.accent_material_dark = global::HanselmanAndroid.Resource.Color.accent_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.accent_material_light = global::HanselmanAndroid.Resource.Color.accent_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.background_floating_material_dark = global::HanselmanAndroid.Resource.Color.background_floating_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.background_floating_material_light = global::HanselmanAndroid.Resource.Color.background_floating_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.background_material_dark = global::HanselmanAndroid.Resource.Color.background_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.background_material_light = global::HanselmanAndroid.Resource.Color.background_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_disabled_material_dark = global::HanselmanAndroid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_disabled_material_light = global::HanselmanAndroid.Resource.Color.bright_foreground_disabled_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_inverse_material_dark = global::HanselmanAndroid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_inverse_material_light = global::HanselmanAndroid.Resource.Color.bright_foreground_inverse_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_material_dark = global::HanselmanAndroid.Resource.Color.bright_foreground_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_material_light = global::HanselmanAndroid.Resource.Color.bright_foreground_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.button_material_dark = global::HanselmanAndroid.Resource.Color.button_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.button_material_light = global::HanselmanAndroid.Resource.Color.button_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.cardview_dark_background = global::HanselmanAndroid.Resource.Color.cardview_dark_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.cardview_light_background = global::HanselmanAndroid.Resource.Color.cardview_light_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.cardview_shadow_end_color = global::HanselmanAndroid.Resource.Color.cardview_shadow_end_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.cardview_shadow_start_color = global::HanselmanAndroid.Resource.Color.cardview_shadow_start_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_bottom_navigation_shadow_color = global::HanselmanAndroid.Resource.Color.design_bottom_navigation_shadow_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_error = global::HanselmanAndroid.Resource.Color.design_error;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_shadow_end_color = global::HanselmanAndroid.Resource.Color.design_fab_shadow_end_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_shadow_mid_color = global::HanselmanAndroid.Resource.Color.design_fab_shadow_mid_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_shadow_start_color = global::HanselmanAndroid.Resource.Color.design_fab_shadow_start_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_stroke_end_inner_color = global::HanselmanAndroid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_stroke_end_outer_color = global::HanselmanAndroid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_stroke_top_inner_color = global::HanselmanAndroid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_stroke_top_outer_color = global::HanselmanAndroid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_snackbar_background_color = global::HanselmanAndroid.Resource.Color.design_snackbar_background_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_tint_password_toggle = global::HanselmanAndroid.Resource.Color.design_tint_password_toggle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.dim_foreground_disabled_material_dark = global::HanselmanAndroid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.dim_foreground_disabled_material_light = global::HanselmanAndroid.Resource.Color.dim_foreground_disabled_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.dim_foreground_material_dark = global::HanselmanAndroid.Resource.Color.dim_foreground_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.dim_foreground_material_light = global::HanselmanAndroid.Resource.Color.dim_foreground_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.foreground_material_dark = global::HanselmanAndroid.Resource.Color.foreground_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.foreground_material_light = global::HanselmanAndroid.Resource.Color.foreground_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.highlighted_text_material_dark = global::HanselmanAndroid.Resource.Color.highlighted_text_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.highlighted_text_material_light = global::HanselmanAndroid.Resource.Color.highlighted_text_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_blue_grey_800 = global::HanselmanAndroid.Resource.Color.material_blue_grey_800;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_blue_grey_900 = global::HanselmanAndroid.Resource.Color.material_blue_grey_900;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_blue_grey_950 = global::HanselmanAndroid.Resource.Color.material_blue_grey_950;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_deep_teal_200 = global::HanselmanAndroid.Resource.Color.material_deep_teal_200;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_deep_teal_500 = global::HanselmanAndroid.Resource.Color.material_deep_teal_500;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_100 = global::HanselmanAndroid.Resource.Color.material_grey_100;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_300 = global::HanselmanAndroid.Resource.Color.material_grey_300;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_50 = global::HanselmanAndroid.Resource.Color.material_grey_50;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_600 = global::HanselmanAndroid.Resource.Color.material_grey_600;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_800 = global::HanselmanAndroid.Resource.Color.material_grey_800;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_850 = global::HanselmanAndroid.Resource.Color.material_grey_850;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_900 = global::HanselmanAndroid.Resource.Color.material_grey_900;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.notification_action_color_filter = global::HanselmanAndroid.Resource.Color.notification_action_color_filter;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.notification_icon_bg_color = global::HanselmanAndroid.Resource.Color.notification_icon_bg_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.notification_material_background_media_default_color = global::HanselmanAndroid.Resource.Color.notification_material_background_media_default_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_dark_material_dark = global::HanselmanAndroid.Resource.Color.primary_dark_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_dark_material_light = global::HanselmanAndroid.Resource.Color.primary_dark_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_material_dark = global::HanselmanAndroid.Resource.Color.primary_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_material_light = global::HanselmanAndroid.Resource.Color.primary_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_text_default_material_dark = global::HanselmanAndroid.Resource.Color.primary_text_default_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_text_default_material_light = global::HanselmanAndroid.Resource.Color.primary_text_default_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_text_disabled_material_dark = global::HanselmanAndroid.Resource.Color.primary_text_disabled_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_text_disabled_material_light = global::HanselmanAndroid.Resource.Color.primary_text_disabled_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.ripple_material_dark = global::HanselmanAndroid.Resource.Color.ripple_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.ripple_material_light = global::HanselmanAndroid.Resource.Color.ripple_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.secondary_text_default_material_dark = global::HanselmanAndroid.Resource.Color.secondary_text_default_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.secondary_text_default_material_light = global::HanselmanAndroid.Resource.Color.secondary_text_default_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.secondary_text_disabled_material_dark = global::HanselmanAndroid.Resource.Color.secondary_text_disabled_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.secondary_text_disabled_material_light = global::HanselmanAndroid.Resource.Color.secondary_text_disabled_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_disabled_material_dark = global::HanselmanAndroid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_disabled_material_light = global::HanselmanAndroid.Resource.Color.switch_thumb_disabled_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_material_dark = global::HanselmanAndroid.Resource.Color.switch_thumb_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_material_light = global::HanselmanAndroid.Resource.Color.switch_thumb_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_normal_material_dark = global::HanselmanAndroid.Resource.Color.switch_thumb_normal_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_normal_material_light = global::HanselmanAndroid.Resource.Color.switch_thumb_normal_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_default_height_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_elevation_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_elevation_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_button_min_height_material = global::HanselmanAndroid.Resource.Dimension.abc_action_button_min_height_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_button_min_width_material = global::HanselmanAndroid.Resource.Dimension.abc_action_button_min_width_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::HanselmanAndroid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::HanselmanAndroid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::HanselmanAndroid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_button_inset_vertical_material = global::HanselmanAndroid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::HanselmanAndroid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_button_padding_vertical_material = global::HanselmanAndroid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::HanselmanAndroid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_config_prefDialogWidth = global::HanselmanAndroid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_control_corner_material = global::HanselmanAndroid.Resource.Dimension.abc_control_corner_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_control_inset_material = global::HanselmanAndroid.Resource.Dimension.abc_control_inset_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_control_padding_material = global::HanselmanAndroid.Resource.Dimension.abc_control_padding_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::HanselmanAndroid.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::HanselmanAndroid.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::HanselmanAndroid.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::HanselmanAndroid.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::HanselmanAndroid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::HanselmanAndroid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_min_width_major = global::HanselmanAndroid.Resource.Dimension.abc_dialog_min_width_major;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_min_width_minor = global::HanselmanAndroid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_padding_material = global::HanselmanAndroid.Resource.Dimension.abc_dialog_padding_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_padding_top_material = global::HanselmanAndroid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_title_divider_material = global::HanselmanAndroid.Resource.Dimension.abc_dialog_title_divider_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::HanselmanAndroid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::HanselmanAndroid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::HanselmanAndroid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::HanselmanAndroid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::HanselmanAndroid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::HanselmanAndroid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_floating_window_z = global::HanselmanAndroid.Resource.Dimension.abc_floating_window_z;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::HanselmanAndroid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_panel_menu_list_width = global::HanselmanAndroid.Resource.Dimension.abc_panel_menu_list_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_progress_bar_height_material = global::HanselmanAndroid.Resource.Dimension.abc_progress_bar_height_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_search_view_preferred_height = global::HanselmanAndroid.Resource.Dimension.abc_search_view_preferred_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_search_view_preferred_width = global::HanselmanAndroid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::HanselmanAndroid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::HanselmanAndroid.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::HanselmanAndroid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_switch_padding = global::HanselmanAndroid.Resource.Dimension.abc_switch_padding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_body_1_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_body_1_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_body_2_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_body_2_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_button_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_button_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_caption_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_caption_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_display_1_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_display_1_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_display_2_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_display_2_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_display_3_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_display_3_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_display_4_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_display_4_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_headline_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_headline_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_large_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_large_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_medium_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_medium_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_menu_header_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_menu_header_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_menu_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_menu_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_small_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_small_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_subhead_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_subhead_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::HanselmanAndroid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_title_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_title_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::HanselmanAndroid.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.cardview_compat_inset_shadow = global::HanselmanAndroid.Resource.Dimension.cardview_compat_inset_shadow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.cardview_default_elevation = global::HanselmanAndroid.Resource.Dimension.cardview_default_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.cardview_default_radius = global::HanselmanAndroid.Resource.Dimension.cardview_default_radius;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_appbar_elevation = global::HanselmanAndroid.Resource.Dimension.design_appbar_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_active_text_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_elevation = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_height = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_item_max_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_item_min_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_margin = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_margin;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_shadow_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_text_size = global::HanselmanAndroid.Resource.Dimension.design_bottom_navigation_text_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::HanselmanAndroid.Resource.Dimension.design_bottom_sheet_modal_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::HanselmanAndroid.Resource.Dimension.design_bottom_sheet_peek_height_min;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_border_width = global::HanselmanAndroid.Resource.Dimension.design_fab_border_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_elevation = global::HanselmanAndroid.Resource.Dimension.design_fab_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_image_size = global::HanselmanAndroid.Resource.Dimension.design_fab_image_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_size_mini = global::HanselmanAndroid.Resource.Dimension.design_fab_size_mini;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_size_normal = global::HanselmanAndroid.Resource.Dimension.design_fab_size_normal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_translation_z_pressed = global::HanselmanAndroid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_elevation = global::HanselmanAndroid.Resource.Dimension.design_navigation_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_icon_padding = global::HanselmanAndroid.Resource.Dimension.design_navigation_icon_padding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_icon_size = global::HanselmanAndroid.Resource.Dimension.design_navigation_icon_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_max_width = global::HanselmanAndroid.Resource.Dimension.design_navigation_max_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_padding_bottom = global::HanselmanAndroid.Resource.Dimension.design_navigation_padding_bottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::HanselmanAndroid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::HanselmanAndroid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::HanselmanAndroid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_elevation = global::HanselmanAndroid.Resource.Dimension.design_snackbar_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::HanselmanAndroid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_max_width = global::HanselmanAndroid.Resource.Dimension.design_snackbar_max_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_min_width = global::HanselmanAndroid.Resource.Dimension.design_snackbar_min_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::HanselmanAndroid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_padding_vertical = global::HanselmanAndroid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::HanselmanAndroid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_text_size = global::HanselmanAndroid.Resource.Dimension.design_snackbar_text_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_tab_max_width = global::HanselmanAndroid.Resource.Dimension.design_tab_max_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_tab_scrollable_min_width = global::HanselmanAndroid.Resource.Dimension.design_tab_scrollable_min_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_tab_text_size = global::HanselmanAndroid.Resource.Dimension.design_tab_text_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_tab_text_size_2line = global::HanselmanAndroid.Resource.Dimension.design_tab_text_size_2line;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.disabled_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.disabled_alpha_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.disabled_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.disabled_alpha_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.highlight_alpha_material_colored = global::HanselmanAndroid.Resource.Dimension.highlight_alpha_material_colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.highlight_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.highlight_alpha_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.highlight_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.highlight_alpha_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.hint_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.hint_alpha_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.hint_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.hint_alpha_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.hint_pressed_alpha_material_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.hint_pressed_alpha_material_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::HanselmanAndroid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::HanselmanAndroid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::HanselmanAndroid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_controller_volume_group_list_item_height = global::HanselmanAndroid.Resource.Dimension.mr_controller_volume_group_list_item_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::HanselmanAndroid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_controller_volume_group_list_max_height = global::HanselmanAndroid.Resource.Dimension.mr_controller_volume_group_list_max_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::HanselmanAndroid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_dialog_fixed_width_major = global::HanselmanAndroid.Resource.Dimension.mr_dialog_fixed_width_major;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_dialog_fixed_width_minor = global::HanselmanAndroid.Resource.Dimension.mr_dialog_fixed_width_minor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_action_icon_size = global::HanselmanAndroid.Resource.Dimension.notification_action_icon_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_action_text_size = global::HanselmanAndroid.Resource.Dimension.notification_action_text_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_big_circle_margin = global::HanselmanAndroid.Resource.Dimension.notification_big_circle_margin;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_content_margin_start = global::HanselmanAndroid.Resource.Dimension.notification_content_margin_start;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_large_icon_height = global::HanselmanAndroid.Resource.Dimension.notification_large_icon_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_large_icon_width = global::HanselmanAndroid.Resource.Dimension.notification_large_icon_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_main_column_padding_top = global::HanselmanAndroid.Resource.Dimension.notification_main_column_padding_top;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_media_narrow_margin = global::HanselmanAndroid.Resource.Dimension.notification_media_narrow_margin;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_right_icon_size = global::HanselmanAndroid.Resource.Dimension.notification_right_icon_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_right_side_padding_top = global::HanselmanAndroid.Resource.Dimension.notification_right_side_padding_top;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_small_icon_background_padding = global::HanselmanAndroid.Resource.Dimension.notification_small_icon_background_padding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_small_icon_size_as_large = global::HanselmanAndroid.Resource.Dimension.notification_small_icon_size_as_large;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_subtext_size = global::HanselmanAndroid.Resource.Dimension.notification_subtext_size;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_top_pad = global::HanselmanAndroid.Resource.Dimension.notification_top_pad;
-			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_top_pad_large_text = global::HanselmanAndroid.Resource.Dimension.notification_top_pad_large_text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_action_bar_item_background_material = global::HanselmanAndroid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_borderless_material = global::HanselmanAndroid.Resource.Drawable.abc_btn_borderless_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_check_material = global::HanselmanAndroid.Resource.Drawable.abc_btn_check_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::HanselmanAndroid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::HanselmanAndroid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_colored_material = global::HanselmanAndroid.Resource.Drawable.abc_btn_colored_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::HanselmanAndroid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_radio_material = global::HanselmanAndroid.Resource.Drawable.abc_btn_radio_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::HanselmanAndroid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::HanselmanAndroid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::HanselmanAndroid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::HanselmanAndroid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_cab_background_internal_bg = global::HanselmanAndroid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_cab_background_top_material = global::HanselmanAndroid.Resource.Drawable.abc_cab_background_top_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_control_background_material = global::HanselmanAndroid.Resource.Drawable.abc_control_background_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_dialog_material_background = global::HanselmanAndroid.Resource.Drawable.abc_dialog_material_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_edit_text_material = global::HanselmanAndroid.Resource.Drawable.abc_edit_text_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_ab_back_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_ab_back_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_clear_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_clear_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_go_search_api_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_go_search_api_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_overflow_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_search_api_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_search_api_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_black_16dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_black_36dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_black_48dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_black_48dp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_half_black_48dp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_voice_search_api_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_item_background_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_item_background_holo_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_item_background_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_item_background_holo_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_focused_holo = global::HanselmanAndroid.Resource.Drawable.abc_list_focused_holo;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_longpressed_holo = global::HanselmanAndroid.Resource.Drawable.abc_list_longpressed_holo;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_pressed_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_holo_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::HanselmanAndroid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::HanselmanAndroid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::HanselmanAndroid.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ratingbar_material = global::HanselmanAndroid.Resource.Drawable.abc_ratingbar_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ratingbar_small_material = global::HanselmanAndroid.Resource.Drawable.abc_ratingbar_small_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_seekbar_thumb_material = global::HanselmanAndroid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::HanselmanAndroid.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_seekbar_track_material = global::HanselmanAndroid.Resource.Drawable.abc_seekbar_track_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::HanselmanAndroid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::HanselmanAndroid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_switch_thumb_material = global::HanselmanAndroid.Resource.Drawable.abc_switch_thumb_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_tab_indicator_material = global::HanselmanAndroid.Resource.Drawable.abc_tab_indicator_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_cursor_material = global::HanselmanAndroid.Resource.Drawable.abc_text_cursor_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_search_material = global::HanselmanAndroid.Resource.Drawable.abc_textfield_search_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_vector_test = global::HanselmanAndroid.Resource.Drawable.abc_vector_test;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password = global::HanselmanAndroid.Resource.Drawable.avd_hide_password;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_1 = global::HanselmanAndroid.Resource.Drawable.avd_hide_password_1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_2 = global::HanselmanAndroid.Resource.Drawable.avd_hide_password_2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_3 = global::HanselmanAndroid.Resource.Drawable.avd_hide_password_3;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password = global::HanselmanAndroid.Resource.Drawable.avd_show_password;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_1 = global::HanselmanAndroid.Resource.Drawable.avd_show_password_1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_2 = global::HanselmanAndroid.Resource.Drawable.avd_show_password_2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_3 = global::HanselmanAndroid.Resource.Drawable.avd_show_password_3;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_bottom_navigation_item_background = global::HanselmanAndroid.Resource.Drawable.design_bottom_navigation_item_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_fab_background = global::HanselmanAndroid.Resource.Drawable.design_fab_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_ic_visibility = global::HanselmanAndroid.Resource.Drawable.design_ic_visibility;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_ic_visibility_off = global::HanselmanAndroid.Resource.Drawable.design_ic_visibility_off;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_password_eye = global::HanselmanAndroid.Resource.Drawable.design_password_eye;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_snackbar_background = global::HanselmanAndroid.Resource.Drawable.design_snackbar_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_audiotrack_dark = global::HanselmanAndroid.Resource.Drawable.ic_audiotrack_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_audiotrack_light = global::HanselmanAndroid.Resource.Drawable.ic_audiotrack_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_dialog_close_dark = global::HanselmanAndroid.Resource.Drawable.ic_dialog_close_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_dialog_close_light = global::HanselmanAndroid.Resource.Drawable.ic_dialog_close_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_00 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_00;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_01 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_01;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_02 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_02;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_03 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_03;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_04 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_04;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_05 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_05;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_06 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_06;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_07 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_07;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_08 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_08;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_09 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_09;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_10 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_10;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_11 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_11;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_12 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_12;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_13 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_13;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_14 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_14;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_15 = global::HanselmanAndroid.Resource.Drawable.ic_group_collapse_15;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_00 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_00;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_01 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_01;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_02 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_02;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_03 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_03;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_04 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_04;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_05 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_05;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_06 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_06;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_07 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_07;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_08 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_08;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_09 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_09;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_10 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_10;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_11 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_11;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_12 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_12;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_13 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_13;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_14 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_14;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_15 = global::HanselmanAndroid.Resource.Drawable.ic_group_expand_15;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_pause_dark = global::HanselmanAndroid.Resource.Drawable.ic_media_pause_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_pause_light = global::HanselmanAndroid.Resource.Drawable.ic_media_pause_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_play_dark = global::HanselmanAndroid.Resource.Drawable.ic_media_play_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_play_light = global::HanselmanAndroid.Resource.Drawable.ic_media_play_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_stop_dark = global::HanselmanAndroid.Resource.Drawable.ic_media_stop_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_stop_light = global::HanselmanAndroid.Resource.Drawable.ic_media_stop_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_00_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_00_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_00_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_00_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_01_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_01_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_01_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_01_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_02_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_02_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_02_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_02_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_03_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_03_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_03_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_03_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_04_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_04_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_04_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_04_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_05_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_05_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_05_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_05_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_06_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_06_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_06_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_06_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_07_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_07_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_07_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_07_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_08_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_08_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_08_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_08_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_09_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_09_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_09_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_09_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_10_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_10_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_10_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_10_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_11_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_11_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_11_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_11_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_12_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_12_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_12_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_12_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_13_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_13_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_13_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_13_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_14_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_14_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_14_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_14_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_15_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_15_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_15_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_15_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_16_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_16_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_16_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_16_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_17_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_17_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_17_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_17_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_18_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_18_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_18_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_18_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_19_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_19_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_19_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_19_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_20_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_20_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_20_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_20_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_21_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_21_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_21_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_21_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_22_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_22_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_22_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connected_22_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_00_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_00_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_00_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_00_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_01_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_01_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_01_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_01_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_02_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_02_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_02_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_02_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_03_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_03_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_03_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_03_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_04_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_04_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_04_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_04_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_05_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_05_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_05_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_05_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_06_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_06_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_06_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_06_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_07_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_07_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_07_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_07_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_08_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_08_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_08_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_08_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_09_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_09_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_09_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_09_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_10_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_10_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_10_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_10_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_11_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_11_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_11_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_11_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_12_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_12_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_12_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_12_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_13_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_13_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_13_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_13_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_14_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_14_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_14_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_14_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_15_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_15_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_15_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_15_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_16_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_16_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_16_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_16_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_17_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_17_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_17_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_17_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_18_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_18_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_18_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_18_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_19_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_19_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_19_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_19_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_20_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_20_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_20_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_20_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_21_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_21_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_21_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_21_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_22_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_22_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_22_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_connecting_22_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_disabled_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_disabled_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_disabled_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_disabled_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_disconnected_dark = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_disconnected_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_disconnected_light = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_disconnected_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_grey = global::HanselmanAndroid.Resource.Drawable.ic_mr_button_grey;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_speaker_dark = global::HanselmanAndroid.Resource.Drawable.ic_vol_type_speaker_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_speaker_group_dark = global::HanselmanAndroid.Resource.Drawable.ic_vol_type_speaker_group_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_speaker_group_light = global::HanselmanAndroid.Resource.Drawable.ic_vol_type_speaker_group_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_speaker_light = global::HanselmanAndroid.Resource.Drawable.ic_vol_type_speaker_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_tv_dark = global::HanselmanAndroid.Resource.Drawable.ic_vol_type_tv_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_tv_light = global::HanselmanAndroid.Resource.Drawable.ic_vol_type_tv_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_connected_dark = global::HanselmanAndroid.Resource.Drawable.mr_button_connected_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_connected_light = global::HanselmanAndroid.Resource.Drawable.mr_button_connected_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_connecting_dark = global::HanselmanAndroid.Resource.Drawable.mr_button_connecting_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_connecting_light = global::HanselmanAndroid.Resource.Drawable.mr_button_connecting_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_dark = global::HanselmanAndroid.Resource.Drawable.mr_button_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_light = global::HanselmanAndroid.Resource.Drawable.mr_button_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_dialog_close_dark = global::HanselmanAndroid.Resource.Drawable.mr_dialog_close_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_dialog_close_light = global::HanselmanAndroid.Resource.Drawable.mr_dialog_close_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_dialog_material_background_dark = global::HanselmanAndroid.Resource.Drawable.mr_dialog_material_background_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_dialog_material_background_light = global::HanselmanAndroid.Resource.Drawable.mr_dialog_material_background_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_group_collapse = global::HanselmanAndroid.Resource.Drawable.mr_group_collapse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_group_expand = global::HanselmanAndroid.Resource.Drawable.mr_group_expand;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_pause_dark = global::HanselmanAndroid.Resource.Drawable.mr_media_pause_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_pause_light = global::HanselmanAndroid.Resource.Drawable.mr_media_pause_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_play_dark = global::HanselmanAndroid.Resource.Drawable.mr_media_play_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_play_light = global::HanselmanAndroid.Resource.Drawable.mr_media_play_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_stop_dark = global::HanselmanAndroid.Resource.Drawable.mr_media_stop_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_stop_light = global::HanselmanAndroid.Resource.Drawable.mr_media_stop_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_vol_type_audiotrack_dark = global::HanselmanAndroid.Resource.Drawable.mr_vol_type_audiotrack_dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_vol_type_audiotrack_light = global::HanselmanAndroid.Resource.Drawable.mr_vol_type_audiotrack_light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.navigation_empty_icon = global::HanselmanAndroid.Resource.Drawable.navigation_empty_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_action_background = global::HanselmanAndroid.Resource.Drawable.notification_action_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg = global::HanselmanAndroid.Resource.Drawable.notification_bg;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_low = global::HanselmanAndroid.Resource.Drawable.notification_bg_low;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_low_normal = global::HanselmanAndroid.Resource.Drawable.notification_bg_low_normal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_low_pressed = global::HanselmanAndroid.Resource.Drawable.notification_bg_low_pressed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_normal = global::HanselmanAndroid.Resource.Drawable.notification_bg_normal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_normal_pressed = global::HanselmanAndroid.Resource.Drawable.notification_bg_normal_pressed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_icon_background = global::HanselmanAndroid.Resource.Drawable.notification_icon_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_template_icon_bg = global::HanselmanAndroid.Resource.Drawable.notification_template_icon_bg;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_template_icon_low_bg = global::HanselmanAndroid.Resource.Drawable.notification_template_icon_low_bg;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_tile_bg = global::HanselmanAndroid.Resource.Drawable.notification_tile_bg;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::HanselmanAndroid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action0 = global::HanselmanAndroid.Resource.Id.action0;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar = global::HanselmanAndroid.Resource.Id.action_bar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_activity_content = global::HanselmanAndroid.Resource.Id.action_bar_activity_content;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_container = global::HanselmanAndroid.Resource.Id.action_bar_container;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_root = global::HanselmanAndroid.Resource.Id.action_bar_root;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_spinner = global::HanselmanAndroid.Resource.Id.action_bar_spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_subtitle = global::HanselmanAndroid.Resource.Id.action_bar_subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_title = global::HanselmanAndroid.Resource.Id.action_bar_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_container = global::HanselmanAndroid.Resource.Id.action_container;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_context_bar = global::HanselmanAndroid.Resource.Id.action_context_bar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_divider = global::HanselmanAndroid.Resource.Id.action_divider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_image = global::HanselmanAndroid.Resource.Id.action_image;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_menu_divider = global::HanselmanAndroid.Resource.Id.action_menu_divider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_menu_presenter = global::HanselmanAndroid.Resource.Id.action_menu_presenter;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_mode_bar = global::HanselmanAndroid.Resource.Id.action_mode_bar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_mode_bar_stub = global::HanselmanAndroid.Resource.Id.action_mode_bar_stub;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_mode_close_button = global::HanselmanAndroid.Resource.Id.action_mode_close_button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_text = global::HanselmanAndroid.Resource.Id.action_text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.actions = global::HanselmanAndroid.Resource.Id.actions;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.activity_chooser_view_content = global::HanselmanAndroid.Resource.Id.activity_chooser_view_content;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.add = global::HanselmanAndroid.Resource.Id.add;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.alertTitle = global::HanselmanAndroid.Resource.Id.alertTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.all = global::HanselmanAndroid.Resource.Id.all;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.always = global::HanselmanAndroid.Resource.Id.always;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.auto = global::HanselmanAndroid.Resource.Id.auto;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.beginning = global::HanselmanAndroid.Resource.Id.beginning;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.bottom = global::HanselmanAndroid.Resource.Id.bottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.buttonPanel = global::HanselmanAndroid.Resource.Id.buttonPanel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.cancel_action = global::HanselmanAndroid.Resource.Id.cancel_action;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.center = global::HanselmanAndroid.Resource.Id.center;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.center_horizontal = global::HanselmanAndroid.Resource.Id.center_horizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.center_vertical = global::HanselmanAndroid.Resource.Id.center_vertical;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.checkbox = global::HanselmanAndroid.Resource.Id.checkbox;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.chronometer = global::HanselmanAndroid.Resource.Id.chronometer;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.clip_horizontal = global::HanselmanAndroid.Resource.Id.clip_horizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.clip_vertical = global::HanselmanAndroid.Resource.Id.clip_vertical;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.collapseActionView = global::HanselmanAndroid.Resource.Id.collapseActionView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.contentPanel = global::HanselmanAndroid.Resource.Id.contentPanel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.custom = global::HanselmanAndroid.Resource.Id.custom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.customPanel = global::HanselmanAndroid.Resource.Id.customPanel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.decor_content_parent = global::HanselmanAndroid.Resource.Id.decor_content_parent;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.default_activity_button = global::HanselmanAndroid.Resource.Id.default_activity_button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_bottom_sheet = global::HanselmanAndroid.Resource.Id.design_bottom_sheet;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_menu_item_action_area = global::HanselmanAndroid.Resource.Id.design_menu_item_action_area;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_menu_item_action_area_stub = global::HanselmanAndroid.Resource.Id.design_menu_item_action_area_stub;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_menu_item_text = global::HanselmanAndroid.Resource.Id.design_menu_item_text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_navigation_view = global::HanselmanAndroid.Resource.Id.design_navigation_view;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.disableHome = global::HanselmanAndroid.Resource.Id.disableHome;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.edit_query = global::HanselmanAndroid.Resource.Id.edit_query;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.end = global::HanselmanAndroid.Resource.Id.end;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.end_padder = global::HanselmanAndroid.Resource.Id.end_padder;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.enterAlways = global::HanselmanAndroid.Resource.Id.enterAlways;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.enterAlwaysCollapsed = global::HanselmanAndroid.Resource.Id.enterAlwaysCollapsed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.exitUntilCollapsed = global::HanselmanAndroid.Resource.Id.exitUntilCollapsed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.expand_activities_button = global::HanselmanAndroid.Resource.Id.expand_activities_button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.expanded_menu = global::HanselmanAndroid.Resource.Id.expanded_menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.fill = global::HanselmanAndroid.Resource.Id.fill;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.fill_horizontal = global::HanselmanAndroid.Resource.Id.fill_horizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.fill_vertical = global::HanselmanAndroid.Resource.Id.fill_vertical;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.@fixed = global::HanselmanAndroid.Resource.Id.@fixed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.home = global::HanselmanAndroid.Resource.Id.home;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.homeAsUp = global::HanselmanAndroid.Resource.Id.homeAsUp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.icon = global::HanselmanAndroid.Resource.Id.icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.icon_group = global::HanselmanAndroid.Resource.Id.icon_group;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.ifRoom = global::HanselmanAndroid.Resource.Id.ifRoom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.image = global::HanselmanAndroid.Resource.Id.image;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.info = global::HanselmanAndroid.Resource.Id.info;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.item_touch_helper_previous_elevation = global::HanselmanAndroid.Resource.Id.item_touch_helper_previous_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.largeLabel = global::HanselmanAndroid.Resource.Id.largeLabel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.left = global::HanselmanAndroid.Resource.Id.left;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.line1 = global::HanselmanAndroid.Resource.Id.line1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.line3 = global::HanselmanAndroid.Resource.Id.line3;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.listMode = global::HanselmanAndroid.Resource.Id.listMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.list_item = global::HanselmanAndroid.Resource.Id.list_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.masked = global::HanselmanAndroid.Resource.Id.masked;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.media_actions = global::HanselmanAndroid.Resource.Id.media_actions;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.middle = global::HanselmanAndroid.Resource.Id.middle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mini = global::HanselmanAndroid.Resource.Id.mini;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_art = global::HanselmanAndroid.Resource.Id.mr_art;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_list = global::HanselmanAndroid.Resource.Id.mr_chooser_list;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_route_desc = global::HanselmanAndroid.Resource.Id.mr_chooser_route_desc;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_route_icon = global::HanselmanAndroid.Resource.Id.mr_chooser_route_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_route_name = global::HanselmanAndroid.Resource.Id.mr_chooser_route_name;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_title = global::HanselmanAndroid.Resource.Id.mr_chooser_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_close = global::HanselmanAndroid.Resource.Id.mr_close;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_divider = global::HanselmanAndroid.Resource.Id.mr_control_divider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_playback_ctrl = global::HanselmanAndroid.Resource.Id.mr_control_playback_ctrl;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_subtitle = global::HanselmanAndroid.Resource.Id.mr_control_subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_title = global::HanselmanAndroid.Resource.Id.mr_control_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_title_container = global::HanselmanAndroid.Resource.Id.mr_control_title_container;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_custom_control = global::HanselmanAndroid.Resource.Id.mr_custom_control;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_default_control = global::HanselmanAndroid.Resource.Id.mr_default_control;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_dialog_area = global::HanselmanAndroid.Resource.Id.mr_dialog_area;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_expandable_area = global::HanselmanAndroid.Resource.Id.mr_expandable_area;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_group_expand_collapse = global::HanselmanAndroid.Resource.Id.mr_group_expand_collapse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_media_main_control = global::HanselmanAndroid.Resource.Id.mr_media_main_control;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_name = global::HanselmanAndroid.Resource.Id.mr_name;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_playback_control = global::HanselmanAndroid.Resource.Id.mr_playback_control;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_title_bar = global::HanselmanAndroid.Resource.Id.mr_title_bar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_volume_control = global::HanselmanAndroid.Resource.Id.mr_volume_control;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_volume_group_list = global::HanselmanAndroid.Resource.Id.mr_volume_group_list;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_volume_item_icon = global::HanselmanAndroid.Resource.Id.mr_volume_item_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_volume_slider = global::HanselmanAndroid.Resource.Id.mr_volume_slider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.multiply = global::HanselmanAndroid.Resource.Id.multiply;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.navigation_header_container = global::HanselmanAndroid.Resource.Id.navigation_header_container;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.never = global::HanselmanAndroid.Resource.Id.never;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.none = global::HanselmanAndroid.Resource.Id.none;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.normal = global::HanselmanAndroid.Resource.Id.normal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.notification_background = global::HanselmanAndroid.Resource.Id.notification_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.notification_main_column = global::HanselmanAndroid.Resource.Id.notification_main_column;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.notification_main_column_container = global::HanselmanAndroid.Resource.Id.notification_main_column_container;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.parallax = global::HanselmanAndroid.Resource.Id.parallax;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.parentPanel = global::HanselmanAndroid.Resource.Id.parentPanel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.pin = global::HanselmanAndroid.Resource.Id.pin;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.progress_circular = global::HanselmanAndroid.Resource.Id.progress_circular;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.progress_horizontal = global::HanselmanAndroid.Resource.Id.progress_horizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.radio = global::HanselmanAndroid.Resource.Id.radio;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.right = global::HanselmanAndroid.Resource.Id.right;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.right_icon = global::HanselmanAndroid.Resource.Id.right_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.right_side = global::HanselmanAndroid.Resource.Id.right_side;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.screen = global::HanselmanAndroid.Resource.Id.screen;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.scroll = global::HanselmanAndroid.Resource.Id.scroll;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.scrollIndicatorDown = global::HanselmanAndroid.Resource.Id.scrollIndicatorDown;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.scrollIndicatorUp = global::HanselmanAndroid.Resource.Id.scrollIndicatorUp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.scrollView = global::HanselmanAndroid.Resource.Id.scrollView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.scrollable = global::HanselmanAndroid.Resource.Id.scrollable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_badge = global::HanselmanAndroid.Resource.Id.search_badge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_bar = global::HanselmanAndroid.Resource.Id.search_bar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_button = global::HanselmanAndroid.Resource.Id.search_button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_close_btn = global::HanselmanAndroid.Resource.Id.search_close_btn;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_edit_frame = global::HanselmanAndroid.Resource.Id.search_edit_frame;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_go_btn = global::HanselmanAndroid.Resource.Id.search_go_btn;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_mag_icon = global::HanselmanAndroid.Resource.Id.search_mag_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_plate = global::HanselmanAndroid.Resource.Id.search_plate;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_src_text = global::HanselmanAndroid.Resource.Id.search_src_text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_voice_btn = global::HanselmanAndroid.Resource.Id.search_voice_btn;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.select_dialog_listview = global::HanselmanAndroid.Resource.Id.select_dialog_listview;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.shortcut = global::HanselmanAndroid.Resource.Id.shortcut;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.showCustom = global::HanselmanAndroid.Resource.Id.showCustom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.showHome = global::HanselmanAndroid.Resource.Id.showHome;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.showTitle = global::HanselmanAndroid.Resource.Id.showTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.smallLabel = global::HanselmanAndroid.Resource.Id.smallLabel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.snackbar_action = global::HanselmanAndroid.Resource.Id.snackbar_action;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.snackbar_text = global::HanselmanAndroid.Resource.Id.snackbar_text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.snap = global::HanselmanAndroid.Resource.Id.snap;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.spacer = global::HanselmanAndroid.Resource.Id.spacer;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.split_action_bar = global::HanselmanAndroid.Resource.Id.split_action_bar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.src_atop = global::HanselmanAndroid.Resource.Id.src_atop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.src_in = global::HanselmanAndroid.Resource.Id.src_in;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.src_over = global::HanselmanAndroid.Resource.Id.src_over;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.start = global::HanselmanAndroid.Resource.Id.start;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.status_bar_latest_event_content = global::HanselmanAndroid.Resource.Id.status_bar_latest_event_content;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.submenuarrow = global::HanselmanAndroid.Resource.Id.submenuarrow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.submit_area = global::HanselmanAndroid.Resource.Id.submit_area;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.tabMode = global::HanselmanAndroid.Resource.Id.tabMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.text = global::HanselmanAndroid.Resource.Id.text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.text2 = global::HanselmanAndroid.Resource.Id.text2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.textSpacerNoButtons = global::HanselmanAndroid.Resource.Id.textSpacerNoButtons;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.textSpacerNoTitle = global::HanselmanAndroid.Resource.Id.textSpacerNoTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.text_input_password_toggle = global::HanselmanAndroid.Resource.Id.text_input_password_toggle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.textinput_counter = global::HanselmanAndroid.Resource.Id.textinput_counter;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.textinput_error = global::HanselmanAndroid.Resource.Id.textinput_error;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.time = global::HanselmanAndroid.Resource.Id.time;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.title = global::HanselmanAndroid.Resource.Id.title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.titleDividerNoCustom = global::HanselmanAndroid.Resource.Id.titleDividerNoCustom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.title_template = global::HanselmanAndroid.Resource.Id.title_template;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.top = global::HanselmanAndroid.Resource.Id.top;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.topPanel = global::HanselmanAndroid.Resource.Id.topPanel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.touch_outside = global::HanselmanAndroid.Resource.Id.touch_outside;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.transition_current_scene = global::HanselmanAndroid.Resource.Id.transition_current_scene;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.transition_scene_layoutid_cache = global::HanselmanAndroid.Resource.Id.transition_scene_layoutid_cache;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.up = global::HanselmanAndroid.Resource.Id.up;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.useLogo = global::HanselmanAndroid.Resource.Id.useLogo;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.view_offset_helper = global::HanselmanAndroid.Resource.Id.view_offset_helper;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.visible = global::HanselmanAndroid.Resource.Id.visible;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.volume_item_container = global::HanselmanAndroid.Resource.Id.volume_item_container;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.withText = global::HanselmanAndroid.Resource.Id.withText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Id.wrap_content = global::HanselmanAndroid.Resource.Id.wrap_content;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.abc_config_activityDefaultDur = global::HanselmanAndroid.Resource.Integer.abc_config_activityDefaultDur;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.abc_config_activityShortDur = global::HanselmanAndroid.Resource.Integer.abc_config_activityShortDur;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.app_bar_elevation_anim_duration = global::HanselmanAndroid.Resource.Integer.app_bar_elevation_anim_duration;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.bottom_sheet_slide_duration = global::HanselmanAndroid.Resource.Integer.bottom_sheet_slide_duration;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.cancel_button_image_alpha = global::HanselmanAndroid.Resource.Integer.cancel_button_image_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.design_snackbar_text_max_lines = global::HanselmanAndroid.Resource.Integer.design_snackbar_text_max_lines;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.hide_password_duration = global::HanselmanAndroid.Resource.Integer.hide_password_duration;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::HanselmanAndroid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::HanselmanAndroid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::HanselmanAndroid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.show_password_duration = global::HanselmanAndroid.Resource.Integer.show_password_duration;
-			global::Plugin.MediaManager.Forms.Android.Resource.Integer.status_bar_notification_info_maxnum = global::HanselmanAndroid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Plugin.MediaManager.Forms.Android.Resource.Interpolator.mr_fast_out_slow_in = global::HanselmanAndroid.Resource.Interpolator.mr_fast_out_slow_in;
-			global::Plugin.MediaManager.Forms.Android.Resource.Interpolator.mr_linear_out_slow_in = global::HanselmanAndroid.Resource.Interpolator.mr_linear_out_slow_in;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_bar_title_item = global::HanselmanAndroid.Resource.Layout.abc_action_bar_title_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_bar_up_container = global::HanselmanAndroid.Resource.Layout.abc_action_bar_up_container;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_menu_item_layout = global::HanselmanAndroid.Resource.Layout.abc_action_menu_item_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_menu_layout = global::HanselmanAndroid.Resource.Layout.abc_action_menu_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_mode_bar = global::HanselmanAndroid.Resource.Layout.abc_action_mode_bar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_mode_close_item_material = global::HanselmanAndroid.Resource.Layout.abc_action_mode_close_item_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_activity_chooser_view = global::HanselmanAndroid.Resource.Layout.abc_activity_chooser_view;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::HanselmanAndroid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::HanselmanAndroid.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_alert_dialog_material = global::HanselmanAndroid.Resource.Layout.abc_alert_dialog_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_alert_dialog_title_material = global::HanselmanAndroid.Resource.Layout.abc_alert_dialog_title_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_dialog_title_material = global::HanselmanAndroid.Resource.Layout.abc_dialog_title_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_expanded_menu_layout = global::HanselmanAndroid.Resource.Layout.abc_expanded_menu_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_list_menu_item_checkbox = global::HanselmanAndroid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_list_menu_item_icon = global::HanselmanAndroid.Resource.Layout.abc_list_menu_item_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_list_menu_item_layout = global::HanselmanAndroid.Resource.Layout.abc_list_menu_item_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_list_menu_item_radio = global::HanselmanAndroid.Resource.Layout.abc_list_menu_item_radio;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::HanselmanAndroid.Resource.Layout.abc_popup_menu_header_item_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_popup_menu_item_layout = global::HanselmanAndroid.Resource.Layout.abc_popup_menu_item_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_screen_content_include = global::HanselmanAndroid.Resource.Layout.abc_screen_content_include;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_screen_simple = global::HanselmanAndroid.Resource.Layout.abc_screen_simple;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::HanselmanAndroid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_screen_toolbar = global::HanselmanAndroid.Resource.Layout.abc_screen_toolbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::HanselmanAndroid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_search_view = global::HanselmanAndroid.Resource.Layout.abc_search_view;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_select_dialog_material = global::HanselmanAndroid.Resource.Layout.abc_select_dialog_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_bottom_navigation_item = global::HanselmanAndroid.Resource.Layout.design_bottom_navigation_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_bottom_sheet_dialog = global::HanselmanAndroid.Resource.Layout.design_bottom_sheet_dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_layout_snackbar = global::HanselmanAndroid.Resource.Layout.design_layout_snackbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_layout_snackbar_include = global::HanselmanAndroid.Resource.Layout.design_layout_snackbar_include;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_layout_tab_icon = global::HanselmanAndroid.Resource.Layout.design_layout_tab_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_layout_tab_text = global::HanselmanAndroid.Resource.Layout.design_layout_tab_text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_menu_item_action_area = global::HanselmanAndroid.Resource.Layout.design_menu_item_action_area;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_item = global::HanselmanAndroid.Resource.Layout.design_navigation_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_item_header = global::HanselmanAndroid.Resource.Layout.design_navigation_item_header;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_item_separator = global::HanselmanAndroid.Resource.Layout.design_navigation_item_separator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_item_subheader = global::HanselmanAndroid.Resource.Layout.design_navigation_item_subheader;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_menu = global::HanselmanAndroid.Resource.Layout.design_navigation_menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_menu_item = global::HanselmanAndroid.Resource.Layout.design_navigation_menu_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_text_input_password_icon = global::HanselmanAndroid.Resource.Layout.design_text_input_password_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_chooser_dialog = global::HanselmanAndroid.Resource.Layout.mr_chooser_dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_chooser_list_item = global::HanselmanAndroid.Resource.Layout.mr_chooser_list_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_controller_material_dialog_b = global::HanselmanAndroid.Resource.Layout.mr_controller_material_dialog_b;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_controller_volume_item = global::HanselmanAndroid.Resource.Layout.mr_controller_volume_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_playback_control = global::HanselmanAndroid.Resource.Layout.mr_playback_control;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_volume_control = global::HanselmanAndroid.Resource.Layout.mr_volume_control;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_action = global::HanselmanAndroid.Resource.Layout.notification_action;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_action_tombstone = global::HanselmanAndroid.Resource.Layout.notification_action_tombstone;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_media_action = global::HanselmanAndroid.Resource.Layout.notification_media_action;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_media_cancel_action = global::HanselmanAndroid.Resource.Layout.notification_media_cancel_action;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_big_media = global::HanselmanAndroid.Resource.Layout.notification_template_big_media;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_big_media_custom = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_custom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_big_media_narrow = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_narrow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_custom_big = global::HanselmanAndroid.Resource.Layout.notification_template_custom_big;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_icon_group = global::HanselmanAndroid.Resource.Layout.notification_template_icon_group;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_lines_media = global::HanselmanAndroid.Resource.Layout.notification_template_lines_media;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_media = global::HanselmanAndroid.Resource.Layout.notification_template_media;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_media_custom = global::HanselmanAndroid.Resource.Layout.notification_template_media_custom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_part_chronometer = global::HanselmanAndroid.Resource.Layout.notification_template_part_chronometer;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_part_time = global::HanselmanAndroid.Resource.Layout.notification_template_part_time;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.select_dialog_item_material = global::HanselmanAndroid.Resource.Layout.select_dialog_item_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.select_dialog_multichoice_material = global::HanselmanAndroid.Resource.Layout.select_dialog_multichoice_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.select_dialog_singlechoice_material = global::HanselmanAndroid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::HanselmanAndroid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.ApplicationName = global::HanselmanAndroid.Resource.String.ApplicationName;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.Hello = global::HanselmanAndroid.Resource.String.Hello;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_bar_home_description = global::HanselmanAndroid.Resource.String.abc_action_bar_home_description;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_bar_up_description = global::HanselmanAndroid.Resource.String.abc_action_bar_up_description;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_menu_overflow_description = global::HanselmanAndroid.Resource.String.abc_action_menu_overflow_description;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_mode_done = global::HanselmanAndroid.Resource.String.abc_action_mode_done;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_activity_chooser_view_see_all = global::HanselmanAndroid.Resource.String.abc_activity_chooser_view_see_all;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_activitychooserview_choose_application = global::HanselmanAndroid.Resource.String.abc_activitychooserview_choose_application;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_capital_off = global::HanselmanAndroid.Resource.String.abc_capital_off;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_capital_on = global::HanselmanAndroid.Resource.String.abc_capital_on;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_body_1_material = global::HanselmanAndroid.Resource.String.abc_font_family_body_1_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_body_2_material = global::HanselmanAndroid.Resource.String.abc_font_family_body_2_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_button_material = global::HanselmanAndroid.Resource.String.abc_font_family_button_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_caption_material = global::HanselmanAndroid.Resource.String.abc_font_family_caption_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_display_1_material = global::HanselmanAndroid.Resource.String.abc_font_family_display_1_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_display_2_material = global::HanselmanAndroid.Resource.String.abc_font_family_display_2_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_display_3_material = global::HanselmanAndroid.Resource.String.abc_font_family_display_3_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_display_4_material = global::HanselmanAndroid.Resource.String.abc_font_family_display_4_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_headline_material = global::HanselmanAndroid.Resource.String.abc_font_family_headline_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_menu_material = global::HanselmanAndroid.Resource.String.abc_font_family_menu_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_subhead_material = global::HanselmanAndroid.Resource.String.abc_font_family_subhead_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_title_material = global::HanselmanAndroid.Resource.String.abc_font_family_title_material;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_search_hint = global::HanselmanAndroid.Resource.String.abc_search_hint;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_clear = global::HanselmanAndroid.Resource.String.abc_searchview_description_clear;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_query = global::HanselmanAndroid.Resource.String.abc_searchview_description_query;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_search = global::HanselmanAndroid.Resource.String.abc_searchview_description_search;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_submit = global::HanselmanAndroid.Resource.String.abc_searchview_description_submit;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_voice = global::HanselmanAndroid.Resource.String.abc_searchview_description_voice;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_shareactionprovider_share_with = global::HanselmanAndroid.Resource.String.abc_shareactionprovider_share_with;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_shareactionprovider_share_with_application = global::HanselmanAndroid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_toolbar_collapse_description = global::HanselmanAndroid.Resource.String.abc_toolbar_collapse_description;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.appbar_scrolling_view_behavior = global::HanselmanAndroid.Resource.String.appbar_scrolling_view_behavior;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.bottom_sheet_behavior = global::HanselmanAndroid.Resource.String.bottom_sheet_behavior;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.character_counter_pattern = global::HanselmanAndroid.Resource.String.character_counter_pattern;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_button_content_description = global::HanselmanAndroid.Resource.String.mr_button_content_description;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_cast_button_connected = global::HanselmanAndroid.Resource.String.mr_cast_button_connected;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_cast_button_connecting = global::HanselmanAndroid.Resource.String.mr_cast_button_connecting;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_cast_button_disconnected = global::HanselmanAndroid.Resource.String.mr_cast_button_disconnected;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_chooser_searching = global::HanselmanAndroid.Resource.String.mr_chooser_searching;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_chooser_title = global::HanselmanAndroid.Resource.String.mr_chooser_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_album_art = global::HanselmanAndroid.Resource.String.mr_controller_album_art;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_casting_screen = global::HanselmanAndroid.Resource.String.mr_controller_casting_screen;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_close_description = global::HanselmanAndroid.Resource.String.mr_controller_close_description;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_collapse_group = global::HanselmanAndroid.Resource.String.mr_controller_collapse_group;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_disconnect = global::HanselmanAndroid.Resource.String.mr_controller_disconnect;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_expand_group = global::HanselmanAndroid.Resource.String.mr_controller_expand_group;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_no_info_available = global::HanselmanAndroid.Resource.String.mr_controller_no_info_available;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_no_media_selected = global::HanselmanAndroid.Resource.String.mr_controller_no_media_selected;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_pause = global::HanselmanAndroid.Resource.String.mr_controller_pause;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_play = global::HanselmanAndroid.Resource.String.mr_controller_play;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_stop = global::HanselmanAndroid.Resource.String.mr_controller_stop;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_stop_casting = global::HanselmanAndroid.Resource.String.mr_controller_stop_casting;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_volume_slider = global::HanselmanAndroid.Resource.String.mr_controller_volume_slider;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_system_route_name = global::HanselmanAndroid.Resource.String.mr_system_route_name;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_user_route_category_name = global::HanselmanAndroid.Resource.String.mr_user_route_category_name;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.password_toggle_content_description = global::HanselmanAndroid.Resource.String.password_toggle_content_description;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.path_password_eye = global::HanselmanAndroid.Resource.String.path_password_eye;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.path_password_eye_mask_strike_through = global::HanselmanAndroid.Resource.String.path_password_eye_mask_strike_through;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.path_password_eye_mask_visible = global::HanselmanAndroid.Resource.String.path_password_eye_mask_visible;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.path_password_strike_through = global::HanselmanAndroid.Resource.String.path_password_strike_through;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.search_menu_title = global::HanselmanAndroid.Resource.String.search_menu_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.String.status_bar_notification_info_overflow = global::HanselmanAndroid.Resource.String.status_bar_notification_info_overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.AlertDialog_AppCompat = global::HanselmanAndroid.Resource.Style.AlertDialog_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.AlertDialog_AppCompat_Light = global::HanselmanAndroid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Animation_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Animation_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::HanselmanAndroid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::HanselmanAndroid.Resource.Style.Animation_Design_BottomSheetDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_AlertDialog_AppCompat = global::HanselmanAndroid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::HanselmanAndroid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_CardView = global::HanselmanAndroid.Resource.Style.Base_CardView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::HanselmanAndroid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::HanselmanAndroid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::HanselmanAndroid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V22_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V23_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::HanselmanAndroid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::HanselmanAndroid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::HanselmanAndroid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_Design_TabLayout = global::HanselmanAndroid.Resource.Style.Base_Widget_Design_TabLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.CardView = global::HanselmanAndroid.Resource.Style.CardView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.CardView_Dark = global::HanselmanAndroid.Resource.Style.CardView_Dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.CardView_Light = global::HanselmanAndroid.Resource.Style.CardView_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_AppCompat = global::HanselmanAndroid.Resource.Style.Platform_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Platform_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::HanselmanAndroid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::HanselmanAndroid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_V21_AppCompat = global::HanselmanAndroid.Resource.Style.Platform_V21_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_V21_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Platform_V21_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::HanselmanAndroid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::HanselmanAndroid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::HanselmanAndroid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::HanselmanAndroid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Button = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Large = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Small = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::HanselmanAndroid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Counter = global::HanselmanAndroid.Resource.Style.TextAppearance_Design_Counter;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::HanselmanAndroid.Resource.Style.TextAppearance_Design_Counter_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Error = global::HanselmanAndroid.Resource.Style.TextAppearance_Design_Error;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Hint = global::HanselmanAndroid.Resource.Style.TextAppearance_Design_Hint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::HanselmanAndroid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Tab = global::HanselmanAndroid.Resource.Style.TextAppearance_Design_Tab;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::HanselmanAndroid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::HanselmanAndroid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_MediaRouter_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_MediaRouter_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::HanselmanAndroid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Theme_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design = global::HanselmanAndroid.Resource.Style.Theme_Design;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::HanselmanAndroid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_Light = global::HanselmanAndroid.Resource.Style.Theme_Design_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::HanselmanAndroid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::HanselmanAndroid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_NoActionBar = global::HanselmanAndroid.Resource.Style.Theme_Design_NoActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_MediaRouter = global::HanselmanAndroid.Resource.Style.Theme_MediaRouter;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_MediaRouter_Light = global::HanselmanAndroid.Resource.Style.Theme_MediaRouter_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::HanselmanAndroid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::HanselmanAndroid.Resource.Style.Theme_MediaRouter_LightControlPanel;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::HanselmanAndroid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_MediaRouter_Light = global::HanselmanAndroid.Resource.Style.ThemeOverlay_MediaRouter_Light;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionButton = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionMode = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_Small = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_EditText = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_EditText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ImageButton = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ImageButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListMenuView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_RatingBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_SearchView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_SearchView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_SeekBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Spinner = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Toolbar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_AppBarLayout = global::HanselmanAndroid.Resource.Style.Widget_Design_AppBarLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_BottomNavigationView = global::HanselmanAndroid.Resource.Style.Widget_Design_BottomNavigationView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::HanselmanAndroid.Resource.Style.Widget_Design_BottomSheet_Modal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::HanselmanAndroid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_FloatingActionButton = global::HanselmanAndroid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_NavigationView = global::HanselmanAndroid.Resource.Style.Widget_Design_NavigationView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::HanselmanAndroid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_Snackbar = global::HanselmanAndroid.Resource.Style.Widget_Design_Snackbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_TabLayout = global::HanselmanAndroid.Resource.Style.Widget_Design_TabLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_TextInputLayout = global::HanselmanAndroid.Resource.Style.Widget_Design_TextInputLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::HanselmanAndroid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::HanselmanAndroid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar = global::HanselmanAndroid.Resource.Styleable.ActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_background = global::HanselmanAndroid.Resource.Styleable.ActionBar_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_backgroundSplit = global::HanselmanAndroid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_backgroundStacked = global::HanselmanAndroid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetRight = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetStart = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::HanselmanAndroid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_displayOptions = global::HanselmanAndroid.Resource.Styleable.ActionBar_displayOptions;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_divider = global::HanselmanAndroid.Resource.Styleable.ActionBar_divider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_elevation = global::HanselmanAndroid.Resource.Styleable.ActionBar_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_height = global::HanselmanAndroid.Resource.Styleable.ActionBar_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::HanselmanAndroid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::HanselmanAndroid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_homeLayout = global::HanselmanAndroid.Resource.Styleable.ActionBar_homeLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_icon = global::HanselmanAndroid.Resource.Styleable.ActionBar_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::HanselmanAndroid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_itemPadding = global::HanselmanAndroid.Resource.Styleable.ActionBar_itemPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_logo = global::HanselmanAndroid.Resource.Styleable.ActionBar_logo;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_navigationMode = global::HanselmanAndroid.Resource.Styleable.ActionBar_navigationMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_popupTheme = global::HanselmanAndroid.Resource.Styleable.ActionBar_popupTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_progressBarPadding = global::HanselmanAndroid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_progressBarStyle = global::HanselmanAndroid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_subtitle = global::HanselmanAndroid.Resource.Styleable.ActionBar_subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::HanselmanAndroid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_title = global::HanselmanAndroid.Resource.Styleable.ActionBar_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_titleTextStyle = global::HanselmanAndroid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBarLayout = global::HanselmanAndroid.Resource.Styleable.ActionBarLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::HanselmanAndroid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMenuItemView = global::HanselmanAndroid.Resource.Styleable.ActionMenuItemView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::HanselmanAndroid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMenuView = global::HanselmanAndroid.Resource.Styleable.ActionMenuView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode = global::HanselmanAndroid.Resource.Styleable.ActionMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_background = global::HanselmanAndroid.Resource.Styleable.ActionMode_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_backgroundSplit = global::HanselmanAndroid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_closeItemLayout = global::HanselmanAndroid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_height = global::HanselmanAndroid.Resource.Styleable.ActionMode_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::HanselmanAndroid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_titleTextStyle = global::HanselmanAndroid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActivityChooserView = global::HanselmanAndroid.Resource.Styleable.ActivityChooserView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::HanselmanAndroid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::HanselmanAndroid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog = global::HanselmanAndroid.Resource.Styleable.AlertDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_android_layout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_android_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_listItemLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_listLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_listLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_showTitle = global::HanselmanAndroid.Resource.Styleable.AlertDialog_showTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout = global::HanselmanAndroid.Resource.Styleable.AppBarLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_android_background = global::HanselmanAndroid.Resource.Styleable.AppBarLayout_android_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_elevation = global::HanselmanAndroid.Resource.Styleable.AppBarLayout_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_expanded = global::HanselmanAndroid.Resource.Styleable.AppBarLayout_expanded;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayoutStates = global::HanselmanAndroid.Resource.Styleable.AppBarLayoutStates;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::HanselmanAndroid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::HanselmanAndroid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_Layout = global::HanselmanAndroid.Resource.Styleable.AppBarLayout_Layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::HanselmanAndroid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::HanselmanAndroid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatImageView = global::HanselmanAndroid.Resource.Styleable.AppCompatImageView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatImageView_android_src = global::HanselmanAndroid.Resource.Styleable.AppCompatImageView_android_src;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::HanselmanAndroid.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextView = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView = global::HanselmanAndroid.Resource.Styleable.BottomNavigationView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_elevation = global::HanselmanAndroid.Resource.Styleable.BottomNavigationView_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::HanselmanAndroid.Resource.Styleable.BottomNavigationView_itemBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::HanselmanAndroid.Resource.Styleable.BottomNavigationView_itemIconTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::HanselmanAndroid.Resource.Styleable.BottomNavigationView_itemTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_menu = global::HanselmanAndroid.Resource.Styleable.BottomNavigationView_menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::HanselmanAndroid.Resource.Styleable.BottomSheetBehavior_Layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::HanselmanAndroid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::HanselmanAndroid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::HanselmanAndroid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ButtonBarLayout = global::HanselmanAndroid.Resource.Styleable.ButtonBarLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::HanselmanAndroid.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView = global::HanselmanAndroid.Resource.Styleable.CardView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_android_minHeight = global::HanselmanAndroid.Resource.Styleable.CardView_android_minHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_android_minWidth = global::HanselmanAndroid.Resource.Styleable.CardView_android_minWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardBackgroundColor = global::HanselmanAndroid.Resource.Styleable.CardView_cardBackgroundColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardCornerRadius = global::HanselmanAndroid.Resource.Styleable.CardView_cardCornerRadius;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardElevation = global::HanselmanAndroid.Resource.Styleable.CardView_cardElevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardMaxElevation = global::HanselmanAndroid.Resource.Styleable.CardView_cardMaxElevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::HanselmanAndroid.Resource.Styleable.CardView_cardPreventCornerOverlap;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::HanselmanAndroid.Resource.Styleable.CardView_cardUseCompatPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPadding = global::HanselmanAndroid.Resource.Styleable.CardView_contentPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPaddingBottom = global::HanselmanAndroid.Resource.Styleable.CardView_contentPaddingBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPaddingLeft = global::HanselmanAndroid.Resource.Styleable.CardView_contentPaddingLeft;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPaddingRight = global::HanselmanAndroid.Resource.Styleable.CardView_contentPaddingRight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPaddingTop = global::HanselmanAndroid.Resource.Styleable.CardView_contentPaddingTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::HanselmanAndroid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ColorStateListItem = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ColorStateListItem_alpha = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ColorStateListItem_android_color = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_android_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CompoundButton = global::HanselmanAndroid.Resource.Styleable.CompoundButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CompoundButton_android_button = global::HanselmanAndroid.Resource.Styleable.CompoundButton_android_button;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CompoundButton_buttonTint = global::HanselmanAndroid.Resource.Styleable.CompoundButton_buttonTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::HanselmanAndroid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_keylines = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DesignTheme = global::HanselmanAndroid.Resource.Styleable.DesignTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::HanselmanAndroid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::HanselmanAndroid.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_color = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_color;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_elevation = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_fabSize = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::HanselmanAndroid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ForegroundLinearLayout = global::HanselmanAndroid.Resource.Styleable.ForegroundLinearLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::HanselmanAndroid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::HanselmanAndroid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::HanselmanAndroid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_divider = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ListPopupWindow = global::HanselmanAndroid.Resource.Styleable.ListPopupWindow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::HanselmanAndroid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::HanselmanAndroid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton = global::HanselmanAndroid.Resource.Styleable.MediaRouteButton;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton_android_minHeight = global::HanselmanAndroid.Resource.Styleable.MediaRouteButton_android_minHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton_android_minWidth = global::HanselmanAndroid.Resource.Styleable.MediaRouteButton_android_minWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::HanselmanAndroid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup = global::HanselmanAndroid.Resource.Styleable.MenuGroup;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_enabled = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_enabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_id = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_id;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_visible = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_visible;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem = global::HanselmanAndroid.Resource.Styleable.MenuItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_actionLayout = global::HanselmanAndroid.Resource.Styleable.MenuItem_actionLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_actionProviderClass = global::HanselmanAndroid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_actionViewClass = global::HanselmanAndroid.Resource.Styleable.MenuItem_actionViewClass;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_checkable = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_checkable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_checked = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_checked;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_enabled = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_enabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_icon = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_id = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_id;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_menuCategory = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_onClick = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_onClick;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_title = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_visible = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_visible;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_showAsAction = global::HanselmanAndroid.Resource.Styleable.MenuItem_showAsAction;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView = global::HanselmanAndroid.Resource.Styleable.MenuView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_headerBackground = global::HanselmanAndroid.Resource.Styleable.MenuView_android_headerBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::HanselmanAndroid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_itemBackground = global::HanselmanAndroid.Resource.Styleable.MenuView_android_itemBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::HanselmanAndroid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::HanselmanAndroid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_verticalDivider = global::HanselmanAndroid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::HanselmanAndroid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::HanselmanAndroid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_subMenuArrow = global::HanselmanAndroid.Resource.Styleable.MenuView_subMenuArrow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView = global::HanselmanAndroid.Resource.Styleable.NavigationView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_android_background = global::HanselmanAndroid.Resource.Styleable.NavigationView_android_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::HanselmanAndroid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_android_maxWidth = global::HanselmanAndroid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_elevation = global::HanselmanAndroid.Resource.Styleable.NavigationView_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_headerLayout = global::HanselmanAndroid.Resource.Styleable.NavigationView_headerLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_itemBackground = global::HanselmanAndroid.Resource.Styleable.NavigationView_itemBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_itemIconTint = global::HanselmanAndroid.Resource.Styleable.NavigationView_itemIconTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::HanselmanAndroid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_itemTextColor = global::HanselmanAndroid.Resource.Styleable.NavigationView_itemTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_menu = global::HanselmanAndroid.Resource.Styleable.NavigationView_menu;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindow = global::HanselmanAndroid.Resource.Styleable.PopupWindow;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::HanselmanAndroid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::HanselmanAndroid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::HanselmanAndroid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindowBackgroundState = global::HanselmanAndroid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::HanselmanAndroid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecycleListView = global::HanselmanAndroid.Resource.Styleable.RecycleListView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::HanselmanAndroid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::HanselmanAndroid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView = global::HanselmanAndroid.Resource.Styleable.RecyclerView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::HanselmanAndroid.Resource.Styleable.RecyclerView_android_descendantFocusability;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_android_orientation = global::HanselmanAndroid.Resource.Styleable.RecyclerView_android_orientation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_layoutManager = global::HanselmanAndroid.Resource.Styleable.RecyclerView_layoutManager;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_reverseLayout = global::HanselmanAndroid.Resource.Styleable.RecyclerView_reverseLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_spanCount = global::HanselmanAndroid.Resource.Styleable.RecyclerView_spanCount;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::HanselmanAndroid.Resource.Styleable.RecyclerView_stackFromEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::HanselmanAndroid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::HanselmanAndroid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::HanselmanAndroid.Resource.Styleable.ScrollingViewBehavior_Layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::HanselmanAndroid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView = global::HanselmanAndroid.Resource.Styleable.SearchView;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_android_focusable = global::HanselmanAndroid.Resource.Styleable.SearchView_android_focusable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_android_imeOptions = global::HanselmanAndroid.Resource.Styleable.SearchView_android_imeOptions;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_android_inputType = global::HanselmanAndroid.Resource.Styleable.SearchView_android_inputType;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_android_maxWidth = global::HanselmanAndroid.Resource.Styleable.SearchView_android_maxWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_closeIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_closeIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_commitIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_commitIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_defaultQueryHint = global::HanselmanAndroid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_goIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_goIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::HanselmanAndroid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_layout = global::HanselmanAndroid.Resource.Styleable.SearchView_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_queryBackground = global::HanselmanAndroid.Resource.Styleable.SearchView_queryBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_queryHint = global::HanselmanAndroid.Resource.Styleable.SearchView_queryHint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_searchHintIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_searchHintIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_searchIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_searchIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_submitBackground = global::HanselmanAndroid.Resource.Styleable.SearchView_submitBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::HanselmanAndroid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_voiceIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_voiceIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SnackbarLayout = global::HanselmanAndroid.Resource.Styleable.SnackbarLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::HanselmanAndroid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SnackbarLayout_elevation = global::HanselmanAndroid.Resource.Styleable.SnackbarLayout_elevation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::HanselmanAndroid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner = global::HanselmanAndroid.Resource.Styleable.Spinner;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::HanselmanAndroid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_android_entries = global::HanselmanAndroid.Resource.Styleable.Spinner_android_entries;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_android_popupBackground = global::HanselmanAndroid.Resource.Styleable.Spinner_android_popupBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_android_prompt = global::HanselmanAndroid.Resource.Styleable.Spinner_android_prompt;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_popupTheme = global::HanselmanAndroid.Resource.Styleable.Spinner_popupTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat = global::HanselmanAndroid.Resource.Styleable.SwitchCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_android_textOff = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_android_textOn = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_android_thumb = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_showText = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_showText;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_splitTrack = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_switchPadding = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_thumbTint = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_thumbTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_thumbTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_track = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_track;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_trackTint = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_trackTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_trackTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabItem = global::HanselmanAndroid.Resource.Styleable.TabItem;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabItem_android_icon = global::HanselmanAndroid.Resource.Styleable.TabItem_android_icon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabItem_android_layout = global::HanselmanAndroid.Resource.Styleable.TabItem_android_layout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabItem_android_text = global::HanselmanAndroid.Resource.Styleable.TabItem_android_text;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout = global::HanselmanAndroid.Resource.Styleable.TabLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabBackground = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabBackground;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabContentStart = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabContentStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabGravity = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabMinWidth = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabMode = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPadding = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabPadding;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabTextColor = global::HanselmanAndroid.Resource.Styleable.TabLayout_tabTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance = global::HanselmanAndroid.Resource.Styleable.TextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_textColor = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textColorHint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_textSize = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textSize;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_textStyle = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_typeface = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_typeface;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_textAllCaps = global::HanselmanAndroid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout = global::HanselmanAndroid.Resource.Styleable.TextInputLayout;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_android_hint = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_android_hint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_counterEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_counterMaxLength;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_counterTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_hintEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_passwordToggleTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::HanselmanAndroid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar = global::HanselmanAndroid.Resource.Styleable.Toolbar;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_android_gravity = global::HanselmanAndroid.Resource.Styleable.Toolbar_android_gravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_android_minHeight = global::HanselmanAndroid.Resource.Styleable.Toolbar_android_minHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_buttonGravity = global::HanselmanAndroid.Resource.Styleable.Toolbar_buttonGravity;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::HanselmanAndroid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_collapseIcon = global::HanselmanAndroid.Resource.Styleable.Toolbar_collapseIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetRight = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetStart = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_logo = global::HanselmanAndroid.Resource.Styleable.Toolbar_logo;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_logoDescription = global::HanselmanAndroid.Resource.Styleable.Toolbar_logoDescription;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::HanselmanAndroid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::HanselmanAndroid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_navigationIcon = global::HanselmanAndroid.Resource.Styleable.Toolbar_navigationIcon;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_popupTheme = global::HanselmanAndroid.Resource.Styleable.Toolbar_popupTheme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_subtitle = global::HanselmanAndroid.Resource.Styleable.Toolbar_subtitle;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::HanselmanAndroid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::HanselmanAndroid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_title = global::HanselmanAndroid.Resource.Styleable.Toolbar_title;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMargin = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMargin;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMarginStart = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMarginTop = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMargins = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMargins;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleTextColor = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleTextColor;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View = global::HanselmanAndroid.Resource.Styleable.View;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_android_focusable = global::HanselmanAndroid.Resource.Styleable.View_android_focusable;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_android_theme = global::HanselmanAndroid.Resource.Styleable.View_android_theme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_paddingEnd = global::HanselmanAndroid.Resource.Styleable.View_paddingEnd;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_paddingStart = global::HanselmanAndroid.Resource.Styleable.View_paddingStart;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_theme = global::HanselmanAndroid.Resource.Styleable.View_theme;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewBackgroundHelper = global::HanselmanAndroid.Resource.Styleable.ViewBackgroundHelper;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::HanselmanAndroid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::HanselmanAndroid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::HanselmanAndroid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_id = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_id;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_layout = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::MediaManager.Resource.Animation.abc_fade_in = global::HanselmanAndroid.Resource.Animation.abc_fade_in;
+			global::MediaManager.Resource.Animation.abc_fade_out = global::HanselmanAndroid.Resource.Animation.abc_fade_out;
+			global::MediaManager.Resource.Animation.abc_grow_fade_in_from_bottom = global::HanselmanAndroid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::MediaManager.Resource.Animation.abc_popup_enter = global::HanselmanAndroid.Resource.Animation.abc_popup_enter;
+			global::MediaManager.Resource.Animation.abc_popup_exit = global::HanselmanAndroid.Resource.Animation.abc_popup_exit;
+			global::MediaManager.Resource.Animation.abc_shrink_fade_out_from_bottom = global::HanselmanAndroid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::MediaManager.Resource.Animation.abc_slide_in_bottom = global::HanselmanAndroid.Resource.Animation.abc_slide_in_bottom;
+			global::MediaManager.Resource.Animation.abc_slide_in_top = global::HanselmanAndroid.Resource.Animation.abc_slide_in_top;
+			global::MediaManager.Resource.Animation.abc_slide_out_bottom = global::HanselmanAndroid.Resource.Animation.abc_slide_out_bottom;
+			global::MediaManager.Resource.Animation.abc_slide_out_top = global::HanselmanAndroid.Resource.Animation.abc_slide_out_top;
+			global::MediaManager.Resource.Attribute.actionBarDivider = global::HanselmanAndroid.Resource.Attribute.actionBarDivider;
+			global::MediaManager.Resource.Attribute.actionBarItemBackground = global::HanselmanAndroid.Resource.Attribute.actionBarItemBackground;
+			global::MediaManager.Resource.Attribute.actionBarPopupTheme = global::HanselmanAndroid.Resource.Attribute.actionBarPopupTheme;
+			global::MediaManager.Resource.Attribute.actionBarSize = global::HanselmanAndroid.Resource.Attribute.actionBarSize;
+			global::MediaManager.Resource.Attribute.actionBarSplitStyle = global::HanselmanAndroid.Resource.Attribute.actionBarSplitStyle;
+			global::MediaManager.Resource.Attribute.actionBarStyle = global::HanselmanAndroid.Resource.Attribute.actionBarStyle;
+			global::MediaManager.Resource.Attribute.actionBarTabBarStyle = global::HanselmanAndroid.Resource.Attribute.actionBarTabBarStyle;
+			global::MediaManager.Resource.Attribute.actionBarTabStyle = global::HanselmanAndroid.Resource.Attribute.actionBarTabStyle;
+			global::MediaManager.Resource.Attribute.actionBarTabTextStyle = global::HanselmanAndroid.Resource.Attribute.actionBarTabTextStyle;
+			global::MediaManager.Resource.Attribute.actionBarTheme = global::HanselmanAndroid.Resource.Attribute.actionBarTheme;
+			global::MediaManager.Resource.Attribute.actionBarWidgetTheme = global::HanselmanAndroid.Resource.Attribute.actionBarWidgetTheme;
+			global::MediaManager.Resource.Attribute.actionButtonStyle = global::HanselmanAndroid.Resource.Attribute.actionButtonStyle;
+			global::MediaManager.Resource.Attribute.actionDropDownStyle = global::HanselmanAndroid.Resource.Attribute.actionDropDownStyle;
+			global::MediaManager.Resource.Attribute.actionLayout = global::HanselmanAndroid.Resource.Attribute.actionLayout;
+			global::MediaManager.Resource.Attribute.actionMenuTextAppearance = global::HanselmanAndroid.Resource.Attribute.actionMenuTextAppearance;
+			global::MediaManager.Resource.Attribute.actionMenuTextColor = global::HanselmanAndroid.Resource.Attribute.actionMenuTextColor;
+			global::MediaManager.Resource.Attribute.actionModeBackground = global::HanselmanAndroid.Resource.Attribute.actionModeBackground;
+			global::MediaManager.Resource.Attribute.actionModeCloseButtonStyle = global::HanselmanAndroid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::MediaManager.Resource.Attribute.actionModeCloseDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeCloseDrawable;
+			global::MediaManager.Resource.Attribute.actionModeCopyDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeCopyDrawable;
+			global::MediaManager.Resource.Attribute.actionModeCutDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeCutDrawable;
+			global::MediaManager.Resource.Attribute.actionModeFindDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeFindDrawable;
+			global::MediaManager.Resource.Attribute.actionModePasteDrawable = global::HanselmanAndroid.Resource.Attribute.actionModePasteDrawable;
+			global::MediaManager.Resource.Attribute.actionModePopupWindowStyle = global::HanselmanAndroid.Resource.Attribute.actionModePopupWindowStyle;
+			global::MediaManager.Resource.Attribute.actionModeSelectAllDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::MediaManager.Resource.Attribute.actionModeShareDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeShareDrawable;
+			global::MediaManager.Resource.Attribute.actionModeSplitBackground = global::HanselmanAndroid.Resource.Attribute.actionModeSplitBackground;
+			global::MediaManager.Resource.Attribute.actionModeStyle = global::HanselmanAndroid.Resource.Attribute.actionModeStyle;
+			global::MediaManager.Resource.Attribute.actionModeWebSearchDrawable = global::HanselmanAndroid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::MediaManager.Resource.Attribute.actionOverflowButtonStyle = global::HanselmanAndroid.Resource.Attribute.actionOverflowButtonStyle;
+			global::MediaManager.Resource.Attribute.actionOverflowMenuStyle = global::HanselmanAndroid.Resource.Attribute.actionOverflowMenuStyle;
+			global::MediaManager.Resource.Attribute.actionProviderClass = global::HanselmanAndroid.Resource.Attribute.actionProviderClass;
+			global::MediaManager.Resource.Attribute.actionViewClass = global::HanselmanAndroid.Resource.Attribute.actionViewClass;
+			global::MediaManager.Resource.Attribute.activityChooserViewStyle = global::HanselmanAndroid.Resource.Attribute.activityChooserViewStyle;
+			global::MediaManager.Resource.Attribute.ad_marker_color = global::HanselmanAndroid.Resource.Attribute.ad_marker_color;
+			global::MediaManager.Resource.Attribute.ad_marker_width = global::HanselmanAndroid.Resource.Attribute.ad_marker_width;
+			global::MediaManager.Resource.Attribute.alertDialogButtonGroupStyle = global::HanselmanAndroid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::MediaManager.Resource.Attribute.alertDialogCenterButtons = global::HanselmanAndroid.Resource.Attribute.alertDialogCenterButtons;
+			global::MediaManager.Resource.Attribute.alertDialogStyle = global::HanselmanAndroid.Resource.Attribute.alertDialogStyle;
+			global::MediaManager.Resource.Attribute.alertDialogTheme = global::HanselmanAndroid.Resource.Attribute.alertDialogTheme;
+			global::MediaManager.Resource.Attribute.allowStacking = global::HanselmanAndroid.Resource.Attribute.allowStacking;
+			global::MediaManager.Resource.Attribute.alpha = global::HanselmanAndroid.Resource.Attribute.alpha;
+			global::MediaManager.Resource.Attribute.alphabeticModifiers = global::HanselmanAndroid.Resource.Attribute.alphabeticModifiers;
+			global::MediaManager.Resource.Attribute.arrowHeadLength = global::HanselmanAndroid.Resource.Attribute.arrowHeadLength;
+			global::MediaManager.Resource.Attribute.arrowShaftLength = global::HanselmanAndroid.Resource.Attribute.arrowShaftLength;
+			global::MediaManager.Resource.Attribute.autoCompleteTextViewStyle = global::HanselmanAndroid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::MediaManager.Resource.Attribute.autoSizeMaxTextSize = global::HanselmanAndroid.Resource.Attribute.autoSizeMaxTextSize;
+			global::MediaManager.Resource.Attribute.autoSizeMinTextSize = global::HanselmanAndroid.Resource.Attribute.autoSizeMinTextSize;
+			global::MediaManager.Resource.Attribute.autoSizePresetSizes = global::HanselmanAndroid.Resource.Attribute.autoSizePresetSizes;
+			global::MediaManager.Resource.Attribute.autoSizeStepGranularity = global::HanselmanAndroid.Resource.Attribute.autoSizeStepGranularity;
+			global::MediaManager.Resource.Attribute.autoSizeTextType = global::HanselmanAndroid.Resource.Attribute.autoSizeTextType;
+			global::MediaManager.Resource.Attribute.auto_show = global::HanselmanAndroid.Resource.Attribute.auto_show;
+			global::MediaManager.Resource.Attribute.background = global::HanselmanAndroid.Resource.Attribute.background;
+			global::MediaManager.Resource.Attribute.backgroundSplit = global::HanselmanAndroid.Resource.Attribute.backgroundSplit;
+			global::MediaManager.Resource.Attribute.backgroundStacked = global::HanselmanAndroid.Resource.Attribute.backgroundStacked;
+			global::MediaManager.Resource.Attribute.backgroundTint = global::HanselmanAndroid.Resource.Attribute.backgroundTint;
+			global::MediaManager.Resource.Attribute.backgroundTintMode = global::HanselmanAndroid.Resource.Attribute.backgroundTintMode;
+			global::MediaManager.Resource.Attribute.barLength = global::HanselmanAndroid.Resource.Attribute.barLength;
+			global::MediaManager.Resource.Attribute.bar_height = global::HanselmanAndroid.Resource.Attribute.bar_height;
+			global::MediaManager.Resource.Attribute.borderlessButtonStyle = global::HanselmanAndroid.Resource.Attribute.borderlessButtonStyle;
+			global::MediaManager.Resource.Attribute.buffered_color = global::HanselmanAndroid.Resource.Attribute.buffered_color;
+			global::MediaManager.Resource.Attribute.buttonBarButtonStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarButtonStyle;
+			global::MediaManager.Resource.Attribute.buttonBarNegativeButtonStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::MediaManager.Resource.Attribute.buttonBarNeutralButtonStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::MediaManager.Resource.Attribute.buttonBarPositiveButtonStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::MediaManager.Resource.Attribute.buttonBarStyle = global::HanselmanAndroid.Resource.Attribute.buttonBarStyle;
+			global::MediaManager.Resource.Attribute.buttonGravity = global::HanselmanAndroid.Resource.Attribute.buttonGravity;
+			global::MediaManager.Resource.Attribute.buttonPanelSideLayout = global::HanselmanAndroid.Resource.Attribute.buttonPanelSideLayout;
+			global::MediaManager.Resource.Attribute.buttonStyle = global::HanselmanAndroid.Resource.Attribute.buttonStyle;
+			global::MediaManager.Resource.Attribute.buttonStyleSmall = global::HanselmanAndroid.Resource.Attribute.buttonStyleSmall;
+			global::MediaManager.Resource.Attribute.buttonTint = global::HanselmanAndroid.Resource.Attribute.buttonTint;
+			global::MediaManager.Resource.Attribute.buttonTintMode = global::HanselmanAndroid.Resource.Attribute.buttonTintMode;
+			global::MediaManager.Resource.Attribute.checkboxStyle = global::HanselmanAndroid.Resource.Attribute.checkboxStyle;
+			global::MediaManager.Resource.Attribute.checkedTextViewStyle = global::HanselmanAndroid.Resource.Attribute.checkedTextViewStyle;
+			global::MediaManager.Resource.Attribute.closeIcon = global::HanselmanAndroid.Resource.Attribute.closeIcon;
+			global::MediaManager.Resource.Attribute.closeItemLayout = global::HanselmanAndroid.Resource.Attribute.closeItemLayout;
+			global::MediaManager.Resource.Attribute.collapseContentDescription = global::HanselmanAndroid.Resource.Attribute.collapseContentDescription;
+			global::MediaManager.Resource.Attribute.collapseIcon = global::HanselmanAndroid.Resource.Attribute.collapseIcon;
+			global::MediaManager.Resource.Attribute.color = global::HanselmanAndroid.Resource.Attribute.color;
+			global::MediaManager.Resource.Attribute.colorAccent = global::HanselmanAndroid.Resource.Attribute.colorAccent;
+			global::MediaManager.Resource.Attribute.colorBackgroundFloating = global::HanselmanAndroid.Resource.Attribute.colorBackgroundFloating;
+			global::MediaManager.Resource.Attribute.colorButtonNormal = global::HanselmanAndroid.Resource.Attribute.colorButtonNormal;
+			global::MediaManager.Resource.Attribute.colorControlActivated = global::HanselmanAndroid.Resource.Attribute.colorControlActivated;
+			global::MediaManager.Resource.Attribute.colorControlHighlight = global::HanselmanAndroid.Resource.Attribute.colorControlHighlight;
+			global::MediaManager.Resource.Attribute.colorControlNormal = global::HanselmanAndroid.Resource.Attribute.colorControlNormal;
+			global::MediaManager.Resource.Attribute.colorError = global::HanselmanAndroid.Resource.Attribute.colorError;
+			global::MediaManager.Resource.Attribute.colorPrimary = global::HanselmanAndroid.Resource.Attribute.colorPrimary;
+			global::MediaManager.Resource.Attribute.colorPrimaryDark = global::HanselmanAndroid.Resource.Attribute.colorPrimaryDark;
+			global::MediaManager.Resource.Attribute.colorSwitchThumbNormal = global::HanselmanAndroid.Resource.Attribute.colorSwitchThumbNormal;
+			global::MediaManager.Resource.Attribute.commitIcon = global::HanselmanAndroid.Resource.Attribute.commitIcon;
+			global::MediaManager.Resource.Attribute.contentDescription = global::HanselmanAndroid.Resource.Attribute.contentDescription;
+			global::MediaManager.Resource.Attribute.contentInsetEnd = global::HanselmanAndroid.Resource.Attribute.contentInsetEnd;
+			global::MediaManager.Resource.Attribute.contentInsetEndWithActions = global::HanselmanAndroid.Resource.Attribute.contentInsetEndWithActions;
+			global::MediaManager.Resource.Attribute.contentInsetLeft = global::HanselmanAndroid.Resource.Attribute.contentInsetLeft;
+			global::MediaManager.Resource.Attribute.contentInsetRight = global::HanselmanAndroid.Resource.Attribute.contentInsetRight;
+			global::MediaManager.Resource.Attribute.contentInsetStart = global::HanselmanAndroid.Resource.Attribute.contentInsetStart;
+			global::MediaManager.Resource.Attribute.contentInsetStartWithNavigation = global::HanselmanAndroid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::MediaManager.Resource.Attribute.controlBackground = global::HanselmanAndroid.Resource.Attribute.controlBackground;
+			global::MediaManager.Resource.Attribute.controller_layout_id = global::HanselmanAndroid.Resource.Attribute.controller_layout_id;
+			global::MediaManager.Resource.Attribute.customNavigationLayout = global::HanselmanAndroid.Resource.Attribute.customNavigationLayout;
+			global::MediaManager.Resource.Attribute.defaultQueryHint = global::HanselmanAndroid.Resource.Attribute.defaultQueryHint;
+			global::MediaManager.Resource.Attribute.default_artwork = global::HanselmanAndroid.Resource.Attribute.default_artwork;
+			global::MediaManager.Resource.Attribute.dialogPreferredPadding = global::HanselmanAndroid.Resource.Attribute.dialogPreferredPadding;
+			global::MediaManager.Resource.Attribute.dialogTheme = global::HanselmanAndroid.Resource.Attribute.dialogTheme;
+			global::MediaManager.Resource.Attribute.displayOptions = global::HanselmanAndroid.Resource.Attribute.displayOptions;
+			global::MediaManager.Resource.Attribute.divider = global::HanselmanAndroid.Resource.Attribute.divider;
+			global::MediaManager.Resource.Attribute.dividerHorizontal = global::HanselmanAndroid.Resource.Attribute.dividerHorizontal;
+			global::MediaManager.Resource.Attribute.dividerPadding = global::HanselmanAndroid.Resource.Attribute.dividerPadding;
+			global::MediaManager.Resource.Attribute.dividerVertical = global::HanselmanAndroid.Resource.Attribute.dividerVertical;
+			global::MediaManager.Resource.Attribute.drawableSize = global::HanselmanAndroid.Resource.Attribute.drawableSize;
+			global::MediaManager.Resource.Attribute.drawerArrowStyle = global::HanselmanAndroid.Resource.Attribute.drawerArrowStyle;
+			global::MediaManager.Resource.Attribute.dropDownListViewStyle = global::HanselmanAndroid.Resource.Attribute.dropDownListViewStyle;
+			global::MediaManager.Resource.Attribute.dropdownListPreferredItemHeight = global::HanselmanAndroid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::MediaManager.Resource.Attribute.editTextBackground = global::HanselmanAndroid.Resource.Attribute.editTextBackground;
+			global::MediaManager.Resource.Attribute.editTextColor = global::HanselmanAndroid.Resource.Attribute.editTextColor;
+			global::MediaManager.Resource.Attribute.editTextStyle = global::HanselmanAndroid.Resource.Attribute.editTextStyle;
+			global::MediaManager.Resource.Attribute.elevation = global::HanselmanAndroid.Resource.Attribute.elevation;
+			global::MediaManager.Resource.Attribute.expandActivityOverflowButtonDrawable = global::HanselmanAndroid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::MediaManager.Resource.Attribute.fastforward_increment = global::HanselmanAndroid.Resource.Attribute.fastforward_increment;
+			global::MediaManager.Resource.Attribute.font = global::HanselmanAndroid.Resource.Attribute.font;
+			global::MediaManager.Resource.Attribute.fontFamily = global::HanselmanAndroid.Resource.Attribute.fontFamily;
+			global::MediaManager.Resource.Attribute.fontProviderAuthority = global::HanselmanAndroid.Resource.Attribute.fontProviderAuthority;
+			global::MediaManager.Resource.Attribute.fontProviderCerts = global::HanselmanAndroid.Resource.Attribute.fontProviderCerts;
+			global::MediaManager.Resource.Attribute.fontProviderFetchStrategy = global::HanselmanAndroid.Resource.Attribute.fontProviderFetchStrategy;
+			global::MediaManager.Resource.Attribute.fontProviderFetchTimeout = global::HanselmanAndroid.Resource.Attribute.fontProviderFetchTimeout;
+			global::MediaManager.Resource.Attribute.fontProviderPackage = global::HanselmanAndroid.Resource.Attribute.fontProviderPackage;
+			global::MediaManager.Resource.Attribute.fontProviderQuery = global::HanselmanAndroid.Resource.Attribute.fontProviderQuery;
+			global::MediaManager.Resource.Attribute.fontStyle = global::HanselmanAndroid.Resource.Attribute.fontStyle;
+			global::MediaManager.Resource.Attribute.fontWeight = global::HanselmanAndroid.Resource.Attribute.fontWeight;
+			global::MediaManager.Resource.Attribute.gapBetweenBars = global::HanselmanAndroid.Resource.Attribute.gapBetweenBars;
+			global::MediaManager.Resource.Attribute.goIcon = global::HanselmanAndroid.Resource.Attribute.goIcon;
+			global::MediaManager.Resource.Attribute.height = global::HanselmanAndroid.Resource.Attribute.height;
+			global::MediaManager.Resource.Attribute.hideOnContentScroll = global::HanselmanAndroid.Resource.Attribute.hideOnContentScroll;
+			global::MediaManager.Resource.Attribute.hide_during_ads = global::HanselmanAndroid.Resource.Attribute.hide_during_ads;
+			global::MediaManager.Resource.Attribute.hide_on_touch = global::HanselmanAndroid.Resource.Attribute.hide_on_touch;
+			global::MediaManager.Resource.Attribute.homeAsUpIndicator = global::HanselmanAndroid.Resource.Attribute.homeAsUpIndicator;
+			global::MediaManager.Resource.Attribute.homeLayout = global::HanselmanAndroid.Resource.Attribute.homeLayout;
+			global::MediaManager.Resource.Attribute.icon = global::HanselmanAndroid.Resource.Attribute.icon;
+			global::MediaManager.Resource.Attribute.iconTint = global::HanselmanAndroid.Resource.Attribute.iconTint;
+			global::MediaManager.Resource.Attribute.iconTintMode = global::HanselmanAndroid.Resource.Attribute.iconTintMode;
+			global::MediaManager.Resource.Attribute.iconifiedByDefault = global::HanselmanAndroid.Resource.Attribute.iconifiedByDefault;
+			global::MediaManager.Resource.Attribute.imageButtonStyle = global::HanselmanAndroid.Resource.Attribute.imageButtonStyle;
+			global::MediaManager.Resource.Attribute.indeterminateProgressStyle = global::HanselmanAndroid.Resource.Attribute.indeterminateProgressStyle;
+			global::MediaManager.Resource.Attribute.initialActivityCount = global::HanselmanAndroid.Resource.Attribute.initialActivityCount;
+			global::MediaManager.Resource.Attribute.isLightTheme = global::HanselmanAndroid.Resource.Attribute.isLightTheme;
+			global::MediaManager.Resource.Attribute.itemPadding = global::HanselmanAndroid.Resource.Attribute.itemPadding;
+			global::MediaManager.Resource.Attribute.keep_content_on_player_reset = global::HanselmanAndroid.Resource.Attribute.keep_content_on_player_reset;
+			global::MediaManager.Resource.Attribute.layout = global::HanselmanAndroid.Resource.Attribute.layout;
+			global::MediaManager.Resource.Attribute.listChoiceBackgroundIndicator = global::HanselmanAndroid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::MediaManager.Resource.Attribute.listDividerAlertDialog = global::HanselmanAndroid.Resource.Attribute.listDividerAlertDialog;
+			global::MediaManager.Resource.Attribute.listItemLayout = global::HanselmanAndroid.Resource.Attribute.listItemLayout;
+			global::MediaManager.Resource.Attribute.listLayout = global::HanselmanAndroid.Resource.Attribute.listLayout;
+			global::MediaManager.Resource.Attribute.listMenuViewStyle = global::HanselmanAndroid.Resource.Attribute.listMenuViewStyle;
+			global::MediaManager.Resource.Attribute.listPopupWindowStyle = global::HanselmanAndroid.Resource.Attribute.listPopupWindowStyle;
+			global::MediaManager.Resource.Attribute.listPreferredItemHeight = global::HanselmanAndroid.Resource.Attribute.listPreferredItemHeight;
+			global::MediaManager.Resource.Attribute.listPreferredItemHeightLarge = global::HanselmanAndroid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::MediaManager.Resource.Attribute.listPreferredItemHeightSmall = global::HanselmanAndroid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::MediaManager.Resource.Attribute.listPreferredItemPaddingLeft = global::HanselmanAndroid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::MediaManager.Resource.Attribute.listPreferredItemPaddingRight = global::HanselmanAndroid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::MediaManager.Resource.Attribute.logo = global::HanselmanAndroid.Resource.Attribute.logo;
+			global::MediaManager.Resource.Attribute.logoDescription = global::HanselmanAndroid.Resource.Attribute.logoDescription;
+			global::MediaManager.Resource.Attribute.maxButtonHeight = global::HanselmanAndroid.Resource.Attribute.maxButtonHeight;
+			global::MediaManager.Resource.Attribute.measureWithLargestChild = global::HanselmanAndroid.Resource.Attribute.measureWithLargestChild;
+			global::MediaManager.Resource.Attribute.multiChoiceItemLayout = global::HanselmanAndroid.Resource.Attribute.multiChoiceItemLayout;
+			global::MediaManager.Resource.Attribute.navigationContentDescription = global::HanselmanAndroid.Resource.Attribute.navigationContentDescription;
+			global::MediaManager.Resource.Attribute.navigationIcon = global::HanselmanAndroid.Resource.Attribute.navigationIcon;
+			global::MediaManager.Resource.Attribute.navigationMode = global::HanselmanAndroid.Resource.Attribute.navigationMode;
+			global::MediaManager.Resource.Attribute.numericModifiers = global::HanselmanAndroid.Resource.Attribute.numericModifiers;
+			global::MediaManager.Resource.Attribute.overlapAnchor = global::HanselmanAndroid.Resource.Attribute.overlapAnchor;
+			global::MediaManager.Resource.Attribute.paddingBottomNoButtons = global::HanselmanAndroid.Resource.Attribute.paddingBottomNoButtons;
+			global::MediaManager.Resource.Attribute.paddingEnd = global::HanselmanAndroid.Resource.Attribute.paddingEnd;
+			global::MediaManager.Resource.Attribute.paddingStart = global::HanselmanAndroid.Resource.Attribute.paddingStart;
+			global::MediaManager.Resource.Attribute.paddingTopNoTitle = global::HanselmanAndroid.Resource.Attribute.paddingTopNoTitle;
+			global::MediaManager.Resource.Attribute.panelBackground = global::HanselmanAndroid.Resource.Attribute.panelBackground;
+			global::MediaManager.Resource.Attribute.panelMenuListTheme = global::HanselmanAndroid.Resource.Attribute.panelMenuListTheme;
+			global::MediaManager.Resource.Attribute.panelMenuListWidth = global::HanselmanAndroid.Resource.Attribute.panelMenuListWidth;
+			global::MediaManager.Resource.Attribute.played_ad_marker_color = global::HanselmanAndroid.Resource.Attribute.played_ad_marker_color;
+			global::MediaManager.Resource.Attribute.played_color = global::HanselmanAndroid.Resource.Attribute.played_color;
+			global::MediaManager.Resource.Attribute.player_layout_id = global::HanselmanAndroid.Resource.Attribute.player_layout_id;
+			global::MediaManager.Resource.Attribute.popupMenuStyle = global::HanselmanAndroid.Resource.Attribute.popupMenuStyle;
+			global::MediaManager.Resource.Attribute.popupTheme = global::HanselmanAndroid.Resource.Attribute.popupTheme;
+			global::MediaManager.Resource.Attribute.popupWindowStyle = global::HanselmanAndroid.Resource.Attribute.popupWindowStyle;
+			global::MediaManager.Resource.Attribute.preserveIconSpacing = global::HanselmanAndroid.Resource.Attribute.preserveIconSpacing;
+			global::MediaManager.Resource.Attribute.progressBarPadding = global::HanselmanAndroid.Resource.Attribute.progressBarPadding;
+			global::MediaManager.Resource.Attribute.progressBarStyle = global::HanselmanAndroid.Resource.Attribute.progressBarStyle;
+			global::MediaManager.Resource.Attribute.queryBackground = global::HanselmanAndroid.Resource.Attribute.queryBackground;
+			global::MediaManager.Resource.Attribute.queryHint = global::HanselmanAndroid.Resource.Attribute.queryHint;
+			global::MediaManager.Resource.Attribute.radioButtonStyle = global::HanselmanAndroid.Resource.Attribute.radioButtonStyle;
+			global::MediaManager.Resource.Attribute.ratingBarStyle = global::HanselmanAndroid.Resource.Attribute.ratingBarStyle;
+			global::MediaManager.Resource.Attribute.ratingBarStyleIndicator = global::HanselmanAndroid.Resource.Attribute.ratingBarStyleIndicator;
+			global::MediaManager.Resource.Attribute.ratingBarStyleSmall = global::HanselmanAndroid.Resource.Attribute.ratingBarStyleSmall;
+			global::MediaManager.Resource.Attribute.repeat_toggle_modes = global::HanselmanAndroid.Resource.Attribute.repeat_toggle_modes;
+			global::MediaManager.Resource.Attribute.resize_mode = global::HanselmanAndroid.Resource.Attribute.resize_mode;
+			global::MediaManager.Resource.Attribute.rewind_increment = global::HanselmanAndroid.Resource.Attribute.rewind_increment;
+			global::MediaManager.Resource.Attribute.scrubber_color = global::HanselmanAndroid.Resource.Attribute.scrubber_color;
+			global::MediaManager.Resource.Attribute.scrubber_disabled_size = global::HanselmanAndroid.Resource.Attribute.scrubber_disabled_size;
+			global::MediaManager.Resource.Attribute.scrubber_dragged_size = global::HanselmanAndroid.Resource.Attribute.scrubber_dragged_size;
+			global::MediaManager.Resource.Attribute.scrubber_drawable = global::HanselmanAndroid.Resource.Attribute.scrubber_drawable;
+			global::MediaManager.Resource.Attribute.scrubber_enabled_size = global::HanselmanAndroid.Resource.Attribute.scrubber_enabled_size;
+			global::MediaManager.Resource.Attribute.searchHintIcon = global::HanselmanAndroid.Resource.Attribute.searchHintIcon;
+			global::MediaManager.Resource.Attribute.searchIcon = global::HanselmanAndroid.Resource.Attribute.searchIcon;
+			global::MediaManager.Resource.Attribute.searchViewStyle = global::HanselmanAndroid.Resource.Attribute.searchViewStyle;
+			global::MediaManager.Resource.Attribute.seekBarStyle = global::HanselmanAndroid.Resource.Attribute.seekBarStyle;
+			global::MediaManager.Resource.Attribute.selectableItemBackground = global::HanselmanAndroid.Resource.Attribute.selectableItemBackground;
+			global::MediaManager.Resource.Attribute.selectableItemBackgroundBorderless = global::HanselmanAndroid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::MediaManager.Resource.Attribute.showAsAction = global::HanselmanAndroid.Resource.Attribute.showAsAction;
+			global::MediaManager.Resource.Attribute.showDividers = global::HanselmanAndroid.Resource.Attribute.showDividers;
+			global::MediaManager.Resource.Attribute.showText = global::HanselmanAndroid.Resource.Attribute.showText;
+			global::MediaManager.Resource.Attribute.showTitle = global::HanselmanAndroid.Resource.Attribute.showTitle;
+			global::MediaManager.Resource.Attribute.show_buffering = global::HanselmanAndroid.Resource.Attribute.show_buffering;
+			global::MediaManager.Resource.Attribute.show_shuffle_button = global::HanselmanAndroid.Resource.Attribute.show_shuffle_button;
+			global::MediaManager.Resource.Attribute.show_timeout = global::HanselmanAndroid.Resource.Attribute.show_timeout;
+			global::MediaManager.Resource.Attribute.shutter_background_color = global::HanselmanAndroid.Resource.Attribute.shutter_background_color;
+			global::MediaManager.Resource.Attribute.singleChoiceItemLayout = global::HanselmanAndroid.Resource.Attribute.singleChoiceItemLayout;
+			global::MediaManager.Resource.Attribute.spinBars = global::HanselmanAndroid.Resource.Attribute.spinBars;
+			global::MediaManager.Resource.Attribute.spinnerDropDownItemStyle = global::HanselmanAndroid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::MediaManager.Resource.Attribute.spinnerStyle = global::HanselmanAndroid.Resource.Attribute.spinnerStyle;
+			global::MediaManager.Resource.Attribute.splitTrack = global::HanselmanAndroid.Resource.Attribute.splitTrack;
+			global::MediaManager.Resource.Attribute.srcCompat = global::HanselmanAndroid.Resource.Attribute.srcCompat;
+			global::MediaManager.Resource.Attribute.state_above_anchor = global::HanselmanAndroid.Resource.Attribute.state_above_anchor;
+			global::MediaManager.Resource.Attribute.subMenuArrow = global::HanselmanAndroid.Resource.Attribute.subMenuArrow;
+			global::MediaManager.Resource.Attribute.submitBackground = global::HanselmanAndroid.Resource.Attribute.submitBackground;
+			global::MediaManager.Resource.Attribute.subtitle = global::HanselmanAndroid.Resource.Attribute.subtitle;
+			global::MediaManager.Resource.Attribute.subtitleTextAppearance = global::HanselmanAndroid.Resource.Attribute.subtitleTextAppearance;
+			global::MediaManager.Resource.Attribute.subtitleTextColor = global::HanselmanAndroid.Resource.Attribute.subtitleTextColor;
+			global::MediaManager.Resource.Attribute.subtitleTextStyle = global::HanselmanAndroid.Resource.Attribute.subtitleTextStyle;
+			global::MediaManager.Resource.Attribute.suggestionRowLayout = global::HanselmanAndroid.Resource.Attribute.suggestionRowLayout;
+			global::MediaManager.Resource.Attribute.surface_type = global::HanselmanAndroid.Resource.Attribute.surface_type;
+			global::MediaManager.Resource.Attribute.switchMinWidth = global::HanselmanAndroid.Resource.Attribute.switchMinWidth;
+			global::MediaManager.Resource.Attribute.switchPadding = global::HanselmanAndroid.Resource.Attribute.switchPadding;
+			global::MediaManager.Resource.Attribute.switchStyle = global::HanselmanAndroid.Resource.Attribute.switchStyle;
+			global::MediaManager.Resource.Attribute.switchTextAppearance = global::HanselmanAndroid.Resource.Attribute.switchTextAppearance;
+			global::MediaManager.Resource.Attribute.textAllCaps = global::HanselmanAndroid.Resource.Attribute.textAllCaps;
+			global::MediaManager.Resource.Attribute.textAppearanceLargePopupMenu = global::HanselmanAndroid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::MediaManager.Resource.Attribute.textAppearanceListItem = global::HanselmanAndroid.Resource.Attribute.textAppearanceListItem;
+			global::MediaManager.Resource.Attribute.textAppearanceListItemSecondary = global::HanselmanAndroid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::MediaManager.Resource.Attribute.textAppearanceListItemSmall = global::HanselmanAndroid.Resource.Attribute.textAppearanceListItemSmall;
+			global::MediaManager.Resource.Attribute.textAppearancePopupMenuHeader = global::HanselmanAndroid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::MediaManager.Resource.Attribute.textAppearanceSearchResultSubtitle = global::HanselmanAndroid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::MediaManager.Resource.Attribute.textAppearanceSearchResultTitle = global::HanselmanAndroid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::MediaManager.Resource.Attribute.textAppearanceSmallPopupMenu = global::HanselmanAndroid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::MediaManager.Resource.Attribute.textColorAlertDialogListItem = global::HanselmanAndroid.Resource.Attribute.textColorAlertDialogListItem;
+			global::MediaManager.Resource.Attribute.textColorSearchUrl = global::HanselmanAndroid.Resource.Attribute.textColorSearchUrl;
+			global::MediaManager.Resource.Attribute.theme = global::HanselmanAndroid.Resource.Attribute.theme;
+			global::MediaManager.Resource.Attribute.thickness = global::HanselmanAndroid.Resource.Attribute.thickness;
+			global::MediaManager.Resource.Attribute.thumbTextPadding = global::HanselmanAndroid.Resource.Attribute.thumbTextPadding;
+			global::MediaManager.Resource.Attribute.thumbTint = global::HanselmanAndroid.Resource.Attribute.thumbTint;
+			global::MediaManager.Resource.Attribute.thumbTintMode = global::HanselmanAndroid.Resource.Attribute.thumbTintMode;
+			global::MediaManager.Resource.Attribute.tickMark = global::HanselmanAndroid.Resource.Attribute.tickMark;
+			global::MediaManager.Resource.Attribute.tickMarkTint = global::HanselmanAndroid.Resource.Attribute.tickMarkTint;
+			global::MediaManager.Resource.Attribute.tickMarkTintMode = global::HanselmanAndroid.Resource.Attribute.tickMarkTintMode;
+			global::MediaManager.Resource.Attribute.tint = global::HanselmanAndroid.Resource.Attribute.tint;
+			global::MediaManager.Resource.Attribute.tintMode = global::HanselmanAndroid.Resource.Attribute.tintMode;
+			global::MediaManager.Resource.Attribute.title = global::HanselmanAndroid.Resource.Attribute.title;
+			global::MediaManager.Resource.Attribute.titleMargin = global::HanselmanAndroid.Resource.Attribute.titleMargin;
+			global::MediaManager.Resource.Attribute.titleMarginBottom = global::HanselmanAndroid.Resource.Attribute.titleMarginBottom;
+			global::MediaManager.Resource.Attribute.titleMarginEnd = global::HanselmanAndroid.Resource.Attribute.titleMarginEnd;
+			global::MediaManager.Resource.Attribute.titleMarginStart = global::HanselmanAndroid.Resource.Attribute.titleMarginStart;
+			global::MediaManager.Resource.Attribute.titleMarginTop = global::HanselmanAndroid.Resource.Attribute.titleMarginTop;
+			global::MediaManager.Resource.Attribute.titleMargins = global::HanselmanAndroid.Resource.Attribute.titleMargins;
+			global::MediaManager.Resource.Attribute.titleTextAppearance = global::HanselmanAndroid.Resource.Attribute.titleTextAppearance;
+			global::MediaManager.Resource.Attribute.titleTextColor = global::HanselmanAndroid.Resource.Attribute.titleTextColor;
+			global::MediaManager.Resource.Attribute.titleTextStyle = global::HanselmanAndroid.Resource.Attribute.titleTextStyle;
+			global::MediaManager.Resource.Attribute.toolbarNavigationButtonStyle = global::HanselmanAndroid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::MediaManager.Resource.Attribute.toolbarStyle = global::HanselmanAndroid.Resource.Attribute.toolbarStyle;
+			global::MediaManager.Resource.Attribute.tooltipForegroundColor = global::HanselmanAndroid.Resource.Attribute.tooltipForegroundColor;
+			global::MediaManager.Resource.Attribute.tooltipFrameBackground = global::HanselmanAndroid.Resource.Attribute.tooltipFrameBackground;
+			global::MediaManager.Resource.Attribute.tooltipText = global::HanselmanAndroid.Resource.Attribute.tooltipText;
+			global::MediaManager.Resource.Attribute.touch_target_height = global::HanselmanAndroid.Resource.Attribute.touch_target_height;
+			global::MediaManager.Resource.Attribute.track = global::HanselmanAndroid.Resource.Attribute.track;
+			global::MediaManager.Resource.Attribute.trackTint = global::HanselmanAndroid.Resource.Attribute.trackTint;
+			global::MediaManager.Resource.Attribute.trackTintMode = global::HanselmanAndroid.Resource.Attribute.trackTintMode;
+			global::MediaManager.Resource.Attribute.unplayed_color = global::HanselmanAndroid.Resource.Attribute.unplayed_color;
+			global::MediaManager.Resource.Attribute.use_artwork = global::HanselmanAndroid.Resource.Attribute.use_artwork;
+			global::MediaManager.Resource.Attribute.use_controller = global::HanselmanAndroid.Resource.Attribute.use_controller;
+			global::MediaManager.Resource.Attribute.voiceIcon = global::HanselmanAndroid.Resource.Attribute.voiceIcon;
+			global::MediaManager.Resource.Attribute.windowActionBar = global::HanselmanAndroid.Resource.Attribute.windowActionBar;
+			global::MediaManager.Resource.Attribute.windowActionBarOverlay = global::HanselmanAndroid.Resource.Attribute.windowActionBarOverlay;
+			global::MediaManager.Resource.Attribute.windowActionModeOverlay = global::HanselmanAndroid.Resource.Attribute.windowActionModeOverlay;
+			global::MediaManager.Resource.Attribute.windowFixedHeightMajor = global::HanselmanAndroid.Resource.Attribute.windowFixedHeightMajor;
+			global::MediaManager.Resource.Attribute.windowFixedHeightMinor = global::HanselmanAndroid.Resource.Attribute.windowFixedHeightMinor;
+			global::MediaManager.Resource.Attribute.windowFixedWidthMajor = global::HanselmanAndroid.Resource.Attribute.windowFixedWidthMajor;
+			global::MediaManager.Resource.Attribute.windowFixedWidthMinor = global::HanselmanAndroid.Resource.Attribute.windowFixedWidthMinor;
+			global::MediaManager.Resource.Attribute.windowMinWidthMajor = global::HanselmanAndroid.Resource.Attribute.windowMinWidthMajor;
+			global::MediaManager.Resource.Attribute.windowMinWidthMinor = global::HanselmanAndroid.Resource.Attribute.windowMinWidthMinor;
+			global::MediaManager.Resource.Attribute.windowNoTitle = global::HanselmanAndroid.Resource.Attribute.windowNoTitle;
+			global::MediaManager.Resource.Boolean.abc_action_bar_embed_tabs = global::HanselmanAndroid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::MediaManager.Resource.Boolean.abc_allow_stacked_button_bar = global::HanselmanAndroid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::MediaManager.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::HanselmanAndroid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::MediaManager.Resource.Color.abc_background_cache_hint_selector_material_dark = global::HanselmanAndroid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::MediaManager.Resource.Color.abc_background_cache_hint_selector_material_light = global::HanselmanAndroid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::MediaManager.Resource.Color.abc_btn_colored_borderless_text_material = global::HanselmanAndroid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::MediaManager.Resource.Color.abc_btn_colored_text_material = global::HanselmanAndroid.Resource.Color.abc_btn_colored_text_material;
+			global::MediaManager.Resource.Color.abc_color_highlight_material = global::HanselmanAndroid.Resource.Color.abc_color_highlight_material;
+			global::MediaManager.Resource.Color.abc_hint_foreground_material_dark = global::HanselmanAndroid.Resource.Color.abc_hint_foreground_material_dark;
+			global::MediaManager.Resource.Color.abc_hint_foreground_material_light = global::HanselmanAndroid.Resource.Color.abc_hint_foreground_material_light;
+			global::MediaManager.Resource.Color.abc_input_method_navigation_guard = global::HanselmanAndroid.Resource.Color.abc_input_method_navigation_guard;
+			global::MediaManager.Resource.Color.abc_primary_text_disable_only_material_dark = global::HanselmanAndroid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::MediaManager.Resource.Color.abc_primary_text_disable_only_material_light = global::HanselmanAndroid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::MediaManager.Resource.Color.abc_primary_text_material_dark = global::HanselmanAndroid.Resource.Color.abc_primary_text_material_dark;
+			global::MediaManager.Resource.Color.abc_primary_text_material_light = global::HanselmanAndroid.Resource.Color.abc_primary_text_material_light;
+			global::MediaManager.Resource.Color.abc_search_url_text = global::HanselmanAndroid.Resource.Color.abc_search_url_text;
+			global::MediaManager.Resource.Color.abc_search_url_text_normal = global::HanselmanAndroid.Resource.Color.abc_search_url_text_normal;
+			global::MediaManager.Resource.Color.abc_search_url_text_pressed = global::HanselmanAndroid.Resource.Color.abc_search_url_text_pressed;
+			global::MediaManager.Resource.Color.abc_search_url_text_selected = global::HanselmanAndroid.Resource.Color.abc_search_url_text_selected;
+			global::MediaManager.Resource.Color.abc_secondary_text_material_dark = global::HanselmanAndroid.Resource.Color.abc_secondary_text_material_dark;
+			global::MediaManager.Resource.Color.abc_secondary_text_material_light = global::HanselmanAndroid.Resource.Color.abc_secondary_text_material_light;
+			global::MediaManager.Resource.Color.abc_tint_btn_checkable = global::HanselmanAndroid.Resource.Color.abc_tint_btn_checkable;
+			global::MediaManager.Resource.Color.abc_tint_default = global::HanselmanAndroid.Resource.Color.abc_tint_default;
+			global::MediaManager.Resource.Color.abc_tint_edittext = global::HanselmanAndroid.Resource.Color.abc_tint_edittext;
+			global::MediaManager.Resource.Color.abc_tint_seek_thumb = global::HanselmanAndroid.Resource.Color.abc_tint_seek_thumb;
+			global::MediaManager.Resource.Color.abc_tint_spinner = global::HanselmanAndroid.Resource.Color.abc_tint_spinner;
+			global::MediaManager.Resource.Color.abc_tint_switch_track = global::HanselmanAndroid.Resource.Color.abc_tint_switch_track;
+			global::MediaManager.Resource.Color.accent_material_dark = global::HanselmanAndroid.Resource.Color.accent_material_dark;
+			global::MediaManager.Resource.Color.accent_material_light = global::HanselmanAndroid.Resource.Color.accent_material_light;
+			global::MediaManager.Resource.Color.background_floating_material_dark = global::HanselmanAndroid.Resource.Color.background_floating_material_dark;
+			global::MediaManager.Resource.Color.background_floating_material_light = global::HanselmanAndroid.Resource.Color.background_floating_material_light;
+			global::MediaManager.Resource.Color.background_material_dark = global::HanselmanAndroid.Resource.Color.background_material_dark;
+			global::MediaManager.Resource.Color.background_material_light = global::HanselmanAndroid.Resource.Color.background_material_light;
+			global::MediaManager.Resource.Color.bright_foreground_disabled_material_dark = global::HanselmanAndroid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::MediaManager.Resource.Color.bright_foreground_disabled_material_light = global::HanselmanAndroid.Resource.Color.bright_foreground_disabled_material_light;
+			global::MediaManager.Resource.Color.bright_foreground_inverse_material_dark = global::HanselmanAndroid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::MediaManager.Resource.Color.bright_foreground_inverse_material_light = global::HanselmanAndroid.Resource.Color.bright_foreground_inverse_material_light;
+			global::MediaManager.Resource.Color.bright_foreground_material_dark = global::HanselmanAndroid.Resource.Color.bright_foreground_material_dark;
+			global::MediaManager.Resource.Color.bright_foreground_material_light = global::HanselmanAndroid.Resource.Color.bright_foreground_material_light;
+			global::MediaManager.Resource.Color.button_material_dark = global::HanselmanAndroid.Resource.Color.button_material_dark;
+			global::MediaManager.Resource.Color.button_material_light = global::HanselmanAndroid.Resource.Color.button_material_light;
+			global::MediaManager.Resource.Color.dim_foreground_disabled_material_dark = global::HanselmanAndroid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::MediaManager.Resource.Color.dim_foreground_disabled_material_light = global::HanselmanAndroid.Resource.Color.dim_foreground_disabled_material_light;
+			global::MediaManager.Resource.Color.dim_foreground_material_dark = global::HanselmanAndroid.Resource.Color.dim_foreground_material_dark;
+			global::MediaManager.Resource.Color.dim_foreground_material_light = global::HanselmanAndroid.Resource.Color.dim_foreground_material_light;
+			global::MediaManager.Resource.Color.exo_edit_mode_background_color = global::HanselmanAndroid.Resource.Color.exo_edit_mode_background_color;
+			global::MediaManager.Resource.Color.exo_error_message_background_color = global::HanselmanAndroid.Resource.Color.exo_error_message_background_color;
+			global::MediaManager.Resource.Color.foreground_material_dark = global::HanselmanAndroid.Resource.Color.foreground_material_dark;
+			global::MediaManager.Resource.Color.foreground_material_light = global::HanselmanAndroid.Resource.Color.foreground_material_light;
+			global::MediaManager.Resource.Color.highlighted_text_material_dark = global::HanselmanAndroid.Resource.Color.highlighted_text_material_dark;
+			global::MediaManager.Resource.Color.highlighted_text_material_light = global::HanselmanAndroid.Resource.Color.highlighted_text_material_light;
+			global::MediaManager.Resource.Color.material_blue_grey_800 = global::HanselmanAndroid.Resource.Color.material_blue_grey_800;
+			global::MediaManager.Resource.Color.material_blue_grey_900 = global::HanselmanAndroid.Resource.Color.material_blue_grey_900;
+			global::MediaManager.Resource.Color.material_blue_grey_950 = global::HanselmanAndroid.Resource.Color.material_blue_grey_950;
+			global::MediaManager.Resource.Color.material_deep_teal_200 = global::HanselmanAndroid.Resource.Color.material_deep_teal_200;
+			global::MediaManager.Resource.Color.material_deep_teal_500 = global::HanselmanAndroid.Resource.Color.material_deep_teal_500;
+			global::MediaManager.Resource.Color.material_grey_100 = global::HanselmanAndroid.Resource.Color.material_grey_100;
+			global::MediaManager.Resource.Color.material_grey_300 = global::HanselmanAndroid.Resource.Color.material_grey_300;
+			global::MediaManager.Resource.Color.material_grey_50 = global::HanselmanAndroid.Resource.Color.material_grey_50;
+			global::MediaManager.Resource.Color.material_grey_600 = global::HanselmanAndroid.Resource.Color.material_grey_600;
+			global::MediaManager.Resource.Color.material_grey_800 = global::HanselmanAndroid.Resource.Color.material_grey_800;
+			global::MediaManager.Resource.Color.material_grey_850 = global::HanselmanAndroid.Resource.Color.material_grey_850;
+			global::MediaManager.Resource.Color.material_grey_900 = global::HanselmanAndroid.Resource.Color.material_grey_900;
+			global::MediaManager.Resource.Color.notification_action_color_filter = global::HanselmanAndroid.Resource.Color.notification_action_color_filter;
+			global::MediaManager.Resource.Color.notification_icon_bg_color = global::HanselmanAndroid.Resource.Color.notification_icon_bg_color;
+			global::MediaManager.Resource.Color.notification_material_background_media_default_color = global::HanselmanAndroid.Resource.Color.notification_material_background_media_default_color;
+			global::MediaManager.Resource.Color.primary_dark_material_dark = global::HanselmanAndroid.Resource.Color.primary_dark_material_dark;
+			global::MediaManager.Resource.Color.primary_dark_material_light = global::HanselmanAndroid.Resource.Color.primary_dark_material_light;
+			global::MediaManager.Resource.Color.primary_material_dark = global::HanselmanAndroid.Resource.Color.primary_material_dark;
+			global::MediaManager.Resource.Color.primary_material_light = global::HanselmanAndroid.Resource.Color.primary_material_light;
+			global::MediaManager.Resource.Color.primary_text_default_material_dark = global::HanselmanAndroid.Resource.Color.primary_text_default_material_dark;
+			global::MediaManager.Resource.Color.primary_text_default_material_light = global::HanselmanAndroid.Resource.Color.primary_text_default_material_light;
+			global::MediaManager.Resource.Color.primary_text_disabled_material_dark = global::HanselmanAndroid.Resource.Color.primary_text_disabled_material_dark;
+			global::MediaManager.Resource.Color.primary_text_disabled_material_light = global::HanselmanAndroid.Resource.Color.primary_text_disabled_material_light;
+			global::MediaManager.Resource.Color.ripple_material_dark = global::HanselmanAndroid.Resource.Color.ripple_material_dark;
+			global::MediaManager.Resource.Color.ripple_material_light = global::HanselmanAndroid.Resource.Color.ripple_material_light;
+			global::MediaManager.Resource.Color.secondary_text_default_material_dark = global::HanselmanAndroid.Resource.Color.secondary_text_default_material_dark;
+			global::MediaManager.Resource.Color.secondary_text_default_material_light = global::HanselmanAndroid.Resource.Color.secondary_text_default_material_light;
+			global::MediaManager.Resource.Color.secondary_text_disabled_material_dark = global::HanselmanAndroid.Resource.Color.secondary_text_disabled_material_dark;
+			global::MediaManager.Resource.Color.secondary_text_disabled_material_light = global::HanselmanAndroid.Resource.Color.secondary_text_disabled_material_light;
+			global::MediaManager.Resource.Color.switch_thumb_disabled_material_dark = global::HanselmanAndroid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::MediaManager.Resource.Color.switch_thumb_disabled_material_light = global::HanselmanAndroid.Resource.Color.switch_thumb_disabled_material_light;
+			global::MediaManager.Resource.Color.switch_thumb_material_dark = global::HanselmanAndroid.Resource.Color.switch_thumb_material_dark;
+			global::MediaManager.Resource.Color.switch_thumb_material_light = global::HanselmanAndroid.Resource.Color.switch_thumb_material_light;
+			global::MediaManager.Resource.Color.switch_thumb_normal_material_dark = global::HanselmanAndroid.Resource.Color.switch_thumb_normal_material_dark;
+			global::MediaManager.Resource.Color.switch_thumb_normal_material_light = global::HanselmanAndroid.Resource.Color.switch_thumb_normal_material_light;
+			global::MediaManager.Resource.Color.tooltip_background_dark = global::HanselmanAndroid.Resource.Color.tooltip_background_dark;
+			global::MediaManager.Resource.Color.tooltip_background_light = global::HanselmanAndroid.Resource.Color.tooltip_background_light;
+			global::MediaManager.Resource.Dimension.abc_action_bar_content_inset_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::MediaManager.Resource.Dimension.abc_action_bar_default_height_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_default_padding_end_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_default_padding_start_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_elevation_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_stacked_max_height = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::MediaManager.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::MediaManager.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::MediaManager.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::HanselmanAndroid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::MediaManager.Resource.Dimension.abc_action_button_min_height_material = global::HanselmanAndroid.Resource.Dimension.abc_action_button_min_height_material;
+			global::MediaManager.Resource.Dimension.abc_action_button_min_width_material = global::HanselmanAndroid.Resource.Dimension.abc_action_button_min_width_material;
+			global::MediaManager.Resource.Dimension.abc_action_button_min_width_overflow_material = global::HanselmanAndroid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::MediaManager.Resource.Dimension.abc_alert_dialog_button_bar_height = global::HanselmanAndroid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::MediaManager.Resource.Dimension.abc_button_inset_horizontal_material = global::HanselmanAndroid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::MediaManager.Resource.Dimension.abc_button_inset_vertical_material = global::HanselmanAndroid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::MediaManager.Resource.Dimension.abc_button_padding_horizontal_material = global::HanselmanAndroid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::MediaManager.Resource.Dimension.abc_button_padding_vertical_material = global::HanselmanAndroid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::MediaManager.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::HanselmanAndroid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::MediaManager.Resource.Dimension.abc_config_prefDialogWidth = global::HanselmanAndroid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::MediaManager.Resource.Dimension.abc_control_corner_material = global::HanselmanAndroid.Resource.Dimension.abc_control_corner_material;
+			global::MediaManager.Resource.Dimension.abc_control_inset_material = global::HanselmanAndroid.Resource.Dimension.abc_control_inset_material;
+			global::MediaManager.Resource.Dimension.abc_control_padding_material = global::HanselmanAndroid.Resource.Dimension.abc_control_padding_material;
+			global::MediaManager.Resource.Dimension.abc_dialog_fixed_height_major = global::HanselmanAndroid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::MediaManager.Resource.Dimension.abc_dialog_fixed_height_minor = global::HanselmanAndroid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::MediaManager.Resource.Dimension.abc_dialog_fixed_width_major = global::HanselmanAndroid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::MediaManager.Resource.Dimension.abc_dialog_fixed_width_minor = global::HanselmanAndroid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::MediaManager.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::HanselmanAndroid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::MediaManager.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::HanselmanAndroid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::MediaManager.Resource.Dimension.abc_dialog_min_width_major = global::HanselmanAndroid.Resource.Dimension.abc_dialog_min_width_major;
+			global::MediaManager.Resource.Dimension.abc_dialog_min_width_minor = global::HanselmanAndroid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::MediaManager.Resource.Dimension.abc_dialog_padding_material = global::HanselmanAndroid.Resource.Dimension.abc_dialog_padding_material;
+			global::MediaManager.Resource.Dimension.abc_dialog_padding_top_material = global::HanselmanAndroid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::MediaManager.Resource.Dimension.abc_dialog_title_divider_material = global::HanselmanAndroid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::MediaManager.Resource.Dimension.abc_disabled_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::MediaManager.Resource.Dimension.abc_disabled_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::MediaManager.Resource.Dimension.abc_dropdownitem_icon_width = global::HanselmanAndroid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::MediaManager.Resource.Dimension.abc_dropdownitem_text_padding_left = global::HanselmanAndroid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::MediaManager.Resource.Dimension.abc_dropdownitem_text_padding_right = global::HanselmanAndroid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::MediaManager.Resource.Dimension.abc_edit_text_inset_bottom_material = global::HanselmanAndroid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::MediaManager.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::HanselmanAndroid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::MediaManager.Resource.Dimension.abc_edit_text_inset_top_material = global::HanselmanAndroid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::MediaManager.Resource.Dimension.abc_floating_window_z = global::HanselmanAndroid.Resource.Dimension.abc_floating_window_z;
+			global::MediaManager.Resource.Dimension.abc_list_item_padding_horizontal_material = global::HanselmanAndroid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::MediaManager.Resource.Dimension.abc_panel_menu_list_width = global::HanselmanAndroid.Resource.Dimension.abc_panel_menu_list_width;
+			global::MediaManager.Resource.Dimension.abc_progress_bar_height_material = global::HanselmanAndroid.Resource.Dimension.abc_progress_bar_height_material;
+			global::MediaManager.Resource.Dimension.abc_search_view_preferred_height = global::HanselmanAndroid.Resource.Dimension.abc_search_view_preferred_height;
+			global::MediaManager.Resource.Dimension.abc_search_view_preferred_width = global::HanselmanAndroid.Resource.Dimension.abc_search_view_preferred_width;
+			global::MediaManager.Resource.Dimension.abc_seekbar_track_background_height_material = global::HanselmanAndroid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::MediaManager.Resource.Dimension.abc_seekbar_track_progress_height_material = global::HanselmanAndroid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::MediaManager.Resource.Dimension.abc_select_dialog_padding_start_material = global::HanselmanAndroid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::MediaManager.Resource.Dimension.abc_switch_padding = global::HanselmanAndroid.Resource.Dimension.abc_switch_padding;
+			global::MediaManager.Resource.Dimension.abc_text_size_body_1_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_body_1_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_body_2_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_body_2_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_button_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_button_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_caption_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_caption_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_display_1_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_display_1_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_display_2_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_display_2_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_display_3_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_display_3_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_display_4_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_display_4_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_headline_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_headline_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_large_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_large_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_medium_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_medium_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_menu_header_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_menu_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_menu_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_small_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_small_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_subhead_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_subhead_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::HanselmanAndroid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::MediaManager.Resource.Dimension.abc_text_size_title_material = global::HanselmanAndroid.Resource.Dimension.abc_text_size_title_material;
+			global::MediaManager.Resource.Dimension.abc_text_size_title_material_toolbar = global::HanselmanAndroid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::MediaManager.Resource.Dimension.compat_button_inset_horizontal_material = global::HanselmanAndroid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::MediaManager.Resource.Dimension.compat_button_inset_vertical_material = global::HanselmanAndroid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::MediaManager.Resource.Dimension.compat_button_padding_horizontal_material = global::HanselmanAndroid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::MediaManager.Resource.Dimension.compat_button_padding_vertical_material = global::HanselmanAndroid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::MediaManager.Resource.Dimension.compat_control_corner_material = global::HanselmanAndroid.Resource.Dimension.compat_control_corner_material;
+			global::MediaManager.Resource.Dimension.disabled_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.disabled_alpha_material_dark;
+			global::MediaManager.Resource.Dimension.disabled_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.disabled_alpha_material_light;
+			global::MediaManager.Resource.Dimension.exo_media_button_height = global::HanselmanAndroid.Resource.Dimension.exo_media_button_height;
+			global::MediaManager.Resource.Dimension.exo_media_button_width = global::HanselmanAndroid.Resource.Dimension.exo_media_button_width;
+			global::MediaManager.Resource.Dimension.highlight_alpha_material_colored = global::HanselmanAndroid.Resource.Dimension.highlight_alpha_material_colored;
+			global::MediaManager.Resource.Dimension.highlight_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.highlight_alpha_material_dark;
+			global::MediaManager.Resource.Dimension.highlight_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.highlight_alpha_material_light;
+			global::MediaManager.Resource.Dimension.hint_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.hint_alpha_material_dark;
+			global::MediaManager.Resource.Dimension.hint_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.hint_alpha_material_light;
+			global::MediaManager.Resource.Dimension.hint_pressed_alpha_material_dark = global::HanselmanAndroid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::MediaManager.Resource.Dimension.hint_pressed_alpha_material_light = global::HanselmanAndroid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::MediaManager.Resource.Dimension.notification_action_icon_size = global::HanselmanAndroid.Resource.Dimension.notification_action_icon_size;
+			global::MediaManager.Resource.Dimension.notification_action_text_size = global::HanselmanAndroid.Resource.Dimension.notification_action_text_size;
+			global::MediaManager.Resource.Dimension.notification_big_circle_margin = global::HanselmanAndroid.Resource.Dimension.notification_big_circle_margin;
+			global::MediaManager.Resource.Dimension.notification_content_margin_start = global::HanselmanAndroid.Resource.Dimension.notification_content_margin_start;
+			global::MediaManager.Resource.Dimension.notification_large_icon_height = global::HanselmanAndroid.Resource.Dimension.notification_large_icon_height;
+			global::MediaManager.Resource.Dimension.notification_large_icon_width = global::HanselmanAndroid.Resource.Dimension.notification_large_icon_width;
+			global::MediaManager.Resource.Dimension.notification_main_column_padding_top = global::HanselmanAndroid.Resource.Dimension.notification_main_column_padding_top;
+			global::MediaManager.Resource.Dimension.notification_media_narrow_margin = global::HanselmanAndroid.Resource.Dimension.notification_media_narrow_margin;
+			global::MediaManager.Resource.Dimension.notification_right_icon_size = global::HanselmanAndroid.Resource.Dimension.notification_right_icon_size;
+			global::MediaManager.Resource.Dimension.notification_right_side_padding_top = global::HanselmanAndroid.Resource.Dimension.notification_right_side_padding_top;
+			global::MediaManager.Resource.Dimension.notification_small_icon_background_padding = global::HanselmanAndroid.Resource.Dimension.notification_small_icon_background_padding;
+			global::MediaManager.Resource.Dimension.notification_small_icon_size_as_large = global::HanselmanAndroid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::MediaManager.Resource.Dimension.notification_subtext_size = global::HanselmanAndroid.Resource.Dimension.notification_subtext_size;
+			global::MediaManager.Resource.Dimension.notification_top_pad = global::HanselmanAndroid.Resource.Dimension.notification_top_pad;
+			global::MediaManager.Resource.Dimension.notification_top_pad_large_text = global::HanselmanAndroid.Resource.Dimension.notification_top_pad_large_text;
+			global::MediaManager.Resource.Dimension.tooltip_corner_radius = global::HanselmanAndroid.Resource.Dimension.tooltip_corner_radius;
+			global::MediaManager.Resource.Dimension.tooltip_horizontal_padding = global::HanselmanAndroid.Resource.Dimension.tooltip_horizontal_padding;
+			global::MediaManager.Resource.Dimension.tooltip_margin = global::HanselmanAndroid.Resource.Dimension.tooltip_margin;
+			global::MediaManager.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::HanselmanAndroid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::MediaManager.Resource.Dimension.tooltip_precise_anchor_threshold = global::HanselmanAndroid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::MediaManager.Resource.Dimension.tooltip_vertical_padding = global::HanselmanAndroid.Resource.Dimension.tooltip_vertical_padding;
+			global::MediaManager.Resource.Dimension.tooltip_y_offset_non_touch = global::HanselmanAndroid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::MediaManager.Resource.Dimension.tooltip_y_offset_touch = global::HanselmanAndroid.Resource.Dimension.tooltip_y_offset_touch;
+			global::MediaManager.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_action_bar_item_background_material = global::HanselmanAndroid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::MediaManager.Resource.Drawable.abc_btn_borderless_material = global::HanselmanAndroid.Resource.Drawable.abc_btn_borderless_material;
+			global::MediaManager.Resource.Drawable.abc_btn_check_material = global::HanselmanAndroid.Resource.Drawable.abc_btn_check_material;
+			global::MediaManager.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::HanselmanAndroid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::MediaManager.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::HanselmanAndroid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::MediaManager.Resource.Drawable.abc_btn_colored_material = global::HanselmanAndroid.Resource.Drawable.abc_btn_colored_material;
+			global::MediaManager.Resource.Drawable.abc_btn_default_mtrl_shape = global::HanselmanAndroid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::MediaManager.Resource.Drawable.abc_btn_radio_material = global::HanselmanAndroid.Resource.Drawable.abc_btn_radio_material;
+			global::MediaManager.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::HanselmanAndroid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::MediaManager.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::HanselmanAndroid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::MediaManager.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::HanselmanAndroid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::MediaManager.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::HanselmanAndroid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::MediaManager.Resource.Drawable.abc_cab_background_internal_bg = global::HanselmanAndroid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::MediaManager.Resource.Drawable.abc_cab_background_top_material = global::HanselmanAndroid.Resource.Drawable.abc_cab_background_top_material;
+			global::MediaManager.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_control_background_material = global::HanselmanAndroid.Resource.Drawable.abc_control_background_material;
+			global::MediaManager.Resource.Drawable.abc_dialog_material_background = global::HanselmanAndroid.Resource.Drawable.abc_dialog_material_background;
+			global::MediaManager.Resource.Drawable.abc_edit_text_material = global::HanselmanAndroid.Resource.Drawable.abc_edit_text_material;
+			global::MediaManager.Resource.Drawable.abc_ic_ab_back_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_ab_back_material;
+			global::MediaManager.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::MediaManager.Resource.Drawable.abc_ic_clear_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_clear_material;
+			global::MediaManager.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_ic_go_search_api_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::MediaManager.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::MediaManager.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_ic_menu_overflow_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::MediaManager.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::MediaManager.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_ic_search_api_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_search_api_material;
+			global::MediaManager.Resource.Drawable.abc_ic_star_black_16dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::MediaManager.Resource.Drawable.abc_ic_star_black_36dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::MediaManager.Resource.Drawable.abc_ic_star_black_48dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::MediaManager.Resource.Drawable.abc_ic_star_half_black_16dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::MediaManager.Resource.Drawable.abc_ic_star_half_black_36dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::MediaManager.Resource.Drawable.abc_ic_star_half_black_48dp = global::HanselmanAndroid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::MediaManager.Resource.Drawable.abc_ic_voice_search_api_material = global::HanselmanAndroid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::MediaManager.Resource.Drawable.abc_item_background_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_item_background_holo_dark;
+			global::MediaManager.Resource.Drawable.abc_item_background_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_item_background_holo_light;
+			global::MediaManager.Resource.Drawable.abc_list_divider_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_list_focused_holo = global::HanselmanAndroid.Resource.Drawable.abc_list_focused_holo;
+			global::MediaManager.Resource.Drawable.abc_list_longpressed_holo = global::HanselmanAndroid.Resource.Drawable.abc_list_longpressed_holo;
+			global::MediaManager.Resource.Drawable.abc_list_pressed_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::MediaManager.Resource.Drawable.abc_list_pressed_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::MediaManager.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::MediaManager.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::MediaManager.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::MediaManager.Resource.Drawable.abc_list_selector_disabled_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::MediaManager.Resource.Drawable.abc_list_selector_holo_dark = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::MediaManager.Resource.Drawable.abc_list_selector_holo_light = global::HanselmanAndroid.Resource.Drawable.abc_list_selector_holo_light;
+			global::MediaManager.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::HanselmanAndroid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::MediaManager.Resource.Drawable.abc_popup_background_mtrl_mult = global::HanselmanAndroid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::MediaManager.Resource.Drawable.abc_ratingbar_indicator_material = global::HanselmanAndroid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::MediaManager.Resource.Drawable.abc_ratingbar_material = global::HanselmanAndroid.Resource.Drawable.abc_ratingbar_material;
+			global::MediaManager.Resource.Drawable.abc_ratingbar_small_material = global::HanselmanAndroid.Resource.Drawable.abc_ratingbar_small_material;
+			global::MediaManager.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::MediaManager.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::MediaManager.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_seekbar_thumb_material = global::HanselmanAndroid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::MediaManager.Resource.Drawable.abc_seekbar_tick_mark_material = global::HanselmanAndroid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::MediaManager.Resource.Drawable.abc_seekbar_track_material = global::HanselmanAndroid.Resource.Drawable.abc_seekbar_track_material;
+			global::MediaManager.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::HanselmanAndroid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::MediaManager.Resource.Drawable.abc_spinner_textfield_background_material = global::HanselmanAndroid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::MediaManager.Resource.Drawable.abc_switch_thumb_material = global::HanselmanAndroid.Resource.Drawable.abc_switch_thumb_material;
+			global::MediaManager.Resource.Drawable.abc_switch_track_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_tab_indicator_material = global::HanselmanAndroid.Resource.Drawable.abc_tab_indicator_material;
+			global::MediaManager.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_text_cursor_material = global::HanselmanAndroid.Resource.Drawable.abc_text_cursor_material;
+			global::MediaManager.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::MediaManager.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::MediaManager.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::MediaManager.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::MediaManager.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::MediaManager.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::HanselmanAndroid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::MediaManager.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::HanselmanAndroid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::MediaManager.Resource.Drawable.abc_textfield_search_material = global::HanselmanAndroid.Resource.Drawable.abc_textfield_search_material;
+			global::MediaManager.Resource.Drawable.abc_vector_test = global::HanselmanAndroid.Resource.Drawable.abc_vector_test;
+			global::MediaManager.Resource.Drawable.exo_controls_fastforward = global::HanselmanAndroid.Resource.Drawable.exo_controls_fastforward;
+			global::MediaManager.Resource.Drawable.exo_controls_fullscreen_enter = global::HanselmanAndroid.Resource.Drawable.exo_controls_fullscreen_enter;
+			global::MediaManager.Resource.Drawable.exo_controls_fullscreen_exit = global::HanselmanAndroid.Resource.Drawable.exo_controls_fullscreen_exit;
+			global::MediaManager.Resource.Drawable.exo_controls_next = global::HanselmanAndroid.Resource.Drawable.exo_controls_next;
+			global::MediaManager.Resource.Drawable.exo_controls_pause = global::HanselmanAndroid.Resource.Drawable.exo_controls_pause;
+			global::MediaManager.Resource.Drawable.exo_controls_play = global::HanselmanAndroid.Resource.Drawable.exo_controls_play;
+			global::MediaManager.Resource.Drawable.exo_controls_previous = global::HanselmanAndroid.Resource.Drawable.exo_controls_previous;
+			global::MediaManager.Resource.Drawable.exo_controls_repeat_all = global::HanselmanAndroid.Resource.Drawable.exo_controls_repeat_all;
+			global::MediaManager.Resource.Drawable.exo_controls_repeat_off = global::HanselmanAndroid.Resource.Drawable.exo_controls_repeat_off;
+			global::MediaManager.Resource.Drawable.exo_controls_repeat_one = global::HanselmanAndroid.Resource.Drawable.exo_controls_repeat_one;
+			global::MediaManager.Resource.Drawable.exo_controls_rewind = global::HanselmanAndroid.Resource.Drawable.exo_controls_rewind;
+			global::MediaManager.Resource.Drawable.exo_controls_shuffle = global::HanselmanAndroid.Resource.Drawable.exo_controls_shuffle;
+			global::MediaManager.Resource.Drawable.exo_edit_mode_logo = global::HanselmanAndroid.Resource.Drawable.exo_edit_mode_logo;
+			global::MediaManager.Resource.Drawable.exo_icon_fastforward = global::HanselmanAndroid.Resource.Drawable.exo_icon_fastforward;
+			global::MediaManager.Resource.Drawable.exo_icon_next = global::HanselmanAndroid.Resource.Drawable.exo_icon_next;
+			global::MediaManager.Resource.Drawable.exo_icon_pause = global::HanselmanAndroid.Resource.Drawable.exo_icon_pause;
+			global::MediaManager.Resource.Drawable.exo_icon_play = global::HanselmanAndroid.Resource.Drawable.exo_icon_play;
+			global::MediaManager.Resource.Drawable.exo_icon_previous = global::HanselmanAndroid.Resource.Drawable.exo_icon_previous;
+			global::MediaManager.Resource.Drawable.exo_icon_rewind = global::HanselmanAndroid.Resource.Drawable.exo_icon_rewind;
+			global::MediaManager.Resource.Drawable.exo_icon_stop = global::HanselmanAndroid.Resource.Drawable.exo_icon_stop;
+			global::MediaManager.Resource.Drawable.exo_media_action_repeat_all = global::HanselmanAndroid.Resource.Drawable.exo_media_action_repeat_all;
+			global::MediaManager.Resource.Drawable.exo_media_action_repeat_off = global::HanselmanAndroid.Resource.Drawable.exo_media_action_repeat_off;
+			global::MediaManager.Resource.Drawable.exo_media_action_repeat_one = global::HanselmanAndroid.Resource.Drawable.exo_media_action_repeat_one;
+			global::MediaManager.Resource.Drawable.exo_notification_fastforward = global::HanselmanAndroid.Resource.Drawable.exo_notification_fastforward;
+			global::MediaManager.Resource.Drawable.exo_notification_next = global::HanselmanAndroid.Resource.Drawable.exo_notification_next;
+			global::MediaManager.Resource.Drawable.exo_notification_pause = global::HanselmanAndroid.Resource.Drawable.exo_notification_pause;
+			global::MediaManager.Resource.Drawable.exo_notification_play = global::HanselmanAndroid.Resource.Drawable.exo_notification_play;
+			global::MediaManager.Resource.Drawable.exo_notification_previous = global::HanselmanAndroid.Resource.Drawable.exo_notification_previous;
+			global::MediaManager.Resource.Drawable.exo_notification_rewind = global::HanselmanAndroid.Resource.Drawable.exo_notification_rewind;
+			global::MediaManager.Resource.Drawable.exo_notification_small_icon = global::HanselmanAndroid.Resource.Drawable.exo_notification_small_icon;
+			global::MediaManager.Resource.Drawable.exo_notification_stop = global::HanselmanAndroid.Resource.Drawable.exo_notification_stop;
+			global::MediaManager.Resource.Drawable.notification_action_background = global::HanselmanAndroid.Resource.Drawable.notification_action_background;
+			global::MediaManager.Resource.Drawable.notification_bg = global::HanselmanAndroid.Resource.Drawable.notification_bg;
+			global::MediaManager.Resource.Drawable.notification_bg_low = global::HanselmanAndroid.Resource.Drawable.notification_bg_low;
+			global::MediaManager.Resource.Drawable.notification_bg_low_normal = global::HanselmanAndroid.Resource.Drawable.notification_bg_low_normal;
+			global::MediaManager.Resource.Drawable.notification_bg_low_pressed = global::HanselmanAndroid.Resource.Drawable.notification_bg_low_pressed;
+			global::MediaManager.Resource.Drawable.notification_bg_normal = global::HanselmanAndroid.Resource.Drawable.notification_bg_normal;
+			global::MediaManager.Resource.Drawable.notification_bg_normal_pressed = global::HanselmanAndroid.Resource.Drawable.notification_bg_normal_pressed;
+			global::MediaManager.Resource.Drawable.notification_icon_background = global::HanselmanAndroid.Resource.Drawable.notification_icon_background;
+			global::MediaManager.Resource.Drawable.notification_template_icon_bg = global::HanselmanAndroid.Resource.Drawable.notification_template_icon_bg;
+			global::MediaManager.Resource.Drawable.notification_template_icon_low_bg = global::HanselmanAndroid.Resource.Drawable.notification_template_icon_low_bg;
+			global::MediaManager.Resource.Drawable.notification_tile_bg = global::HanselmanAndroid.Resource.Drawable.notification_tile_bg;
+			global::MediaManager.Resource.Drawable.notify_panel_notification_icon_bg = global::HanselmanAndroid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::MediaManager.Resource.Drawable.tooltip_frame_dark = global::HanselmanAndroid.Resource.Drawable.tooltip_frame_dark;
+			global::MediaManager.Resource.Drawable.tooltip_frame_light = global::HanselmanAndroid.Resource.Drawable.tooltip_frame_light;
+			global::MediaManager.Resource.Id.ALT = global::HanselmanAndroid.Resource.Id.ALT;
+			global::MediaManager.Resource.Id.CTRL = global::HanselmanAndroid.Resource.Id.CTRL;
+			global::MediaManager.Resource.Id.FUNCTION = global::HanselmanAndroid.Resource.Id.FUNCTION;
+			global::MediaManager.Resource.Id.META = global::HanselmanAndroid.Resource.Id.META;
+			global::MediaManager.Resource.Id.SHIFT = global::HanselmanAndroid.Resource.Id.SHIFT;
+			global::MediaManager.Resource.Id.SYM = global::HanselmanAndroid.Resource.Id.SYM;
+			global::MediaManager.Resource.Id.action0 = global::HanselmanAndroid.Resource.Id.action0;
+			global::MediaManager.Resource.Id.action_bar = global::HanselmanAndroid.Resource.Id.action_bar;
+			global::MediaManager.Resource.Id.action_bar_activity_content = global::HanselmanAndroid.Resource.Id.action_bar_activity_content;
+			global::MediaManager.Resource.Id.action_bar_container = global::HanselmanAndroid.Resource.Id.action_bar_container;
+			global::MediaManager.Resource.Id.action_bar_root = global::HanselmanAndroid.Resource.Id.action_bar_root;
+			global::MediaManager.Resource.Id.action_bar_spinner = global::HanselmanAndroid.Resource.Id.action_bar_spinner;
+			global::MediaManager.Resource.Id.action_bar_subtitle = global::HanselmanAndroid.Resource.Id.action_bar_subtitle;
+			global::MediaManager.Resource.Id.action_bar_title = global::HanselmanAndroid.Resource.Id.action_bar_title;
+			global::MediaManager.Resource.Id.action_container = global::HanselmanAndroid.Resource.Id.action_container;
+			global::MediaManager.Resource.Id.action_context_bar = global::HanselmanAndroid.Resource.Id.action_context_bar;
+			global::MediaManager.Resource.Id.action_divider = global::HanselmanAndroid.Resource.Id.action_divider;
+			global::MediaManager.Resource.Id.action_image = global::HanselmanAndroid.Resource.Id.action_image;
+			global::MediaManager.Resource.Id.action_menu_divider = global::HanselmanAndroid.Resource.Id.action_menu_divider;
+			global::MediaManager.Resource.Id.action_menu_presenter = global::HanselmanAndroid.Resource.Id.action_menu_presenter;
+			global::MediaManager.Resource.Id.action_mode_bar = global::HanselmanAndroid.Resource.Id.action_mode_bar;
+			global::MediaManager.Resource.Id.action_mode_bar_stub = global::HanselmanAndroid.Resource.Id.action_mode_bar_stub;
+			global::MediaManager.Resource.Id.action_mode_close_button = global::HanselmanAndroid.Resource.Id.action_mode_close_button;
+			global::MediaManager.Resource.Id.action_text = global::HanselmanAndroid.Resource.Id.action_text;
+			global::MediaManager.Resource.Id.actions = global::HanselmanAndroid.Resource.Id.actions;
+			global::MediaManager.Resource.Id.activity_chooser_view_content = global::HanselmanAndroid.Resource.Id.activity_chooser_view_content;
+			global::MediaManager.Resource.Id.add = global::HanselmanAndroid.Resource.Id.add;
+			global::MediaManager.Resource.Id.alertTitle = global::HanselmanAndroid.Resource.Id.alertTitle;
+			global::MediaManager.Resource.Id.all = global::HanselmanAndroid.Resource.Id.all;
+			global::MediaManager.Resource.Id.always = global::HanselmanAndroid.Resource.Id.always;
+			global::MediaManager.Resource.Id.async = global::HanselmanAndroid.Resource.Id.async;
+			global::MediaManager.Resource.Id.beginning = global::HanselmanAndroid.Resource.Id.beginning;
+			global::MediaManager.Resource.Id.blocking = global::HanselmanAndroid.Resource.Id.blocking;
+			global::MediaManager.Resource.Id.bottom = global::HanselmanAndroid.Resource.Id.bottom;
+			global::MediaManager.Resource.Id.buttonPanel = global::HanselmanAndroid.Resource.Id.buttonPanel;
+			global::MediaManager.Resource.Id.cancel_action = global::HanselmanAndroid.Resource.Id.cancel_action;
+			global::MediaManager.Resource.Id.checkbox = global::HanselmanAndroid.Resource.Id.checkbox;
+			global::MediaManager.Resource.Id.chronometer = global::HanselmanAndroid.Resource.Id.chronometer;
+			global::MediaManager.Resource.Id.collapseActionView = global::HanselmanAndroid.Resource.Id.collapseActionView;
+			global::MediaManager.Resource.Id.contentPanel = global::HanselmanAndroid.Resource.Id.contentPanel;
+			global::MediaManager.Resource.Id.custom = global::HanselmanAndroid.Resource.Id.custom;
+			global::MediaManager.Resource.Id.customPanel = global::HanselmanAndroid.Resource.Id.customPanel;
+			global::MediaManager.Resource.Id.decor_content_parent = global::HanselmanAndroid.Resource.Id.decor_content_parent;
+			global::MediaManager.Resource.Id.default_activity_button = global::HanselmanAndroid.Resource.Id.default_activity_button;
+			global::MediaManager.Resource.Id.disableHome = global::HanselmanAndroid.Resource.Id.disableHome;
+			global::MediaManager.Resource.Id.edit_query = global::HanselmanAndroid.Resource.Id.edit_query;
+			global::MediaManager.Resource.Id.end = global::HanselmanAndroid.Resource.Id.end;
+			global::MediaManager.Resource.Id.end_padder = global::HanselmanAndroid.Resource.Id.end_padder;
+			global::MediaManager.Resource.Id.exo_artwork = global::HanselmanAndroid.Resource.Id.exo_artwork;
+			global::MediaManager.Resource.Id.exo_buffering = global::HanselmanAndroid.Resource.Id.exo_buffering;
+			global::MediaManager.Resource.Id.exo_content_frame = global::HanselmanAndroid.Resource.Id.exo_content_frame;
+			global::MediaManager.Resource.Id.exo_controller = global::HanselmanAndroid.Resource.Id.exo_controller;
+			global::MediaManager.Resource.Id.exo_controller_placeholder = global::HanselmanAndroid.Resource.Id.exo_controller_placeholder;
+			global::MediaManager.Resource.Id.exo_duration = global::HanselmanAndroid.Resource.Id.exo_duration;
+			global::MediaManager.Resource.Id.exo_error_message = global::HanselmanAndroid.Resource.Id.exo_error_message;
+			global::MediaManager.Resource.Id.exo_ffwd = global::HanselmanAndroid.Resource.Id.exo_ffwd;
+			global::MediaManager.Resource.Id.exo_next = global::HanselmanAndroid.Resource.Id.exo_next;
+			global::MediaManager.Resource.Id.exo_overlay = global::HanselmanAndroid.Resource.Id.exo_overlay;
+			global::MediaManager.Resource.Id.exo_pause = global::HanselmanAndroid.Resource.Id.exo_pause;
+			global::MediaManager.Resource.Id.exo_play = global::HanselmanAndroid.Resource.Id.exo_play;
+			global::MediaManager.Resource.Id.exo_position = global::HanselmanAndroid.Resource.Id.exo_position;
+			global::MediaManager.Resource.Id.exo_prev = global::HanselmanAndroid.Resource.Id.exo_prev;
+			global::MediaManager.Resource.Id.exo_progress = global::HanselmanAndroid.Resource.Id.exo_progress;
+			global::MediaManager.Resource.Id.exo_repeat_toggle = global::HanselmanAndroid.Resource.Id.exo_repeat_toggle;
+			global::MediaManager.Resource.Id.exo_rew = global::HanselmanAndroid.Resource.Id.exo_rew;
+			global::MediaManager.Resource.Id.exo_shuffle = global::HanselmanAndroid.Resource.Id.exo_shuffle;
+			global::MediaManager.Resource.Id.exo_shutter = global::HanselmanAndroid.Resource.Id.exo_shutter;
+			global::MediaManager.Resource.Id.exo_subtitles = global::HanselmanAndroid.Resource.Id.exo_subtitles;
+			global::MediaManager.Resource.Id.exo_track_selection_view = global::HanselmanAndroid.Resource.Id.exo_track_selection_view;
+			global::MediaManager.Resource.Id.expand_activities_button = global::HanselmanAndroid.Resource.Id.expand_activities_button;
+			global::MediaManager.Resource.Id.expanded_menu = global::HanselmanAndroid.Resource.Id.expanded_menu;
+			global::MediaManager.Resource.Id.fill = global::HanselmanAndroid.Resource.Id.fill;
+			global::MediaManager.Resource.Id.fit = global::HanselmanAndroid.Resource.Id.fit;
+			global::MediaManager.Resource.Id.fixed_height = global::HanselmanAndroid.Resource.Id.fixed_height;
+			global::MediaManager.Resource.Id.fixed_width = global::HanselmanAndroid.Resource.Id.fixed_width;
+			global::MediaManager.Resource.Id.forever = global::HanselmanAndroid.Resource.Id.forever;
+			global::MediaManager.Resource.Id.home = global::HanselmanAndroid.Resource.Id.home;
+			global::MediaManager.Resource.Id.homeAsUp = global::HanselmanAndroid.Resource.Id.homeAsUp;
+			global::MediaManager.Resource.Id.icon = global::HanselmanAndroid.Resource.Id.icon;
+			global::MediaManager.Resource.Id.icon_group = global::HanselmanAndroid.Resource.Id.icon_group;
+			global::MediaManager.Resource.Id.ifRoom = global::HanselmanAndroid.Resource.Id.ifRoom;
+			global::MediaManager.Resource.Id.image = global::HanselmanAndroid.Resource.Id.image;
+			global::MediaManager.Resource.Id.info = global::HanselmanAndroid.Resource.Id.info;
+			global::MediaManager.Resource.Id.italic = global::HanselmanAndroid.Resource.Id.italic;
+			global::MediaManager.Resource.Id.line1 = global::HanselmanAndroid.Resource.Id.line1;
+			global::MediaManager.Resource.Id.line3 = global::HanselmanAndroid.Resource.Id.line3;
+			global::MediaManager.Resource.Id.listMode = global::HanselmanAndroid.Resource.Id.listMode;
+			global::MediaManager.Resource.Id.list_item = global::HanselmanAndroid.Resource.Id.list_item;
+			global::MediaManager.Resource.Id.media_actions = global::HanselmanAndroid.Resource.Id.media_actions;
+			global::MediaManager.Resource.Id.message = global::HanselmanAndroid.Resource.Id.message;
+			global::MediaManager.Resource.Id.middle = global::HanselmanAndroid.Resource.Id.middle;
+			global::MediaManager.Resource.Id.multiply = global::HanselmanAndroid.Resource.Id.multiply;
+			global::MediaManager.Resource.Id.never = global::HanselmanAndroid.Resource.Id.never;
+			global::MediaManager.Resource.Id.none = global::HanselmanAndroid.Resource.Id.none;
+			global::MediaManager.Resource.Id.normal = global::HanselmanAndroid.Resource.Id.normal;
+			global::MediaManager.Resource.Id.notification_background = global::HanselmanAndroid.Resource.Id.notification_background;
+			global::MediaManager.Resource.Id.notification_main_column = global::HanselmanAndroid.Resource.Id.notification_main_column;
+			global::MediaManager.Resource.Id.notification_main_column_container = global::HanselmanAndroid.Resource.Id.notification_main_column_container;
+			global::MediaManager.Resource.Id.one = global::HanselmanAndroid.Resource.Id.one;
+			global::MediaManager.Resource.Id.parentPanel = global::HanselmanAndroid.Resource.Id.parentPanel;
+			global::MediaManager.Resource.Id.progress_circular = global::HanselmanAndroid.Resource.Id.progress_circular;
+			global::MediaManager.Resource.Id.progress_horizontal = global::HanselmanAndroid.Resource.Id.progress_horizontal;
+			global::MediaManager.Resource.Id.radio = global::HanselmanAndroid.Resource.Id.radio;
+			global::MediaManager.Resource.Id.right_icon = global::HanselmanAndroid.Resource.Id.right_icon;
+			global::MediaManager.Resource.Id.right_side = global::HanselmanAndroid.Resource.Id.right_side;
+			global::MediaManager.Resource.Id.screen = global::HanselmanAndroid.Resource.Id.screen;
+			global::MediaManager.Resource.Id.scrollIndicatorDown = global::HanselmanAndroid.Resource.Id.scrollIndicatorDown;
+			global::MediaManager.Resource.Id.scrollIndicatorUp = global::HanselmanAndroid.Resource.Id.scrollIndicatorUp;
+			global::MediaManager.Resource.Id.scrollView = global::HanselmanAndroid.Resource.Id.scrollView;
+			global::MediaManager.Resource.Id.search_badge = global::HanselmanAndroid.Resource.Id.search_badge;
+			global::MediaManager.Resource.Id.search_bar = global::HanselmanAndroid.Resource.Id.search_bar;
+			global::MediaManager.Resource.Id.search_button = global::HanselmanAndroid.Resource.Id.search_button;
+			global::MediaManager.Resource.Id.search_close_btn = global::HanselmanAndroid.Resource.Id.search_close_btn;
+			global::MediaManager.Resource.Id.search_edit_frame = global::HanselmanAndroid.Resource.Id.search_edit_frame;
+			global::MediaManager.Resource.Id.search_go_btn = global::HanselmanAndroid.Resource.Id.search_go_btn;
+			global::MediaManager.Resource.Id.search_mag_icon = global::HanselmanAndroid.Resource.Id.search_mag_icon;
+			global::MediaManager.Resource.Id.search_plate = global::HanselmanAndroid.Resource.Id.search_plate;
+			global::MediaManager.Resource.Id.search_src_text = global::HanselmanAndroid.Resource.Id.search_src_text;
+			global::MediaManager.Resource.Id.search_voice_btn = global::HanselmanAndroid.Resource.Id.search_voice_btn;
+			global::MediaManager.Resource.Id.select_dialog_listview = global::HanselmanAndroid.Resource.Id.select_dialog_listview;
+			global::MediaManager.Resource.Id.shortcut = global::HanselmanAndroid.Resource.Id.shortcut;
+			global::MediaManager.Resource.Id.showCustom = global::HanselmanAndroid.Resource.Id.showCustom;
+			global::MediaManager.Resource.Id.showHome = global::HanselmanAndroid.Resource.Id.showHome;
+			global::MediaManager.Resource.Id.showTitle = global::HanselmanAndroid.Resource.Id.showTitle;
+			global::MediaManager.Resource.Id.spacer = global::HanselmanAndroid.Resource.Id.spacer;
+			global::MediaManager.Resource.Id.split_action_bar = global::HanselmanAndroid.Resource.Id.split_action_bar;
+			global::MediaManager.Resource.Id.src_atop = global::HanselmanAndroid.Resource.Id.src_atop;
+			global::MediaManager.Resource.Id.src_in = global::HanselmanAndroid.Resource.Id.src_in;
+			global::MediaManager.Resource.Id.src_over = global::HanselmanAndroid.Resource.Id.src_over;
+			global::MediaManager.Resource.Id.status_bar_latest_event_content = global::HanselmanAndroid.Resource.Id.status_bar_latest_event_content;
+			global::MediaManager.Resource.Id.submenuarrow = global::HanselmanAndroid.Resource.Id.submenuarrow;
+			global::MediaManager.Resource.Id.submit_area = global::HanselmanAndroid.Resource.Id.submit_area;
+			global::MediaManager.Resource.Id.surface_view = global::HanselmanAndroid.Resource.Id.surface_view;
+			global::MediaManager.Resource.Id.tabMode = global::HanselmanAndroid.Resource.Id.tabMode;
+			global::MediaManager.Resource.Id.tag_transition_group = global::HanselmanAndroid.Resource.Id.tag_transition_group;
+			global::MediaManager.Resource.Id.text = global::HanselmanAndroid.Resource.Id.text;
+			global::MediaManager.Resource.Id.text2 = global::HanselmanAndroid.Resource.Id.text2;
+			global::MediaManager.Resource.Id.textSpacerNoButtons = global::HanselmanAndroid.Resource.Id.textSpacerNoButtons;
+			global::MediaManager.Resource.Id.textSpacerNoTitle = global::HanselmanAndroid.Resource.Id.textSpacerNoTitle;
+			global::MediaManager.Resource.Id.texture_view = global::HanselmanAndroid.Resource.Id.texture_view;
+			global::MediaManager.Resource.Id.time = global::HanselmanAndroid.Resource.Id.time;
+			global::MediaManager.Resource.Id.title = global::HanselmanAndroid.Resource.Id.title;
+			global::MediaManager.Resource.Id.titleDividerNoCustom = global::HanselmanAndroid.Resource.Id.titleDividerNoCustom;
+			global::MediaManager.Resource.Id.title_template = global::HanselmanAndroid.Resource.Id.title_template;
+			global::MediaManager.Resource.Id.top = global::HanselmanAndroid.Resource.Id.top;
+			global::MediaManager.Resource.Id.topPanel = global::HanselmanAndroid.Resource.Id.topPanel;
+			global::MediaManager.Resource.Id.uniform = global::HanselmanAndroid.Resource.Id.uniform;
+			global::MediaManager.Resource.Id.up = global::HanselmanAndroid.Resource.Id.up;
+			global::MediaManager.Resource.Id.useLogo = global::HanselmanAndroid.Resource.Id.useLogo;
+			global::MediaManager.Resource.Id.withText = global::HanselmanAndroid.Resource.Id.withText;
+			global::MediaManager.Resource.Id.wrap_content = global::HanselmanAndroid.Resource.Id.wrap_content;
+			global::MediaManager.Resource.Id.zoom = global::HanselmanAndroid.Resource.Id.zoom;
+			global::MediaManager.Resource.Integer.abc_config_activityDefaultDur = global::HanselmanAndroid.Resource.Integer.abc_config_activityDefaultDur;
+			global::MediaManager.Resource.Integer.abc_config_activityShortDur = global::HanselmanAndroid.Resource.Integer.abc_config_activityShortDur;
+			global::MediaManager.Resource.Integer.cancel_button_image_alpha = global::HanselmanAndroid.Resource.Integer.cancel_button_image_alpha;
+			global::MediaManager.Resource.Integer.config_tooltipAnimTime = global::HanselmanAndroid.Resource.Integer.config_tooltipAnimTime;
+			global::MediaManager.Resource.Integer.status_bar_notification_info_maxnum = global::HanselmanAndroid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::MediaManager.Resource.Layout.abc_action_bar_title_item = global::HanselmanAndroid.Resource.Layout.abc_action_bar_title_item;
+			global::MediaManager.Resource.Layout.abc_action_bar_up_container = global::HanselmanAndroid.Resource.Layout.abc_action_bar_up_container;
+			global::MediaManager.Resource.Layout.abc_action_menu_item_layout = global::HanselmanAndroid.Resource.Layout.abc_action_menu_item_layout;
+			global::MediaManager.Resource.Layout.abc_action_menu_layout = global::HanselmanAndroid.Resource.Layout.abc_action_menu_layout;
+			global::MediaManager.Resource.Layout.abc_action_mode_bar = global::HanselmanAndroid.Resource.Layout.abc_action_mode_bar;
+			global::MediaManager.Resource.Layout.abc_action_mode_close_item_material = global::HanselmanAndroid.Resource.Layout.abc_action_mode_close_item_material;
+			global::MediaManager.Resource.Layout.abc_activity_chooser_view = global::HanselmanAndroid.Resource.Layout.abc_activity_chooser_view;
+			global::MediaManager.Resource.Layout.abc_activity_chooser_view_list_item = global::HanselmanAndroid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::MediaManager.Resource.Layout.abc_alert_dialog_button_bar_material = global::HanselmanAndroid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::MediaManager.Resource.Layout.abc_alert_dialog_material = global::HanselmanAndroid.Resource.Layout.abc_alert_dialog_material;
+			global::MediaManager.Resource.Layout.abc_alert_dialog_title_material = global::HanselmanAndroid.Resource.Layout.abc_alert_dialog_title_material;
+			global::MediaManager.Resource.Layout.abc_dialog_title_material = global::HanselmanAndroid.Resource.Layout.abc_dialog_title_material;
+			global::MediaManager.Resource.Layout.abc_expanded_menu_layout = global::HanselmanAndroid.Resource.Layout.abc_expanded_menu_layout;
+			global::MediaManager.Resource.Layout.abc_list_menu_item_checkbox = global::HanselmanAndroid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::MediaManager.Resource.Layout.abc_list_menu_item_icon = global::HanselmanAndroid.Resource.Layout.abc_list_menu_item_icon;
+			global::MediaManager.Resource.Layout.abc_list_menu_item_layout = global::HanselmanAndroid.Resource.Layout.abc_list_menu_item_layout;
+			global::MediaManager.Resource.Layout.abc_list_menu_item_radio = global::HanselmanAndroid.Resource.Layout.abc_list_menu_item_radio;
+			global::MediaManager.Resource.Layout.abc_popup_menu_header_item_layout = global::HanselmanAndroid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::MediaManager.Resource.Layout.abc_popup_menu_item_layout = global::HanselmanAndroid.Resource.Layout.abc_popup_menu_item_layout;
+			global::MediaManager.Resource.Layout.abc_screen_content_include = global::HanselmanAndroid.Resource.Layout.abc_screen_content_include;
+			global::MediaManager.Resource.Layout.abc_screen_simple = global::HanselmanAndroid.Resource.Layout.abc_screen_simple;
+			global::MediaManager.Resource.Layout.abc_screen_simple_overlay_action_mode = global::HanselmanAndroid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::MediaManager.Resource.Layout.abc_screen_toolbar = global::HanselmanAndroid.Resource.Layout.abc_screen_toolbar;
+			global::MediaManager.Resource.Layout.abc_search_dropdown_item_icons_2line = global::HanselmanAndroid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::MediaManager.Resource.Layout.abc_search_view = global::HanselmanAndroid.Resource.Layout.abc_search_view;
+			global::MediaManager.Resource.Layout.abc_select_dialog_material = global::HanselmanAndroid.Resource.Layout.abc_select_dialog_material;
+			global::MediaManager.Resource.Layout.exo_list_divider = global::HanselmanAndroid.Resource.Layout.exo_list_divider;
+			global::MediaManager.Resource.Layout.exo_playback_control_view = global::HanselmanAndroid.Resource.Layout.exo_playback_control_view;
+			global::MediaManager.Resource.Layout.exo_player_control_view = global::HanselmanAndroid.Resource.Layout.exo_player_control_view;
+			global::MediaManager.Resource.Layout.exo_player_view = global::HanselmanAndroid.Resource.Layout.exo_player_view;
+			global::MediaManager.Resource.Layout.exo_simple_player_view = global::HanselmanAndroid.Resource.Layout.exo_simple_player_view;
+			global::MediaManager.Resource.Layout.exo_track_selection_dialog = global::HanselmanAndroid.Resource.Layout.exo_track_selection_dialog;
+			global::MediaManager.Resource.Layout.notification_action = global::HanselmanAndroid.Resource.Layout.notification_action;
+			global::MediaManager.Resource.Layout.notification_action_tombstone = global::HanselmanAndroid.Resource.Layout.notification_action_tombstone;
+			global::MediaManager.Resource.Layout.notification_media_action = global::HanselmanAndroid.Resource.Layout.notification_media_action;
+			global::MediaManager.Resource.Layout.notification_media_cancel_action = global::HanselmanAndroid.Resource.Layout.notification_media_cancel_action;
+			global::MediaManager.Resource.Layout.notification_template_big_media = global::HanselmanAndroid.Resource.Layout.notification_template_big_media;
+			global::MediaManager.Resource.Layout.notification_template_big_media_custom = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_custom;
+			global::MediaManager.Resource.Layout.notification_template_big_media_narrow = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_narrow;
+			global::MediaManager.Resource.Layout.notification_template_big_media_narrow_custom = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::MediaManager.Resource.Layout.notification_template_custom_big = global::HanselmanAndroid.Resource.Layout.notification_template_custom_big;
+			global::MediaManager.Resource.Layout.notification_template_icon_group = global::HanselmanAndroid.Resource.Layout.notification_template_icon_group;
+			global::MediaManager.Resource.Layout.notification_template_lines_media = global::HanselmanAndroid.Resource.Layout.notification_template_lines_media;
+			global::MediaManager.Resource.Layout.notification_template_media = global::HanselmanAndroid.Resource.Layout.notification_template_media;
+			global::MediaManager.Resource.Layout.notification_template_media_custom = global::HanselmanAndroid.Resource.Layout.notification_template_media_custom;
+			global::MediaManager.Resource.Layout.notification_template_part_chronometer = global::HanselmanAndroid.Resource.Layout.notification_template_part_chronometer;
+			global::MediaManager.Resource.Layout.notification_template_part_time = global::HanselmanAndroid.Resource.Layout.notification_template_part_time;
+			global::MediaManager.Resource.Layout.select_dialog_item_material = global::HanselmanAndroid.Resource.Layout.select_dialog_item_material;
+			global::MediaManager.Resource.Layout.select_dialog_multichoice_material = global::HanselmanAndroid.Resource.Layout.select_dialog_multichoice_material;
+			global::MediaManager.Resource.Layout.select_dialog_singlechoice_material = global::HanselmanAndroid.Resource.Layout.select_dialog_singlechoice_material;
+			global::MediaManager.Resource.Layout.support_simple_spinner_dropdown_item = global::HanselmanAndroid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::MediaManager.Resource.String.abc_action_bar_home_description = global::HanselmanAndroid.Resource.String.abc_action_bar_home_description;
+			global::MediaManager.Resource.String.abc_action_bar_up_description = global::HanselmanAndroid.Resource.String.abc_action_bar_up_description;
+			global::MediaManager.Resource.String.abc_action_menu_overflow_description = global::HanselmanAndroid.Resource.String.abc_action_menu_overflow_description;
+			global::MediaManager.Resource.String.abc_action_mode_done = global::HanselmanAndroid.Resource.String.abc_action_mode_done;
+			global::MediaManager.Resource.String.abc_activity_chooser_view_see_all = global::HanselmanAndroid.Resource.String.abc_activity_chooser_view_see_all;
+			global::MediaManager.Resource.String.abc_activitychooserview_choose_application = global::HanselmanAndroid.Resource.String.abc_activitychooserview_choose_application;
+			global::MediaManager.Resource.String.abc_capital_off = global::HanselmanAndroid.Resource.String.abc_capital_off;
+			global::MediaManager.Resource.String.abc_capital_on = global::HanselmanAndroid.Resource.String.abc_capital_on;
+			global::MediaManager.Resource.String.abc_font_family_body_1_material = global::HanselmanAndroid.Resource.String.abc_font_family_body_1_material;
+			global::MediaManager.Resource.String.abc_font_family_body_2_material = global::HanselmanAndroid.Resource.String.abc_font_family_body_2_material;
+			global::MediaManager.Resource.String.abc_font_family_button_material = global::HanselmanAndroid.Resource.String.abc_font_family_button_material;
+			global::MediaManager.Resource.String.abc_font_family_caption_material = global::HanselmanAndroid.Resource.String.abc_font_family_caption_material;
+			global::MediaManager.Resource.String.abc_font_family_display_1_material = global::HanselmanAndroid.Resource.String.abc_font_family_display_1_material;
+			global::MediaManager.Resource.String.abc_font_family_display_2_material = global::HanselmanAndroid.Resource.String.abc_font_family_display_2_material;
+			global::MediaManager.Resource.String.abc_font_family_display_3_material = global::HanselmanAndroid.Resource.String.abc_font_family_display_3_material;
+			global::MediaManager.Resource.String.abc_font_family_display_4_material = global::HanselmanAndroid.Resource.String.abc_font_family_display_4_material;
+			global::MediaManager.Resource.String.abc_font_family_headline_material = global::HanselmanAndroid.Resource.String.abc_font_family_headline_material;
+			global::MediaManager.Resource.String.abc_font_family_menu_material = global::HanselmanAndroid.Resource.String.abc_font_family_menu_material;
+			global::MediaManager.Resource.String.abc_font_family_subhead_material = global::HanselmanAndroid.Resource.String.abc_font_family_subhead_material;
+			global::MediaManager.Resource.String.abc_font_family_title_material = global::HanselmanAndroid.Resource.String.abc_font_family_title_material;
+			global::MediaManager.Resource.String.abc_search_hint = global::HanselmanAndroid.Resource.String.abc_search_hint;
+			global::MediaManager.Resource.String.abc_searchview_description_clear = global::HanselmanAndroid.Resource.String.abc_searchview_description_clear;
+			global::MediaManager.Resource.String.abc_searchview_description_query = global::HanselmanAndroid.Resource.String.abc_searchview_description_query;
+			global::MediaManager.Resource.String.abc_searchview_description_search = global::HanselmanAndroid.Resource.String.abc_searchview_description_search;
+			global::MediaManager.Resource.String.abc_searchview_description_submit = global::HanselmanAndroid.Resource.String.abc_searchview_description_submit;
+			global::MediaManager.Resource.String.abc_searchview_description_voice = global::HanselmanAndroid.Resource.String.abc_searchview_description_voice;
+			global::MediaManager.Resource.String.abc_shareactionprovider_share_with = global::HanselmanAndroid.Resource.String.abc_shareactionprovider_share_with;
+			global::MediaManager.Resource.String.abc_shareactionprovider_share_with_application = global::HanselmanAndroid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::MediaManager.Resource.String.abc_toolbar_collapse_description = global::HanselmanAndroid.Resource.String.abc_toolbar_collapse_description;
+			global::MediaManager.Resource.String.download_notification_channel_name = global::HanselmanAndroid.Resource.String.download_notification_channel_name;
+			global::MediaManager.Resource.String.exo_controls_fastforward_description = global::HanselmanAndroid.Resource.String.exo_controls_fastforward_description;
+			global::MediaManager.Resource.String.exo_controls_fullscreen_description = global::HanselmanAndroid.Resource.String.exo_controls_fullscreen_description;
+			global::MediaManager.Resource.String.exo_controls_next_description = global::HanselmanAndroid.Resource.String.exo_controls_next_description;
+			global::MediaManager.Resource.String.exo_controls_pause_description = global::HanselmanAndroid.Resource.String.exo_controls_pause_description;
+			global::MediaManager.Resource.String.exo_controls_play_description = global::HanselmanAndroid.Resource.String.exo_controls_play_description;
+			global::MediaManager.Resource.String.exo_controls_previous_description = global::HanselmanAndroid.Resource.String.exo_controls_previous_description;
+			global::MediaManager.Resource.String.exo_controls_repeat_all_description = global::HanselmanAndroid.Resource.String.exo_controls_repeat_all_description;
+			global::MediaManager.Resource.String.exo_controls_repeat_off_description = global::HanselmanAndroid.Resource.String.exo_controls_repeat_off_description;
+			global::MediaManager.Resource.String.exo_controls_repeat_one_description = global::HanselmanAndroid.Resource.String.exo_controls_repeat_one_description;
+			global::MediaManager.Resource.String.exo_controls_rewind_description = global::HanselmanAndroid.Resource.String.exo_controls_rewind_description;
+			global::MediaManager.Resource.String.exo_controls_shuffle_description = global::HanselmanAndroid.Resource.String.exo_controls_shuffle_description;
+			global::MediaManager.Resource.String.exo_controls_stop_description = global::HanselmanAndroid.Resource.String.exo_controls_stop_description;
+			global::MediaManager.Resource.String.exo_download_completed = global::HanselmanAndroid.Resource.String.exo_download_completed;
+			global::MediaManager.Resource.String.exo_download_description = global::HanselmanAndroid.Resource.String.exo_download_description;
+			global::MediaManager.Resource.String.exo_download_downloading = global::HanselmanAndroid.Resource.String.exo_download_downloading;
+			global::MediaManager.Resource.String.exo_download_failed = global::HanselmanAndroid.Resource.String.exo_download_failed;
+			global::MediaManager.Resource.String.exo_download_notification_channel_name = global::HanselmanAndroid.Resource.String.exo_download_notification_channel_name;
+			global::MediaManager.Resource.String.exo_download_removing = global::HanselmanAndroid.Resource.String.exo_download_removing;
+			global::MediaManager.Resource.String.exo_item_list = global::HanselmanAndroid.Resource.String.exo_item_list;
+			global::MediaManager.Resource.String.exo_media_action_repeat_all_description = global::HanselmanAndroid.Resource.String.exo_media_action_repeat_all_description;
+			global::MediaManager.Resource.String.exo_media_action_repeat_off_description = global::HanselmanAndroid.Resource.String.exo_media_action_repeat_off_description;
+			global::MediaManager.Resource.String.exo_media_action_repeat_one_description = global::HanselmanAndroid.Resource.String.exo_media_action_repeat_one_description;
+			global::MediaManager.Resource.String.exo_track_bitrate = global::HanselmanAndroid.Resource.String.exo_track_bitrate;
+			global::MediaManager.Resource.String.exo_track_mono = global::HanselmanAndroid.Resource.String.exo_track_mono;
+			global::MediaManager.Resource.String.exo_track_resolution = global::HanselmanAndroid.Resource.String.exo_track_resolution;
+			global::MediaManager.Resource.String.exo_track_selection_auto = global::HanselmanAndroid.Resource.String.exo_track_selection_auto;
+			global::MediaManager.Resource.String.exo_track_selection_none = global::HanselmanAndroid.Resource.String.exo_track_selection_none;
+			global::MediaManager.Resource.String.exo_track_selection_title_audio = global::HanselmanAndroid.Resource.String.exo_track_selection_title_audio;
+			global::MediaManager.Resource.String.exo_track_selection_title_text = global::HanselmanAndroid.Resource.String.exo_track_selection_title_text;
+			global::MediaManager.Resource.String.exo_track_selection_title_video = global::HanselmanAndroid.Resource.String.exo_track_selection_title_video;
+			global::MediaManager.Resource.String.exo_track_stereo = global::HanselmanAndroid.Resource.String.exo_track_stereo;
+			global::MediaManager.Resource.String.exo_track_surround = global::HanselmanAndroid.Resource.String.exo_track_surround;
+			global::MediaManager.Resource.String.exo_track_surround_5_point_1 = global::HanselmanAndroid.Resource.String.exo_track_surround_5_point_1;
+			global::MediaManager.Resource.String.exo_track_surround_7_point_1 = global::HanselmanAndroid.Resource.String.exo_track_surround_7_point_1;
+			global::MediaManager.Resource.String.exo_track_unknown = global::HanselmanAndroid.Resource.String.exo_track_unknown;
+			global::MediaManager.Resource.String.search_menu_title = global::HanselmanAndroid.Resource.String.search_menu_title;
+			global::MediaManager.Resource.String.status_bar_notification_info_overflow = global::HanselmanAndroid.Resource.String.status_bar_notification_info_overflow;
+			global::MediaManager.Resource.Style.AlertDialog_AppCompat = global::HanselmanAndroid.Resource.Style.AlertDialog_AppCompat;
+			global::MediaManager.Resource.Style.AlertDialog_AppCompat_Light = global::HanselmanAndroid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::MediaManager.Resource.Style.Animation_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Animation_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Animation_AppCompat_DropDownUp = global::HanselmanAndroid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::MediaManager.Resource.Style.Animation_AppCompat_Tooltip = global::HanselmanAndroid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::MediaManager.Resource.Style.Base_AlertDialog_AppCompat = global::HanselmanAndroid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::MediaManager.Resource.Style.Base_AlertDialog_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::MediaManager.Resource.Style.Base_Animation_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::HanselmanAndroid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::MediaManager.Resource.Style.Base_Animation_AppCompat_Tooltip = global::HanselmanAndroid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::MediaManager.Resource.Style.Base_DialogWindowTitle_AppCompat = global::HanselmanAndroid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::MediaManager.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::HanselmanAndroid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Button = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Large = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Small = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::MediaManager.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::MediaManager.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::MediaManager.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::MediaManager.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::HanselmanAndroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::MediaManager.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::MediaManager.Resource.Style.Base_ThemeOverlay_AppCompat = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::MediaManager.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::MediaManager.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::MediaManager.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::MediaManager.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::MediaManager.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::MediaManager.Resource.Style.Base_V21_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::MediaManager.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Base_V21_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::MediaManager.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::HanselmanAndroid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::MediaManager.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Base_V22_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::MediaManager.Resource.Style.Base_V22_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::MediaManager.Resource.Style.Base_V23_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::MediaManager.Resource.Style.Base_V23_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::MediaManager.Resource.Style.Base_V26_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::MediaManager.Resource.Style.Base_V26_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::MediaManager.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::HanselmanAndroid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::MediaManager.Resource.Style.Base_V7_Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::MediaManager.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Base_V7_Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::MediaManager.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::HanselmanAndroid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::MediaManager.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::HanselmanAndroid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::MediaManager.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::HanselmanAndroid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::MediaManager.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::HanselmanAndroid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionButton = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActionMode = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Button = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Button_Small = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_EditText = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ImageButton = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ListView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_RatingBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_SearchView = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_SeekBar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Spinner = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Toolbar = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::MediaManager.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::HanselmanAndroid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::MediaManager.Resource.Style.ExoMediaButton = global::HanselmanAndroid.Resource.Style.ExoMediaButton;
+			global::MediaManager.Resource.Style.ExoMediaButton_FastForward = global::HanselmanAndroid.Resource.Style.ExoMediaButton_FastForward;
+			global::MediaManager.Resource.Style.ExoMediaButton_Next = global::HanselmanAndroid.Resource.Style.ExoMediaButton_Next;
+			global::MediaManager.Resource.Style.ExoMediaButton_Pause = global::HanselmanAndroid.Resource.Style.ExoMediaButton_Pause;
+			global::MediaManager.Resource.Style.ExoMediaButton_Play = global::HanselmanAndroid.Resource.Style.ExoMediaButton_Play;
+			global::MediaManager.Resource.Style.ExoMediaButton_Previous = global::HanselmanAndroid.Resource.Style.ExoMediaButton_Previous;
+			global::MediaManager.Resource.Style.ExoMediaButton_Rewind = global::HanselmanAndroid.Resource.Style.ExoMediaButton_Rewind;
+			global::MediaManager.Resource.Style.ExoMediaButton_Shuffle = global::HanselmanAndroid.Resource.Style.ExoMediaButton_Shuffle;
+			global::MediaManager.Resource.Style.Platform_AppCompat = global::HanselmanAndroid.Resource.Style.Platform_AppCompat;
+			global::MediaManager.Resource.Style.Platform_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Platform_AppCompat_Light;
+			global::MediaManager.Resource.Style.Platform_ThemeOverlay_AppCompat = global::HanselmanAndroid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::MediaManager.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::HanselmanAndroid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::MediaManager.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::MediaManager.Resource.Style.Platform_V21_AppCompat = global::HanselmanAndroid.Resource.Style.Platform_V21_AppCompat;
+			global::MediaManager.Resource.Style.Platform_V21_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::MediaManager.Resource.Style.Platform_V25_AppCompat = global::HanselmanAndroid.Resource.Style.Platform_V25_AppCompat;
+			global::MediaManager.Resource.Style.Platform_V25_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::MediaManager.Resource.Style.Platform_Widget_AppCompat_Spinner = global::HanselmanAndroid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::MediaManager.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::HanselmanAndroid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::MediaManager.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::HanselmanAndroid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::MediaManager.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::HanselmanAndroid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::MediaManager.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::HanselmanAndroid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Body1 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Body2 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Button = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Caption = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Display1 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Display2 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Display3 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Display4 = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Headline = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Large = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Medium = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Menu = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Small = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Subhead = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Tooltip = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::MediaManager.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::HanselmanAndroid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Info = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Time = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::MediaManager.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::MediaManager.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::HanselmanAndroid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::MediaManager.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::HanselmanAndroid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::MediaManager.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::MediaManager.Resource.Style.Theme_AppCompat = global::HanselmanAndroid.Resource.Style.Theme_AppCompat;
+			global::MediaManager.Resource.Style.Theme_AppCompat_CompactMenu = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::MediaManager.Resource.Style.Theme_AppCompat_DayNight = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight;
+			global::MediaManager.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::MediaManager.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::MediaManager.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::MediaManager.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::MediaManager.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::MediaManager.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::MediaManager.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Light = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Light_Dialog = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::MediaManager.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::MediaManager.Resource.Style.Theme_AppCompat_NoActionBar = global::HanselmanAndroid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::MediaManager.Resource.Style.ThemeOverlay_AppCompat = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat;
+			global::MediaManager.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::MediaManager.Resource.Style.ThemeOverlay_AppCompat_Dark = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::MediaManager.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::MediaManager.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::MediaManager.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::MediaManager.Resource.Style.ThemeOverlay_AppCompat_Light = global::HanselmanAndroid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionButton = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActionMode = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ActivityChooserView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Button = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Button_Borderless = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Button_Colored = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Button_Small = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ButtonBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::MediaManager.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::MediaManager.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::MediaManager.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::MediaManager.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::MediaManager.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::MediaManager.Resource.Style.Widget_AppCompat_EditText = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_EditText;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ImageButton = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionButton = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_SearchView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ListMenuView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ListPopupWindow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ListView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ListView_DropDown = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ListView_Menu = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::MediaManager.Resource.Style.Widget_AppCompat_PopupMenu = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::MediaManager.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::MediaManager.Resource.Style.Widget_AppCompat_PopupWindow = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ProgressBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::MediaManager.Resource.Style.Widget_AppCompat_RatingBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::MediaManager.Resource.Style.Widget_AppCompat_RatingBar_Small = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::MediaManager.Resource.Style.Widget_AppCompat_SearchView = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_SearchView;
+			global::MediaManager.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_SeekBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Spinner = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Spinner;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::MediaManager.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Toolbar = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::MediaManager.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::HanselmanAndroid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::MediaManager.Resource.Style.Widget_Compat_NotificationActionContainer = global::HanselmanAndroid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::MediaManager.Resource.Style.Widget_Compat_NotificationActionText = global::HanselmanAndroid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::MediaManager.Resource.Styleable.ActionBar = global::HanselmanAndroid.Resource.Styleable.ActionBar;
+			global::MediaManager.Resource.Styleable.ActionBar_background = global::HanselmanAndroid.Resource.Styleable.ActionBar_background;
+			global::MediaManager.Resource.Styleable.ActionBar_backgroundSplit = global::HanselmanAndroid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::MediaManager.Resource.Styleable.ActionBar_backgroundStacked = global::HanselmanAndroid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::MediaManager.Resource.Styleable.ActionBar_contentInsetEnd = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::MediaManager.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::MediaManager.Resource.Styleable.ActionBar_contentInsetLeft = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::MediaManager.Resource.Styleable.ActionBar_contentInsetRight = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::MediaManager.Resource.Styleable.ActionBar_contentInsetStart = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::MediaManager.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::HanselmanAndroid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::MediaManager.Resource.Styleable.ActionBar_customNavigationLayout = global::HanselmanAndroid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::MediaManager.Resource.Styleable.ActionBar_displayOptions = global::HanselmanAndroid.Resource.Styleable.ActionBar_displayOptions;
+			global::MediaManager.Resource.Styleable.ActionBar_divider = global::HanselmanAndroid.Resource.Styleable.ActionBar_divider;
+			global::MediaManager.Resource.Styleable.ActionBar_elevation = global::HanselmanAndroid.Resource.Styleable.ActionBar_elevation;
+			global::MediaManager.Resource.Styleable.ActionBar_height = global::HanselmanAndroid.Resource.Styleable.ActionBar_height;
+			global::MediaManager.Resource.Styleable.ActionBar_hideOnContentScroll = global::HanselmanAndroid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::MediaManager.Resource.Styleable.ActionBar_homeAsUpIndicator = global::HanselmanAndroid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::MediaManager.Resource.Styleable.ActionBar_homeLayout = global::HanselmanAndroid.Resource.Styleable.ActionBar_homeLayout;
+			global::MediaManager.Resource.Styleable.ActionBar_icon = global::HanselmanAndroid.Resource.Styleable.ActionBar_icon;
+			global::MediaManager.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::HanselmanAndroid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::MediaManager.Resource.Styleable.ActionBar_itemPadding = global::HanselmanAndroid.Resource.Styleable.ActionBar_itemPadding;
+			global::MediaManager.Resource.Styleable.ActionBar_logo = global::HanselmanAndroid.Resource.Styleable.ActionBar_logo;
+			global::MediaManager.Resource.Styleable.ActionBar_navigationMode = global::HanselmanAndroid.Resource.Styleable.ActionBar_navigationMode;
+			global::MediaManager.Resource.Styleable.ActionBar_popupTheme = global::HanselmanAndroid.Resource.Styleable.ActionBar_popupTheme;
+			global::MediaManager.Resource.Styleable.ActionBar_progressBarPadding = global::HanselmanAndroid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::MediaManager.Resource.Styleable.ActionBar_progressBarStyle = global::HanselmanAndroid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::MediaManager.Resource.Styleable.ActionBar_subtitle = global::HanselmanAndroid.Resource.Styleable.ActionBar_subtitle;
+			global::MediaManager.Resource.Styleable.ActionBar_subtitleTextStyle = global::HanselmanAndroid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::MediaManager.Resource.Styleable.ActionBar_title = global::HanselmanAndroid.Resource.Styleable.ActionBar_title;
+			global::MediaManager.Resource.Styleable.ActionBar_titleTextStyle = global::HanselmanAndroid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::MediaManager.Resource.Styleable.ActionBarLayout = global::HanselmanAndroid.Resource.Styleable.ActionBarLayout;
+			global::MediaManager.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::HanselmanAndroid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::MediaManager.Resource.Styleable.ActionMenuItemView = global::HanselmanAndroid.Resource.Styleable.ActionMenuItemView;
+			global::MediaManager.Resource.Styleable.ActionMenuItemView_android_minWidth = global::HanselmanAndroid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::MediaManager.Resource.Styleable.ActionMenuView = global::HanselmanAndroid.Resource.Styleable.ActionMenuView;
+			global::MediaManager.Resource.Styleable.ActionMode = global::HanselmanAndroid.Resource.Styleable.ActionMode;
+			global::MediaManager.Resource.Styleable.ActionMode_background = global::HanselmanAndroid.Resource.Styleable.ActionMode_background;
+			global::MediaManager.Resource.Styleable.ActionMode_backgroundSplit = global::HanselmanAndroid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::MediaManager.Resource.Styleable.ActionMode_closeItemLayout = global::HanselmanAndroid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::MediaManager.Resource.Styleable.ActionMode_height = global::HanselmanAndroid.Resource.Styleable.ActionMode_height;
+			global::MediaManager.Resource.Styleable.ActionMode_subtitleTextStyle = global::HanselmanAndroid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::MediaManager.Resource.Styleable.ActionMode_titleTextStyle = global::HanselmanAndroid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::MediaManager.Resource.Styleable.ActivityChooserView = global::HanselmanAndroid.Resource.Styleable.ActivityChooserView;
+			global::MediaManager.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::HanselmanAndroid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::MediaManager.Resource.Styleable.ActivityChooserView_initialActivityCount = global::HanselmanAndroid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::MediaManager.Resource.Styleable.AlertDialog = global::HanselmanAndroid.Resource.Styleable.AlertDialog;
+			global::MediaManager.Resource.Styleable.AlertDialog_android_layout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_android_layout;
+			global::MediaManager.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::MediaManager.Resource.Styleable.AlertDialog_listItemLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::MediaManager.Resource.Styleable.AlertDialog_listLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_listLayout;
+			global::MediaManager.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::MediaManager.Resource.Styleable.AlertDialog_showTitle = global::HanselmanAndroid.Resource.Styleable.AlertDialog_showTitle;
+			global::MediaManager.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::HanselmanAndroid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::MediaManager.Resource.Styleable.AppCompatImageView = global::HanselmanAndroid.Resource.Styleable.AppCompatImageView;
+			global::MediaManager.Resource.Styleable.AppCompatImageView_android_src = global::HanselmanAndroid.Resource.Styleable.AppCompatImageView_android_src;
+			global::MediaManager.Resource.Styleable.AppCompatImageView_srcCompat = global::HanselmanAndroid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::MediaManager.Resource.Styleable.AppCompatImageView_tint = global::HanselmanAndroid.Resource.Styleable.AppCompatImageView_tint;
+			global::MediaManager.Resource.Styleable.AppCompatImageView_tintMode = global::HanselmanAndroid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::MediaManager.Resource.Styleable.AppCompatSeekBar = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar;
+			global::MediaManager.Resource.Styleable.AppCompatSeekBar_android_thumb = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::MediaManager.Resource.Styleable.AppCompatSeekBar_tickMark = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::MediaManager.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::MediaManager.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::HanselmanAndroid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::MediaManager.Resource.Styleable.AppCompatTextHelper = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper;
+			global::MediaManager.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::MediaManager.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::MediaManager.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::MediaManager.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::MediaManager.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::MediaManager.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::MediaManager.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::HanselmanAndroid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::MediaManager.Resource.Styleable.AppCompatTextView = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView;
+			global::MediaManager.Resource.Styleable.AppCompatTextView_android_textAppearance = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::MediaManager.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::MediaManager.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::MediaManager.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::MediaManager.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::MediaManager.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::MediaManager.Resource.Styleable.AppCompatTextView_fontFamily = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::MediaManager.Resource.Styleable.AppCompatTextView_textAllCaps = global::HanselmanAndroid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::MediaManager.Resource.Styleable.AppCompatTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarDivider = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarSize = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_buttonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_checkboxStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorAccent = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorControlActivated = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorControlNormal = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorError = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorError;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorPrimary = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_controlBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_dialogTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_dividerVertical = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_editTextBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_editTextColor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_editTextStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_panelBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_searchViewStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_seekBarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_spinnerStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_switchStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_toolbarStyle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowActionBar = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::MediaManager.Resource.Styleable.AppCompatTheme_windowNoTitle = global::HanselmanAndroid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::MediaManager.Resource.Styleable.AspectRatioFrameLayout = global::HanselmanAndroid.Resource.Styleable.AspectRatioFrameLayout;
+			global::MediaManager.Resource.Styleable.AspectRatioFrameLayout_resize_mode = global::HanselmanAndroid.Resource.Styleable.AspectRatioFrameLayout_resize_mode;
+			global::MediaManager.Resource.Styleable.ButtonBarLayout = global::HanselmanAndroid.Resource.Styleable.ButtonBarLayout;
+			global::MediaManager.Resource.Styleable.ButtonBarLayout_allowStacking = global::HanselmanAndroid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::MediaManager.Resource.Styleable.ColorStateListItem = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem;
+			global::MediaManager.Resource.Styleable.ColorStateListItem_alpha = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_alpha;
+			global::MediaManager.Resource.Styleable.ColorStateListItem_android_alpha = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::MediaManager.Resource.Styleable.ColorStateListItem_android_color = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_android_color;
+			global::MediaManager.Resource.Styleable.CompoundButton = global::HanselmanAndroid.Resource.Styleable.CompoundButton;
+			global::MediaManager.Resource.Styleable.CompoundButton_android_button = global::HanselmanAndroid.Resource.Styleable.CompoundButton_android_button;
+			global::MediaManager.Resource.Styleable.CompoundButton_buttonTint = global::HanselmanAndroid.Resource.Styleable.CompoundButton_buttonTint;
+			global::MediaManager.Resource.Styleable.CompoundButton_buttonTintMode = global::HanselmanAndroid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_ad_marker_color = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_ad_marker_color;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_ad_marker_width = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_ad_marker_width;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_bar_height = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_bar_height;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_buffered_color = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_buffered_color;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_played_ad_marker_color = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_played_ad_marker_color;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_played_color = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_played_color;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_scrubber_color = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_scrubber_color;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_scrubber_disabled_size = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_scrubber_disabled_size;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_scrubber_dragged_size = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_scrubber_dragged_size;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_scrubber_drawable = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_scrubber_drawable;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_scrubber_enabled_size = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_scrubber_enabled_size;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_touch_target_height = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_touch_target_height;
+			global::MediaManager.Resource.Styleable.DefaultTimeBar_unplayed_color = global::HanselmanAndroid.Resource.Styleable.DefaultTimeBar_unplayed_color;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle_barLength = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle_color = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_color;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle_drawableSize = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle_spinBars = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::MediaManager.Resource.Styleable.DrawerArrowToggle_thickness = global::HanselmanAndroid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::MediaManager.Resource.Styleable.FontFamily = global::HanselmanAndroid.Resource.Styleable.FontFamily;
+			global::MediaManager.Resource.Styleable.FontFamily_fontProviderAuthority = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::MediaManager.Resource.Styleable.FontFamily_fontProviderCerts = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::MediaManager.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::MediaManager.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::MediaManager.Resource.Styleable.FontFamily_fontProviderPackage = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::MediaManager.Resource.Styleable.FontFamily_fontProviderQuery = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::MediaManager.Resource.Styleable.FontFamilyFont = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont;
+			global::MediaManager.Resource.Styleable.FontFamilyFont_android_font = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_font;
+			global::MediaManager.Resource.Styleable.FontFamilyFont_android_fontStyle = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::MediaManager.Resource.Styleable.FontFamilyFont_android_fontWeight = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::MediaManager.Resource.Styleable.FontFamilyFont_font = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_font;
+			global::MediaManager.Resource.Styleable.FontFamilyFont_fontStyle = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::MediaManager.Resource.Styleable.FontFamilyFont_fontWeight = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_android_gravity = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_android_orientation = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_divider = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_showDividers = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_Layout = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::MediaManager.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::HanselmanAndroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::MediaManager.Resource.Styleable.ListPopupWindow = global::HanselmanAndroid.Resource.Styleable.ListPopupWindow;
+			global::MediaManager.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::HanselmanAndroid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::MediaManager.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::HanselmanAndroid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::MediaManager.Resource.Styleable.MenuGroup = global::HanselmanAndroid.Resource.Styleable.MenuGroup;
+			global::MediaManager.Resource.Styleable.MenuGroup_android_checkableBehavior = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::MediaManager.Resource.Styleable.MenuGroup_android_enabled = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_enabled;
+			global::MediaManager.Resource.Styleable.MenuGroup_android_id = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_id;
+			global::MediaManager.Resource.Styleable.MenuGroup_android_menuCategory = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::MediaManager.Resource.Styleable.MenuGroup_android_orderInCategory = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::MediaManager.Resource.Styleable.MenuGroup_android_visible = global::HanselmanAndroid.Resource.Styleable.MenuGroup_android_visible;
+			global::MediaManager.Resource.Styleable.MenuItem = global::HanselmanAndroid.Resource.Styleable.MenuItem;
+			global::MediaManager.Resource.Styleable.MenuItem_actionLayout = global::HanselmanAndroid.Resource.Styleable.MenuItem_actionLayout;
+			global::MediaManager.Resource.Styleable.MenuItem_actionProviderClass = global::HanselmanAndroid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::MediaManager.Resource.Styleable.MenuItem_actionViewClass = global::HanselmanAndroid.Resource.Styleable.MenuItem_actionViewClass;
+			global::MediaManager.Resource.Styleable.MenuItem_alphabeticModifiers = global::HanselmanAndroid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::MediaManager.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::MediaManager.Resource.Styleable.MenuItem_android_checkable = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_checkable;
+			global::MediaManager.Resource.Styleable.MenuItem_android_checked = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_checked;
+			global::MediaManager.Resource.Styleable.MenuItem_android_enabled = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_enabled;
+			global::MediaManager.Resource.Styleable.MenuItem_android_icon = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_icon;
+			global::MediaManager.Resource.Styleable.MenuItem_android_id = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_id;
+			global::MediaManager.Resource.Styleable.MenuItem_android_menuCategory = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::MediaManager.Resource.Styleable.MenuItem_android_numericShortcut = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::MediaManager.Resource.Styleable.MenuItem_android_onClick = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_onClick;
+			global::MediaManager.Resource.Styleable.MenuItem_android_orderInCategory = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::MediaManager.Resource.Styleable.MenuItem_android_title = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_title;
+			global::MediaManager.Resource.Styleable.MenuItem_android_titleCondensed = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::MediaManager.Resource.Styleable.MenuItem_android_visible = global::HanselmanAndroid.Resource.Styleable.MenuItem_android_visible;
+			global::MediaManager.Resource.Styleable.MenuItem_contentDescription = global::HanselmanAndroid.Resource.Styleable.MenuItem_contentDescription;
+			global::MediaManager.Resource.Styleable.MenuItem_iconTint = global::HanselmanAndroid.Resource.Styleable.MenuItem_iconTint;
+			global::MediaManager.Resource.Styleable.MenuItem_iconTintMode = global::HanselmanAndroid.Resource.Styleable.MenuItem_iconTintMode;
+			global::MediaManager.Resource.Styleable.MenuItem_numericModifiers = global::HanselmanAndroid.Resource.Styleable.MenuItem_numericModifiers;
+			global::MediaManager.Resource.Styleable.MenuItem_showAsAction = global::HanselmanAndroid.Resource.Styleable.MenuItem_showAsAction;
+			global::MediaManager.Resource.Styleable.MenuItem_tooltipText = global::HanselmanAndroid.Resource.Styleable.MenuItem_tooltipText;
+			global::MediaManager.Resource.Styleable.MenuView = global::HanselmanAndroid.Resource.Styleable.MenuView;
+			global::MediaManager.Resource.Styleable.MenuView_android_headerBackground = global::HanselmanAndroid.Resource.Styleable.MenuView_android_headerBackground;
+			global::MediaManager.Resource.Styleable.MenuView_android_horizontalDivider = global::HanselmanAndroid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::MediaManager.Resource.Styleable.MenuView_android_itemBackground = global::HanselmanAndroid.Resource.Styleable.MenuView_android_itemBackground;
+			global::MediaManager.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::HanselmanAndroid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::MediaManager.Resource.Styleable.MenuView_android_itemTextAppearance = global::HanselmanAndroid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::MediaManager.Resource.Styleable.MenuView_android_verticalDivider = global::HanselmanAndroid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::MediaManager.Resource.Styleable.MenuView_android_windowAnimationStyle = global::HanselmanAndroid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::MediaManager.Resource.Styleable.MenuView_preserveIconSpacing = global::HanselmanAndroid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::MediaManager.Resource.Styleable.MenuView_subMenuArrow = global::HanselmanAndroid.Resource.Styleable.MenuView_subMenuArrow;
+			global::MediaManager.Resource.Styleable.PlayerControlView = global::HanselmanAndroid.Resource.Styleable.PlayerControlView;
+			global::MediaManager.Resource.Styleable.PlayerControlView_controller_layout_id = global::HanselmanAndroid.Resource.Styleable.PlayerControlView_controller_layout_id;
+			global::MediaManager.Resource.Styleable.PlayerControlView_fastforward_increment = global::HanselmanAndroid.Resource.Styleable.PlayerControlView_fastforward_increment;
+			global::MediaManager.Resource.Styleable.PlayerControlView_repeat_toggle_modes = global::HanselmanAndroid.Resource.Styleable.PlayerControlView_repeat_toggle_modes;
+			global::MediaManager.Resource.Styleable.PlayerControlView_rewind_increment = global::HanselmanAndroid.Resource.Styleable.PlayerControlView_rewind_increment;
+			global::MediaManager.Resource.Styleable.PlayerControlView_show_shuffle_button = global::HanselmanAndroid.Resource.Styleable.PlayerControlView_show_shuffle_button;
+			global::MediaManager.Resource.Styleable.PlayerControlView_show_timeout = global::HanselmanAndroid.Resource.Styleable.PlayerControlView_show_timeout;
+			global::MediaManager.Resource.Styleable.PlayerView = global::HanselmanAndroid.Resource.Styleable.PlayerView;
+			global::MediaManager.Resource.Styleable.PlayerView_auto_show = global::HanselmanAndroid.Resource.Styleable.PlayerView_auto_show;
+			global::MediaManager.Resource.Styleable.PlayerView_controller_layout_id = global::HanselmanAndroid.Resource.Styleable.PlayerView_controller_layout_id;
+			global::MediaManager.Resource.Styleable.PlayerView_default_artwork = global::HanselmanAndroid.Resource.Styleable.PlayerView_default_artwork;
+			global::MediaManager.Resource.Styleable.PlayerView_fastforward_increment = global::HanselmanAndroid.Resource.Styleable.PlayerView_fastforward_increment;
+			global::MediaManager.Resource.Styleable.PlayerView_hide_during_ads = global::HanselmanAndroid.Resource.Styleable.PlayerView_hide_during_ads;
+			global::MediaManager.Resource.Styleable.PlayerView_hide_on_touch = global::HanselmanAndroid.Resource.Styleable.PlayerView_hide_on_touch;
+			global::MediaManager.Resource.Styleable.PlayerView_keep_content_on_player_reset = global::HanselmanAndroid.Resource.Styleable.PlayerView_keep_content_on_player_reset;
+			global::MediaManager.Resource.Styleable.PlayerView_player_layout_id = global::HanselmanAndroid.Resource.Styleable.PlayerView_player_layout_id;
+			global::MediaManager.Resource.Styleable.PlayerView_repeat_toggle_modes = global::HanselmanAndroid.Resource.Styleable.PlayerView_repeat_toggle_modes;
+			global::MediaManager.Resource.Styleable.PlayerView_resize_mode = global::HanselmanAndroid.Resource.Styleable.PlayerView_resize_mode;
+			global::MediaManager.Resource.Styleable.PlayerView_rewind_increment = global::HanselmanAndroid.Resource.Styleable.PlayerView_rewind_increment;
+			global::MediaManager.Resource.Styleable.PlayerView_show_buffering = global::HanselmanAndroid.Resource.Styleable.PlayerView_show_buffering;
+			global::MediaManager.Resource.Styleable.PlayerView_show_shuffle_button = global::HanselmanAndroid.Resource.Styleable.PlayerView_show_shuffle_button;
+			global::MediaManager.Resource.Styleable.PlayerView_show_timeout = global::HanselmanAndroid.Resource.Styleable.PlayerView_show_timeout;
+			global::MediaManager.Resource.Styleable.PlayerView_shutter_background_color = global::HanselmanAndroid.Resource.Styleable.PlayerView_shutter_background_color;
+			global::MediaManager.Resource.Styleable.PlayerView_surface_type = global::HanselmanAndroid.Resource.Styleable.PlayerView_surface_type;
+			global::MediaManager.Resource.Styleable.PlayerView_use_artwork = global::HanselmanAndroid.Resource.Styleable.PlayerView_use_artwork;
+			global::MediaManager.Resource.Styleable.PlayerView_use_controller = global::HanselmanAndroid.Resource.Styleable.PlayerView_use_controller;
+			global::MediaManager.Resource.Styleable.PopupWindow = global::HanselmanAndroid.Resource.Styleable.PopupWindow;
+			global::MediaManager.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::HanselmanAndroid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::MediaManager.Resource.Styleable.PopupWindow_android_popupBackground = global::HanselmanAndroid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::MediaManager.Resource.Styleable.PopupWindow_overlapAnchor = global::HanselmanAndroid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::MediaManager.Resource.Styleable.PopupWindowBackgroundState = global::HanselmanAndroid.Resource.Styleable.PopupWindowBackgroundState;
+			global::MediaManager.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::HanselmanAndroid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::MediaManager.Resource.Styleable.RecycleListView = global::HanselmanAndroid.Resource.Styleable.RecycleListView;
+			global::MediaManager.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::HanselmanAndroid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::MediaManager.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::HanselmanAndroid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::MediaManager.Resource.Styleable.SearchView = global::HanselmanAndroid.Resource.Styleable.SearchView;
+			global::MediaManager.Resource.Styleable.SearchView_android_focusable = global::HanselmanAndroid.Resource.Styleable.SearchView_android_focusable;
+			global::MediaManager.Resource.Styleable.SearchView_android_imeOptions = global::HanselmanAndroid.Resource.Styleable.SearchView_android_imeOptions;
+			global::MediaManager.Resource.Styleable.SearchView_android_inputType = global::HanselmanAndroid.Resource.Styleable.SearchView_android_inputType;
+			global::MediaManager.Resource.Styleable.SearchView_android_maxWidth = global::HanselmanAndroid.Resource.Styleable.SearchView_android_maxWidth;
+			global::MediaManager.Resource.Styleable.SearchView_closeIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_closeIcon;
+			global::MediaManager.Resource.Styleable.SearchView_commitIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_commitIcon;
+			global::MediaManager.Resource.Styleable.SearchView_defaultQueryHint = global::HanselmanAndroid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::MediaManager.Resource.Styleable.SearchView_goIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_goIcon;
+			global::MediaManager.Resource.Styleable.SearchView_iconifiedByDefault = global::HanselmanAndroid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::MediaManager.Resource.Styleable.SearchView_layout = global::HanselmanAndroid.Resource.Styleable.SearchView_layout;
+			global::MediaManager.Resource.Styleable.SearchView_queryBackground = global::HanselmanAndroid.Resource.Styleable.SearchView_queryBackground;
+			global::MediaManager.Resource.Styleable.SearchView_queryHint = global::HanselmanAndroid.Resource.Styleable.SearchView_queryHint;
+			global::MediaManager.Resource.Styleable.SearchView_searchHintIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_searchHintIcon;
+			global::MediaManager.Resource.Styleable.SearchView_searchIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_searchIcon;
+			global::MediaManager.Resource.Styleable.SearchView_submitBackground = global::HanselmanAndroid.Resource.Styleable.SearchView_submitBackground;
+			global::MediaManager.Resource.Styleable.SearchView_suggestionRowLayout = global::HanselmanAndroid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::MediaManager.Resource.Styleable.SearchView_voiceIcon = global::HanselmanAndroid.Resource.Styleable.SearchView_voiceIcon;
+			global::MediaManager.Resource.Styleable.Spinner = global::HanselmanAndroid.Resource.Styleable.Spinner;
+			global::MediaManager.Resource.Styleable.Spinner_android_dropDownWidth = global::HanselmanAndroid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::MediaManager.Resource.Styleable.Spinner_android_entries = global::HanselmanAndroid.Resource.Styleable.Spinner_android_entries;
+			global::MediaManager.Resource.Styleable.Spinner_android_popupBackground = global::HanselmanAndroid.Resource.Styleable.Spinner_android_popupBackground;
+			global::MediaManager.Resource.Styleable.Spinner_android_prompt = global::HanselmanAndroid.Resource.Styleable.Spinner_android_prompt;
+			global::MediaManager.Resource.Styleable.Spinner_popupTheme = global::HanselmanAndroid.Resource.Styleable.Spinner_popupTheme;
+			global::MediaManager.Resource.Styleable.SwitchCompat = global::HanselmanAndroid.Resource.Styleable.SwitchCompat;
+			global::MediaManager.Resource.Styleable.SwitchCompat_android_textOff = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::MediaManager.Resource.Styleable.SwitchCompat_android_textOn = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::MediaManager.Resource.Styleable.SwitchCompat_android_thumb = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::MediaManager.Resource.Styleable.SwitchCompat_showText = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_showText;
+			global::MediaManager.Resource.Styleable.SwitchCompat_splitTrack = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::MediaManager.Resource.Styleable.SwitchCompat_switchMinWidth = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::MediaManager.Resource.Styleable.SwitchCompat_switchPadding = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::MediaManager.Resource.Styleable.SwitchCompat_switchTextAppearance = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::MediaManager.Resource.Styleable.SwitchCompat_thumbTextPadding = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::MediaManager.Resource.Styleable.SwitchCompat_thumbTint = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::MediaManager.Resource.Styleable.SwitchCompat_thumbTintMode = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::MediaManager.Resource.Styleable.SwitchCompat_track = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_track;
+			global::MediaManager.Resource.Styleable.SwitchCompat_trackTint = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_trackTint;
+			global::MediaManager.Resource.Styleable.SwitchCompat_trackTintMode = global::HanselmanAndroid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::MediaManager.Resource.Styleable.TextAppearance = global::HanselmanAndroid.Resource.Styleable.TextAppearance;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_fontFamily = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_shadowColor = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_shadowDx = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_shadowDy = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_shadowRadius = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_textColor = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textColor;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_textColorHint = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_textColorLink = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_textSize = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textSize;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_textStyle = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::MediaManager.Resource.Styleable.TextAppearance_android_typeface = global::HanselmanAndroid.Resource.Styleable.TextAppearance_android_typeface;
+			global::MediaManager.Resource.Styleable.TextAppearance_fontFamily = global::HanselmanAndroid.Resource.Styleable.TextAppearance_fontFamily;
+			global::MediaManager.Resource.Styleable.TextAppearance_textAllCaps = global::HanselmanAndroid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::MediaManager.Resource.Styleable.Toolbar = global::HanselmanAndroid.Resource.Styleable.Toolbar;
+			global::MediaManager.Resource.Styleable.Toolbar_android_gravity = global::HanselmanAndroid.Resource.Styleable.Toolbar_android_gravity;
+			global::MediaManager.Resource.Styleable.Toolbar_android_minHeight = global::HanselmanAndroid.Resource.Styleable.Toolbar_android_minHeight;
+			global::MediaManager.Resource.Styleable.Toolbar_buttonGravity = global::HanselmanAndroid.Resource.Styleable.Toolbar_buttonGravity;
+			global::MediaManager.Resource.Styleable.Toolbar_collapseContentDescription = global::HanselmanAndroid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::MediaManager.Resource.Styleable.Toolbar_collapseIcon = global::HanselmanAndroid.Resource.Styleable.Toolbar_collapseIcon;
+			global::MediaManager.Resource.Styleable.Toolbar_contentInsetEnd = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::MediaManager.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::MediaManager.Resource.Styleable.Toolbar_contentInsetLeft = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::MediaManager.Resource.Styleable.Toolbar_contentInsetRight = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::MediaManager.Resource.Styleable.Toolbar_contentInsetStart = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::MediaManager.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::HanselmanAndroid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::MediaManager.Resource.Styleable.Toolbar_logo = global::HanselmanAndroid.Resource.Styleable.Toolbar_logo;
+			global::MediaManager.Resource.Styleable.Toolbar_logoDescription = global::HanselmanAndroid.Resource.Styleable.Toolbar_logoDescription;
+			global::MediaManager.Resource.Styleable.Toolbar_maxButtonHeight = global::HanselmanAndroid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::MediaManager.Resource.Styleable.Toolbar_navigationContentDescription = global::HanselmanAndroid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::MediaManager.Resource.Styleable.Toolbar_navigationIcon = global::HanselmanAndroid.Resource.Styleable.Toolbar_navigationIcon;
+			global::MediaManager.Resource.Styleable.Toolbar_popupTheme = global::HanselmanAndroid.Resource.Styleable.Toolbar_popupTheme;
+			global::MediaManager.Resource.Styleable.Toolbar_subtitle = global::HanselmanAndroid.Resource.Styleable.Toolbar_subtitle;
+			global::MediaManager.Resource.Styleable.Toolbar_subtitleTextAppearance = global::HanselmanAndroid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::MediaManager.Resource.Styleable.Toolbar_subtitleTextColor = global::HanselmanAndroid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::MediaManager.Resource.Styleable.Toolbar_title = global::HanselmanAndroid.Resource.Styleable.Toolbar_title;
+			global::MediaManager.Resource.Styleable.Toolbar_titleMargin = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMargin;
+			global::MediaManager.Resource.Styleable.Toolbar_titleMarginBottom = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::MediaManager.Resource.Styleable.Toolbar_titleMarginEnd = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::MediaManager.Resource.Styleable.Toolbar_titleMarginStart = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::MediaManager.Resource.Styleable.Toolbar_titleMarginTop = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::MediaManager.Resource.Styleable.Toolbar_titleMargins = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleMargins;
+			global::MediaManager.Resource.Styleable.Toolbar_titleTextAppearance = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::MediaManager.Resource.Styleable.Toolbar_titleTextColor = global::HanselmanAndroid.Resource.Styleable.Toolbar_titleTextColor;
+			global::MediaManager.Resource.Styleable.View = global::HanselmanAndroid.Resource.Styleable.View;
+			global::MediaManager.Resource.Styleable.View_android_focusable = global::HanselmanAndroid.Resource.Styleable.View_android_focusable;
+			global::MediaManager.Resource.Styleable.View_android_theme = global::HanselmanAndroid.Resource.Styleable.View_android_theme;
+			global::MediaManager.Resource.Styleable.View_paddingEnd = global::HanselmanAndroid.Resource.Styleable.View_paddingEnd;
+			global::MediaManager.Resource.Styleable.View_paddingStart = global::HanselmanAndroid.Resource.Styleable.View_paddingStart;
+			global::MediaManager.Resource.Styleable.View_theme = global::HanselmanAndroid.Resource.Styleable.View_theme;
+			global::MediaManager.Resource.Styleable.ViewBackgroundHelper = global::HanselmanAndroid.Resource.Styleable.ViewBackgroundHelper;
+			global::MediaManager.Resource.Styleable.ViewBackgroundHelper_android_background = global::HanselmanAndroid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::MediaManager.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::HanselmanAndroid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::MediaManager.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::HanselmanAndroid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::MediaManager.Resource.Styleable.ViewStubCompat = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat;
+			global::MediaManager.Resource.Styleable.ViewStubCompat_android_id = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_id;
+			global::MediaManager.Resource.Styleable.ViewStubCompat_android_inflatedId = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::MediaManager.Resource.Styleable.ViewStubCompat_android_layout = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::HanselmanAndroid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::HanselmanAndroid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::HanselmanAndroid.Resource.Attribute.font;
@@ -2603,6 +2226,9 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.materialButtonStyle = global::HanselmanAndroid.Resource.Attribute.materialButtonStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.materialCardViewStyle = global::HanselmanAndroid.Resource.Attribute.materialCardViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.materialOutlinedButtonStyle = global::HanselmanAndroid.Resource.Attribute.materialOutlinedButtonStyle;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.materialProgressBarCircularStyle = global::HanselmanAndroid.Resource.Attribute.materialProgressBarCircularStyle;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.materialProgressBarHorizontalStyle = global::HanselmanAndroid.Resource.Attribute.materialProgressBarHorizontalStyle;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.materialSliderStyle = global::HanselmanAndroid.Resource.Attribute.materialSliderStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.maxActionInlineWidth = global::HanselmanAndroid.Resource.Attribute.maxActionInlineWidth;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.maxButtonHeight = global::HanselmanAndroid.Resource.Attribute.maxButtonHeight;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.maxImageSize = global::HanselmanAndroid.Resource.Attribute.maxImageSize;
@@ -7548,1481 +7174,1583 @@ namespace HanselmanAndroid
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010071
-			public const int actionBarDivider = 2130772081;
-			
-			// aapt resource value: 0x7f010072
-			public const int actionBarItemBackground = 2130772082;
-			
-			// aapt resource value: 0x7f01006b
-			public const int actionBarPopupTheme = 2130772075;
-			
-			// aapt resource value: 0x7f010070
-			public const int actionBarSize = 2130772080;
-			
-			// aapt resource value: 0x7f01006d
-			public const int actionBarSplitStyle = 2130772077;
-			
-			// aapt resource value: 0x7f01006c
-			public const int actionBarStyle = 2130772076;
-			
-			// aapt resource value: 0x7f010067
-			public const int actionBarTabBarStyle = 2130772071;
-			
-			// aapt resource value: 0x7f010066
-			public const int actionBarTabStyle = 2130772070;
-			
-			// aapt resource value: 0x7f010068
-			public const int actionBarTabTextStyle = 2130772072;
-			
-			// aapt resource value: 0x7f01006e
-			public const int actionBarTheme = 2130772078;
-			
-			// aapt resource value: 0x7f01006f
-			public const int actionBarWidgetTheme = 2130772079;
-			
-			// aapt resource value: 0x7f01008d
-			public const int actionButtonStyle = 2130772109;
-			
-			// aapt resource value: 0x7f010089
-			public const int actionDropDownStyle = 2130772105;
-			
-			// aapt resource value: 0x7f0100e4
-			public const int actionLayout = 2130772196;
-			
-			// aapt resource value: 0x7f010073
-			public const int actionMenuTextAppearance = 2130772083;
-			
 			// aapt resource value: 0x7f010074
-			public const int actionMenuTextColor = 2130772084;
-			
-			// aapt resource value: 0x7f010077
-			public const int actionModeBackground = 2130772087;
-			
-			// aapt resource value: 0x7f010076
-			public const int actionModeCloseButtonStyle = 2130772086;
-			
-			// aapt resource value: 0x7f010079
-			public const int actionModeCloseDrawable = 2130772089;
-			
-			// aapt resource value: 0x7f01007b
-			public const int actionModeCopyDrawable = 2130772091;
-			
-			// aapt resource value: 0x7f01007a
-			public const int actionModeCutDrawable = 2130772090;
-			
-			// aapt resource value: 0x7f01007f
-			public const int actionModeFindDrawable = 2130772095;
-			
-			// aapt resource value: 0x7f01007c
-			public const int actionModePasteDrawable = 2130772092;
-			
-			// aapt resource value: 0x7f010081
-			public const int actionModePopupWindowStyle = 2130772097;
-			
-			// aapt resource value: 0x7f01007d
-			public const int actionModeSelectAllDrawable = 2130772093;
-			
-			// aapt resource value: 0x7f01007e
-			public const int actionModeShareDrawable = 2130772094;
-			
-			// aapt resource value: 0x7f010078
-			public const int actionModeSplitBackground = 2130772088;
+			public const int actionBarDivider = 2130772084;
 			
 			// aapt resource value: 0x7f010075
-			public const int actionModeStyle = 2130772085;
+			public const int actionBarItemBackground = 2130772085;
 			
-			// aapt resource value: 0x7f010080
-			public const int actionModeWebSearchDrawable = 2130772096;
+			// aapt resource value: 0x7f01006e
+			public const int actionBarPopupTheme = 2130772078;
 			
-			// aapt resource value: 0x7f010069
-			public const int actionOverflowButtonStyle = 2130772073;
+			// aapt resource value: 0x7f010073
+			public const int actionBarSize = 2130772083;
+			
+			// aapt resource value: 0x7f010070
+			public const int actionBarSplitStyle = 2130772080;
+			
+			// aapt resource value: 0x7f01006f
+			public const int actionBarStyle = 2130772079;
 			
 			// aapt resource value: 0x7f01006a
-			public const int actionOverflowMenuStyle = 2130772074;
+			public const int actionBarTabBarStyle = 2130772074;
 			
-			// aapt resource value: 0x7f0100e6
-			public const int actionProviderClass = 2130772198;
+			// aapt resource value: 0x7f010069
+			public const int actionBarTabStyle = 2130772073;
 			
-			// aapt resource value: 0x7f0100e5
-			public const int actionViewClass = 2130772197;
+			// aapt resource value: 0x7f01006b
+			public const int actionBarTabTextStyle = 2130772075;
 			
-			// aapt resource value: 0x7f010095
-			public const int activityChooserViewStyle = 2130772117;
+			// aapt resource value: 0x7f010071
+			public const int actionBarTheme = 2130772081;
 			
-			// aapt resource value: 0x7f0100ba
-			public const int alertDialogButtonGroupStyle = 2130772154;
+			// aapt resource value: 0x7f010072
+			public const int actionBarWidgetTheme = 2130772082;
 			
-			// aapt resource value: 0x7f0100bb
-			public const int alertDialogCenterButtons = 2130772155;
-			
-			// aapt resource value: 0x7f0100b9
-			public const int alertDialogStyle = 2130772153;
-			
-			// aapt resource value: 0x7f0100bc
-			public const int alertDialogTheme = 2130772156;
-			
-			// aapt resource value: 0x7f0100d3
-			public const int allowStacking = 2130772179;
-			
-			// aapt resource value: 0x7f0101e0
-			public const int alpha = 2130772448;
-			
-			// aapt resource value: 0x7f0100e1
-			public const int alphabeticModifiers = 2130772193;
-			
-			// aapt resource value: 0x7f0100da
-			public const int arrowHeadLength = 2130772186;
-			
-			// aapt resource value: 0x7f0100db
-			public const int arrowShaftLength = 2130772187;
-			
-			// aapt resource value: 0x7f0100c1
-			public const int autoCompleteTextViewStyle = 2130772161;
-			
-			// aapt resource value: 0x7f010057
-			public const int autoSizeMaxTextSize = 2130772055;
-			
-			// aapt resource value: 0x7f010056
-			public const int autoSizeMinTextSize = 2130772054;
-			
-			// aapt resource value: 0x7f010055
-			public const int autoSizePresetSizes = 2130772053;
-			
-			// aapt resource value: 0x7f010054
-			public const int autoSizeStepGranularity = 2130772052;
-			
-			// aapt resource value: 0x7f010053
-			public const int autoSizeTextType = 2130772051;
-			
-			// aapt resource value: 0x7f010030
-			public const int background = 2130772016;
-			
-			// aapt resource value: 0x7f010032
-			public const int backgroundSplit = 2130772018;
-			
-			// aapt resource value: 0x7f010031
-			public const int backgroundStacked = 2130772017;
-			
-			// aapt resource value: 0x7f01011d
-			public const int backgroundTint = 2130772253;
-			
-			// aapt resource value: 0x7f01011e
-			public const int backgroundTintMode = 2130772254;
-			
-			// aapt resource value: 0x7f0100dc
-			public const int barLength = 2130772188;
-			
-			// aapt resource value: 0x7f01018d
-			public const int behavior_autoHide = 2130772365;
-			
-			// aapt resource value: 0x7f010155
-			public const int behavior_fitToContents = 2130772309;
-			
-			// aapt resource value: 0x7f010153
-			public const int behavior_hideable = 2130772307;
-			
-			// aapt resource value: 0x7f01019e
-			public const int behavior_overlapTop = 2130772382;
-			
-			// aapt resource value: 0x7f010152
-			public const int behavior_peekHeight = 2130772306;
-			
-			// aapt resource value: 0x7f010154
-			public const int behavior_skipCollapsed = 2130772308;
-			
-			// aapt resource value: 0x7f01018a
-			public const int borderWidth = 2130772362;
-			
-			// aapt resource value: 0x7f010092
-			public const int borderlessButtonStyle = 2130772114;
-			
-			// aapt resource value: 0x7f01011f
-			public const int bottomAppBarStyle = 2130772255;
-			
-			// aapt resource value: 0x7f010120
-			public const int bottomNavigationStyle = 2130772256;
-			
-			// aapt resource value: 0x7f010121
-			public const int bottomSheetDialogTheme = 2130772257;
-			
-			// aapt resource value: 0x7f010122
-			public const int bottomSheetStyle = 2130772258;
-			
-			// aapt resource value: 0x7f0101d3
-			public const int boxBackgroundColor = 2130772435;
-			
-			// aapt resource value: 0x7f0101cc
-			public const int boxBackgroundMode = 2130772428;
-			
-			// aapt resource value: 0x7f0101cd
-			public const int boxCollapsedPaddingTop = 2130772429;
-			
-			// aapt resource value: 0x7f0101d1
-			public const int boxCornerRadiusBottomEnd = 2130772433;
-			
-			// aapt resource value: 0x7f0101d0
-			public const int boxCornerRadiusBottomStart = 2130772432;
-			
-			// aapt resource value: 0x7f0101cf
-			public const int boxCornerRadiusTopEnd = 2130772431;
-			
-			// aapt resource value: 0x7f0101ce
-			public const int boxCornerRadiusTopStart = 2130772430;
-			
-			// aapt resource value: 0x7f0101d2
-			public const int boxStrokeColor = 2130772434;
-			
-			// aapt resource value: 0x7f0101d4
-			public const int boxStrokeWidth = 2130772436;
-			
-			// aapt resource value: 0x7f01008f
-			public const int buttonBarButtonStyle = 2130772111;
-			
-			// aapt resource value: 0x7f0100bf
-			public const int buttonBarNegativeButtonStyle = 2130772159;
-			
-			// aapt resource value: 0x7f0100c0
-			public const int buttonBarNeutralButtonStyle = 2130772160;
-			
-			// aapt resource value: 0x7f0100be
-			public const int buttonBarPositiveButtonStyle = 2130772158;
-			
-			// aapt resource value: 0x7f01008e
-			public const int buttonBarStyle = 2130772110;
-			
-			// aapt resource value: 0x7f010112
-			public const int buttonGravity = 2130772242;
-			
-			// aapt resource value: 0x7f01004b
-			public const int buttonIconDimen = 2130772043;
-			
-			// aapt resource value: 0x7f010045
-			public const int buttonPanelSideLayout = 2130772037;
-			
-			// aapt resource value: 0x7f0100c2
-			public const int buttonStyle = 2130772162;
-			
-			// aapt resource value: 0x7f0100c3
-			public const int buttonStyleSmall = 2130772163;
-			
-			// aapt resource value: 0x7f0100d4
-			public const int buttonTint = 2130772180;
-			
-			// aapt resource value: 0x7f0100d5
-			public const int buttonTintMode = 2130772181;
-			
-			// aapt resource value: 0x7f010019
-			public const int cardBackgroundColor = 2130771993;
-			
-			// aapt resource value: 0x7f01001a
-			public const int cardCornerRadius = 2130771994;
-			
-			// aapt resource value: 0x7f01001b
-			public const int cardElevation = 2130771995;
-			
-			// aapt resource value: 0x7f01001c
-			public const int cardMaxElevation = 2130771996;
-			
-			// aapt resource value: 0x7f01001e
-			public const int cardPreventCornerOverlap = 2130771998;
-			
-			// aapt resource value: 0x7f01001d
-			public const int cardUseCompatPadding = 2130771997;
-			
-			// aapt resource value: 0x7f010018
-			public const int cardViewStyle = 2130771992;
-			
-			// aapt resource value: 0x7f0100c4
-			public const int checkboxStyle = 2130772164;
-			
-			// aapt resource value: 0x7f010174
-			public const int checkedChip = 2130772340;
-			
-			// aapt resource value: 0x7f010166
-			public const int checkedIcon = 2130772326;
-			
-			// aapt resource value: 0x7f010165
-			public const int checkedIconEnabled = 2130772325;
-			
-			// aapt resource value: 0x7f010164
-			public const int checkedIconVisible = 2130772324;
-			
-			// aapt resource value: 0x7f0100c5
-			public const int checkedTextViewStyle = 2130772165;
-			
-			// aapt resource value: 0x7f010156
-			public const int chipBackgroundColor = 2130772310;
-			
-			// aapt resource value: 0x7f010158
-			public const int chipCornerRadius = 2130772312;
-			
-			// aapt resource value: 0x7f01016e
-			public const int chipEndPadding = 2130772334;
-			
-			// aapt resource value: 0x7f010123
-			public const int chipGroupStyle = 2130772259;
-			
-			// aapt resource value: 0x7f01015d
-			public const int chipIcon = 2130772317;
-			
-			// aapt resource value: 0x7f01015c
-			public const int chipIconEnabled = 2130772316;
-			
-			// aapt resource value: 0x7f01015f
-			public const int chipIconSize = 2130772319;
-			
-			// aapt resource value: 0x7f01015e
-			public const int chipIconTint = 2130772318;
-			
-			// aapt resource value: 0x7f01015b
-			public const int chipIconVisible = 2130772315;
-			
-			// aapt resource value: 0x7f010157
-			public const int chipMinHeight = 2130772311;
-			
-			// aapt resource value: 0x7f01016f
-			public const int chipSpacing = 2130772335;
-			
-			// aapt resource value: 0x7f010170
-			public const int chipSpacingHorizontal = 2130772336;
-			
-			// aapt resource value: 0x7f010171
-			public const int chipSpacingVertical = 2130772337;
-			
-			// aapt resource value: 0x7f010124
-			public const int chipStandaloneStyle = 2130772260;
-			
-			// aapt resource value: 0x7f010167
-			public const int chipStartPadding = 2130772327;
-			
-			// aapt resource value: 0x7f010159
-			public const int chipStrokeColor = 2130772313;
-			
-			// aapt resource value: 0x7f01015a
-			public const int chipStrokeWidth = 2130772314;
-			
-			// aapt resource value: 0x7f010125
-			public const int chipStyle = 2130772261;
-			
-			// aapt resource value: 0x7f0100f5
-			public const int closeIcon = 2130772213;
-			
-			// aapt resource value: 0x7f010161
-			public const int closeIconEnabled = 2130772321;
-			
-			// aapt resource value: 0x7f01016d
-			public const int closeIconEndPadding = 2130772333;
-			
-			// aapt resource value: 0x7f010163
-			public const int closeIconSize = 2130772323;
-			
-			// aapt resource value: 0x7f01016c
-			public const int closeIconStartPadding = 2130772332;
-			
-			// aapt resource value: 0x7f010162
-			public const int closeIconTint = 2130772322;
-			
-			// aapt resource value: 0x7f010160
-			public const int closeIconVisible = 2130772320;
-			
-			// aapt resource value: 0x7f010042
-			public const int closeItemLayout = 2130772034;
-			
-			// aapt resource value: 0x7f010114
-			public const int collapseContentDescription = 2130772244;
-			
-			// aapt resource value: 0x7f010113
-			public const int collapseIcon = 2130772243;
-			
-			// aapt resource value: 0x7f010181
-			public const int collapsedTitleGravity = 2130772353;
-			
-			// aapt resource value: 0x7f01017b
-			public const int collapsedTitleTextAppearance = 2130772347;
-			
-			// aapt resource value: 0x7f0100d6
-			public const int color = 2130772182;
-			
-			// aapt resource value: 0x7f0100b1
-			public const int colorAccent = 2130772145;
-			
-			// aapt resource value: 0x7f0100b8
-			public const int colorBackgroundFloating = 2130772152;
-			
-			// aapt resource value: 0x7f0100b5
-			public const int colorButtonNormal = 2130772149;
-			
-			// aapt resource value: 0x7f0100b3
-			public const int colorControlActivated = 2130772147;
-			
-			// aapt resource value: 0x7f0100b4
-			public const int colorControlHighlight = 2130772148;
-			
-			// aapt resource value: 0x7f0100b2
-			public const int colorControlNormal = 2130772146;
-			
-			// aapt resource value: 0x7f0100d1
-			public const int colorError = 2130772177;
-			
-			// aapt resource value: 0x7f0100af
-			public const int colorPrimary = 2130772143;
-			
-			// aapt resource value: 0x7f0100b0
-			public const int colorPrimaryDark = 2130772144;
-			
-			// aapt resource value: 0x7f010126
-			public const int colorSecondary = 2130772262;
-			
-			// aapt resource value: 0x7f0100b6
-			public const int colorSwitchThumbNormal = 2130772150;
-			
-			// aapt resource value: 0x7f0100fa
-			public const int commitIcon = 2130772218;
-			
-			// aapt resource value: 0x7f0100e7
-			public const int contentDescription = 2130772199;
-			
-			// aapt resource value: 0x7f01003b
-			public const int contentInsetEnd = 2130772027;
-			
-			// aapt resource value: 0x7f01003f
-			public const int contentInsetEndWithActions = 2130772031;
-			
-			// aapt resource value: 0x7f01003c
-			public const int contentInsetLeft = 2130772028;
-			
-			// aapt resource value: 0x7f01003d
-			public const int contentInsetRight = 2130772029;
-			
-			// aapt resource value: 0x7f01003a
-			public const int contentInsetStart = 2130772026;
-			
-			// aapt resource value: 0x7f01003e
-			public const int contentInsetStartWithNavigation = 2130772030;
-			
-			// aapt resource value: 0x7f01001f
-			public const int contentPadding = 2130771999;
-			
-			// aapt resource value: 0x7f010023
-			public const int contentPaddingBottom = 2130772003;
-			
-			// aapt resource value: 0x7f010020
-			public const int contentPaddingLeft = 2130772000;
-			
-			// aapt resource value: 0x7f010021
-			public const int contentPaddingRight = 2130772001;
-			
-			// aapt resource value: 0x7f010022
-			public const int contentPaddingTop = 2130772002;
-			
-			// aapt resource value: 0x7f01017c
-			public const int contentScrim = 2130772348;
-			
-			// aapt resource value: 0x7f0100b7
-			public const int controlBackground = 2130772151;
-			
-			// aapt resource value: 0x7f0101d7
-			public const int coordinatorLayoutStyle = 2130772439;
-			
-			// aapt resource value: 0x7f010194
-			public const int cornerRadius = 2130772372;
-			
-			// aapt resource value: 0x7f0101c3
-			public const int counterEnabled = 2130772419;
-			
-			// aapt resource value: 0x7f0101c4
-			public const int counterMaxLength = 2130772420;
-			
-			// aapt resource value: 0x7f0101c6
-			public const int counterOverflowTextAppearance = 2130772422;
-			
-			// aapt resource value: 0x7f0101c5
-			public const int counterTextAppearance = 2130772421;
-			
-			// aapt resource value: 0x7f010033
-			public const int customNavigationLayout = 2130772019;
-			
-			// aapt resource value: 0x7f0100f4
-			public const int defaultQueryHint = 2130772212;
-			
-			// aapt resource value: 0x7f010088
-			public const int dialogCornerRadius = 2130772104;
-			
-			// aapt resource value: 0x7f010086
-			public const int dialogPreferredPadding = 2130772102;
-			
-			// aapt resource value: 0x7f010085
-			public const int dialogTheme = 2130772101;
-			
-			// aapt resource value: 0x7f010029
-			public const int displayOptions = 2130772009;
-			
-			// aapt resource value: 0x7f01002f
-			public const int divider = 2130772015;
-			
-			// aapt resource value: 0x7f010094
-			public const int dividerHorizontal = 2130772116;
-			
-			// aapt resource value: 0x7f0100e0
-			public const int dividerPadding = 2130772192;
-			
-			// aapt resource value: 0x7f010093
-			public const int dividerVertical = 2130772115;
-			
-			// aapt resource value: 0x7f0100d8
-			public const int drawableSize = 2130772184;
-			
-			// aapt resource value: 0x7f010024
-			public const int drawerArrowStyle = 2130772004;
-			
-			// aapt resource value: 0x7f0100a6
-			public const int dropDownListViewStyle = 2130772134;
-			
-			// aapt resource value: 0x7f01008a
-			public const int dropdownListPreferredItemHeight = 2130772106;
-			
-			// aapt resource value: 0x7f01009b
-			public const int editTextBackground = 2130772123;
-			
-			// aapt resource value: 0x7f01009a
-			public const int editTextColor = 2130772122;
-			
-			// aapt resource value: 0x7f0100c6
-			public const int editTextStyle = 2130772166;
-			
-			// aapt resource value: 0x7f010040
-			public const int elevation = 2130772032;
-			
-			// aapt resource value: 0x7f0101d5
-			public const int enforceMaterialTheme = 2130772437;
-			
-			// aapt resource value: 0x7f0101d6
-			public const int enforceTextAppearance = 2130772438;
-			
-			// aapt resource value: 0x7f0101c1
-			public const int errorEnabled = 2130772417;
-			
-			// aapt resource value: 0x7f0101c2
-			public const int errorTextAppearance = 2130772418;
-			
-			// aapt resource value: 0x7f010044
-			public const int expandActivityOverflowButtonDrawable = 2130772036;
-			
-			// aapt resource value: 0x7f010140
-			public const int expanded = 2130772288;
-			
-			// aapt resource value: 0x7f010182
-			public const int expandedTitleGravity = 2130772354;
-			
-			// aapt resource value: 0x7f010175
-			public const int expandedTitleMargin = 2130772341;
-			
-			// aapt resource value: 0x7f010179
-			public const int expandedTitleMarginBottom = 2130772345;
-			
-			// aapt resource value: 0x7f010178
-			public const int expandedTitleMarginEnd = 2130772344;
-			
-			// aapt resource value: 0x7f010176
-			public const int expandedTitleMarginStart = 2130772342;
-			
-			// aapt resource value: 0x7f010177
-			public const int expandedTitleMarginTop = 2130772343;
-			
-			// aapt resource value: 0x7f01017a
-			public const int expandedTitleTextAppearance = 2130772346;
-			
-			// aapt resource value: 0x7f010016
-			public const int externalRouteEnabledDrawable = 2130771990;
-			
-			// aapt resource value: 0x7f010148
-			public const int fabAlignmentMode = 2130772296;
-			
-			// aapt resource value: 0x7f010149
-			public const int fabCradleMargin = 2130772297;
-			
-			// aapt resource value: 0x7f01014a
-			public const int fabCradleRoundedCornerRadius = 2130772298;
-			
-			// aapt resource value: 0x7f01014b
-			public const int fabCradleVerticalOffset = 2130772299;
-			
-			// aapt resource value: 0x7f010187
-			public const int fabCustomSize = 2130772359;
-			
-			// aapt resource value: 0x7f010186
-			public const int fabSize = 2130772358;
-			
-			// aapt resource value: 0x7f010005
-			public const int fastScrollEnabled = 2130771973;
-			
-			// aapt resource value: 0x7f010008
-			public const int fastScrollHorizontalThumbDrawable = 2130771976;
-			
-			// aapt resource value: 0x7f010009
-			public const int fastScrollHorizontalTrackDrawable = 2130771977;
-			
-			// aapt resource value: 0x7f010006
-			public const int fastScrollVerticalThumbDrawable = 2130771974;
-			
-			// aapt resource value: 0x7f010007
-			public const int fastScrollVerticalTrackDrawable = 2130771975;
-			
-			// aapt resource value: 0x7f01005a
-			public const int firstBaselineToTopHeight = 2130772058;
-			
-			// aapt resource value: 0x7f010127
-			public const int floatingActionButtonStyle = 2130772263;
-			
-			// aapt resource value: 0x7f0101e8
-			public const int font = 2130772456;
-			
-			// aapt resource value: 0x7f010058
-			public const int fontFamily = 2130772056;
-			
-			// aapt resource value: 0x7f0101e1
-			public const int fontProviderAuthority = 2130772449;
-			
-			// aapt resource value: 0x7f0101e4
-			public const int fontProviderCerts = 2130772452;
-			
-			// aapt resource value: 0x7f0101e5
-			public const int fontProviderFetchStrategy = 2130772453;
-			
-			// aapt resource value: 0x7f0101e6
-			public const int fontProviderFetchTimeout = 2130772454;
-			
-			// aapt resource value: 0x7f0101e2
-			public const int fontProviderPackage = 2130772450;
-			
-			// aapt resource value: 0x7f0101e3
-			public const int fontProviderQuery = 2130772451;
-			
-			// aapt resource value: 0x7f0101e7
-			public const int fontStyle = 2130772455;
-			
-			// aapt resource value: 0x7f0101ea
-			public const int fontVariationSettings = 2130772458;
-			
-			// aapt resource value: 0x7f0101e9
-			public const int fontWeight = 2130772457;
-			
-			// aapt resource value: 0x7f010190
-			public const int foregroundInsidePadding = 2130772368;
-			
-			// aapt resource value: 0x7f0100d9
-			public const int gapBetweenBars = 2130772185;
-			
-			// aapt resource value: 0x7f0100f6
-			public const int goIcon = 2130772214;
-			
-			// aapt resource value: 0x7f01019a
-			public const int headerLayout = 2130772378;
-			
-			// aapt resource value: 0x7f010025
-			public const int height = 2130772005;
-			
-			// aapt resource value: 0x7f0101be
-			public const int helperText = 2130772414;
-			
-			// aapt resource value: 0x7f0101bf
-			public const int helperTextEnabled = 2130772415;
-			
-			// aapt resource value: 0x7f0101c0
-			public const int helperTextTextAppearance = 2130772416;
-			
-			// aapt resource value: 0x7f010128
-			public const int hideMotionSpec = 2130772264;
-			
-			// aapt resource value: 0x7f010039
-			public const int hideOnContentScroll = 2130772025;
-			
-			// aapt resource value: 0x7f01014c
-			public const int hideOnScroll = 2130772300;
-			
-			// aapt resource value: 0x7f0101bc
-			public const int hintAnimationEnabled = 2130772412;
-			
-			// aapt resource value: 0x7f0101bb
-			public const int hintEnabled = 2130772411;
-			
-			// aapt resource value: 0x7f0101bd
-			public const int hintTextAppearance = 2130772413;
+			// aapt resource value: 0x7f010090
+			public const int actionButtonStyle = 2130772112;
 			
 			// aapt resource value: 0x7f01008c
-			public const int homeAsUpIndicator = 2130772108;
+			public const int actionDropDownStyle = 2130772108;
 			
-			// aapt resource value: 0x7f010034
-			public const int homeLayout = 2130772020;
+			// aapt resource value: 0x7f0100e7
+			public const int actionLayout = 2130772199;
 			
-			// aapt resource value: 0x7f010188
-			public const int hoveredFocusedTranslationZ = 2130772360;
+			// aapt resource value: 0x7f010076
+			public const int actionMenuTextAppearance = 2130772086;
 			
-			// aapt resource value: 0x7f01002d
-			public const int icon = 2130772013;
+			// aapt resource value: 0x7f010077
+			public const int actionMenuTextColor = 2130772087;
 			
-			// aapt resource value: 0x7f010169
-			public const int iconEndPadding = 2130772329;
+			// aapt resource value: 0x7f01007a
+			public const int actionModeBackground = 2130772090;
 			
-			// aapt resource value: 0x7f010193
-			public const int iconGravity = 2130772371;
+			// aapt resource value: 0x7f010079
+			public const int actionModeCloseButtonStyle = 2130772089;
 			
-			// aapt resource value: 0x7f010192
-			public const int iconPadding = 2130772370;
+			// aapt resource value: 0x7f01007c
+			public const int actionModeCloseDrawable = 2130772092;
 			
-			// aapt resource value: 0x7f010191
-			public const int iconSize = 2130772369;
+			// aapt resource value: 0x7f01007e
+			public const int actionModeCopyDrawable = 2130772094;
 			
-			// aapt resource value: 0x7f010168
-			public const int iconStartPadding = 2130772328;
+			// aapt resource value: 0x7f01007d
+			public const int actionModeCutDrawable = 2130772093;
+			
+			// aapt resource value: 0x7f010082
+			public const int actionModeFindDrawable = 2130772098;
+			
+			// aapt resource value: 0x7f01007f
+			public const int actionModePasteDrawable = 2130772095;
+			
+			// aapt resource value: 0x7f010084
+			public const int actionModePopupWindowStyle = 2130772100;
+			
+			// aapt resource value: 0x7f010080
+			public const int actionModeSelectAllDrawable = 2130772096;
+			
+			// aapt resource value: 0x7f010081
+			public const int actionModeShareDrawable = 2130772097;
+			
+			// aapt resource value: 0x7f01007b
+			public const int actionModeSplitBackground = 2130772091;
+			
+			// aapt resource value: 0x7f010078
+			public const int actionModeStyle = 2130772088;
+			
+			// aapt resource value: 0x7f010083
+			public const int actionModeWebSearchDrawable = 2130772099;
+			
+			// aapt resource value: 0x7f01006c
+			public const int actionOverflowButtonStyle = 2130772076;
+			
+			// aapt resource value: 0x7f01006d
+			public const int actionOverflowMenuStyle = 2130772077;
 			
 			// aapt resource value: 0x7f0100e9
-			public const int iconTint = 2130772201;
+			public const int actionProviderClass = 2130772201;
 			
-			// aapt resource value: 0x7f0100ea
-			public const int iconTintMode = 2130772202;
+			// aapt resource value: 0x7f0100e8
+			public const int actionViewClass = 2130772200;
 			
-			// aapt resource value: 0x7f0100f2
-			public const int iconifiedByDefault = 2130772210;
+			// aapt resource value: 0x7f010098
+			public const int activityChooserViewStyle = 2130772120;
 			
-			// aapt resource value: 0x7f01009c
-			public const int imageButtonStyle = 2130772124;
+			// aapt resource value: 0x7f010203
+			public const int ad_marker_color = 2130772483;
 			
-			// aapt resource value: 0x7f010036
-			public const int indeterminateProgressStyle = 2130772022;
+			// aapt resource value: 0x7f0101fa
+			public const int ad_marker_width = 2130772474;
 			
-			// aapt resource value: 0x7f010043
-			public const int initialActivityCount = 2130772035;
+			// aapt resource value: 0x7f0100bd
+			public const int alertDialogButtonGroupStyle = 2130772157;
 			
-			// aapt resource value: 0x7f01019d
-			public const int insetForeground = 2130772381;
+			// aapt resource value: 0x7f0100be
+			public const int alertDialogCenterButtons = 2130772158;
 			
-			// aapt resource value: 0x7f010026
-			public const int isLightTheme = 2130772006;
+			// aapt resource value: 0x7f0100bc
+			public const int alertDialogStyle = 2130772156;
 			
-			// aapt resource value: 0x7f010198
-			public const int itemBackground = 2130772376;
+			// aapt resource value: 0x7f0100bf
+			public const int alertDialogTheme = 2130772159;
 			
-			// aapt resource value: 0x7f01019b
-			public const int itemHorizontalPadding = 2130772379;
+			// aapt resource value: 0x7f0100d6
+			public const int allowStacking = 2130772182;
 			
-			// aapt resource value: 0x7f010151
-			public const int itemHorizontalTranslationEnabled = 2130772305;
+			// aapt resource value: 0x7f0101e3
+			public const int alpha = 2130772451;
 			
-			// aapt resource value: 0x7f01019c
-			public const int itemIconPadding = 2130772380;
+			// aapt resource value: 0x7f0100e4
+			public const int alphabeticModifiers = 2130772196;
 			
-			// aapt resource value: 0x7f01014e
-			public const int itemIconSize = 2130772302;
+			// aapt resource value: 0x7f0100dd
+			public const int arrowHeadLength = 2130772189;
 			
-			// aapt resource value: 0x7f010196
-			public const int itemIconTint = 2130772374;
+			// aapt resource value: 0x7f0100de
+			public const int arrowShaftLength = 2130772190;
 			
-			// aapt resource value: 0x7f010038
-			public const int itemPadding = 2130772024;
+			// aapt resource value: 0x7f0100c4
+			public const int autoCompleteTextViewStyle = 2130772164;
 			
-			// aapt resource value: 0x7f01018e
-			public const int itemSpacing = 2130772366;
-			
-			// aapt resource value: 0x7f010199
-			public const int itemTextAppearance = 2130772377;
-			
-			// aapt resource value: 0x7f010150
-			public const int itemTextAppearanceActive = 2130772304;
-			
-			// aapt resource value: 0x7f01014f
-			public const int itemTextAppearanceInactive = 2130772303;
-			
-			// aapt resource value: 0x7f010197
-			public const int itemTextColor = 2130772375;
-			
-			// aapt resource value: 0x7f0101d8
-			public const int keylines = 2130772440;
-			
-			// aapt resource value: 0x7f01014d
-			public const int labelVisibilityMode = 2130772301;
-			
-			// aapt resource value: 0x7f01005b
-			public const int lastBaselineToBottomHeight = 2130772059;
-			
-			// aapt resource value: 0x7f0100f1
-			public const int layout = 2130772209;
-			
-			// aapt resource value: 0x7f010001
-			public const int layoutManager = 2130771969;
-			
-			// aapt resource value: 0x7f0101db
-			public const int layout_anchor = 2130772443;
-			
-			// aapt resource value: 0x7f0101dd
-			public const int layout_anchorGravity = 2130772445;
-			
-			// aapt resource value: 0x7f0101da
-			public const int layout_behavior = 2130772442;
-			
-			// aapt resource value: 0x7f010184
-			public const int layout_collapseMode = 2130772356;
-			
-			// aapt resource value: 0x7f010185
-			public const int layout_collapseParallaxMultiplier = 2130772357;
-			
-			// aapt resource value: 0x7f0101df
-			public const int layout_dodgeInsetEdges = 2130772447;
-			
-			// aapt resource value: 0x7f0101de
-			public const int layout_insetEdge = 2130772446;
-			
-			// aapt resource value: 0x7f0101dc
-			public const int layout_keyline = 2130772444;
-			
-			// aapt resource value: 0x7f010146
-			public const int layout_scrollFlags = 2130772294;
-			
-			// aapt resource value: 0x7f010147
-			public const int layout_scrollInterpolator = 2130772295;
-			
-			// aapt resource value: 0x7f010141
-			public const int liftOnScroll = 2130772289;
+			// aapt resource value: 0x7f01005a
+			public const int autoSizeMaxTextSize = 2130772058;
 			
 			// aapt resource value: 0x7f010059
-			public const int lineHeight = 2130772057;
+			public const int autoSizeMinTextSize = 2130772057;
 			
-			// aapt resource value: 0x7f01018f
-			public const int lineSpacing = 2130772367;
+			// aapt resource value: 0x7f010058
+			public const int autoSizePresetSizes = 2130772056;
 			
-			// aapt resource value: 0x7f0100ae
-			public const int listChoiceBackgroundIndicator = 2130772142;
+			// aapt resource value: 0x7f010057
+			public const int autoSizeStepGranularity = 2130772055;
 			
-			// aapt resource value: 0x7f010087
-			public const int listDividerAlertDialog = 2130772103;
+			// aapt resource value: 0x7f010056
+			public const int autoSizeTextType = 2130772054;
 			
-			// aapt resource value: 0x7f010049
-			public const int listItemLayout = 2130772041;
+			// aapt resource value: 0x7f01020b
+			public const int auto_show = 2130772491;
 			
-			// aapt resource value: 0x7f010046
-			public const int listLayout = 2130772038;
+			// aapt resource value: 0x7f010033
+			public const int background = 2130772019;
 			
-			// aapt resource value: 0x7f0100ce
-			public const int listMenuViewStyle = 2130772174;
+			// aapt resource value: 0x7f010035
+			public const int backgroundSplit = 2130772021;
 			
-			// aapt resource value: 0x7f0100a7
-			public const int listPopupWindowStyle = 2130772135;
+			// aapt resource value: 0x7f010034
+			public const int backgroundStacked = 2130772020;
 			
-			// aapt resource value: 0x7f0100a1
-			public const int listPreferredItemHeight = 2130772129;
+			// aapt resource value: 0x7f010120
+			public const int backgroundTint = 2130772256;
 			
-			// aapt resource value: 0x7f0100a3
-			public const int listPreferredItemHeightLarge = 2130772131;
+			// aapt resource value: 0x7f010121
+			public const int backgroundTintMode = 2130772257;
 			
-			// aapt resource value: 0x7f0100a2
-			public const int listPreferredItemHeightSmall = 2130772130;
+			// aapt resource value: 0x7f0100df
+			public const int barLength = 2130772191;
 			
-			// aapt resource value: 0x7f0100a4
-			public const int listPreferredItemPaddingLeft = 2130772132;
+			// aapt resource value: 0x7f0101f8
+			public const int bar_height = 2130772472;
 			
-			// aapt resource value: 0x7f0100a5
-			public const int listPreferredItemPaddingRight = 2130772133;
+			// aapt resource value: 0x7f010190
+			public const int behavior_autoHide = 2130772368;
 			
-			// aapt resource value: 0x7f01002e
-			public const int logo = 2130772014;
+			// aapt resource value: 0x7f010158
+			public const int behavior_fitToContents = 2130772312;
+			
+			// aapt resource value: 0x7f010156
+			public const int behavior_hideable = 2130772310;
+			
+			// aapt resource value: 0x7f0101a1
+			public const int behavior_overlapTop = 2130772385;
+			
+			// aapt resource value: 0x7f010155
+			public const int behavior_peekHeight = 2130772309;
+			
+			// aapt resource value: 0x7f010157
+			public const int behavior_skipCollapsed = 2130772311;
+			
+			// aapt resource value: 0x7f01018d
+			public const int borderWidth = 2130772365;
+			
+			// aapt resource value: 0x7f010095
+			public const int borderlessButtonStyle = 2130772117;
+			
+			// aapt resource value: 0x7f010122
+			public const int bottomAppBarStyle = 2130772258;
+			
+			// aapt resource value: 0x7f010123
+			public const int bottomNavigationStyle = 2130772259;
+			
+			// aapt resource value: 0x7f010124
+			public const int bottomSheetDialogTheme = 2130772260;
+			
+			// aapt resource value: 0x7f010125
+			public const int bottomSheetStyle = 2130772261;
+			
+			// aapt resource value: 0x7f0101d6
+			public const int boxBackgroundColor = 2130772438;
+			
+			// aapt resource value: 0x7f0101cf
+			public const int boxBackgroundMode = 2130772431;
+			
+			// aapt resource value: 0x7f0101d0
+			public const int boxCollapsedPaddingTop = 2130772432;
+			
+			// aapt resource value: 0x7f0101d4
+			public const int boxCornerRadiusBottomEnd = 2130772436;
+			
+			// aapt resource value: 0x7f0101d3
+			public const int boxCornerRadiusBottomStart = 2130772435;
+			
+			// aapt resource value: 0x7f0101d2
+			public const int boxCornerRadiusTopEnd = 2130772434;
+			
+			// aapt resource value: 0x7f0101d1
+			public const int boxCornerRadiusTopStart = 2130772433;
+			
+			// aapt resource value: 0x7f0101d5
+			public const int boxStrokeColor = 2130772437;
+			
+			// aapt resource value: 0x7f0101d7
+			public const int boxStrokeWidth = 2130772439;
+			
+			// aapt resource value: 0x7f010201
+			public const int buffered_color = 2130772481;
+			
+			// aapt resource value: 0x7f010092
+			public const int buttonBarButtonStyle = 2130772114;
+			
+			// aapt resource value: 0x7f0100c2
+			public const int buttonBarNegativeButtonStyle = 2130772162;
+			
+			// aapt resource value: 0x7f0100c3
+			public const int buttonBarNeutralButtonStyle = 2130772163;
+			
+			// aapt resource value: 0x7f0100c1
+			public const int buttonBarPositiveButtonStyle = 2130772161;
+			
+			// aapt resource value: 0x7f010091
+			public const int buttonBarStyle = 2130772113;
+			
+			// aapt resource value: 0x7f010115
+			public const int buttonGravity = 2130772245;
+			
+			// aapt resource value: 0x7f01004e
+			public const int buttonIconDimen = 2130772046;
+			
+			// aapt resource value: 0x7f010048
+			public const int buttonPanelSideLayout = 2130772040;
+			
+			// aapt resource value: 0x7f0100c5
+			public const int buttonStyle = 2130772165;
+			
+			// aapt resource value: 0x7f0100c6
+			public const int buttonStyleSmall = 2130772166;
+			
+			// aapt resource value: 0x7f0100d7
+			public const int buttonTint = 2130772183;
+			
+			// aapt resource value: 0x7f0100d8
+			public const int buttonTintMode = 2130772184;
+			
+			// aapt resource value: 0x7f01001c
+			public const int cardBackgroundColor = 2130771996;
+			
+			// aapt resource value: 0x7f01001d
+			public const int cardCornerRadius = 2130771997;
+			
+			// aapt resource value: 0x7f01001e
+			public const int cardElevation = 2130771998;
+			
+			// aapt resource value: 0x7f01001f
+			public const int cardMaxElevation = 2130771999;
+			
+			// aapt resource value: 0x7f010021
+			public const int cardPreventCornerOverlap = 2130772001;
+			
+			// aapt resource value: 0x7f010020
+			public const int cardUseCompatPadding = 2130772000;
+			
+			// aapt resource value: 0x7f01001b
+			public const int cardViewStyle = 2130771995;
+			
+			// aapt resource value: 0x7f0100c7
+			public const int checkboxStyle = 2130772167;
+			
+			// aapt resource value: 0x7f010177
+			public const int checkedChip = 2130772343;
+			
+			// aapt resource value: 0x7f010169
+			public const int checkedIcon = 2130772329;
+			
+			// aapt resource value: 0x7f010168
+			public const int checkedIconEnabled = 2130772328;
+			
+			// aapt resource value: 0x7f010167
+			public const int checkedIconVisible = 2130772327;
+			
+			// aapt resource value: 0x7f0100c8
+			public const int checkedTextViewStyle = 2130772168;
+			
+			// aapt resource value: 0x7f010159
+			public const int chipBackgroundColor = 2130772313;
+			
+			// aapt resource value: 0x7f01015b
+			public const int chipCornerRadius = 2130772315;
+			
+			// aapt resource value: 0x7f010171
+			public const int chipEndPadding = 2130772337;
+			
+			// aapt resource value: 0x7f010126
+			public const int chipGroupStyle = 2130772262;
+			
+			// aapt resource value: 0x7f010160
+			public const int chipIcon = 2130772320;
+			
+			// aapt resource value: 0x7f01015f
+			public const int chipIconEnabled = 2130772319;
+			
+			// aapt resource value: 0x7f010162
+			public const int chipIconSize = 2130772322;
+			
+			// aapt resource value: 0x7f010161
+			public const int chipIconTint = 2130772321;
+			
+			// aapt resource value: 0x7f01015e
+			public const int chipIconVisible = 2130772318;
+			
+			// aapt resource value: 0x7f01015a
+			public const int chipMinHeight = 2130772314;
+			
+			// aapt resource value: 0x7f010172
+			public const int chipSpacing = 2130772338;
+			
+			// aapt resource value: 0x7f010173
+			public const int chipSpacingHorizontal = 2130772339;
+			
+			// aapt resource value: 0x7f010174
+			public const int chipSpacingVertical = 2130772340;
+			
+			// aapt resource value: 0x7f010127
+			public const int chipStandaloneStyle = 2130772263;
+			
+			// aapt resource value: 0x7f01016a
+			public const int chipStartPadding = 2130772330;
+			
+			// aapt resource value: 0x7f01015c
+			public const int chipStrokeColor = 2130772316;
+			
+			// aapt resource value: 0x7f01015d
+			public const int chipStrokeWidth = 2130772317;
+			
+			// aapt resource value: 0x7f010128
+			public const int chipStyle = 2130772264;
+			
+			// aapt resource value: 0x7f0100f8
+			public const int closeIcon = 2130772216;
+			
+			// aapt resource value: 0x7f010164
+			public const int closeIconEnabled = 2130772324;
+			
+			// aapt resource value: 0x7f010170
+			public const int closeIconEndPadding = 2130772336;
+			
+			// aapt resource value: 0x7f010166
+			public const int closeIconSize = 2130772326;
+			
+			// aapt resource value: 0x7f01016f
+			public const int closeIconStartPadding = 2130772335;
+			
+			// aapt resource value: 0x7f010165
+			public const int closeIconTint = 2130772325;
+			
+			// aapt resource value: 0x7f010163
+			public const int closeIconVisible = 2130772323;
+			
+			// aapt resource value: 0x7f010045
+			public const int closeItemLayout = 2130772037;
 			
 			// aapt resource value: 0x7f010117
-			public const int logoDescription = 2130772247;
+			public const int collapseContentDescription = 2130772247;
+			
+			// aapt resource value: 0x7f010116
+			public const int collapseIcon = 2130772246;
+			
+			// aapt resource value: 0x7f010184
+			public const int collapsedTitleGravity = 2130772356;
+			
+			// aapt resource value: 0x7f01017e
+			public const int collapsedTitleTextAppearance = 2130772350;
+			
+			// aapt resource value: 0x7f0100d9
+			public const int color = 2130772185;
+			
+			// aapt resource value: 0x7f0100b4
+			public const int colorAccent = 2130772148;
+			
+			// aapt resource value: 0x7f0100bb
+			public const int colorBackgroundFloating = 2130772155;
+			
+			// aapt resource value: 0x7f0100b8
+			public const int colorButtonNormal = 2130772152;
+			
+			// aapt resource value: 0x7f0100b6
+			public const int colorControlActivated = 2130772150;
+			
+			// aapt resource value: 0x7f0100b7
+			public const int colorControlHighlight = 2130772151;
+			
+			// aapt resource value: 0x7f0100b5
+			public const int colorControlNormal = 2130772149;
+			
+			// aapt resource value: 0x7f0100d4
+			public const int colorError = 2130772180;
+			
+			// aapt resource value: 0x7f0100b2
+			public const int colorPrimary = 2130772146;
+			
+			// aapt resource value: 0x7f0100b3
+			public const int colorPrimaryDark = 2130772147;
 			
 			// aapt resource value: 0x7f010129
-			public const int materialButtonStyle = 2130772265;
+			public const int colorSecondary = 2130772265;
+			
+			// aapt resource value: 0x7f0100b9
+			public const int colorSwitchThumbNormal = 2130772153;
+			
+			// aapt resource value: 0x7f0100fd
+			public const int commitIcon = 2130772221;
+			
+			// aapt resource value: 0x7f0100ea
+			public const int contentDescription = 2130772202;
+			
+			// aapt resource value: 0x7f01003e
+			public const int contentInsetEnd = 2130772030;
+			
+			// aapt resource value: 0x7f010042
+			public const int contentInsetEndWithActions = 2130772034;
+			
+			// aapt resource value: 0x7f01003f
+			public const int contentInsetLeft = 2130772031;
+			
+			// aapt resource value: 0x7f010040
+			public const int contentInsetRight = 2130772032;
+			
+			// aapt resource value: 0x7f01003d
+			public const int contentInsetStart = 2130772029;
+			
+			// aapt resource value: 0x7f010041
+			public const int contentInsetStartWithNavigation = 2130772033;
+			
+			// aapt resource value: 0x7f010022
+			public const int contentPadding = 2130772002;
+			
+			// aapt resource value: 0x7f010026
+			public const int contentPaddingBottom = 2130772006;
+			
+			// aapt resource value: 0x7f010023
+			public const int contentPaddingLeft = 2130772003;
+			
+			// aapt resource value: 0x7f010024
+			public const int contentPaddingRight = 2130772004;
+			
+			// aapt resource value: 0x7f010025
+			public const int contentPaddingTop = 2130772005;
+			
+			// aapt resource value: 0x7f01017f
+			public const int contentScrim = 2130772351;
+			
+			// aapt resource value: 0x7f0100ba
+			public const int controlBackground = 2130772154;
+			
+			// aapt resource value: 0x7f0101ef
+			public const int controller_layout_id = 2130772463;
+			
+			// aapt resource value: 0x7f0101da
+			public const int coordinatorLayoutStyle = 2130772442;
+			
+			// aapt resource value: 0x7f010197
+			public const int cornerRadius = 2130772375;
+			
+			// aapt resource value: 0x7f0101c6
+			public const int counterEnabled = 2130772422;
+			
+			// aapt resource value: 0x7f0101c7
+			public const int counterMaxLength = 2130772423;
+			
+			// aapt resource value: 0x7f0101c9
+			public const int counterOverflowTextAppearance = 2130772425;
+			
+			// aapt resource value: 0x7f0101c8
+			public const int counterTextAppearance = 2130772424;
+			
+			// aapt resource value: 0x7f010036
+			public const int customNavigationLayout = 2130772022;
+			
+			// aapt resource value: 0x7f0100f7
+			public const int defaultQueryHint = 2130772215;
+			
+			// aapt resource value: 0x7f010207
+			public const int default_artwork = 2130772487;
+			
+			// aapt resource value: 0x7f01008b
+			public const int dialogCornerRadius = 2130772107;
+			
+			// aapt resource value: 0x7f010089
+			public const int dialogPreferredPadding = 2130772105;
+			
+			// aapt resource value: 0x7f010088
+			public const int dialogTheme = 2130772104;
+			
+			// aapt resource value: 0x7f01002c
+			public const int displayOptions = 2130772012;
+			
+			// aapt resource value: 0x7f010032
+			public const int divider = 2130772018;
+			
+			// aapt resource value: 0x7f010097
+			public const int dividerHorizontal = 2130772119;
+			
+			// aapt resource value: 0x7f0100e3
+			public const int dividerPadding = 2130772195;
+			
+			// aapt resource value: 0x7f010096
+			public const int dividerVertical = 2130772118;
+			
+			// aapt resource value: 0x7f0100db
+			public const int drawableSize = 2130772187;
+			
+			// aapt resource value: 0x7f010027
+			public const int drawerArrowStyle = 2130772007;
+			
+			// aapt resource value: 0x7f0100a9
+			public const int dropDownListViewStyle = 2130772137;
+			
+			// aapt resource value: 0x7f01008d
+			public const int dropdownListPreferredItemHeight = 2130772109;
+			
+			// aapt resource value: 0x7f01009e
+			public const int editTextBackground = 2130772126;
+			
+			// aapt resource value: 0x7f01009d
+			public const int editTextColor = 2130772125;
+			
+			// aapt resource value: 0x7f0100c9
+			public const int editTextStyle = 2130772169;
+			
+			// aapt resource value: 0x7f010043
+			public const int elevation = 2130772035;
+			
+			// aapt resource value: 0x7f0101d8
+			public const int enforceMaterialTheme = 2130772440;
+			
+			// aapt resource value: 0x7f0101d9
+			public const int enforceTextAppearance = 2130772441;
+			
+			// aapt resource value: 0x7f0101c4
+			public const int errorEnabled = 2130772420;
+			
+			// aapt resource value: 0x7f0101c5
+			public const int errorTextAppearance = 2130772421;
+			
+			// aapt resource value: 0x7f010047
+			public const int expandActivityOverflowButtonDrawable = 2130772039;
+			
+			// aapt resource value: 0x7f010143
+			public const int expanded = 2130772291;
+			
+			// aapt resource value: 0x7f010185
+			public const int expandedTitleGravity = 2130772357;
+			
+			// aapt resource value: 0x7f010178
+			public const int expandedTitleMargin = 2130772344;
+			
+			// aapt resource value: 0x7f01017c
+			public const int expandedTitleMarginBottom = 2130772348;
+			
+			// aapt resource value: 0x7f01017b
+			public const int expandedTitleMarginEnd = 2130772347;
+			
+			// aapt resource value: 0x7f010179
+			public const int expandedTitleMarginStart = 2130772345;
+			
+			// aapt resource value: 0x7f01017a
+			public const int expandedTitleMarginTop = 2130772346;
+			
+			// aapt resource value: 0x7f01017d
+			public const int expandedTitleTextAppearance = 2130772349;
+			
+			// aapt resource value: 0x7f010019
+			public const int externalRouteEnabledDrawable = 2130771993;
+			
+			// aapt resource value: 0x7f01014b
+			public const int fabAlignmentMode = 2130772299;
+			
+			// aapt resource value: 0x7f01014c
+			public const int fabCradleMargin = 2130772300;
+			
+			// aapt resource value: 0x7f01014d
+			public const int fabCradleRoundedCornerRadius = 2130772301;
+			
+			// aapt resource value: 0x7f01014e
+			public const int fabCradleVerticalOffset = 2130772302;
+			
+			// aapt resource value: 0x7f01018a
+			public const int fabCustomSize = 2130772362;
+			
+			// aapt resource value: 0x7f010189
+			public const int fabSize = 2130772361;
+			
+			// aapt resource value: 0x7f010008
+			public const int fastScrollEnabled = 2130771976;
+			
+			// aapt resource value: 0x7f01000b
+			public const int fastScrollHorizontalThumbDrawable = 2130771979;
+			
+			// aapt resource value: 0x7f01000c
+			public const int fastScrollHorizontalTrackDrawable = 2130771980;
+			
+			// aapt resource value: 0x7f010009
+			public const int fastScrollVerticalThumbDrawable = 2130771977;
+			
+			// aapt resource value: 0x7f01000a
+			public const int fastScrollVerticalTrackDrawable = 2130771978;
+			
+			// aapt resource value: 0x7f0101f0
+			public const int fastforward_increment = 2130772464;
+			
+			// aapt resource value: 0x7f01005d
+			public const int firstBaselineToTopHeight = 2130772061;
 			
 			// aapt resource value: 0x7f01012a
-			public const int materialCardViewStyle = 2130772266;
+			public const int floatingActionButtonStyle = 2130772266;
+			
+			// aapt resource value: 0x7f0101eb
+			public const int font = 2130772459;
+			
+			// aapt resource value: 0x7f01005b
+			public const int fontFamily = 2130772059;
+			
+			// aapt resource value: 0x7f0101e4
+			public const int fontProviderAuthority = 2130772452;
+			
+			// aapt resource value: 0x7f0101e7
+			public const int fontProviderCerts = 2130772455;
+			
+			// aapt resource value: 0x7f0101e8
+			public const int fontProviderFetchStrategy = 2130772456;
+			
+			// aapt resource value: 0x7f0101e9
+			public const int fontProviderFetchTimeout = 2130772457;
+			
+			// aapt resource value: 0x7f0101e5
+			public const int fontProviderPackage = 2130772453;
+			
+			// aapt resource value: 0x7f0101e6
+			public const int fontProviderQuery = 2130772454;
+			
+			// aapt resource value: 0x7f0101ea
+			public const int fontStyle = 2130772458;
+			
+			// aapt resource value: 0x7f0101ed
+			public const int fontVariationSettings = 2130772461;
+			
+			// aapt resource value: 0x7f0101ec
+			public const int fontWeight = 2130772460;
+			
+			// aapt resource value: 0x7f010193
+			public const int foregroundInsidePadding = 2130772371;
+			
+			// aapt resource value: 0x7f0100dc
+			public const int gapBetweenBars = 2130772188;
+			
+			// aapt resource value: 0x7f0100f9
+			public const int goIcon = 2130772217;
+			
+			// aapt resource value: 0x7f01019d
+			public const int headerLayout = 2130772381;
+			
+			// aapt resource value: 0x7f010028
+			public const int height = 2130772008;
+			
+			// aapt resource value: 0x7f0101c1
+			public const int helperText = 2130772417;
+			
+			// aapt resource value: 0x7f0101c2
+			public const int helperTextEnabled = 2130772418;
+			
+			// aapt resource value: 0x7f0101c3
+			public const int helperTextTextAppearance = 2130772419;
+			
+			// aapt resource value: 0x7f01012b
+			public const int hideMotionSpec = 2130772267;
+			
+			// aapt resource value: 0x7f01003c
+			public const int hideOnContentScroll = 2130772028;
+			
+			// aapt resource value: 0x7f01014f
+			public const int hideOnScroll = 2130772303;
+			
+			// aapt resource value: 0x7f01020a
+			public const int hide_during_ads = 2130772490;
+			
+			// aapt resource value: 0x7f010209
+			public const int hide_on_touch = 2130772489;
+			
+			// aapt resource value: 0x7f0101bf
+			public const int hintAnimationEnabled = 2130772415;
+			
+			// aapt resource value: 0x7f0101be
+			public const int hintEnabled = 2130772414;
+			
+			// aapt resource value: 0x7f0101c0
+			public const int hintTextAppearance = 2130772416;
+			
+			// aapt resource value: 0x7f01008f
+			public const int homeAsUpIndicator = 2130772111;
+			
+			// aapt resource value: 0x7f010037
+			public const int homeLayout = 2130772023;
+			
+			// aapt resource value: 0x7f01018b
+			public const int hoveredFocusedTranslationZ = 2130772363;
+			
+			// aapt resource value: 0x7f010030
+			public const int icon = 2130772016;
+			
+			// aapt resource value: 0x7f01016c
+			public const int iconEndPadding = 2130772332;
+			
+			// aapt resource value: 0x7f010196
+			public const int iconGravity = 2130772374;
+			
+			// aapt resource value: 0x7f010195
+			public const int iconPadding = 2130772373;
+			
+			// aapt resource value: 0x7f010194
+			public const int iconSize = 2130772372;
+			
+			// aapt resource value: 0x7f01016b
+			public const int iconStartPadding = 2130772331;
+			
+			// aapt resource value: 0x7f0100ec
+			public const int iconTint = 2130772204;
+			
+			// aapt resource value: 0x7f0100ed
+			public const int iconTintMode = 2130772205;
+			
+			// aapt resource value: 0x7f0100f5
+			public const int iconifiedByDefault = 2130772213;
+			
+			// aapt resource value: 0x7f01009f
+			public const int imageButtonStyle = 2130772127;
+			
+			// aapt resource value: 0x7f010039
+			public const int indeterminateProgressStyle = 2130772025;
+			
+			// aapt resource value: 0x7f010046
+			public const int initialActivityCount = 2130772038;
+			
+			// aapt resource value: 0x7f0101a0
+			public const int insetForeground = 2130772384;
+			
+			// aapt resource value: 0x7f010029
+			public const int isLightTheme = 2130772009;
+			
+			// aapt resource value: 0x7f01019b
+			public const int itemBackground = 2130772379;
+			
+			// aapt resource value: 0x7f01019e
+			public const int itemHorizontalPadding = 2130772382;
+			
+			// aapt resource value: 0x7f010154
+			public const int itemHorizontalTranslationEnabled = 2130772308;
+			
+			// aapt resource value: 0x7f01019f
+			public const int itemIconPadding = 2130772383;
+			
+			// aapt resource value: 0x7f010151
+			public const int itemIconSize = 2130772305;
+			
+			// aapt resource value: 0x7f010199
+			public const int itemIconTint = 2130772377;
+			
+			// aapt resource value: 0x7f01003b
+			public const int itemPadding = 2130772027;
+			
+			// aapt resource value: 0x7f010191
+			public const int itemSpacing = 2130772369;
+			
+			// aapt resource value: 0x7f01019c
+			public const int itemTextAppearance = 2130772380;
+			
+			// aapt resource value: 0x7f010153
+			public const int itemTextAppearanceActive = 2130772307;
+			
+			// aapt resource value: 0x7f010152
+			public const int itemTextAppearanceInactive = 2130772306;
+			
+			// aapt resource value: 0x7f01019a
+			public const int itemTextColor = 2130772378;
+			
+			// aapt resource value: 0x7f01020d
+			public const int keep_content_on_player_reset = 2130772493;
+			
+			// aapt resource value: 0x7f0101db
+			public const int keylines = 2130772443;
+			
+			// aapt resource value: 0x7f010150
+			public const int labelVisibilityMode = 2130772304;
+			
+			// aapt resource value: 0x7f01005e
+			public const int lastBaselineToBottomHeight = 2130772062;
+			
+			// aapt resource value: 0x7f0100f4
+			public const int layout = 2130772212;
+			
+			// aapt resource value: 0x7f010004
+			public const int layoutManager = 2130771972;
+			
+			// aapt resource value: 0x7f0101de
+			public const int layout_anchor = 2130772446;
+			
+			// aapt resource value: 0x7f0101e0
+			public const int layout_anchorGravity = 2130772448;
+			
+			// aapt resource value: 0x7f0101dd
+			public const int layout_behavior = 2130772445;
+			
+			// aapt resource value: 0x7f010187
+			public const int layout_collapseMode = 2130772359;
+			
+			// aapt resource value: 0x7f010188
+			public const int layout_collapseParallaxMultiplier = 2130772360;
+			
+			// aapt resource value: 0x7f0101e2
+			public const int layout_dodgeInsetEdges = 2130772450;
+			
+			// aapt resource value: 0x7f0101e1
+			public const int layout_insetEdge = 2130772449;
+			
+			// aapt resource value: 0x7f0101df
+			public const int layout_keyline = 2130772447;
+			
+			// aapt resource value: 0x7f010149
+			public const int layout_scrollFlags = 2130772297;
+			
+			// aapt resource value: 0x7f01014a
+			public const int layout_scrollInterpolator = 2130772298;
+			
+			// aapt resource value: 0x7f010144
+			public const int liftOnScroll = 2130772292;
+			
+			// aapt resource value: 0x7f01005c
+			public const int lineHeight = 2130772060;
+			
+			// aapt resource value: 0x7f010192
+			public const int lineSpacing = 2130772370;
+			
+			// aapt resource value: 0x7f0100b1
+			public const int listChoiceBackgroundIndicator = 2130772145;
+			
+			// aapt resource value: 0x7f01008a
+			public const int listDividerAlertDialog = 2130772106;
+			
+			// aapt resource value: 0x7f01004c
+			public const int listItemLayout = 2130772044;
+			
+			// aapt resource value: 0x7f010049
+			public const int listLayout = 2130772041;
+			
+			// aapt resource value: 0x7f0100d1
+			public const int listMenuViewStyle = 2130772177;
+			
+			// aapt resource value: 0x7f0100aa
+			public const int listPopupWindowStyle = 2130772138;
+			
+			// aapt resource value: 0x7f0100a4
+			public const int listPreferredItemHeight = 2130772132;
+			
+			// aapt resource value: 0x7f0100a6
+			public const int listPreferredItemHeightLarge = 2130772134;
+			
+			// aapt resource value: 0x7f0100a5
+			public const int listPreferredItemHeightSmall = 2130772133;
+			
+			// aapt resource value: 0x7f0100a7
+			public const int listPreferredItemPaddingLeft = 2130772135;
+			
+			// aapt resource value: 0x7f0100a8
+			public const int listPreferredItemPaddingRight = 2130772136;
+			
+			// aapt resource value: 0x7f010031
+			public const int logo = 2130772017;
+			
+			// aapt resource value: 0x7f01011a
+			public const int logoDescription = 2130772250;
+			
+			// aapt resource value: 0x7f01012c
+			public const int materialButtonStyle = 2130772268;
+			
+			// aapt resource value: 0x7f01012d
+			public const int materialCardViewStyle = 2130772269;
 			
 			// aapt resource value: 0x7f010000
 			public const int materialOutlinedButtonStyle = 2130771968;
 			
-			// aapt resource value: 0x7f0101a1
-			public const int maxActionInlineWidth = 2130772385;
-			
-			// aapt resource value: 0x7f010111
-			public const int maxButtonHeight = 2130772241;
-			
-			// aapt resource value: 0x7f01018c
-			public const int maxImageSize = 2130772364;
-			
-			// aapt resource value: 0x7f0100de
-			public const int measureWithLargestChild = 2130772190;
-			
-			// aapt resource value: 0x7f01000a
-			public const int mediaRouteAudioTrackDrawable = 2130771978;
-			
-			// aapt resource value: 0x7f01000b
-			public const int mediaRouteButtonStyle = 2130771979;
-			
-			// aapt resource value: 0x7f010017
-			public const int mediaRouteButtonTint = 2130771991;
-			
-			// aapt resource value: 0x7f01000c
-			public const int mediaRouteCloseDrawable = 2130771980;
-			
-			// aapt resource value: 0x7f01000d
-			public const int mediaRouteControlPanelThemeOverlay = 2130771981;
-			
-			// aapt resource value: 0x7f01000e
-			public const int mediaRouteDefaultIconDrawable = 2130771982;
-			
-			// aapt resource value: 0x7f01000f
-			public const int mediaRoutePauseDrawable = 2130771983;
-			
-			// aapt resource value: 0x7f010010
-			public const int mediaRoutePlayDrawable = 2130771984;
-			
-			// aapt resource value: 0x7f010011
-			public const int mediaRouteSpeakerGroupIconDrawable = 2130771985;
-			
-			// aapt resource value: 0x7f010012
-			public const int mediaRouteSpeakerIconDrawable = 2130771986;
-			
-			// aapt resource value: 0x7f010013
-			public const int mediaRouteStopDrawable = 2130771987;
-			
-			// aapt resource value: 0x7f010014
-			public const int mediaRouteTheme = 2130771988;
-			
-			// aapt resource value: 0x7f010015
-			public const int mediaRouteTvIconDrawable = 2130771989;
-			
-			// aapt resource value: 0x7f010195
-			public const int menu = 2130772373;
-			
-			// aapt resource value: 0x7f010047
-			public const int multiChoiceItemLayout = 2130772039;
-			
-			// aapt resource value: 0x7f010116
-			public const int navigationContentDescription = 2130772246;
-			
-			// aapt resource value: 0x7f010115
-			public const int navigationIcon = 2130772245;
-			
-			// aapt resource value: 0x7f010028
-			public const int navigationMode = 2130772008;
-			
-			// aapt resource value: 0x7f01012b
-			public const int navigationViewStyle = 2130772267;
-			
-			// aapt resource value: 0x7f0100e2
-			public const int numericModifiers = 2130772194;
-			
-			// aapt resource value: 0x7f0100ed
-			public const int overlapAnchor = 2130772205;
-			
-			// aapt resource value: 0x7f0100ef
-			public const int paddingBottomNoButtons = 2130772207;
-			
-			// aapt resource value: 0x7f01011b
-			public const int paddingEnd = 2130772251;
-			
-			// aapt resource value: 0x7f01011a
-			public const int paddingStart = 2130772250;
-			
-			// aapt resource value: 0x7f0100f0
-			public const int paddingTopNoTitle = 2130772208;
-			
-			// aapt resource value: 0x7f0100ab
-			public const int panelBackground = 2130772139;
-			
-			// aapt resource value: 0x7f0100ad
-			public const int panelMenuListTheme = 2130772141;
-			
-			// aapt resource value: 0x7f0100ac
-			public const int panelMenuListWidth = 2130772140;
-			
-			// aapt resource value: 0x7f0101c9
-			public const int passwordToggleContentDescription = 2130772425;
-			
-			// aapt resource value: 0x7f0101c8
-			public const int passwordToggleDrawable = 2130772424;
-			
-			// aapt resource value: 0x7f0101c7
-			public const int passwordToggleEnabled = 2130772423;
-			
-			// aapt resource value: 0x7f0101ca
-			public const int passwordToggleTint = 2130772426;
-			
-			// aapt resource value: 0x7f0101cb
-			public const int passwordToggleTintMode = 2130772427;
-			
-			// aapt resource value: 0x7f010098
-			public const int popupMenuStyle = 2130772120;
-			
-			// aapt resource value: 0x7f010041
-			public const int popupTheme = 2130772033;
-			
-			// aapt resource value: 0x7f010099
-			public const int popupWindowStyle = 2130772121;
-			
-			// aapt resource value: 0x7f0100eb
-			public const int preserveIconSpacing = 2130772203;
-			
-			// aapt resource value: 0x7f010189
-			public const int pressedTranslationZ = 2130772361;
-			
-			// aapt resource value: 0x7f010037
-			public const int progressBarPadding = 2130772023;
-			
-			// aapt resource value: 0x7f010035
-			public const int progressBarStyle = 2130772021;
-			
-			// aapt resource value: 0x7f0100fc
-			public const int queryBackground = 2130772220;
-			
-			// aapt resource value: 0x7f0100f3
-			public const int queryHint = 2130772211;
-			
-			// aapt resource value: 0x7f0100c7
-			public const int radioButtonStyle = 2130772167;
-			
-			// aapt resource value: 0x7f0100c8
-			public const int ratingBarStyle = 2130772168;
-			
-			// aapt resource value: 0x7f0100c9
-			public const int ratingBarStyleIndicator = 2130772169;
-			
-			// aapt resource value: 0x7f0100ca
-			public const int ratingBarStyleSmall = 2130772170;
-			
 			// aapt resource value: 0x7f010003
-			public const int reverseLayout = 2130771971;
-			
-			// aapt resource value: 0x7f01012c
-			public const int rippleColor = 2130772268;
-			
-			// aapt resource value: 0x7f010180
-			public const int scrimAnimationDuration = 2130772352;
-			
-			// aapt resource value: 0x7f01012d
-			public const int scrimBackground = 2130772269;
-			
-			// aapt resource value: 0x7f01017f
-			public const int scrimVisibleHeightTrigger = 2130772351;
-			
-			// aapt resource value: 0x7f0100f8
-			public const int searchHintIcon = 2130772216;
-			
-			// aapt resource value: 0x7f0100f7
-			public const int searchIcon = 2130772215;
-			
-			// aapt resource value: 0x7f0100a0
-			public const int searchViewStyle = 2130772128;
-			
-			// aapt resource value: 0x7f0100cb
-			public const int seekBarStyle = 2130772171;
-			
-			// aapt resource value: 0x7f010090
-			public const int selectableItemBackground = 2130772112;
-			
-			// aapt resource value: 0x7f010091
-			public const int selectableItemBackgroundBorderless = 2130772113;
-			
-			// aapt resource value: 0x7f0100e3
-			public const int showAsAction = 2130772195;
-			
-			// aapt resource value: 0x7f0100df
-			public const int showDividers = 2130772191;
-			
-			// aapt resource value: 0x7f01012e
-			public const int showMotionSpec = 2130772270;
-			
-			// aapt resource value: 0x7f010108
-			public const int showText = 2130772232;
-			
-			// aapt resource value: 0x7f01004a
-			public const int showTitle = 2130772042;
-			
-			// aapt resource value: 0x7f010048
-			public const int singleChoiceItemLayout = 2130772040;
-			
-			// aapt resource value: 0x7f010172
-			public const int singleLine = 2130772338;
-			
-			// aapt resource value: 0x7f010173
-			public const int singleSelection = 2130772339;
-			
-			// aapt resource value: 0x7f0101a0
-			public const int snackbarButtonStyle = 2130772384;
-			
-			// aapt resource value: 0x7f01019f
-			public const int snackbarStyle = 2130772383;
+			public const int materialProgressBarCircularStyle = 2130771971;
 			
 			// aapt resource value: 0x7f010002
-			public const int spanCount = 2130771970;
+			public const int materialProgressBarHorizontalStyle = 2130771970;
 			
-			// aapt resource value: 0x7f0100d7
-			public const int spinBars = 2130772183;
-			
-			// aapt resource value: 0x7f01008b
-			public const int spinnerDropDownItemStyle = 2130772107;
-			
-			// aapt resource value: 0x7f0100cc
-			public const int spinnerStyle = 2130772172;
-			
-			// aapt resource value: 0x7f010107
-			public const int splitTrack = 2130772231;
-			
-			// aapt resource value: 0x7f01004c
-			public const int srcCompat = 2130772044;
-			
-			// aapt resource value: 0x7f010004
-			public const int stackFromEnd = 2130771972;
-			
-			// aapt resource value: 0x7f0100ee
-			public const int state_above_anchor = 2130772206;
-			
-			// aapt resource value: 0x7f010142
-			public const int state_collapsed = 2130772290;
-			
-			// aapt resource value: 0x7f010143
-			public const int state_collapsible = 2130772291;
-			
-			// aapt resource value: 0x7f010145
-			public const int state_liftable = 2130772293;
-			
-			// aapt resource value: 0x7f010144
-			public const int state_lifted = 2130772292;
-			
-			// aapt resource value: 0x7f0101d9
-			public const int statusBarBackground = 2130772441;
-			
-			// aapt resource value: 0x7f01017d
-			public const int statusBarScrim = 2130772349;
-			
-			// aapt resource value: 0x7f01012f
-			public const int strokeColor = 2130772271;
-			
-			// aapt resource value: 0x7f010130
-			public const int strokeWidth = 2130772272;
-			
-			// aapt resource value: 0x7f0100ec
-			public const int subMenuArrow = 2130772204;
-			
-			// aapt resource value: 0x7f0100fd
-			public const int submitBackground = 2130772221;
-			
-			// aapt resource value: 0x7f01002a
-			public const int subtitle = 2130772010;
-			
-			// aapt resource value: 0x7f01010a
-			public const int subtitleTextAppearance = 2130772234;
-			
-			// aapt resource value: 0x7f010119
-			public const int subtitleTextColor = 2130772249;
-			
-			// aapt resource value: 0x7f01002c
-			public const int subtitleTextStyle = 2130772012;
-			
-			// aapt resource value: 0x7f0100fb
-			public const int suggestionRowLayout = 2130772219;
-			
-			// aapt resource value: 0x7f010105
-			public const int switchMinWidth = 2130772229;
-			
-			// aapt resource value: 0x7f010106
-			public const int switchPadding = 2130772230;
-			
-			// aapt resource value: 0x7f0100cd
-			public const int switchStyle = 2130772173;
-			
-			// aapt resource value: 0x7f010104
-			public const int switchTextAppearance = 2130772228;
-			
-			// aapt resource value: 0x7f0101a5
-			public const int tabBackground = 2130772389;
+			// aapt resource value: 0x7f010001
+			public const int materialSliderStyle = 2130771969;
 			
 			// aapt resource value: 0x7f0101a4
-			public const int tabContentStart = 2130772388;
+			public const int maxActionInlineWidth = 2130772388;
 			
-			// aapt resource value: 0x7f0101ab
-			public const int tabGravity = 2130772395;
+			// aapt resource value: 0x7f010114
+			public const int maxButtonHeight = 2130772244;
 			
-			// aapt resource value: 0x7f0101b7
-			public const int tabIconTint = 2130772407;
+			// aapt resource value: 0x7f01018f
+			public const int maxImageSize = 2130772367;
 			
-			// aapt resource value: 0x7f0101b8
-			public const int tabIconTintMode = 2130772408;
+			// aapt resource value: 0x7f0100e1
+			public const int measureWithLargestChild = 2130772193;
 			
-			// aapt resource value: 0x7f0101a6
-			public const int tabIndicator = 2130772390;
+			// aapt resource value: 0x7f01000d
+			public const int mediaRouteAudioTrackDrawable = 2130771981;
 			
-			// aapt resource value: 0x7f0101a8
-			public const int tabIndicatorAnimationDuration = 2130772392;
+			// aapt resource value: 0x7f01000e
+			public const int mediaRouteButtonStyle = 2130771982;
 			
-			// aapt resource value: 0x7f0101a2
-			public const int tabIndicatorColor = 2130772386;
+			// aapt resource value: 0x7f01001a
+			public const int mediaRouteButtonTint = 2130771994;
 			
-			// aapt resource value: 0x7f0101a9
-			public const int tabIndicatorFullWidth = 2130772393;
+			// aapt resource value: 0x7f01000f
+			public const int mediaRouteCloseDrawable = 2130771983;
 			
-			// aapt resource value: 0x7f0101a7
-			public const int tabIndicatorGravity = 2130772391;
+			// aapt resource value: 0x7f010010
+			public const int mediaRouteControlPanelThemeOverlay = 2130771984;
 			
-			// aapt resource value: 0x7f0101a3
-			public const int tabIndicatorHeight = 2130772387;
+			// aapt resource value: 0x7f010011
+			public const int mediaRouteDefaultIconDrawable = 2130771985;
 			
-			// aapt resource value: 0x7f0101ac
-			public const int tabInlineLabel = 2130772396;
+			// aapt resource value: 0x7f010012
+			public const int mediaRoutePauseDrawable = 2130771986;
 			
-			// aapt resource value: 0x7f0101ae
-			public const int tabMaxWidth = 2130772398;
+			// aapt resource value: 0x7f010013
+			public const int mediaRoutePlayDrawable = 2130771987;
 			
-			// aapt resource value: 0x7f0101ad
-			public const int tabMinWidth = 2130772397;
+			// aapt resource value: 0x7f010014
+			public const int mediaRouteSpeakerGroupIconDrawable = 2130771988;
 			
-			// aapt resource value: 0x7f0101aa
-			public const int tabMode = 2130772394;
+			// aapt resource value: 0x7f010015
+			public const int mediaRouteSpeakerIconDrawable = 2130771989;
 			
-			// aapt resource value: 0x7f0101b6
-			public const int tabPadding = 2130772406;
+			// aapt resource value: 0x7f010016
+			public const int mediaRouteStopDrawable = 2130771990;
 			
-			// aapt resource value: 0x7f0101b5
-			public const int tabPaddingBottom = 2130772405;
+			// aapt resource value: 0x7f010017
+			public const int mediaRouteTheme = 2130771991;
 			
-			// aapt resource value: 0x7f0101b4
-			public const int tabPaddingEnd = 2130772404;
+			// aapt resource value: 0x7f010018
+			public const int mediaRouteTvIconDrawable = 2130771992;
 			
-			// aapt resource value: 0x7f0101b2
-			public const int tabPaddingStart = 2130772402;
+			// aapt resource value: 0x7f010198
+			public const int menu = 2130772376;
 			
-			// aapt resource value: 0x7f0101b3
-			public const int tabPaddingTop = 2130772403;
+			// aapt resource value: 0x7f01004a
+			public const int multiChoiceItemLayout = 2130772042;
 			
-			// aapt resource value: 0x7f0101b9
-			public const int tabRippleColor = 2130772409;
-			
-			// aapt resource value: 0x7f0101b1
-			public const int tabSelectedTextColor = 2130772401;
-			
-			// aapt resource value: 0x7f010131
-			public const int tabStyle = 2130772273;
-			
-			// aapt resource value: 0x7f0101af
-			public const int tabTextAppearance = 2130772399;
-			
-			// aapt resource value: 0x7f0101b0
-			public const int tabTextColor = 2130772400;
-			
-			// aapt resource value: 0x7f0101ba
-			public const int tabUnboundedRipple = 2130772410;
-			
-			// aapt resource value: 0x7f010052
-			public const int textAllCaps = 2130772050;
-			
-			// aapt resource value: 0x7f010132
-			public const int textAppearanceBody1 = 2130772274;
-			
-			// aapt resource value: 0x7f010133
-			public const int textAppearanceBody2 = 2130772275;
-			
-			// aapt resource value: 0x7f010134
-			public const int textAppearanceButton = 2130772276;
-			
-			// aapt resource value: 0x7f010135
-			public const int textAppearanceCaption = 2130772277;
-			
-			// aapt resource value: 0x7f010136
-			public const int textAppearanceHeadline1 = 2130772278;
-			
-			// aapt resource value: 0x7f010137
-			public const int textAppearanceHeadline2 = 2130772279;
-			
-			// aapt resource value: 0x7f010138
-			public const int textAppearanceHeadline3 = 2130772280;
-			
-			// aapt resource value: 0x7f010139
-			public const int textAppearanceHeadline4 = 2130772281;
-			
-			// aapt resource value: 0x7f01013a
-			public const int textAppearanceHeadline5 = 2130772282;
-			
-			// aapt resource value: 0x7f01013b
-			public const int textAppearanceHeadline6 = 2130772283;
-			
-			// aapt resource value: 0x7f010082
-			public const int textAppearanceLargePopupMenu = 2130772098;
-			
-			// aapt resource value: 0x7f0100a8
-			public const int textAppearanceListItem = 2130772136;
-			
-			// aapt resource value: 0x7f0100a9
-			public const int textAppearanceListItemSecondary = 2130772137;
-			
-			// aapt resource value: 0x7f0100aa
-			public const int textAppearanceListItemSmall = 2130772138;
-			
-			// aapt resource value: 0x7f01013c
-			public const int textAppearanceOverline = 2130772284;
-			
-			// aapt resource value: 0x7f010084
-			public const int textAppearancePopupMenuHeader = 2130772100;
-			
-			// aapt resource value: 0x7f01009e
-			public const int textAppearanceSearchResultSubtitle = 2130772126;
-			
-			// aapt resource value: 0x7f01009d
-			public const int textAppearanceSearchResultTitle = 2130772125;
-			
-			// aapt resource value: 0x7f010083
-			public const int textAppearanceSmallPopupMenu = 2130772099;
-			
-			// aapt resource value: 0x7f01013d
-			public const int textAppearanceSubtitle1 = 2130772285;
-			
-			// aapt resource value: 0x7f01013e
-			public const int textAppearanceSubtitle2 = 2130772286;
-			
-			// aapt resource value: 0x7f0100bd
-			public const int textColorAlertDialogListItem = 2130772157;
-			
-			// aapt resource value: 0x7f01009f
-			public const int textColorSearchUrl = 2130772127;
-			
-			// aapt resource value: 0x7f01016b
-			public const int textEndPadding = 2130772331;
-			
-			// aapt resource value: 0x7f01013f
-			public const int textInputStyle = 2130772287;
-			
-			// aapt resource value: 0x7f01016a
-			public const int textStartPadding = 2130772330;
-			
-			// aapt resource value: 0x7f01011c
-			public const int theme = 2130772252;
-			
-			// aapt resource value: 0x7f0100dd
-			public const int thickness = 2130772189;
-			
-			// aapt resource value: 0x7f010103
-			public const int thumbTextPadding = 2130772227;
-			
-			// aapt resource value: 0x7f0100fe
-			public const int thumbTint = 2130772222;
-			
-			// aapt resource value: 0x7f0100ff
-			public const int thumbTintMode = 2130772223;
-			
-			// aapt resource value: 0x7f01004f
-			public const int tickMark = 2130772047;
-			
-			// aapt resource value: 0x7f010050
-			public const int tickMarkTint = 2130772048;
-			
-			// aapt resource value: 0x7f010051
-			public const int tickMarkTintMode = 2130772049;
-			
-			// aapt resource value: 0x7f01004d
-			public const int tint = 2130772045;
-			
-			// aapt resource value: 0x7f01004e
-			public const int tintMode = 2130772046;
-			
-			// aapt resource value: 0x7f010027
-			public const int title = 2130772007;
-			
-			// aapt resource value: 0x7f010183
-			public const int titleEnabled = 2130772355;
-			
-			// aapt resource value: 0x7f01010b
-			public const int titleMargin = 2130772235;
-			
-			// aapt resource value: 0x7f01010f
-			public const int titleMarginBottom = 2130772239;
-			
-			// aapt resource value: 0x7f01010d
-			public const int titleMarginEnd = 2130772237;
-			
-			// aapt resource value: 0x7f01010c
-			public const int titleMarginStart = 2130772236;
-			
-			// aapt resource value: 0x7f01010e
-			public const int titleMarginTop = 2130772238;
-			
-			// aapt resource value: 0x7f010110
-			public const int titleMargins = 2130772240;
-			
-			// aapt resource value: 0x7f010109
-			public const int titleTextAppearance = 2130772233;
+			// aapt resource value: 0x7f010119
+			public const int navigationContentDescription = 2130772249;
 			
 			// aapt resource value: 0x7f010118
-			public const int titleTextColor = 2130772248;
+			public const int navigationIcon = 2130772248;
 			
 			// aapt resource value: 0x7f01002b
-			public const int titleTextStyle = 2130772011;
+			public const int navigationMode = 2130772011;
 			
-			// aapt resource value: 0x7f01017e
-			public const int toolbarId = 2130772350;
+			// aapt resource value: 0x7f01012e
+			public const int navigationViewStyle = 2130772270;
 			
-			// aapt resource value: 0x7f010097
-			public const int toolbarNavigationButtonStyle = 2130772119;
+			// aapt resource value: 0x7f0100e5
+			public const int numericModifiers = 2130772197;
 			
-			// aapt resource value: 0x7f010096
-			public const int toolbarStyle = 2130772118;
+			// aapt resource value: 0x7f0100f0
+			public const int overlapAnchor = 2130772208;
 			
-			// aapt resource value: 0x7f0100d0
-			public const int tooltipForegroundColor = 2130772176;
+			// aapt resource value: 0x7f0100f2
+			public const int paddingBottomNoButtons = 2130772210;
+			
+			// aapt resource value: 0x7f01011e
+			public const int paddingEnd = 2130772254;
+			
+			// aapt resource value: 0x7f01011d
+			public const int paddingStart = 2130772253;
+			
+			// aapt resource value: 0x7f0100f3
+			public const int paddingTopNoTitle = 2130772211;
+			
+			// aapt resource value: 0x7f0100ae
+			public const int panelBackground = 2130772142;
+			
+			// aapt resource value: 0x7f0100b0
+			public const int panelMenuListTheme = 2130772144;
+			
+			// aapt resource value: 0x7f0100af
+			public const int panelMenuListWidth = 2130772143;
+			
+			// aapt resource value: 0x7f0101cc
+			public const int passwordToggleContentDescription = 2130772428;
+			
+			// aapt resource value: 0x7f0101cb
+			public const int passwordToggleDrawable = 2130772427;
+			
+			// aapt resource value: 0x7f0101ca
+			public const int passwordToggleEnabled = 2130772426;
+			
+			// aapt resource value: 0x7f0101cd
+			public const int passwordToggleTint = 2130772429;
+			
+			// aapt resource value: 0x7f0101ce
+			public const int passwordToggleTintMode = 2130772430;
+			
+			// aapt resource value: 0x7f010204
+			public const int played_ad_marker_color = 2130772484;
+			
+			// aapt resource value: 0x7f0101ff
+			public const int played_color = 2130772479;
+			
+			// aapt resource value: 0x7f0101f1
+			public const int player_layout_id = 2130772465;
+			
+			// aapt resource value: 0x7f01009b
+			public const int popupMenuStyle = 2130772123;
+			
+			// aapt resource value: 0x7f010044
+			public const int popupTheme = 2130772036;
+			
+			// aapt resource value: 0x7f01009c
+			public const int popupWindowStyle = 2130772124;
+			
+			// aapt resource value: 0x7f0100ee
+			public const int preserveIconSpacing = 2130772206;
+			
+			// aapt resource value: 0x7f01018c
+			public const int pressedTranslationZ = 2130772364;
+			
+			// aapt resource value: 0x7f01003a
+			public const int progressBarPadding = 2130772026;
+			
+			// aapt resource value: 0x7f010038
+			public const int progressBarStyle = 2130772024;
+			
+			// aapt resource value: 0x7f0100ff
+			public const int queryBackground = 2130772223;
+			
+			// aapt resource value: 0x7f0100f6
+			public const int queryHint = 2130772214;
+			
+			// aapt resource value: 0x7f0100ca
+			public const int radioButtonStyle = 2130772170;
+			
+			// aapt resource value: 0x7f0100cb
+			public const int ratingBarStyle = 2130772171;
+			
+			// aapt resource value: 0x7f0100cc
+			public const int ratingBarStyleIndicator = 2130772172;
+			
+			// aapt resource value: 0x7f0100cd
+			public const int ratingBarStyleSmall = 2130772173;
+			
+			// aapt resource value: 0x7f0101f2
+			public const int repeat_toggle_modes = 2130772466;
+			
+			// aapt resource value: 0x7f0101f3
+			public const int resize_mode = 2130772467;
+			
+			// aapt resource value: 0x7f010006
+			public const int reverseLayout = 2130771974;
+			
+			// aapt resource value: 0x7f0101f4
+			public const int rewind_increment = 2130772468;
+			
+			// aapt resource value: 0x7f01012f
+			public const int rippleColor = 2130772271;
+			
+			// aapt resource value: 0x7f010183
+			public const int scrimAnimationDuration = 2130772355;
+			
+			// aapt resource value: 0x7f010130
+			public const int scrimBackground = 2130772272;
+			
+			// aapt resource value: 0x7f010182
+			public const int scrimVisibleHeightTrigger = 2130772354;
+			
+			// aapt resource value: 0x7f010200
+			public const int scrubber_color = 2130772480;
+			
+			// aapt resource value: 0x7f0101fc
+			public const int scrubber_disabled_size = 2130772476;
+			
+			// aapt resource value: 0x7f0101fd
+			public const int scrubber_dragged_size = 2130772477;
+			
+			// aapt resource value: 0x7f0101fe
+			public const int scrubber_drawable = 2130772478;
+			
+			// aapt resource value: 0x7f0101fb
+			public const int scrubber_enabled_size = 2130772475;
+			
+			// aapt resource value: 0x7f0100fb
+			public const int searchHintIcon = 2130772219;
+			
+			// aapt resource value: 0x7f0100fa
+			public const int searchIcon = 2130772218;
+			
+			// aapt resource value: 0x7f0100a3
+			public const int searchViewStyle = 2130772131;
+			
+			// aapt resource value: 0x7f0100ce
+			public const int seekBarStyle = 2130772174;
+			
+			// aapt resource value: 0x7f010093
+			public const int selectableItemBackground = 2130772115;
+			
+			// aapt resource value: 0x7f010094
+			public const int selectableItemBackgroundBorderless = 2130772116;
+			
+			// aapt resource value: 0x7f0100e6
+			public const int showAsAction = 2130772198;
+			
+			// aapt resource value: 0x7f0100e2
+			public const int showDividers = 2130772194;
+			
+			// aapt resource value: 0x7f010131
+			public const int showMotionSpec = 2130772273;
+			
+			// aapt resource value: 0x7f01010b
+			public const int showText = 2130772235;
+			
+			// aapt resource value: 0x7f01004d
+			public const int showTitle = 2130772045;
+			
+			// aapt resource value: 0x7f01020c
+			public const int show_buffering = 2130772492;
+			
+			// aapt resource value: 0x7f0101f5
+			public const int show_shuffle_button = 2130772469;
+			
+			// aapt resource value: 0x7f0101f6
+			public const int show_timeout = 2130772470;
+			
+			// aapt resource value: 0x7f010206
+			public const int shutter_background_color = 2130772486;
+			
+			// aapt resource value: 0x7f01004b
+			public const int singleChoiceItemLayout = 2130772043;
+			
+			// aapt resource value: 0x7f010175
+			public const int singleLine = 2130772341;
+			
+			// aapt resource value: 0x7f010176
+			public const int singleSelection = 2130772342;
+			
+			// aapt resource value: 0x7f0101a3
+			public const int snackbarButtonStyle = 2130772387;
+			
+			// aapt resource value: 0x7f0101a2
+			public const int snackbarStyle = 2130772386;
+			
+			// aapt resource value: 0x7f010005
+			public const int spanCount = 2130771973;
+			
+			// aapt resource value: 0x7f0100da
+			public const int spinBars = 2130772186;
+			
+			// aapt resource value: 0x7f01008e
+			public const int spinnerDropDownItemStyle = 2130772110;
 			
 			// aapt resource value: 0x7f0100cf
-			public const int tooltipFrameBackground = 2130772175;
+			public const int spinnerStyle = 2130772175;
 			
-			// aapt resource value: 0x7f0100e8
-			public const int tooltipText = 2130772200;
+			// aapt resource value: 0x7f01010a
+			public const int splitTrack = 2130772234;
+			
+			// aapt resource value: 0x7f01004f
+			public const int srcCompat = 2130772047;
+			
+			// aapt resource value: 0x7f010007
+			public const int stackFromEnd = 2130771975;
+			
+			// aapt resource value: 0x7f0100f1
+			public const int state_above_anchor = 2130772209;
+			
+			// aapt resource value: 0x7f010145
+			public const int state_collapsed = 2130772293;
+			
+			// aapt resource value: 0x7f010146
+			public const int state_collapsible = 2130772294;
+			
+			// aapt resource value: 0x7f010148
+			public const int state_liftable = 2130772296;
+			
+			// aapt resource value: 0x7f010147
+			public const int state_lifted = 2130772295;
+			
+			// aapt resource value: 0x7f0101dc
+			public const int statusBarBackground = 2130772444;
+			
+			// aapt resource value: 0x7f010180
+			public const int statusBarScrim = 2130772352;
+			
+			// aapt resource value: 0x7f010132
+			public const int strokeColor = 2130772274;
+			
+			// aapt resource value: 0x7f010133
+			public const int strokeWidth = 2130772275;
+			
+			// aapt resource value: 0x7f0100ef
+			public const int subMenuArrow = 2130772207;
 			
 			// aapt resource value: 0x7f010100
-			public const int track = 2130772224;
+			public const int submitBackground = 2130772224;
+			
+			// aapt resource value: 0x7f01002d
+			public const int subtitle = 2130772013;
+			
+			// aapt resource value: 0x7f01010d
+			public const int subtitleTextAppearance = 2130772237;
+			
+			// aapt resource value: 0x7f01011c
+			public const int subtitleTextColor = 2130772252;
+			
+			// aapt resource value: 0x7f01002f
+			public const int subtitleTextStyle = 2130772015;
+			
+			// aapt resource value: 0x7f0100fe
+			public const int suggestionRowLayout = 2130772222;
+			
+			// aapt resource value: 0x7f0101f7
+			public const int surface_type = 2130772471;
+			
+			// aapt resource value: 0x7f010108
+			public const int switchMinWidth = 2130772232;
+			
+			// aapt resource value: 0x7f010109
+			public const int switchPadding = 2130772233;
+			
+			// aapt resource value: 0x7f0100d0
+			public const int switchStyle = 2130772176;
+			
+			// aapt resource value: 0x7f010107
+			public const int switchTextAppearance = 2130772231;
+			
+			// aapt resource value: 0x7f0101a8
+			public const int tabBackground = 2130772392;
+			
+			// aapt resource value: 0x7f0101a7
+			public const int tabContentStart = 2130772391;
+			
+			// aapt resource value: 0x7f0101ae
+			public const int tabGravity = 2130772398;
+			
+			// aapt resource value: 0x7f0101ba
+			public const int tabIconTint = 2130772410;
+			
+			// aapt resource value: 0x7f0101bb
+			public const int tabIconTintMode = 2130772411;
+			
+			// aapt resource value: 0x7f0101a9
+			public const int tabIndicator = 2130772393;
+			
+			// aapt resource value: 0x7f0101ab
+			public const int tabIndicatorAnimationDuration = 2130772395;
+			
+			// aapt resource value: 0x7f0101a5
+			public const int tabIndicatorColor = 2130772389;
+			
+			// aapt resource value: 0x7f0101ac
+			public const int tabIndicatorFullWidth = 2130772396;
+			
+			// aapt resource value: 0x7f0101aa
+			public const int tabIndicatorGravity = 2130772394;
+			
+			// aapt resource value: 0x7f0101a6
+			public const int tabIndicatorHeight = 2130772390;
+			
+			// aapt resource value: 0x7f0101af
+			public const int tabInlineLabel = 2130772399;
+			
+			// aapt resource value: 0x7f0101b1
+			public const int tabMaxWidth = 2130772401;
+			
+			// aapt resource value: 0x7f0101b0
+			public const int tabMinWidth = 2130772400;
+			
+			// aapt resource value: 0x7f0101ad
+			public const int tabMode = 2130772397;
+			
+			// aapt resource value: 0x7f0101b9
+			public const int tabPadding = 2130772409;
+			
+			// aapt resource value: 0x7f0101b8
+			public const int tabPaddingBottom = 2130772408;
+			
+			// aapt resource value: 0x7f0101b7
+			public const int tabPaddingEnd = 2130772407;
+			
+			// aapt resource value: 0x7f0101b5
+			public const int tabPaddingStart = 2130772405;
+			
+			// aapt resource value: 0x7f0101b6
+			public const int tabPaddingTop = 2130772406;
+			
+			// aapt resource value: 0x7f0101bc
+			public const int tabRippleColor = 2130772412;
+			
+			// aapt resource value: 0x7f0101b4
+			public const int tabSelectedTextColor = 2130772404;
+			
+			// aapt resource value: 0x7f010134
+			public const int tabStyle = 2130772276;
+			
+			// aapt resource value: 0x7f0101b2
+			public const int tabTextAppearance = 2130772402;
+			
+			// aapt resource value: 0x7f0101b3
+			public const int tabTextColor = 2130772403;
+			
+			// aapt resource value: 0x7f0101bd
+			public const int tabUnboundedRipple = 2130772413;
+			
+			// aapt resource value: 0x7f010055
+			public const int textAllCaps = 2130772053;
+			
+			// aapt resource value: 0x7f010135
+			public const int textAppearanceBody1 = 2130772277;
+			
+			// aapt resource value: 0x7f010136
+			public const int textAppearanceBody2 = 2130772278;
+			
+			// aapt resource value: 0x7f010137
+			public const int textAppearanceButton = 2130772279;
+			
+			// aapt resource value: 0x7f010138
+			public const int textAppearanceCaption = 2130772280;
+			
+			// aapt resource value: 0x7f010139
+			public const int textAppearanceHeadline1 = 2130772281;
+			
+			// aapt resource value: 0x7f01013a
+			public const int textAppearanceHeadline2 = 2130772282;
+			
+			// aapt resource value: 0x7f01013b
+			public const int textAppearanceHeadline3 = 2130772283;
+			
+			// aapt resource value: 0x7f01013c
+			public const int textAppearanceHeadline4 = 2130772284;
+			
+			// aapt resource value: 0x7f01013d
+			public const int textAppearanceHeadline5 = 2130772285;
+			
+			// aapt resource value: 0x7f01013e
+			public const int textAppearanceHeadline6 = 2130772286;
+			
+			// aapt resource value: 0x7f010085
+			public const int textAppearanceLargePopupMenu = 2130772101;
+			
+			// aapt resource value: 0x7f0100ab
+			public const int textAppearanceListItem = 2130772139;
+			
+			// aapt resource value: 0x7f0100ac
+			public const int textAppearanceListItemSecondary = 2130772140;
+			
+			// aapt resource value: 0x7f0100ad
+			public const int textAppearanceListItemSmall = 2130772141;
+			
+			// aapt resource value: 0x7f01013f
+			public const int textAppearanceOverline = 2130772287;
+			
+			// aapt resource value: 0x7f010087
+			public const int textAppearancePopupMenuHeader = 2130772103;
+			
+			// aapt resource value: 0x7f0100a1
+			public const int textAppearanceSearchResultSubtitle = 2130772129;
+			
+			// aapt resource value: 0x7f0100a0
+			public const int textAppearanceSearchResultTitle = 2130772128;
+			
+			// aapt resource value: 0x7f010086
+			public const int textAppearanceSmallPopupMenu = 2130772102;
+			
+			// aapt resource value: 0x7f010140
+			public const int textAppearanceSubtitle1 = 2130772288;
+			
+			// aapt resource value: 0x7f010141
+			public const int textAppearanceSubtitle2 = 2130772289;
+			
+			// aapt resource value: 0x7f0100c0
+			public const int textColorAlertDialogListItem = 2130772160;
+			
+			// aapt resource value: 0x7f0100a2
+			public const int textColorSearchUrl = 2130772130;
+			
+			// aapt resource value: 0x7f01016e
+			public const int textEndPadding = 2130772334;
+			
+			// aapt resource value: 0x7f010142
+			public const int textInputStyle = 2130772290;
+			
+			// aapt resource value: 0x7f01016d
+			public const int textStartPadding = 2130772333;
+			
+			// aapt resource value: 0x7f01011f
+			public const int theme = 2130772255;
+			
+			// aapt resource value: 0x7f0100e0
+			public const int thickness = 2130772192;
+			
+			// aapt resource value: 0x7f010106
+			public const int thumbTextPadding = 2130772230;
 			
 			// aapt resource value: 0x7f010101
-			public const int trackTint = 2130772225;
+			public const int thumbTint = 2130772225;
 			
 			// aapt resource value: 0x7f010102
-			public const int trackTintMode = 2130772226;
+			public const int thumbTintMode = 2130772226;
 			
-			// aapt resource value: 0x7f0101eb
-			public const int ttcIndex = 2130772459;
+			// aapt resource value: 0x7f010052
+			public const int tickMark = 2130772050;
 			
-			// aapt resource value: 0x7f01018b
-			public const int useCompatPadding = 2130772363;
+			// aapt resource value: 0x7f010053
+			public const int tickMarkTint = 2130772051;
+			
+			// aapt resource value: 0x7f010054
+			public const int tickMarkTintMode = 2130772052;
+			
+			// aapt resource value: 0x7f010050
+			public const int tint = 2130772048;
+			
+			// aapt resource value: 0x7f010051
+			public const int tintMode = 2130772049;
+			
+			// aapt resource value: 0x7f01002a
+			public const int title = 2130772010;
+			
+			// aapt resource value: 0x7f010186
+			public const int titleEnabled = 2130772358;
+			
+			// aapt resource value: 0x7f01010e
+			public const int titleMargin = 2130772238;
+			
+			// aapt resource value: 0x7f010112
+			public const int titleMarginBottom = 2130772242;
+			
+			// aapt resource value: 0x7f010110
+			public const int titleMarginEnd = 2130772240;
+			
+			// aapt resource value: 0x7f01010f
+			public const int titleMarginStart = 2130772239;
+			
+			// aapt resource value: 0x7f010111
+			public const int titleMarginTop = 2130772241;
+			
+			// aapt resource value: 0x7f010113
+			public const int titleMargins = 2130772243;
+			
+			// aapt resource value: 0x7f01010c
+			public const int titleTextAppearance = 2130772236;
+			
+			// aapt resource value: 0x7f01011b
+			public const int titleTextColor = 2130772251;
+			
+			// aapt resource value: 0x7f01002e
+			public const int titleTextStyle = 2130772014;
+			
+			// aapt resource value: 0x7f010181
+			public const int toolbarId = 2130772353;
+			
+			// aapt resource value: 0x7f01009a
+			public const int toolbarNavigationButtonStyle = 2130772122;
+			
+			// aapt resource value: 0x7f010099
+			public const int toolbarStyle = 2130772121;
+			
+			// aapt resource value: 0x7f0100d3
+			public const int tooltipForegroundColor = 2130772179;
 			
 			// aapt resource value: 0x7f0100d2
-			public const int viewInflaterClass = 2130772178;
+			public const int tooltipFrameBackground = 2130772178;
 			
-			// aapt resource value: 0x7f0100f9
-			public const int voiceIcon = 2130772217;
+			// aapt resource value: 0x7f0100eb
+			public const int tooltipText = 2130772203;
 			
-			// aapt resource value: 0x7f01005c
-			public const int windowActionBar = 2130772060;
+			// aapt resource value: 0x7f0101f9
+			public const int touch_target_height = 2130772473;
 			
-			// aapt resource value: 0x7f01005e
-			public const int windowActionBarOverlay = 2130772062;
+			// aapt resource value: 0x7f010103
+			public const int track = 2130772227;
+			
+			// aapt resource value: 0x7f010104
+			public const int trackTint = 2130772228;
+			
+			// aapt resource value: 0x7f010105
+			public const int trackTintMode = 2130772229;
+			
+			// aapt resource value: 0x7f0101ee
+			public const int ttcIndex = 2130772462;
+			
+			// aapt resource value: 0x7f010202
+			public const int unplayed_color = 2130772482;
+			
+			// aapt resource value: 0x7f01018e
+			public const int useCompatPadding = 2130772366;
+			
+			// aapt resource value: 0x7f010205
+			public const int use_artwork = 2130772485;
+			
+			// aapt resource value: 0x7f010208
+			public const int use_controller = 2130772488;
+			
+			// aapt resource value: 0x7f0100d5
+			public const int viewInflaterClass = 2130772181;
+			
+			// aapt resource value: 0x7f0100fc
+			public const int voiceIcon = 2130772220;
 			
 			// aapt resource value: 0x7f01005f
-			public const int windowActionModeOverlay = 2130772063;
-			
-			// aapt resource value: 0x7f010063
-			public const int windowFixedHeightMajor = 2130772067;
+			public const int windowActionBar = 2130772063;
 			
 			// aapt resource value: 0x7f010061
-			public const int windowFixedHeightMinor = 2130772065;
-			
-			// aapt resource value: 0x7f010060
-			public const int windowFixedWidthMajor = 2130772064;
+			public const int windowActionBarOverlay = 2130772065;
 			
 			// aapt resource value: 0x7f010062
-			public const int windowFixedWidthMinor = 2130772066;
+			public const int windowActionModeOverlay = 2130772066;
+			
+			// aapt resource value: 0x7f010066
+			public const int windowFixedHeightMajor = 2130772070;
 			
 			// aapt resource value: 0x7f010064
-			public const int windowMinWidthMajor = 2130772068;
+			public const int windowFixedHeightMinor = 2130772068;
+			
+			// aapt resource value: 0x7f010063
+			public const int windowFixedWidthMajor = 2130772067;
 			
 			// aapt resource value: 0x7f010065
-			public const int windowMinWidthMinor = 2130772069;
+			public const int windowFixedWidthMinor = 2130772069;
 			
-			// aapt resource value: 0x7f01005d
-			public const int windowNoTitle = 2130772061;
+			// aapt resource value: 0x7f010067
+			public const int windowMinWidthMajor = 2130772071;
+			
+			// aapt resource value: 0x7f010068
+			public const int windowMinWidthMinor = 2130772072;
+			
+			// aapt resource value: 0x7f010060
+			public const int windowNoTitle = 2130772064;
 			
 			static Attribute()
 			{
@@ -9062,44 +8790,44 @@ namespace HanselmanAndroid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0d005e
-			public const int abc_background_cache_hint_selector_material_dark = 2131558494;
-			
-			// aapt resource value: 0x7f0d005f
-			public const int abc_background_cache_hint_selector_material_light = 2131558495;
-			
 			// aapt resource value: 0x7f0d0060
-			public const int abc_btn_colored_borderless_text_material = 2131558496;
+			public const int abc_background_cache_hint_selector_material_dark = 2131558496;
 			
 			// aapt resource value: 0x7f0d0061
-			public const int abc_btn_colored_text_material = 2131558497;
+			public const int abc_background_cache_hint_selector_material_light = 2131558497;
 			
 			// aapt resource value: 0x7f0d0062
-			public const int abc_color_highlight_material = 2131558498;
+			public const int abc_btn_colored_borderless_text_material = 2131558498;
 			
 			// aapt resource value: 0x7f0d0063
-			public const int abc_hint_foreground_material_dark = 2131558499;
+			public const int abc_btn_colored_text_material = 2131558499;
 			
 			// aapt resource value: 0x7f0d0064
-			public const int abc_hint_foreground_material_light = 2131558500;
+			public const int abc_color_highlight_material = 2131558500;
+			
+			// aapt resource value: 0x7f0d0065
+			public const int abc_hint_foreground_material_dark = 2131558501;
+			
+			// aapt resource value: 0x7f0d0066
+			public const int abc_hint_foreground_material_light = 2131558502;
 			
 			// aapt resource value: 0x7f0d0004
 			public const int abc_input_method_navigation_guard = 2131558404;
 			
-			// aapt resource value: 0x7f0d0065
-			public const int abc_primary_text_disable_only_material_dark = 2131558501;
-			
-			// aapt resource value: 0x7f0d0066
-			public const int abc_primary_text_disable_only_material_light = 2131558502;
-			
 			// aapt resource value: 0x7f0d0067
-			public const int abc_primary_text_material_dark = 2131558503;
+			public const int abc_primary_text_disable_only_material_dark = 2131558503;
 			
 			// aapt resource value: 0x7f0d0068
-			public const int abc_primary_text_material_light = 2131558504;
+			public const int abc_primary_text_disable_only_material_light = 2131558504;
 			
 			// aapt resource value: 0x7f0d0069
-			public const int abc_search_url_text = 2131558505;
+			public const int abc_primary_text_material_dark = 2131558505;
+			
+			// aapt resource value: 0x7f0d006a
+			public const int abc_primary_text_material_light = 2131558506;
+			
+			// aapt resource value: 0x7f0d006b
+			public const int abc_search_url_text = 2131558507;
 			
 			// aapt resource value: 0x7f0d0005
 			public const int abc_search_url_text_normal = 2131558405;
@@ -9110,32 +8838,32 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0d0007
 			public const int abc_search_url_text_selected = 2131558407;
 			
-			// aapt resource value: 0x7f0d006a
-			public const int abc_secondary_text_material_dark = 2131558506;
-			
-			// aapt resource value: 0x7f0d006b
-			public const int abc_secondary_text_material_light = 2131558507;
-			
 			// aapt resource value: 0x7f0d006c
-			public const int abc_tint_btn_checkable = 2131558508;
+			public const int abc_secondary_text_material_dark = 2131558508;
 			
 			// aapt resource value: 0x7f0d006d
-			public const int abc_tint_default = 2131558509;
+			public const int abc_secondary_text_material_light = 2131558509;
 			
 			// aapt resource value: 0x7f0d006e
-			public const int abc_tint_edittext = 2131558510;
+			public const int abc_tint_btn_checkable = 2131558510;
 			
 			// aapt resource value: 0x7f0d006f
-			public const int abc_tint_seek_thumb = 2131558511;
+			public const int abc_tint_default = 2131558511;
 			
 			// aapt resource value: 0x7f0d0070
-			public const int abc_tint_spinner = 2131558512;
+			public const int abc_tint_edittext = 2131558512;
 			
 			// aapt resource value: 0x7f0d0071
-			public const int abc_tint_switch_track = 2131558513;
+			public const int abc_tint_seek_thumb = 2131558513;
 			
-			// aapt resource value: 0x7f0d005c
-			public const int accent = 2131558492;
+			// aapt resource value: 0x7f0d0072
+			public const int abc_tint_spinner = 2131558514;
+			
+			// aapt resource value: 0x7f0d0073
+			public const int abc_tint_switch_track = 2131558515;
+			
+			// aapt resource value: 0x7f0d005e
+			public const int accent = 2131558494;
 			
 			// aapt resource value: 0x7f0d0008
 			public const int accent_material_dark = 2131558408;
@@ -9212,8 +8940,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0d0043
 			public const int design_default_color_primary_dark = 2131558467;
 			
-			// aapt resource value: 0x7f0d0072
-			public const int design_error = 2131558514;
+			// aapt resource value: 0x7f0d0074
+			public const int design_error = 2131558516;
 			
 			// aapt resource value: 0x7f0d0044
 			public const int design_fab_shadow_end_color = 2131558468;
@@ -9239,8 +8967,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0d004b
 			public const int design_snackbar_background_color = 2131558475;
 			
-			// aapt resource value: 0x7f0d0073
-			public const int design_tint_password_toggle = 2131558515;
+			// aapt resource value: 0x7f0d0075
+			public const int design_tint_password_toggle = 2131558517;
 			
 			// aapt resource value: 0x7f0d0016
 			public const int dim_foreground_disabled_material_dark = 2131558422;
@@ -9259,6 +8987,12 @@ namespace HanselmanAndroid
 			
 			// aapt resource value: 0x7f0d001b
 			public const int error_color_material_light = 2131558427;
+			
+			// aapt resource value: 0x7f0d005a
+			public const int exo_edit_mode_background_color = 2131558490;
+			
+			// aapt resource value: 0x7f0d005b
+			public const int exo_error_message_background_color = 2131558491;
 			
 			// aapt resource value: 0x7f0d001c
 			public const int foreground_material_dark = 2131558428;
@@ -9308,71 +9042,71 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0d002b
 			public const int material_grey_900 = 2131558443;
 			
-			// aapt resource value: 0x7f0d0074
-			public const int mtrl_bottom_nav_colored_item_tint = 2131558516;
+			// aapt resource value: 0x7f0d0076
+			public const int mtrl_bottom_nav_colored_item_tint = 2131558518;
 			
-			// aapt resource value: 0x7f0d0075
-			public const int mtrl_bottom_nav_item_tint = 2131558517;
+			// aapt resource value: 0x7f0d0077
+			public const int mtrl_bottom_nav_item_tint = 2131558519;
 			
 			// aapt resource value: 0x7f0d004c
 			public const int mtrl_btn_bg_color_disabled = 2131558476;
 			
-			// aapt resource value: 0x7f0d0076
-			public const int mtrl_btn_bg_color_selector = 2131558518;
-			
-			// aapt resource value: 0x7f0d0077
-			public const int mtrl_btn_ripple_color = 2131558519;
-			
 			// aapt resource value: 0x7f0d0078
-			public const int mtrl_btn_stroke_color_selector = 2131558520;
+			public const int mtrl_btn_bg_color_selector = 2131558520;
 			
 			// aapt resource value: 0x7f0d0079
-			public const int mtrl_btn_text_btn_ripple_color = 2131558521;
+			public const int mtrl_btn_ripple_color = 2131558521;
+			
+			// aapt resource value: 0x7f0d007a
+			public const int mtrl_btn_stroke_color_selector = 2131558522;
+			
+			// aapt resource value: 0x7f0d007b
+			public const int mtrl_btn_text_btn_ripple_color = 2131558523;
 			
 			// aapt resource value: 0x7f0d004d
 			public const int mtrl_btn_text_color_disabled = 2131558477;
 			
-			// aapt resource value: 0x7f0d007a
-			public const int mtrl_btn_text_color_selector = 2131558522;
+			// aapt resource value: 0x7f0d007c
+			public const int mtrl_btn_text_color_selector = 2131558524;
 			
 			// aapt resource value: 0x7f0d004e
 			public const int mtrl_btn_transparent_bg_color = 2131558478;
 			
-			// aapt resource value: 0x7f0d007b
-			public const int mtrl_chip_background_color = 2131558523;
-			
-			// aapt resource value: 0x7f0d007c
-			public const int mtrl_chip_close_icon_tint = 2131558524;
-			
 			// aapt resource value: 0x7f0d007d
-			public const int mtrl_chip_ripple_color = 2131558525;
+			public const int mtrl_chip_background_color = 2131558525;
 			
 			// aapt resource value: 0x7f0d007e
-			public const int mtrl_chip_text_color = 2131558526;
+			public const int mtrl_chip_close_icon_tint = 2131558526;
 			
 			// aapt resource value: 0x7f0d007f
-			public const int mtrl_fab_ripple_color = 2131558527;
+			public const int mtrl_chip_ripple_color = 2131558527;
+			
+			// aapt resource value: 0x7f0d0080
+			public const int mtrl_chip_text_color = 2131558528;
+			
+			// aapt resource value: 0x7f0d0081
+			public const int mtrl_fab_ripple_color = 2131558529;
 			
 			// aapt resource value: 0x7f0d004f
 			public const int mtrl_scrim_color = 2131558479;
 			
-			// aapt resource value: 0x7f0d0080
-			public const int mtrl_tabs_colored_ripple_color = 2131558528;
-			
-			// aapt resource value: 0x7f0d0081
-			public const int mtrl_tabs_icon_color_selector = 2131558529;
-			
 			// aapt resource value: 0x7f0d0082
-			public const int mtrl_tabs_icon_color_selector_colored = 2131558530;
+			public const int mtrl_tabs_colored_ripple_color = 2131558530;
 			
 			// aapt resource value: 0x7f0d0083
-			public const int mtrl_tabs_legacy_text_color_selector = 2131558531;
+			public const int mtrl_tabs_icon_color_selector = 2131558531;
 			
 			// aapt resource value: 0x7f0d0084
-			public const int mtrl_tabs_ripple_color = 2131558532;
+			public const int mtrl_tabs_icon_color_selector_colored = 2131558532;
 			
 			// aapt resource value: 0x7f0d0085
-			public const int mtrl_text_btn_text_color_selector = 2131558533;
+			public const int mtrl_tabs_legacy_text_color_selector = 2131558533;
+			
+			// aapt resource value: 0x7f0d0086
+			public const int mtrl_tabs_ripple_color = 2131558534;
+			
+			// aapt resource value: 0x7f0d0087
+			public const int mtrl_text_btn_text_color_selector = 2131558535;
 			
 			// aapt resource value: 0x7f0d0050
 			public const int mtrl_textinput_default_box_stroke_color = 2131558480;
@@ -9395,11 +9129,11 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0d0040
 			public const int notification_material_background_media_default_color = 2131558464;
 			
-			// aapt resource value: 0x7f0d005a
-			public const int primary = 2131558490;
+			// aapt resource value: 0x7f0d005c
+			public const int primary = 2131558492;
 			
-			// aapt resource value: 0x7f0d005b
-			public const int primaryDark = 2131558491;
+			// aapt resource value: 0x7f0d005d
+			public const int primaryDark = 2131558493;
 			
 			// aapt resource value: 0x7f0d002c
 			public const int primary_dark_material_dark = 2131558444;
@@ -9449,11 +9183,11 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0d003b
 			public const int switch_thumb_disabled_material_light = 2131558459;
 			
-			// aapt resource value: 0x7f0d0086
-			public const int switch_thumb_material_dark = 2131558534;
+			// aapt resource value: 0x7f0d0088
+			public const int switch_thumb_material_dark = 2131558536;
 			
-			// aapt resource value: 0x7f0d0087
-			public const int switch_thumb_material_light = 2131558535;
+			// aapt resource value: 0x7f0d0089
+			public const int switch_thumb_material_light = 2131558537;
 			
 			// aapt resource value: 0x7f0d003c
 			public const int switch_thumb_normal_material_dark = 2131558460;
@@ -9467,11 +9201,11 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0d003f
 			public const int tooltip_background_light = 2131558463;
 			
-			// aapt resource value: 0x7f0d0088
-			public const int white_disabled_material = 2131558536;
+			// aapt resource value: 0x7f0d008a
+			public const int white_disabled_material = 2131558538;
 			
-			// aapt resource value: 0x7f0d005d
-			public const int window_background = 2131558493;
+			// aapt resource value: 0x7f0d005f
+			public const int window_background = 2131558495;
 			
 			static Color()
 			{
@@ -9884,6 +9618,12 @@ namespace HanselmanAndroid
 			
 			// aapt resource value: 0x7f09005b
 			public const int disabled_alpha_material_light = 2131296347;
+			
+			// aapt resource value: 0x7f0900e3
+			public const int exo_media_button_height = 2131296483;
+			
+			// aapt resource value: 0x7f0900e4
+			public const int exo_media_button_width = 2131296484;
 			
 			// aapt resource value: 0x7f090000
 			public const int fastscroll_default_thickness = 2131296256;
@@ -10435,26 +10175,26 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f02014c
-			public const int avd_hide_password_1 = 2130837836;
+			// aapt resource value: 0x7f02016c
+			public const int avd_hide_password_1 = 2130837868;
 			
-			// aapt resource value: 0x7f02014d
-			public const int avd_hide_password_2 = 2130837837;
+			// aapt resource value: 0x7f02016d
+			public const int avd_hide_password_2 = 2130837869;
 			
-			// aapt resource value: 0x7f02014e
-			public const int avd_hide_password_3 = 2130837838;
+			// aapt resource value: 0x7f02016e
+			public const int avd_hide_password_3 = 2130837870;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f02014f
-			public const int avd_show_password_1 = 2130837839;
+			// aapt resource value: 0x7f02016f
+			public const int avd_show_password_1 = 2130837871;
 			
-			// aapt resource value: 0x7f020150
-			public const int avd_show_password_2 = 2130837840;
+			// aapt resource value: 0x7f020170
+			public const int avd_show_password_2 = 2130837872;
 			
-			// aapt resource value: 0x7f020151
-			public const int avd_show_password_3 = 2130837841;
+			// aapt resource value: 0x7f020171
+			public const int avd_show_password_3 = 2130837873;
 			
 			// aapt resource value: 0x7f020056
 			public const int design_bottom_navigation_item_background = 2130837590;
@@ -10474,725 +10214,821 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f02005b
 			public const int design_snackbar_background = 2130837595;
 			
+			// aapt resource value: 0x7f02015f
+			public const int exo_controls_fastforward = 2130837855;
+			
 			// aapt resource value: 0x7f02005c
-			public const int facebook = 2130837596;
+			public const int exo_controls_fullscreen_enter = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int googleplus = 2130837597;
+			public const int exo_controls_fullscreen_exit = 2130837597;
+			
+			// aapt resource value: 0x7f020160
+			public const int exo_controls_next = 2130837856;
+			
+			// aapt resource value: 0x7f020161
+			public const int exo_controls_pause = 2130837857;
+			
+			// aapt resource value: 0x7f020162
+			public const int exo_controls_play = 2130837858;
+			
+			// aapt resource value: 0x7f020163
+			public const int exo_controls_previous = 2130837859;
 			
 			// aapt resource value: 0x7f02005e
-			public const int hm_full = 2130837598;
+			public const int exo_controls_repeat_all = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_about = 2130837599;
+			public const int exo_controls_repeat_off = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_audiotrack_dark = 2130837600;
+			public const int exo_controls_repeat_one = 2130837600;
+			
+			// aapt resource value: 0x7f020164
+			public const int exo_controls_rewind = 2130837860;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_audiotrack_light = 2130837601;
+			public const int exo_controls_shuffle = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_dialog_close_dark = 2130837602;
+			public const int exo_edit_mode_logo = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_dialog_close_light = 2130837603;
+			public const int exo_icon_fastforward = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_group_collapse_00 = 2130837604;
+			public const int exo_icon_next = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_group_collapse_01 = 2130837605;
+			public const int exo_icon_pause = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_group_collapse_02 = 2130837606;
+			public const int exo_icon_play = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_group_collapse_03 = 2130837607;
+			public const int exo_icon_previous = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_group_collapse_04 = 2130837608;
+			public const int exo_icon_rewind = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_05 = 2130837609;
+			public const int exo_icon_stop = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_06 = 2130837610;
+			public const int exo_media_action_repeat_all = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_07 = 2130837611;
+			public const int exo_media_action_repeat_off = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_08 = 2130837612;
+			public const int exo_media_action_repeat_one = 2130837612;
+			
+			// aapt resource value: 0x7f020165
+			public const int exo_notification_fastforward = 2130837861;
+			
+			// aapt resource value: 0x7f020166
+			public const int exo_notification_next = 2130837862;
+			
+			// aapt resource value: 0x7f020167
+			public const int exo_notification_pause = 2130837863;
+			
+			// aapt resource value: 0x7f020168
+			public const int exo_notification_play = 2130837864;
+			
+			// aapt resource value: 0x7f020169
+			public const int exo_notification_previous = 2130837865;
+			
+			// aapt resource value: 0x7f02016a
+			public const int exo_notification_rewind = 2130837866;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_09 = 2130837613;
+			public const int exo_notification_small_icon = 2130837613;
+			
+			// aapt resource value: 0x7f02016b
+			public const int exo_notification_stop = 2130837867;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_10 = 2130837614;
+			public const int facebook = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_11 = 2130837615;
+			public const int googleplus = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_collapse_12 = 2130837616;
+			public const int hm_full = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_collapse_13 = 2130837617;
+			public const int ic_about = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_collapse_14 = 2130837618;
+			public const int ic_audiotrack_dark = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_collapse_15 = 2130837619;
+			public const int ic_audiotrack_light = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_expand_00 = 2130837620;
+			public const int ic_dialog_close_dark = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_expand_01 = 2130837621;
+			public const int ic_dialog_close_light = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_expand_02 = 2130837622;
+			public const int ic_group_collapse_00 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_expand_03 = 2130837623;
+			public const int ic_group_collapse_01 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_expand_04 = 2130837624;
+			public const int ic_group_collapse_02 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_05 = 2130837625;
+			public const int ic_group_collapse_03 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_06 = 2130837626;
+			public const int ic_group_collapse_04 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_07 = 2130837627;
+			public const int ic_group_collapse_05 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_08 = 2130837628;
+			public const int ic_group_collapse_06 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_09 = 2130837629;
+			public const int ic_group_collapse_07 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_10 = 2130837630;
+			public const int ic_group_collapse_08 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_11 = 2130837631;
+			public const int ic_group_collapse_09 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_group_expand_12 = 2130837632;
+			public const int ic_group_collapse_10 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_group_expand_13 = 2130837633;
+			public const int ic_group_collapse_11 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_group_expand_14 = 2130837634;
+			public const int ic_group_collapse_12 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_expand_15 = 2130837635;
+			public const int ic_group_collapse_13 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_launcher = 2130837636;
+			public const int ic_group_collapse_14 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_media_pause_dark = 2130837637;
+			public const int ic_group_collapse_15 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_media_pause_light = 2130837638;
+			public const int ic_group_expand_00 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_media_play_dark = 2130837639;
+			public const int ic_group_expand_01 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_media_play_light = 2130837640;
+			public const int ic_group_expand_02 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_media_stop_dark = 2130837641;
+			public const int ic_group_expand_03 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_media_stop_light = 2130837642;
+			public const int ic_group_expand_04 = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_mr_button_connected_00_dark = 2130837643;
+			public const int ic_group_expand_05 = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_mr_button_connected_00_light = 2130837644;
+			public const int ic_group_expand_06 = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_mr_button_connected_01_dark = 2130837645;
+			public const int ic_group_expand_07 = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_mr_button_connected_01_light = 2130837646;
+			public const int ic_group_expand_08 = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_02_dark = 2130837647;
+			public const int ic_group_expand_09 = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_02_light = 2130837648;
+			public const int ic_group_expand_10 = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_03_dark = 2130837649;
+			public const int ic_group_expand_11 = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_03_light = 2130837650;
+			public const int ic_group_expand_12 = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_04_dark = 2130837651;
+			public const int ic_group_expand_13 = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_04_light = 2130837652;
+			public const int ic_group_expand_14 = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_05_dark = 2130837653;
+			public const int ic_group_expand_15 = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_05_light = 2130837654;
+			public const int ic_launcher = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_06_dark = 2130837655;
+			public const int ic_media_pause_dark = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_06_light = 2130837656;
+			public const int ic_media_pause_light = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_07_dark = 2130837657;
+			public const int ic_media_play_dark = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_07_light = 2130837658;
+			public const int ic_media_play_light = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_08_dark = 2130837659;
+			public const int ic_media_stop_dark = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_08_light = 2130837660;
+			public const int ic_media_stop_light = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_09_dark = 2130837661;
+			public const int ic_mr_button_connected_00_dark = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_09_light = 2130837662;
+			public const int ic_mr_button_connected_00_light = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_10_dark = 2130837663;
+			public const int ic_mr_button_connected_01_dark = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_10_light = 2130837664;
+			public const int ic_mr_button_connected_01_light = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_11_dark = 2130837665;
+			public const int ic_mr_button_connected_02_dark = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_11_light = 2130837666;
+			public const int ic_mr_button_connected_02_light = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_12_dark = 2130837667;
+			public const int ic_mr_button_connected_03_dark = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_12_light = 2130837668;
+			public const int ic_mr_button_connected_03_light = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_13_dark = 2130837669;
+			public const int ic_mr_button_connected_04_dark = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_13_light = 2130837670;
+			public const int ic_mr_button_connected_04_light = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_14_dark = 2130837671;
+			public const int ic_mr_button_connected_05_dark = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_14_light = 2130837672;
+			public const int ic_mr_button_connected_05_light = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_15_dark = 2130837673;
+			public const int ic_mr_button_connected_06_dark = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_15_light = 2130837674;
+			public const int ic_mr_button_connected_06_light = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_16_dark = 2130837675;
+			public const int ic_mr_button_connected_07_dark = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_16_light = 2130837676;
+			public const int ic_mr_button_connected_07_light = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_17_dark = 2130837677;
+			public const int ic_mr_button_connected_08_dark = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_17_light = 2130837678;
+			public const int ic_mr_button_connected_08_light = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_18_dark = 2130837679;
+			public const int ic_mr_button_connected_09_dark = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_18_light = 2130837680;
+			public const int ic_mr_button_connected_09_light = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_19_dark = 2130837681;
+			public const int ic_mr_button_connected_10_dark = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_19_light = 2130837682;
+			public const int ic_mr_button_connected_10_light = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_20_dark = 2130837683;
+			public const int ic_mr_button_connected_11_dark = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_20_light = 2130837684;
+			public const int ic_mr_button_connected_11_light = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_21_dark = 2130837685;
+			public const int ic_mr_button_connected_12_dark = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_21_light = 2130837686;
+			public const int ic_mr_button_connected_12_light = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_22_dark = 2130837687;
+			public const int ic_mr_button_connected_13_dark = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_22_light = 2130837688;
+			public const int ic_mr_button_connected_13_light = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_23_dark = 2130837689;
+			public const int ic_mr_button_connected_14_dark = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_23_light = 2130837690;
+			public const int ic_mr_button_connected_14_light = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_24_dark = 2130837691;
+			public const int ic_mr_button_connected_15_dark = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_24_light = 2130837692;
+			public const int ic_mr_button_connected_15_light = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_25_dark = 2130837693;
+			public const int ic_mr_button_connected_16_dark = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_25_light = 2130837694;
+			public const int ic_mr_button_connected_16_light = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_26_dark = 2130837695;
+			public const int ic_mr_button_connected_17_dark = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_26_light = 2130837696;
+			public const int ic_mr_button_connected_17_light = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_27_dark = 2130837697;
+			public const int ic_mr_button_connected_18_dark = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_27_light = 2130837698;
+			public const int ic_mr_button_connected_18_light = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_28_dark = 2130837699;
+			public const int ic_mr_button_connected_19_dark = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_28_light = 2130837700;
+			public const int ic_mr_button_connected_19_light = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connected_29_dark = 2130837701;
+			public const int ic_mr_button_connected_20_dark = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connected_29_light = 2130837702;
+			public const int ic_mr_button_connected_20_light = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connected_30_dark = 2130837703;
+			public const int ic_mr_button_connected_21_dark = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connected_30_light = 2130837704;
+			public const int ic_mr_button_connected_21_light = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connecting_00_dark = 2130837705;
+			public const int ic_mr_button_connected_22_dark = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_00_light = 2130837706;
+			public const int ic_mr_button_connected_22_light = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_01_dark = 2130837707;
+			public const int ic_mr_button_connected_23_dark = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_01_light = 2130837708;
+			public const int ic_mr_button_connected_23_light = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_02_dark = 2130837709;
+			public const int ic_mr_button_connected_24_dark = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_02_light = 2130837710;
+			public const int ic_mr_button_connected_24_light = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_03_dark = 2130837711;
+			public const int ic_mr_button_connected_25_dark = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_03_light = 2130837712;
+			public const int ic_mr_button_connected_25_light = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_04_dark = 2130837713;
+			public const int ic_mr_button_connected_26_dark = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_04_light = 2130837714;
+			public const int ic_mr_button_connected_26_light = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_05_dark = 2130837715;
+			public const int ic_mr_button_connected_27_dark = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_05_light = 2130837716;
+			public const int ic_mr_button_connected_27_light = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_06_dark = 2130837717;
+			public const int ic_mr_button_connected_28_dark = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_06_light = 2130837718;
+			public const int ic_mr_button_connected_28_light = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_07_dark = 2130837719;
+			public const int ic_mr_button_connected_29_dark = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_07_light = 2130837720;
+			public const int ic_mr_button_connected_29_light = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_08_dark = 2130837721;
+			public const int ic_mr_button_connected_30_dark = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_08_light = 2130837722;
+			public const int ic_mr_button_connected_30_light = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_09_dark = 2130837723;
+			public const int ic_mr_button_connecting_00_dark = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_09_light = 2130837724;
+			public const int ic_mr_button_connecting_00_light = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_10_dark = 2130837725;
+			public const int ic_mr_button_connecting_01_dark = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_10_light = 2130837726;
+			public const int ic_mr_button_connecting_01_light = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_11_dark = 2130837727;
+			public const int ic_mr_button_connecting_02_dark = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_11_light = 2130837728;
+			public const int ic_mr_button_connecting_02_light = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_12_dark = 2130837729;
+			public const int ic_mr_button_connecting_03_dark = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_12_light = 2130837730;
+			public const int ic_mr_button_connecting_03_light = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_13_dark = 2130837731;
+			public const int ic_mr_button_connecting_04_dark = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_13_light = 2130837732;
+			public const int ic_mr_button_connecting_04_light = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_14_dark = 2130837733;
+			public const int ic_mr_button_connecting_05_dark = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_14_light = 2130837734;
+			public const int ic_mr_button_connecting_05_light = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_15_dark = 2130837735;
+			public const int ic_mr_button_connecting_06_dark = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_15_light = 2130837736;
+			public const int ic_mr_button_connecting_06_light = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_16_dark = 2130837737;
+			public const int ic_mr_button_connecting_07_dark = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_16_light = 2130837738;
+			public const int ic_mr_button_connecting_07_light = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_17_dark = 2130837739;
+			public const int ic_mr_button_connecting_08_dark = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_17_light = 2130837740;
+			public const int ic_mr_button_connecting_08_light = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_18_dark = 2130837741;
+			public const int ic_mr_button_connecting_09_dark = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_18_light = 2130837742;
+			public const int ic_mr_button_connecting_09_light = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_19_dark = 2130837743;
+			public const int ic_mr_button_connecting_10_dark = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_19_light = 2130837744;
+			public const int ic_mr_button_connecting_10_light = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_20_dark = 2130837745;
+			public const int ic_mr_button_connecting_11_dark = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_20_light = 2130837746;
+			public const int ic_mr_button_connecting_11_light = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_21_dark = 2130837747;
+			public const int ic_mr_button_connecting_12_dark = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_21_light = 2130837748;
+			public const int ic_mr_button_connecting_12_light = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_22_dark = 2130837749;
+			public const int ic_mr_button_connecting_13_dark = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_22_light = 2130837750;
+			public const int ic_mr_button_connecting_13_light = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_23_dark = 2130837751;
+			public const int ic_mr_button_connecting_14_dark = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_23_light = 2130837752;
+			public const int ic_mr_button_connecting_14_light = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_24_dark = 2130837753;
+			public const int ic_mr_button_connecting_15_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_24_light = 2130837754;
+			public const int ic_mr_button_connecting_15_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_25_dark = 2130837755;
+			public const int ic_mr_button_connecting_16_dark = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_25_light = 2130837756;
+			public const int ic_mr_button_connecting_16_light = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_26_dark = 2130837757;
+			public const int ic_mr_button_connecting_17_dark = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_26_light = 2130837758;
+			public const int ic_mr_button_connecting_17_light = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_27_dark = 2130837759;
+			public const int ic_mr_button_connecting_18_dark = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_27_light = 2130837760;
+			public const int ic_mr_button_connecting_18_light = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_28_dark = 2130837761;
+			public const int ic_mr_button_connecting_19_dark = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_28_light = 2130837762;
+			public const int ic_mr_button_connecting_19_light = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_connecting_29_dark = 2130837763;
+			public const int ic_mr_button_connecting_20_dark = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_connecting_29_light = 2130837764;
+			public const int ic_mr_button_connecting_20_light = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_connecting_30_dark = 2130837765;
+			public const int ic_mr_button_connecting_21_dark = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_connecting_30_light = 2130837766;
+			public const int ic_mr_button_connecting_21_light = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_disabled_dark = 2130837767;
+			public const int ic_mr_button_connecting_22_dark = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_mr_button_disabled_light = 2130837768;
+			public const int ic_mr_button_connecting_22_light = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_mr_button_disconnected_dark = 2130837769;
+			public const int ic_mr_button_connecting_23_dark = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_mr_button_disconnected_light = 2130837770;
+			public const int ic_mr_button_connecting_23_light = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_mr_button_grey = 2130837771;
+			public const int ic_mr_button_connecting_24_dark = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_mtrl_chip_checked_black = 2130837772;
+			public const int ic_mr_button_connecting_24_light = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_mtrl_chip_checked_circle = 2130837773;
+			public const int ic_mr_button_connecting_25_dark = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int ic_mtrl_chip_close_circle = 2130837774;
+			public const int ic_mr_button_connecting_25_light = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int ic_pause = 2130837775;
+			public const int ic_mr_button_connecting_26_dark = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int ic_play = 2130837776;
+			public const int ic_mr_button_connecting_26_light = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_play_circle_outline = 2130837777;
+			public const int ic_mr_button_connecting_27_dark = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_podcast = 2130837778;
+			public const int ic_mr_button_connecting_27_light = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int ic_rss = 2130837779;
+			public const int ic_mr_button_connecting_28_dark = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int ic_share = 2130837780;
+			public const int ic_mr_button_connecting_28_light = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int ic_stop = 2130837781;
+			public const int ic_mr_button_connecting_29_dark = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int ic_twitter = 2130837782;
+			public const int ic_mr_button_connecting_29_light = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int ic_video = 2130837783;
+			public const int ic_mr_button_connecting_30_dark = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int ic_vol_type_speaker_dark = 2130837784;
+			public const int ic_mr_button_connecting_30_light = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int ic_vol_type_speaker_group_dark = 2130837785;
+			public const int ic_mr_button_disabled_dark = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int ic_vol_type_speaker_group_light = 2130837786;
+			public const int ic_mr_button_disabled_light = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int ic_vol_type_speaker_light = 2130837787;
+			public const int ic_mr_button_disconnected_dark = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int ic_vol_type_tv_dark = 2130837788;
+			public const int ic_mr_button_disconnected_light = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int ic_vol_type_tv_light = 2130837789;
+			public const int ic_mr_button_grey = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int instagram = 2130837790;
+			public const int ic_mtrl_chip_checked_black = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int MaterialActivityIndicatorBackground = 2130837791;
+			public const int ic_mtrl_chip_checked_circle = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int MaterialProgressBar = 2130837792;
+			public const int ic_mtrl_chip_close_circle = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int mr_button_connected_dark = 2130837793;
+			public const int ic_pause = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int mr_button_connected_light = 2130837794;
+			public const int ic_play = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int mr_button_connecting_dark = 2130837795;
+			public const int ic_play_circle_outline = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int mr_button_connecting_light = 2130837796;
+			public const int ic_podcast = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int mr_button_dark = 2130837797;
+			public const int ic_rss = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int mr_button_light = 2130837798;
+			public const int ic_share = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int mr_dialog_close_dark = 2130837799;
+			public const int ic_stop = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int mr_dialog_close_light = 2130837800;
+			public const int ic_twitter = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int mr_dialog_material_background_dark = 2130837801;
+			public const int ic_video = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_dialog_material_background_light = 2130837802;
+			public const int ic_vol_type_speaker_dark = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_group_collapse = 2130837803;
+			public const int ic_vol_type_speaker_group_dark = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_group_expand = 2130837804;
+			public const int ic_vol_type_speaker_group_light = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_media_pause_dark = 2130837805;
+			public const int ic_vol_type_speaker_light = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int mr_media_pause_light = 2130837806;
+			public const int ic_vol_type_tv_dark = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int mr_media_play_dark = 2130837807;
+			public const int ic_vol_type_tv_light = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int mr_media_play_light = 2130837808;
+			public const int instagram = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mr_media_stop_dark = 2130837809;
+			public const int MaterialActivityIndicatorBackground = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mr_media_stop_light = 2130837810;
+			public const int MaterialProgressBar = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_vol_type_audiotrack_dark = 2130837811;
+			public const int mr_button_connected_dark = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mr_vol_type_audiotrack_light = 2130837812;
+			public const int mr_button_connected_light = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mtrl_snackbar_background = 2130837813;
+			public const int mr_button_connecting_dark = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int mtrl_tabs_default_indicator = 2130837814;
+			public const int mr_button_connecting_light = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int navigation_empty_icon = 2130837815;
+			public const int mr_button_dark = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int notification_action_background = 2130837816;
+			public const int mr_button_light = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int notification_bg = 2130837817;
+			public const int mr_dialog_close_dark = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int notification_bg_low = 2130837818;
+			public const int mr_dialog_close_light = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int notification_bg_low_normal = 2130837819;
+			public const int mr_dialog_material_background_dark = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int notification_bg_low_pressed = 2130837820;
+			public const int mr_dialog_material_background_light = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int notification_bg_normal = 2130837821;
+			public const int mr_group_collapse = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int notification_bg_normal_pressed = 2130837822;
+			public const int mr_group_expand = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int notification_icon_background = 2130837823;
-			
-			// aapt resource value: 0x7f02014a
-			public const int notification_template_icon_bg = 2130837834;
-			
-			// aapt resource value: 0x7f02014b
-			public const int notification_template_icon_low_bg = 2130837835;
+			public const int mr_media_pause_dark = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int notification_tile_bg = 2130837824;
+			public const int mr_media_pause_light = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int notify_panel_notification_icon_bg = 2130837825;
+			public const int mr_media_play_dark = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int ratchet_full = 2130837826;
+			public const int mr_media_play_light = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int refresh = 2130837827;
+			public const int mr_media_stop_dark = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int scott = 2130837828;
+			public const int mr_media_stop_light = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int scott159 = 2130837829;
+			public const int mr_vol_type_audiotrack_dark = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int tdl_full = 2130837830;
+			public const int mr_vol_type_audiotrack_light = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int tooltip_frame_dark = 2130837831;
+			public const int mtrl_snackbar_background = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int tooltip_frame_light = 2130837832;
+			public const int mtrl_tabs_default_indicator = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int twitter = 2130837833;
+			public const int navigation_empty_icon = 2130837833;
+			
+			// aapt resource value: 0x7f02014a
+			public const int notification_action_background = 2130837834;
+			
+			// aapt resource value: 0x7f02014b
+			public const int notification_bg = 2130837835;
+			
+			// aapt resource value: 0x7f02014c
+			public const int notification_bg_low = 2130837836;
+			
+			// aapt resource value: 0x7f02014d
+			public const int notification_bg_low_normal = 2130837837;
+			
+			// aapt resource value: 0x7f02014e
+			public const int notification_bg_low_pressed = 2130837838;
+			
+			// aapt resource value: 0x7f02014f
+			public const int notification_bg_normal = 2130837839;
+			
+			// aapt resource value: 0x7f020150
+			public const int notification_bg_normal_pressed = 2130837840;
+			
+			// aapt resource value: 0x7f020151
+			public const int notification_icon_background = 2130837841;
+			
+			// aapt resource value: 0x7f02015d
+			public const int notification_template_icon_bg = 2130837853;
+			
+			// aapt resource value: 0x7f02015e
+			public const int notification_template_icon_low_bg = 2130837854;
+			
+			// aapt resource value: 0x7f020152
+			public const int notification_tile_bg = 2130837842;
+			
+			// aapt resource value: 0x7f020153
+			public const int notify_panel_notification_icon_bg = 2130837843;
+			
+			// aapt resource value: 0x7f020154
+			public const int ratchet_full = 2130837844;
+			
+			// aapt resource value: 0x7f020155
+			public const int refresh = 2130837845;
+			
+			// aapt resource value: 0x7f020156
+			public const int scott = 2130837846;
+			
+			// aapt resource value: 0x7f020157
+			public const int scott159 = 2130837847;
+			
+			// aapt resource value: 0x7f020158
+			public const int shadow = 2130837848;
+			
+			// aapt resource value: 0x7f020159
+			public const int tdl_full = 2130837849;
+			
+			// aapt resource value: 0x7f02015a
+			public const int tooltip_frame_dark = 2130837850;
+			
+			// aapt resource value: 0x7f02015b
+			public const int tooltip_frame_light = 2130837851;
+			
+			// aapt resource value: 0x7f02015c
+			public const int twitter = 2130837852;
 			
 			static Drawable()
 			{
@@ -11207,59 +11043,59 @@ namespace HanselmanAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a0039
-			public const int ALT = 2131361849;
+			// aapt resource value: 0x7f0a004d
+			public const int ALT = 2131361869;
 			
-			// aapt resource value: 0x7f0a003a
-			public const int CTRL = 2131361850;
+			// aapt resource value: 0x7f0a004e
+			public const int CTRL = 2131361870;
 			
-			// aapt resource value: 0x7f0a003b
-			public const int FUNCTION = 2131361851;
+			// aapt resource value: 0x7f0a004f
+			public const int FUNCTION = 2131361871;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int META = 2131361852;
+			// aapt resource value: 0x7f0a0050
+			public const int META = 2131361872;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int SHIFT = 2131361853;
+			// aapt resource value: 0x7f0a0051
+			public const int SHIFT = 2131361873;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int SYM = 2131361854;
+			// aapt resource value: 0x7f0a0052
+			public const int SYM = 2131361874;
 			
-			// aapt resource value: 0x7f0a00e5
-			public const int action0 = 2131362021;
+			// aapt resource value: 0x7f0a0101
+			public const int action0 = 2131362049;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int action_bar = 2131361933;
+			// aapt resource value: 0x7f0a00a8
+			public const int action_bar = 2131361960;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int action_bar_activity_content = 2131361793;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int action_bar_container = 2131361932;
+			// aapt resource value: 0x7f0a00a7
+			public const int action_bar_container = 2131361959;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int action_bar_root = 2131361928;
+			// aapt resource value: 0x7f0a00a3
+			public const int action_bar_root = 2131361955;
 			
 			// aapt resource value: 0x7f0a0002
 			public const int action_bar_spinner = 2131361794;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int action_bar_subtitle = 2131361898;
+			// aapt resource value: 0x7f0a0085
+			public const int action_bar_subtitle = 2131361925;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int action_bar_title = 2131361897;
+			// aapt resource value: 0x7f0a0084
+			public const int action_bar_title = 2131361924;
 			
-			// aapt resource value: 0x7f0a00e2
-			public const int action_container = 2131362018;
+			// aapt resource value: 0x7f0a00fe
+			public const int action_container = 2131362046;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int action_context_bar = 2131361934;
+			// aapt resource value: 0x7f0a00a9
+			public const int action_context_bar = 2131361961;
 			
-			// aapt resource value: 0x7f0a00e9
-			public const int action_divider = 2131362025;
+			// aapt resource value: 0x7f0a0105
+			public const int action_divider = 2131362053;
 			
-			// aapt resource value: 0x7f0a00e3
-			public const int action_image = 2131362019;
+			// aapt resource value: 0x7f0a00ff
+			public const int action_image = 2131362047;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -11267,233 +11103,305 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a0004
 			public const int action_menu_presenter = 2131361796;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int action_mode_bar = 2131361930;
+			// aapt resource value: 0x7f0a00a5
+			public const int action_mode_bar = 2131361957;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int action_mode_bar_stub = 2131361929;
-			
-			// aapt resource value: 0x7f0a006b
-			public const int action_mode_close_button = 2131361899;
-			
-			// aapt resource value: 0x7f0a00e4
-			public const int action_text = 2131362020;
-			
-			// aapt resource value: 0x7f0a00f2
-			public const int actions = 2131362034;
-			
-			// aapt resource value: 0x7f0a006c
-			public const int activity_chooser_view_content = 2131361900;
-			
-			// aapt resource value: 0x7f0a002e
-			public const int add = 2131361838;
-			
-			// aapt resource value: 0x7f0a007f
-			public const int alertTitle = 2131361919;
-			
-			// aapt resource value: 0x7f0a0064
-			public const int all = 2131361892;
-			
-			// aapt resource value: 0x7f0a003f
-			public const int always = 2131361855;
-			
-			// aapt resource value: 0x7f0a0065
-			public const int async = 2131361893;
-			
-			// aapt resource value: 0x7f0a004d
-			public const int auto = 2131361869;
-			
-			// aapt resource value: 0x7f0a0036
-			public const int beginning = 2131361846;
-			
-			// aapt resource value: 0x7f0a0066
-			public const int blocking = 2131361894;
-			
-			// aapt resource value: 0x7f0a0044
-			public const int bottom = 2131361860;
-			
-			// aapt resource value: 0x7f0a009d
-			public const int bottomtab_navarea = 2131361949;
-			
-			// aapt resource value: 0x7f0a009e
-			public const int bottomtab_tabbar = 2131361950;
-			
-			// aapt resource value: 0x7f0a00a0
-			public const int browser_actions_header_text = 2131361952;
-			
-			// aapt resource value: 0x7f0a00a2
-			public const int browser_actions_menu_item_icon = 2131361954;
-			
-			// aapt resource value: 0x7f0a00a3
-			public const int browser_actions_menu_item_text = 2131361955;
-			
-			// aapt resource value: 0x7f0a00a1
-			public const int browser_actions_menu_items = 2131361953;
-			
-			// aapt resource value: 0x7f0a009f
-			public const int browser_actions_menu_view = 2131361951;
-			
-			// aapt resource value: 0x7f0a0072
-			public const int buttonPanel = 2131361906;
-			
-			// aapt resource value: 0x7f0a00e6
-			public const int cancel_action = 2131362022;
-			
-			// aapt resource value: 0x7f0a004c
-			public const int center = 2131361868;
-			
-			// aapt resource value: 0x7f0a0051
-			public const int center_horizontal = 2131361873;
-			
-			// aapt resource value: 0x7f0a0052
-			public const int center_vertical = 2131361874;
+			// aapt resource value: 0x7f0a00a4
+			public const int action_mode_bar_stub = 2131361956;
 			
 			// aapt resource value: 0x7f0a0086
-			public const int checkbox = 2131361926;
+			public const int action_mode_close_button = 2131361926;
 			
-			// aapt resource value: 0x7f0a00ee
-			public const int chronometer = 2131362030;
+			// aapt resource value: 0x7f0a0100
+			public const int action_text = 2131362048;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int clip_horizontal = 2131361889;
+			// aapt resource value: 0x7f0a010e
+			public const int actions = 2131362062;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int clip_vertical = 2131361890;
+			// aapt resource value: 0x7f0a0087
+			public const int activity_chooser_view_content = 2131361927;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int collapseActionView = 2131361856;
+			// aapt resource value: 0x7f0a0042
+			public const int add = 2131361858;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int container = 2131361958;
+			// aapt resource value: 0x7f0a009a
+			public const int alertTitle = 2131361946;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int content = 2131361922;
-			
-			// aapt resource value: 0x7f0a0075
-			public const int contentPanel = 2131361909;
-			
-			// aapt resource value: 0x7f0a00a7
-			public const int coordinator = 2131361959;
-			
-			// aapt resource value: 0x7f0a007c
-			public const int custom = 2131361916;
-			
-			// aapt resource value: 0x7f0a007b
-			public const int customPanel = 2131361915;
-			
-			// aapt resource value: 0x7f0a008b
-			public const int decor_content_parent = 2131361931;
-			
-			// aapt resource value: 0x7f0a006f
-			public const int default_activity_button = 2131361903;
-			
-			// aapt resource value: 0x7f0a00a9
-			public const int design_bottom_sheet = 2131361961;
-			
-			// aapt resource value: 0x7f0a00ae
-			public const int design_menu_item_action_area = 2131361966;
-			
-			// aapt resource value: 0x7f0a00ad
-			public const int design_menu_item_action_area_stub = 2131361965;
-			
-			// aapt resource value: 0x7f0a00ac
-			public const int design_menu_item_text = 2131361964;
-			
-			// aapt resource value: 0x7f0a00ab
-			public const int design_navigation_view = 2131361963;
-			
-			// aapt resource value: 0x7f0a0027
-			public const int disableHome = 2131361831;
-			
-			// aapt resource value: 0x7f0a008f
-			public const int edit_query = 2131361935;
-			
-			// aapt resource value: 0x7f0a0037
-			public const int end = 2131361847;
-			
-			// aapt resource value: 0x7f0a00f4
-			public const int end_padder = 2131362036;
-			
-			// aapt resource value: 0x7f0a0046
-			public const int enterAlways = 2131361862;
-			
-			// aapt resource value: 0x7f0a0047
-			public const int enterAlwaysCollapsed = 2131361863;
-			
-			// aapt resource value: 0x7f0a0048
-			public const int exitUntilCollapsed = 2131361864;
-			
-			// aapt resource value: 0x7f0a006d
-			public const int expand_activities_button = 2131361901;
-			
-			// aapt resource value: 0x7f0a0085
-			public const int expanded_menu = 2131361925;
-			
-			// aapt resource value: 0x7f0a005e
-			public const int fill = 2131361886;
-			
-			// aapt resource value: 0x7f0a0063
-			public const int fill_horizontal = 2131361891;
+			// aapt resource value: 0x7f0a0078
+			public const int all = 2131361912;
 			
 			// aapt resource value: 0x7f0a0053
-			public const int fill_vertical = 2131361875;
+			public const int always = 2131361875;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int filled = 2131361887;
+			// aapt resource value: 0x7f0a0079
+			public const int async = 2131361913;
+			
+			// aapt resource value: 0x7f0a0061
+			public const int auto = 2131361889;
+			
+			// aapt resource value: 0x7f0a004a
+			public const int beginning = 2131361866;
+			
+			// aapt resource value: 0x7f0a007a
+			public const int blocking = 2131361914;
+			
+			// aapt resource value: 0x7f0a0058
+			public const int bottom = 2131361880;
+			
+			// aapt resource value: 0x7f0a00b8
+			public const int bottomtab_navarea = 2131361976;
+			
+			// aapt resource value: 0x7f0a00b9
+			public const int bottomtab_tabbar = 2131361977;
+			
+			// aapt resource value: 0x7f0a00bb
+			public const int browser_actions_header_text = 2131361979;
+			
+			// aapt resource value: 0x7f0a00bd
+			public const int browser_actions_menu_item_icon = 2131361981;
+			
+			// aapt resource value: 0x7f0a00be
+			public const int browser_actions_menu_item_text = 2131361982;
+			
+			// aapt resource value: 0x7f0a00bc
+			public const int browser_actions_menu_items = 2131361980;
+			
+			// aapt resource value: 0x7f0a00ba
+			public const int browser_actions_menu_view = 2131361978;
+			
+			// aapt resource value: 0x7f0a008d
+			public const int buttonPanel = 2131361933;
+			
+			// aapt resource value: 0x7f0a0102
+			public const int cancel_action = 2131362050;
+			
+			// aapt resource value: 0x7f0a0060
+			public const int center = 2131361888;
+			
+			// aapt resource value: 0x7f0a0065
+			public const int center_horizontal = 2131361893;
+			
+			// aapt resource value: 0x7f0a0066
+			public const int center_vertical = 2131361894;
+			
+			// aapt resource value: 0x7f0a00a1
+			public const int checkbox = 2131361953;
+			
+			// aapt resource value: 0x7f0a010a
+			public const int chronometer = 2131362058;
+			
+			// aapt resource value: 0x7f0a0075
+			public const int clip_horizontal = 2131361909;
+			
+			// aapt resource value: 0x7f0a0076
+			public const int clip_vertical = 2131361910;
+			
+			// aapt resource value: 0x7f0a0054
+			public const int collapseActionView = 2131361876;
+			
+			// aapt resource value: 0x7f0a00c1
+			public const int container = 2131361985;
+			
+			// aapt resource value: 0x7f0a009d
+			public const int content = 2131361949;
+			
+			// aapt resource value: 0x7f0a0090
+			public const int contentPanel = 2131361936;
+			
+			// aapt resource value: 0x7f0a00c2
+			public const int coordinator = 2131361986;
+			
+			// aapt resource value: 0x7f0a0097
+			public const int custom = 2131361943;
+			
+			// aapt resource value: 0x7f0a0096
+			public const int customPanel = 2131361942;
+			
+			// aapt resource value: 0x7f0a00a6
+			public const int decor_content_parent = 2131361958;
+			
+			// aapt resource value: 0x7f0a008a
+			public const int default_activity_button = 2131361930;
+			
+			// aapt resource value: 0x7f0a00c4
+			public const int design_bottom_sheet = 2131361988;
+			
+			// aapt resource value: 0x7f0a00c9
+			public const int design_menu_item_action_area = 2131361993;
+			
+			// aapt resource value: 0x7f0a00c8
+			public const int design_menu_item_action_area_stub = 2131361992;
+			
+			// aapt resource value: 0x7f0a00c7
+			public const int design_menu_item_text = 2131361991;
+			
+			// aapt resource value: 0x7f0a00c6
+			public const int design_navigation_view = 2131361990;
+			
+			// aapt resource value: 0x7f0a003b
+			public const int disableHome = 2131361851;
+			
+			// aapt resource value: 0x7f0a00aa
+			public const int edit_query = 2131361962;
+			
+			// aapt resource value: 0x7f0a004b
+			public const int end = 2131361867;
+			
+			// aapt resource value: 0x7f0a0110
+			public const int end_padder = 2131362064;
+			
+			// aapt resource value: 0x7f0a005a
+			public const int enterAlways = 2131361882;
+			
+			// aapt resource value: 0x7f0a005b
+			public const int enterAlwaysCollapsed = 2131361883;
 			
 			// aapt resource value: 0x7f0a005c
-			public const int @fixed = 2131361884;
+			public const int exitUntilCollapsed = 2131361884;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int flyoutcontent_appbar = 2131361968;
+			// aapt resource value: 0x7f0a0024
+			public const int exo_artwork = 2131361828;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int flyoutcontent_recycler = 2131361969;
+			// aapt resource value: 0x7f0a0025
+			public const int exo_buffering = 2131361829;
+			
+			// aapt resource value: 0x7f0a0026
+			public const int exo_content_frame = 2131361830;
+			
+			// aapt resource value: 0x7f0a0027
+			public const int exo_controller = 2131361831;
+			
+			// aapt resource value: 0x7f0a0028
+			public const int exo_controller_placeholder = 2131361832;
+			
+			// aapt resource value: 0x7f0a0029
+			public const int exo_duration = 2131361833;
+			
+			// aapt resource value: 0x7f0a002a
+			public const int exo_error_message = 2131361834;
+			
+			// aapt resource value: 0x7f0a002b
+			public const int exo_ffwd = 2131361835;
+			
+			// aapt resource value: 0x7f0a002c
+			public const int exo_next = 2131361836;
+			
+			// aapt resource value: 0x7f0a002d
+			public const int exo_overlay = 2131361837;
+			
+			// aapt resource value: 0x7f0a002e
+			public const int exo_pause = 2131361838;
+			
+			// aapt resource value: 0x7f0a002f
+			public const int exo_play = 2131361839;
+			
+			// aapt resource value: 0x7f0a0030
+			public const int exo_position = 2131361840;
+			
+			// aapt resource value: 0x7f0a0031
+			public const int exo_prev = 2131361841;
+			
+			// aapt resource value: 0x7f0a0032
+			public const int exo_progress = 2131361842;
+			
+			// aapt resource value: 0x7f0a0033
+			public const int exo_repeat_toggle = 2131361843;
+			
+			// aapt resource value: 0x7f0a0034
+			public const int exo_rew = 2131361844;
+			
+			// aapt resource value: 0x7f0a0035
+			public const int exo_shuffle = 2131361845;
+			
+			// aapt resource value: 0x7f0a0036
+			public const int exo_shutter = 2131361846;
+			
+			// aapt resource value: 0x7f0a0037
+			public const int exo_subtitles = 2131361847;
+			
+			// aapt resource value: 0x7f0a00cb
+			public const int exo_track_selection_view = 2131361995;
+			
+			// aapt resource value: 0x7f0a0088
+			public const int expand_activities_button = 2131361928;
+			
+			// aapt resource value: 0x7f0a00a0
+			public const int expanded_menu = 2131361952;
+			
+			// aapt resource value: 0x7f0a0072
+			public const int fill = 2131361906;
+			
+			// aapt resource value: 0x7f0a0077
+			public const int fill_horizontal = 2131361911;
 			
 			// aapt resource value: 0x7f0a0067
-			public const int forever = 2131361895;
+			public const int fill_vertical = 2131361895;
+			
+			// aapt resource value: 0x7f0a0073
+			public const int filled = 2131361907;
+			
+			// aapt resource value: 0x7f0a007e
+			public const int fit = 2131361918;
+			
+			// aapt resource value: 0x7f0a0070
+			public const int @fixed = 2131361904;
+			
+			// aapt resource value: 0x7f0a007f
+			public const int fixed_height = 2131361919;
+			
+			// aapt resource value: 0x7f0a0080
+			public const int fixed_width = 2131361920;
+			
+			// aapt resource value: 0x7f0a00cc
+			public const int flyoutcontent_appbar = 2131361996;
+			
+			// aapt resource value: 0x7f0a00cd
+			public const int flyoutcontent_recycler = 2131361997;
+			
+			// aapt resource value: 0x7f0a007b
+			public const int forever = 2131361915;
 			
 			// aapt resource value: 0x7f0a000a
 			public const int ghost_view = 2131361802;
 			
-			// aapt resource value: 0x7f0a0081
-			public const int group_divider = 2131361921;
+			// aapt resource value: 0x7f0a009c
+			public const int group_divider = 2131361948;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int home = 2131361797;
 			
-			// aapt resource value: 0x7f0a0028
-			public const int homeAsUp = 2131361832;
+			// aapt resource value: 0x7f0a003c
+			public const int homeAsUp = 2131361852;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int icon = 2131361905;
+			// aapt resource value: 0x7f0a008c
+			public const int icon = 2131361932;
 			
-			// aapt resource value: 0x7f0a00f3
-			public const int icon_group = 2131362035;
+			// aapt resource value: 0x7f0a010f
+			public const int icon_group = 2131362063;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int ifRoom = 2131361857;
+			// aapt resource value: 0x7f0a0055
+			public const int ifRoom = 2131361877;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int image = 2131361902;
+			// aapt resource value: 0x7f0a0089
+			public const int image = 2131361929;
 			
-			// aapt resource value: 0x7f0a00ef
-			public const int info = 2131362031;
+			// aapt resource value: 0x7f0a010b
+			public const int info = 2131362059;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int italic = 2131361896;
+			// aapt resource value: 0x7f0a007c
+			public const int italic = 2131361916;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int item_touch_helper_previous_elevation = 2131361792;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int labeled = 2131361870;
+			// aapt resource value: 0x7f0a0062
+			public const int labeled = 2131361890;
 			
-			// aapt resource value: 0x7f0a00a5
-			public const int largeLabel = 2131361957;
+			// aapt resource value: 0x7f0a00c0
+			public const int largeLabel = 2131361984;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int left = 2131361876;
+			// aapt resource value: 0x7f0a0068
+			public const int left = 2131361896;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int line1 = 2131361820;
@@ -11501,179 +11409,179 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a001d
 			public const int line3 = 2131361821;
 			
-			// aapt resource value: 0x7f0a0024
-			public const int listMode = 2131361828;
-			
-			// aapt resource value: 0x7f0a0070
-			public const int list_item = 2131361904;
-			
-			// aapt resource value: 0x7f0a00f5
-			public const int main_appbar = 2131362037;
-			
-			// aapt resource value: 0x7f0a00f8
-			public const int main_scrollview = 2131362040;
-			
-			// aapt resource value: 0x7f0a00f7
-			public const int main_tablayout = 2131362039;
-			
-			// aapt resource value: 0x7f0a00f6
-			public const int main_toolbar = 2131362038;
-			
-			// aapt resource value: 0x7f0a00ff
-			public const int masked = 2131362047;
-			
-			// aapt resource value: 0x7f0a00b2
-			public const int materialformsedittext = 2131361970;
-			
-			// aapt resource value: 0x7f0a00e8
-			public const int media_actions = 2131362024;
-			
-			// aapt resource value: 0x7f0a009c
-			public const int message = 2131361948;
-			
 			// aapt resource value: 0x7f0a0038
-			public const int middle = 2131361848;
+			public const int listMode = 2131361848;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int mini = 2131361881;
+			// aapt resource value: 0x7f0a008b
+			public const int list_item = 2131361931;
 			
-			// aapt resource value: 0x7f0a00cf
-			public const int mr_art = 2131361999;
+			// aapt resource value: 0x7f0a0111
+			public const int main_appbar = 2131362065;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int mr_cast_checkbox = 2131361984;
+			// aapt resource value: 0x7f0a0114
+			public const int main_scrollview = 2131362068;
 			
-			// aapt resource value: 0x7f0a00b9
-			public const int mr_cast_close_button = 2131361977;
+			// aapt resource value: 0x7f0a0113
+			public const int main_tablayout = 2131362067;
 			
-			// aapt resource value: 0x7f0a00b4
-			public const int mr_cast_group_icon = 2131361972;
+			// aapt resource value: 0x7f0a0112
+			public const int main_toolbar = 2131362066;
 			
-			// aapt resource value: 0x7f0a00b5
-			public const int mr_cast_group_name = 2131361973;
-			
-			// aapt resource value: 0x7f0a00b3
-			public const int mr_cast_list = 2131361971;
-			
-			// aapt resource value: 0x7f0a00b8
-			public const int mr_cast_meta = 2131361976;
-			
-			// aapt resource value: 0x7f0a00ba
-			public const int mr_cast_meta_art = 2131361978;
-			
-			// aapt resource value: 0x7f0a00bc
-			public const int mr_cast_meta_subtitle = 2131361980;
-			
-			// aapt resource value: 0x7f0a00bb
-			public const int mr_cast_meta_title = 2131361979;
-			
-			// aapt resource value: 0x7f0a00be
-			public const int mr_cast_route_icon = 2131361982;
-			
-			// aapt resource value: 0x7f0a00bf
-			public const int mr_cast_route_name = 2131361983;
-			
-			// aapt resource value: 0x7f0a00bd
-			public const int mr_cast_stop_button = 2131361981;
-			
-			// aapt resource value: 0x7f0a00c1
-			public const int mr_cast_volume_layout = 2131361985;
-			
-			// aapt resource value: 0x7f0a00c2
-			public const int mr_cast_volume_slider = 2131361986;
-			
-			// aapt resource value: 0x7f0a00c4
-			public const int mr_chooser_list = 2131361988;
-			
-			// aapt resource value: 0x7f0a00c7
-			public const int mr_chooser_route_desc = 2131361991;
-			
-			// aapt resource value: 0x7f0a00c5
-			public const int mr_chooser_route_icon = 2131361989;
-			
-			// aapt resource value: 0x7f0a00c6
-			public const int mr_chooser_route_name = 2131361990;
-			
-			// aapt resource value: 0x7f0a00c3
-			public const int mr_chooser_title = 2131361987;
-			
-			// aapt resource value: 0x7f0a00cc
-			public const int mr_close = 2131361996;
-			
-			// aapt resource value: 0x7f0a00d2
-			public const int mr_control_divider = 2131362002;
-			
-			// aapt resource value: 0x7f0a00dd
-			public const int mr_control_playback_ctrl = 2131362013;
-			
-			// aapt resource value: 0x7f0a00e0
-			public const int mr_control_subtitle = 2131362016;
-			
-			// aapt resource value: 0x7f0a00df
-			public const int mr_control_title = 2131362015;
-			
-			// aapt resource value: 0x7f0a00de
-			public const int mr_control_title_container = 2131362014;
-			
-			// aapt resource value: 0x7f0a00cd
-			public const int mr_custom_control = 2131361997;
+			// aapt resource value: 0x7f0a011b
+			public const int masked = 2131362075;
 			
 			// aapt resource value: 0x7f0a00ce
-			public const int mr_default_control = 2131361998;
+			public const int materialformsedittext = 2131361998;
 			
-			// aapt resource value: 0x7f0a00c9
-			public const int mr_dialog_area = 2131361993;
-			
-			// aapt resource value: 0x7f0a00d8
-			public const int mr_dialog_header_name = 2131362008;
-			
-			// aapt resource value: 0x7f0a00c8
-			public const int mr_expandable_area = 2131361992;
-			
-			// aapt resource value: 0x7f0a00e1
-			public const int mr_group_expand_collapse = 2131362017;
-			
-			// aapt resource value: 0x7f0a00b6
-			public const int mr_group_volume_route_name = 2131361974;
+			// aapt resource value: 0x7f0a0104
+			public const int media_actions = 2131362052;
 			
 			// aapt resource value: 0x7f0a00b7
-			public const int mr_group_volume_slider = 2131361975;
+			public const int message = 2131361975;
 			
-			// aapt resource value: 0x7f0a00d0
-			public const int mr_media_main_control = 2131362000;
+			// aapt resource value: 0x7f0a004c
+			public const int middle = 2131361868;
 			
-			// aapt resource value: 0x7f0a00cb
-			public const int mr_name = 2131361995;
+			// aapt resource value: 0x7f0a006d
+			public const int mini = 2131361901;
 			
-			// aapt resource value: 0x7f0a00d9
-			public const int mr_picker_close_button = 2131362009;
-			
-			// aapt resource value: 0x7f0a00da
-			public const int mr_picker_list = 2131362010;
-			
-			// aapt resource value: 0x7f0a00db
-			public const int mr_picker_route_icon = 2131362011;
+			// aapt resource value: 0x7f0a00eb
+			public const int mr_art = 2131362027;
 			
 			// aapt resource value: 0x7f0a00dc
-			public const int mr_picker_route_name = 2131362012;
+			public const int mr_cast_checkbox = 2131362012;
+			
+			// aapt resource value: 0x7f0a00d5
+			public const int mr_cast_close_button = 2131362005;
+			
+			// aapt resource value: 0x7f0a00d0
+			public const int mr_cast_group_icon = 2131362000;
 			
 			// aapt resource value: 0x7f0a00d1
-			public const int mr_playback_control = 2131362001;
+			public const int mr_cast_group_name = 2131362001;
 			
-			// aapt resource value: 0x7f0a00ca
-			public const int mr_title_bar = 2131361994;
-			
-			// aapt resource value: 0x7f0a00d3
-			public const int mr_volume_control = 2131362003;
+			// aapt resource value: 0x7f0a00cf
+			public const int mr_cast_list = 2131361999;
 			
 			// aapt resource value: 0x7f0a00d4
-			public const int mr_volume_group_list = 2131362004;
+			public const int mr_cast_meta = 2131362004;
 			
 			// aapt resource value: 0x7f0a00d6
-			public const int mr_volume_item_icon = 2131362006;
+			public const int mr_cast_meta_art = 2131362006;
+			
+			// aapt resource value: 0x7f0a00d8
+			public const int mr_cast_meta_subtitle = 2131362008;
 			
 			// aapt resource value: 0x7f0a00d7
-			public const int mr_volume_slider = 2131362007;
+			public const int mr_cast_meta_title = 2131362007;
+			
+			// aapt resource value: 0x7f0a00da
+			public const int mr_cast_route_icon = 2131362010;
+			
+			// aapt resource value: 0x7f0a00db
+			public const int mr_cast_route_name = 2131362011;
+			
+			// aapt resource value: 0x7f0a00d9
+			public const int mr_cast_stop_button = 2131362009;
+			
+			// aapt resource value: 0x7f0a00dd
+			public const int mr_cast_volume_layout = 2131362013;
+			
+			// aapt resource value: 0x7f0a00de
+			public const int mr_cast_volume_slider = 2131362014;
+			
+			// aapt resource value: 0x7f0a00e0
+			public const int mr_chooser_list = 2131362016;
+			
+			// aapt resource value: 0x7f0a00e3
+			public const int mr_chooser_route_desc = 2131362019;
+			
+			// aapt resource value: 0x7f0a00e1
+			public const int mr_chooser_route_icon = 2131362017;
+			
+			// aapt resource value: 0x7f0a00e2
+			public const int mr_chooser_route_name = 2131362018;
+			
+			// aapt resource value: 0x7f0a00df
+			public const int mr_chooser_title = 2131362015;
+			
+			// aapt resource value: 0x7f0a00e8
+			public const int mr_close = 2131362024;
+			
+			// aapt resource value: 0x7f0a00ee
+			public const int mr_control_divider = 2131362030;
+			
+			// aapt resource value: 0x7f0a00f9
+			public const int mr_control_playback_ctrl = 2131362041;
+			
+			// aapt resource value: 0x7f0a00fc
+			public const int mr_control_subtitle = 2131362044;
+			
+			// aapt resource value: 0x7f0a00fb
+			public const int mr_control_title = 2131362043;
+			
+			// aapt resource value: 0x7f0a00fa
+			public const int mr_control_title_container = 2131362042;
+			
+			// aapt resource value: 0x7f0a00e9
+			public const int mr_custom_control = 2131362025;
+			
+			// aapt resource value: 0x7f0a00ea
+			public const int mr_default_control = 2131362026;
+			
+			// aapt resource value: 0x7f0a00e5
+			public const int mr_dialog_area = 2131362021;
+			
+			// aapt resource value: 0x7f0a00f4
+			public const int mr_dialog_header_name = 2131362036;
+			
+			// aapt resource value: 0x7f0a00e4
+			public const int mr_expandable_area = 2131362020;
+			
+			// aapt resource value: 0x7f0a00fd
+			public const int mr_group_expand_collapse = 2131362045;
+			
+			// aapt resource value: 0x7f0a00d2
+			public const int mr_group_volume_route_name = 2131362002;
+			
+			// aapt resource value: 0x7f0a00d3
+			public const int mr_group_volume_slider = 2131362003;
+			
+			// aapt resource value: 0x7f0a00ec
+			public const int mr_media_main_control = 2131362028;
+			
+			// aapt resource value: 0x7f0a00e7
+			public const int mr_name = 2131362023;
+			
+			// aapt resource value: 0x7f0a00f5
+			public const int mr_picker_close_button = 2131362037;
+			
+			// aapt resource value: 0x7f0a00f6
+			public const int mr_picker_list = 2131362038;
+			
+			// aapt resource value: 0x7f0a00f7
+			public const int mr_picker_route_icon = 2131362039;
+			
+			// aapt resource value: 0x7f0a00f8
+			public const int mr_picker_route_name = 2131362040;
+			
+			// aapt resource value: 0x7f0a00ed
+			public const int mr_playback_control = 2131362029;
+			
+			// aapt resource value: 0x7f0a00e6
+			public const int mr_title_bar = 2131362022;
+			
+			// aapt resource value: 0x7f0a00ef
+			public const int mr_volume_control = 2131362031;
+			
+			// aapt resource value: 0x7f0a00f0
+			public const int mr_volume_group_list = 2131362032;
+			
+			// aapt resource value: 0x7f0a00f2
+			public const int mr_volume_item_icon = 2131362034;
+			
+			// aapt resource value: 0x7f0a00f3
+			public const int mr_volume_slider = 2131362035;
 			
 			// aapt resource value: 0x7f0a0014
 			public const int mtrl_child_content_container = 2131361812;
@@ -11681,44 +11589,47 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a0015
 			public const int mtrl_internal_children_alpha_tag = 2131361813;
 			
-			// aapt resource value: 0x7f0a002f
-			public const int multiply = 2131361839;
+			// aapt resource value: 0x7f0a0043
+			public const int multiply = 2131361859;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int navigation_header_container = 2131361962;
+			// aapt resource value: 0x7f0a00c5
+			public const int navigation_header_container = 2131361989;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int never = 2131361858;
+			// aapt resource value: 0x7f0a0056
+			public const int never = 2131361878;
 			
-			// aapt resource value: 0x7f0a0029
-			public const int none = 2131361833;
+			// aapt resource value: 0x7f0a003d
+			public const int none = 2131361853;
 			
-			// aapt resource value: 0x7f0a0025
-			public const int normal = 2131361829;
+			// aapt resource value: 0x7f0a0039
+			public const int normal = 2131361849;
 			
-			// aapt resource value: 0x7f0a00f1
-			public const int notification_background = 2131362033;
+			// aapt resource value: 0x7f0a010d
+			public const int notification_background = 2131362061;
 			
-			// aapt resource value: 0x7f0a00eb
-			public const int notification_main_column = 2131362027;
+			// aapt resource value: 0x7f0a0107
+			public const int notification_main_column = 2131362055;
 			
-			// aapt resource value: 0x7f0a00ea
-			public const int notification_main_column_container = 2131362026;
+			// aapt resource value: 0x7f0a0106
+			public const int notification_main_column_container = 2131362054;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int outline = 2131361888;
-			
-			// aapt resource value: 0x7f0a0057
-			public const int parallax = 2131361879;
+			// aapt resource value: 0x7f0a007d
+			public const int one = 2131361917;
 			
 			// aapt resource value: 0x7f0a0074
-			public const int parentPanel = 2131361908;
+			public const int outline = 2131361908;
+			
+			// aapt resource value: 0x7f0a006b
+			public const int parallax = 2131361899;
+			
+			// aapt resource value: 0x7f0a008f
+			public const int parentPanel = 2131361935;
 			
 			// aapt resource value: 0x7f0a000b
 			public const int parent_matrix = 2131361803;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int pin = 2131361880;
+			// aapt resource value: 0x7f0a006c
+			public const int pin = 2131361900;
 			
 			// aapt resource value: 0x7f0a0006
 			public const int progress_circular = 2131361798;
@@ -11726,17 +11637,17 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a0007
 			public const int progress_horizontal = 2131361799;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int radio = 2131361927;
+			// aapt resource value: 0x7f0a00a2
+			public const int radio = 2131361954;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int right = 2131361877;
+			// aapt resource value: 0x7f0a0069
+			public const int right = 2131361897;
 			
-			// aapt resource value: 0x7f0a00f0
-			public const int right_icon = 2131362032;
+			// aapt resource value: 0x7f0a010c
+			public const int right_icon = 2131362060;
 			
-			// aapt resource value: 0x7f0a00ec
-			public const int right_side = 2131362028;
+			// aapt resource value: 0x7f0a0108
+			public const int right_side = 2131362056;
 			
 			// aapt resource value: 0x7f0a000c
 			public const int save_image_matrix = 2131361804;
@@ -11747,86 +11658,86 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a000e
 			public const int save_scale_type = 2131361806;
 			
-			// aapt resource value: 0x7f0a0030
-			public const int screen = 2131361840;
-			
-			// aapt resource value: 0x7f0a0049
-			public const int scroll = 2131361865;
-			
-			// aapt resource value: 0x7f0a007a
-			public const int scrollIndicatorDown = 2131361914;
-			
-			// aapt resource value: 0x7f0a0076
-			public const int scrollIndicatorUp = 2131361910;
-			
-			// aapt resource value: 0x7f0a0077
-			public const int scrollView = 2131361911;
+			// aapt resource value: 0x7f0a0044
+			public const int screen = 2131361860;
 			
 			// aapt resource value: 0x7f0a005d
-			public const int scrollable = 2131361885;
-			
-			// aapt resource value: 0x7f0a0091
-			public const int search_badge = 2131361937;
-			
-			// aapt resource value: 0x7f0a0090
-			public const int search_bar = 2131361936;
-			
-			// aapt resource value: 0x7f0a0092
-			public const int search_button = 2131361938;
-			
-			// aapt resource value: 0x7f0a0097
-			public const int search_close_btn = 2131361943;
-			
-			// aapt resource value: 0x7f0a0093
-			public const int search_edit_frame = 2131361939;
-			
-			// aapt resource value: 0x7f0a0099
-			public const int search_go_btn = 2131361945;
-			
-			// aapt resource value: 0x7f0a0094
-			public const int search_mag_icon = 2131361940;
+			public const int scroll = 2131361885;
 			
 			// aapt resource value: 0x7f0a0095
-			public const int search_plate = 2131361941;
+			public const int scrollIndicatorDown = 2131361941;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int search_src_text = 2131361942;
+			// aapt resource value: 0x7f0a0091
+			public const int scrollIndicatorUp = 2131361937;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int search_voice_btn = 2131361946;
+			// aapt resource value: 0x7f0a0092
+			public const int scrollView = 2131361938;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int select_dialog_listview = 2131361947;
+			// aapt resource value: 0x7f0a0071
+			public const int scrollable = 2131361905;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int selected = 2131361871;
+			// aapt resource value: 0x7f0a00ac
+			public const int search_badge = 2131361964;
 			
-			// aapt resource value: 0x7f0a00f9
-			public const int shellcontent_appbar = 2131362041;
+			// aapt resource value: 0x7f0a00ab
+			public const int search_bar = 2131361963;
 			
-			// aapt resource value: 0x7f0a00fb
-			public const int shellcontent_scrollview = 2131362043;
+			// aapt resource value: 0x7f0a00ad
+			public const int search_button = 2131361965;
 			
-			// aapt resource value: 0x7f0a00fa
-			public const int shellcontent_toolbar = 2131362042;
+			// aapt resource value: 0x7f0a00b2
+			public const int search_close_btn = 2131361970;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int shortcut = 2131361923;
+			// aapt resource value: 0x7f0a00ae
+			public const int search_edit_frame = 2131361966;
 			
-			// aapt resource value: 0x7f0a002a
-			public const int showCustom = 2131361834;
+			// aapt resource value: 0x7f0a00b4
+			public const int search_go_btn = 2131361972;
 			
-			// aapt resource value: 0x7f0a002b
-			public const int showHome = 2131361835;
+			// aapt resource value: 0x7f0a00af
+			public const int search_mag_icon = 2131361967;
 			
-			// aapt resource value: 0x7f0a002c
-			public const int showTitle = 2131361836;
+			// aapt resource value: 0x7f0a00b0
+			public const int search_plate = 2131361968;
 			
-			// aapt resource value: 0x7f0a00fc
-			public const int sliding_tabs = 2131362044;
+			// aapt resource value: 0x7f0a00b1
+			public const int search_src_text = 2131361969;
 			
-			// aapt resource value: 0x7f0a00a4
-			public const int smallLabel = 2131361956;
+			// aapt resource value: 0x7f0a00b5
+			public const int search_voice_btn = 2131361973;
+			
+			// aapt resource value: 0x7f0a00b6
+			public const int select_dialog_listview = 2131361974;
+			
+			// aapt resource value: 0x7f0a0063
+			public const int selected = 2131361891;
+			
+			// aapt resource value: 0x7f0a0115
+			public const int shellcontent_appbar = 2131362069;
+			
+			// aapt resource value: 0x7f0a0117
+			public const int shellcontent_scrollview = 2131362071;
+			
+			// aapt resource value: 0x7f0a0116
+			public const int shellcontent_toolbar = 2131362070;
+			
+			// aapt resource value: 0x7f0a009e
+			public const int shortcut = 2131361950;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int showCustom = 2131361854;
+			
+			// aapt resource value: 0x7f0a003f
+			public const int showHome = 2131361855;
+			
+			// aapt resource value: 0x7f0a0040
+			public const int showTitle = 2131361856;
+			
+			// aapt resource value: 0x7f0a0118
+			public const int sliding_tabs = 2131362072;
+			
+			// aapt resource value: 0x7f0a00bf
+			public const int smallLabel = 2131361983;
 			
 			// aapt resource value: 0x7f0a0016
 			public const int snackbar_action = 2131361814;
@@ -11834,44 +11745,47 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a0017
 			public const int snackbar_text = 2131361815;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int snap = 2131361866;
+			// aapt resource value: 0x7f0a005e
+			public const int snap = 2131361886;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int snapMargins = 2131361867;
+			// aapt resource value: 0x7f0a005f
+			public const int snapMargins = 2131361887;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int spacer = 2131361907;
+			// aapt resource value: 0x7f0a008e
+			public const int spacer = 2131361934;
 			
 			// aapt resource value: 0x7f0a0008
 			public const int split_action_bar = 2131361800;
 			
-			// aapt resource value: 0x7f0a0031
-			public const int src_atop = 2131361841;
+			// aapt resource value: 0x7f0a0045
+			public const int src_atop = 2131361861;
 			
-			// aapt resource value: 0x7f0a0032
-			public const int src_in = 2131361842;
+			// aapt resource value: 0x7f0a0046
+			public const int src_in = 2131361862;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int src_over = 2131361843;
+			// aapt resource value: 0x7f0a0047
+			public const int src_over = 2131361863;
 			
-			// aapt resource value: 0x7f0a0056
-			public const int start = 2131361878;
+			// aapt resource value: 0x7f0a006a
+			public const int start = 2131361898;
 			
-			// aapt resource value: 0x7f0a00e7
-			public const int status_bar_latest_event_content = 2131362023;
+			// aapt resource value: 0x7f0a0103
+			public const int status_bar_latest_event_content = 2131362051;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int stretch = 2131361883;
+			// aapt resource value: 0x7f0a006f
+			public const int stretch = 2131361903;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int submenuarrow = 2131361924;
+			// aapt resource value: 0x7f0a009f
+			public const int submenuarrow = 2131361951;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int submit_area = 2131361944;
+			// aapt resource value: 0x7f0a00b3
+			public const int submit_area = 2131361971;
 			
-			// aapt resource value: 0x7f0a0026
-			public const int tabMode = 2131361830;
+			// aapt resource value: 0x7f0a0082
+			public const int surface_view = 2131361922;
+			
+			// aapt resource value: 0x7f0a003a
+			public const int tabMode = 2131361850;
 			
 			// aapt resource value: 0x7f0a001e
 			public const int tag_transition_group = 2131361822;
@@ -11888,17 +11802,17 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a0022
 			public const int text2 = 2131361826;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int textSpacerNoButtons = 2131361913;
+			// aapt resource value: 0x7f0a0094
+			public const int textSpacerNoButtons = 2131361940;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int textSpacerNoTitle = 2131361912;
+			// aapt resource value: 0x7f0a0093
+			public const int textSpacerNoTitle = 2131361939;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int textStart = 2131361882;
+			// aapt resource value: 0x7f0a006e
+			public const int textStart = 2131361902;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int text_input_password_toggle = 2131361967;
+			// aapt resource value: 0x7f0a00ca
+			public const int text_input_password_toggle = 2131361994;
 			
 			// aapt resource value: 0x7f0a0018
 			public const int textinput_counter = 2131361816;
@@ -11909,29 +11823,32 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a001a
 			public const int textinput_helper_text = 2131361818;
 			
-			// aapt resource value: 0x7f0a00ed
-			public const int time = 2131362029;
+			// aapt resource value: 0x7f0a0083
+			public const int texture_view = 2131361923;
+			
+			// aapt resource value: 0x7f0a0109
+			public const int time = 2131362057;
 			
 			// aapt resource value: 0x7f0a0023
 			public const int title = 2131361827;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int titleDividerNoCustom = 2131361920;
+			// aapt resource value: 0x7f0a009b
+			public const int titleDividerNoCustom = 2131361947;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int title_template = 2131361918;
+			// aapt resource value: 0x7f0a0099
+			public const int title_template = 2131361945;
 			
-			// aapt resource value: 0x7f0a00fd
-			public const int toolbar = 2131362045;
+			// aapt resource value: 0x7f0a0119
+			public const int toolbar = 2131362073;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int top = 2131361861;
+			// aapt resource value: 0x7f0a0059
+			public const int top = 2131361881;
 			
-			// aapt resource value: 0x7f0a007d
-			public const int topPanel = 2131361917;
+			// aapt resource value: 0x7f0a0098
+			public const int topPanel = 2131361944;
 			
-			// aapt resource value: 0x7f0a00a8
-			public const int touch_outside = 2131361960;
+			// aapt resource value: 0x7f0a00c3
+			public const int touch_outside = 2131361987;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int transition_current_scene = 2131361807;
@@ -11948,32 +11865,35 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0a0013
 			public const int transition_transform = 2131361811;
 			
-			// aapt resource value: 0x7f0a0034
-			public const int uniform = 2131361844;
+			// aapt resource value: 0x7f0a0048
+			public const int uniform = 2131361864;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int unlabeled = 2131361872;
+			// aapt resource value: 0x7f0a0064
+			public const int unlabeled = 2131361892;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int up = 2131361801;
 			
-			// aapt resource value: 0x7f0a002d
-			public const int useLogo = 2131361837;
+			// aapt resource value: 0x7f0a0041
+			public const int useLogo = 2131361857;
 			
 			// aapt resource value: 0x7f0a001b
 			public const int view_offset_helper = 2131361819;
 			
-			// aapt resource value: 0x7f0a00fe
-			public const int visible = 2131362046;
+			// aapt resource value: 0x7f0a011a
+			public const int visible = 2131362074;
 			
-			// aapt resource value: 0x7f0a00d5
-			public const int volume_item_container = 2131362005;
+			// aapt resource value: 0x7f0a00f1
+			public const int volume_item_container = 2131362033;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int withText = 2131361859;
+			// aapt resource value: 0x7f0a0057
+			public const int withText = 2131361879;
 			
-			// aapt resource value: 0x7f0a0035
-			public const int wrap_content = 2131361845;
+			// aapt resource value: 0x7f0a0049
+			public const int wrap_content = 2131361865;
+			
+			// aapt resource value: 0x7f0a0081
+			public const int zoom = 2131361921;
 			
 			static Id()
 			{
@@ -12225,130 +12145,148 @@ namespace HanselmanAndroid
 			public const int design_text_input_password_icon = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int FlyoutContent = 2130903085;
+			public const int exo_list_divider = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int MaterialPickerTextInput = 2130903086;
+			public const int exo_playback_control_view = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int mr_cast_dialog = 2130903087;
+			public const int exo_player_control_view = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int mr_cast_group_item = 2130903088;
+			public const int exo_player_view = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int mr_cast_group_volume_item = 2130903089;
+			public const int exo_simple_player_view = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int mr_cast_media_metadata = 2130903090;
+			public const int exo_track_selection_dialog = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int mr_cast_route_item = 2130903091;
+			public const int FlyoutContent = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int mr_chooser_dialog = 2130903092;
+			public const int MaterialPickerTextInput = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int mr_chooser_list_item = 2130903093;
+			public const int mr_cast_dialog = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int mr_controller_material_dialog_b = 2130903094;
+			public const int mr_cast_group_item = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int mr_controller_volume_item = 2130903095;
+			public const int mr_cast_group_volume_item = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int mr_dialog_header_item = 2130903096;
+			public const int mr_cast_media_metadata = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int mr_picker_dialog = 2130903097;
+			public const int mr_cast_route_item = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int mr_picker_route_item = 2130903098;
+			public const int mr_chooser_dialog = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int mr_playback_control = 2130903099;
+			public const int mr_chooser_list_item = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int mr_volume_control = 2130903100;
+			public const int mr_controller_material_dialog_b = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int mtrl_layout_snackbar = 2130903101;
+			public const int mr_controller_volume_item = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int mtrl_layout_snackbar_include = 2130903102;
+			public const int mr_dialog_header_item = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int notification_action = 2130903103;
+			public const int mr_picker_dialog = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int notification_action_tombstone = 2130903104;
+			public const int mr_picker_route_item = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int notification_media_action = 2130903105;
+			public const int mr_playback_control = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int notification_media_cancel_action = 2130903106;
+			public const int mr_volume_control = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int notification_template_big_media = 2130903107;
+			public const int mtrl_layout_snackbar = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int notification_template_big_media_custom = 2130903108;
+			public const int mtrl_layout_snackbar_include = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int notification_template_big_media_narrow = 2130903109;
+			public const int notification_action = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int notification_template_big_media_narrow_custom = 2130903110;
+			public const int notification_action_tombstone = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int notification_template_custom_big = 2130903111;
+			public const int notification_media_action = 2130903111;
 			
 			// aapt resource value: 0x7f030048
-			public const int notification_template_icon_group = 2130903112;
+			public const int notification_media_cancel_action = 2130903112;
 			
 			// aapt resource value: 0x7f030049
-			public const int notification_template_lines_media = 2130903113;
+			public const int notification_template_big_media = 2130903113;
 			
 			// aapt resource value: 0x7f03004a
-			public const int notification_template_media = 2130903114;
+			public const int notification_template_big_media_custom = 2130903114;
 			
 			// aapt resource value: 0x7f03004b
-			public const int notification_template_media_custom = 2130903115;
+			public const int notification_template_big_media_narrow = 2130903115;
 			
 			// aapt resource value: 0x7f03004c
-			public const int notification_template_part_chronometer = 2130903116;
+			public const int notification_template_big_media_narrow_custom = 2130903116;
 			
 			// aapt resource value: 0x7f03004d
-			public const int notification_template_part_time = 2130903117;
+			public const int notification_template_custom_big = 2130903117;
 			
 			// aapt resource value: 0x7f03004e
-			public const int RootLayout = 2130903118;
+			public const int notification_template_icon_group = 2130903118;
 			
 			// aapt resource value: 0x7f03004f
-			public const int select_dialog_item_material = 2130903119;
+			public const int notification_template_lines_media = 2130903119;
 			
 			// aapt resource value: 0x7f030050
-			public const int select_dialog_multichoice_material = 2130903120;
+			public const int notification_template_media = 2130903120;
 			
 			// aapt resource value: 0x7f030051
-			public const int select_dialog_singlechoice_material = 2130903121;
+			public const int notification_template_media_custom = 2130903121;
 			
 			// aapt resource value: 0x7f030052
-			public const int ShellContent = 2130903122;
+			public const int notification_template_part_chronometer = 2130903122;
 			
 			// aapt resource value: 0x7f030053
-			public const int support_simple_spinner_dropdown_item = 2130903123;
+			public const int notification_template_part_time = 2130903123;
 			
 			// aapt resource value: 0x7f030054
-			public const int Tabbar = 2130903124;
+			public const int RootLayout = 2130903124;
 			
 			// aapt resource value: 0x7f030055
-			public const int TextInputLayoutFilledBox = 2130903125;
+			public const int select_dialog_item_material = 2130903125;
 			
 			// aapt resource value: 0x7f030056
-			public const int Toolbar = 2130903126;
+			public const int select_dialog_multichoice_material = 2130903126;
+			
+			// aapt resource value: 0x7f030057
+			public const int select_dialog_singlechoice_material = 2130903127;
+			
+			// aapt resource value: 0x7f030058
+			public const int ShellContent = 2130903128;
+			
+			// aapt resource value: 0x7f030059
+			public const int support_simple_spinner_dropdown_item = 2130903129;
+			
+			// aapt resource value: 0x7f03005a
+			public const int Tabbar = 2130903130;
+			
+			// aapt resource value: 0x7f03005b
+			public const int TextInputLayoutFilledBox = 2130903131;
+			
+			// aapt resource value: 0x7f03005c
+			public const int Toolbar = 2130903132;
 			
 			static Layout()
 			{
@@ -12362,12 +12300,6 @@ namespace HanselmanAndroid
 		
 		public partial class String
 		{
-			
-			// aapt resource value: 0x7f0b004f
-			public const int ApplicationName = 2131427407;
-			
-			// aapt resource value: 0x7f0b004e
-			public const int Hello = 2131427406;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int abc_action_bar_home_description = 2131427352;
@@ -12486,8 +12418,8 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b0032
 			public const int abc_toolbar_collapse_description = 2131427378;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int app_name = 2131427409;
+			// aapt resource value: 0x7f0b0073
+			public const int app_name = 2131427443;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int appbar_scrolling_view_behavior = 2131427392;
@@ -12501,14 +12433,122 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7f0b0043
 			public const int character_counter_pattern = 2131427395;
 			
+			// aapt resource value: 0x7f0b004e
+			public const int download_notification_channel_name = 2131427406;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int exo_controls_fastforward_description = 2131427407;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int exo_controls_fullscreen_description = 2131427408;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int exo_controls_next_description = 2131427409;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int exo_controls_pause_description = 2131427410;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int exo_controls_play_description = 2131427411;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int exo_controls_previous_description = 2131427412;
+			
+			// aapt resource value: 0x7f0b0055
+			public const int exo_controls_repeat_all_description = 2131427413;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int exo_controls_repeat_off_description = 2131427414;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int exo_controls_repeat_one_description = 2131427415;
+			
+			// aapt resource value: 0x7f0b0058
+			public const int exo_controls_rewind_description = 2131427416;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int exo_controls_shuffle_description = 2131427417;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int exo_controls_stop_description = 2131427418;
+			
+			// aapt resource value: 0x7f0b005b
+			public const int exo_download_completed = 2131427419;
+			
+			// aapt resource value: 0x7f0b005c
+			public const int exo_download_description = 2131427420;
+			
+			// aapt resource value: 0x7f0b005d
+			public const int exo_download_downloading = 2131427421;
+			
+			// aapt resource value: 0x7f0b005e
+			public const int exo_download_failed = 2131427422;
+			
+			// aapt resource value: 0x7f0b005f
+			public const int exo_download_notification_channel_name = 2131427423;
+			
+			// aapt resource value: 0x7f0b0060
+			public const int exo_download_removing = 2131427424;
+			
+			// aapt resource value: 0x7f0b0061
+			public const int exo_item_list = 2131427425;
+			
+			// aapt resource value: 0x7f0b006f
+			public const int exo_media_action_repeat_all_description = 2131427439;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int exo_media_action_repeat_off_description = 2131427440;
+			
+			// aapt resource value: 0x7f0b0071
+			public const int exo_media_action_repeat_one_description = 2131427441;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int exo_track_bitrate = 2131427426;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int exo_track_mono = 2131427427;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int exo_track_resolution = 2131427428;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int exo_track_selection_auto = 2131427429;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int exo_track_selection_none = 2131427430;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int exo_track_selection_title_audio = 2131427431;
+			
+			// aapt resource value: 0x7f0b0068
+			public const int exo_track_selection_title_text = 2131427432;
+			
+			// aapt resource value: 0x7f0b0069
+			public const int exo_track_selection_title_video = 2131427433;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int exo_track_stereo = 2131427434;
+			
+			// aapt resource value: 0x7f0b006b
+			public const int exo_track_surround = 2131427435;
+			
+			// aapt resource value: 0x7f0b006c
+			public const int exo_track_surround_5_point_1 = 2131427436;
+			
+			// aapt resource value: 0x7f0b006d
+			public const int exo_track_surround_7_point_1 = 2131427437;
+			
+			// aapt resource value: 0x7f0b006e
+			public const int exo_track_unknown = 2131427438;
+			
 			// aapt resource value: 0x7f0b0044
 			public const int fab_transformation_scrim_behavior = 2131427396;
 			
 			// aapt resource value: 0x7f0b0045
 			public const int fab_transformation_sheet_behavior = 2131427397;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int hello = 2131427408;
+			// aapt resource value: 0x7f0b0072
+			public const int hello = 2131427442;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int hide_bottom_view_on_scroll_behavior = 2131427398;
@@ -13214,10 +13254,34 @@ namespace HanselmanAndroid
 			public const int CardView_Light = 2131230741;
 			
 			// aapt resource value: 0x7f080206
-			public const int MyTheme = 2131231238;
+			public const int ExoMediaButton = 2131231238;
 			
 			// aapt resource value: 0x7f080207
-			public const int MyTheme_Base = 2131231239;
+			public const int ExoMediaButton_FastForward = 2131231239;
+			
+			// aapt resource value: 0x7f080208
+			public const int ExoMediaButton_Next = 2131231240;
+			
+			// aapt resource value: 0x7f080209
+			public const int ExoMediaButton_Pause = 2131231241;
+			
+			// aapt resource value: 0x7f08020a
+			public const int ExoMediaButton_Play = 2131231242;
+			
+			// aapt resource value: 0x7f08020b
+			public const int ExoMediaButton_Previous = 2131231243;
+			
+			// aapt resource value: 0x7f08020c
+			public const int ExoMediaButton_Rewind = 2131231244;
+			
+			// aapt resource value: 0x7f08020d
+			public const int ExoMediaButton_Shuffle = 2131231245;
+			
+			// aapt resource value: 0x7f08020e
+			public const int MyTheme = 2131231246;
+			
+			// aapt resource value: 0x7f08020f
+			public const int MyTheme_Base = 2131231247;
 			
 			// aapt resource value: 0x7f080085
 			public const int Platform_AppCompat = 2131230853;
@@ -14215,10 +14279,7 @@ namespace HanselmanAndroid
 		{
 			
 			public static int[] ActionBar = new int[] {
-					2130772005,
-					2130772007,
 					2130772008,
-					2130772009,
 					2130772010,
 					2130772011,
 					2130772012,
@@ -14243,7 +14304,10 @@ namespace HanselmanAndroid
 					2130772031,
 					2130772032,
 					2130772033,
-					2130772108};
+					2130772034,
+					2130772035,
+					2130772036,
+					2130772111};
 			
 			// aapt resource value: 10
 			public const int ActionBar_background = 10;
@@ -14347,12 +14411,12 @@ namespace HanselmanAndroid
 			public static int[] ActionMenuView;
 			
 			public static int[] ActionMode = new int[] {
-					2130772005,
-					2130772011,
-					2130772012,
-					2130772016,
-					2130772018,
-					2130772034};
+					2130772008,
+					2130772014,
+					2130772015,
+					2130772019,
+					2130772021,
+					2130772037};
 			
 			// aapt resource value: 3
 			public const int ActionMode_background = 3;
@@ -14373,8 +14437,8 @@ namespace HanselmanAndroid
 			public const int ActionMode_titleTextStyle = 1;
 			
 			public static int[] ActivityChooserView = new int[] {
-					2130772035,
-					2130772036};
+					2130772038,
+					2130772039};
 			
 			// aapt resource value: 1
 			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
@@ -14384,13 +14448,13 @@ namespace HanselmanAndroid
 			
 			public static int[] AlertDialog = new int[] {
 					16842994,
-					2130772037,
-					2130772038,
-					2130772039,
 					2130772040,
 					2130772041,
 					2130772042,
-					2130772043};
+					2130772043,
+					2130772044,
+					2130772045,
+					2130772046};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -14474,9 +14538,9 @@ namespace HanselmanAndroid
 					16842964,
 					16843919,
 					16844096,
-					2130772032,
-					2130772288,
-					2130772289};
+					2130772035,
+					2130772291,
+					2130772292};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_android_background = 0;
@@ -14497,10 +14561,10 @@ namespace HanselmanAndroid
 			public const int AppBarLayout_liftOnScroll = 5;
 			
 			public static int[] AppBarLayoutStates = new int[] {
-					2130772290,
-					2130772291,
-					2130772292,
-					2130772293};
+					2130772293,
+					2130772294,
+					2130772295,
+					2130772296};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -14515,8 +14579,8 @@ namespace HanselmanAndroid
 			public const int AppBarLayoutStates_state_lifted = 2;
 			
 			public static int[] AppBarLayout_Layout = new int[] {
-					2130772294,
-					2130772295};
+					2130772297,
+					2130772298};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_Layout_layout_scrollFlags = 0;
@@ -14526,9 +14590,9 @@ namespace HanselmanAndroid
 			
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130772044,
-					2130772045,
-					2130772046};
+					2130772047,
+					2130772048,
+					2130772049};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -14544,9 +14608,9 @@ namespace HanselmanAndroid
 			
 			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
-					2130772047,
-					2130772048,
-					2130772049};
+					2130772050,
+					2130772051,
+					2130772052};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -14592,16 +14656,16 @@ namespace HanselmanAndroid
 			
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
-					2130772050,
-					2130772051,
-					2130772052,
 					2130772053,
 					2130772054,
 					2130772055,
 					2130772056,
 					2130772057,
 					2130772058,
-					2130772059};
+					2130772059,
+					2130772060,
+					2130772061,
+					2130772062};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -14639,9 +14703,6 @@ namespace HanselmanAndroid
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
-					2130772060,
-					2130772061,
-					2130772062,
 					2130772063,
 					2130772064,
 					2130772065,
@@ -14757,7 +14818,10 @@ namespace HanselmanAndroid
 					2130772175,
 					2130772176,
 					2130772177,
-					2130772178};
+					2130772178,
+					2130772179,
+					2130772180,
+					2130772181};
 			
 			// aapt resource value: 23
 			public const int AppCompatTheme_actionBarDivider = 23;
@@ -15122,13 +15186,19 @@ namespace HanselmanAndroid
 			// aapt resource value: 3
 			public const int AppCompatTheme_windowNoTitle = 3;
 			
+			public static int[] AspectRatioFrameLayout = new int[] {
+					2130772467};
+			
+			// aapt resource value: 0
+			public const int AspectRatioFrameLayout_resize_mode = 0;
+			
 			public static int[] BottomAppBar = new int[] {
-					2130772253,
-					2130772296,
-					2130772297,
-					2130772298,
+					2130772256,
 					2130772299,
-					2130772300};
+					2130772300,
+					2130772301,
+					2130772302,
+					2130772303};
 			
 			// aapt resource value: 0
 			public const int BottomAppBar_backgroundTint = 0;
@@ -15149,16 +15219,16 @@ namespace HanselmanAndroid
 			public const int BottomAppBar_hideOnScroll = 5;
 			
 			public static int[] BottomNavigationView = new int[] {
-					2130772032,
-					2130772301,
-					2130772302,
-					2130772303,
+					2130772035,
 					2130772304,
 					2130772305,
-					2130772373,
-					2130772374,
-					2130772375,
-					2130772376};
+					2130772306,
+					2130772307,
+					2130772308,
+					2130772376,
+					2130772377,
+					2130772378,
+					2130772379};
 			
 			// aapt resource value: 0
 			public const int BottomNavigationView_elevation = 0;
@@ -15191,10 +15261,10 @@ namespace HanselmanAndroid
 			public const int BottomNavigationView_menu = 6;
 			
 			public static int[] BottomSheetBehavior_Layout = new int[] {
-					2130772306,
-					2130772307,
-					2130772308,
-					2130772309};
+					2130772309,
+					2130772310,
+					2130772311,
+					2130772312};
 			
 			// aapt resource value: 3
 			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 3;
@@ -15209,7 +15279,7 @@ namespace HanselmanAndroid
 			public const int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
 			
 			public static int[] ButtonBarLayout = new int[] {
-					2130772179};
+					2130772182};
 			
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
@@ -15217,9 +15287,6 @@ namespace HanselmanAndroid
 			public static int[] CardView = new int[] {
 					16843071,
 					16843072,
-					2130771993,
-					2130771994,
-					2130771995,
 					2130771996,
 					2130771997,
 					2130771998,
@@ -15227,7 +15294,10 @@ namespace HanselmanAndroid
 					2130772000,
 					2130772001,
 					2130772002,
-					2130772003};
+					2130772003,
+					2130772004,
+					2130772005,
+					2130772006};
 			
 			// aapt resource value: 1
 			public const int CardView_android_minHeight = 1;
@@ -15274,13 +15344,10 @@ namespace HanselmanAndroid
 					16843039,
 					16843087,
 					16843237,
-					2130772213,
-					2130772264,
-					2130772268,
-					2130772270,
-					2130772310,
-					2130772311,
-					2130772312,
+					2130772216,
+					2130772267,
+					2130772271,
+					2130772273,
 					2130772313,
 					2130772314,
 					2130772315,
@@ -15302,7 +15369,10 @@ namespace HanselmanAndroid
 					2130772331,
 					2130772332,
 					2130772333,
-					2130772334};
+					2130772334,
+					2130772335,
+					2130772336,
+					2130772337};
 			
 			// aapt resource value: 4
 			public const int Chip_android_checkable = 4;
@@ -15407,12 +15477,12 @@ namespace HanselmanAndroid
 			public const int Chip_textStartPadding = 29;
 			
 			public static int[] ChipGroup = new int[] {
-					2130772335,
-					2130772336,
-					2130772337,
 					2130772338,
 					2130772339,
-					2130772340};
+					2130772340,
+					2130772341,
+					2130772342,
+					2130772343};
 			
 			// aapt resource value: 5
 			public const int ChipGroup_checkedChip = 5;
@@ -15433,10 +15503,7 @@ namespace HanselmanAndroid
 			public const int ChipGroup_singleSelection = 4;
 			
 			public static int[] CollapsingToolbarLayout = new int[] {
-					2130772007,
-					2130772341,
-					2130772342,
-					2130772343,
+					2130772010,
 					2130772344,
 					2130772345,
 					2130772346,
@@ -15448,7 +15515,10 @@ namespace HanselmanAndroid
 					2130772352,
 					2130772353,
 					2130772354,
-					2130772355};
+					2130772355,
+					2130772356,
+					2130772357,
+					2130772358};
 			
 			// aapt resource value: 13
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 13;
@@ -15499,8 +15569,8 @@ namespace HanselmanAndroid
 			public const int CollapsingToolbarLayout_toolbarId = 10;
 			
 			public static int[] CollapsingToolbarLayout_Layout = new int[] {
-					2130772356,
-					2130772357};
+					2130772359,
+					2130772360};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
@@ -15511,7 +15581,7 @@ namespace HanselmanAndroid
 			public static int[] ColorStateListItem = new int[] {
 					16843173,
 					16843551,
-					2130772448};
+					2130772451};
 			
 			// aapt resource value: 2
 			public const int ColorStateListItem_alpha = 2;
@@ -15524,8 +15594,8 @@ namespace HanselmanAndroid
 			
 			public static int[] CompoundButton = new int[] {
 					16843015,
-					2130772180,
-					2130772181};
+					2130772183,
+					2130772184};
 			
 			// aapt resource value: 0
 			public const int CompoundButton_android_button = 0;
@@ -15537,8 +15607,8 @@ namespace HanselmanAndroid
 			public const int CompoundButton_buttonTintMode = 2;
 			
 			public static int[] CoordinatorLayout = new int[] {
-					2130772440,
-					2130772441};
+					2130772443,
+					2130772444};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -15548,12 +15618,12 @@ namespace HanselmanAndroid
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
-					2130772442,
-					2130772443,
-					2130772444,
 					2130772445,
 					2130772446,
-					2130772447};
+					2130772447,
+					2130772448,
+					2130772449,
+					2130772450};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
@@ -15576,9 +15646,63 @@ namespace HanselmanAndroid
 			// aapt resource value: 3
 			public const int CoordinatorLayout_Layout_layout_keyline = 3;
 			
+			public static int[] DefaultTimeBar = new int[] {
+					2130772472,
+					2130772473,
+					2130772474,
+					2130772475,
+					2130772476,
+					2130772477,
+					2130772478,
+					2130772479,
+					2130772480,
+					2130772481,
+					2130772482,
+					2130772483,
+					2130772484};
+			
+			// aapt resource value: 11
+			public const int DefaultTimeBar_ad_marker_color = 11;
+			
+			// aapt resource value: 2
+			public const int DefaultTimeBar_ad_marker_width = 2;
+			
+			// aapt resource value: 0
+			public const int DefaultTimeBar_bar_height = 0;
+			
+			// aapt resource value: 9
+			public const int DefaultTimeBar_buffered_color = 9;
+			
+			// aapt resource value: 12
+			public const int DefaultTimeBar_played_ad_marker_color = 12;
+			
+			// aapt resource value: 7
+			public const int DefaultTimeBar_played_color = 7;
+			
+			// aapt resource value: 8
+			public const int DefaultTimeBar_scrubber_color = 8;
+			
+			// aapt resource value: 4
+			public const int DefaultTimeBar_scrubber_disabled_size = 4;
+			
+			// aapt resource value: 5
+			public const int DefaultTimeBar_scrubber_dragged_size = 5;
+			
+			// aapt resource value: 6
+			public const int DefaultTimeBar_scrubber_drawable = 6;
+			
+			// aapt resource value: 3
+			public const int DefaultTimeBar_scrubber_enabled_size = 3;
+			
+			// aapt resource value: 1
+			public const int DefaultTimeBar_touch_target_height = 1;
+			
+			// aapt resource value: 10
+			public const int DefaultTimeBar_unplayed_color = 10;
+			
 			public static int[] DesignTheme = new int[] {
-					2130772257,
-					2130772258};
+					2130772260,
+					2130772261};
 			
 			// aapt resource value: 0
 			public const int DesignTheme_bottomSheetDialogTheme = 0;
@@ -15587,14 +15711,14 @@ namespace HanselmanAndroid
 			public const int DesignTheme_bottomSheetStyle = 1;
 			
 			public static int[] DrawerArrowToggle = new int[] {
-					2130772182,
-					2130772183,
-					2130772184,
 					2130772185,
 					2130772186,
 					2130772187,
 					2130772188,
-					2130772189};
+					2130772189,
+					2130772190,
+					2130772191,
+					2130772192};
 			
 			// aapt resource value: 4
 			public const int DrawerArrowToggle_arrowHeadLength = 4;
@@ -15621,19 +15745,19 @@ namespace HanselmanAndroid
 			public const int DrawerArrowToggle_thickness = 7;
 			
 			public static int[] FloatingActionButton = new int[] {
-					2130772032,
-					2130772253,
-					2130772254,
-					2130772264,
-					2130772268,
-					2130772270,
-					2130772358,
-					2130772359,
-					2130772360,
+					2130772035,
+					2130772256,
+					2130772257,
+					2130772267,
+					2130772271,
+					2130772273,
 					2130772361,
 					2130772362,
 					2130772363,
-					2130772364};
+					2130772364,
+					2130772365,
+					2130772366,
+					2130772367};
 			
 			// aapt resource value: 1
 			public const int FloatingActionButton_backgroundTint = 1;
@@ -15675,14 +15799,14 @@ namespace HanselmanAndroid
 			public const int FloatingActionButton_useCompatPadding = 11;
 			
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
-					2130772365};
+					2130772368};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
 			
 			public static int[] FlowLayout = new int[] {
-					2130772366,
-					2130772367};
+					2130772369,
+					2130772370};
 			
 			// aapt resource value: 0
 			public const int FlowLayout_itemSpacing = 0;
@@ -15691,12 +15815,12 @@ namespace HanselmanAndroid
 			public const int FlowLayout_lineSpacing = 1;
 			
 			public static int[] FontFamily = new int[] {
-					2130772449,
-					2130772450,
-					2130772451,
 					2130772452,
 					2130772453,
-					2130772454};
+					2130772454,
+					2130772455,
+					2130772456,
+					2130772457};
 			
 			// aapt resource value: 0
 			public const int FontFamily_fontProviderAuthority = 0;
@@ -15722,11 +15846,11 @@ namespace HanselmanAndroid
 					16844095,
 					16844143,
 					16844144,
-					2130772455,
-					2130772456,
-					2130772457,
 					2130772458,
-					2130772459};
+					2130772459,
+					2130772460,
+					2130772461,
+					2130772462};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;
@@ -15761,7 +15885,7 @@ namespace HanselmanAndroid
 			public static int[] ForegroundLinearLayout = new int[] {
 					16843017,
 					16843264,
-					2130772368};
+					2130772371};
 			
 			// aapt resource value: 0
 			public const int ForegroundLinearLayout_android_foreground = 0;
@@ -15838,10 +15962,10 @@ namespace HanselmanAndroid
 					16843046,
 					16843047,
 					16843048,
-					2130772015,
-					2130772190,
-					2130772191,
-					2130772192};
+					2130772018,
+					2130772193,
+					2130772194,
+					2130772195};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -15903,18 +16027,18 @@ namespace HanselmanAndroid
 					16843192,
 					16843193,
 					16843194,
-					2130772013,
-					2130772201,
-					2130772202,
-					2130772253,
-					2130772254,
-					2130772268,
+					2130772016,
+					2130772204,
+					2130772205,
+					2130772256,
+					2130772257,
 					2130772271,
-					2130772272,
-					2130772369,
-					2130772370,
-					2130772371,
-					2130772372};
+					2130772274,
+					2130772275,
+					2130772372,
+					2130772373,
+					2130772374,
+					2130772375};
 			
 			// aapt resource value: 3
 			public const int MaterialButton_android_insetBottom = 3;
@@ -15965,8 +16089,8 @@ namespace HanselmanAndroid
 			public const int MaterialButton_strokeWidth = 11;
 			
 			public static int[] MaterialCardView = new int[] {
-					2130772271,
-					2130772272};
+					2130772274,
+					2130772275};
 			
 			// aapt resource value: 0
 			public const int MaterialCardView_strokeColor = 0;
@@ -15975,25 +16099,22 @@ namespace HanselmanAndroid
 			public const int MaterialCardView_strokeWidth = 1;
 			
 			public static int[] MaterialComponentsTheme = new int[] {
-					2130772143,
-					2130772144,
-					2130772145,
-					2130772152,
-					2130772166,
-					2130772257,
-					2130772258,
-					2130772259,
+					2130772146,
+					2130772147,
+					2130772148,
+					2130772155,
+					2130772169,
 					2130772260,
 					2130772261,
 					2130772262,
 					2130772263,
+					2130772264,
 					2130772265,
 					2130772266,
-					2130772267,
+					2130772268,
 					2130772269,
-					2130772273,
-					2130772274,
-					2130772275,
+					2130772270,
+					2130772272,
 					2130772276,
 					2130772277,
 					2130772278,
@@ -16006,7 +16127,10 @@ namespace HanselmanAndroid
 					2130772285,
 					2130772286,
 					2130772287,
-					2130772384};
+					2130772288,
+					2130772289,
+					2130772290,
+					2130772387};
 			
 			// aapt resource value: 5
 			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 5;
@@ -16107,8 +16231,8 @@ namespace HanselmanAndroid
 			public static int[] MediaRouteButton = new int[] {
 					16843071,
 					16843072,
-					2130771990,
-					2130771991};
+					2130771993,
+					2130771994};
 			
 			// aapt resource value: 1
 			public const int MediaRouteButton_android_minHeight = 1;
@@ -16162,16 +16286,16 @@ namespace HanselmanAndroid
 					16843236,
 					16843237,
 					16843375,
-					2130772193,
-					2130772194,
-					2130772195,
 					2130772196,
 					2130772197,
 					2130772198,
 					2130772199,
 					2130772200,
 					2130772201,
-					2130772202};
+					2130772202,
+					2130772203,
+					2130772204,
+					2130772205};
 			
 			// aapt resource value: 16
 			public const int MenuItem_actionLayout = 16;
@@ -16250,8 +16374,8 @@ namespace HanselmanAndroid
 					16843055,
 					16843056,
 					16843057,
-					2130772203,
-					2130772204};
+					2130772206,
+					2130772207};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -16284,15 +16408,15 @@ namespace HanselmanAndroid
 					16842964,
 					16842973,
 					16843039,
-					2130772032,
-					2130772373,
-					2130772374,
-					2130772375,
+					2130772035,
 					2130772376,
 					2130772377,
 					2130772378,
 					2130772379,
-					2130772380};
+					2130772380,
+					2130772381,
+					2130772382,
+					2130772383};
 			
 			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
@@ -16330,10 +16454,110 @@ namespace HanselmanAndroid
 			// aapt resource value: 4
 			public const int NavigationView_menu = 4;
 			
+			public static int[] PlayerControlView = new int[] {
+					2130772463,
+					2130772464,
+					2130772466,
+					2130772468,
+					2130772469,
+					2130772470};
+			
+			// aapt resource value: 0
+			public const int PlayerControlView_controller_layout_id = 0;
+			
+			// aapt resource value: 1
+			public const int PlayerControlView_fastforward_increment = 1;
+			
+			// aapt resource value: 2
+			public const int PlayerControlView_repeat_toggle_modes = 2;
+			
+			// aapt resource value: 3
+			public const int PlayerControlView_rewind_increment = 3;
+			
+			// aapt resource value: 4
+			public const int PlayerControlView_show_shuffle_button = 4;
+			
+			// aapt resource value: 5
+			public const int PlayerControlView_show_timeout = 5;
+			
+			public static int[] PlayerView = new int[] {
+					2130772463,
+					2130772464,
+					2130772465,
+					2130772466,
+					2130772467,
+					2130772468,
+					2130772469,
+					2130772470,
+					2130772471,
+					2130772485,
+					2130772486,
+					2130772487,
+					2130772488,
+					2130772489,
+					2130772490,
+					2130772491,
+					2130772492,
+					2130772493};
+			
+			// aapt resource value: 15
+			public const int PlayerView_auto_show = 15;
+			
+			// aapt resource value: 0
+			public const int PlayerView_controller_layout_id = 0;
+			
+			// aapt resource value: 11
+			public const int PlayerView_default_artwork = 11;
+			
+			// aapt resource value: 1
+			public const int PlayerView_fastforward_increment = 1;
+			
+			// aapt resource value: 14
+			public const int PlayerView_hide_during_ads = 14;
+			
+			// aapt resource value: 13
+			public const int PlayerView_hide_on_touch = 13;
+			
+			// aapt resource value: 17
+			public const int PlayerView_keep_content_on_player_reset = 17;
+			
+			// aapt resource value: 2
+			public const int PlayerView_player_layout_id = 2;
+			
+			// aapt resource value: 3
+			public const int PlayerView_repeat_toggle_modes = 3;
+			
+			// aapt resource value: 4
+			public const int PlayerView_resize_mode = 4;
+			
+			// aapt resource value: 5
+			public const int PlayerView_rewind_increment = 5;
+			
+			// aapt resource value: 16
+			public const int PlayerView_show_buffering = 16;
+			
+			// aapt resource value: 6
+			public const int PlayerView_show_shuffle_button = 6;
+			
+			// aapt resource value: 7
+			public const int PlayerView_show_timeout = 7;
+			
+			// aapt resource value: 10
+			public const int PlayerView_shutter_background_color = 10;
+			
+			// aapt resource value: 8
+			public const int PlayerView_surface_type = 8;
+			
+			// aapt resource value: 9
+			public const int PlayerView_use_artwork = 9;
+			
+			// aapt resource value: 12
+			public const int PlayerView_use_controller = 12;
+			
 			public static int[] PopupWindow = new int[] {
 					16843126,
 					16843465,
-					2130772205};
+					2130772208};
 			
 			// aapt resource value: 1
 			public const int PopupWindow_android_popupAnimationStyle = 1;
@@ -16345,14 +16569,14 @@ namespace HanselmanAndroid
 			public const int PopupWindow_overlapAnchor = 2;
 			
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130772206};
+					2130772209};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] RecycleListView = new int[] {
-					2130772207,
-					2130772208};
+					2130772210,
+					2130772211};
 			
 			// aapt resource value: 0
 			public const int RecycleListView_paddingBottomNoButtons = 0;
@@ -16363,15 +16587,15 @@ namespace HanselmanAndroid
 			public static int[] RecyclerView = new int[] {
 					16842948,
 					16842993,
-					2130771969,
-					2130771970,
-					2130771971,
 					2130771972,
 					2130771973,
 					2130771974,
 					2130771975,
 					2130771976,
-					2130771977};
+					2130771977,
+					2130771978,
+					2130771979,
+					2130771980};
 			
 			// aapt resource value: 1
 			public const int RecyclerView_android_descendantFocusability = 1;
@@ -16407,13 +16631,13 @@ namespace HanselmanAndroid
 			public const int RecyclerView_stackFromEnd = 5;
 			
 			public static int[] ScrimInsetsFrameLayout = new int[] {
-					2130772381};
+					2130772384};
 			
 			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
-					2130772382};
+					2130772385};
 			
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
@@ -16423,9 +16647,6 @@ namespace HanselmanAndroid
 					16843039,
 					16843296,
 					16843364,
-					2130772209,
-					2130772210,
-					2130772211,
 					2130772212,
 					2130772213,
 					2130772214,
@@ -16435,7 +16656,10 @@ namespace HanselmanAndroid
 					2130772218,
 					2130772219,
 					2130772220,
-					2130772221};
+					2130772221,
+					2130772222,
+					2130772223,
+					2130772224};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -16489,8 +16713,8 @@ namespace HanselmanAndroid
 			public const int SearchView_voiceIcon = 12;
 			
 			public static int[] Snackbar = new int[] {
-					2130772383,
-					2130772384};
+					2130772386,
+					2130772387};
 			
 			// aapt resource value: 1
 			public const int Snackbar_snackbarButtonStyle = 1;
@@ -16500,8 +16724,8 @@ namespace HanselmanAndroid
 			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
-					2130772032,
-					2130772385};
+					2130772035,
+					2130772388};
 			
 			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
@@ -16517,7 +16741,7 @@ namespace HanselmanAndroid
 					16843126,
 					16843131,
 					16843362,
-					2130772033};
+					2130772036};
 			
 			// aapt resource value: 3
 			public const int Spinner_android_dropDownWidth = 3;
@@ -16570,9 +16794,6 @@ namespace HanselmanAndroid
 					16843044,
 					16843045,
 					16843074,
-					2130772222,
-					2130772223,
-					2130772224,
 					2130772225,
 					2130772226,
 					2130772227,
@@ -16580,7 +16801,10 @@ namespace HanselmanAndroid
 					2130772229,
 					2130772230,
 					2130772231,
-					2130772232};
+					2130772232,
+					2130772233,
+					2130772234,
+					2130772235};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -16639,9 +16863,6 @@ namespace HanselmanAndroid
 			public const int TabItem_android_text = 2;
 			
 			public static int[] TabLayout = new int[] {
-					2130772386,
-					2130772387,
-					2130772388,
 					2130772389,
 					2130772390,
 					2130772391,
@@ -16663,7 +16884,10 @@ namespace HanselmanAndroid
 					2130772407,
 					2130772408,
 					2130772409,
-					2130772410};
+					2130772410,
+					2130772411,
+					2130772412,
+					2130772413};
 			
 			// aapt resource value: 3
 			public const int TabLayout_tabBackground = 3;
@@ -16752,8 +16976,8 @@ namespace HanselmanAndroid
 					16843107,
 					16843108,
 					16843692,
-					2130772050,
-					2130772056};
+					2130772053,
+					2130772059};
 			
 			// aapt resource value: 10
 			public const int TextAppearance_android_fontFamily = 10;
@@ -16797,9 +17021,6 @@ namespace HanselmanAndroid
 			public static int[] TextInputLayout = new int[] {
 					16842906,
 					16843088,
-					2130772411,
-					2130772412,
-					2130772413,
 					2130772414,
 					2130772415,
 					2130772416,
@@ -16822,7 +17043,10 @@ namespace HanselmanAndroid
 					2130772433,
 					2130772434,
 					2130772435,
-					2130772436};
+					2130772436,
+					2130772437,
+					2130772438,
+					2130772439};
 			
 			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
@@ -16910,8 +17134,8 @@ namespace HanselmanAndroid
 			
 			public static int[] ThemeEnforcement = new int[] {
 					16842804,
-					2130772437,
-					2130772438};
+					2130772440,
+					2130772441};
 			
 			// aapt resource value: 0
 			public const int ThemeEnforcement_android_textAppearance = 0;
@@ -16925,19 +17149,16 @@ namespace HanselmanAndroid
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
-					2130772007,
 					2130772010,
-					2130772014,
-					2130772026,
-					2130772027,
-					2130772028,
+					2130772013,
+					2130772017,
 					2130772029,
 					2130772030,
 					2130772031,
+					2130772032,
 					2130772033,
-					2130772233,
-					2130772234,
-					2130772235,
+					2130772034,
+					2130772036,
 					2130772236,
 					2130772237,
 					2130772238,
@@ -16951,7 +17172,10 @@ namespace HanselmanAndroid
 					2130772246,
 					2130772247,
 					2130772248,
-					2130772249};
+					2130772249,
+					2130772250,
+					2130772251,
+					2130772252};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -17043,9 +17267,9 @@ namespace HanselmanAndroid
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
-					2130772250,
-					2130772251,
-					2130772252};
+					2130772253,
+					2130772254,
+					2130772255};
 			
 			// aapt resource value: 1
 			public const int View_android_focusable = 1;
@@ -17064,8 +17288,8 @@ namespace HanselmanAndroid
 			
 			public static int[] ViewBackgroundHelper = new int[] {
 					16842964,
-					2130772253,
-					2130772254};
+					2130772256,
+					2130772257};
 			
 			// aapt resource value: 0
 			public const int ViewBackgroundHelper_android_background = 0;

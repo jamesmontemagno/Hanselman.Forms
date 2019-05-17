@@ -1,5 +1,7 @@
 ﻿using Hanselman.Helpers;
 using Hanselman.Interfaces;
+using Hanselman.Models;
+using Hanselman.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -27,7 +29,7 @@ namespace Hanselman.Views
                 //try to launch twitter or tweetbot app, else launch browser
                 var launch = DependencyService.Get<ILaunchTwitter>();
                 if (launch == null || !launch.OpenStatus(tweet.StatusID.ToString()))
-                    await Browser.OpenAsync("http://m.twitter.com/shanselman/status/" + tweet.StatusID);
+                    await Browser.OpenAsync("http://twitter.com/shanselman/status/" + tweet.StatusID);
 
                 listView.SelectedItem = null;
             };

@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:forms="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms"
-             x:Class="Hanselman.Views.Channel9VideoPlaybackPage">
-  <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-    <forms:VideoView x:Name="player"
-               AspectMode="AspectFill"
-               HorizontalOptions="FillAndExpand"
-               VerticalOptions="FillAndExpand"/>
+<ContentPage
+    x:Class="Hanselman.Views.Channel9VideoPlaybackPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mediaplayer="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <mediaplayer:VideoView
+            x:Name="player"
+            AspectMode="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand" />
 
-    <Label BackgroundColor="#88000000" TextColor="White"
-  VerticalOptions="StartAndExpand"
-  x:Name="StatusLabel" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"></Label>
+        <Label
+            x:Name="StatusLabel"
+            BackgroundColor="#88000000"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            TextColor="White"
+            VerticalOptions="StartAndExpand" />
 
-    <StackLayout VerticalOptions="End" HorizontalOptions="FillAndExpand">
-      <ProgressBar x:Name="progress" HeightRequest="10"></ProgressBar>
-      <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10" VerticalOptions="End">
-        <Button  x:Name="play" Image="ic_play.png" HorizontalOptions="Center"/>
-        <Button  x:Name="pause" Image="ic_pause.png" HorizontalOptions="Center"/>
-        <Button  x:Name="stop" Image="ic_stop.png" HorizontalOptions="Center"/>
-      </StackLayout>
-    </StackLayout>
-  </Grid>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="End">
+            <ProgressBar x:Name="progress" HeightRequest="10" />
+            <StackLayout
+                HorizontalOptions="CenterAndExpand"
+                Orientation="Horizontal"
+                Spacing="10"
+                VerticalOptions="End">
+                <Button
+                    x:Name="play"
+                    HorizontalOptions="Center"
+                    Image="ic_play.png" />
+                <Button
+                    x:Name="pause"
+                    HorizontalOptions="Center"
+                    Image="ic_pause.png" />
+                <Button
+                    x:Name="stop"
+                    HorizontalOptions="Center"
+                    Image="ic_stop.png" />
+            </StackLayout>
+        </StackLayout>
+    </Grid>
 </ContentPage>

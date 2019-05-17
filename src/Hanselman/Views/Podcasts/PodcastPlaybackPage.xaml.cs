@@ -1,17 +1,14 @@
-﻿
-using Plugin.MediaManager;
-using Plugin.MediaManager.Abstractions;
-using Plugin.MediaManager.Abstractions.Enums;
-using Plugin.MediaManager.Abstractions.Implementations;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Essentials;
+using MediaManager;
+using MediaManager.Media;
 using Hanselman.Models;
 
 namespace Hanselman.Views
 {
     public partial class PodcastPlaybackPage : ContentPage
     {
-        IPlaybackController PlaybackController => CrossMediaManager.Current.PlaybackController;
+        IMediaPlayer PlaybackController => CrossMediaManager.Current.MediaPlayer;
         FeedItem item;
         public PodcastPlaybackPage(FeedItem item)
         {
@@ -22,7 +19,7 @@ namespace Hanselman.Views
             {
                 Device.BeginInvokeOnMainThread(() =>
                 {
-                    ProgressBar.Progress = args.Progress;
+                    ProgressBar.Progress = args.Position.TotalSeconds / args.Duration.TotalSeconds;
                 });
             };
 
@@ -66,7 +63,7 @@ namespace Hanselman.Views
             base.OnAppearing();
             Device.BeginInvokeOnMainThread(() =>
             {
-                //CrossMediaManager.Current.Play(new MediaFile(item.Mp3Url, MediaFileType.Audio));
+                CrossMediaManager.Current.Play(item.Mp3Url);
             });
         }
 

@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Linq;
 using Hanselman.Models;
-using Plugin.MediaManager;
-using Plugin.MediaManager.Abstractions.Enums;
-using Plugin.MediaManager.Abstractions.EventArguments;
+using MediaManager;
+using MediaManager.Playback;
 using Xamarin.Forms;
 
 namespace Hanselman.Views
@@ -41,20 +40,20 @@ namespace Hanselman.Views
             base.OnAppearing();
             var item = (VideoFeedItem)BindingContext;
             CrossMediaManager.Current.Stop();
-            CrossMediaManager.Current.StatusChanged += CurrentOnStatusChanged;
-            CrossMediaManager.Current.PlayingChanged += OnPlayingChanged;
+            //CrossMediaManager.Current.StatusChanged += CurrentOnStatusChanged;
+            //CrossMediaManager.Current.PlayingChanged += OnPlayingChanged;
             player.Source = item.VideoUrls.First().Url;
             play.Clicked += OnPlayClicked;
             stop.Clicked += OnStopClicked;
             pause.Clicked += OnPauseClicked;
-            player.AspectMode = VideoAspectMode.AspectFit;
+            //player.AspectMode = VideoAspectMode.AspectFit;
         }
 
         void OnPlayingChanged(object sender, PlayingChangedEventArgs e)
         {
             Device.BeginInvokeOnMainThread(() =>
             {
-                progress.Progress = e.Progress;
+                progress.Progress = e.Position.TotalSeconds / e.Duration.TotalSeconds;
             });
         }
 
@@ -65,11 +64,11 @@ namespace Hanselman.Views
             play.Clicked -= OnPlayClicked;
             stop.Clicked -= OnStopClicked;
             pause.Clicked -= OnPauseClicked;
-            CrossMediaManager.Current.StatusChanged -= CurrentOnStatusChanged;
+           // CrossMediaManager.Current.StatusChanged -= CurrentOnStatusChanged;
             CrossMediaManager.Current.PlayingChanged -= OnPlayingChanged;
         }
 
-        void CurrentOnStatusChanged(object sender, StatusChangedEventArgs statusChangedEventArgs)
+        /*void CurrentOnStatusChanged(object sender, StatusChangedEventArgs statusChangedEventArgs)
         {
             Device.BeginInvokeOnMainThread(async () =>
             {
@@ -115,6 +114,6 @@ namespace Hanselman.Views
                         throw new ArgumentOutOfRangeException();
                 }
             });
-        }
+        }*/
     }
 }

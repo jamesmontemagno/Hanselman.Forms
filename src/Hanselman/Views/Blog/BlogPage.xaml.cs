@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hanselman.Interfaces;
+using Hanselman.Models;
+using Hanselman.ViewModels;
 using Xamarin.Forms;
 
 namespace Hanselman.Views
 {
     public partial class BlogPage : ContentPage, IPageHelpers
     {
-
-        BlogFeedViewModel ViewModel => BindingContext as BlogFeedViewModel;
+        BlogFeedViewModel viewModel;
+        BlogFeedViewModel ViewModel => viewModel ?? (viewModel = BindingContext as BlogFeedViewModel);
 
 
         public BlogPage()
@@ -23,7 +25,7 @@ namespace Hanselman.Views
             {
                 if (listView.SelectedItem == null)
                     return;
-                Navigation.PushAsync(new BlogDetailsView(listView.SelectedItem as FeedItem));
+                ViewModel.BlogSelectedCommand.Execute(null);
                 listView.SelectedItem = null;
             };
         }

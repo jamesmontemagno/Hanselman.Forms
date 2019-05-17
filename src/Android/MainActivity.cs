@@ -7,12 +7,12 @@ using Android.Content.PM;
 using Hanselman;
 using ImageCircle.Forms.Plugin.Droid;
 using Android.Runtime;
+using Refractored.XamForms.PullToRefresh.Droid;
 
 namespace HanselmanAndroid
 {
     [Activity(Label = "Hanselman",
         MainLauncher = true,
-        ScreenOrientation = ScreenOrientation.Portrait,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : FormsAppCompatActivity
     {
@@ -22,10 +22,13 @@ namespace HanselmanAndroid
             ToolbarResource = Resource.Layout.Toolbar;
             TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
+
+            Forms.SetFlags("CollectionView_Experimental");
             Forms.Init(this, bundle);
             FormsMaterial.Init(this, bundle);
-            Xamarin.Essentials.Platform.Init(this, bundle);
-            Plugin.MediaManager.Forms.Android.VideoViewRenderer.Init();
+            Xamarin.Essentials.Platform.Init(this, bundle); 
+            PullToRefreshLayoutRenderer.Init();
+            MediaManager.Forms.Platforms.Android.VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
         }

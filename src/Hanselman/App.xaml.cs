@@ -1,6 +1,9 @@
 ﻿using Xamarin.Forms;
 using Hanselman.Views;
 using Xamarin.Forms.Xaml;
+using System;
+using System.Linq;
+using System.Reflection;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
