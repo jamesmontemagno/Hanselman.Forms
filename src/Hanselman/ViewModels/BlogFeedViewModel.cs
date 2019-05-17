@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Linq;
 using MvvmHelpers;
+using Hanselman.Models;
 
 namespace Hanselman
 {

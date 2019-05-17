@@ -10,6 +10,7 @@ using System.Json;
 using System.Collections.Generic;
 using QuickType;
 using System.Globalization;
+using Hanselman.Models;
 
 namespace Hanselman
 {

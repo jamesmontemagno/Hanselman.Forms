@@ -5,45 +5,14 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Hanselman.Helpers;
 using MvvmHelpers;
-using Xamarin.Essentials;
-using Xamarin.Forms;
-
 namespace Hanselman.Models
 {
     public class FeedItem : ObservableObject
     {
 
-        public ICommand ShareCommand { get; }
-        public ICommand ReadCommand { get; }
         public FeedItem()
         {
-            ShareCommand = new Command(async () => await ExecuteShareCommand());
-            ReadCommand = new Command(async () => await ExecuteReadCommand());
         }
-
-        async Task ExecuteShareCommand()
-        {
-            await Share.RequestAsync(new ShareTextRequest
-            {
-                Uri = Link,
-                Title = "Share",
-                Text = Title,
-                Subject = Caption
-            });
-        }
-
-        async Task ExecuteReadCommand()
-        {
-            await Browser.OpenAsync(Link, new BrowserLaunchOptions
-            {
-                LaunchMode = BrowserLaunchMode.SystemPreferred,
-                TitleMode = BrowserTitleMode.Show,
-                PreferredControlColor = Color.White,
-                PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryColor"]
-            });
-        }
-
-
 
         public string Description { get; set; }
         public string Link { get; set; }
@@ -55,12 +24,9 @@ namespace Hanselman.Models
             set => publishDate = DateTime.TryParse(value, out var time) ? time.TwitterHumanize() : value;
         }
         public string Author { get; set; }
-        public string AuthorEmail { get; set; }
         public int Id { get; set; }
         public string CommentCount { get; set; }
         public string Category { get; set; }
-
-        public string Mp3Url { get; set; }
         public string Title { get; set; }
 
         string caption;
@@ -85,8 +51,6 @@ namespace Hanselman.Models
             }
             set => caption = value;
         }
-
-        public string Length { get; set; }
 
         public bool ShowImage { get; set; } = true;
 
@@ -128,22 +92,6 @@ namespace Hanselman.Models
             set => firstImage = value;
         }
 
-        public ImageSource FirstImageSource
-        {
-            get
-            {
-                var image = FirstImage;
-                return UriImageSource.FromUri(new Uri(image));
-            }
-        }
-
         public string ScottHead => "http://www.hanselman.com/images/photo-scott-tall.jpg";
-
-        decimal progress = 0.0M;
-        public decimal Progress
-        {
-            get => progress;
-            set => SetProperty(ref progress, value);
-        }
     }
 }

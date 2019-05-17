@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C3DB8634-C873-4FE2-BE60-9C0AF516814F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hanselman.Shared.Models", "Hanselman.Shared.Models\Hanselman.Shared.Models.csproj", "{F19765E1-D819-4BDF-A662-1A489A4CAEF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hanselman.Shared", "Hanselman.Shared.Models\Hanselman.Shared.csproj", "{F19765E1-D819-4BDF-A662-1A489A4CAEF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -163,9 +163,9 @@
     <Compile Include="Helpers\Color.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hanselman.Shared.Models\Hanselman.Shared.Models.csproj">
+    <ProjectReference Include="..\Hanselman.Shared.Models\Hanselman.Shared.csproj">
       <Project>{f19765e1-d819-4bdf-a662-1a489a4caef2}</Project>
-      <Name>Hanselman.Shared.Models</Name>
+      <Name>Hanselman.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hanselman\Hanselman.csproj">
       <Project>{028799A4-E2FD-4901-B950-666C00EFBF63}</Project>
@@ -271,7 +271,7 @@
     <PackageReference Include="Humanizer">
       <Version>2.6.2</Version>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Plugin.MediaManager.Forms" Version="0.4.5" />
     <PackageReference Include="Refractored.MvvmHelpers">
       <Version>1.3.0</Version>

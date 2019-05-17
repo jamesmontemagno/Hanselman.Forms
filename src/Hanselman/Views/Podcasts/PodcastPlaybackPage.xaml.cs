@@ -5,6 +5,7 @@ using Plugin.MediaManager.Abstractions.Enums;
 using Plugin.MediaManager.Abstractions.Implementations;
 using Xamarin.Forms;
 using Xamarin.Essentials;
+using Hanselman.Models;
 
 namespace Hanselman.Views
 {
@@ -65,7 +66,7 @@ namespace Hanselman.Views
             base.OnAppearing();
             Device.BeginInvokeOnMainThread(() =>
             {
-                CrossMediaManager.Current.Play(new MediaFile(item.Mp3Url, MediaFileType.Audio));
+                //CrossMediaManager.Current.Play(new MediaFile(item.Mp3Url, MediaFileType.Audio));
             });
         }
 
