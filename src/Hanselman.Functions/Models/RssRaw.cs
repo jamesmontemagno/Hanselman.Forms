@@ -2,7 +2,7 @@
 using System.Xml.Serialization;
 using System.Collections.Generic;
 
-namespace Hanselman.Models
+namespace Hanselman.Functions.Models
 {
     [XmlRoot(ElementName = "link", Namespace = "http://www.w3.org/2005/Atom")]
     public class Link

@@ -3,15 +3,16 @@
 //    using QuickType;
 //
 //    var tweetRaw = TweetRaw.FromJson(jsonString);
+using System;
+using System.Collections.Generic;
 
-namespace QuickType
+using System.Globalization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace Hanselman.Functions.Models
 {
-    using System;
-    using System.Collections.Generic;
 
-    using System.Globalization;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
 
     public partial class TweetRaw
     {
@@ -223,12 +224,12 @@ namespace QuickType
 
     public partial class TweetRaw
     {
-        public static TweetRaw[] FromJson(string json) => JsonConvert.DeserializeObject<TweetRaw[]>(json, QuickType.Converter.Settings);
+        public static TweetRaw[] FromJson(string json) => JsonConvert.DeserializeObject<TweetRaw[]>(json, Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this TweetRaw[] self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
+        public static string ToJson(this TweetRaw[] self) => JsonConvert.SerializeObject(self, Converter.Settings);
     }
 
     static class Converter

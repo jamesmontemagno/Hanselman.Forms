@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Hanselman.Helpers;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -18,7 +19,6 @@ namespace Hanselman.Models
             Caption = item.Caption;
             Category = item.Category;
             CommentCount = item.CommentCount;
-            Description = item.Description;
             FirstImage = item.FirstImage;
             Id = item.Id;
             Image = item.Image;
@@ -41,6 +41,13 @@ namespace Hanselman.Models
                 Text = Title,
                 Subject = Caption
             });
+        }
+
+        string displayPublishDate;
+        public string DisplayPublishDate
+        {
+            get => DateTime.TryParse(PublishDate, out var time) ? time.TwitterHumanize() : PublishDate;
+            set => displayPublishDate = value;
         }
 
         async Task ExecuteReadCommand()
