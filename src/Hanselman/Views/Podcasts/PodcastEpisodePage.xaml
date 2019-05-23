@@ -99,11 +99,11 @@
                     ColumnSpacing="0"
                     RowSpacing="5">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="125" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="24*" />
+                        <ColumnDefinition Width="24*" />
+                        <ColumnDefinition Width="35*" />
+                        <ColumnDefinition Width="24*" />
+                        <ColumnDefinition Width="24*" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -137,7 +137,8 @@
                         Margin="0,-5,0,0"
                         FontSize="Micro"
                         HorizontalOptions="Center"
-                        Text="Download" />
+                        Text="Download"
+                        HorizontalTextAlignment="Center"/>
 
                     <ImageButton
                         Grid.Row="0"
@@ -160,7 +161,8 @@
                         Margin="0,-5,0,0"
                         FontSize="Micro"
                         HorizontalOptions="Center"
-                        Text="Up Next" />
+                        Text="Up Next"
+                        HorizontalTextAlignment="Center"/>
 
                     <ImageButton
                         Grid.Row="0"
@@ -183,7 +185,8 @@
                         Margin="0,-5,0,0"
                         FontSize="Micro"
                         HorizontalOptions="Center"
-                        Text="Mark Played" />
+                        Text="Mark Played"
+                        HorizontalTextAlignment="Center"/>
 
                     <ImageButton
                         Grid.Row="0"
@@ -205,7 +208,8 @@
                         Margin="0,-5,0,0"
                         FontSize="Micro"
                         HorizontalOptions="Center"
-                        Text="Archive" />
+                        Text="Archive"
+                        HorizontalTextAlignment="Center"/>
 
                     <BoxView
                         Grid.Row="2"
