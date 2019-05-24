@@ -38,42 +38,7 @@ namespace Hanselman.ViewModels
                       return !IsBusy;
                   }));
 
-        public async Task<string> GetAccessToken()
-        {
-            var httpClient = new HttpClient();
-            var request = new HttpRequestMessage(HttpMethod.Post, "https://api.twitter.com/oauth2/token ");
-            var customerInfo = Convert.ToBase64String(new UTF8Encoding()
-                                      .GetBytes("ZTmEODUCChOhLXO4lnUCEbH2I" + ":" + "Y8z2Wouc5ckFb1a0wjUDT9KAI6DUat5tFNdmIkPLl8T4Nyaa2J"));
-            request.Headers.Add("Authorization", "Basic " + customerInfo);
-            request.Content = new StringContent("grant_type=client_credentials",
-                                                    Encoding.UTF8, "application/x-www-form-urlencoded");
-
-            var response = await httpClient.SendAsync(request);
-
-            var json = await response.Content.ReadAsStringAsync();
-            var result = JsonValue.Parse(json);
-
-            return result["access_token"];
-        }
-
-
-        async Task<IEnumerable<TweetRaw>> GetTweets(string accessToken = null)
-        {
-            if (accessToken == null)
-            {
-                accessToken = await GetAccessToken();
-            }
-
-            var requestUserTimeline = new HttpRequestMessage(HttpMethod.Get,
-                $"https://api.twitter.com/1.1/statuses/user_timeline.json?count=100&screen_name=shanselman&trim_user=0&exclude_replies=1");
-
-            requestUserTimeline.Headers.Add("Authorization", "Bearer " + accessToken);
-            var httpClient = new HttpClient();
-            var responseUserTimeLine = await httpClient.SendAsync(requestUserTimeline);
-            var json = await responseUserTimeLine.Content.ReadAsStringAsync();
-
-            return TweetRaw.FromJson(json);
-        }
+      
 
         public async Task ExecuteLoadTweetsCommand()
         {
@@ -87,27 +52,11 @@ namespace Hanselman.ViewModels
             {
 
 
-                var tweetsRaw = await GetTweets();
 
 
-                var tweets = tweetsRaw.Select(t => new Tweet
-                {
-                    StatusID = (ulong)t.Id,
-                    ScreenName = t?.RetweetedStatus?.User?.ScreenName ?? t.User.ScreenName,
-                    Text = t.Text,
-                    CurrentUserRetweet = (ulong)t.RetweetCount,
-                    CreatedAt = GetDate(t.CreatedAt, DateTime.MinValue),
-                    Image = t.RetweetedStatus != null && t.RetweetedStatus.User != null ?
-                                      t.RetweetedStatus.User.ProfileImageUrlHttps.ToString() : (t.User.ScreenName == "shanselman" ? "scott159.png" : t.User.ProfileImageUrlHttps.ToString())
-                });
+               
 
-                if (Device.RuntimePlatform == Device.iOS)
-                {
-                    // only does anything on iOS, for the Watch
-                    DependencyService.Get<ITweetStore>().Save(tweets.ToList());
-                }
-
-                Tweets.ReplaceRange(tweets);
+               // Tweets.ReplaceRange(tweets);
 
             }
             catch(Exception ex)
@@ -117,22 +66,6 @@ namespace Hanselman.ViewModels
 
             IsBusy = false;
             LoadTweetsCommand.ChangeCanExecute();
-        }
-
-        public static readonly string[] DateFormats = { "ddd MMM dd HH:mm:ss %zzzz yyyy",
-                                                         "yyyy-MM-dd\\THH:mm:ss\\Z",
-                                                         "yyyy-MM-dd HH:mm:ss",
-                                                         "yyyy-MM-dd HH:mm"};
-
-        public static DateTime GetDate(string date, DateTime defaultValue)
-        {
-            return string.IsNullOrWhiteSpace(date) ||
-                !DateTime.TryParseExact(date,
-                        DateFormats,
-                        CultureInfo.InvariantCulture,
-                        DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal, out var result)
-                    ? defaultValue
-                    : result;
         }
     }
 }
