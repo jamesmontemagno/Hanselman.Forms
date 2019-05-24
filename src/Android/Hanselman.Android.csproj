@@ -38,6 +38,8 @@
     </MonoDroidExtraArgs>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <LangVersion>latest</LangVersion>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <AndroidUseAapt2>false</AndroidUseAapt2>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
