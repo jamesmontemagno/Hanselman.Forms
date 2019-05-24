@@ -10,7 +10,7 @@ using Humanizer;
 
 namespace Hanselman.Helpers
 {
-    public static class Utils
+    public static class DateTimeUtils
     {
         // Twitter: 10:56 AM · Mar 7, 2019
         public static string TwitterHumanize(this DateTime date) => 
