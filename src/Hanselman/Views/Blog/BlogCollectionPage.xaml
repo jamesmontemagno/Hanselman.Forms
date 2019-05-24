@@ -13,7 +13,8 @@
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
     NavigationPage.HasNavigationBar="{OnPlatform Android=false, iOS=true}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    BackgroundColor="{StaticResource WindowBackgroundColor}">
     <ContentPage.BindingContext>
         <viewmodels:BlogFeedViewModel />
     </ContentPage.BindingContext>

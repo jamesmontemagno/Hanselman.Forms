@@ -54,6 +54,8 @@ namespace Hanselman.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            if (DeviceInfo.Platform != DevicePlatform.UWP)
+                OnPageVisible();
         }
 
         public void OnPageVisible()

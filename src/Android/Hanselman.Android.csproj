@@ -176,7 +176,7 @@
       <Version>12.0.2</Version>
     </PackageReference>
     <PackageReference Include="Plugin.MediaManager.Forms">
-      <Version>0.5.5</Version>
+      <Version>0.6.1</Version>
     </PackageReference>
     <PackageReference Include="Refractored.MvvmHelpers">
       <Version>1.3.0</Version>
@@ -190,7 +190,7 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>3.0.0.5</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.394984-pre10" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.1.0</Version>
     </PackageReference>

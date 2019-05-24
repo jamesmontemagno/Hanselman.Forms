@@ -1,31 +1,29 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Essentials;
-using MediaManager;
-using MediaManager.Media;
 using Hanselman.Models;
 
 namespace Hanselman.Views
 {
     public partial class PodcastPlaybackPage : ContentPage
     {
-        IMediaPlayer PlaybackController => CrossMediaManager.Current.MediaPlayer;
+        //IMediaPlayer PlaybackController => CrossMediaManager.Current.MediaPlayer;
         FeedItem item;
         public PodcastPlaybackPage(FeedItem item)
         {
             InitializeComponent();
             this.item = item;
             BindingContext = this.item;
-            CrossMediaManager.Current.PlayingChanged += (sender, args) =>
+            /*CrossMediaManager.Current.PlayingChanged += (sender, args) =>
             {
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     ProgressBar.Progress = args.Position.TotalSeconds / args.Duration.TotalSeconds;
                 });
-            };
+            };*/
 
             webView.Source = new HtmlWebViewSource
             {
-                Html = item.Description
+                //Html = item.Description
             };
 
             var share = new ToolbarItem
@@ -37,9 +35,9 @@ namespace Hanselman.Views
 
             ToolbarItems.Add(share);
 
-            play.Clicked += (sender, args) => PlaybackController.Play();
-            pause.Clicked += (sender, args) => PlaybackController.Pause();
-            stop.Clicked += (sender, args) => PlaybackController.Stop();
+            //play.Clicked += (sender, args) => PlaybackController.Play();
+            //pause.Clicked += (sender, args) => PlaybackController.Pause();
+            //stop.Clicked += (sender, args) => PlaybackController.Stop();
 
             if (Device.RuntimePlatform == Device.Android || Device.RuntimePlatform == Device.UWP || App.IsWindows10)
             {
@@ -63,14 +61,14 @@ namespace Hanselman.Views
             base.OnAppearing();
             Device.BeginInvokeOnMainThread(() =>
             {
-                CrossMediaManager.Current.Play(item.Mp3Url);
+                //CrossMediaManager.Current.Play(item.Mp3Url);
             });
         }
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            PlaybackController.Stop();
+            //PlaybackController.Stop();
         }
     }
 }

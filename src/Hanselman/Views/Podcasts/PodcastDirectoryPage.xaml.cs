@@ -8,6 +8,7 @@ using Hanselman.Interfaces;
 using Hanselman.Models;
 using Hanselman.ViewModels;
 using Hanselman.Views.Podcasts;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -26,6 +27,8 @@ namespace Hanselman.Views
         {
             base.OnAppearing();
 
+            if (DeviceInfo.Platform != DevicePlatform.UWP)
+                OnPageVisible();
 
         }
 

@@ -9,6 +9,7 @@ using Hanselman.Models;
 using System.Windows.Input;
 using System;
 using Xamarin.Essentials;
+using Hanselman.Helpers;
 
 namespace Hanselman.ViewModels
 {
@@ -71,7 +72,7 @@ namespace Hanselman.ViewModels
                     responseString = await httpClient.GetStringAsync(feed);
                 }
                 await Task.Delay(1000);
-                var items = await ParseFeed(responseString);
+                var items = ParseBlogFeed(responseString);
                 FeedItems.ReplaceRange(items);
             }
             catch
@@ -82,8 +83,27 @@ namespace Hanselman.ViewModels
 
             IsBusy = false;
         }
+        internal static List<FeedItem> ParseBlogFeed(string rss)
+        {
+            var xdoc = XDocument.Parse(rss);
+            var id = 0;
 
-   
+            return (from item in xdoc.Descendants("item")
+                    select new FeedItem
+                    {
+                        Title = (string)item.Element("title"),
+                        Caption = ((string)item.Element("description")).ExtractCaption(),
+                        FirstImage = ((string)item.Element("description")).ExtractImage(),
+                        Link = (string)item.Element("link"),
+                        PublishDate = (string)item.Element("pubDate"),
+                        Category = (string)item.Element("category"),
+                        Id = id++
+                    }).ToList();
+        }
+
+
+
+
 
         /// <summary>
         /// Gets a specific feed item for an Id

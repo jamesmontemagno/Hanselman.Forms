@@ -106,7 +106,7 @@ namespace Hanselman.ViewModels
 
                         var videoFeedItem = new VideoFeedItem
                         {
-                            VideoUrls = videoUrls.OrderByDescending(url => url.FileSize).ToList(),
+                            //VideoUrls = videoUrls.OrderByDescending(url => url.FileSize).ToList(),
                             Title = (string)item.Element("title"),
                             Description = (string)item.Element(itunes + "summary")?.Value,
                             Link = (string)item.Element("link"),
