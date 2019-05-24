@@ -21,10 +21,10 @@ namespace Hanselman.Models
             CommentCount = item.CommentCount;
             FirstImage = item.FirstImage;
             Id = item.Id;
-            Image = item.Image;
+            //Image = item.Image;
             Link = item.Link;
             PublishDate = item.PublishDate;
-            ShowImage = item.ShowImage;
+            //ShowImage = item.ShowImage;
             Title = item.Title;
         }
         public BlogFeedItem()

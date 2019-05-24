@@ -38,7 +38,7 @@ namespace Hanselman.iOS
             Forms.Init();
             FormsMaterial.Init();
             PullToRefreshLayoutRenderer.Init();
-            VideoViewRenderer.Init();
+            //VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
 

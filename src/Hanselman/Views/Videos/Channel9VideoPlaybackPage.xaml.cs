@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Hanselman.Models;
-using MediaManager;
-using MediaManager.Playback;
 using Xamarin.Forms;
 
 namespace Hanselman.Views
@@ -17,20 +15,20 @@ namespace Hanselman.Views
 
         void OnPauseClicked(object sender, EventArgs e)
         {
-            CrossMediaManager.Current.Pause();
+            //CrossMediaManager.Current.Pause();
             pause.IsEnabled = false;
         }
 
         void OnStopClicked(object sender, EventArgs e)
         {
-            CrossMediaManager.Current.Stop();
+            //CrossMediaManager.Current.Stop();
             pause.IsEnabled = false;
             stop.IsEnabled = false;
         }
 
         async void OnPlayClicked(object sender, EventArgs e)
         {
-            await CrossMediaManager.Current.Play();
+            //await CrossMediaManager.Current.Play();
             pause.IsEnabled = true;
             stop.IsEnabled = true;
         }
@@ -39,33 +37,33 @@ namespace Hanselman.Views
         {
             base.OnAppearing();
             var item = (VideoFeedItem)BindingContext;
-            CrossMediaManager.Current.Stop();
+            //CrossMediaManager.Current.Stop();
             //CrossMediaManager.Current.StatusChanged += CurrentOnStatusChanged;
             //CrossMediaManager.Current.PlayingChanged += OnPlayingChanged;
-            player.Source = item.VideoUrls.First().Url;
-            play.Clicked += OnPlayClicked;
-            stop.Clicked += OnStopClicked;
-            pause.Clicked += OnPauseClicked;
+            //player.Source = item.VideoUrls.First().Url;
+            //play.Clicked += OnPlayClicked;
+            //stop.Clicked += OnStopClicked;
+            //pause.Clicked += OnPauseClicked;
             //player.AspectMode = VideoAspectMode.AspectFit;
         }
 
-        void OnPlayingChanged(object sender, PlayingChangedEventArgs e)
+        /*void OnPlayingChanged(object sender, PlayingChangedEventArgs e)
         {
             Device.BeginInvokeOnMainThread(() =>
             {
                 progress.Progress = e.Position.TotalSeconds / e.Duration.TotalSeconds;
             });
-        }
+        }*/
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            CrossMediaManager.Current.Stop();
+            //CrossMediaManager.Current.Stop();
             play.Clicked -= OnPlayClicked;
             stop.Clicked -= OnStopClicked;
             pause.Clicked -= OnPauseClicked;
            // CrossMediaManager.Current.StatusChanged -= CurrentOnStatusChanged;
-            CrossMediaManager.Current.PlayingChanged -= OnPlayingChanged;
+            //CrossMediaManager.Current.PlayingChanged -= OnPlayingChanged;
         }
 
         /*void CurrentOnStatusChanged(object sender, StatusChangedEventArgs statusChangedEventArgs)
