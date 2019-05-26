@@ -43,7 +43,7 @@
                                     Visual="Material">
                                     <Grid Padding="0">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="200" />
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
                                         <Image Aspect="AspectFill" Source="{Binding Art}" />
