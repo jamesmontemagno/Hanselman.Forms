@@ -49,7 +49,7 @@
                                         <Image Aspect="AspectFill" Source="{Binding Art}" />
                                         <Label
                                             Grid.Row="1"
-                                            Margin="10,0"
+                                            Margin="10,0,0,10"
                                             Text="{Binding Title}" />
                                     </Grid>
                                 </Frame>
