@@ -50,7 +50,8 @@
                                         <Label
                                             Grid.Row="1"
                                             Margin="10,0,0,10"
-                                            Text="{Binding Title}" />
+                                            Text="{Binding Title}"
+                                            LineBreakMode="TailTruncation"/>
                                     </Grid>
                                 </Frame>
                             </StackLayout>
