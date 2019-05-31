@@ -4,7 +4,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
-    Title="Scott Hanselman">
+    Title="Scott Hanselman"
+    BackgroundColor="{StaticResource WindowBackgroundColor}">
     <ContentPage.BindingContext>
         <viewmodels:AboutViewModel />
     </ContentPage.BindingContext>

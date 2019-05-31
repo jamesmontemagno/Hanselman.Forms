@@ -28,7 +28,7 @@ namespace HanselmanAndroid
             FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle); 
             PullToRefreshLayoutRenderer.Init();
-            MediaManager.Forms.Platforms.Android.VideoViewRenderer.Init();
+            //MediaManager.Forms.Platforms.Android.VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
         }

@@ -2,8 +2,7 @@
 <Application
     x:Class="Hanselman.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:xamlresources="clr-namespace:Hanselman.XamlResources;assembly=Hanselman">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <Application.Resources>
         <ResourceDictionary>
             <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">

@@ -13,7 +13,8 @@
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
     NavigationPage.HasNavigationBar="{OnPlatform Android=false, iOS=true}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    BackgroundColor="{StaticResource WindowBackgroundColor}">
     <ContentPage.BindingContext>
         <viewmodels:BlogFeedViewModel />
     </ContentPage.BindingContext>
@@ -22,7 +23,7 @@
             IsPullToRefreshEnabled="True"
             IsRefreshing="{Binding IsBusy}"
             RefreshColor="Black"
-            RefreshCommand="{Binding LoadItemsCommand}">
+            RefreshCommand="{Binding RefreshCommand}">
             <CollectionView
                 x:Name="CollectionViewBlog"
                 HorizontalOptions="FillAndExpand"
@@ -85,7 +86,7 @@
                                         <Label
                                             Margin="0,4,0,0"
                                             FontSize="Micro"
-                                            Text="{Binding PublishDate}" />
+                                            Text="{Binding DisplayPublishDate}" />
                                         <Label
                                             Margin="0,8,0,0"
                                             FontSize="Small"
@@ -93,7 +94,7 @@
                                     </StackLayout>
                                     <StackLayout
                                         Grid.Row="2"
-                                        Padding="0,4,8,0"
+                                        Padding="{OnPlatform Android='0,4,8,0', iOS='16,4'}"
                                         HorizontalOptions="FillAndExpand"
                                         Orientation="Horizontal"
                                         Spacing="8">
@@ -101,7 +102,7 @@
                                             BackgroundColor="Transparent"
                                             BorderColor="Transparent"
                                             BorderWidth="0"
-                                            Margin="-8,0,0,0"
+                                            Margin="{OnPlatform Android='-8,0,0,0'}"
                                             Padding="0"
                                             HorizontalOptions="Start"
                                             VerticalOptions="End"
@@ -119,7 +120,7 @@
                                                 Visual="Default"
                                                 Padding="0"
                                                 FontSize="24"
-                                                Margin="0,0,-20,0"/>
+                                                Margin="{OnPlatform Android='0,0,-20,0'}"/>
                                     </StackLayout>
                                 </Grid>
                             </Frame>

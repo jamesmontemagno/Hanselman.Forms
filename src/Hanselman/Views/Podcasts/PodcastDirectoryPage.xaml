@@ -8,7 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     Title="Podcasts"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    BackgroundColor="{StaticResource WindowBackgroundColor}">
     <ContentPage.BindingContext>
         <viewmodels:PodcastDirectoryViewModel />
     </ContentPage.BindingContext>

@@ -1,9 +1,8 @@
 ﻿using Xamarin.Forms;
 using Hanselman.Views;
 using Xamarin.Forms.Xaml;
-using System;
-using System.Linq;
-using System.Reflection;
+using Xamarin.Essentials;
+using MonkeyCache.FileStore;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
@@ -19,8 +18,13 @@ namespace Hanselman
         {
             InitializeComponent();
 
+            Barrel.ApplicationId = AppInfo.PackageName;
+
             // The root page of your application
-            MainPage = new HomePage();
+            if (DeviceInfo.Platform == DevicePlatform.UWP)
+                MainPage = new HomePage();
+            else
+                MainPage = new AppShell();
         }
 
         protected override void OnStart()

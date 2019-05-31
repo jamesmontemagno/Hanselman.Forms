@@ -39,6 +39,8 @@ namespace Hanselman.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            if (DeviceInfo.Platform != DevicePlatform.UWP)
+                OnPageVisible();
         }
 
         public void OnPageVisible()
@@ -46,7 +48,7 @@ namespace Hanselman.Views
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.Tweets.Count > 0)
                 return;
 
-            ViewModel.LoadTweetsCommand.Execute(null);
+            ViewModel.LoadCommand.Execute(null);
         }
     }
 }

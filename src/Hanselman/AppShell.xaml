@@ -1,0 +1,41 @@
+﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="Hanselman.AppShell"
+       xmlns:views="clr-namespace:Hanselman.Views">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="Orange"/> <!--unused :( lols-->
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#757575"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource PrimaryColor}"/>
+            </Style>
+            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar Style="{StaticResource BaseStyle}">
+        <Tab Title="About" Icon="ic_about.png">
+            <ShellContent Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
+        </Tab>
+        <Tab Title="Blog" Icon="ic_rss.png">
+            <ShellContent Shell.NavBarIsVisible="False"  Title="About" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
+        </Tab>
+        <Tab Title="Tweets" Shell.NavBarIsVisible="False" Icon="ic_twitter.png">
+            <ShellContent Title="About" ContentTemplate="{DataTemplate views:TwitterPage}"/>
+        </Tab>
+        <Tab Title="Podcasts" Shell.NavBarIsVisible="False" Icon="ic_podcast.png">
+            <ShellContent Title="About" ContentTemplate="{DataTemplate views:PodcastDirectoryPage}"/>
+        </Tab>
+        <Tab Title="Videos" Shell.NavBarIsVisible="False" Icon="ic_video.png">
+            <ShellContent Title="About" ContentTemplate="{DataTemplate views:VideoDirectoryPage}"/>
+        </Tab>        
+    </TabBar>
+
+</Shell>

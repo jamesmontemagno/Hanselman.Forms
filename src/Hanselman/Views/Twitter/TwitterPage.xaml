@@ -11,7 +11,8 @@
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
     NavigationPage.HasNavigationBar="{OnPlatform Android=false, iOS=true}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    BackgroundColor="{StaticResource WindowBackgroundColor}">
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ListView
             x:Name="listView"
@@ -20,7 +21,7 @@
             IsPullToRefreshEnabled="True"
             IsRefreshing="{Binding IsBusy, Mode=OneWay}"
             ItemsSource="{Binding Tweets}"
-            RefreshCommand="{Binding LoadTweetsCommand}"
+            RefreshCommand="{Binding RefreshCommand}"
             SeparatorColor="Transparent">
             <d:ListView.ItemsSource>
                 <x:Array Type="{x:Type models:Tweet}">

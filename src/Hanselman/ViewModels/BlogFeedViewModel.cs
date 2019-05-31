@@ -1,27 +1,23 @@
 ﻿using Xamarin.Forms;
 using System.Threading.Tasks;
-using System.Net.Http;
-using System.Collections.Generic;
-using System.Xml.Linq;
 using System.Linq;
 using MvvmHelpers;
 using Hanselman.Models;
 using System.Windows.Input;
-using System;
 using Xamarin.Essentials;
 
 namespace Hanselman.ViewModels
 {
-    public class BlogFeedViewModel : BaseViewModel
+    public class BlogFeedViewModel : ViewModelBase
     {
-        public ObservableRangeCollection<FeedItem> FeedItems { get; }
+        public ObservableRangeCollection<BlogFeedItem> FeedItems { get; }
         public ICommand BlogSelectedCommand { get; }
 
         public BlogFeedViewModel()
         {
             Title = "Blog";
             Icon = "blog.png";
-            FeedItems = new ObservableRangeCollection<FeedItem>();
+            FeedItems = new ObservableRangeCollection<BlogFeedItem>();
             BlogSelectedCommand = new Command(async () => await ExecuteBlogSelectedCommand());
         }
 
@@ -49,14 +45,28 @@ namespace Hanselman.ViewModels
             set => SetProperty(ref selectedFeedItem, value);
         }
 
-        Command loadItemsCommand;
-        /// <summary>
-        /// Command to load/refresh items
-        /// </summary>
-        public Command LoadItemsCommand =>
-            loadItemsCommand ?? (loadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand()));
+        Command loadCommand;
+        Command refreshCommand;
+        public Command RefreshCommand => refreshCommand ??
+                  (refreshCommand = new Command(async () =>
+                  {
+                      await ExecuteLoadCommand(true);
+                  }, () =>
+                  {
+                      return !IsBusy;
+                  }));
 
-        async Task ExecuteLoadItemsCommand()
+        public Command LoadCommand => loadCommand ??
+                  (loadCommand = new Command(async () =>
+                  {
+                      await ExecuteLoadCommand(false);
+                  }, () =>
+                  {
+                      return !IsBusy;
+                  }));
+
+
+        async Task ExecuteLoadCommand(bool forceRefresh)
         {
             if (IsBusy)
                 return;
@@ -64,49 +74,29 @@ namespace Hanselman.ViewModels
             IsBusy = true;
             try
             {
-                var responseString = string.Empty;
-                using (var httpClient = new HttpClient())
-                {
-                    var feed = "http://feeds.hanselman.com/ScottHanselman";
-                    responseString = await httpClient.GetStringAsync(feed);
-                }
+#if DEBUG
                 await Task.Delay(1000);
-                var items = await ParseFeed(responseString);
-                FeedItems.ReplaceRange(items);
+#endif
+                var items = await DataService.GetBlogItemsAsync(forceRefresh);
+                if(items == null)
+                {
+                    await DisplayAlert("Error", "Unable to load blog.", "OK");
+                }
+                else
+                {
+                    FeedItems.ReplaceRange(items);
+                }
             }
             catch
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Unable to load blog.", "OK");
+                await DisplayAlert("Error", "Unable to load blog.", "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
 
-
-            IsBusy = false;
-        }
-
-
-
-        /// <summary>
-        /// Parse the RSS Feed
-        /// </summary>
-        /// <param name="rss"></param>
-        /// <returns></returns>
-        async Task<List<FeedItem>> ParseFeed(string rss)
-        {
-            return await Task.Run(() =>
-                {
-                    var xdoc = XDocument.Parse(rss);
-                    var id = 0;
-                    return (from item in xdoc.Descendants("item")
-                            select new FeedItem
-                            {
-                                Title = (string)item.Element("title"),
-                                Description = (string)item.Element("description"),
-                                Link = (string)item.Element("link"),
-                                PublishDate = (string)item.Element("pubDate"),
-                                Category = (string)item.Element("category"),
-                                Id = id++
-                            }).ToList();
-                });
+            LoadCommand.ChangeCanExecute();
         }
 
         /// <summary>
