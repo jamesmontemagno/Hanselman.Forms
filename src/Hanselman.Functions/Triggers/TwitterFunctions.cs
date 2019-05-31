@@ -57,7 +57,7 @@ namespace Hanselman.Functions.Triggers
 #if DEBUG
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
 #else
-            [TimerTrigger("0 */10 * * * *")]TimerInfo myTimer,
+            [TimerTrigger("0 */15 * * * *")]TimerInfo myTimer,
 #endif
             [Blob("hanselman/twitter.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outTwitterBlob,
             [HttpClientFactory]HttpClient client,
