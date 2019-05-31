@@ -6,7 +6,6 @@ using Hanselman.Services;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
-[assembly:Dependency(typeof(MockDataService))]
 
 namespace Hanselman.Services
 {
@@ -17,7 +16,12 @@ namespace Hanselman.Services
 
         }
 
-        public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync()
+        public Task<IEnumerable<BlogFeedItem>> GetBlogItemsAsync(bool forceRefresh)
+        {
+            return null;
+        }
+
+        public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(bool forceRefresh)
         {
             var episodes = new List<PodcastEpisode>();
 
@@ -66,7 +70,7 @@ namespace Hanselman.Services
             return Task.FromResult((IEnumerable<PodcastEpisode>)episodes);
         }
 
-        public Task<IEnumerable<Podcast>> GetPodcastsAsync()
+        public Task<IEnumerable<Podcast>> GetPodcastsAsync(bool forceRefresh)
         {
             var hanselman = new Host
             {
@@ -292,6 +296,11 @@ namespace Hanselman.Services
                 }
             });
             return Task.FromResult((IEnumerable<Podcast>)podcasts);
+        }
+
+        public Task<IEnumerable<Tweet>> GetTweetsAsync(bool forceRefresh)
+        {
+            return null;
         }
     }
 }

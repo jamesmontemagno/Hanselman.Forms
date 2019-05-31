@@ -2,6 +2,7 @@
 using Hanselman.Views;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+using MonkeyCache.FileStore;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
@@ -16,6 +17,8 @@ namespace Hanselman
         public App()
         {
             InitializeComponent();
+
+            Barrel.ApplicationId = AppInfo.PackageName;
 
             // The root page of your application
             if (DeviceInfo.Platform == DevicePlatform.UWP)

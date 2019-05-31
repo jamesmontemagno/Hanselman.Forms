@@ -23,7 +23,7 @@
             IsPullToRefreshEnabled="True"
             IsRefreshing="{Binding IsBusy}"
             RefreshColor="Black"
-            RefreshCommand="{Binding LoadItemsCommand}">
+            RefreshCommand="{Binding RefreshCommand}">
             <CollectionView
                 x:Name="CollectionViewBlog"
                 HorizontalOptions="FillAndExpand"

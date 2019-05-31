@@ -48,7 +48,7 @@ namespace Hanselman.Functions
 
             return tweetsRaw.Select(t => new Tweet
             {
-                StatusID = (ulong)t.Id,
+                StatusID = t?.RetweetedStatus?.User?.ScreenName == "shanselman" ? t.RetweetedStatus.IdStr : t.IdStr,
                 ScreenName = t?.RetweetedStatus?.User?.ScreenName ?? t.User.ScreenName,
                 Text = t.Text,
                 CurrentUserRetweet = (ulong)t.RetweetCount,
