@@ -21,7 +21,7 @@
             IsPullToRefreshEnabled="True"
             IsRefreshing="{Binding IsBusy, Mode=OneWay}"
             ItemsSource="{Binding Tweets}"
-            RefreshCommand="{Binding LoadTweetsCommand}"
+            RefreshCommand="{Binding RefreshCommand}"
             SeparatorColor="Transparent">
             <d:ListView.ItemsSource>
                 <x:Array Type="{x:Type models:Tweet}">

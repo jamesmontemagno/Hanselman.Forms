@@ -1,19 +1,11 @@
-﻿using System;
-using Xamarin.Forms;
-//using LinqToTwitter;
+﻿using Xamarin.Forms;
 using System.Threading.Tasks;
-using System.Linq;
 using MvvmHelpers;
-using System.Net.Http;
-using System.Text;
-using System.Json;
-using System.Collections.Generic;
-using System.Globalization;
 using Hanselman.Models;
 
 namespace Hanselman.ViewModels
 {
-    public class TwitterViewModel : BaseViewModel
+    public class TwitterViewModel : ViewModelBase
     {
 
         public ObservableRangeCollection<Tweet> Tweets { get; set; }
@@ -23,15 +15,23 @@ namespace Hanselman.ViewModels
             Title = "Twitter";
             Icon = "slideout.png";
             Tweets = new ObservableRangeCollection<Tweet>();
-
         }
 
-        Command loadTweetsCommand;
-
-        public Command LoadTweetsCommand => loadTweetsCommand ??
-                  (loadTweetsCommand = new Command(async () =>
+        Command loadCommand;
+        Command refreshCommand;
+        public Command RefreshCommand => refreshCommand ??
+                  (refreshCommand = new Command(async () =>
                   {
-                      await ExecuteLoadTweetsCommand();
+                      await ExecuteLoadCommand(true);
+                  }, () =>
+                  {
+                      return !IsBusy;
+                  }));
+
+        public Command LoadCommand => loadCommand ??
+                  (loadCommand = new Command(async () =>
+                  {
+                      await ExecuteLoadCommand(false);
                   }, () =>
                   {
                       return !IsBusy;
@@ -39,32 +39,37 @@ namespace Hanselman.ViewModels
 
       
 
-        public async Task ExecuteLoadTweetsCommand()
+        public async Task ExecuteLoadCommand(bool forceRefresh)
         {
             if (IsBusy)
                 return;
 
             IsBusy = true;
-            LoadTweetsCommand.ChangeCanExecute();
-
             try
             {
-
-
-
-
-               
-
-               // Tweets.ReplaceRange(tweets);
-
+#if DEBUG
+                await Task.Delay(1000);
+#endif
+                var items = await DataService.GetTweetsAsync(forceRefresh);
+                if (items == null)
+                {
+                    await DisplayAlert("Error", "Unable to load tweets.", "OK");
+                }
+                else
+                {
+                    Tweets.ReplaceRange(items);
+                }
             }
-            catch(Exception ex)
+            catch
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Unable to load tweets.", "OK");
+                await DisplayAlert("Error", "Unable to load tweets.", "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
 
-            IsBusy = false;
-            LoadTweetsCommand.ChangeCanExecute();
+            LoadCommand.ChangeCanExecute();
         }
     }
 }

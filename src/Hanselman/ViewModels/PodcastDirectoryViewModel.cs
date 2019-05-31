@@ -27,7 +27,7 @@ namespace Hanselman.ViewModels
             {
                 IsBusy = true;
 
-                var pods = await DataService.GetPodcastsAsync();
+                var pods = await DataService.GetPodcastsAsync(false);
                 if (Podcasts.Count > 0)
                     Podcasts.ReplaceRange(pods);
                 else

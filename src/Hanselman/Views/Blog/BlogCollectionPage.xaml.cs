@@ -63,7 +63,7 @@ namespace Hanselman.Views
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.FeedItems.Count > 0)
                 return;
 
-            ViewModel.LoadItemsCommand.Execute(null);
+            ViewModel.LoadCommand.Execute(null);
         }
     }
 }

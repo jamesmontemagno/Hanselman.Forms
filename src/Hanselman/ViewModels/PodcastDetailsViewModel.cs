@@ -51,9 +51,9 @@ namespace Hanselman.ViewModels
             {
                 IsBusy = true;
 #if DEBUG
-                await Task.Delay(2000);
+                await Task.Delay(1000);
 #endif
-                var episodes = await DataService.GetPodcastEpisodesAsync();
+                var episodes = await DataService.GetPodcastEpisodesAsync(false);
                 Episodes.AddRange(episodes);
             }
             catch (System.Exception)

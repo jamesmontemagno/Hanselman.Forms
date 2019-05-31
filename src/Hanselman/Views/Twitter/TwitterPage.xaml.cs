@@ -48,7 +48,7 @@ namespace Hanselman.Views
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.Tweets.Count > 0)
                 return;
 
-            ViewModel.LoadTweetsCommand.Execute(null);
+            ViewModel.LoadCommand.Execute(null);
         }
     }
 }

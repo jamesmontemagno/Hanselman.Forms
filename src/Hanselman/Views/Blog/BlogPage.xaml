@@ -18,7 +18,7 @@
             IsPullToRefreshEnabled="True"
             IsRefreshing="{Binding IsBusy, Mode=OneWay}"
             ItemsSource="{Binding FeedItems}"
-            RefreshCommand="{Binding LoadItemsCommand}"
+            RefreshCommand="{Binding RefreshCommand}"
             RowHeight="175"
             SelectedItem="{Binding SelectedFeedItem}">
             <ListView.ItemTemplate>

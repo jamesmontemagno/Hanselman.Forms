@@ -22,6 +22,9 @@ namespace Hanselman.Functions.Models
         [JsonProperty("id")]
         public double Id { get; set; }
 
+        [JsonProperty("id_str")]
+        public string IdStr { get; set; }
+
         [JsonProperty("text")]
         public string Text { get; set; }
 

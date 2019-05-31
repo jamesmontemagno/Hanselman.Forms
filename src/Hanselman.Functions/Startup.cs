@@ -41,21 +41,19 @@ namespace Hanselman.Functions
     { }
 
     [Extension("HttpClientFactory")]
-    internal class HttpClientFactoryExtensionConfigProvider : IExtensionConfigProvider
+    class HttpClientFactoryExtensionConfigProvider : IExtensionConfigProvider
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        readonly IHttpClientFactory httpClientFactory;
 
-        public HttpClientFactoryExtensionConfigProvider(IHttpClientFactory httpClientFactory)
-        {
-            _httpClientFactory = httpClientFactory;
-        }
+        public HttpClientFactoryExtensionConfigProvider(IHttpClientFactory httpClientFactory) => 
+            this.httpClientFactory = httpClientFactory;
 
         public void Initialize(ExtensionConfigContext context)
         {
             var bindingAttributeBindingRule = context.AddBindingRule<HttpClientFactoryAttribute>();
             bindingAttributeBindingRule.BindToInput<HttpClient>((httpClientFactoryAttribute) =>
             {
-                return _httpClientFactory.CreateClient();
+                return httpClientFactory.CreateClient();
             });
         }
     }
