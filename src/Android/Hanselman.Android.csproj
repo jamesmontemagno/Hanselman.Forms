@@ -207,7 +207,7 @@
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.0.0.394984-pre10</Version>
+      <Version>4.0.0.425677</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
