@@ -5,6 +5,7 @@ namespace Hanselman.Models
 {
     public class PodcastEpisode
     {
+        public int Id { get; set; }
         public string Title { get; set; }
         public string Date { get; set; }
 
@@ -16,7 +17,7 @@ namespace Hanselman.Models
 
         public string Duration { get; set; }
 
-        public bool Explicit { get; set; }
+        public string Explicit { get; set; }
 
         public string EpisodeNumber { get; set; }
 

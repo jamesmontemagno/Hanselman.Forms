@@ -36,6 +36,17 @@ namespace Hanselman.Functions.Triggers
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
+            var podcasts = new Dictionary<string, Stream>
+            {
+                ["http://feeds.podtrac.com/9dPm65vdpLL1"] = outMinutes,
+                ["http://feeds.feedburner.com/RatchetAndTheGeek?format=xml"] = outRatchet,
+                ["http://feeds.feedburner.com/ThisDevelopersLife?format=xml"] = outLife,
+            };
+
+            var url = podcasts.FirstOrDefault().Key;
+            var rss = await client.GetStringAsync(url);
+            var parse = FeedItemHelpers.ParsePodcastFeed(rss);
+
             log.LogInformation("Podcast function finished.");
         }
     }
