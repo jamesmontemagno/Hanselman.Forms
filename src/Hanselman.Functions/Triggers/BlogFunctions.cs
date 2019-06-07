@@ -16,6 +16,7 @@ using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using System.Net;
+using Hanselman.Functions.Helpers;
 
 // LotanB cheered 5 May 17, 2019
 // LotanB cheered 10 May 17, 2019
@@ -66,7 +67,9 @@ namespace Hanselman.Functions
 #else
             [TimerTrigger("0 */30 * * * *")]TimerInfo myTimer,
 #endif
-            [Blob( "hanselman/blog.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outBlogBlob,
+            [Blob("hanselman/blog.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outBlogBlob,
+            [Blob("hanselman/blog-lastupdate.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outLastUpdateBlog,
+            [Blob("hanselman/blog-lastupdate.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inLastUpdateBlog,
             [HttpClientFactory]HttpClient client,
             ILogger log)
         {
@@ -79,6 +82,13 @@ namespace Hanselman.Functions
 
                 log.LogInformation("Parsing blog feed.");
                 var blogItems = FeedItemHelpers.ParseBlogFeed(feed);
+
+                var pubDate = blogItems.FirstOrDefault()?.PublishDate;
+                if (TimeHelpers.CheckIfNewEntry(outLastUpdateBlog, inLastUpdateBlog, log, pubDate))
+                {
+                    //Send push notification
+                    log.LogInformation("Parsing blog feed.");
+                }
 
                 var json = JsonConvert.SerializeObject(blogItems);
 
@@ -97,5 +107,6 @@ namespace Hanselman.Functions
                 log.LogError(ex, "Unable to get blog feed");
             }
         }
+
     }
 }
