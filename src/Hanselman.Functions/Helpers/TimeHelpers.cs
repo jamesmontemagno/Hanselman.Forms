@@ -45,7 +45,7 @@ namespace Hanselman.Functions.Helpers
             {
                 using (var writer = new StreamWriter(outStream))
                 {
-                    writer.Write(JsonConvert.SerializeObject(timeStamp));
+                    writer.Write(JsonConvert.SerializeObject(timeStamp), Formatting.None);
                 }
             }
 

@@ -8,7 +8,7 @@ using Hanselman.Models;
 
 namespace Hanselman.Functions
 {
-    internal static class FeedItemHelpers
+    static class FeedItemHelpers
     {
         /// <summary>
         /// Parse the RSS Feed
@@ -34,7 +34,8 @@ namespace Hanselman.Functions
         }
 
         internal static List<PodcastEpisode> ParsePodcastFeed(string rss)
-        {            var xdoc = XDocument.Parse(rss);
+        {
+            var xdoc = XDocument.Parse(rss);
             var id = 0;
             return (from item in xdoc.Descendants("item")
                     let enclosure = item.Element("enclosure")
@@ -42,12 +43,12 @@ namespace Hanselman.Functions
                     select new PodcastEpisode
                     {
                         Title = (string)item.Element("title") ?? "",
-                        Description = (string)item.Element("description") ?? "",
+                        Description = (string)item.Element(ItunesExtensions.Namespace + "summary") ?? (string)item.Element("description") ?? "",
                         EpisodeUrl = (string)item.Element("link") ?? "",
                         Date = (string)item.Element("pubDate") ?? "",
                         Explicit = (string)item.Element(ItunesExtensions.Namespace + "explicit") ?? "",
                         Mp3Url = (string)enclosure.Attribute("url") ?? "",
-                        ArtworkUrl = item.Element(ItunesExtensions.Namespace + "image")?.Attribute("href")?.Value as string ?? "",
+                        ArtworkUrl = item.Element(ItunesExtensions.Namespace + "image")?.Attribute("href")?.Value as string ?? ((string)item.Element("description"))?.ExtractImage() ?? "",
                         Duration = (string)item.Element(ItunesExtensions.Namespace + "duration") ?? "",
                         EpisodeNumber = (string)item.Element(ItunesExtensions.Namespace + "episode") ?? "",
                         Id = id++
@@ -90,21 +91,27 @@ namespace Hanselman.Functions
             return caption.Substring(0, Math.Min(caption.Length, 200)).Trim() + "...";            
         }
 
-        internal static string ExtractImage(this string description)
+        internal static string ExtractImage(this string description, string defaultImage = ScottHead)
         {
             var regx = new Regex("https://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
 
             var matches = regx.Matches(description);
+            if (matches.Count == 0)
+            {
+                regx = new Regex("http://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
+
+                matches = regx.Matches(description);
+            }
 
             string firstImage;
             if (matches.Count == 0)
-                firstImage = ScottHead;
+                firstImage = defaultImage;
             else
                 firstImage = matches[0].Value;
 
             return firstImage;
         }
 
-        static string ScottHead => "http://www.hanselman.com/images/photo-scott-tall.jpg";
+        const string ScottHead = "http://www.hanselman.com/images/photo-scott-tall.jpg";
     }
 }

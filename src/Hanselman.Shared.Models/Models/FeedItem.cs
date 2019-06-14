@@ -10,14 +10,31 @@ namespace Hanselman.Models
         {
         }
 
+        [JsonProperty("l")]
         public string Link { get; set; }
+
+        [JsonProperty("pd")]
         public string PublishDate { get; set; }
+
+        [JsonProperty("a")]
         public string Author { get; set; }
+
+        [JsonProperty("id")]
         public int Id { get; set; }
+
+        [JsonProperty("cc")]
         public string CommentCount { get; set; }
+
+        [JsonProperty("c1")]
         public string Category { get; set; }
+
+        [JsonProperty("t")]
         public string Title { get; set; }
+
+        [JsonProperty("c2")]
         public string Caption { get; set; }
+
+        [JsonProperty("fi")]
         public string FirstImage { get;set; }
     }
 
@@ -37,6 +54,7 @@ namespace Hanselman.Models
         {
             MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
             DateParseHandling = DateParseHandling.None,
+            Formatting = Formatting.None,
             Converters =
             {
                 new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }

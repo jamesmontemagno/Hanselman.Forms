@@ -12,10 +12,13 @@ namespace Hanselman.Models
         {
         }
 
+        [JsonProperty("sid")]
         public string StatusID { get; set; }
 
+        [JsonProperty("sn")]
         public string ScreenName { get; set; }
 
+        [JsonProperty("t")]
         public string Text { get; set; }
 
         [JsonIgnore]
@@ -25,14 +28,17 @@ namespace Hanselman.Models
         [JsonIgnore]
         public string RTCount => CurrentUserRetweet == 0 ? string.Empty : CurrentUserRetweet + " RT";
 
+        [JsonProperty("i")]
         public string Image { get; set; }
 
+        [JsonProperty("ca")]
         public DateTime CreatedAt
         {
             get;
             set;
         }
 
+        [JsonProperty("cur")]
         public ulong CurrentUserRetweet
         {
             get;
@@ -56,6 +62,7 @@ namespace Hanselman.Models
         {
             MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
             DateParseHandling = DateParseHandling.None,
+            Formatting = Formatting.None,
             Converters =
             {
                 new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }

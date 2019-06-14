@@ -15,14 +15,37 @@ using System.IO;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs.Extensions.Http;
+using Hanselman.Functions.Helpers;
+using System.Net;
 
 namespace Hanselman.Functions.Triggers
 {
     public class PodcastFunctions
     {
+        [FunctionName(nameof(GetPodcastEpisodes))]
+        public static HttpResponseMessage GetPodcastEpisodes(
+           [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
+            [Blob("hanselman/minutes.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inMinutes,
+            [Blob("hanselman/ratchet.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inRatchet,
+            [Blob("hanselman/life.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inLife,
+           ILogger log)
+        {
+            string name = req.Query["id"];
+            switch (name)
+            {
+                case "minutes":
+                    return BlobHelpers.BlobToHttpResponseMessage(inMinutes, log, name);
+                case "ratchet":
+                    return BlobHelpers.BlobToHttpResponseMessage(inRatchet, log, name);
+                case "life":
+                    return BlobHelpers.BlobToHttpResponseMessage(inLife, log, name);
+                default:
+                    return new HttpResponseMessage(HttpStatusCode.BadRequest);
+            }
+        }
 
-        [FunctionName("PodcastUpdate")]
-        public static async Task RunPodcastUpdate(
+        [FunctionName(nameof(PodcastUpdate))]
+        public static async Task PodcastUpdate(
 #if DEBUG
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
 #else
@@ -42,10 +65,19 @@ namespace Hanselman.Functions.Triggers
                 ["http://feeds.feedburner.com/RatchetAndTheGeek?format=xml"] = outRatchet,
                 ["http://feeds.feedburner.com/ThisDevelopersLife?format=xml"] = outLife,
             };
+            foreach(var pod in podcasts)
+            {
+                var rss = await client.GetStringAsync(pod.Key);
+                var parse = FeedItemHelpers.ParsePodcastFeed(rss);
 
-            var url = podcasts.FirstOrDefault().Key;
-            var rss = await client.GetStringAsync(url);
-            var parse = FeedItemHelpers.ParsePodcastFeed(rss);
+                log.LogInformation("Writting feed to blob.");
+                using (var writer = new StreamWriter(pod.Value))
+                {
+                    var json = JsonConvert.SerializeObject(parse, Formatting.None);
+                    writer.Write(json);
+                }
+            }
+           
 
             log.LogInformation("Podcast function finished.");
         }

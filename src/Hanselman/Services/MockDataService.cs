@@ -36,7 +36,7 @@ namespace Hanselman.Services
                     Duration = "34:54",
                     EpisodeNumber = "676",
                     EpisodeUrl = "https://hanselminutes.com/676/inside-a-tribe-of-hackers-with-cryptographer-marcus-j-carey",
-                    Explicit = false,
+                    Explicit = "no",
                     Mp3Url = ""
                 });
 
@@ -49,7 +49,7 @@ namespace Hanselman.Services
                     Duration = "31:16",
                     EpisodeNumber = "675",
                     EpisodeUrl = "https://hanselminutes.com/675/a-love-letter-to-language-and-programming-with-eva-ferreira",
-                    Explicit = false,
+                    Explicit = "no",
                     Mp3Url = ""
                 });
 
@@ -62,7 +62,7 @@ namespace Hanselman.Services
                     Duration = "31:26",
                     EpisodeNumber = "674",
                     EpisodeUrl = "https://hanselminutes.com/674/how-galaxies-evolve-with-dr-molly-peeples",
-                    Explicit = false,
+                    Explicit = "no",
                     Mp3Url = ""
                 });
             }

@@ -16,44 +16,23 @@ using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using System.Net;
+using Hanselman.Functions.Helpers;
 
 namespace Hanselman.Functions.Triggers
 {
     public static class TwitterFunctions
     {
-        [FunctionName("GetTweets")]
-        public static HttpResponseMessage RunGetTweets(
+        [FunctionName(nameof(GetTweets))]
+        public static HttpResponseMessage GetTweets(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)]HttpRequest req,
             [Blob("hanselman/twitter.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inBlob,
             ILogger log)
         {
-            try
-            {
-                log.LogInformation("Reading feed to twitter.");
-                var json = string.Empty;
-                using (var reader = new StreamReader(inBlob))
-                {
-                    json = reader.ReadToEnd();
-                }
-
-                log.LogInformation("Finished reading twitter feed from stream.");
-
-                return new HttpResponseMessage(HttpStatusCode.OK)
-                {
-                    Content = new StringContent(json, Encoding.UTF8, "application/json")
-                };          
-
-            }
-            catch (Exception ex)
-            {
-                log.LogError(ex, "Unable to get twitter feed");
-            }
-
-            return new HttpResponseMessage(HttpStatusCode.InternalServerError);
+            return BlobHelpers.BlobToHttpResponseMessage(inBlob, log, "tweets");
         }
 
-        [FunctionName("TwitterUpdate")]
-        public static async Task RunTwitterUpdate(
+        [FunctionName(nameof(TwitterUpdate))]
+        public static async Task TwitterUpdate(
 #if DEBUG
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
 #else
@@ -70,7 +49,7 @@ namespace Hanselman.Functions.Triggers
 
                 var tweetsRaw = await TwitterHelpers.GetTweets(client);
 
-                var json = JsonConvert.SerializeObject(tweetsRaw);
+                var json = JsonConvert.SerializeObject(tweetsRaw, Formatting.None);
 
                 log.LogInformation("Writting feed to blob.");
                 using (var writer = new StreamWriter(outTwitterBlob))
