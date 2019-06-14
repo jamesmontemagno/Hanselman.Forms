@@ -49,7 +49,7 @@ namespace Hanselman.Functions.Triggers
 #if DEBUG
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
 #else
-            [TimerTrigger("0 */180 * * * *")]TimerInfo myTimer,
+            [TimerTrigger("0 0 */3 * * *")]TimerInfo myTimer,
 #endif
             [Blob("hanselman/minutes.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outMinutes,
             [Blob("hanselman/ratchet.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outRatchet,

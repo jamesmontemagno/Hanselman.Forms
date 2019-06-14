@@ -30,7 +30,8 @@ namespace Hanselman.Views.Podcasts
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            VM.LoadEpisodesCommand.Execute(null);
+            if(VM.Episodes.Count == 0)
+                VM.LoadEpisodesCommand.Execute(null);
         }
 
         void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
