@@ -28,12 +28,20 @@ namespace Hanselman.Functions.Helpers
                 using (var reader = new StreamReader(inStream))
                 {
                     var timeJson = reader.ReadToEnd();
-                    previousTimeStamp = JsonConvert.DeserializeObject<UpdateTimeStamp>(timeJson);
+                    if (string.IsNullOrWhiteSpace(timeJson))
+                    {
+                        saveTimeStamp = true;
+                        timeStamp = new UpdateTimeStamp { LastUpdate = lastEntryDateTime };
+                    }
+                    else
+                    {
+                        previousTimeStamp = JsonConvert.DeserializeObject<UpdateTimeStamp>(timeJson);
+                    }
                 }
 
-                log.LogInformation($"Previous entry  time: {previousTimeStamp.LastUpdate}");
-                if (lastEntryDateTime > previousTimeStamp.LastUpdate)
+                if (!saveTimeStamp && lastEntryDateTime > previousTimeStamp?.LastUpdate)
                 {
+                    log.LogInformation($"Previous entry  time: {previousTimeStamp?.LastUpdate}");
                     log.LogInformation("New item! Should send push notification!");
                     timeStamp = new UpdateTimeStamp { LastUpdate = lastEntryDateTime };
                     saveTimeStamp = true;
@@ -45,7 +53,7 @@ namespace Hanselman.Functions.Helpers
             {
                 using (var writer = new StreamWriter(outStream))
                 {
-                    writer.Write(JsonConvert.SerializeObject(timeStamp), Formatting.None);
+                    writer.Write(JsonConvert.SerializeObject(timeStamp, Formatting.None));
                 }
             }
 
