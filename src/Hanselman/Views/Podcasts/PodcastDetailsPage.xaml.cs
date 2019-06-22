@@ -30,7 +30,8 @@ namespace Hanselman.Views.Podcasts
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            VM.LoadEpisodesCommand.Execute(null);
+            if(VM.Episodes.Count == 0)
+                VM.LoadEpisodesCommand.Execute(null);
         }
 
         void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -48,6 +49,35 @@ namespace Hanselman.Views.Podcasts
 
 
             listView.SelectedItem = null;
+        }
+
+        void ListView_ItemAppearing(object sender, ItemVisibilityEventArgs e)
+        {
+
+            if(e.ItemIndex == 0 && StackLayoutInfo.IsVisible)
+            {
+                StackLayoutInfo.FadeTo(0).ContinueWith((t) =>
+                {
+                    StackLayoutInfo.IsVisible = false;
+                }, TaskScheduler.FromCurrentSynchronizationContext());
+            }
+
+            if (VM.IsBusy || VM.Episodes.Count == 0)
+                return;
+            //hit bottom!
+            if (e.ItemIndex == VM.Episodes.Count - 1)
+            {
+                VM.LoadMoreEpisodes();
+            }
+        }
+
+        private void ListView_ItemDisappearing(object sender, ItemVisibilityEventArgs e)
+        {
+            if (e.ItemIndex != 0 || StackLayoutInfo.IsVisible)
+                return;
+
+            StackLayoutInfo.FadeTo(1);
+            StackLayoutInfo.IsVisible = true;
         }
     }
 }

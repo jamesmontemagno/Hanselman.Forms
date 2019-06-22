@@ -25,5 +25,18 @@ namespace Hanselman.Helpers
             var shortDatePattern = regex.Replace(culture.DateTimeFormat.LongDatePattern.Replace("MMMM", "MMM"), string.Empty).Trim();
             return date.ToString($"{culture.DateTimeFormat.ShortTimePattern} · {shortDatePattern}", culture);
         }
+
+        public static string PodcastEpisodeHumanize(this DateTimeOffset date) =>
+            date.Date == DateTime.Today.Date ? date.Humanize() : date.PodcastEpisodeDateTime();
+
+        public static string PodcastEpisodeDateTime(this DateTimeOffset date, CultureInfo culture = null)
+        {
+            if (culture == null)
+                culture = CultureInfo.CurrentCulture;
+
+            var regex = new Regex("dddd[,]{0,1}");
+            var shortDatePattern = regex.Replace(culture.DateTimeFormat.LongDatePattern.Replace("MMMM", "MMM"), string.Empty).Trim();
+            return date.ToString($"{shortDatePattern}", culture);
+        }
     }
 }

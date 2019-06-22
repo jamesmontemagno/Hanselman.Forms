@@ -15,6 +15,7 @@
             <Color x:Key="PrimaryDarkColor">#1976D2</Color>
             <Color x:Key="AccentColor">#FFC107</Color>
             <Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
+            <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>
             <Color x:Key="LoadingBackgroundColor">#80000000</Color>
             <Color x:Key="LoadingTextColor">White</Color>
 

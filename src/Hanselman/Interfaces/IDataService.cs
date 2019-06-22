@@ -9,7 +9,7 @@ namespace Hanselman.Interfaces
     public interface IDataService
     {
         Task<IEnumerable<Podcast>> GetPodcastsAsync(bool forceRefresh);
-        Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(bool forceRefresh);
+        Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh);
         Task<IEnumerable<BlogFeedItem>> GetBlogItemsAsync(bool forceRefresh);
         Task<IEnumerable<Tweet>> GetTweetsAsync(bool forceRefresh);
     }

@@ -21,7 +21,7 @@ namespace Hanselman.Services
             return null;
         }
 
-        public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(bool forceRefresh)
+        public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh)
         {
             var episodes = new List<PodcastEpisode>();
 
@@ -36,7 +36,7 @@ namespace Hanselman.Services
                     Duration = "34:54",
                     EpisodeNumber = "676",
                     EpisodeUrl = "https://hanselminutes.com/676/inside-a-tribe-of-hackers-with-cryptographer-marcus-j-carey",
-                    Explicit = false,
+                    Explicit = "no",
                     Mp3Url = ""
                 });
 
@@ -49,7 +49,7 @@ namespace Hanselman.Services
                     Duration = "31:16",
                     EpisodeNumber = "675",
                     EpisodeUrl = "https://hanselminutes.com/675/a-love-letter-to-language-and-programming-with-eva-ferreira",
-                    Explicit = false,
+                    Explicit = "no",
                     Mp3Url = ""
                 });
 
@@ -62,7 +62,7 @@ namespace Hanselman.Services
                     Duration = "31:26",
                     EpisodeNumber = "674",
                     EpisodeUrl = "https://hanselminutes.com/674/how-galaxies-evolve-with-dr-molly-peeples",
-                    Explicit = false,
+                    Explicit = "no",
                     Mp3Url = ""
                 });
             }
@@ -80,6 +80,7 @@ namespace Hanselman.Services
             var podcasts = new List<Podcast>();
             podcasts.Add(new Podcast
             {
+                Id = "minutes",
                 Title = "Hanselminutes",
                 Art = "hm_full.jpg",
                 Hosts = new List<Host> { hanselman },
@@ -175,6 +176,7 @@ namespace Hanselman.Services
             });
             podcasts.Add(new Podcast
             {
+                Id = "ratchet",
                 Title = "Ratchet & The Geek",
                 Art = "ratchet_full.jpg",
                 Hosts = new List<Host> { hanselman },
@@ -236,6 +238,7 @@ namespace Hanselman.Services
             });
             podcasts.Add(new Podcast
             {
+                Id = "life",
                 Title = "This Developer's Life",
                 Art = "tdl_full.jpg",
                 Hosts = new List<Host> { hanselman },
