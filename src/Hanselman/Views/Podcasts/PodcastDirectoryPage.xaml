@@ -47,7 +47,9 @@
                                             <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
-                                        <Image Aspect="AspectFill" Source="{Binding Art}" />
+                                        <Image Aspect="AspectFill" 
+                                               Source="{Binding Art}"
+                                               HeightRequest="150"/>
                                         <Label
                                             Grid.Row="1"
                                             Margin="10,0"

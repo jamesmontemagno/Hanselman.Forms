@@ -34,10 +34,8 @@ namespace Hanselman.Services
 
             return items?.Select(i => new BlogFeedItem(i));
         }
-        public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh)
-        {
-            return GetAsync<IEnumerable<PodcastEpisode>>($"api/GetPodcastEpisodes?code={Constants.PodcastEpisodesKey}&id={id}", $"pod_{id}", 180, false);
-        }
+        public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh) => 
+            GetAsync<IEnumerable<PodcastEpisode>>($"api/GetPodcastEpisodes?code={Constants.PodcastEpisodesKey}&id={id}", $"pod_{id}", 180, false);
 
         public Task<IEnumerable<Podcast>> GetPodcastsAsync(bool forceRefresh) =>
             mock.GetPodcastsAsync(forceRefresh);

@@ -2956,6 +2956,7 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Material.Android.Resource.Id.fill_horizontal = global::HanselmanAndroid.Resource.Id.fill_horizontal;
 			global::Xamarin.Forms.Material.Android.Resource.Id.fill_vertical = global::HanselmanAndroid.Resource.Id.fill_vertical;
 			global::Xamarin.Forms.Material.Android.Resource.Id.filled = global::HanselmanAndroid.Resource.Id.filled;
+			global::Xamarin.Forms.Material.Android.Resource.Id.@fixed = global::HanselmanAndroid.Resource.Id.@fixed;
 			global::Xamarin.Forms.Material.Android.Resource.Id.flyoutcontent_appbar = global::HanselmanAndroid.Resource.Id.flyoutcontent_appbar;
 			global::Xamarin.Forms.Material.Android.Resource.Id.flyoutcontent_recycler = global::HanselmanAndroid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Material.Android.Resource.Id.forever = global::HanselmanAndroid.Resource.Id.forever;
@@ -5533,6 +5534,7 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_horizontal = global::HanselmanAndroid.Resource.Id.fill_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::HanselmanAndroid.Resource.Id.fill_vertical;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.filled = global::HanselmanAndroid.Resource.Id.filled;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::HanselmanAndroid.Resource.Id.@fixed;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::HanselmanAndroid.Resource.Id.flyoutcontent_appbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::HanselmanAndroid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::HanselmanAndroid.Resource.Id.forever;

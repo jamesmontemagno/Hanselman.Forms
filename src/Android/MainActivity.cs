@@ -30,6 +30,7 @@ namespace HanselmanAndroid
             PullToRefreshLayoutRenderer.Init();
             //MediaManager.Forms.Platforms.Android.VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
+            Android.Glide.Forms.Init();
             LoadApplication(new App());
         }
 

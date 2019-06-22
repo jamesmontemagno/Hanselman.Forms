@@ -28,7 +28,7 @@ namespace Hanselman.Views
 
             var share = new ToolbarItem
             {
-                Icon = "ic_share.png",
+                IconImageSource = "ic_share.png",
                 Text = "Share",
                 Command = new Command(async () => await Browser.OpenAsync(this.item.Link))
             };

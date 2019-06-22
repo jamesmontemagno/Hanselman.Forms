@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Hanselman.Helpers;
+using Newtonsoft.Json;
 
 namespace Hanselman.Models
 {
@@ -33,6 +35,20 @@ namespace Hanselman.Models
 
         [JsonProperty("eu")]
         public string EpisodeUrl { get; set; }
+
+        [JsonIgnore]
+        public string PodcastName
+        {
+            get;set;
+        }
+
+        string displayDate;
+        [JsonIgnore]
+        public string DisplayDate
+        {
+            get => DateTimeOffset.TryParse(Date, out var time) ? time.PodcastEpisodeHumanize() : Date;
+            set => displayDate = value;
+        }
     }
 
 }

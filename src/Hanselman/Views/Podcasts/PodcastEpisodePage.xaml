@@ -6,6 +6,7 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="clr-namespace:Hanselman.Models"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     mc:Ignorable="d">
     <d:ContentPage.BindingContext>
         <models:PodcastEpisode
@@ -21,80 +22,79 @@
             <Grid Margin="{OnPlatform iOS='0,20,0,0'}" RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <StackLayout BackgroundColor="{StaticResource PrimaryColor}">
-                    <Button
-                        x:Name="ButtonClose"
-                        Margin="10"
-                        Clicked="ButtonClose_Clicked"
-                        HorizontalOptions="End"
-                        Style="{OnPlatform iOS={StaticResource CloseButtonStyle},
-                                           Android={StaticResource CloseButtonStyle}}"
-                        Text="Close" />
-                </StackLayout>
-                <StackLayout
-                    Grid.Row="1"
-                    Padding="20"
-                    BackgroundColor="{StaticResource PrimaryColor}"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="Start">
-                    <Frame
-                        Grid.RowSpan="3"
-                        Padding="0"
-                        BackgroundColor="Red"
-                        CornerRadius="10"
-                        HasShadow="True"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Visual="Material">
-                        <Image
-                            Aspect="AspectFill"
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="Podcast Artwork"
-                            HeightRequest="125"
-                            Source="{Binding ArtworkUrl}"
-                            WidthRequest="125" />
-                    </Frame>
-                    <Label
-                        d:Text="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
-                        FontAttributes="Bold"
-                        FontSize="16"
-                        HorizontalTextAlignment="Center"
-                        Text="{Binding Title}" />
-                    <Label
-                        d:Text="Hanselminutes"
-                        AutomationProperties.HelpText="Podcast host names"
-                        FontSize="14"
-                        HorizontalTextAlignment="Center"
-                        Text="{Binding PodcastName}" />
-                    <Frame
-                        Margin="0,0,0,-50"
-                        Padding="0"
-                        CornerRadius="30"
-                        HeightRequest="60"
-                        HorizontalOptions="Center"
-                        Visual="Material"
-                        WidthRequest="60">
-                        <Image
-                            Grid.Column="2"
+                <pancake:PancakeView
+                            BackgroundGradientStartColor="{StaticResource PrimaryColor}"
+                            BackgroundGradientEndColor="{StaticResource WindowBackgroundColor}"                            
+                            d:BackgroundColor="{StaticResource PrimaryColor}"
+                            BackgroundColor="{OnPlatform UWP={StaticResource PrimaryColor}, Default=Transparent}">
+                    <StackLayout
+                        Padding="16"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Start">
+                        <Button
+                            x:Name="ButtonClose"
+                            Clicked="ButtonClose_Clicked"
+                            HorizontalOptions="End"
+                            Style="{OnPlatform iOS={StaticResource CloseButtonStyle},
+                                               Android={StaticResource CloseButtonStyle}}"
+                            Text="Close" />
+                        <Frame
+                            Grid.RowSpan="3"
+                            Padding="0"
+                            BackgroundColor="Red"
+                            CornerRadius="10"
+                            HasShadow="True"
                             HorizontalOptions="Center"
-                            VerticalOptions="Center">
-                            <Image.Source>
-                                <FontImageSource
+                            VerticalOptions="Center"
+                            Visual="Material">
+                            <Image
+                                Aspect="AspectFill"
+                                AutomationProperties.IsInAccessibleTree="True"
+                                AutomationProperties.Name="Podcast Artwork"
+                                HeightRequest="125"
+                                Source="{Binding ArtworkUrl}"
+                                WidthRequest="125" />
+                        </Frame>
+                        <Label
+                            d:Text="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding Title}" />
+                        <Label
+                            d:Text="Hanselminutes"
+                            AutomationProperties.HelpText="Podcast host names"
+                            FontSize="14"
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding PodcastName}" />
+                        <Frame
+                            Margin="0,0,0,-50"
+                            Padding="0"
+                            CornerRadius="30"
+                            HeightRequest="60"
+                            HorizontalOptions="Center"
+                            Visual="Material"
+                            WidthRequest="60">
+                            <Image
+                                Grid.Column="2"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center">
+                                <Image.Source>
+                                    <FontImageSource
                                     FontFamily="{DynamicResource MaterialFontFamily}"
                                     Glyph="{StaticResource IconPlay}"
                                     Size="35"
                                     Color="{StaticResource PrimaryColor}" />
 
-                            </Image.Source>
-                        </Image>
-                    </Frame>
-                </StackLayout>
-
+                                </Image.Source>
+                            </Image>
+                        </Frame>
+                    </StackLayout>
+                </pancake:PancakeView>
                 <Grid
-                    Grid.Row="2"
+                    Grid.Row="1"
                     Padding="10,5"
                     ColumnSpacing="0"
                     RowSpacing="5">

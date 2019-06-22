@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hanselman.Models;
@@ -13,6 +14,7 @@ namespace Hanselman.ViewModels
         public ICommand SubscribeCommand { get; set; }
         public ICommand LoadEpisodesCommand { get; set; }
         public Podcast Podcast { get; set; }
+        public List<PodcastEpisode> AllEpisodes { get; set; }
         public ObservableRangeCollection<PodcastEpisode> Episodes { get; set; }
 
         public PodcastDetailsViewModel()
@@ -20,6 +22,7 @@ namespace Hanselman.ViewModels
             SubscribeCommand = new Command(async () => await ExecuteSubscribeCommand());
             LoadEpisodesCommand = new Command(async () => await ExecuteLoadEpisodesCommand());
             Episodes = new ObservableRangeCollection<PodcastEpisode>();
+            AllEpisodes = new List<PodcastEpisode>();
         }
         public PodcastDetailsViewModel(Podcast podcast) : this()
         {
@@ -54,7 +57,12 @@ namespace Hanselman.ViewModels
                 await Task.Delay(1000);
 #endif
                 var episodes = await DataService.GetPodcastEpisodesAsync(Podcast.Id, false);
-                Episodes.AddRange(episodes);
+
+                AllEpisodes.Clear();
+                Episodes.Clear();
+                CanLoadMore = true;
+                AllEpisodes.AddRange(episodes);
+                LoadMoreEpisodes();
             }
             catch (System.Exception)
             {
@@ -64,6 +72,18 @@ namespace Hanselman.ViewModels
             {
                 IsBusy = false;
             }
+        }
+
+        const int chunk = 50;
+        public void LoadMoreEpisodes()
+        {
+            if (!CanLoadMore)
+                return;
+
+            var totalLeft = AllEpisodes.Count - Episodes.Count;
+            var toGet = totalLeft > chunk ? chunk : totalLeft;
+            Episodes.AddRange(AllEpisodes.GetRange(Episodes.Count, toGet));
+            CanLoadMore = Episodes.Count != AllEpisodes.Count;
         }
     }
 }
