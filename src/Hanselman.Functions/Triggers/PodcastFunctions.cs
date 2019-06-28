@@ -46,11 +46,7 @@ namespace Hanselman.Functions.Triggers
 
         [FunctionName(nameof(PodcastUpdate))]
         public static async Task PodcastUpdate(
-#if DEBUG
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
-#else
-            [TimerTrigger("0 0 */3 * * *")]TimerInfo myTimer,
-#endif
             [Blob("hanselman/minutes.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outMinutes,
             [Blob("hanselman/ratchet.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outRatchet,
             [Blob("hanselman/life.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outLife,
