@@ -21,13 +21,6 @@ namespace Hanselman.Models
         [JsonProperty("t")]
         public string Text { get; set; }
 
-        [JsonIgnore]
-        public string Date => CreatedAt.ToString("g");
-        [JsonIgnore]
-        public string DateHumanized => CreatedAt.TwitterHumanize();
-        [JsonIgnore]
-        public string RTCount => CurrentUserRetweet == 0 ? string.Empty : CurrentUserRetweet + " RT";
-
         [JsonProperty("i")]
         public string Image { get; set; }
 
@@ -38,12 +31,21 @@ namespace Hanselman.Models
             set;
         }
 
-        [JsonProperty("cur")]
-        public ulong CurrentUserRetweet
-        {
-            get;
-            set;
-        }
+        [JsonProperty("rc")]
+        public long RetweetCount { get; set; }
+
+        [JsonProperty("fc")]
+        public long FavoriteCount { get; set; }
+
+        [JsonProperty("m")]
+        public string MediaUrl { get; set; }
+
+        [JsonIgnore]
+        public string Date => CreatedAt.ToString("g");
+        [JsonIgnore]
+        public string DateHumanized => CreatedAt.TwitterHumanize();
+        [JsonIgnore]
+        public string RTCount => RetweetCount == 0 ? string.Empty : RetweetCount + " RT";
     }
 
     public partial class Tweet

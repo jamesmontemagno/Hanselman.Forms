@@ -51,10 +51,12 @@ namespace Hanselman.Functions
                 StatusID = t?.RetweetedStatus?.User?.ScreenName == "shanselman" ? t.RetweetedStatus.IdStr : t.IdStr,
                 ScreenName = t?.RetweetedStatus?.User?.ScreenName ?? t.User.ScreenName,
                 Text = t.Text,
-                CurrentUserRetweet = (ulong)t.RetweetCount,
+                RetweetCount = t.RetweetCount,
+                FavoriteCount = t.FavoriteCount,
                 CreatedAt = GetDate(t.CreatedAt, DateTime.MinValue),
                 Image = t.RetweetedStatus != null && t.RetweetedStatus.User != null ?
-                                     t.RetweetedStatus.User.ProfileImageUrlHttps.ToString() : (t.User.ScreenName == "shanselman" ? "scott159.png" : t.User.ProfileImageUrlHttps.ToString())
+                                     t.RetweetedStatus.User.ProfileImageUrlHttps.ToString() : (t.User.ScreenName == "shanselman" ? "scott159.png" : t.User.ProfileImageUrlHttps.ToString()),
+                MediaUrl = t?.Entities?.Media?.FirstOrDefault()?.MediaUrlHttps?.AbsoluteUri
             }).ToList();
         }
 
