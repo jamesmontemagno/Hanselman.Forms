@@ -46,11 +46,7 @@ namespace Hanselman.Functions.Triggers
 
         [FunctionName(nameof(PodcastUpdate))]
         public static async Task PodcastUpdate(
-#if DEBUG
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
-#else
-            [TimerTrigger("0 0 */3 * * *")]TimerInfo myTimer,
-#endif
             [Blob("hanselman/minutes.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outMinutes,
             [Blob("hanselman/ratchet.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outRatchet,
             [Blob("hanselman/life.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outLife,
@@ -59,13 +55,29 @@ namespace Hanselman.Functions.Triggers
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
-            var podcasts = new Dictionary<string, Stream>
+            var podcasts = new Dictionary<string, Stream>();
+
+            string link = req.Query["id"];
+
+            switch (link)
             {
-                ["http://feeds.podtrac.com/9dPm65vdpLL1"] = outMinutes,
-                ["http://feeds.feedburner.com/RatchetAndTheGeek?format=xml"] = outRatchet,
-                ["http://feeds.feedburner.com/ThisDevelopersLife?format=xml"] = outLife,
-            };
-            foreach(var pod in podcasts)
+                case "http://feeds.podtrac.com/9dPm65vdpLL1":
+                    podcasts.Add(link, outMinutes);
+                    break;
+                case "http://feeds.feedburner.com/RatchetAndTheGeek?format=xml":
+                    podcasts.Add(link, outRatchet);
+                    break;
+                case "http://feeds.feedburner.com/ThisDevelopersLife?format=xml":
+                    podcasts.Add(link, outLife);
+                    break;
+                default:
+                    podcasts.Add("http://feeds.podtrac.com/9dPm65vdpLL1", outMinutes);
+                    podcasts.Add("http://feeds.feedburner.com/RatchetAndTheGeek?format=xml", outRatchet);
+                    podcasts.Add("http://feeds.feedburner.com/ThisDevelopersLife?format=xml", outLife);
+                    break;
+            }
+
+            foreach (var pod in podcasts)
             {
                 var rss = await client.GetStringAsync(pod.Key);
                 var parse = FeedItemHelpers.ParsePodcastFeed(rss);

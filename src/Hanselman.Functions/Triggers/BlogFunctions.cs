@@ -46,11 +46,7 @@ namespace Hanselman.Functions
 
         [FunctionName(nameof(BlogUpdate))]
         public static async Task BlogUpdate(
-#if DEBUG
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
-#else
-            [TimerTrigger("0 */30 * * * *")]TimerInfo myTimer,
-#endif
             [Blob("hanselman/blog.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outBlogBlob,
             [Blob("hanselman/blog-lastupdate.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outLastUpdateBlog,
             [Blob("hanselman/blog-lastupdate.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inLastUpdateBlog,
