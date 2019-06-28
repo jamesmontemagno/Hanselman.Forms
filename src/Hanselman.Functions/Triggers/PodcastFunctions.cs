@@ -55,13 +55,29 @@ namespace Hanselman.Functions.Triggers
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
-            var podcasts = new Dictionary<string, Stream>
+            var podcasts = new Dictionary<string, Stream>();
+
+            string link = req.Query["id"];
+
+            switch (link)
             {
-                ["http://feeds.podtrac.com/9dPm65vdpLL1"] = outMinutes,
-                ["http://feeds.feedburner.com/RatchetAndTheGeek?format=xml"] = outRatchet,
-                ["http://feeds.feedburner.com/ThisDevelopersLife?format=xml"] = outLife,
-            };
-            foreach(var pod in podcasts)
+                case "http://feeds.podtrac.com/9dPm65vdpLL1":
+                    podcasts.Add(link, outMinutes);
+                    break;
+                case "http://feeds.feedburner.com/RatchetAndTheGeek?format=xml":
+                    podcasts.Add(link, outRatchet);
+                    break;
+                case "http://feeds.feedburner.com/ThisDevelopersLife?format=xml":
+                    podcasts.Add(link, outLife);
+                    break;
+                default:
+                    podcasts.Add("http://feeds.podtrac.com/9dPm65vdpLL1", outMinutes);
+                    podcasts.Add("http://feeds.feedburner.com/RatchetAndTheGeek?format=xml", outRatchet);
+                    podcasts.Add("http://feeds.feedburner.com/ThisDevelopersLife?format=xml", outLife);
+                    break;
+            }
+
+            foreach (var pod in podcasts)
             {
                 var rss = await client.GetStringAsync(pod.Key);
                 var parse = FeedItemHelpers.ParsePodcastFeed(rss);
