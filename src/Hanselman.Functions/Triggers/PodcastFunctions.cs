@@ -55,35 +55,39 @@ namespace Hanselman.Functions.Triggers
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
-            var podcasts = new Dictionary<string, Stream>();
+            var podcasts = new Dictionary<string, (Stream blob, string photo)>();
 
             string link = req.Query["id"];
+
+            var hanselmanLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/hm_full.jpg";
+            var ratchetLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/ratchet_full.jpg";
+            var lifeLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/tdl_full.jpg";
 
             switch (link)
             {
                 case "http://feeds.podtrac.com/9dPm65vdpLL1":
-                    podcasts.Add(link, outMinutes);
+                    podcasts.Add(link, (outMinutes, hanselmanLogo));
                     break;
                 case "http://feeds.feedburner.com/RatchetAndTheGeek?format=xml":
-                    podcasts.Add(link, outRatchet);
+                    podcasts.Add(link, (outRatchet, ratchetLogo));
                     break;
                 case "http://feeds.feedburner.com/ThisDevelopersLife?format=xml":
-                    podcasts.Add(link, outLife);
+                    podcasts.Add(link, (outLife, lifeLogo));
                     break;
                 default:
-                    podcasts.Add("http://feeds.podtrac.com/9dPm65vdpLL1", outMinutes);
-                    podcasts.Add("http://feeds.feedburner.com/RatchetAndTheGeek?format=xml", outRatchet);
-                    podcasts.Add("http://feeds.feedburner.com/ThisDevelopersLife?format=xml", outLife);
+                    podcasts.Add("http://feeds.podtrac.com/9dPm65vdpLL1", (outMinutes, hanselmanLogo));
+                    podcasts.Add("http://feeds.feedburner.com/RatchetAndTheGeek?format=xml", (outRatchet, ratchetLogo));
+                    podcasts.Add("http://feeds.feedburner.com/ThisDevelopersLife?format=xml", (outLife, lifeLogo));
                     break;
             }
 
             foreach (var pod in podcasts)
             {
                 var rss = await client.GetStringAsync(pod.Key);
-                var parse = FeedItemHelpers.ParsePodcastFeed(rss);
+                var parse = FeedItemHelpers.ParsePodcastFeed(rss, pod.Value.photo);
 
                 log.LogInformation("Writting feed to blob.");
-                using (var writer = new StreamWriter(pod.Value))
+                using (var writer = new StreamWriter(pod.Value.blob))
                 {
                     var json = JsonConvert.SerializeObject(parse, Formatting.None);
                     writer.Write(json);

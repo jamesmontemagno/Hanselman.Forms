@@ -33,7 +33,7 @@ namespace Hanselman.Functions
                     }).ToList();
         }
 
-        internal static List<PodcastEpisode> ParsePodcastFeed(string rss)
+        internal static List<PodcastEpisode> ParsePodcastFeed(string rss, string defaultImage)
         {
             var xdoc = XDocument.Parse(rss);
             var id = 0;
@@ -48,7 +48,7 @@ namespace Hanselman.Functions
                         Date = (string)item.Element("pubDate") ?? "",
                         Explicit = (string)item.Element(ItunesExtensions.Namespace + "explicit") ?? "",
                         Mp3Url = (string)enclosure.Attribute("url") ?? "",
-                        ArtworkUrl = item.Element(ItunesExtensions.Namespace + "image")?.Attribute("href")?.Value as string ?? ((string)item.Element("description"))?.ExtractImage() ?? "",
+                        ArtworkUrl = item.Element(ItunesExtensions.Namespace + "image")?.Attribute("href")?.Value as string ?? ((string)item.Element("description"))?.ExtractImage(defaultImage) ?? "",
                         Duration = (string)item.Element(ItunesExtensions.Namespace + "duration") ?? "",
                         EpisodeNumber = (string)item.Element(ItunesExtensions.Namespace + "episode") ?? "",
                         Id = id++
@@ -57,7 +57,7 @@ namespace Hanselman.Functions
 
         public static class ItunesExtensions
         {
-            private readonly static XNamespace ns = XNamespace.Get(@"http://www.itunes.com/dtds/podcast-1.0.dtd");
+            static readonly XNamespace ns = XNamespace.Get(@"http://www.itunes.com/dtds/podcast-1.0.dtd");
             public static XNamespace Namespace => ns;
 
             public static XElement CustomElement(string name, string value)
