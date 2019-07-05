@@ -30,6 +30,7 @@ namespace Hanselman.UWP
         {
             InitializeComponent();
             Suspending += OnSuspending;
+            Shiny.UwpShinyHost.Init(new Startup());
         }
 
         /// <summary>

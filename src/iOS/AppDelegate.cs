@@ -40,12 +40,17 @@ namespace Hanselman.iOS
             PullToRefreshLayoutRenderer.Init();
             //VideoViewRenderer.Init();
             ImageCircleRenderer.Init();
+
+            Shiny.iOSShinyHost.Init(new Hanselman.Startup());
+
             LoadApplication(new App());
 
 
             return base.FinishedLaunching(app, options);
         }
 
+        public override void PerformFetch(UIApplication application, Action<UIBackgroundFetchResult> completionHandler)
+            => Shiny.Jobs.JobManager.OnBackgroundFetch(completionHandler);
 
     }
 }

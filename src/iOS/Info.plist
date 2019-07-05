@@ -55,5 +55,9 @@
 	<array>
 		<string>materialdesignicons-webfont.ttf</string>
 	</array>
+  <key>UIBackgroundModes</key>
+  <array>
+    <string>fetch</string>
+  </array>
 </dict>
 </plist>

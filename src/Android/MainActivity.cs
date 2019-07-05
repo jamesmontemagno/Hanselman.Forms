@@ -8,6 +8,7 @@ using Hanselman;
 using ImageCircle.Forms.Plugin.Droid;
 using Android.Runtime;
 using Refractored.XamForms.PullToRefresh.Droid;
+using Shiny;
 
 namespace HanselmanAndroid
 {
@@ -37,7 +38,7 @@ namespace HanselmanAndroid
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
+            AndroidShinyHost.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }

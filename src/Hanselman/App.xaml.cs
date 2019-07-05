@@ -3,6 +3,7 @@ using Hanselman.Views;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using MonkeyCache.FileStore;
+using Shiny.Jobs;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
@@ -29,7 +30,7 @@ namespace Hanselman
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            
         }
 
         protected override void OnSleep()
