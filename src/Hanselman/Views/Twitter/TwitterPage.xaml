@@ -6,80 +6,54 @@
     xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:models="clr-namespace:Hanselman.Models"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:twitter="clr-namespace:Hanselman.Views.Twitter"
     Title="{Binding Title}"
+    BackgroundColor="{StaticResource WindowBackgroundColor}"
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
-    NavigationPage.HasNavigationBar="{OnPlatform Android=false, iOS=true}"
-    mc:Ignorable="d"
-    BackgroundColor="{StaticResource WindowBackgroundColor}">
+    NavigationPage.HasNavigationBar="{OnPlatform Android=false,
+                                                 iOS=true}"
+    mc:Ignorable="d">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="TweetTemplate">
+                <twitter:TweetCell />
+            </DataTemplate>
+            <DataTemplate x:Key="TweetWithMediaTemplate">
+                <twitter:TweetWithMediaCell />
+            </DataTemplate>
+            <twitter:TweetDataTemplateSelector
+                x:Key="TweetDataTemplateSelector"
+                TweetTemplate="{StaticResource TweetTemplate}"
+                TweetWithMediaTemplate="{StaticResource TweetWithMediaTemplate}" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ListView
             x:Name="listView"
+            d:ItemTemplate="{StaticResource TweetTemplate}"
             CachingStrategy="RecycleElement"
             HasUnevenRows="True"
             IsPullToRefreshEnabled="True"
             IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            ItemTemplate="{StaticResource TweetDataTemplateSelector}"
             ItemsSource="{Binding Tweets}"
             RefreshCommand="{Binding RefreshCommand}"
             SeparatorColor="Transparent">
             <d:ListView.ItemsSource>
                 <x:Array Type="{x:Type models:Tweet}">
-                    <models:Tweet  ScreenName="scotthanselman" Text="Hello world this is a tweet, james is pretty awesome, and this app is amazing!!!!"
-                                   Image="scott.png"/>
+                    <models:Tweet
+                        Image="scott.png"
+                        MediaUrl="scott.png"
+                        ScreenName="scotthanselman"
+                        Text="Hello world this is a tweet, james is pretty awesome, and this app is amazing!!!!" />
+                    <models:Tweet
+                        Image="scott.png"
+                        ScreenName="scotthanselman"
+                        Text="Hello world this is a tweet, james is pretty awesome, and this app is amazing!!!!" />
                 </x:Array>
             </d:ListView.ItemsSource>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Frame
-                            Margin="8,4"
-                            Padding="12"
-                            HasShadow="True"
-                            Visual="Material">
-                            <Grid ColumnSpacing="12">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <Frame
-                                    Margin="0"
-                                    Padding="0"
-                                    CornerRadius="22"
-                                    HasShadow="True"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Start"
-                                    Visual="Material">
-                                    <Image
-                                        Aspect="AspectFill"
-                                        HeightRequest="44"
-                                        Source="{Binding Image}"
-                                        VerticalOptions="Center"
-                                        WidthRequest="44" />
-                                </Frame>
-                                <StackLayout
-                                    Grid.Column="1"
-                                    Padding="0"
-                                    Spacing="4"
-                                    VerticalOptions="Start">
-                                    <Label
-                                        FontSize="Micro"
-                                        Style="{StaticResource DateTimeLabelStyle}"
-                                        Text="{Binding DateHumanized}" />
-                                    <Label
-                                        FontSize="Micro"
-                                        Text="{Binding ScreenName}" />
-                                    <Label
-                                        x:Name="TweetText"
-                                        FontSize="Small"
-                                        LineBreakMode="WordWrap"
-                                        Text="{Binding Text}" />
-                                </StackLayout>
-                            </Grid>
-                        </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
         </ListView>
         <Frame
             Padding="12"

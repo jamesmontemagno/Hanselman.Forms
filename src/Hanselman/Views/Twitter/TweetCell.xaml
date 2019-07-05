@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ViewCell
+    x:Class="Hanselman.Views.Twitter.TweetCell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Frame
+        Margin="8,4"
+        Padding="12"
+        HasShadow="True"
+        Visual="Material">
+        <Grid ColumnSpacing="12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Margin="0"
+                Padding="0"
+                CornerRadius="22"
+                HasShadow="True"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Visual="Material">
+                <Image
+                    Aspect="AspectFill"
+                    HeightRequest="44"
+                    Source="{Binding Image}"
+                    VerticalOptions="Center"
+                    WidthRequest="44" />
+            </Frame>
+            <StackLayout
+                Grid.Column="1"
+                Padding="0"
+                Spacing="4"
+                VerticalOptions="Start">
+                <Label
+                    FontSize="Micro"
+                    Style="{StaticResource DateTimeLabelStyle}"
+                    Text="{Binding DateHumanized}" />
+                <Label FontSize="Micro" Text="{Binding ScreenName}" />
+                <Label
+                    FontSize="Small"
+                    LineBreakMode="WordWrap"
+                    Text="{Binding Text}" />
+            </StackLayout>
+        </Grid>
+    </Frame>
+</ViewCell>

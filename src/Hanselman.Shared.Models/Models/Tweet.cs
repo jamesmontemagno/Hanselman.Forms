@@ -40,6 +40,10 @@ namespace Hanselman.Models
         [JsonProperty("m")]
         public string MediaUrl { get; set; }
 
+
+        [JsonIgnore]
+        public bool HasMedia => !string.IsNullOrWhiteSpace(MediaUrl);
+
         [JsonIgnore]
         public string Date => CreatedAt.ToString("g");
         [JsonIgnore]

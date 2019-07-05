@@ -5,6 +5,7 @@ using MvvmHelpers;
 using Hanselman.Models;
 using System.Windows.Input;
 using Xamarin.Essentials;
+using System;
 
 namespace Hanselman.ViewModels
 {
@@ -87,7 +88,7 @@ namespace Hanselman.ViewModels
                     FeedItems.ReplaceRange(items);
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 await DisplayAlert("Error", "Unable to load blog.", "OK");
             }
