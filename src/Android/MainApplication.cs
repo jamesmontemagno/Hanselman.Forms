@@ -26,10 +26,7 @@ namespace HanselmanAndroid
         {
             base.OnCreate();
             Shiny.AndroidShinyHost.Init(this, new Startup(), services => {
-                // register any platform specific stuff you need here#if DEBUG
-#if DEBUG
-                services.ConfigureJobService(TimeSpan.FromMinutes(1));
-#endif
+                // register any platform specific stuff you need here
             });
         }
     }
