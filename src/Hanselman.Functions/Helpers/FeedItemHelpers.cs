@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -33,6 +34,64 @@ namespace Hanselman.Functions
                     }).ToList();
         }
 
+        internal static List<VideoFeedItem> ParseVideoFeed(string rss, string defaultImage)
+        {
+            var xdoc = XDocument.Parse(rss);
+            var list = new List<VideoFeedItem>();
+            foreach (var item in xdoc.Descendants("item"))
+            {
+                try
+                {                    
+                    var mediaGroup = item.Element(MediaExtensions.Namespace + "group");
+
+                    var videoUrls = new List<VideoContentItem>();
+                    if (mediaGroup != null)
+                    {
+                        foreach (var mediaUrl in mediaGroup.Elements())
+                        {
+                            videoUrls.Add(new VideoContentItem
+                            {
+                                Duration = TimeSpan.FromSeconds(Convert.ToInt32(mediaUrl.Attribute("duration")?.Value ?? "0")),
+                                FileSize = long.Parse(mediaUrl.Attribute("fileSize").Value),
+                                Url = mediaUrl.Attribute("url").Value,
+                                Type = mediaUrl.Attribute("type").Value
+                            });
+                        }
+                    }
+                    else
+                    {
+                        var duration = item.Element(ItunesExtensions.Namespace + "duration")?.Value;
+                        videoUrls.Add(new VideoContentItem
+                        {
+                            Duration = TimeSpan.FromSeconds(Convert.ToInt32(duration ?? "0")),
+                            FileSize = long.Parse(item.Element("enclosure")?.Attribute("length")?.Value),
+                            Url = item.Element("enclosure")?.Attribute("url")?.Value,
+                            Type = item.Element("enclosure")?.Attribute("type")?.Value,
+                        });
+                    }
+
+                    var videoFeedItem = new VideoFeedItem
+                    {
+                        VideoUrls = videoUrls.OrderByDescending(url => url.FileSize).ToList(),
+                        Title = (string)item.Element("title"),
+                        Description = item.Element(ItunesExtensions.Namespace + "summary")?.Value ?? (string)item.Element("description") ?? "",
+                        Url = (string)item.Element("link"),
+                        Date = (string)item.Element("pubDate"),
+                        ThumbnailUrl = item.Element(MediaExtensions.Namespace + "thumbnail")?.Attribute("url")?.Value ?? defaultImage,
+                        Duration = TimeSpan.FromSeconds(Convert.ToInt32(item.Element(ItunesExtensions.Namespace + "duration")?.Value ?? "0"))
+                    };
+
+                    list.Add(videoFeedItem);
+
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Unable to parse rss for item");
+                }
+            }
+            return list;
+        }
+
         internal static List<PodcastEpisode> ParsePodcastFeed(string rss, string defaultImage)
         {
             var xdoc = XDocument.Parse(rss);
@@ -53,6 +112,28 @@ namespace Hanselman.Functions
                         EpisodeNumber = (string)item.Element(ItunesExtensions.Namespace + "episode") ?? "",
                         Id = id++
                     }).ToList();
+        }
+
+        public static class MediaExtensions
+        {
+            static readonly XNamespace ns = XNamespace.Get(@"http://search.yahoo.com/mrss/");
+            public static XNamespace Namespace => ns;
+
+            public static XElement CustomElement(string name, string value)
+            {
+                return new XElement(ns + name, value);
+            }
+
+            public static XElement CustomElement(string name, params object[] objects)
+            {
+                return new XElement(ns + name, objects);
+            }
+
+            public static XElement CustomElement(string name, object value)
+            {
+                return new XElement(ns + name, value);
+            }
+
         }
 
         public static class ItunesExtensions

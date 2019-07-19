@@ -5,17 +5,22 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:models="clr-namespace:Hanselman.Models"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:viewmodel="clr-namespace:Hanselman.ViewModels"
     mc:Ignorable="d">
     <d:ContentPage.BindingContext>
-        <models:PodcastEpisode
-            Title="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
-            ArtworkUrl="scott.png"
-            Date="Today"
-            Description="This is a description for a podcast! It is pretty long, but that is awesome."
-            EpisodeNumber="3"
-            Duration="15 mins remaining" />
+        <viewmodel:PodcastEpisodeViewModel Title="Hanselminute">
+            <x:Arguments>
+                <models:PodcastEpisode
+                    Title="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
+                    ArtworkUrl="scott.png"
+                    Date="Today"
+                    Description="This is a description for a podcast! It is pretty long, but that is awesome."
+                    EpisodeNumber="3"
+                    Duration="15 mins remaining" />
+            </x:Arguments>
+        </viewmodel:PodcastEpisodeViewModel>
     </d:ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
@@ -25,10 +30,11 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <pancake:PancakeView
-                            BackgroundGradientStartColor="{StaticResource PrimaryColor}"
-                            BackgroundGradientEndColor="{StaticResource WindowBackgroundColor}"                            
-                            d:BackgroundColor="{StaticResource PrimaryColor}"
-                            BackgroundColor="{OnPlatform UWP={StaticResource PrimaryColor}, Default=Transparent}">
+                    d:BackgroundColor="{StaticResource PrimaryColor}"
+                    BackgroundColor="{OnPlatform UWP={StaticResource PrimaryColor},
+                                                 Default=Transparent}"
+                    BackgroundGradientEndColor="{StaticResource WindowBackgroundColor}"
+                    BackgroundGradientStartColor="{StaticResource PrimaryColor}">
                     <StackLayout
                         Padding="16"
                         HorizontalOptions="FillAndExpand"
@@ -54,7 +60,7 @@
                                 AutomationProperties.IsInAccessibleTree="True"
                                 AutomationProperties.Name="Podcast Artwork"
                                 HeightRequest="125"
-                                Source="{Binding ArtworkUrl}"
+                                Source="{Binding Episode.ArtworkUrl}"
                                 WidthRequest="125" />
                         </Frame>
                         <Label
@@ -62,14 +68,32 @@
                             FontAttributes="Bold"
                             FontSize="16"
                             HorizontalTextAlignment="Center"
-                            Text="{Binding Title}" />
+                            Text="{Binding Episode.Title}" />
                         <Label
                             d:Text="Hanselminutes"
-                            AutomationProperties.HelpText="Podcast host names"
+                            AutomationProperties.HelpText="Name of the podcast"
                             FontSize="14"
                             HorizontalTextAlignment="Center"
-                            Text="{Binding PodcastName}" />
-                        <Frame
+                            Text="{Binding Title}" />
+                        <ImageButton
+                            Margin="0,0,0,-60"
+                            Padding="8"
+                            BackgroundColor="White"
+                            Command="{Binding PlayPodcastCommand}"
+                            CornerRadius="33"
+                            HeightRequest="66"
+                            HorizontalOptions="Center"
+                            Visual="Material"
+                            WidthRequest="66">
+                            <ImageButton.Source>
+                                <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{StaticResource IconPlay}"
+                                    Size="15"
+                                    Color="{StaticResource PrimaryColor}" />
+                            </ImageButton.Source>
+                        </ImageButton>
+                        <!--<Frame
                             Margin="0,0,0,-50"
                             Padding="0"
                             CornerRadius="30"
@@ -77,20 +101,23 @@
                             HorizontalOptions="Center"
                             Visual="Material"
                             WidthRequest="60">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PlayPodcastCommand}" NumberOfTapsRequired="1" />
+                            </Frame.GestureRecognizers>
                             <Image
                                 Grid.Column="2"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center">
                                 <Image.Source>
                                     <FontImageSource
-                                    FontFamily="{DynamicResource MaterialFontFamily}"
-                                    Glyph="{StaticResource IconPlay}"
-                                    Size="35"
-                                    Color="{StaticResource PrimaryColor}" />
+                                        FontFamily="{DynamicResource MaterialFontFamily}"
+                                        Glyph="{StaticResource IconPlay}"
+                                        Size="35"
+                                        Color="{StaticResource PrimaryColor}" />
 
                                 </Image.Source>
                             </Image>
-                        </Frame>
+                        </Frame>-->
                     </StackLayout>
                 </pancake:PancakeView>
                 <Grid
@@ -137,8 +164,8 @@
                         Margin="0,-5,0,0"
                         FontSize="Micro"
                         HorizontalOptions="Center"
-                        Text="Download"
-                        HorizontalTextAlignment="Center"/>
+                        HorizontalTextAlignment="Center"
+                        Text="Download" />
 
                     <ImageButton
                         Grid.Row="0"
@@ -161,8 +188,8 @@
                         Margin="0,-5,0,0"
                         FontSize="Micro"
                         HorizontalOptions="Center"
-                        Text="Up Next"
-                        HorizontalTextAlignment="Center"/>
+                        HorizontalTextAlignment="Center"
+                        Text="Up Next" />
 
                     <ImageButton
                         Grid.Row="0"
@@ -185,8 +212,8 @@
                         Margin="0,-5,0,0"
                         FontSize="Micro"
                         HorizontalOptions="Center"
-                        Text="Mark Played"
-                        HorizontalTextAlignment="Center"/>
+                        HorizontalTextAlignment="Center"
+                        Text="Mark Played" />
 
                     <ImageButton
                         Grid.Row="0"
@@ -208,8 +235,8 @@
                         Margin="0,-5,0,0"
                         FontSize="Micro"
                         HorizontalOptions="Center"
-                        Text="Archive"
-                        HorizontalTextAlignment="Center"/>
+                        HorizontalTextAlignment="Center"
+                        Text="Archive" />
 
                     <BoxView
                         Grid.Row="2"
@@ -223,7 +250,7 @@
                         Grid.Row="3"
                         Grid.ColumnSpan="2"
                         FontSize="Small"
-                        Text="{Binding Date}"
+                        Text="{Binding Episode.Date}"
                         TextColor="DarkGray" />
 
                     <Label
@@ -232,7 +259,7 @@
                         Grid.ColumnSpan="2"
                         FontSize="Small"
                         HorizontalOptions="End"
-                        Text="{Binding Duration}"
+                        Text="{Binding Episode.Duration}"
                         TextColor="DarkGray" />
 
                     <Label
@@ -240,7 +267,7 @@
                         Grid.ColumnSpan="5"
                         Margin="0,5,0,0"
                         FontSize="Medium"
-                        Text="{Binding Description}" />
+                        Text="{Binding Episode.Description}" />
                 </Grid>
 
                 <ActivityIndicator

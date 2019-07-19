@@ -7,6 +7,8 @@ using MvvmHelpers;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
+// clintonrocksmith cheered 1000 on July 19th 2019
+
 namespace Hanselman.ViewModels
 {
     public class PodcastDetailsViewModel : ViewModelBase
