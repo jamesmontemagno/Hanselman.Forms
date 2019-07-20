@@ -305,5 +305,33 @@ namespace Hanselman.Services
         {
             return null;
         }
+
+        public Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<IEnumerable<VideoSeries>> GetVideoSeriesAsync(bool forceRefresh)
+        {
+            var series = new List<VideoSeries>()
+            {
+                new VideoSeries
+                {
+                    Id = "azurefridays",
+                    Title = "Azure Fridays",
+                    Art = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/azure_fridays.png",
+                    Description = "Join Scott Hanselman every Friday as he engages one-on-one with the engineers who build the services that power Microsoft Azure as they demo capabilities, answer Scott's questions, and share their insights."
+                },
+                new VideoSeries
+                {
+                    Id = "events",
+                    Title = "Scott@Events",
+                    Art = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/scott_events.jpg",
+                    Description = "The one and only Scott Hanselman presenting at awesome events!"
+                }
+            };
+
+            return Task.FromResult((IEnumerable<VideoSeries>)series);
+        }
     }
 }

@@ -8,8 +8,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     Title="Podcasts"
-    mc:Ignorable="d"
-    BackgroundColor="{StaticResource WindowBackgroundColor}">
+    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    mc:Ignorable="d">
     <ContentPage.BindingContext>
         <viewmodels:PodcastDirectoryViewModel />
     </ContentPage.BindingContext>
@@ -47,9 +47,10 @@
                                             <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
-                                        <Image Aspect="AspectFill" 
-                                               Source="{Binding Art}"
-                                               HeightRequest="150"/>
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="150"
+                                            Source="{Binding Art}" />
                                         <Label
                                             Grid.Row="1"
                                             Margin="10,0"
