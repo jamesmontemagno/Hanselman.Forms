@@ -206,6 +206,14 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
+    <PackageReference Include="Xamarin.Forms.PancakeView">
+      <Version>1.0.21</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.Visual.Material">
+      <Version>4.1.0.581479</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="$([System.Version]::Parse($(XamarinAndroidVersion.Split('-')[0]))) &gt;= $([System.Version]::Parse('9.4.0'))">
     <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.0-preview02" />
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.0.2-preview01" />
     <PackageReference Include="Xamarin.AndroidX.Browser" Version="1.0.0-preview01" />
@@ -213,12 +221,6 @@
     <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.0.0-preview01" />
     <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0-preview01" />
     <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0-preview01" />
-    <PackageReference Include="Xamarin.Forms.PancakeView">
-      <Version>1.0.21</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.1.0.581479</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\ic_about.png" />
