@@ -6,11 +6,13 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    xmlns:viewmodel="clr-namespace:Hanselman.ViewModels"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     BackgroundColor="{StaticResource WindowBackgroundColor}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    x:DataType="viewmodels:VideoDirectoryViewModel">
     <d:ContentPage.BindingContext>
-        <viewmodel:VideoSeriesViewModel />
+        <viewmodels:VideoDirectoryViewModel />
     </d:ContentPage.BindingContext>
     <ContentPage.Content>
         <Grid>
@@ -18,11 +20,13 @@
                 HasUnevenRows="True"
                 IsPullToRefreshEnabled="True"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                ItemSelected="ListView_ItemSelected"
+                ItemTapped="ListView_ItemTapped"
                 ItemsSource="{Binding VideoSeries}"
                 RefreshCommand="{Binding LoadSeriesCommand}"
                 SeparatorVisibility="None">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:VideoSeries">
                         <ViewCell>
                             <StackLayout Margin="8">
                                 <Frame

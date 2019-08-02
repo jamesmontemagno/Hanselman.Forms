@@ -1,4 +1,5 @@
-﻿using Windows.Foundation;
+﻿using MediaManager;
+using Windows.Foundation;
 using Windows.System.Profile;
 using Windows.UI.ViewManagement;
 using Xamarin.Forms;
@@ -18,6 +19,7 @@ namespace Hanselman.UWP
             InitializeComponent();
             LoadApplication(new Hanselman.App());
 
+            CrossMediaManager.Current.Init();
             ApplicationView.PreferredLaunchViewSize = new Size(480, 600);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(480, 600));
