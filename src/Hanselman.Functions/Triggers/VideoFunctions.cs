@@ -18,6 +18,8 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Hanselman.Functions.Helpers;
 using System.Net;
 
+// blounty__ cheered 100 August 9, 2019
+
 namespace Hanselman.Functions.Triggers
 {
     public class VideoFunctions
