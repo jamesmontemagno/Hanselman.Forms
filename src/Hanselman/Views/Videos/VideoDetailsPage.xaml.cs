@@ -27,6 +27,7 @@ namespace Hanselman.Views
             InitializeComponent();
         }
         bool shouldSeek;
+        long seekTo;
         protected async override void OnAppearing()
         {
             base.OnAppearing();
@@ -35,12 +36,14 @@ namespace Hanselman.Views
 
             if (!CrossMediaManager.Current.IsStopped() &&
                 Settings.PlaybackId == VM.VideoId)
-                return;            
+                return;
 
+            await CrossMediaManager.Current.Stop();
             Settings.PlaybackId = VM.VideoId;
             Settings.PlaybackUrl = VM.VideoUrl;
-            shouldSeek = true;
+            seekTo = Settings.GetPlaybackPosition(VM.Video.Id);
             await CrossMediaManager.Current.Play(VM.VideoUrl);
+            shouldSeek = seekTo > 0;
         }
 
         private async void PlaybackStateChanged(object sender, MediaManager.Playback.StateChangedEventArgs e)
@@ -48,9 +51,7 @@ namespace Hanselman.Views
             if(shouldSeek && e.State == MediaManager.Player.MediaPlayerState.Playing)
             {
                 shouldSeek = false;
-                var seekTo = Settings.GetPlaybackPosition(VM.Video.Id);
-                if (seekTo > 0)
-                    await CrossMediaManager.Current.SeekTo(TimeSpan.FromTicks(seekTo));
+                await CrossMediaManager.Current.SeekTo(TimeSpan.FromTicks(seekTo));
             }
         }
 

@@ -38,7 +38,7 @@ namespace Hanselman
 
         void PlaybackPositionChanged(object sender, PositionChangedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(Settings.PlaybackId))
+            if (string.IsNullOrWhiteSpace(Settings.PlaybackId) || !CrossMediaManager.Current.IsPlaying())
                 return;
 
             var current = e.Position.Ticks;
