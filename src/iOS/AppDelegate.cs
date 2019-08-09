@@ -7,6 +7,7 @@ using Xamarin.Forms.Platform.iOS;
 using ImageCircle.Forms.Plugin.iOS;
 using MediaManager.Forms.Platforms.iOS;
 using Refractored.XamForms.PullToRefresh.iOS;
+using MediaManager;
 
 namespace Hanselman.iOS
 {
@@ -38,7 +39,7 @@ namespace Hanselman.iOS
             Forms.Init();
             FormsMaterial.Init();
             PullToRefreshLayoutRenderer.Init();
-            //VideoViewRenderer.Init();
+            CrossMediaManager.Current.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
 

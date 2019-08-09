@@ -8,6 +8,9 @@ using Hanselman;
 using ImageCircle.Forms.Plugin.Droid;
 using Android.Runtime;
 using Refractored.XamForms.PullToRefresh.Droid;
+using MediaManager;
+
+// haavamoa cheered 1000 August 2, 2019
 
 namespace HanselmanAndroid
 {
@@ -28,7 +31,7 @@ namespace HanselmanAndroid
             FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
             PullToRefreshLayoutRenderer.Init();
-            //MediaManager.Forms.Platforms.Android.VideoViewRenderer.Init();
+            CrossMediaManager.Current.Init(this);
             ImageCircleRenderer.Init();
             Android.Glide.Forms.Init();
             LoadApplication(new App());

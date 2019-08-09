@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Hanselman.Views.VideoSeriesPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    mc:Ignorable="d"
+    x:DataType="viewmodels:VideoSeriesViewModel">
+    <d:ContentPage.BindingContext>
+        <viewmodels:VideoSeriesViewModel />
+    </d:ContentPage.BindingContext>
+    <ListView
+        x:Name="MyListView"
+        CachingStrategy="RecycleElement"
+        HasUnevenRows="True"
+        IsPullToRefreshEnabled="True"
+        IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+        ItemsSource="{Binding Episodes}"
+        RefreshCommand="{Binding LoadEpisodesCommand}"
+        ItemTapped="MyListView_ItemTapped"
+        ItemSelected="MyListView_ItemSelected"
+        SeparatorVisibility="None">
+        <d:ListView.ItemsSource>
+            <x:Array Type="{x:Type model:VideoFeedItem}" />
+        </d:ListView.ItemsSource>
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="models:VideoFeedItem">
+                <ViewCell>
+                    <Frame
+                        Margin="16,8"
+                        Padding="0"
+                        CornerRadius="15"
+                        HasShadow="True"
+                        IsClippedToBounds="True"
+                        Visual="Material">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".35*" />
+                                <ColumnDefinition Width=".65*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Aspect="AspectFill" Source="{Binding ThumbnailUrl}" />
+                            <StackLayout Grid.Column="1" Padding="8">
+                                <Label FontSize="Micro" Text="{Binding DisplayDate}" />
+                                <Label Text="{Binding Title}" />
+                                <Label
+                                    HorizontalOptions="End"
+                                    Text="{Binding Duration, StringFormat='{0:g}'}" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
