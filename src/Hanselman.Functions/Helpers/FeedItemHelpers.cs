@@ -30,7 +30,7 @@ namespace Hanselman.Functions
                         Link = (string)item.Element("link"),
                         PublishDate = (string)item.Element("pubDate"),
                         Category = (string)item.Element("category"),
-                        Id = id++
+                        Id = (string)item.Element("guid"),
                     }).ToList();
         }
 
@@ -72,6 +72,7 @@ namespace Hanselman.Functions
 
                     var videoFeedItem = new VideoFeedItem
                     {
+                        Id = (string)item.Element("guid"),
                         VideoUrls = videoUrls.OrderByDescending(url => url.FileSize).ToList(),
                         Title = (string)item.Element("title"),
                         Description = item.Element(ItunesExtensions.Namespace + "summary")?.Value ?? (string)item.Element("description") ?? "",
@@ -110,7 +111,7 @@ namespace Hanselman.Functions
                         ArtworkUrl = item.Element(ItunesExtensions.Namespace + "image")?.Attribute("href")?.Value as string ?? ((string)item.Element("description"))?.ExtractImage(defaultImage) ?? "",
                         Duration = (string)item.Element(ItunesExtensions.Namespace + "duration") ?? "",
                         EpisodeNumber = (string)item.Element(ItunesExtensions.Namespace + "episode") ?? "",
-                        Id = id++
+                        Id = (string)item.Element("guid")
                     }).ToList();
         }
 
