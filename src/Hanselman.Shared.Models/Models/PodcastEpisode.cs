@@ -7,7 +7,7 @@ namespace Hanselman.Models
     public class PodcastEpisode
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [JsonProperty("t")]
         public string Title { get; set; }
