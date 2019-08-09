@@ -19,6 +19,8 @@ namespace Hanselman.ViewModels
         {
             Video = video;
 
+            VideoId = video.Id;
+
             var videos = video.VideoUrls.Where(v => v.Type?.Contains("mp4") ?? false).ToList();
             if (videos.Count == 1)
                 VideoUrl = videos[0].Url;
@@ -32,6 +34,7 @@ namespace Hanselman.ViewModels
             }
         }
 
+        public string VideoId { get; set; }
         public VideoFeedItem Video { get; set; }
 
         public string VideoUrl { get; }

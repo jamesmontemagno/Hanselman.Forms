@@ -105,7 +105,7 @@ namespace Hanselman.ViewModels
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public FeedItem GetFeedItem(int id) => FeedItems.FirstOrDefault(i => i.Id == id);
+        public FeedItem GetFeedItem(string id) => FeedItems.FirstOrDefault(i => i.Id == id);
     }
 }
 

@@ -17,6 +17,6 @@
         </viewmodels:VideoDetailsViewModel>
     </d:ContentPage.BindingContext>
     <ContentPage.Content>
-        <mm:VideoView VerticalOptions="FillAndExpand" VideoAspect="AspectFit" Source="{Binding VideoUrl}" ShowControls="True" />
+        <mm:VideoView VerticalOptions="FillAndExpand" VideoAspect="AspectFit" ShowControls="True" />
     </ContentPage.Content>
 </ContentPage>

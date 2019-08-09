@@ -3,6 +3,9 @@ using Hanselman.Views;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using MonkeyCache.FileStore;
+using MediaManager;
+using MediaManager.Playback;
+using Hanselman.Helpers;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
@@ -30,6 +33,16 @@ namespace Hanselman
         protected override void OnStart()
         {
             // Handle when your app starts
+            CrossMediaManager.Current.PositionChanged += PlaybackPositionChanged;
+        }
+
+        void PlaybackPositionChanged(object sender, PositionChangedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Settings.PlaybackId))
+                return;
+
+            var current = e.Position.Ticks;
+            Settings.SavePlaybackPosition(Settings.PlaybackId, current);
         }
 
         protected override void OnSleep()
