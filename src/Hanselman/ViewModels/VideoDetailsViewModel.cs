@@ -21,6 +21,8 @@ namespace Hanselman.ViewModels
 
             VideoId = video.Id;
 
+            Title = video.Title;
+
             var videos = video.VideoUrls.Where(v => v.Type?.Contains("mp4") ?? false).ToList();
             if (videos.Count == 1)
                 VideoUrl = videos[0].Url;

@@ -8,7 +8,9 @@
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     BackgroundColor="{StaticResource WindowBackgroundColor}"
+    Title="{Binding Title}"
     mc:Ignorable="d"
+    Shell.NavBarIsVisible="True"
     x:DataType="viewmodels:VideoSeriesViewModel">
     <d:ContentPage.BindingContext>
         <viewmodels:VideoSeriesViewModel />

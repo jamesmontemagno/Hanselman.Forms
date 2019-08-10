@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 // chrisntr cheered 200 on March 22nd 2019
 
 
-namespace Hanselman.Views.Podcasts
+namespace Hanselman.Views
 {
     public partial class PodcastDetailsPage : ContentPage
     {

@@ -20,21 +20,21 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar Style="{StaticResource BaseStyle}">
-        <Tab Title="About" Icon="ic_about.png">
-            <ShellContent Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
+    <TabBar Style="{StaticResource BaseStyle}" Route="sections">
+        <Tab Title="About" Icon="ic_about.png" Route="tab_about">
+            <ShellContent Route="about" Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
         </Tab>
-        <Tab Title="Blog" Icon="ic_rss.png">
-            <ShellContent Shell.NavBarIsVisible="False"  Title="About" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
+        <Tab Title="Blog" Shell.NavBarIsVisible="False" Icon="ic_rss.png" Route="tab_blog">
+            <ShellContent Route="blog" Title="Blog" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
         </Tab>
-        <Tab Title="Tweets" Shell.NavBarIsVisible="False" Icon="ic_twitter.png">
-            <ShellContent Title="About" ContentTemplate="{DataTemplate views:TwitterPage}"/>
+        <Tab Title="Tweets" Shell.NavBarIsVisible="False" Icon="ic_twitter.png" Route="tab_tweets">
+            <ShellContent Route="tweets" Title="Tweets" ContentTemplate="{DataTemplate views:TwitterPage}"/>
         </Tab>
-        <Tab Title="Podcasts" Shell.NavBarIsVisible="False" Icon="ic_podcast.png">
-            <ShellContent Title="About" ContentTemplate="{DataTemplate views:PodcastDirectoryPage}"/>
+        <Tab Title="Podcasts" Shell.NavBarIsVisible="False" Icon="ic_podcast.png" Route="tab_podcasts">
+            <ShellContent Route="podcasts" Title="Podcasts" ContentTemplate="{DataTemplate views:PodcastDirectoryPage}"/>
         </Tab>
-        <Tab Title="Videos" Shell.NavBarIsVisible="False" Icon="ic_video.png">
-            <ShellContent Title="About" ContentTemplate="{DataTemplate views:VideoDirectoryPage}"/>
+        <Tab Title="Videos" Shell.NavBarIsVisible="False" Icon="ic_video.png" Route="tab_videos">
+            <ShellContent Route="videos" Title="Videos" ContentTemplate="{DataTemplate views:VideoDirectoryPage}"/>
         </Tab>        
     </TabBar>
 

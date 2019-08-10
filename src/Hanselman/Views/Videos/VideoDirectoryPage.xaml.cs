@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Hanselman.Interfaces;
 using Hanselman.Models;
 using Hanselman.ViewModels;
+using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -43,7 +44,10 @@ namespace Hanselman.Views
         {
             if (e.SelectedItem is VideoSeries series && series != null)
             {
-                await Navigation.PushAsync(new VideoSeriesPage(series));
+                if (DeviceInfo.Platform == DevicePlatform.UWP)
+                    await Navigation.PushAsync(new VideoSeriesPage(series));
+                else
+                    await Shell.Current.GoToAsync($"{AppShell.VideoSeriesDetails}?{series.UriRoute}");
                 ((ListView)sender).SelectedItem = null;
             }
         }

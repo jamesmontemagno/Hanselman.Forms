@@ -4,6 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Shell.NavBarIsVisible="true"
+             Title ="{Binding Title}"
              x:Class="Hanselman.Views.VideoDetailsPage"
              xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
              xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
