@@ -4,10 +4,12 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:models="clr-namespace:Hanselman.Models"
     Title="{Binding Title}"
     Icon="{Binding Icon}"
-    IsBusy="{Binding IsBusy}">
-
+    IsBusy="{Binding IsBusy}"
+    x:DataType="viewmodels:BlogFeedViewModel">
     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ListView
             x:Name="listView"
@@ -22,7 +24,7 @@
             RowHeight="175"
             SelectedItem="{Binding SelectedFeedItem}">
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="models:BlogFeedItem">
                     <ViewCell>
                         <Grid Padding="10">
                             <Grid.ColumnDefinitions>

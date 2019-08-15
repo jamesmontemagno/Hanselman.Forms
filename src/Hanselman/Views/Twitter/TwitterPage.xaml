@@ -5,7 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     xmlns:twitter="clr-namespace:Hanselman.Views.Twitter"
     Title="{Binding Title}"
     BackgroundColor="{StaticResource WindowBackgroundColor}"
@@ -13,7 +14,8 @@
     IsBusy="{Binding IsBusy}"
     NavigationPage.HasNavigationBar="{OnPlatform Android=false,
                                                  iOS=true}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    x:DataType="viewmodels:TwitterViewModel">
     <ContentPage.Resources>
         <ResourceDictionary>
             <DataTemplate x:Key="TweetTemplate">
@@ -41,13 +43,13 @@
             RefreshCommand="{Binding RefreshCommand}"
             SeparatorColor="Transparent">
             <d:ListView.ItemsSource>
-                <x:Array Type="{x:Type models:Tweet}">
-                    <models:Tweet
+                <x:Array Type="{x:Type modelsShared:Tweet}">
+                    <modelsShared:Tweet
                         Image="scott.png"
                         MediaUrl="scott.png"
                         ScreenName="scotthanselman"
                         Text="Hello world this is a tweet, james is pretty awesome, and this app is amazing!!!!" />
-                    <models:Tweet
+                    <modelsShared:Tweet
                         Image="scott.png"
                         ScreenName="scotthanselman"
                         Text="Hello world this is a tweet, james is pretty awesome, and this app is amazing!!!!" />

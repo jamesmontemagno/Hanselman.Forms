@@ -6,7 +6,8 @@
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:pulltorefresh="clr-namespace:Refractored.XamForms.PullToRefresh;assembly=Refractored.XamForms.PullToRefresh"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
@@ -16,7 +17,8 @@
     IsBusy="{Binding IsBusy}"
     NavigationPage.HasNavigationBar="{OnPlatform Android=false,
                                                  iOS=true}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    x:DataType="viewmodels:BlogFeedViewModel">
     <d:ContentPage.BindingContext>
         <viewmodels:BlogFeedViewModel />
     </d:ContentPage.BindingContext>
@@ -36,18 +38,18 @@
                     <GridItemsLayout Orientation="Vertical" Span="{OnIdiom Phone=1, Tablet=3, Desktop=3, TV=5, Watch=1}" />
                 </CollectionView.ItemsLayout>
                 <d:CollectionView.ItemsSource>
-                    <x:Array Type="{x:Type models:FeedItem}">
-                        <models:FeedItem
+                    <x:Array Type="{x:Type modelsShared:FeedItem}">
+                        <modelsShared:FeedItem
                             Title="Awesome Title"
                             Caption="This is a caption of the blog article."
                             FirstImage="scott.png"
                             PublishDate="Today" />
-                        <models:FeedItem
+                        <modelsShared:FeedItem
                             Title="Awesome Title"
                             Caption="This is a caption of the blog article."
                             FirstImage="scott.png"
                             PublishDate="Today" />
-                        <models:FeedItem
+                        <modelsShared:FeedItem
                             Title="Awesome Title"
                             Caption="This is a caption of the blog article."
                             FirstImage="scott.png"
@@ -55,7 +57,7 @@
                     </x:Array>
                 </d:CollectionView.ItemsSource>
                 <CollectionView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:BlogFeedItem">
                         <Grid Padding="8">
                             <Frame
                                 Padding="0,0,0,0"

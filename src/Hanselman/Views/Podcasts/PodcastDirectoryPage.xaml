@@ -7,9 +7,11 @@
     xmlns:effects="clr-namespace:Hanselman.Effects"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     Title="Podcasts"
     BackgroundColor="{StaticResource WindowBackgroundColor}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    x:DataType="viewmodels:PodcastDirectoryViewModel">
     <ContentPage.BindingContext>
         <viewmodels:PodcastDirectoryViewModel />
     </ContentPage.BindingContext>
@@ -25,7 +27,7 @@
                     JustifyContent="Start"
                     Wrap="Wrap">
                     <BindableLayout.ItemTemplate>
-                        <DataTemplate>
+                        <DataTemplate x:DataType="models:Podcast">
                             <StackLayout
                                 Margin="4,4,4,4"
                                 FlexLayout.AlignSelf="Start"
