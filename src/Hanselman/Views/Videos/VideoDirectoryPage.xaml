@@ -10,13 +10,13 @@
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     BackgroundColor="{StaticResource WindowBackgroundColor}"
     mc:Ignorable="d"
+    Title="Videos"
     x:DataType="viewmodels:VideoDirectoryViewModel">
     <d:ContentPage.BindingContext>
         <viewmodels:VideoDirectoryViewModel />
     </d:ContentPage.BindingContext>
     <ContentPage.Content>
-        <Grid>
-            <ListView
+        <ListView
                 HasUnevenRows="True"
                 IsPullToRefreshEnabled="True"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
@@ -24,42 +24,37 @@
                 ItemTapped="ListView_ItemTapped"
                 ItemsSource="{Binding VideoSeries}"
                 RefreshCommand="{Binding LoadSeriesCommand}"
-                SeparatorVisibility="None">
+                SeparatorVisibility="None"
+                SelectionMode="Single">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:VideoSeries">
                         <ViewCell>
-                            <StackLayout Margin="8">
-                                <Frame
-                                    Padding="0"
-                                    HasShadow="True"
-                                    HeightRequest="350"
-                                    VerticalOptions="Start"
-                                    Visual="Material"
-                                    WidthRequest="350">
-                                    <Grid Padding="0">
-                                        <Image
-                                            Aspect="AspectFill"
-                                            HeightRequest="350"
-                                            Source="{Binding Art}" />
-                                        <pancake:PancakeView BackgroundGradientEndColor="#99000000" BackgroundGradientStartColor="Transparent" />
-                                        <Label
-                                            Margin="10"
-                                            FontSize="Large"
-                                            Text="{Binding Title}"
-                                            TextColor="White"
-                                            VerticalOptions="End" />
-                                    </Grid>
-                                </Frame>
-                            </StackLayout>
+                            <Frame
+                                Padding="0"
+                                Margin="8"
+                                HasShadow="false"
+                                CornerRadius="20"
+                                HeightRequest="350"
+                                IsClippedToBounds="True"
+                                Visual="Default"
+                                WidthRequest="350">
+                                <Grid CascadeInputTransparent="True"  Padding="0">
+                                    <Image
+                                        Aspect="AspectFill"
+                                        HeightRequest="350"
+                                        Source="{Binding Art}" />
+                                    <pancake:PancakeView BackgroundGradientEndColor="#99000000" BackgroundGradientStartColor="Transparent" />
+                                    <Label
+                                        Margin="10"
+                                        FontSize="Large"
+                                        Text="{Binding Title}"
+                                        TextColor="White"
+                                        VerticalOptions="End" />
+                                </Grid>
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <ActivityIndicator
-                HorizontalOptions="CenterAndExpand"
-                IsRunning="{Binding IsBusy}"
-                IsVisible="{Binding IsBusy}"
-                VerticalOptions="CenterAndExpand" />
-        </Grid>
     </ContentPage.Content>
 </ContentPage>

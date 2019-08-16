@@ -44,7 +44,7 @@ namespace Hanselman.ViewModels
             if (service == null)
                 return;
 
-            await Browser.OpenAsync(service.Url);
+            await OpenBrowserAsync(service.Url);
         }
 
         async Task ExecuteLoadEpisodesCommand()

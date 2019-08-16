@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hanselman.Helpers;
+using Hanselman.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -29,7 +30,7 @@ namespace Hanselman.Models
                 if (launch?.OpenUserName("shanselman") ?? false)
                     return;
             }
-            await Browser.OpenAsync(Url);
+            await ViewModelBase.OpenBrowserAsync(Url);
         }
     }
 }

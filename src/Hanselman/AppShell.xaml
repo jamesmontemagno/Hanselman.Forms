@@ -25,15 +25,15 @@
             <ShellContent Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
         </Tab>
         <Tab Title="Blog" Icon="ic_rss.png">
-            <ShellContent Shell.NavBarIsVisible="False"  Title="About" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
+            <ShellContent Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}"  Title="About" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
         </Tab>
-        <Tab Title="Tweets" Shell.NavBarIsVisible="False" Icon="ic_twitter.png">
+        <Tab Title="Tweets" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_twitter.png">
             <ShellContent Title="About" ContentTemplate="{DataTemplate views:TwitterPage}"/>
         </Tab>
-        <Tab Title="Podcasts" Shell.NavBarIsVisible="False" Icon="ic_podcast.png">
+        <Tab Title="Podcasts" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_podcast.png">
             <ShellContent Title="About" ContentTemplate="{DataTemplate views:PodcastDirectoryPage}"/>
         </Tab>
-        <Tab Title="Videos" Shell.NavBarIsVisible="False" Icon="ic_video.png">
+        <Tab Title="Videos" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_video.png">
             <ShellContent Title="About" ContentTemplate="{DataTemplate views:VideoDirectoryPage}"/>
         </Tab>        
     </TabBar>

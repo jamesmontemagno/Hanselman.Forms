@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Essentials;
 using Hanselman.Models;
+using Hanselman.ViewModels;
 
 namespace Hanselman.Views
 {
@@ -30,7 +31,7 @@ namespace Hanselman.Views
             {
                 IconImageSource = "ic_share.png",
                 Text = "Share",
-                Command = new Command(async () => await Browser.OpenAsync(this.item.Link))
+                Command = new Command(async () => await ViewModelBase.OpenBrowserAsync(this.item.Link))
             };
 
             ToolbarItems.Add(share);

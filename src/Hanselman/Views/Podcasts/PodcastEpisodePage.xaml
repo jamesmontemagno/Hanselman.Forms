@@ -8,7 +8,9 @@
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:viewmodel="clr-namespace:Hanselman.ViewModels"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    x:DataType="viewmodel:PodcastEpisodeViewModel">
     <d:ContentPage.BindingContext>
         <viewmodel:PodcastEpisodeViewModel Title="Hanselminute">
             <x:Arguments>
@@ -24,12 +26,13 @@
     </d:ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
-            <Grid Margin="{OnPlatform iOS='0,20,0,0'}" RowSpacing="0">
+            <Grid RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <pancake:PancakeView
+                    Padding="0,40,0,33"
                     d:BackgroundColor="{StaticResource PrimaryColor}"
                     BackgroundColor="{OnPlatform UWP={StaticResource PrimaryColor},
                                                  Default=Transparent}"
@@ -74,50 +77,7 @@
                             AutomationProperties.HelpText="Name of the podcast"
                             FontSize="14"
                             HorizontalTextAlignment="Center"
-                            Text="{Binding Title}" />
-                        <ImageButton
-                            Margin="0,0,0,-60"
-                            Padding="8"
-                            BackgroundColor="White"
-                            Command="{Binding PlayPodcastCommand}"
-                            CornerRadius="33"
-                            HeightRequest="66"
-                            HorizontalOptions="Center"
-                            Visual="Material"
-                            WidthRequest="66">
-                            <ImageButton.Source>
-                                <FontImageSource
-                                    FontFamily="{DynamicResource MaterialFontFamily}"
-                                    Glyph="{StaticResource IconPlay}"
-                                    Size="15"
-                                    Color="{StaticResource PrimaryColor}" />
-                            </ImageButton.Source>
-                        </ImageButton>
-                        <!--<Frame
-                            Margin="0,0,0,-50"
-                            Padding="0"
-                            CornerRadius="30"
-                            HeightRequest="60"
-                            HorizontalOptions="Center"
-                            Visual="Material"
-                            WidthRequest="60">
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding PlayPodcastCommand}" NumberOfTapsRequired="1" />
-                            </Frame.GestureRecognizers>
-                            <Image
-                                Grid.Column="2"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center">
-                                <Image.Source>
-                                    <FontImageSource
-                                        FontFamily="{DynamicResource MaterialFontFamily}"
-                                        Glyph="{StaticResource IconPlay}"
-                                        Size="35"
-                                        Color="{StaticResource PrimaryColor}" />
-
-                                </Image.Source>
-                            </Image>
-                        </Frame>-->
+                            Text="{Binding Title}" />                       
                     </StackLayout>
                 </pancake:PancakeView>
                 <Grid
@@ -128,7 +88,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="24*" />
                         <ColumnDefinition Width="24*" />
-                        <ColumnDefinition Width="35*" />
+                        <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="24*" />
                         <ColumnDefinition Width="24*" />
                     </Grid.ColumnDefinitions>
@@ -143,6 +103,25 @@
                         <!--  Release Date/TimeLeft  -->
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
+                    <ImageButton
+                            Margin="20,-33,20,0"
+                            Padding="8"
+                            BackgroundColor="White"
+                            Command="{Binding PlayPodcastCommand}"
+                            CornerRadius="33"
+                            HeightRequest="66"
+                            HorizontalOptions="Center"
+                            Visual="Material"
+                            WidthRequest="66"
+                        Grid.Column="2">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{StaticResource IconPlay}"
+                                    Size="15"
+                                    Color="{StaticResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
                     <ImageButton
                         Grid.Row="0"
                         Grid.Column="0"

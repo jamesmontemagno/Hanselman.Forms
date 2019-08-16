@@ -8,12 +8,13 @@
     xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     xmlns:twitter="clr-namespace:Hanselman.Views.Twitter"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:NavigationPage.PrefersLargeTitles="True"
+    ios:Page.LargeTitleDisplay="Always"
     Title="{Binding Title}"
     BackgroundColor="{StaticResource WindowBackgroundColor}"
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
-    NavigationPage.HasNavigationBar="{OnPlatform Android=false,
-                                                 iOS=true}"
     mc:Ignorable="d"
     x:DataType="viewmodels:TwitterViewModel">
     <ContentPage.Resources>
@@ -33,6 +34,7 @@
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ListView
             x:Name="listView"
+            BackgroundColor="{StaticResource WindowBackgroundColor}"
             d:ItemTemplate="{StaticResource TweetTemplate}"
             CachingStrategy="RecycleElement"
             HasUnevenRows="True"
