@@ -3,6 +3,7 @@ using Hanselman.Views;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using MonkeyCache.FileStore;
+using Shiny.Jobs;
 using MediaManager;
 using MediaManager.Playback;
 using Hanselman.Helpers;
@@ -32,6 +33,7 @@ namespace Hanselman
 
         protected override void OnStart()
         {
+
             // Handle when your app starts
             CrossMediaManager.Current.PositionChanged += PlaybackPositionChanged;
         }

@@ -99,6 +99,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
+    <LaunchForBackgroundFetch>false</LaunchForBackgroundFetch>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -280,6 +281,9 @@
     </PackageReference>
     <PackageReference Include="Refractored.XamForms.PullToRefresh">
       <Version>2.4.1.1-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Shiny.Core">
+      <Version>1.0.0.335-beta</Version>
     </PackageReference>
     <PackageReference Include="System.Json">
       <Version>4.5.0</Version>
