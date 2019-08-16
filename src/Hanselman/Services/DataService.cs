@@ -43,6 +43,12 @@ namespace Hanselman.Services
         public Task<IEnumerable<Tweet>> GetTweetsAsync(bool forceRefresh) =>
             GetAsync<IEnumerable<Tweet>>($"api/GetTweets?code={Constants.TweetKey}", "tweets", 15, forceRefresh);
 
+        public Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh) =>
+            GetAsync<IEnumerable<VideoFeedItem>>($"api/GetVideoEpisodes?code={Constants.VideoEpisodesKey}&id={id}", $"video_{id}", 240, false);
+
+        public Task<IEnumerable<VideoSeries>> GetVideoSeriesAsync(bool forceRefresh) =>
+            mock.GetVideoSeriesAsync(forceRefresh);
+
         async Task<T> GetAsync<T>(string url, string key, int mins = 7, bool forceRefresh = false)
         {
             var json = string.Empty;

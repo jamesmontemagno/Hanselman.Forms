@@ -28,4 +28,4 @@ using Xamarin.Forms;
 //[assembly: AssemblyKeyFile("")]
 
 [assembly: ResolutionGroupName("Hanselman")]
-
+[assembly: UsesPermission(Android.Manifest.Permission.WakeLock)]

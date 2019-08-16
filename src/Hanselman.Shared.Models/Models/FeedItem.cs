@@ -20,7 +20,7 @@ namespace Hanselman.Models
         public string Author { get; set; }
 
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [JsonProperty("cc")]
         public string CommentCount { get; set; }

@@ -21,6 +21,8 @@ namespace Hanselman.Views
         {
             InitializeComponent();
 
+            BindingContext = new BlogFeedViewModel();
+
             orientation = DeviceDisplay.MainDisplayInfo.Orientation;
             if (DeviceInfo.Idiom == DeviceIdiom.Phone)
             {

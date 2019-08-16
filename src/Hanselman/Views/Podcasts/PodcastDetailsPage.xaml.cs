@@ -45,7 +45,7 @@ namespace Hanselman.Views.Podcasts
             if (!(listView?.SelectedItem is PodcastEpisode episode))
                 return;
 
-            await Navigation.PushModalAsync(new PodcastEpisodePage(episode));
+            await Navigation.PushModalAsync(new PodcastEpisodePage(episode, VM.Podcast.Title));
 
 
             listView.SelectedItem = null;

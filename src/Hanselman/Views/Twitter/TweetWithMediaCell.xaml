@@ -26,6 +26,7 @@
                 CornerRadius="22"
                 HasShadow="True"
                 HorizontalOptions="Center"
+                IsClippedToBounds="True"
                 VerticalOptions="Start"
                 Visual="Material">
                 <Image

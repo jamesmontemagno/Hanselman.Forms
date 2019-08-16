@@ -1,13 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Hanselman.Views.VideoDirectoryPage"
-    BackgroundColor="{StaticResource WindowBackgroundColor}">
+<ContentPage
+    x:Class="Hanselman.Views.VideoDirectoryPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    mc:Ignorable="d"
+    x:DataType="viewmodels:VideoDirectoryViewModel">
+    <d:ContentPage.BindingContext>
+        <viewmodels:VideoDirectoryViewModel />
+    </d:ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <ListView
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="True"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                ItemSelected="ListView_ItemSelected"
+                ItemTapped="ListView_ItemTapped"
+                ItemsSource="{Binding VideoSeries}"
+                RefreshCommand="{Binding LoadSeriesCommand}"
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:VideoSeries">
+                        <ViewCell>
+                            <StackLayout Margin="8">
+                                <Frame
+                                    Padding="0"
+                                    HasShadow="True"
+                                    HeightRequest="350"
+                                    VerticalOptions="Start"
+                                    Visual="Material"
+                                    WidthRequest="350">
+                                    <Grid Padding="0">
+                                        <Image
+                                            Aspect="AspectFill"
+                                            HeightRequest="350"
+                                            Source="{Binding Art}" />
+                                        <pancake:PancakeView BackgroundGradientEndColor="#99000000" BackgroundGradientStartColor="Transparent" />
+                                        <Label
+                                            Margin="10"
+                                            FontSize="Large"
+                                            Text="{Binding Title}"
+                                            TextColor="White"
+                                            VerticalOptions="End" />
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ActivityIndicator
+                HorizontalOptions="CenterAndExpand"
+                IsRunning="{Binding IsBusy}"
+                IsVisible="{Binding IsBusy}"
+                VerticalOptions="CenterAndExpand" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

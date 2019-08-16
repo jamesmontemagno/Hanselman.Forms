@@ -3,21 +3,23 @@
     x:Class="Hanselman.Views.BlogCollectionPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:models="clr-namespace:Hanselman.Models"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:pulltorefresh="clr-namespace:Refractored.XamForms.PullToRefresh;assembly=Refractored.XamForms.PullToRefresh"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
-     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     Title="{Binding Title}"
+    BackgroundColor="{StaticResource WindowBackgroundColor}"
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
-    NavigationPage.HasNavigationBar="{OnPlatform Android=false, iOS=true}"
-    mc:Ignorable="d"
-    BackgroundColor="{StaticResource WindowBackgroundColor}">
-    <ContentPage.BindingContext>
+    NavigationPage.HasNavigationBar="{OnPlatform Android=false,
+                                                 iOS=true}"
+    mc:Ignorable="d">
+    <d:ContentPage.BindingContext>
         <viewmodels:BlogFeedViewModel />
-    </ContentPage.BindingContext>
+    </d:ContentPage.BindingContext>
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <pulltorefresh:PullToRefreshLayout
             IsPullToRefreshEnabled="True"
@@ -62,15 +64,16 @@
                                 <Grid RowSpacing="0">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="125" />
-                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
                                         <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
                                     <Grid>
                                         <Image Aspect="AspectFill" Source="{Binding FirstImage}" />
-                                        <Image
-                                            Aspect="AspectFill"
-                                            Source="shadow.png"
-                                            VerticalOptions="End" />
+                                        <pancake:PancakeView
+                                            BackgroundGradientEndColor="#99000000"
+                                            BackgroundGradientStartColor="#10000000"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="FillAndExpand" />
                                         <Label
                                             Margin="16,8"
                                             FontAttributes="Bold"
@@ -81,7 +84,7 @@
                                     </Grid>
                                     <StackLayout
                                         Grid.Row="1"
-                                        Padding="16,4"
+                                        Padding="16,8,16,4"
                                         Spacing="0">
                                         <Label
                                             Margin="0,4,0,0"
@@ -94,33 +97,35 @@
                                     </StackLayout>
                                     <StackLayout
                                         Grid.Row="2"
-                                        Padding="{OnPlatform Android='0,4,8,0', iOS='16,4'}"
+                                        Padding="{OnPlatform Android='0,4,8,0',
+                                                             iOS='16,4'}"
                                         HorizontalOptions="FillAndExpand"
                                         Orientation="Horizontal"
                                         Spacing="8">
                                         <Button
+                                            Margin="{OnPlatform Android='-8,0,0,0'}"
+                                            Padding="0"
+                                            android:Button.UseDefaultPadding="true"
+                                            android:Button.UseDefaultShadow="true"
                                             BackgroundColor="Transparent"
                                             BorderColor="Transparent"
                                             BorderWidth="0"
-                                            Margin="{OnPlatform Android='-8,0,0,0'}"
-                                            Padding="0"
-                                            HorizontalOptions="Start"
-                                            VerticalOptions="End"
-                                            Visual="Default"
-                                            Text="READ"
-                                            android:Button.UseDefaultPadding="true"
-                                            android:Button.UseDefaultShadow="true"
                                             Command="{Binding ReadCommand}"
-                                            TextColor="{StaticResource PrimaryColor}" />
-                                        <Button HorizontalOptions="EndAndExpand"
-                                                VerticalOptions="End"
-                                                Style="{StaticResource MaterialNormalButton}"
-                                                Text="{StaticResource IconShare}"
-                                                Command="{Binding ShareCommand}"
-                                                Visual="Default"
-                                                Padding="0"
-                                                FontSize="24"
-                                                Margin="{OnPlatform Android='0,0,-20,0'}"/>
+                                            HorizontalOptions="Start"
+                                            Text="READ"
+                                            TextColor="{StaticResource PrimaryColor}"
+                                            VerticalOptions="End"
+                                            Visual="Default" />
+                                        <Button
+                                            Margin="{OnPlatform Android='0,0,-20,0'}"
+                                            Padding="0"
+                                            Command="{Binding ShareCommand}"
+                                            FontSize="24"
+                                            HorizontalOptions="EndAndExpand"
+                                            Style="{StaticResource MaterialNormalButton}"
+                                            Text="{StaticResource IconShare}"
+                                            VerticalOptions="End"
+                                            Visual="Default" />
                                     </StackLayout>
                                 </Grid>
                             </Frame>
