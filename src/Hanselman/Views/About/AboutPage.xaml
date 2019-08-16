@@ -4,8 +4,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman"
     Title="Scott Hanselman"
-    BackgroundColor="{StaticResource WindowBackgroundColor}">
+    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    x:DataType="viewmodels:AboutViewModel">
     <ContentPage.BindingContext>
         <viewmodels:AboutViewModel />
     </ContentPage.BindingContext>
@@ -38,7 +40,7 @@
                 Orientation="Horizontal"
                 Spacing="5">
                 <BindableLayout.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:SocialItem">
                         <Button
                             Command="{Binding OpenUrlCommand}"
                             Style="{StaticResource MaterialButton}"

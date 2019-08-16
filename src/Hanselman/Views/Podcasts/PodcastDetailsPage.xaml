@@ -10,7 +10,8 @@
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     mc:Ignorable="d"
-    BackgroundColor="{StaticResource WindowBackgroundColor}">
+    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    x:DataType="viewmodels:PodcastDetailsViewModel">
     <ContentPage.BindingContext>
         <viewmodels:PodcastDetailsViewModel />
     </ContentPage.BindingContext>
@@ -113,7 +114,7 @@
                     </pancake:PancakeView>
                 </ListView.Header>
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="models:PodcastEpisode">
                         <ViewCell>
                             <Grid Padding="10" ColumnSpacing="10">
                                 <Grid.ColumnDefinitions>
