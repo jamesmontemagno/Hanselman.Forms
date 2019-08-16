@@ -8,9 +8,12 @@ using Hanselman;
 using ImageCircle.Forms.Plugin.Droid;
 using Android.Runtime;
 using Refractored.XamForms.PullToRefresh.Droid;
+using Shiny;
 using MediaManager;
 
 // haavamoa cheered 1000 August 2, 2019
+// blounty cheered 100 August 16, 2019
+
 
 namespace HanselmanAndroid
 {
@@ -40,7 +43,7 @@ namespace HanselmanAndroid
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
+            AndroidShinyHost.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }

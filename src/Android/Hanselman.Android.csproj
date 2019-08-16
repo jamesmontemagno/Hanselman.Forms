@@ -77,6 +77,7 @@
     <Compile Include="Effects\RippleEffect.cs" />
     <Compile Include="Effects\TabbedPageNoShiftEffect.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainApplication.cs" />
     <Compile Include="Renderers\ListImageCellRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -190,13 +191,16 @@
       <Version>12.0.2</Version>
     </PackageReference>
     <PackageReference Include="Plugin.MediaManager.Forms">
-      <Version>0.7.9</Version>
+      <Version>0.8.7</Version>
     </PackageReference>
     <PackageReference Include="Refractored.MvvmHelpers">
       <Version>1.3.0</Version>
     </PackageReference>
     <PackageReference Include="Refractored.XamForms.PullToRefresh">
       <Version>2.4.1.1-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Shiny.Core">
+      <Version>1.0.0.332-beta</Version>
     </PackageReference>
     <PackageReference Include="System.Json">
       <Version>4.5.0</Version>
@@ -205,7 +209,7 @@
       <Version>3.0.0.5</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials">
-      <Version>1.2.0</Version>
+      <Version>1.3.0-pre</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
@@ -214,7 +218,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.1" />
-    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.1.5"/>
-    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.1.0.618606"/>
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.1.5" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.1.0.673156" />
   </ItemGroup>
 </Project>
