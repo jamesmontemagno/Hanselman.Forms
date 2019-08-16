@@ -42,7 +42,7 @@ namespace Hanselman.iOS
             CrossMediaManager.Current.Init();
             ImageCircleRenderer.Init();
 
-            Shiny.iOSShinyHost.Init(new Hanselman.Startup());
+            Shiny.iOSShinyHost.Init(new Startup());
 
             LoadApplication(new App());
 

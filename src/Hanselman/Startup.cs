@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Hanselman.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Shiny;
@@ -8,7 +6,7 @@ using Shiny.Jobs;
 
 namespace Hanselman
 {
-    public class Startup : Shiny.Startup
+    public class Startup : ShinyStartup
     {
         public override void ConfigureServices(IServiceCollection services)
         {
