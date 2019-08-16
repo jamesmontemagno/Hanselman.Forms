@@ -32,13 +32,14 @@
                             <Frame
                                 Padding="0"
                                 Margin="8"
-                                HasShadow="false"
-                                CornerRadius="20"
+                                HasShadow="true"
+                                CornerRadius="10"
                                 HeightRequest="350"
                                 IsClippedToBounds="True"
-                                Visual="Default"
+                                InputTransparent="True"
+                                Visual="Material"
                                 WidthRequest="350">
-                                <Grid CascadeInputTransparent="True"  Padding="0">
+                                <Grid Padding="0">
                                     <Image
                                         Aspect="AspectFill"
                                         HeightRequest="350"
