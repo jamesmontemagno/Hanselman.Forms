@@ -14,13 +14,15 @@ namespace Hanselman.Views
     public partial class VideoSeriesPage : ContentPage
     {
         VideoSeriesViewModel VM => (VideoSeriesViewModel)BindingContext;
-        public VideoSeriesPage(VideoSeries series) :this()
+        public VideoSeriesPage(VideoSeries series)
         {
+            InitializeComponent();
             BindingContext = new VideoSeriesViewModel(series);
         }
         public VideoSeriesPage()
         {
             InitializeComponent();
+            BindingContext = new VideoSeriesViewModel();
 
         }
 

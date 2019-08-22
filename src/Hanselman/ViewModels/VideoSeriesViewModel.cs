@@ -7,15 +7,32 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Newtonsoft.Json;
 
 // ClintonRocksmith cheered 100 August 2, 2019
 
 namespace Hanselman.ViewModels
 {
+    [QueryProperty(nameof(Id), nameof(Id))]
+    [QueryProperty(nameof(Title), nameof(Title))]
     public class VideoSeriesViewModel : ViewModelBase
     {
         public ICommand LoadEpisodesCommand { get; set; }
-        public VideoSeries VideoSeries { get; set; }
+
+        string id;
+        public string Id
+        {
+            get => id;
+            set => id = Uri.UnescapeDataString(value);
+        }
+
+        string title;
+        public new string Title
+        {
+            get => title;
+            set => title = Uri.UnescapeDataString(value);
+        }
+
         public List<VideoFeedItem> AllEpisodes { get; set; }
         public ObservableRangeCollection<VideoFeedItem> Episodes { get; set; }
 
@@ -25,9 +42,10 @@ namespace Hanselman.ViewModels
             Episodes = new ObservableRangeCollection<VideoFeedItem>();
             AllEpisodes = new List<VideoFeedItem>();
         }
+
         public VideoSeriesViewModel(VideoSeries videoSeries) : this()
         {
-            VideoSeries = videoSeries;
+            Id = videoSeries.Id;
         }
 
         async Task ExecuteLoadEpisodesCommand()
@@ -41,7 +59,7 @@ namespace Hanselman.ViewModels
 #if DEBUG
                 await Task.Delay(1000);
 #endif
-                var episodes = await DataService.GetVideoEpisodesAsync(VideoSeries.Id, false);
+                var episodes = await DataService.GetVideoEpisodesAsync(Id, false);
 
                 AllEpisodes.Clear();
                 Episodes.Clear();
