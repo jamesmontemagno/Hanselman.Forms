@@ -55,12 +55,14 @@
                 <Setter Property="BackgroundColor" Value="White" />
                 <Setter Property="FontSize" Value="12" />
                 <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="Visual" Value="Material" />
                 <Setter Property="TextColor" Value="{StaticResource PrimaryDarkColor}" />
             </Style>
             <Style x:Key="SubscribeButtonStyle" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource PrimaryDarkColor}" />
                 <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="Visual" Value="Material" />
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="Padding" Value="20,0" />

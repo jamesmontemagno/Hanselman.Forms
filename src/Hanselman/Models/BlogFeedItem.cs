@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hanselman.Helpers;
+using Hanselman.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -52,13 +53,7 @@ namespace Hanselman.Models
 
         async Task ExecuteReadCommand()
         {
-            await Browser.OpenAsync(Link, new BrowserLaunchOptions
-            {
-                LaunchMode = BrowserLaunchMode.SystemPreferred,
-                TitleMode = BrowserTitleMode.Show,
-                PreferredControlColor = Color.White,
-                PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryColor"]
-            });
+            await ViewModelBase.OpenBrowserAsync(Link);
         }
 
         public ImageSource FirstImageSource

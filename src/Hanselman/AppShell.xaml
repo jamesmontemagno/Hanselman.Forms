@@ -24,16 +24,16 @@
         <Tab Title="About" Icon="ic_about.png" Route="tab_about">
             <ShellContent Route="about" Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
         </Tab>
-        <Tab Title="Blog" Shell.NavBarIsVisible="False" Icon="ic_rss.png" Route="tab_blog">
+        <Tab Title="Blog" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_rss.png" Route="tab_blog">
             <ShellContent Route="blog" Title="Blog" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
         </Tab>
-        <Tab Title="Tweets" Shell.NavBarIsVisible="False" Icon="ic_twitter.png" Route="tab_tweets">
+        <Tab Title="Tweets" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_twitter.png" Route="tab_tweets">
             <ShellContent Route="tweets" Title="Tweets" ContentTemplate="{DataTemplate views:TwitterPage}"/>
         </Tab>
-        <Tab Title="Podcasts" Shell.NavBarIsVisible="False" Icon="ic_podcast.png" Route="tab_podcasts">
+        <Tab Title="Podcasts" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_podcast.png" Route="tab_podcasts">
             <ShellContent Route="podcasts" Title="Podcasts" ContentTemplate="{DataTemplate views:PodcastDirectoryPage}"/>
         </Tab>
-        <Tab Title="Videos" Shell.NavBarIsVisible="False" Icon="ic_video.png" Route="tab_videos">
+        <Tab Title="Videos" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_video.png" Route="tab_videos">
             <ShellContent Route="videos" Title="Videos" ContentTemplate="{DataTemplate views:VideoDirectoryPage}"/>
         </Tab>        
     </TabBar>

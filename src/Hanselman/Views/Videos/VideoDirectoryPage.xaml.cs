@@ -40,7 +40,7 @@ namespace Hanselman.Views
         }
 
 
-        private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem is VideoSeries series && series != null)
             {
@@ -52,7 +52,7 @@ namespace Hanselman.Views
             }
         }
 
-        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ((ListView)sender).SelectedItem = null;
         }

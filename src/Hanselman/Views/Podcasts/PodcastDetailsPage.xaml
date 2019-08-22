@@ -10,19 +10,18 @@
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     Shell.NavBarIsVisible="{OnPlatform iOS=true, Default=false}"
-    Title="{Binding Title}"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True"
     mc:Ignorable="d"
     BackgroundColor="{StaticResource WindowBackgroundColor}"
     x:DataType="viewmodels:PodcastDetailsViewModel">
-    <ContentPage.BindingContext>
+    <d:ContentPage.BindingContext>
         <viewmodels:PodcastDetailsViewModel />
-    </ContentPage.BindingContext>
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Share" />
-    </ContentPage.ToolbarItems>
+    </d:ContentPage.BindingContext>
     <ContentPage.Content>
-        <Grid>           
+        <Grid>
             <ListView
+                    BackgroundColor="{StaticResource WindowBackgroundColor}"
                     CachingStrategy="RecycleElement"
                     HasUnevenRows="True"
                     ItemAppearing="ListView_ItemAppearing"
@@ -199,15 +198,28 @@
                             VerticalOptions="End" />
                 </StackLayout>
             </pancake:PancakeView>
-            <ActivityIndicator
-                d:IsRunning="True"
-                d:IsVisible="True"
-                HorizontalOptions="CenterAndExpand"
-                IsRunning="{Binding IsBusy}"
+            <Frame
+                Padding="12"
+                d:IsVisible="true"
+                BackgroundColor="{StaticResource LoadingBackgroundColor}"
+                CornerRadius="10"
+                HasShadow="False"
+                HorizontalOptions="Center"
                 IsVisible="{Binding IsBusy}"
-                VerticalOptions="CenterAndExpand"
-                Visual="Material"
-                Color="{StaticResource AccentColor}" />
+                VerticalOptions="Center"
+                Visual="Material">
+                <StackLayout>
+                    <ActivityIndicator
+                        d:IsRunning="true"
+                        IsRunning="{Binding IsBusy}"
+                        Visual="Material"
+                        Color="{StaticResource LoadingTextColor}" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="Loading podcast..."
+                        TextColor="{StaticResource LoadingTextColor}" />
+                </StackLayout>
+            </Frame>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

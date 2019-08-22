@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Hanselman.Models;
+using MvvmHelpers;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Hanselman.ViewModels
 {
-    public class PodcastEpisodeViewModel
+    public class PodcastEpisodeViewModel : ViewModelBase
     {
         public PodcastEpisode Episode { get; set; }
         public Command PlayPodcastCommand { get; }
-        public string Title { get; set; }
 
         public PodcastEpisodeViewModel()
         {

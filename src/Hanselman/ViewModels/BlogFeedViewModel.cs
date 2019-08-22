@@ -27,14 +27,7 @@ namespace Hanselman.ViewModels
             if (SelectedFeedItem == null)
                 return;
 
-            await Browser.OpenAsync(SelectedFeedItem.Link, new BrowserLaunchOptions
-            {
-                LaunchMode = BrowserLaunchMode.SystemPreferred,
-                TitleMode = BrowserTitleMode.Show,
-                PreferredControlColor = Color.White,
-                PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryColor"]
-            });
-
+            await OpenBrowserAsync(SelectedFeedItem.Link);
             SelectedFeedItem = null;
         }
 

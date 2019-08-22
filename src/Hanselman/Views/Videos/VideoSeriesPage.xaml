@@ -16,6 +16,7 @@
         <viewmodels:VideoSeriesViewModel />
     </d:ContentPage.BindingContext>
     <ListView
+        BackgroundColor="{StaticResource WindowBackgroundColor}"
         x:Name="MyListView"
         CachingStrategy="RecycleElement"
         HasUnevenRows="True"
@@ -25,6 +26,7 @@
         RefreshCommand="{Binding LoadEpisodesCommand}"
         ItemTapped="MyListView_ItemTapped"
         ItemSelected="MyListView_ItemSelected"
+        SelectionMode="Single"
         SeparatorVisibility="None">
         <d:ListView.ItemsSource>
             <x:Array Type="{x:Type model:VideoFeedItem}" />
@@ -50,6 +52,7 @@
                                 <Label Text="{Binding Title}" />
                                 <Label
                                     HorizontalOptions="End"
+                                    VerticalOptions="EndAndExpand"
                                     Text="{Binding Duration, StringFormat='{0:g}'}" />
                             </StackLayout>
                         </Grid>
