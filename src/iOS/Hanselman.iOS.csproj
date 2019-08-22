@@ -29,7 +29,8 @@
     </MtouchI18n>
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
-    <MtouchExtraArgs>--linkskip=ImageCircle.Forms.Plugin</MtouchExtraArgs>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
     <CodesignKey>iPhone Developer</CodesignKey>
     <LangVersion>latest</LangVersion>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
