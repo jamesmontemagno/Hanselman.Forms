@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDisplayName</key>
 	<string>Hanselman</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.refractored.hanselman</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -55,9 +53,11 @@
 	<array>
 		<string>materialdesignicons-webfont.ttf</string>
 	</array>
-  <key>UIBackgroundModes</key>
-  <array>
-    <string>fetch</string>
-  </array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.refractored.hanselmanforms</string>
 </dict>
 </plist>
