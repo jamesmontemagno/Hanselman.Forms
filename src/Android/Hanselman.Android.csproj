@@ -174,7 +174,7 @@
       <Name>Hanselman.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hanselman\Hanselman.csproj">
-      <Project>{028799A4-E2FD-4901-B950-666C00EFBF63}</Project>
+      <Project>{028799a4-e2fd-4901-b950-666c00efbf63}</Project>
       <Name>Hanselman</Name>
     </ProjectReference>
   </ItemGroup>

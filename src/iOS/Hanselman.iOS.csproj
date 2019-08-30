@@ -76,7 +76,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchUseLlvm>true</MtouchUseLlvm>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
-    <MtouchExtraArgs>--linkskip=Hanselman.Core --linkskip=Hanselman.Shared</MtouchExtraArgs>
+    <MtouchExtraArgs>--linkskip=Hanselman --linkskip=Hanselman.Shared</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>full</DebugType>
