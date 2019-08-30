@@ -24,11 +24,18 @@ namespace Hanselman.Models
 
         async Task OpenSocialUrl()
         {
-            if (Url.Contains("twitter"))
+            if (DeviceInfo.Platform == DevicePlatform.iOS && Url.Contains("twitter"))
             {
-                var launch = DependencyService.Get<ILaunchTwitter>();
-                if (launch?.OpenUserName("shanselman") ?? false)
+                if(await Launcher.CanOpenAsync("twitter://"))
+                {
+                    await Launcher.OpenAsync("twitter://user?screen_name=shanselman");
                     return;
+                }
+                else if(await Launcher.CanOpenAsync("tweetbot://"))
+                {
+                    await Launcher.OpenAsync("tweetbot://shanselman/timeline");
+                    return;
+                }
             }
             await ViewModelBase.OpenBrowserAsync(Url);
         }
