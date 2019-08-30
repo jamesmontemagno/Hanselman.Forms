@@ -46,13 +46,15 @@
     <AndroidLinkTool>r8</AndroidLinkTool>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>full</DebugType>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <ConsolePause>false</ConsolePause>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
     <AndroidDexTool>d8</AndroidDexTool>
