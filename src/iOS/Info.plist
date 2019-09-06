@@ -59,5 +59,14 @@
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.refractored.hanselmanforms</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>appcenter-${APP_SECRET}</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
