@@ -7,6 +7,10 @@ using Shiny.Jobs;
 using MediaManager;
 using MediaManager.Playback;
 using Hanselman.Helpers;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
@@ -31,9 +35,20 @@ namespace Hanselman
                 MainPage = new AppShell();
         }
 
+        const string AppCenteriOS = "APPCENTER_IOS";
+        const string AppCenterAndroid = "APPCENTER_ANDROID";
+        const string AppCenterUWP = "APPCENTER_UWP";
+
         protected override void OnStart()
         {
-
+#if !DEBUG
+            AppCenter.Start($"ios={AppCenteriOS};" +
+                $"android={AppCenterAndroid};" +
+                $"uwp={AppCenterUWP}", 
+                typeof(Analytics), 
+                typeof(Crashes),
+                typeof(Distribute));
+#endif
             // Handle when your app starts
             CrossMediaManager.Current.PositionChanged += PlaybackPositionChanged;
         }
