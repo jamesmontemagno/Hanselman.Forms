@@ -4930,6 +4930,25 @@ namespace HanselmanAndroid
 			global::MediaManager.Forms.Resource.Styleable.ViewStubCompat_android_id = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_id;
 			global::MediaManager.Forms.Resource.Styleable.ViewStubCompat_android_inflatedId = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::MediaManager.Forms.Resource.Styleable.ViewStubCompat_android_layout = global::HanselmanAndroid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_dialog_actioned_on_disabled_toast = global::HanselmanAndroid.Resource.String.appcenter_distribute_dialog_actioned_on_disabled_toast;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_download_progress_number_format = global::HanselmanAndroid.Resource.String.appcenter_distribute_download_progress_number_format;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_downloading_mandatory_update = global::HanselmanAndroid.Resource.String.appcenter_distribute_downloading_mandatory_update;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install = global::HanselmanAndroid.Resource.String.appcenter_distribute_install;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_ready_message = global::HanselmanAndroid.Resource.String.appcenter_distribute_install_ready_message;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_install_ready_title = global::HanselmanAndroid.Resource.String.appcenter_distribute_install_ready_title;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_notification_category = global::HanselmanAndroid.Resource.String.appcenter_distribute_notification_category;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_unknown_sources_dialog_message = global::HanselmanAndroid.Resource.String.appcenter_distribute_unknown_sources_dialog_message;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_unknown_sources_dialog_settings = global::HanselmanAndroid.Resource.String.appcenter_distribute_unknown_sources_dialog_settings;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_download = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_dialog_download;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_message_mandatory = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_dialog_message_mandatory;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_message_optional = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_dialog_message_optional;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_postpone = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_dialog_postpone;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_title = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_dialog_title;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_dialog_view_release_notes = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_dialog_view_release_notes;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_ignore = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_failed_dialog_ignore;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_message = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_failed_dialog_message;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_reinstall = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_failed_dialog_reinstall;
+			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_title = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_failed_dialog_title;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::HanselmanAndroid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::HanselmanAndroid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::HanselmanAndroid.Resource.Attribute.font;
@@ -15618,230 +15637,287 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7F0C0028
 			public const int appbar_scrolling_view_behavior = 2131492904;
 			
+			// aapt resource value: 0x7F0C0029
+			public const int appcenter_distribute_dialog_actioned_on_disabled_toast = 2131492905;
+			
+			// aapt resource value: 0x7F0C002B
+			public const int appcenter_distribute_downloading_mandatory_update = 2131492907;
+			
+			// aapt resource value: 0x7F0C002A
+			public const int appcenter_distribute_download_progress_number_format = 2131492906;
+			
+			// aapt resource value: 0x7F0C002C
+			public const int appcenter_distribute_install = 2131492908;
+			
+			// aapt resource value: 0x7F0C002D
+			public const int appcenter_distribute_install_ready_message = 2131492909;
+			
+			// aapt resource value: 0x7F0C002E
+			public const int appcenter_distribute_install_ready_title = 2131492910;
+			
+			// aapt resource value: 0x7F0C002F
+			public const int appcenter_distribute_notification_category = 2131492911;
+			
+			// aapt resource value: 0x7F0C0030
+			public const int appcenter_distribute_unknown_sources_dialog_message = 2131492912;
+			
+			// aapt resource value: 0x7F0C0031
+			public const int appcenter_distribute_unknown_sources_dialog_settings = 2131492913;
+			
+			// aapt resource value: 0x7F0C0032
+			public const int appcenter_distribute_update_dialog_download = 2131492914;
+			
+			// aapt resource value: 0x7F0C0033
+			public const int appcenter_distribute_update_dialog_message_mandatory = 2131492915;
+			
+			// aapt resource value: 0x7F0C0034
+			public const int appcenter_distribute_update_dialog_message_optional = 2131492916;
+			
+			// aapt resource value: 0x7F0C0035
+			public const int appcenter_distribute_update_dialog_postpone = 2131492917;
+			
+			// aapt resource value: 0x7F0C0036
+			public const int appcenter_distribute_update_dialog_title = 2131492918;
+			
+			// aapt resource value: 0x7F0C0037
+			public const int appcenter_distribute_update_dialog_view_release_notes = 2131492919;
+			
+			// aapt resource value: 0x7F0C0038
+			public const int appcenter_distribute_update_failed_dialog_ignore = 2131492920;
+			
+			// aapt resource value: 0x7F0C0039
+			public const int appcenter_distribute_update_failed_dialog_message = 2131492921;
+			
+			// aapt resource value: 0x7F0C003A
+			public const int appcenter_distribute_update_failed_dialog_reinstall = 2131492922;
+			
+			// aapt resource value: 0x7F0C003B
+			public const int appcenter_distribute_update_failed_dialog_title = 2131492923;
+			
 			// aapt resource value: 0x7F0C0027
 			public const int app_name = 2131492903;
 			
-			// aapt resource value: 0x7F0C0029
-			public const int bottom_sheet_behavior = 2131492905;
-			
-			// aapt resource value: 0x7F0C002A
-			public const int character_counter_content_description = 2131492906;
-			
-			// aapt resource value: 0x7F0C002B
-			public const int character_counter_pattern = 2131492907;
-			
-			// aapt resource value: 0x7F0C002C
-			public const int exo_controls_fastforward_description = 2131492908;
-			
-			// aapt resource value: 0x7F0C002D
-			public const int exo_controls_fullscreen_description = 2131492909;
-			
-			// aapt resource value: 0x7F0C002E
-			public const int exo_controls_next_description = 2131492910;
-			
-			// aapt resource value: 0x7F0C002F
-			public const int exo_controls_pause_description = 2131492911;
-			
-			// aapt resource value: 0x7F0C0030
-			public const int exo_controls_play_description = 2131492912;
-			
-			// aapt resource value: 0x7F0C0031
-			public const int exo_controls_previous_description = 2131492913;
-			
-			// aapt resource value: 0x7F0C0032
-			public const int exo_controls_repeat_all_description = 2131492914;
-			
-			// aapt resource value: 0x7F0C0033
-			public const int exo_controls_repeat_off_description = 2131492915;
-			
-			// aapt resource value: 0x7F0C0034
-			public const int exo_controls_repeat_one_description = 2131492916;
-			
-			// aapt resource value: 0x7F0C0035
-			public const int exo_controls_rewind_description = 2131492917;
-			
-			// aapt resource value: 0x7F0C0036
-			public const int exo_controls_shuffle_description = 2131492918;
-			
-			// aapt resource value: 0x7F0C0037
-			public const int exo_controls_stop_description = 2131492919;
-			
-			// aapt resource value: 0x7F0C0038
-			public const int exo_download_completed = 2131492920;
-			
-			// aapt resource value: 0x7F0C0039
-			public const int exo_download_description = 2131492921;
-			
-			// aapt resource value: 0x7F0C003A
-			public const int exo_download_downloading = 2131492922;
-			
-			// aapt resource value: 0x7F0C003B
-			public const int exo_download_failed = 2131492923;
-			
 			// aapt resource value: 0x7F0C003C
-			public const int exo_download_notification_channel_name = 2131492924;
+			public const int bottom_sheet_behavior = 2131492924;
 			
 			// aapt resource value: 0x7F0C003D
-			public const int exo_download_removing = 2131492925;
+			public const int character_counter_content_description = 2131492925;
 			
 			// aapt resource value: 0x7F0C003E
-			public const int exo_item_list = 2131492926;
+			public const int character_counter_pattern = 2131492926;
 			
 			// aapt resource value: 0x7F0C003F
-			public const int exo_media_action_repeat_all_description = 2131492927;
+			public const int exo_controls_fastforward_description = 2131492927;
 			
 			// aapt resource value: 0x7F0C0040
-			public const int exo_media_action_repeat_off_description = 2131492928;
+			public const int exo_controls_fullscreen_description = 2131492928;
 			
 			// aapt resource value: 0x7F0C0041
-			public const int exo_media_action_repeat_one_description = 2131492929;
+			public const int exo_controls_next_description = 2131492929;
 			
 			// aapt resource value: 0x7F0C0042
-			public const int exo_track_bitrate = 2131492930;
+			public const int exo_controls_pause_description = 2131492930;
 			
 			// aapt resource value: 0x7F0C0043
-			public const int exo_track_mono = 2131492931;
+			public const int exo_controls_play_description = 2131492931;
 			
 			// aapt resource value: 0x7F0C0044
-			public const int exo_track_resolution = 2131492932;
+			public const int exo_controls_previous_description = 2131492932;
 			
 			// aapt resource value: 0x7F0C0045
-			public const int exo_track_selection_auto = 2131492933;
+			public const int exo_controls_repeat_all_description = 2131492933;
 			
 			// aapt resource value: 0x7F0C0046
-			public const int exo_track_selection_none = 2131492934;
+			public const int exo_controls_repeat_off_description = 2131492934;
 			
 			// aapt resource value: 0x7F0C0047
-			public const int exo_track_selection_title_audio = 2131492935;
+			public const int exo_controls_repeat_one_description = 2131492935;
 			
 			// aapt resource value: 0x7F0C0048
-			public const int exo_track_selection_title_text = 2131492936;
+			public const int exo_controls_rewind_description = 2131492936;
 			
 			// aapt resource value: 0x7F0C0049
-			public const int exo_track_selection_title_video = 2131492937;
+			public const int exo_controls_shuffle_description = 2131492937;
 			
 			// aapt resource value: 0x7F0C004A
-			public const int exo_track_stereo = 2131492938;
+			public const int exo_controls_stop_description = 2131492938;
 			
 			// aapt resource value: 0x7F0C004B
-			public const int exo_track_surround = 2131492939;
+			public const int exo_download_completed = 2131492939;
 			
 			// aapt resource value: 0x7F0C004C
-			public const int exo_track_surround_5_point_1 = 2131492940;
+			public const int exo_download_description = 2131492940;
 			
 			// aapt resource value: 0x7F0C004D
-			public const int exo_track_surround_7_point_1 = 2131492941;
+			public const int exo_download_downloading = 2131492941;
 			
 			// aapt resource value: 0x7F0C004E
-			public const int exo_track_unknown = 2131492942;
+			public const int exo_download_failed = 2131492942;
 			
 			// aapt resource value: 0x7F0C004F
-			public const int fab_transformation_scrim_behavior = 2131492943;
+			public const int exo_download_notification_channel_name = 2131492943;
 			
 			// aapt resource value: 0x7F0C0050
-			public const int fab_transformation_sheet_behavior = 2131492944;
+			public const int exo_download_removing = 2131492944;
 			
 			// aapt resource value: 0x7F0C0051
-			public const int hello = 2131492945;
+			public const int exo_item_list = 2131492945;
 			
 			// aapt resource value: 0x7F0C0052
-			public const int hide_bottom_view_on_scroll_behavior = 2131492946;
+			public const int exo_media_action_repeat_all_description = 2131492946;
 			
 			// aapt resource value: 0x7F0C0053
-			public const int mr_button_content_description = 2131492947;
+			public const int exo_media_action_repeat_off_description = 2131492947;
 			
 			// aapt resource value: 0x7F0C0054
-			public const int mr_cast_button_connected = 2131492948;
+			public const int exo_media_action_repeat_one_description = 2131492948;
 			
 			// aapt resource value: 0x7F0C0055
-			public const int mr_cast_button_connecting = 2131492949;
+			public const int exo_track_bitrate = 2131492949;
 			
 			// aapt resource value: 0x7F0C0056
-			public const int mr_cast_button_disconnected = 2131492950;
+			public const int exo_track_mono = 2131492950;
 			
 			// aapt resource value: 0x7F0C0057
-			public const int mr_cast_dialog_title_view_placeholder = 2131492951;
+			public const int exo_track_resolution = 2131492951;
 			
 			// aapt resource value: 0x7F0C0058
-			public const int mr_chooser_searching = 2131492952;
+			public const int exo_track_selection_auto = 2131492952;
 			
 			// aapt resource value: 0x7F0C0059
-			public const int mr_chooser_title = 2131492953;
+			public const int exo_track_selection_none = 2131492953;
 			
 			// aapt resource value: 0x7F0C005A
-			public const int mr_controller_album_art = 2131492954;
+			public const int exo_track_selection_title_audio = 2131492954;
 			
 			// aapt resource value: 0x7F0C005B
-			public const int mr_controller_casting_screen = 2131492955;
+			public const int exo_track_selection_title_text = 2131492955;
 			
 			// aapt resource value: 0x7F0C005C
-			public const int mr_controller_close_description = 2131492956;
+			public const int exo_track_selection_title_video = 2131492956;
 			
 			// aapt resource value: 0x7F0C005D
-			public const int mr_controller_collapse_group = 2131492957;
+			public const int exo_track_stereo = 2131492957;
 			
 			// aapt resource value: 0x7F0C005E
-			public const int mr_controller_disconnect = 2131492958;
+			public const int exo_track_surround = 2131492958;
 			
 			// aapt resource value: 0x7F0C005F
-			public const int mr_controller_expand_group = 2131492959;
+			public const int exo_track_surround_5_point_1 = 2131492959;
 			
 			// aapt resource value: 0x7F0C0060
-			public const int mr_controller_no_info_available = 2131492960;
+			public const int exo_track_surround_7_point_1 = 2131492960;
 			
 			// aapt resource value: 0x7F0C0061
-			public const int mr_controller_no_media_selected = 2131492961;
+			public const int exo_track_unknown = 2131492961;
 			
 			// aapt resource value: 0x7F0C0062
-			public const int mr_controller_pause = 2131492962;
+			public const int fab_transformation_scrim_behavior = 2131492962;
 			
 			// aapt resource value: 0x7F0C0063
-			public const int mr_controller_play = 2131492963;
+			public const int fab_transformation_sheet_behavior = 2131492963;
 			
 			// aapt resource value: 0x7F0C0064
-			public const int mr_controller_stop = 2131492964;
+			public const int hello = 2131492964;
 			
 			// aapt resource value: 0x7F0C0065
-			public const int mr_controller_stop_casting = 2131492965;
+			public const int hide_bottom_view_on_scroll_behavior = 2131492965;
 			
 			// aapt resource value: 0x7F0C0066
-			public const int mr_controller_volume_slider = 2131492966;
+			public const int mr_button_content_description = 2131492966;
 			
 			// aapt resource value: 0x7F0C0067
-			public const int mr_dialog_device_header = 2131492967;
+			public const int mr_cast_button_connected = 2131492967;
 			
 			// aapt resource value: 0x7F0C0068
-			public const int mr_dialog_route_header = 2131492968;
+			public const int mr_cast_button_connecting = 2131492968;
 			
 			// aapt resource value: 0x7F0C0069
-			public const int mr_system_route_name = 2131492969;
+			public const int mr_cast_button_disconnected = 2131492969;
 			
 			// aapt resource value: 0x7F0C006A
-			public const int mr_user_route_category_name = 2131492970;
+			public const int mr_cast_dialog_title_view_placeholder = 2131492970;
 			
 			// aapt resource value: 0x7F0C006B
-			public const int mtrl_chip_close_icon_content_description = 2131492971;
+			public const int mr_chooser_searching = 2131492971;
 			
 			// aapt resource value: 0x7F0C006C
-			public const int password_toggle_content_description = 2131492972;
+			public const int mr_chooser_title = 2131492972;
 			
 			// aapt resource value: 0x7F0C006D
-			public const int path_password_eye = 2131492973;
+			public const int mr_controller_album_art = 2131492973;
 			
 			// aapt resource value: 0x7F0C006E
-			public const int path_password_eye_mask_strike_through = 2131492974;
+			public const int mr_controller_casting_screen = 2131492974;
 			
 			// aapt resource value: 0x7F0C006F
-			public const int path_password_eye_mask_visible = 2131492975;
+			public const int mr_controller_close_description = 2131492975;
 			
 			// aapt resource value: 0x7F0C0070
-			public const int path_password_strike_through = 2131492976;
+			public const int mr_controller_collapse_group = 2131492976;
 			
 			// aapt resource value: 0x7F0C0071
-			public const int search_menu_title = 2131492977;
+			public const int mr_controller_disconnect = 2131492977;
 			
 			// aapt resource value: 0x7F0C0072
-			public const int status_bar_notification_info_overflow = 2131492978;
+			public const int mr_controller_expand_group = 2131492978;
+			
+			// aapt resource value: 0x7F0C0073
+			public const int mr_controller_no_info_available = 2131492979;
+			
+			// aapt resource value: 0x7F0C0074
+			public const int mr_controller_no_media_selected = 2131492980;
+			
+			// aapt resource value: 0x7F0C0075
+			public const int mr_controller_pause = 2131492981;
+			
+			// aapt resource value: 0x7F0C0076
+			public const int mr_controller_play = 2131492982;
+			
+			// aapt resource value: 0x7F0C0077
+			public const int mr_controller_stop = 2131492983;
+			
+			// aapt resource value: 0x7F0C0078
+			public const int mr_controller_stop_casting = 2131492984;
+			
+			// aapt resource value: 0x7F0C0079
+			public const int mr_controller_volume_slider = 2131492985;
+			
+			// aapt resource value: 0x7F0C007A
+			public const int mr_dialog_device_header = 2131492986;
+			
+			// aapt resource value: 0x7F0C007B
+			public const int mr_dialog_route_header = 2131492987;
+			
+			// aapt resource value: 0x7F0C007C
+			public const int mr_system_route_name = 2131492988;
+			
+			// aapt resource value: 0x7F0C007D
+			public const int mr_user_route_category_name = 2131492989;
+			
+			// aapt resource value: 0x7F0C007E
+			public const int mtrl_chip_close_icon_content_description = 2131492990;
+			
+			// aapt resource value: 0x7F0C007F
+			public const int password_toggle_content_description = 2131492991;
+			
+			// aapt resource value: 0x7F0C0080
+			public const int path_password_eye = 2131492992;
+			
+			// aapt resource value: 0x7F0C0081
+			public const int path_password_eye_mask_strike_through = 2131492993;
+			
+			// aapt resource value: 0x7F0C0082
+			public const int path_password_eye_mask_visible = 2131492994;
+			
+			// aapt resource value: 0x7F0C0083
+			public const int path_password_strike_through = 2131492995;
+			
+			// aapt resource value: 0x7F0C0084
+			public const int search_menu_title = 2131492996;
+			
+			// aapt resource value: 0x7F0C0085
+			public const int status_bar_notification_info_overflow = 2131492997;
 			
 			static String()
 			{
