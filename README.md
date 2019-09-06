@@ -24,6 +24,15 @@ To learn about developing native iOS, Android, and Windows apps in C# with Xamar
 | Azure DevOps | App Build       | macOS    | [![Build status](https://dev.azure.com/jamesmontemagno/Hanselman.Forms/_apis/build/status/Hanselman.Forms%20App)](https://dev.azure.com/jamesmontemagno/Hanselman.Forms/_build/latest?definitionId=30) |                                           |
 | Azure DevOps | Functions Build | Windows  | [![Build status](https://dev.azure.com/jamesmontemagno/Hanselman.Forms/_apis/build/status/Hanselman.Forms%20-%20Functions%20CI)](https://dev.azure.com/jamesmontemagno/Hanselman.Forms/_build/latest?definitionId=35) |
 
+## Download
+
+Development build available:
+
+| Source | Platform | QR Code |                                                          
+|--------------|-----------------|----------------|
+| App Center | [Android](https://install.appcenter.ms/orgs/hanselman.forms/apps/hanselman.forms-android/distribution_groups/public%20testers) | ![](art/download_android.png) |
+
+
 ### Made Possible By
 * [GlideX](https://github.com/jonathanpeppers/glidex)
 * [Humanizer](https://github.com/Humanizr/Humanizer)
