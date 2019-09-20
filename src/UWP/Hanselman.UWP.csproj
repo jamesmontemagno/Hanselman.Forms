@@ -108,6 +108,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hm_full.jpg" />
+    <Content Include="ic_about.png" />
+    <Content Include="ic_podcast.png" />
+    <Content Include="ic_rss.png" />
+    <Content Include="ic_twitter.png" />
+    <Content Include="ic_video.png" />
     <Content Include="instagram.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

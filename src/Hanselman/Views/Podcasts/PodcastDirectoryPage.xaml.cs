@@ -26,9 +26,7 @@ namespace Hanselman.Views
         {
             base.OnAppearing();
 
-            if (DeviceInfo.Platform != DevicePlatform.UWP)
-                OnPageVisible();
-
+            OnPageVisible();
         }
 
         public void OnPageVisible()

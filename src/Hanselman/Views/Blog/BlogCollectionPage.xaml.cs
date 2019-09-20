@@ -53,11 +53,12 @@ namespace Hanselman.Views
             gil.Span = orientation == DisplayOrientation.Portrait ? 1 : 2;
         }
 
+       
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if (DeviceInfo.Platform != DevicePlatform.UWP)
-                OnPageVisible();
+            OnPageVisible();
         }
 
         public void OnPageVisible()
