@@ -30,11 +30,11 @@
         <Tab Title="Tweets" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_twitter.png" Route="tab_tweets">
             <ShellContent Route="tweets" Title="Tweets" ContentTemplate="{DataTemplate views:TwitterPage}"/>
         </Tab>
-        <Tab Title="Podcasts" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_podcast.png" Route="tab_podcasts">
+        <!--<Tab Title="Podcasts" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_podcast.png" Route="tab_podcasts">
             <ShellContent Route="podcasts" Title="Podcasts" ContentTemplate="{DataTemplate views:PodcastDirectoryPage}"/>
-        </Tab>
-        <Tab Title="Videos" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_video.png" Route="tab_videos">
-            <ShellContent Route="videos" Title="Videos" ContentTemplate="{DataTemplate views:VideoDirectoryPage}"/>
+        </Tab>-->
+        <Tab Title="Media" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_video.png" Route="tab_media">
+            <ShellContent Route="media" Title="Media" ContentTemplate="{DataTemplate views:MediaDirectoryPage}"/>
         </Tab>        
     </TabBar>
 

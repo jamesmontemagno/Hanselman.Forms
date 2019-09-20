@@ -9,6 +9,16 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Images\book-aspnet4-thb.png" />
+    <None Remove="Images\book-mvc4-thb.png" />
+    <None Remove="Images\book-rh-thb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\book-aspnet4-thb.png" />
+    <EmbeddedResource Include="Images\book-mvc4-thb.png" />
+    <EmbeddedResource Include="Images\book-rh-thb.png" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.AppCenter" Version="2.1.1" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.1.1" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.1.1" />
@@ -28,5 +38,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hanselman.Shared.Models\Hanselman.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Media\MediaDirectoryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
