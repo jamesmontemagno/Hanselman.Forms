@@ -23,11 +23,9 @@
         <viewmodels:BlogFeedViewModel />
     </d:ContentPage.BindingContext>
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <pulltorefresh:PullToRefreshLayout
-            IsPullToRefreshEnabled="True"
-            IsRefreshing="{Binding IsBusy}"
-            RefreshColor="Black"
-            RefreshCommand="{Binding RefreshCommand}">
+        <RefreshView IsRefreshing="{Binding IsBusy}"
+                     RefreshColor="Black"
+                     Command="{Binding RefreshCommand}">
             <CollectionView
                 x:Name="CollectionViewBlog"
                 HorizontalOptions="FillAndExpand"
@@ -135,7 +133,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-        </pulltorefresh:PullToRefreshLayout>
+        </RefreshView>
         <Frame
             Padding="12"
             d:IsVisible="true"

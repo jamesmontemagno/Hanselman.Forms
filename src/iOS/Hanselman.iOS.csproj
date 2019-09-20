@@ -301,9 +301,6 @@
     <PackageReference Include="Refractored.MvvmHelpers">
       <Version>1.5.1-beta</Version>
     </PackageReference>
-    <PackageReference Include="Refractored.XamForms.PullToRefresh">
-      <Version>2.4.1.1-beta</Version>
-    </PackageReference>
     <PackageReference Include="Shiny.Core">
       <Version>1.0.0.400-beta</Version>
     </PackageReference>
