@@ -297,27 +297,27 @@
       <Version>1.3.0</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.8.8" />
+    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.8.9" />
     <PackageReference Include="Refractored.MvvmHelpers">
-      <Version>1.3.0</Version>
+      <Version>1.5.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Refractored.XamForms.PullToRefresh">
       <Version>2.4.1.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Core">
-      <Version>1.0.0.332-beta</Version>
+      <Version>1.0.0.400-beta</Version>
     </PackageReference>
     <PackageReference Include="System.Json">
       <Version>4.5.0</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="Xamarin.Forms.PancakeView">
-      <Version>1.1.8</Version>
+      <Version>1.2.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.819712-pre2" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.1.0.673156</Version>
+      <Version>4.3.0.819712-pre2</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

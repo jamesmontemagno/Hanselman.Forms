@@ -29,11 +29,7 @@ namespace Hanselman
 
             Barrel.ApplicationId = AppInfo.PackageName;
 
-            // The root page of your application
-            if (DeviceInfo.Platform == DevicePlatform.UWP)
-                MainPage = new HomePage();
-            else
-                MainPage = new AppShell();
+            MainPage = new AppShell();
         }
 
         const string AppCenteriOS = "APPCENTER_IOS";
@@ -54,7 +50,7 @@ namespace Hanselman
             CrossMediaManager.Current.PositionChanged += PlaybackPositionChanged;
         }
 
-        void PlaybackPositionChanged(object sender, PositionChangedEventArgs e)
+        void PlaybackPositionChanged(object sender, MediaManager.Playback.PositionChangedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(Settings.PlaybackId) || !CrossMediaManager.Current.IsPlaying())
                 return;

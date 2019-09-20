@@ -3228,7 +3228,6 @@ namespace HanselmanAndroid
 			global::MediaManager.Forms.Resource.Id.listMode = global::HanselmanAndroid.Resource.Id.listMode;
 			global::MediaManager.Forms.Resource.Id.list_item = global::HanselmanAndroid.Resource.Id.list_item;
 			global::MediaManager.Forms.Resource.Id.main_appbar = global::HanselmanAndroid.Resource.Id.main_appbar;
-			global::MediaManager.Forms.Resource.Id.main_scrollview = global::HanselmanAndroid.Resource.Id.main_scrollview;
 			global::MediaManager.Forms.Resource.Id.main_tablayout = global::HanselmanAndroid.Resource.Id.main_tablayout;
 			global::MediaManager.Forms.Resource.Id.main_toolbar = global::HanselmanAndroid.Resource.Id.main_toolbar;
 			global::MediaManager.Forms.Resource.Id.masked = global::HanselmanAndroid.Resource.Id.masked;
@@ -3326,7 +3325,6 @@ namespace HanselmanAndroid
 			global::MediaManager.Forms.Resource.Id.select_dialog_listview = global::HanselmanAndroid.Resource.Id.select_dialog_listview;
 			global::MediaManager.Forms.Resource.Id.selected = global::HanselmanAndroid.Resource.Id.selected;
 			global::MediaManager.Forms.Resource.Id.shellcontent_appbar = global::HanselmanAndroid.Resource.Id.shellcontent_appbar;
-			global::MediaManager.Forms.Resource.Id.shellcontent_scrollview = global::HanselmanAndroid.Resource.Id.shellcontent_scrollview;
 			global::MediaManager.Forms.Resource.Id.shellcontent_toolbar = global::HanselmanAndroid.Resource.Id.shellcontent_toolbar;
 			global::MediaManager.Forms.Resource.Id.shortcut = global::HanselmanAndroid.Resource.Id.shortcut;
 			global::MediaManager.Forms.Resource.Id.showCustom = global::HanselmanAndroid.Resource.Id.showCustom;
@@ -4949,6 +4947,201 @@ namespace HanselmanAndroid
 			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_message = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_failed_dialog_message;
 			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_reinstall = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_failed_dialog_reinstall;
 			global::Microsoft.AppCenter.Distribute.Resource.String.appcenter_distribute_update_failed_dialog_title = global::HanselmanAndroid.Resource.String.appcenter_distribute_update_failed_dialog_title;
+			global::Shiny.Resource.Attribute.alpha = global::HanselmanAndroid.Resource.Attribute.alpha;
+			global::Shiny.Resource.Attribute.coordinatorLayoutStyle = global::HanselmanAndroid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Shiny.Resource.Attribute.font = global::HanselmanAndroid.Resource.Attribute.font;
+			global::Shiny.Resource.Attribute.fontProviderAuthority = global::HanselmanAndroid.Resource.Attribute.fontProviderAuthority;
+			global::Shiny.Resource.Attribute.fontProviderCerts = global::HanselmanAndroid.Resource.Attribute.fontProviderCerts;
+			global::Shiny.Resource.Attribute.fontProviderFetchStrategy = global::HanselmanAndroid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Shiny.Resource.Attribute.fontProviderFetchTimeout = global::HanselmanAndroid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Shiny.Resource.Attribute.fontProviderPackage = global::HanselmanAndroid.Resource.Attribute.fontProviderPackage;
+			global::Shiny.Resource.Attribute.fontProviderQuery = global::HanselmanAndroid.Resource.Attribute.fontProviderQuery;
+			global::Shiny.Resource.Attribute.fontStyle = global::HanselmanAndroid.Resource.Attribute.fontStyle;
+			global::Shiny.Resource.Attribute.fontVariationSettings = global::HanselmanAndroid.Resource.Attribute.fontVariationSettings;
+			global::Shiny.Resource.Attribute.fontWeight = global::HanselmanAndroid.Resource.Attribute.fontWeight;
+			global::Shiny.Resource.Attribute.keylines = global::HanselmanAndroid.Resource.Attribute.keylines;
+			global::Shiny.Resource.Attribute.layout_anchor = global::HanselmanAndroid.Resource.Attribute.layout_anchor;
+			global::Shiny.Resource.Attribute.layout_anchorGravity = global::HanselmanAndroid.Resource.Attribute.layout_anchorGravity;
+			global::Shiny.Resource.Attribute.layout_behavior = global::HanselmanAndroid.Resource.Attribute.layout_behavior;
+			global::Shiny.Resource.Attribute.layout_dodgeInsetEdges = global::HanselmanAndroid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Shiny.Resource.Attribute.layout_insetEdge = global::HanselmanAndroid.Resource.Attribute.layout_insetEdge;
+			global::Shiny.Resource.Attribute.layout_keyline = global::HanselmanAndroid.Resource.Attribute.layout_keyline;
+			global::Shiny.Resource.Attribute.statusBarBackground = global::HanselmanAndroid.Resource.Attribute.statusBarBackground;
+			global::Shiny.Resource.Attribute.ttcIndex = global::HanselmanAndroid.Resource.Attribute.ttcIndex;
+			global::Shiny.Resource.Color.notification_action_color_filter = global::HanselmanAndroid.Resource.Color.notification_action_color_filter;
+			global::Shiny.Resource.Color.notification_icon_bg_color = global::HanselmanAndroid.Resource.Color.notification_icon_bg_color;
+			global::Shiny.Resource.Color.notification_material_background_media_default_color = global::HanselmanAndroid.Resource.Color.notification_material_background_media_default_color;
+			global::Shiny.Resource.Color.primary_text_default_material_dark = global::HanselmanAndroid.Resource.Color.primary_text_default_material_dark;
+			global::Shiny.Resource.Color.ripple_material_light = global::HanselmanAndroid.Resource.Color.ripple_material_light;
+			global::Shiny.Resource.Color.secondary_text_default_material_dark = global::HanselmanAndroid.Resource.Color.secondary_text_default_material_dark;
+			global::Shiny.Resource.Color.secondary_text_default_material_light = global::HanselmanAndroid.Resource.Color.secondary_text_default_material_light;
+			global::Shiny.Resource.Dimension.compat_button_inset_horizontal_material = global::HanselmanAndroid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Shiny.Resource.Dimension.compat_button_inset_vertical_material = global::HanselmanAndroid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Shiny.Resource.Dimension.compat_button_padding_horizontal_material = global::HanselmanAndroid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Shiny.Resource.Dimension.compat_button_padding_vertical_material = global::HanselmanAndroid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Shiny.Resource.Dimension.compat_control_corner_material = global::HanselmanAndroid.Resource.Dimension.compat_control_corner_material;
+			global::Shiny.Resource.Dimension.compat_notification_large_icon_max_height = global::HanselmanAndroid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Shiny.Resource.Dimension.compat_notification_large_icon_max_width = global::HanselmanAndroid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Shiny.Resource.Dimension.notification_action_icon_size = global::HanselmanAndroid.Resource.Dimension.notification_action_icon_size;
+			global::Shiny.Resource.Dimension.notification_action_text_size = global::HanselmanAndroid.Resource.Dimension.notification_action_text_size;
+			global::Shiny.Resource.Dimension.notification_big_circle_margin = global::HanselmanAndroid.Resource.Dimension.notification_big_circle_margin;
+			global::Shiny.Resource.Dimension.notification_content_margin_start = global::HanselmanAndroid.Resource.Dimension.notification_content_margin_start;
+			global::Shiny.Resource.Dimension.notification_large_icon_height = global::HanselmanAndroid.Resource.Dimension.notification_large_icon_height;
+			global::Shiny.Resource.Dimension.notification_large_icon_width = global::HanselmanAndroid.Resource.Dimension.notification_large_icon_width;
+			global::Shiny.Resource.Dimension.notification_main_column_padding_top = global::HanselmanAndroid.Resource.Dimension.notification_main_column_padding_top;
+			global::Shiny.Resource.Dimension.notification_media_narrow_margin = global::HanselmanAndroid.Resource.Dimension.notification_media_narrow_margin;
+			global::Shiny.Resource.Dimension.notification_right_icon_size = global::HanselmanAndroid.Resource.Dimension.notification_right_icon_size;
+			global::Shiny.Resource.Dimension.notification_right_side_padding_top = global::HanselmanAndroid.Resource.Dimension.notification_right_side_padding_top;
+			global::Shiny.Resource.Dimension.notification_small_icon_background_padding = global::HanselmanAndroid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Shiny.Resource.Dimension.notification_small_icon_size_as_large = global::HanselmanAndroid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Shiny.Resource.Dimension.notification_subtext_size = global::HanselmanAndroid.Resource.Dimension.notification_subtext_size;
+			global::Shiny.Resource.Dimension.notification_top_pad = global::HanselmanAndroid.Resource.Dimension.notification_top_pad;
+			global::Shiny.Resource.Dimension.notification_top_pad_large_text = global::HanselmanAndroid.Resource.Dimension.notification_top_pad_large_text;
+			global::Shiny.Resource.Dimension.subtitle_corner_radius = global::HanselmanAndroid.Resource.Dimension.subtitle_corner_radius;
+			global::Shiny.Resource.Dimension.subtitle_outline_width = global::HanselmanAndroid.Resource.Dimension.subtitle_outline_width;
+			global::Shiny.Resource.Dimension.subtitle_shadow_offset = global::HanselmanAndroid.Resource.Dimension.subtitle_shadow_offset;
+			global::Shiny.Resource.Dimension.subtitle_shadow_radius = global::HanselmanAndroid.Resource.Dimension.subtitle_shadow_radius;
+			global::Shiny.Resource.Drawable.notification_action_background = global::HanselmanAndroid.Resource.Drawable.notification_action_background;
+			global::Shiny.Resource.Drawable.notification_bg = global::HanselmanAndroid.Resource.Drawable.notification_bg;
+			global::Shiny.Resource.Drawable.notification_bg_low = global::HanselmanAndroid.Resource.Drawable.notification_bg_low;
+			global::Shiny.Resource.Drawable.notification_bg_low_normal = global::HanselmanAndroid.Resource.Drawable.notification_bg_low_normal;
+			global::Shiny.Resource.Drawable.notification_bg_low_pressed = global::HanselmanAndroid.Resource.Drawable.notification_bg_low_pressed;
+			global::Shiny.Resource.Drawable.notification_bg_normal = global::HanselmanAndroid.Resource.Drawable.notification_bg_normal;
+			global::Shiny.Resource.Drawable.notification_bg_normal_pressed = global::HanselmanAndroid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Shiny.Resource.Drawable.notification_icon_background = global::HanselmanAndroid.Resource.Drawable.notification_icon_background;
+			global::Shiny.Resource.Drawable.notification_template_icon_bg = global::HanselmanAndroid.Resource.Drawable.notification_template_icon_bg;
+			global::Shiny.Resource.Drawable.notification_template_icon_low_bg = global::HanselmanAndroid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Shiny.Resource.Drawable.notification_tile_bg = global::HanselmanAndroid.Resource.Drawable.notification_tile_bg;
+			global::Shiny.Resource.Drawable.notify_panel_notification_icon_bg = global::HanselmanAndroid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Shiny.Resource.Id.action0 = global::HanselmanAndroid.Resource.Id.action0;
+			global::Shiny.Resource.Id.action_container = global::HanselmanAndroid.Resource.Id.action_container;
+			global::Shiny.Resource.Id.action_divider = global::HanselmanAndroid.Resource.Id.action_divider;
+			global::Shiny.Resource.Id.action_image = global::HanselmanAndroid.Resource.Id.action_image;
+			global::Shiny.Resource.Id.action_text = global::HanselmanAndroid.Resource.Id.action_text;
+			global::Shiny.Resource.Id.actions = global::HanselmanAndroid.Resource.Id.actions;
+			global::Shiny.Resource.Id.all = global::HanselmanAndroid.Resource.Id.all;
+			global::Shiny.Resource.Id.async = global::HanselmanAndroid.Resource.Id.async;
+			global::Shiny.Resource.Id.blocking = global::HanselmanAndroid.Resource.Id.blocking;
+			global::Shiny.Resource.Id.bottom = global::HanselmanAndroid.Resource.Id.bottom;
+			global::Shiny.Resource.Id.cancel_action = global::HanselmanAndroid.Resource.Id.cancel_action;
+			global::Shiny.Resource.Id.center = global::HanselmanAndroid.Resource.Id.center;
+			global::Shiny.Resource.Id.center_horizontal = global::HanselmanAndroid.Resource.Id.center_horizontal;
+			global::Shiny.Resource.Id.center_vertical = global::HanselmanAndroid.Resource.Id.center_vertical;
+			global::Shiny.Resource.Id.chronometer = global::HanselmanAndroid.Resource.Id.chronometer;
+			global::Shiny.Resource.Id.clip_horizontal = global::HanselmanAndroid.Resource.Id.clip_horizontal;
+			global::Shiny.Resource.Id.clip_vertical = global::HanselmanAndroid.Resource.Id.clip_vertical;
+			global::Shiny.Resource.Id.end = global::HanselmanAndroid.Resource.Id.end;
+			global::Shiny.Resource.Id.end_padder = global::HanselmanAndroid.Resource.Id.end_padder;
+			global::Shiny.Resource.Id.fill = global::HanselmanAndroid.Resource.Id.fill;
+			global::Shiny.Resource.Id.fill_horizontal = global::HanselmanAndroid.Resource.Id.fill_horizontal;
+			global::Shiny.Resource.Id.fill_vertical = global::HanselmanAndroid.Resource.Id.fill_vertical;
+			global::Shiny.Resource.Id.forever = global::HanselmanAndroid.Resource.Id.forever;
+			global::Shiny.Resource.Id.icon = global::HanselmanAndroid.Resource.Id.icon;
+			global::Shiny.Resource.Id.icon_group = global::HanselmanAndroid.Resource.Id.icon_group;
+			global::Shiny.Resource.Id.info = global::HanselmanAndroid.Resource.Id.info;
+			global::Shiny.Resource.Id.italic = global::HanselmanAndroid.Resource.Id.italic;
+			global::Shiny.Resource.Id.left = global::HanselmanAndroid.Resource.Id.left;
+			global::Shiny.Resource.Id.line1 = global::HanselmanAndroid.Resource.Id.line1;
+			global::Shiny.Resource.Id.line3 = global::HanselmanAndroid.Resource.Id.line3;
+			global::Shiny.Resource.Id.media_actions = global::HanselmanAndroid.Resource.Id.media_actions;
+			global::Shiny.Resource.Id.none = global::HanselmanAndroid.Resource.Id.none;
+			global::Shiny.Resource.Id.normal = global::HanselmanAndroid.Resource.Id.normal;
+			global::Shiny.Resource.Id.notification_background = global::HanselmanAndroid.Resource.Id.notification_background;
+			global::Shiny.Resource.Id.notification_main_column = global::HanselmanAndroid.Resource.Id.notification_main_column;
+			global::Shiny.Resource.Id.notification_main_column_container = global::HanselmanAndroid.Resource.Id.notification_main_column_container;
+			global::Shiny.Resource.Id.right = global::HanselmanAndroid.Resource.Id.right;
+			global::Shiny.Resource.Id.right_icon = global::HanselmanAndroid.Resource.Id.right_icon;
+			global::Shiny.Resource.Id.right_side = global::HanselmanAndroid.Resource.Id.right_side;
+			global::Shiny.Resource.Id.start = global::HanselmanAndroid.Resource.Id.start;
+			global::Shiny.Resource.Id.status_bar_latest_event_content = global::HanselmanAndroid.Resource.Id.status_bar_latest_event_content;
+			global::Shiny.Resource.Id.tag_transition_group = global::HanselmanAndroid.Resource.Id.tag_transition_group;
+			global::Shiny.Resource.Id.tag_unhandled_key_event_manager = global::HanselmanAndroid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Shiny.Resource.Id.tag_unhandled_key_listeners = global::HanselmanAndroid.Resource.Id.tag_unhandled_key_listeners;
+			global::Shiny.Resource.Id.text = global::HanselmanAndroid.Resource.Id.text;
+			global::Shiny.Resource.Id.text2 = global::HanselmanAndroid.Resource.Id.text2;
+			global::Shiny.Resource.Id.time = global::HanselmanAndroid.Resource.Id.time;
+			global::Shiny.Resource.Id.title = global::HanselmanAndroid.Resource.Id.title;
+			global::Shiny.Resource.Id.top = global::HanselmanAndroid.Resource.Id.top;
+			global::Shiny.Resource.Integer.cancel_button_image_alpha = global::HanselmanAndroid.Resource.Integer.cancel_button_image_alpha;
+			global::Shiny.Resource.Integer.status_bar_notification_info_maxnum = global::HanselmanAndroid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Shiny.Resource.Layout.notification_action = global::HanselmanAndroid.Resource.Layout.notification_action;
+			global::Shiny.Resource.Layout.notification_action_tombstone = global::HanselmanAndroid.Resource.Layout.notification_action_tombstone;
+			global::Shiny.Resource.Layout.notification_media_action = global::HanselmanAndroid.Resource.Layout.notification_media_action;
+			global::Shiny.Resource.Layout.notification_media_cancel_action = global::HanselmanAndroid.Resource.Layout.notification_media_cancel_action;
+			global::Shiny.Resource.Layout.notification_template_big_media = global::HanselmanAndroid.Resource.Layout.notification_template_big_media;
+			global::Shiny.Resource.Layout.notification_template_big_media_custom = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_custom;
+			global::Shiny.Resource.Layout.notification_template_big_media_narrow = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_narrow;
+			global::Shiny.Resource.Layout.notification_template_big_media_narrow_custom = global::HanselmanAndroid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Shiny.Resource.Layout.notification_template_custom_big = global::HanselmanAndroid.Resource.Layout.notification_template_custom_big;
+			global::Shiny.Resource.Layout.notification_template_icon_group = global::HanselmanAndroid.Resource.Layout.notification_template_icon_group;
+			global::Shiny.Resource.Layout.notification_template_lines_media = global::HanselmanAndroid.Resource.Layout.notification_template_lines_media;
+			global::Shiny.Resource.Layout.notification_template_media = global::HanselmanAndroid.Resource.Layout.notification_template_media;
+			global::Shiny.Resource.Layout.notification_template_media_custom = global::HanselmanAndroid.Resource.Layout.notification_template_media_custom;
+			global::Shiny.Resource.Layout.notification_template_part_chronometer = global::HanselmanAndroid.Resource.Layout.notification_template_part_chronometer;
+			global::Shiny.Resource.Layout.notification_template_part_time = global::HanselmanAndroid.Resource.Layout.notification_template_part_time;
+			global::Shiny.Resource.String.status_bar_notification_info_overflow = global::HanselmanAndroid.Resource.String.status_bar_notification_info_overflow;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Info = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Time = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Title = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Shiny.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::HanselmanAndroid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Shiny.Resource.Style.Widget_Compat_NotificationActionContainer = global::HanselmanAndroid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Shiny.Resource.Style.Widget_Compat_NotificationActionText = global::HanselmanAndroid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Shiny.Resource.Style.Widget_Support_CoordinatorLayout = global::HanselmanAndroid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Shiny.Resource.Styleable.ColorStateListItem = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem;
+			global::Shiny.Resource.Styleable.ColorStateListItem_alpha = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Shiny.Resource.Styleable.ColorStateListItem_android_alpha = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Shiny.Resource.Styleable.ColorStateListItem_android_color = global::HanselmanAndroid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Shiny.Resource.Styleable.CoordinatorLayout = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_keylines = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_Layout = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Shiny.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::HanselmanAndroid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Shiny.Resource.Styleable.FontFamily = global::HanselmanAndroid.Resource.Styleable.FontFamily;
+			global::Shiny.Resource.Styleable.FontFamily_fontProviderAuthority = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Shiny.Resource.Styleable.FontFamily_fontProviderCerts = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Shiny.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Shiny.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Shiny.Resource.Styleable.FontFamily_fontProviderPackage = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Shiny.Resource.Styleable.FontFamily_fontProviderQuery = global::HanselmanAndroid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Shiny.Resource.Styleable.FontFamilyFont = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont;
+			global::Shiny.Resource.Styleable.FontFamilyFont_android_font = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Shiny.Resource.Styleable.FontFamilyFont_android_fontStyle = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Shiny.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Shiny.Resource.Styleable.FontFamilyFont_android_fontWeight = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Shiny.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Shiny.Resource.Styleable.FontFamilyFont_font = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_font;
+			global::Shiny.Resource.Styleable.FontFamilyFont_fontStyle = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Shiny.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Shiny.Resource.Styleable.FontFamilyFont_fontWeight = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Shiny.Resource.Styleable.FontFamilyFont_ttcIndex = global::HanselmanAndroid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Shiny.Resource.Styleable.GradientColor = global::HanselmanAndroid.Resource.Styleable.GradientColor;
+			global::Shiny.Resource.Styleable.GradientColor_android_centerColor = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Shiny.Resource.Styleable.GradientColor_android_centerX = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_centerX;
+			global::Shiny.Resource.Styleable.GradientColor_android_centerY = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_centerY;
+			global::Shiny.Resource.Styleable.GradientColor_android_endColor = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_endColor;
+			global::Shiny.Resource.Styleable.GradientColor_android_endX = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_endX;
+			global::Shiny.Resource.Styleable.GradientColor_android_endY = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_endY;
+			global::Shiny.Resource.Styleable.GradientColor_android_gradientRadius = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Shiny.Resource.Styleable.GradientColor_android_startColor = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_startColor;
+			global::Shiny.Resource.Styleable.GradientColor_android_startX = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_startX;
+			global::Shiny.Resource.Styleable.GradientColor_android_startY = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_startY;
+			global::Shiny.Resource.Styleable.GradientColor_android_tileMode = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Shiny.Resource.Styleable.GradientColor_android_type = global::HanselmanAndroid.Resource.Styleable.GradientColor_android_type;
+			global::Shiny.Resource.Styleable.GradientColorItem = global::HanselmanAndroid.Resource.Styleable.GradientColorItem;
+			global::Shiny.Resource.Styleable.GradientColorItem_android_color = global::HanselmanAndroid.Resource.Styleable.GradientColorItem_android_color;
+			global::Shiny.Resource.Styleable.GradientColorItem_android_offset = global::HanselmanAndroid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::HanselmanAndroid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::HanselmanAndroid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::HanselmanAndroid.Resource.Attribute.font;
@@ -6205,9 +6398,9 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Material.Android.Resource.Id.listMode = global::HanselmanAndroid.Resource.Id.listMode;
 			global::Xamarin.Forms.Material.Android.Resource.Id.list_item = global::HanselmanAndroid.Resource.Id.list_item;
 			global::Xamarin.Forms.Material.Android.Resource.Id.main_appbar = global::HanselmanAndroid.Resource.Id.main_appbar;
-			global::Xamarin.Forms.Material.Android.Resource.Id.main_scrollview = global::HanselmanAndroid.Resource.Id.main_scrollview;
 			global::Xamarin.Forms.Material.Android.Resource.Id.main_tablayout = global::HanselmanAndroid.Resource.Id.main_tablayout;
 			global::Xamarin.Forms.Material.Android.Resource.Id.main_toolbar = global::HanselmanAndroid.Resource.Id.main_toolbar;
+			global::Xamarin.Forms.Material.Android.Resource.Id.main_viewpager = global::HanselmanAndroid.Resource.Id.main_viewpager;
 			global::Xamarin.Forms.Material.Android.Resource.Id.masked = global::HanselmanAndroid.Resource.Id.masked;
 			global::Xamarin.Forms.Material.Android.Resource.Id.materialformsedittext = global::HanselmanAndroid.Resource.Id.materialformsedittext;
 			global::Xamarin.Forms.Material.Android.Resource.Id.media_actions = global::HanselmanAndroid.Resource.Id.media_actions;
@@ -6257,7 +6450,6 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Material.Android.Resource.Id.select_dialog_listview = global::HanselmanAndroid.Resource.Id.select_dialog_listview;
 			global::Xamarin.Forms.Material.Android.Resource.Id.selected = global::HanselmanAndroid.Resource.Id.selected;
 			global::Xamarin.Forms.Material.Android.Resource.Id.shellcontent_appbar = global::HanselmanAndroid.Resource.Id.shellcontent_appbar;
-			global::Xamarin.Forms.Material.Android.Resource.Id.shellcontent_scrollview = global::HanselmanAndroid.Resource.Id.shellcontent_scrollview;
 			global::Xamarin.Forms.Material.Android.Resource.Id.shellcontent_toolbar = global::HanselmanAndroid.Resource.Id.shellcontent_toolbar;
 			global::Xamarin.Forms.Material.Android.Resource.Id.shortcut = global::HanselmanAndroid.Resource.Id.shortcut;
 			global::Xamarin.Forms.Material.Android.Resource.Id.showCustom = global::HanselmanAndroid.Resource.Id.showCustom;
@@ -6962,6 +7154,7 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Material.Android.Resource.Style.XamarinFormsMaterialProgressBarHorizontal = global::HanselmanAndroid.Resource.Style.XamarinFormsMaterialProgressBarHorizontal;
 			global::Xamarin.Forms.Material.Android.Resource.Style.XamarinFormsMaterialSlider = global::HanselmanAndroid.Resource.Style.XamarinFormsMaterialSlider;
 			global::Xamarin.Forms.Material.Android.Resource.Style.XamarinFormsMaterialTheme = global::HanselmanAndroid.Resource.Style.XamarinFormsMaterialTheme;
+			global::Xamarin.Forms.Material.Android.Resource.Style.collectionViewStyle = global::HanselmanAndroid.Resource.Style.collectionViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar = global::HanselmanAndroid.Resource.Styleable.ActionBar;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar_background = global::HanselmanAndroid.Resource.Styleable.ActionBar_background;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar_backgroundSplit = global::HanselmanAndroid.Resource.Styleable.ActionBar_backgroundSplit;
@@ -8779,9 +8972,9 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.listMode = global::HanselmanAndroid.Resource.Id.listMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.list_item = global::HanselmanAndroid.Resource.Id.list_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.main_appbar = global::HanselmanAndroid.Resource.Id.main_appbar;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.main_scrollview = global::HanselmanAndroid.Resource.Id.main_scrollview;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.main_tablayout = global::HanselmanAndroid.Resource.Id.main_tablayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.main_toolbar = global::HanselmanAndroid.Resource.Id.main_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_viewpager = global::HanselmanAndroid.Resource.Id.main_viewpager;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.masked = global::HanselmanAndroid.Resource.Id.masked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.media_actions = global::HanselmanAndroid.Resource.Id.media_actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.message = global::HanselmanAndroid.Resource.Id.message;
@@ -8830,7 +9023,6 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::HanselmanAndroid.Resource.Id.select_dialog_listview;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.selected = global::HanselmanAndroid.Resource.Id.selected;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_appbar = global::HanselmanAndroid.Resource.Id.shellcontent_appbar;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_scrollview = global::HanselmanAndroid.Resource.Id.shellcontent_scrollview;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_toolbar = global::HanselmanAndroid.Resource.Id.shellcontent_toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shortcut = global::HanselmanAndroid.Resource.Id.shortcut;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::HanselmanAndroid.Resource.Id.showCustom;
@@ -9524,6 +9716,7 @@ namespace HanselmanAndroid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::HanselmanAndroid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Toolbar = global::HanselmanAndroid.Resource.Style.Widget_MaterialComponents_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Support_CoordinatorLayout = global::HanselmanAndroid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewStyle = global::HanselmanAndroid.Resource.Style.collectionViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar = global::HanselmanAndroid.Resource.Styleable.ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_background = global::HanselmanAndroid.Resource.Styleable.ActionBar_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundSplit = global::HanselmanAndroid.Resource.Styleable.ActionBar_backgroundSplit;
@@ -14620,13 +14813,13 @@ namespace HanselmanAndroid
 			public const int main_appbar = 2131230845;
 			
 			// aapt resource value: 0x7F08007E
-			public const int main_scrollview = 2131230846;
+			public const int main_tablayout = 2131230846;
 			
 			// aapt resource value: 0x7F08007F
-			public const int main_tablayout = 2131230847;
+			public const int main_toolbar = 2131230847;
 			
 			// aapt resource value: 0x7F080080
-			public const int main_toolbar = 2131230848;
+			public const int main_viewpager = 2131230848;
 			
 			// aapt resource value: 0x7F080081
 			public const int masked = 2131230849;
@@ -14920,196 +15113,193 @@ namespace HanselmanAndroid
 			public const int shellcontent_appbar = 2131230944;
 			
 			// aapt resource value: 0x7F0800E1
-			public const int shellcontent_scrollview = 2131230945;
-			
-			// aapt resource value: 0x7F0800E2
-			public const int shellcontent_toolbar = 2131230946;
+			public const int shellcontent_toolbar = 2131230945;
 			
 			// aapt resource value: 0x7F080004
 			public const int SHIFT = 2131230724;
 			
+			// aapt resource value: 0x7F0800E2
+			public const int shortcut = 2131230946;
+			
 			// aapt resource value: 0x7F0800E3
-			public const int shortcut = 2131230947;
+			public const int showCustom = 2131230947;
 			
 			// aapt resource value: 0x7F0800E4
-			public const int showCustom = 2131230948;
+			public const int showHome = 2131230948;
 			
 			// aapt resource value: 0x7F0800E5
-			public const int showHome = 2131230949;
+			public const int showTitle = 2131230949;
 			
 			// aapt resource value: 0x7F0800E6
-			public const int showTitle = 2131230950;
+			public const int sliding_tabs = 2131230950;
 			
 			// aapt resource value: 0x7F0800E7
-			public const int sliding_tabs = 2131230951;
+			public const int smallLabel = 2131230951;
 			
 			// aapt resource value: 0x7F0800E8
-			public const int smallLabel = 2131230952;
+			public const int snackbar_action = 2131230952;
 			
 			// aapt resource value: 0x7F0800E9
-			public const int snackbar_action = 2131230953;
+			public const int snackbar_text = 2131230953;
 			
 			// aapt resource value: 0x7F0800EA
-			public const int snackbar_text = 2131230954;
+			public const int snap = 2131230954;
 			
 			// aapt resource value: 0x7F0800EB
-			public const int snap = 2131230955;
+			public const int snapMargins = 2131230955;
 			
 			// aapt resource value: 0x7F0800EC
-			public const int snapMargins = 2131230956;
+			public const int spacer = 2131230956;
 			
 			// aapt resource value: 0x7F0800ED
-			public const int spacer = 2131230957;
+			public const int spherical_view = 2131230957;
 			
 			// aapt resource value: 0x7F0800EE
-			public const int spherical_view = 2131230958;
+			public const int split_action_bar = 2131230958;
 			
 			// aapt resource value: 0x7F0800EF
-			public const int split_action_bar = 2131230959;
+			public const int src_atop = 2131230959;
 			
 			// aapt resource value: 0x7F0800F0
-			public const int src_atop = 2131230960;
+			public const int src_in = 2131230960;
 			
 			// aapt resource value: 0x7F0800F1
-			public const int src_in = 2131230961;
+			public const int src_over = 2131230961;
 			
 			// aapt resource value: 0x7F0800F2
-			public const int src_over = 2131230962;
+			public const int start = 2131230962;
 			
 			// aapt resource value: 0x7F0800F3
-			public const int start = 2131230963;
+			public const int status_bar_latest_event_content = 2131230963;
 			
 			// aapt resource value: 0x7F0800F4
-			public const int status_bar_latest_event_content = 2131230964;
+			public const int stretch = 2131230964;
 			
 			// aapt resource value: 0x7F0800F5
-			public const int stretch = 2131230965;
+			public const int submenuarrow = 2131230965;
 			
 			// aapt resource value: 0x7F0800F6
-			public const int submenuarrow = 2131230966;
+			public const int submit_area = 2131230966;
 			
 			// aapt resource value: 0x7F0800F7
-			public const int submit_area = 2131230967;
-			
-			// aapt resource value: 0x7F0800F8
-			public const int surface_view = 2131230968;
+			public const int surface_view = 2131230967;
 			
 			// aapt resource value: 0x7F080005
 			public const int SYM = 2131230725;
 			
+			// aapt resource value: 0x7F0800F8
+			public const int tabMode = 2131230968;
+			
 			// aapt resource value: 0x7F0800F9
-			public const int tabMode = 2131230969;
+			public const int tag_transition_group = 2131230969;
 			
 			// aapt resource value: 0x7F0800FA
-			public const int tag_transition_group = 2131230970;
+			public const int tag_unhandled_key_event_manager = 2131230970;
 			
 			// aapt resource value: 0x7F0800FB
-			public const int tag_unhandled_key_event_manager = 2131230971;
+			public const int tag_unhandled_key_listeners = 2131230971;
 			
 			// aapt resource value: 0x7F0800FC
-			public const int tag_unhandled_key_listeners = 2131230972;
+			public const int text = 2131230972;
 			
 			// aapt resource value: 0x7F0800FD
-			public const int text = 2131230973;
-			
-			// aapt resource value: 0x7F0800FE
-			public const int text2 = 2131230974;
-			
-			// aapt resource value: 0x7F080103
-			public const int textinput_counter = 2131230979;
-			
-			// aapt resource value: 0x7F080104
-			public const int textinput_error = 2131230980;
-			
-			// aapt resource value: 0x7F080105
-			public const int textinput_helper_text = 2131230981;
-			
-			// aapt resource value: 0x7F0800FF
-			public const int textSpacerNoButtons = 2131230975;
-			
-			// aapt resource value: 0x7F080100
-			public const int textSpacerNoTitle = 2131230976;
-			
-			// aapt resource value: 0x7F080101
-			public const int textStart = 2131230977;
-			
-			// aapt resource value: 0x7F080106
-			public const int texture_view = 2131230982;
+			public const int text2 = 2131230973;
 			
 			// aapt resource value: 0x7F080102
-			public const int text_input_password_toggle = 2131230978;
+			public const int textinput_counter = 2131230978;
+			
+			// aapt resource value: 0x7F080103
+			public const int textinput_error = 2131230979;
+			
+			// aapt resource value: 0x7F080104
+			public const int textinput_helper_text = 2131230980;
+			
+			// aapt resource value: 0x7F0800FE
+			public const int textSpacerNoButtons = 2131230974;
+			
+			// aapt resource value: 0x7F0800FF
+			public const int textSpacerNoTitle = 2131230975;
+			
+			// aapt resource value: 0x7F080100
+			public const int textStart = 2131230976;
+			
+			// aapt resource value: 0x7F080105
+			public const int texture_view = 2131230981;
+			
+			// aapt resource value: 0x7F080101
+			public const int text_input_password_toggle = 2131230977;
+			
+			// aapt resource value: 0x7F080106
+			public const int time = 2131230982;
 			
 			// aapt resource value: 0x7F080107
-			public const int time = 2131230983;
+			public const int title = 2131230983;
 			
 			// aapt resource value: 0x7F080108
-			public const int title = 2131230984;
+			public const int titleDividerNoCustom = 2131230984;
 			
 			// aapt resource value: 0x7F080109
-			public const int titleDividerNoCustom = 2131230985;
+			public const int title_template = 2131230985;
 			
 			// aapt resource value: 0x7F08010A
-			public const int title_template = 2131230986;
+			public const int toolbar = 2131230986;
 			
 			// aapt resource value: 0x7F08010B
-			public const int toolbar = 2131230987;
+			public const int top = 2131230987;
 			
 			// aapt resource value: 0x7F08010C
-			public const int top = 2131230988;
+			public const int topPanel = 2131230988;
 			
 			// aapt resource value: 0x7F08010D
-			public const int topPanel = 2131230989;
+			public const int touch_outside = 2131230989;
 			
 			// aapt resource value: 0x7F08010E
-			public const int touch_outside = 2131230990;
+			public const int transition_current_scene = 2131230990;
 			
 			// aapt resource value: 0x7F08010F
-			public const int transition_current_scene = 2131230991;
+			public const int transition_layout_save = 2131230991;
 			
 			// aapt resource value: 0x7F080110
-			public const int transition_layout_save = 2131230992;
+			public const int transition_position = 2131230992;
 			
 			// aapt resource value: 0x7F080111
-			public const int transition_position = 2131230993;
+			public const int transition_scene_layoutid_cache = 2131230993;
 			
 			// aapt resource value: 0x7F080112
-			public const int transition_scene_layoutid_cache = 2131230994;
+			public const int transition_transform = 2131230994;
 			
 			// aapt resource value: 0x7F080113
-			public const int transition_transform = 2131230995;
+			public const int uniform = 2131230995;
 			
 			// aapt resource value: 0x7F080114
-			public const int uniform = 2131230996;
+			public const int unlabeled = 2131230996;
 			
 			// aapt resource value: 0x7F080115
-			public const int unlabeled = 2131230997;
+			public const int up = 2131230997;
 			
 			// aapt resource value: 0x7F080116
-			public const int up = 2131230998;
+			public const int useLogo = 2131230998;
 			
 			// aapt resource value: 0x7F080117
-			public const int useLogo = 2131230999;
+			public const int view_offset_helper = 2131230999;
 			
 			// aapt resource value: 0x7F080118
-			public const int view_offset_helper = 2131231000;
+			public const int visible = 2131231000;
 			
 			// aapt resource value: 0x7F080119
-			public const int visible = 2131231001;
+			public const int volume_item_container = 2131231001;
 			
 			// aapt resource value: 0x7F08011A
-			public const int volume_item_container = 2131231002;
+			public const int when_playing = 2131231002;
 			
 			// aapt resource value: 0x7F08011B
-			public const int when_playing = 2131231003;
+			public const int withText = 2131231003;
 			
 			// aapt resource value: 0x7F08011C
-			public const int withText = 2131231004;
+			public const int wrap_content = 2131231004;
 			
 			// aapt resource value: 0x7F08011D
-			public const int wrap_content = 2131231005;
-			
-			// aapt resource value: 0x7F08011E
-			public const int zoom = 2131231006;
+			public const int zoom = 2131231005;
 			
 			static Id()
 			{
@@ -16523,6 +16713,9 @@ namespace HanselmanAndroid
 			// aapt resource value: 0x7F0D00C4
 			public const int CardView_Light = 2131558596;
 			
+			// aapt resource value: 0x7F0D0212
+			public const int collectionViewStyle = 2131558930;
+			
 			// aapt resource value: 0x7F0D00C5
 			public const int ExoMediaButton = 2131558597;
 			
@@ -17571,101 +17764,101 @@ namespace HanselmanAndroid
 			public static int[] ActionBarLayout = new int[] {
 					16842931};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ActionBarLayout_android_layout_gravity = 0;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ActionBar_background = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ActionBar_backgroundSplit = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int ActionBar_backgroundStacked = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int ActionBar_contentInsetEnd = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int ActionBar_contentInsetEndWithActions = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int ActionBar_contentInsetLeft = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int ActionBar_contentInsetRight = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int ActionBar_contentInsetStart = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int ActionBar_contentInsetStartWithNavigation = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int ActionBar_customNavigationLayout = 9;
 			
-			// aapt resource value: 0x10
-			public const int ActionBar_displayOptions = 16;
+			// aapt resource value: 10
+			public const int ActionBar_displayOptions = 10;
 			
-			// aapt resource value: 0x11
-			public const int ActionBar_divider = 17;
+			// aapt resource value: 11
+			public const int ActionBar_divider = 11;
 			
-			// aapt resource value: 0x12
-			public const int ActionBar_elevation = 18;
+			// aapt resource value: 12
+			public const int ActionBar_elevation = 12;
 			
-			// aapt resource value: 0x13
-			public const int ActionBar_height = 19;
+			// aapt resource value: 13
+			public const int ActionBar_height = 13;
 			
-			// aapt resource value: 0x14
-			public const int ActionBar_hideOnContentScroll = 20;
+			// aapt resource value: 14
+			public const int ActionBar_hideOnContentScroll = 14;
 			
-			// aapt resource value: 0x15
-			public const int ActionBar_homeAsUpIndicator = 21;
+			// aapt resource value: 15
+			public const int ActionBar_homeAsUpIndicator = 15;
 			
-			// aapt resource value: 0x16
-			public const int ActionBar_homeLayout = 22;
+			// aapt resource value: 16
+			public const int ActionBar_homeLayout = 16;
 			
-			// aapt resource value: 0x17
-			public const int ActionBar_icon = 23;
+			// aapt resource value: 17
+			public const int ActionBar_icon = 17;
 			
-			// aapt resource value: 0x18
-			public const int ActionBar_indeterminateProgressStyle = 24;
+			// aapt resource value: 18
+			public const int ActionBar_indeterminateProgressStyle = 18;
 			
-			// aapt resource value: 0x19
-			public const int ActionBar_itemPadding = 25;
+			// aapt resource value: 19
+			public const int ActionBar_itemPadding = 19;
 			
-			// aapt resource value: 0x20
-			public const int ActionBar_logo = 32;
+			// aapt resource value: 20
+			public const int ActionBar_logo = 20;
 			
-			// aapt resource value: 0x21
-			public const int ActionBar_navigationMode = 33;
+			// aapt resource value: 21
+			public const int ActionBar_navigationMode = 21;
 			
-			// aapt resource value: 0x22
-			public const int ActionBar_popupTheme = 34;
+			// aapt resource value: 22
+			public const int ActionBar_popupTheme = 22;
 			
-			// aapt resource value: 0x23
-			public const int ActionBar_progressBarPadding = 35;
+			// aapt resource value: 23
+			public const int ActionBar_progressBarPadding = 23;
 			
-			// aapt resource value: 0x24
-			public const int ActionBar_progressBarStyle = 36;
+			// aapt resource value: 24
+			public const int ActionBar_progressBarStyle = 24;
 			
-			// aapt resource value: 0x25
-			public const int ActionBar_subtitle = 37;
+			// aapt resource value: 25
+			public const int ActionBar_subtitle = 25;
 			
-			// aapt resource value: 0x26
-			public const int ActionBar_subtitleTextStyle = 38;
+			// aapt resource value: 26
+			public const int ActionBar_subtitleTextStyle = 26;
 			
-			// aapt resource value: 0x27
-			public const int ActionBar_title = 39;
+			// aapt resource value: 27
+			public const int ActionBar_title = 27;
 			
-			// aapt resource value: 0x28
-			public const int ActionBar_titleTextStyle = 40;
+			// aapt resource value: 28
+			public const int ActionBar_titleTextStyle = 28;
 			
 			// aapt resource value: { 0x101013F }
 			public static int[] ActionMenuItemView = new int[] {
 					16843071};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ActionMenuItemView_android_minWidth = 0;
 			
 			// aapt resource value: { 0xFFFFFFFF }
@@ -17681,22 +17874,22 @@ namespace HanselmanAndroid
 					2130903459,
 					2130903539};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ActionMode_background = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ActionMode_backgroundSplit = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int ActionMode_closeItemLayout = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int ActionMode_height = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int ActionMode_subtitleTextStyle = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int ActionMode_titleTextStyle = 5;
 			
 			// aapt resource value: { 0x7F0300C1,0x7F030102 }
@@ -17704,10 +17897,10 @@ namespace HanselmanAndroid
 					2130903233,
 					2130903298};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ActivityChooserView_initialActivityCount = 1;
 			
 			// aapt resource value: { 0x10100F2,0x7F030057,0x7F030058,0x7F030126,0x7F030127,0x7F03014A,0x7F030184,0x7F030189 }
@@ -17721,28 +17914,28 @@ namespace HanselmanAndroid
 					2130903428,
 					2130903433};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AlertDialog_buttonIconDimen = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AlertDialog_buttonPanelSideLayout = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AlertDialog_listItemLayout = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int AlertDialog_listLayout = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int AlertDialog_multiChoiceItemLayout = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int AlertDialog_showTitle = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int AlertDialog_singleChoiceItemLayout = 7;
 			
 			// aapt resource value: { 0x101011C,0x1010194,0x1010195,0x1010196,0x101030C,0x101030D }
@@ -17754,22 +17947,22 @@ namespace HanselmanAndroid
 					16843532,
 					16843533};
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AnimatedStateListDrawableCompat_android_constantSize = 3;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AnimatedStateListDrawableCompat_android_dither = 0;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int AnimatedStateListDrawableCompat_android_enterFadeDuration = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int AnimatedStateListDrawableCompat_android_exitFadeDuration = 5;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AnimatedStateListDrawableCompat_android_variablePadding = 2;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AnimatedStateListDrawableCompat_android_visible = 1;
 			
 			// aapt resource value: { 0x10100D0,0x1010199 }
@@ -17777,10 +17970,10 @@ namespace HanselmanAndroid
 					16842960,
 					16843161};
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AnimatedStateListDrawableItem_android_drawable = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AnimatedStateListDrawableItem_android_id = 0;
 			
 			// aapt resource value: { 0x1010199,0x1010449,0x101044A,0x101044B }
@@ -17790,16 +17983,16 @@ namespace HanselmanAndroid
 					16843850,
 					16843851};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AnimatedStateListDrawableTransition_android_drawable = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AnimatedStateListDrawableTransition_android_fromId = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AnimatedStateListDrawableTransition_android_reversible = 3;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AnimatedStateListDrawableTransition_android_toId = 1;
 			
 			// aapt resource value: { 0x10100D4,0x101048F,0x1010540,0x7F0300BC,0x7F0300C2,0x7F030121 }
@@ -17818,31 +18011,31 @@ namespace HanselmanAndroid
 					2130903448,
 					2130903449};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AppBarLayoutStates_state_collapsible = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AppBarLayoutStates_state_liftable = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AppBarLayoutStates_state_lifted = 3;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AppBarLayout_android_background = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AppBarLayout_android_keyboardNavigationCluster = 2;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AppBarLayout_android_touchscreenBlocksFocus = 1;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AppBarLayout_elevation = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int AppBarLayout_expanded = 4;
 			
 			// aapt resource value: { 0x7F03011F,0x7F030120 }
@@ -17850,13 +18043,13 @@ namespace HanselmanAndroid
 					2130903327,
 					2130903328};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AppBarLayout_Layout_layout_scrollFlags = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int AppBarLayout_liftOnScroll = 5;
 			
 			// aapt resource value: { 0x1010119,0x7F030193,0x7F0301E7,0x7F0301E8 }
@@ -17866,16 +18059,16 @@ namespace HanselmanAndroid
 					2130903527,
 					2130903528};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AppCompatImageView_srcCompat = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AppCompatImageView_tint = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AppCompatImageView_tintMode = 3;
 			
 			// aapt resource value: { 0x1010142,0x7F0301E4,0x7F0301E5,0x7F0301E6 }
@@ -17885,16 +18078,16 @@ namespace HanselmanAndroid
 					2130903525,
 					2130903526};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AppCompatSeekBar_tickMark = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AppCompatSeekBar_tickMarkTint = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AppCompatSeekBar_tickMarkTintMode = 3;
 			
 			// aapt resource value: { 0x1010034,0x101016D,0x101016E,0x101016F,0x1010170,0x1010392,0x1010393 }
@@ -17907,25 +18100,25 @@ namespace HanselmanAndroid
 					16843666,
 					16843667};
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AppCompatTextHelper_android_drawableBottom = 2;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int AppCompatTextHelper_android_drawableEnd = 6;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AppCompatTextHelper_android_drawableLeft = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int AppCompatTextHelper_android_drawableRight = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int AppCompatTextHelper_android_drawableStart = 5;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AppCompatTextHelper_android_drawableTop = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AppCompatTextHelper_android_textAppearance = 0;
 			
 			// aapt resource value: { 0x1010034,0x7F03002E,0x7F03002F,0x7F030030,0x7F030031,0x7F030032,0x7F0300D7,0x7F0300DA,0x7F030114,0x7F030122,0x7F0301C4 }
@@ -17942,38 +18135,38 @@ namespace HanselmanAndroid
 					2130903330,
 					2130903492};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AppCompatTextView_autoSizeMaxTextSize = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AppCompatTextView_autoSizeMinTextSize = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AppCompatTextView_autoSizePresetSizes = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int AppCompatTextView_autoSizeStepGranularity = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int AppCompatTextView_autoSizeTextType = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int AppCompatTextView_firstBaselineToTopHeight = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int AppCompatTextView_fontFamily = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int AppCompatTextView_lastBaselineToBottomHeight = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int AppCompatTextView_lineHeight = 9;
 			
-			// aapt resource value: 0x10
-			public const int AppCompatTextView_textAllCaps = 16;
+			// aapt resource value: 10
+			public const int AppCompatTextView_textAllCaps = 10;
 			
 			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F030024,0x7F030025,0x7F030026,0x7F030027,0x7F03002D,0x7F030042,0x7F030051,0x7F030052,0x7F030053,0x7F030054,0x7F030055,0x7F030059,0x7F03005A,0x7F030064,0x7F030069,0x7F030089,0x7F03008A,0x7F03008B,0x7F03008C,0x7F03008D,0x7F03008E,0x7F03008F,0x7F030090,0x7F030091,0x7F030093,0x7F0300A2,0x7F0300AD,0x7F0300AE,0x7F0300AF,0x7F0300B2,0x7F0300B4,0x7F0300B7,0x7F0300B8,0x7F0300B9,0x7F0300BA,0x7F0300BB,0x7F0300F4,0x7F030100,0x7F030124,0x7F030125,0x7F030128,0x7F030129,0x7F03012A,0x7F03012B,0x7F03012C,0x7F03012D,0x7F03012E,0x7F030155,0x7F030156,0x7F030157,0x7F030160,0x7F030162,0x7F030169,0x7F03016A,0x7F03016B,0x7F03016C,0x7F03017C,0x7F03017D,0x7F03017E,0x7F03017F,0x7F030190,0x7F030191,0x7F0301A8,0x7F0301CF,0x7F0301D0,0x7F0301D1,0x7F0301D2,0x7F0301D4,0x7F0301D5,0x7F0301D6,0x7F0301D7,0x7F0301DA,0x7F0301DB,0x7F0301F5,0x7F0301F6,0x7F0301F7,0x7F0301F8,0x7F030203,0x7F030205,0x7F030206,0x7F030207,0x7F030208,0x7F030209,0x7F03020A,0x7F03020B,0x7F03020C,0x7F03020D,0x7F03020E }
 			public static int[] AppCompatTheme = new int[] {
@@ -18099,374 +18292,374 @@ namespace HanselmanAndroid
 					2130903565,
 					2130903566};
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int AppCompatTheme_actionBarDivider = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int AppCompatTheme_actionBarItemBackground = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int AppCompatTheme_actionBarPopupTheme = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int AppCompatTheme_actionBarSize = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int AppCompatTheme_actionBarSplitStyle = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int AppCompatTheme_actionBarStyle = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int AppCompatTheme_actionBarTabBarStyle = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int AppCompatTheme_actionBarTabStyle = 9;
 			
-			// aapt resource value: 0x10
-			public const int AppCompatTheme_actionBarTabTextStyle = 16;
+			// aapt resource value: 10
+			public const int AppCompatTheme_actionBarTabTextStyle = 10;
 			
-			// aapt resource value: 0x11
-			public const int AppCompatTheme_actionBarTheme = 17;
+			// aapt resource value: 11
+			public const int AppCompatTheme_actionBarTheme = 11;
 			
-			// aapt resource value: 0x12
-			public const int AppCompatTheme_actionBarWidgetTheme = 18;
+			// aapt resource value: 12
+			public const int AppCompatTheme_actionBarWidgetTheme = 12;
 			
-			// aapt resource value: 0x13
-			public const int AppCompatTheme_actionButtonStyle = 19;
+			// aapt resource value: 13
+			public const int AppCompatTheme_actionButtonStyle = 13;
 			
-			// aapt resource value: 0x14
-			public const int AppCompatTheme_actionDropDownStyle = 20;
+			// aapt resource value: 14
+			public const int AppCompatTheme_actionDropDownStyle = 14;
 			
-			// aapt resource value: 0x15
-			public const int AppCompatTheme_actionMenuTextAppearance = 21;
+			// aapt resource value: 15
+			public const int AppCompatTheme_actionMenuTextAppearance = 15;
 			
-			// aapt resource value: 0x16
-			public const int AppCompatTheme_actionMenuTextColor = 22;
+			// aapt resource value: 16
+			public const int AppCompatTheme_actionMenuTextColor = 16;
 			
-			// aapt resource value: 0x17
-			public const int AppCompatTheme_actionModeBackground = 23;
+			// aapt resource value: 17
+			public const int AppCompatTheme_actionModeBackground = 17;
 			
-			// aapt resource value: 0x18
-			public const int AppCompatTheme_actionModeCloseButtonStyle = 24;
+			// aapt resource value: 18
+			public const int AppCompatTheme_actionModeCloseButtonStyle = 18;
 			
-			// aapt resource value: 0x19
-			public const int AppCompatTheme_actionModeCloseDrawable = 25;
+			// aapt resource value: 19
+			public const int AppCompatTheme_actionModeCloseDrawable = 19;
 			
-			// aapt resource value: 0x20
-			public const int AppCompatTheme_actionModeCopyDrawable = 32;
+			// aapt resource value: 20
+			public const int AppCompatTheme_actionModeCopyDrawable = 20;
 			
-			// aapt resource value: 0x21
-			public const int AppCompatTheme_actionModeCutDrawable = 33;
+			// aapt resource value: 21
+			public const int AppCompatTheme_actionModeCutDrawable = 21;
 			
-			// aapt resource value: 0x22
-			public const int AppCompatTheme_actionModeFindDrawable = 34;
+			// aapt resource value: 22
+			public const int AppCompatTheme_actionModeFindDrawable = 22;
 			
-			// aapt resource value: 0x23
-			public const int AppCompatTheme_actionModePasteDrawable = 35;
+			// aapt resource value: 23
+			public const int AppCompatTheme_actionModePasteDrawable = 23;
 			
-			// aapt resource value: 0x24
-			public const int AppCompatTheme_actionModePopupWindowStyle = 36;
+			// aapt resource value: 24
+			public const int AppCompatTheme_actionModePopupWindowStyle = 24;
 			
-			// aapt resource value: 0x25
-			public const int AppCompatTheme_actionModeSelectAllDrawable = 37;
+			// aapt resource value: 25
+			public const int AppCompatTheme_actionModeSelectAllDrawable = 25;
 			
-			// aapt resource value: 0x26
-			public const int AppCompatTheme_actionModeShareDrawable = 38;
+			// aapt resource value: 26
+			public const int AppCompatTheme_actionModeShareDrawable = 26;
 			
-			// aapt resource value: 0x27
-			public const int AppCompatTheme_actionModeSplitBackground = 39;
+			// aapt resource value: 27
+			public const int AppCompatTheme_actionModeSplitBackground = 27;
 			
-			// aapt resource value: 0x28
-			public const int AppCompatTheme_actionModeStyle = 40;
+			// aapt resource value: 28
+			public const int AppCompatTheme_actionModeStyle = 28;
 			
-			// aapt resource value: 0x29
-			public const int AppCompatTheme_actionModeWebSearchDrawable = 41;
+			// aapt resource value: 29
+			public const int AppCompatTheme_actionModeWebSearchDrawable = 29;
 			
-			// aapt resource value: 0x30
-			public const int AppCompatTheme_actionOverflowButtonStyle = 48;
+			// aapt resource value: 30
+			public const int AppCompatTheme_actionOverflowButtonStyle = 30;
 			
-			// aapt resource value: 0x31
-			public const int AppCompatTheme_actionOverflowMenuStyle = 49;
+			// aapt resource value: 31
+			public const int AppCompatTheme_actionOverflowMenuStyle = 31;
 			
-			// aapt resource value: 0x32
-			public const int AppCompatTheme_activityChooserViewStyle = 50;
+			// aapt resource value: 32
+			public const int AppCompatTheme_activityChooserViewStyle = 32;
 			
-			// aapt resource value: 0x33
-			public const int AppCompatTheme_alertDialogButtonGroupStyle = 51;
+			// aapt resource value: 33
+			public const int AppCompatTheme_alertDialogButtonGroupStyle = 33;
 			
-			// aapt resource value: 0x34
-			public const int AppCompatTheme_alertDialogCenterButtons = 52;
+			// aapt resource value: 34
+			public const int AppCompatTheme_alertDialogCenterButtons = 34;
 			
-			// aapt resource value: 0x35
-			public const int AppCompatTheme_alertDialogStyle = 53;
+			// aapt resource value: 35
+			public const int AppCompatTheme_alertDialogStyle = 35;
 			
-			// aapt resource value: 0x36
-			public const int AppCompatTheme_alertDialogTheme = 54;
+			// aapt resource value: 36
+			public const int AppCompatTheme_alertDialogTheme = 36;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int AppCompatTheme_android_windowAnimationStyle = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AppCompatTheme_android_windowIsFloating = 0;
 			
-			// aapt resource value: 0x37
-			public const int AppCompatTheme_autoCompleteTextViewStyle = 55;
+			// aapt resource value: 37
+			public const int AppCompatTheme_autoCompleteTextViewStyle = 37;
 			
-			// aapt resource value: 0x38
-			public const int AppCompatTheme_borderlessButtonStyle = 56;
+			// aapt resource value: 38
+			public const int AppCompatTheme_borderlessButtonStyle = 38;
 			
-			// aapt resource value: 0x39
-			public const int AppCompatTheme_buttonBarButtonStyle = 57;
+			// aapt resource value: 39
+			public const int AppCompatTheme_buttonBarButtonStyle = 39;
 			
-			// aapt resource value: 0x40
-			public const int AppCompatTheme_buttonBarNegativeButtonStyle = 64;
+			// aapt resource value: 40
+			public const int AppCompatTheme_buttonBarNegativeButtonStyle = 40;
 			
-			// aapt resource value: 0x41
-			public const int AppCompatTheme_buttonBarNeutralButtonStyle = 65;
+			// aapt resource value: 41
+			public const int AppCompatTheme_buttonBarNeutralButtonStyle = 41;
 			
-			// aapt resource value: 0x42
-			public const int AppCompatTheme_buttonBarPositiveButtonStyle = 66;
+			// aapt resource value: 42
+			public const int AppCompatTheme_buttonBarPositiveButtonStyle = 42;
 			
-			// aapt resource value: 0x43
-			public const int AppCompatTheme_buttonBarStyle = 67;
+			// aapt resource value: 43
+			public const int AppCompatTheme_buttonBarStyle = 43;
 			
-			// aapt resource value: 0x44
-			public const int AppCompatTheme_buttonStyle = 68;
+			// aapt resource value: 44
+			public const int AppCompatTheme_buttonStyle = 44;
 			
-			// aapt resource value: 0x45
-			public const int AppCompatTheme_buttonStyleSmall = 69;
+			// aapt resource value: 45
+			public const int AppCompatTheme_buttonStyleSmall = 45;
 			
-			// aapt resource value: 0x46
-			public const int AppCompatTheme_checkboxStyle = 70;
+			// aapt resource value: 46
+			public const int AppCompatTheme_checkboxStyle = 46;
 			
-			// aapt resource value: 0x47
-			public const int AppCompatTheme_checkedTextViewStyle = 71;
+			// aapt resource value: 47
+			public const int AppCompatTheme_checkedTextViewStyle = 47;
 			
-			// aapt resource value: 0x48
-			public const int AppCompatTheme_colorAccent = 72;
+			// aapt resource value: 48
+			public const int AppCompatTheme_colorAccent = 48;
 			
-			// aapt resource value: 0x49
-			public const int AppCompatTheme_colorBackgroundFloating = 73;
+			// aapt resource value: 49
+			public const int AppCompatTheme_colorBackgroundFloating = 49;
 			
-			// aapt resource value: 0x50
-			public const int AppCompatTheme_colorButtonNormal = 80;
+			// aapt resource value: 50
+			public const int AppCompatTheme_colorButtonNormal = 50;
 			
-			// aapt resource value: 0x51
-			public const int AppCompatTheme_colorControlActivated = 81;
+			// aapt resource value: 51
+			public const int AppCompatTheme_colorControlActivated = 51;
 			
-			// aapt resource value: 0x52
-			public const int AppCompatTheme_colorControlHighlight = 82;
+			// aapt resource value: 52
+			public const int AppCompatTheme_colorControlHighlight = 52;
 			
-			// aapt resource value: 0x53
-			public const int AppCompatTheme_colorControlNormal = 83;
+			// aapt resource value: 53
+			public const int AppCompatTheme_colorControlNormal = 53;
 			
-			// aapt resource value: 0x54
-			public const int AppCompatTheme_colorError = 84;
+			// aapt resource value: 54
+			public const int AppCompatTheme_colorError = 54;
 			
-			// aapt resource value: 0x55
-			public const int AppCompatTheme_colorPrimary = 85;
+			// aapt resource value: 55
+			public const int AppCompatTheme_colorPrimary = 55;
 			
-			// aapt resource value: 0x56
-			public const int AppCompatTheme_colorPrimaryDark = 86;
+			// aapt resource value: 56
+			public const int AppCompatTheme_colorPrimaryDark = 56;
 			
-			// aapt resource value: 0x57
-			public const int AppCompatTheme_colorSwitchThumbNormal = 87;
+			// aapt resource value: 57
+			public const int AppCompatTheme_colorSwitchThumbNormal = 57;
 			
-			// aapt resource value: 0x58
-			public const int AppCompatTheme_controlBackground = 88;
+			// aapt resource value: 58
+			public const int AppCompatTheme_controlBackground = 58;
 			
-			// aapt resource value: 0x59
-			public const int AppCompatTheme_dialogCornerRadius = 89;
+			// aapt resource value: 59
+			public const int AppCompatTheme_dialogCornerRadius = 59;
 			
-			// aapt resource value: 0x60
-			public const int AppCompatTheme_dialogPreferredPadding = 96;
+			// aapt resource value: 60
+			public const int AppCompatTheme_dialogPreferredPadding = 60;
 			
-			// aapt resource value: 0x61
-			public const int AppCompatTheme_dialogTheme = 97;
+			// aapt resource value: 61
+			public const int AppCompatTheme_dialogTheme = 61;
 			
-			// aapt resource value: 0x62
-			public const int AppCompatTheme_dividerHorizontal = 98;
+			// aapt resource value: 62
+			public const int AppCompatTheme_dividerHorizontal = 62;
 			
-			// aapt resource value: 0x63
-			public const int AppCompatTheme_dividerVertical = 99;
+			// aapt resource value: 63
+			public const int AppCompatTheme_dividerVertical = 63;
 			
-			// aapt resource value: 0x65
-			public const int AppCompatTheme_dropdownListPreferredItemHeight = 101;
+			// aapt resource value: 65
+			public const int AppCompatTheme_dropdownListPreferredItemHeight = 65;
 			
-			// aapt resource value: 0x64
-			public const int AppCompatTheme_dropDownListViewStyle = 100;
+			// aapt resource value: 64
+			public const int AppCompatTheme_dropDownListViewStyle = 64;
 			
-			// aapt resource value: 0x66
-			public const int AppCompatTheme_editTextBackground = 102;
+			// aapt resource value: 66
+			public const int AppCompatTheme_editTextBackground = 66;
 			
-			// aapt resource value: 0x67
-			public const int AppCompatTheme_editTextColor = 103;
+			// aapt resource value: 67
+			public const int AppCompatTheme_editTextColor = 67;
 			
-			// aapt resource value: 0x68
-			public const int AppCompatTheme_editTextStyle = 104;
+			// aapt resource value: 68
+			public const int AppCompatTheme_editTextStyle = 68;
 			
-			// aapt resource value: 0x69
-			public const int AppCompatTheme_homeAsUpIndicator = 105;
+			// aapt resource value: 69
+			public const int AppCompatTheme_homeAsUpIndicator = 69;
 			
-			// aapt resource value: 0x70
-			public const int AppCompatTheme_imageButtonStyle = 112;
+			// aapt resource value: 70
+			public const int AppCompatTheme_imageButtonStyle = 70;
 			
-			// aapt resource value: 0x71
-			public const int AppCompatTheme_listChoiceBackgroundIndicator = 113;
+			// aapt resource value: 71
+			public const int AppCompatTheme_listChoiceBackgroundIndicator = 71;
 			
-			// aapt resource value: 0x72
-			public const int AppCompatTheme_listDividerAlertDialog = 114;
+			// aapt resource value: 72
+			public const int AppCompatTheme_listDividerAlertDialog = 72;
 			
-			// aapt resource value: 0x73
-			public const int AppCompatTheme_listMenuViewStyle = 115;
+			// aapt resource value: 73
+			public const int AppCompatTheme_listMenuViewStyle = 73;
 			
-			// aapt resource value: 0x74
-			public const int AppCompatTheme_listPopupWindowStyle = 116;
+			// aapt resource value: 74
+			public const int AppCompatTheme_listPopupWindowStyle = 74;
 			
-			// aapt resource value: 0x75
-			public const int AppCompatTheme_listPreferredItemHeight = 117;
+			// aapt resource value: 75
+			public const int AppCompatTheme_listPreferredItemHeight = 75;
 			
-			// aapt resource value: 0x76
-			public const int AppCompatTheme_listPreferredItemHeightLarge = 118;
+			// aapt resource value: 76
+			public const int AppCompatTheme_listPreferredItemHeightLarge = 76;
 			
-			// aapt resource value: 0x77
-			public const int AppCompatTheme_listPreferredItemHeightSmall = 119;
+			// aapt resource value: 77
+			public const int AppCompatTheme_listPreferredItemHeightSmall = 77;
 			
-			// aapt resource value: 0x78
-			public const int AppCompatTheme_listPreferredItemPaddingLeft = 120;
+			// aapt resource value: 78
+			public const int AppCompatTheme_listPreferredItemPaddingLeft = 78;
 			
-			// aapt resource value: 0x79
-			public const int AppCompatTheme_listPreferredItemPaddingRight = 121;
+			// aapt resource value: 79
+			public const int AppCompatTheme_listPreferredItemPaddingRight = 79;
 			
-			// aapt resource value: 0x80
-			public const int AppCompatTheme_panelBackground = 128;
+			// aapt resource value: 80
+			public const int AppCompatTheme_panelBackground = 80;
 			
-			// aapt resource value: 0x81
-			public const int AppCompatTheme_panelMenuListTheme = 129;
+			// aapt resource value: 81
+			public const int AppCompatTheme_panelMenuListTheme = 81;
 			
-			// aapt resource value: 0x82
-			public const int AppCompatTheme_panelMenuListWidth = 130;
+			// aapt resource value: 82
+			public const int AppCompatTheme_panelMenuListWidth = 82;
 			
-			// aapt resource value: 0x83
-			public const int AppCompatTheme_popupMenuStyle = 131;
+			// aapt resource value: 83
+			public const int AppCompatTheme_popupMenuStyle = 83;
 			
-			// aapt resource value: 0x84
-			public const int AppCompatTheme_popupWindowStyle = 132;
+			// aapt resource value: 84
+			public const int AppCompatTheme_popupWindowStyle = 84;
 			
-			// aapt resource value: 0x85
-			public const int AppCompatTheme_radioButtonStyle = 133;
+			// aapt resource value: 85
+			public const int AppCompatTheme_radioButtonStyle = 85;
 			
-			// aapt resource value: 0x86
-			public const int AppCompatTheme_ratingBarStyle = 134;
+			// aapt resource value: 86
+			public const int AppCompatTheme_ratingBarStyle = 86;
 			
-			// aapt resource value: 0x87
-			public const int AppCompatTheme_ratingBarStyleIndicator = 135;
+			// aapt resource value: 87
+			public const int AppCompatTheme_ratingBarStyleIndicator = 87;
 			
-			// aapt resource value: 0x88
-			public const int AppCompatTheme_ratingBarStyleSmall = 136;
+			// aapt resource value: 88
+			public const int AppCompatTheme_ratingBarStyleSmall = 88;
 			
-			// aapt resource value: 0x89
-			public const int AppCompatTheme_searchViewStyle = 137;
+			// aapt resource value: 89
+			public const int AppCompatTheme_searchViewStyle = 89;
 			
-			// aapt resource value: 0x90
-			public const int AppCompatTheme_seekBarStyle = 144;
+			// aapt resource value: 90
+			public const int AppCompatTheme_seekBarStyle = 90;
 			
-			// aapt resource value: 0x91
-			public const int AppCompatTheme_selectableItemBackground = 145;
+			// aapt resource value: 91
+			public const int AppCompatTheme_selectableItemBackground = 91;
 			
-			// aapt resource value: 0x92
-			public const int AppCompatTheme_selectableItemBackgroundBorderless = 146;
+			// aapt resource value: 92
+			public const int AppCompatTheme_selectableItemBackgroundBorderless = 92;
 			
-			// aapt resource value: 0x93
-			public const int AppCompatTheme_spinnerDropDownItemStyle = 147;
+			// aapt resource value: 93
+			public const int AppCompatTheme_spinnerDropDownItemStyle = 93;
 			
-			// aapt resource value: 0x94
-			public const int AppCompatTheme_spinnerStyle = 148;
+			// aapt resource value: 94
+			public const int AppCompatTheme_spinnerStyle = 94;
 			
-			// aapt resource value: 0x95
-			public const int AppCompatTheme_switchStyle = 149;
+			// aapt resource value: 95
+			public const int AppCompatTheme_switchStyle = 95;
 			
-			// aapt resource value: 0x96
-			public const int AppCompatTheme_textAppearanceLargePopupMenu = 150;
+			// aapt resource value: 96
+			public const int AppCompatTheme_textAppearanceLargePopupMenu = 96;
 			
-			// aapt resource value: 0x97
-			public const int AppCompatTheme_textAppearanceListItem = 151;
+			// aapt resource value: 97
+			public const int AppCompatTheme_textAppearanceListItem = 97;
 			
-			// aapt resource value: 0x98
-			public const int AppCompatTheme_textAppearanceListItemSecondary = 152;
+			// aapt resource value: 98
+			public const int AppCompatTheme_textAppearanceListItemSecondary = 98;
 			
-			// aapt resource value: 0x99
-			public const int AppCompatTheme_textAppearanceListItemSmall = 153;
+			// aapt resource value: 99
+			public const int AppCompatTheme_textAppearanceListItemSmall = 99;
 			
-			// aapt resource value: 0x100
-			public const int AppCompatTheme_textAppearancePopupMenuHeader = 256;
+			// aapt resource value: 100
+			public const int AppCompatTheme_textAppearancePopupMenuHeader = 100;
 			
-			// aapt resource value: 0x101
-			public const int AppCompatTheme_textAppearanceSearchResultSubtitle = 257;
+			// aapt resource value: 101
+			public const int AppCompatTheme_textAppearanceSearchResultSubtitle = 101;
 			
-			// aapt resource value: 0x102
-			public const int AppCompatTheme_textAppearanceSearchResultTitle = 258;
+			// aapt resource value: 102
+			public const int AppCompatTheme_textAppearanceSearchResultTitle = 102;
 			
-			// aapt resource value: 0x103
-			public const int AppCompatTheme_textAppearanceSmallPopupMenu = 259;
+			// aapt resource value: 103
+			public const int AppCompatTheme_textAppearanceSmallPopupMenu = 103;
 			
-			// aapt resource value: 0x104
-			public const int AppCompatTheme_textColorAlertDialogListItem = 260;
+			// aapt resource value: 104
+			public const int AppCompatTheme_textColorAlertDialogListItem = 104;
 			
-			// aapt resource value: 0x105
-			public const int AppCompatTheme_textColorSearchUrl = 261;
+			// aapt resource value: 105
+			public const int AppCompatTheme_textColorSearchUrl = 105;
 			
-			// aapt resource value: 0x106
-			public const int AppCompatTheme_toolbarNavigationButtonStyle = 262;
+			// aapt resource value: 106
+			public const int AppCompatTheme_toolbarNavigationButtonStyle = 106;
 			
-			// aapt resource value: 0x107
-			public const int AppCompatTheme_toolbarStyle = 263;
+			// aapt resource value: 107
+			public const int AppCompatTheme_toolbarStyle = 107;
 			
-			// aapt resource value: 0x108
-			public const int AppCompatTheme_tooltipForegroundColor = 264;
+			// aapt resource value: 108
+			public const int AppCompatTheme_tooltipForegroundColor = 108;
 			
-			// aapt resource value: 0x109
-			public const int AppCompatTheme_tooltipFrameBackground = 265;
+			// aapt resource value: 109
+			public const int AppCompatTheme_tooltipFrameBackground = 109;
 			
-			// aapt resource value: 0x110
-			public const int AppCompatTheme_viewInflaterClass = 272;
+			// aapt resource value: 110
+			public const int AppCompatTheme_viewInflaterClass = 110;
 			
-			// aapt resource value: 0x111
-			public const int AppCompatTheme_windowActionBar = 273;
+			// aapt resource value: 111
+			public const int AppCompatTheme_windowActionBar = 111;
 			
-			// aapt resource value: 0x112
-			public const int AppCompatTheme_windowActionBarOverlay = 274;
+			// aapt resource value: 112
+			public const int AppCompatTheme_windowActionBarOverlay = 112;
 			
-			// aapt resource value: 0x113
-			public const int AppCompatTheme_windowActionModeOverlay = 275;
+			// aapt resource value: 113
+			public const int AppCompatTheme_windowActionModeOverlay = 113;
 			
-			// aapt resource value: 0x114
-			public const int AppCompatTheme_windowFixedHeightMajor = 276;
+			// aapt resource value: 114
+			public const int AppCompatTheme_windowFixedHeightMajor = 114;
 			
-			// aapt resource value: 0x115
-			public const int AppCompatTheme_windowFixedHeightMinor = 277;
+			// aapt resource value: 115
+			public const int AppCompatTheme_windowFixedHeightMinor = 115;
 			
-			// aapt resource value: 0x116
-			public const int AppCompatTheme_windowFixedWidthMajor = 278;
+			// aapt resource value: 116
+			public const int AppCompatTheme_windowFixedWidthMajor = 116;
 			
-			// aapt resource value: 0x117
-			public const int AppCompatTheme_windowFixedWidthMinor = 279;
+			// aapt resource value: 117
+			public const int AppCompatTheme_windowFixedWidthMinor = 117;
 			
-			// aapt resource value: 0x118
-			public const int AppCompatTheme_windowMinWidthMajor = 280;
+			// aapt resource value: 118
+			public const int AppCompatTheme_windowMinWidthMajor = 118;
 			
-			// aapt resource value: 0x119
-			public const int AppCompatTheme_windowMinWidthMinor = 281;
+			// aapt resource value: 119
+			public const int AppCompatTheme_windowMinWidthMinor = 119;
 			
-			// aapt resource value: 0x120
-			public const int AppCompatTheme_windowNoTitle = 288;
+			// aapt resource value: 120
+			public const int AppCompatTheme_windowNoTitle = 120;
 			
 			// aapt resource value: { 0x7F03016E }
 			public static int[] AspectRatioFrameLayout = new int[] {
 					2130903406};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int AspectRatioFrameLayout_resize_mode = 0;
 			
 			// aapt resource value: { 0x7F030037,0x7F0300CB,0x7F0300CC,0x7F0300CD,0x7F0300CE,0x7F0300EE }
@@ -18478,22 +18671,22 @@ namespace HanselmanAndroid
 					2130903246,
 					2130903278};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int BottomAppBar_backgroundTint = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int BottomAppBar_fabAlignmentMode = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int BottomAppBar_fabCradleMargin = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int BottomAppBar_fabCradleRoundedCornerRadius = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int BottomAppBar_fabCradleVerticalOffset = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int BottomAppBar_hideOnScroll = 5;
 			
 			// aapt resource value: { 0x7F0300BC,0x7F030105,0x7F030107,0x7F030109,0x7F03010A,0x7F03010E,0x7F03010F,0x7F030110,0x7F030113,0x7F030149 }
@@ -18509,34 +18702,34 @@ namespace HanselmanAndroid
 					2130903315,
 					2130903369};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int BottomNavigationView_elevation = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int BottomNavigationView_itemBackground = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int BottomNavigationView_itemHorizontalTranslationEnabled = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int BottomNavigationView_itemIconSize = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int BottomNavigationView_itemIconTint = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int BottomNavigationView_itemTextAppearanceActive = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int BottomNavigationView_itemTextAppearanceInactive = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int BottomNavigationView_itemTextColor = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int BottomNavigationView_labelVisibilityMode = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int BottomNavigationView_menu = 9;
 			
 			// aapt resource value: { 0x7F03003C,0x7F03003D,0x7F03003F,0x7F030040 }
@@ -18546,23 +18739,23 @@ namespace HanselmanAndroid
 					2130903103,
 					2130903104};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int BottomSheetBehavior_Layout_behavior_hideable = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int BottomSheetBehavior_Layout_behavior_peekHeight = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int BottomSheetBehavior_Layout_behavior_skipCollapsed = 3;
 			
 			// aapt resource value: { 0x7F030028 }
 			public static int[] ButtonBarLayout = new int[] {
 					2130903080};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
 			
 			// aapt resource value: { 0x101013F,0x1010140,0x7F03005D,0x7F03005E,0x7F03005F,0x7F030060,0x7F030061,0x7F030062,0x7F03009C,0x7F03009D,0x7F03009E,0x7F03009F,0x7F0300A0 }
@@ -18581,44 +18774,44 @@ namespace HanselmanAndroid
 					2130903199,
 					2130903200};
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int CardView_android_minHeight = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int CardView_android_minWidth = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int CardView_cardBackgroundColor = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int CardView_cardCornerRadius = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int CardView_cardElevation = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int CardView_cardMaxElevation = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int CardView_cardPreventCornerOverlap = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int CardView_cardUseCompatPadding = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int CardView_contentPadding = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int CardView_contentPaddingBottom = 9;
 			
-			// aapt resource value: 0x10
-			public const int CardView_contentPaddingLeft = 16;
+			// aapt resource value: 10
+			public const int CardView_contentPaddingLeft = 10;
 			
-			// aapt resource value: 0x11
-			public const int CardView_contentPaddingRight = 17;
+			// aapt resource value: 11
+			public const int CardView_contentPaddingRight = 11;
 			
-			// aapt resource value: 0x12
-			public const int CardView_contentPaddingTop = 18;
+			// aapt resource value: 12
+			public const int CardView_contentPaddingTop = 12;
 			
 			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F030066,0x7F030067,0x7F030068,0x7F03006A,0x7F03006B,0x7F03006C,0x7F03006E,0x7F03006F,0x7F030070,0x7F030071,0x7F030072,0x7F030073,0x7F030078,0x7F030079,0x7F03007A,0x7F03007C,0x7F03007D,0x7F03007E,0x7F03007F,0x7F030080,0x7F030081,0x7F030082,0x7F0300EC,0x7F0300F8,0x7F0300FC,0x7F030171,0x7F030182,0x7F0301DC,0x7F0301DE }
 			public static int[] Chip = new int[] {
@@ -18666,125 +18859,125 @@ namespace HanselmanAndroid
 					2130903434,
 					2130903435};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ChipGroup_checkedChip = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ChipGroup_chipSpacing = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int ChipGroup_chipSpacingHorizontal = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int ChipGroup_chipSpacingVertical = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int ChipGroup_singleLine = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int ChipGroup_singleSelection = 5;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int Chip_android_checkable = 4;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int Chip_android_ellipsize = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int Chip_android_maxWidth = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int Chip_android_text = 3;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int Chip_android_textAppearance = 0;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int Chip_checkedIcon = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int Chip_checkedIconEnabled = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int Chip_checkedIconVisible = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int Chip_chipBackgroundColor = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int Chip_chipCornerRadius = 9;
 			
-			// aapt resource value: 0x10
-			public const int Chip_chipEndPadding = 16;
+			// aapt resource value: 10
+			public const int Chip_chipEndPadding = 10;
 			
-			// aapt resource value: 0x11
-			public const int Chip_chipIcon = 17;
+			// aapt resource value: 11
+			public const int Chip_chipIcon = 11;
 			
-			// aapt resource value: 0x12
-			public const int Chip_chipIconEnabled = 18;
+			// aapt resource value: 12
+			public const int Chip_chipIconEnabled = 12;
 			
-			// aapt resource value: 0x13
-			public const int Chip_chipIconSize = 19;
+			// aapt resource value: 13
+			public const int Chip_chipIconSize = 13;
 			
-			// aapt resource value: 0x14
-			public const int Chip_chipIconTint = 20;
+			// aapt resource value: 14
+			public const int Chip_chipIconTint = 14;
 			
-			// aapt resource value: 0x15
-			public const int Chip_chipIconVisible = 21;
+			// aapt resource value: 15
+			public const int Chip_chipIconVisible = 15;
 			
-			// aapt resource value: 0x16
-			public const int Chip_chipMinHeight = 22;
+			// aapt resource value: 16
+			public const int Chip_chipMinHeight = 16;
 			
-			// aapt resource value: 0x17
-			public const int Chip_chipStartPadding = 23;
+			// aapt resource value: 17
+			public const int Chip_chipStartPadding = 17;
 			
-			// aapt resource value: 0x18
-			public const int Chip_chipStrokeColor = 24;
+			// aapt resource value: 18
+			public const int Chip_chipStrokeColor = 18;
 			
-			// aapt resource value: 0x19
-			public const int Chip_chipStrokeWidth = 25;
+			// aapt resource value: 19
+			public const int Chip_chipStrokeWidth = 19;
 			
-			// aapt resource value: 0x20
-			public const int Chip_closeIcon = 32;
+			// aapt resource value: 20
+			public const int Chip_closeIcon = 20;
 			
-			// aapt resource value: 0x21
-			public const int Chip_closeIconEnabled = 33;
+			// aapt resource value: 21
+			public const int Chip_closeIconEnabled = 21;
 			
-			// aapt resource value: 0x22
-			public const int Chip_closeIconEndPadding = 34;
+			// aapt resource value: 22
+			public const int Chip_closeIconEndPadding = 22;
 			
-			// aapt resource value: 0x23
-			public const int Chip_closeIconSize = 35;
+			// aapt resource value: 23
+			public const int Chip_closeIconSize = 23;
 			
-			// aapt resource value: 0x24
-			public const int Chip_closeIconStartPadding = 36;
+			// aapt resource value: 24
+			public const int Chip_closeIconStartPadding = 24;
 			
-			// aapt resource value: 0x25
-			public const int Chip_closeIconTint = 37;
+			// aapt resource value: 25
+			public const int Chip_closeIconTint = 25;
 			
-			// aapt resource value: 0x26
-			public const int Chip_closeIconVisible = 38;
+			// aapt resource value: 26
+			public const int Chip_closeIconVisible = 26;
 			
-			// aapt resource value: 0x27
-			public const int Chip_hideMotionSpec = 39;
+			// aapt resource value: 27
+			public const int Chip_hideMotionSpec = 27;
 			
-			// aapt resource value: 0x28
-			public const int Chip_iconEndPadding = 40;
+			// aapt resource value: 28
+			public const int Chip_iconEndPadding = 28;
 			
-			// aapt resource value: 0x29
-			public const int Chip_iconStartPadding = 41;
+			// aapt resource value: 29
+			public const int Chip_iconStartPadding = 29;
 			
-			// aapt resource value: 0x30
-			public const int Chip_rippleColor = 48;
+			// aapt resource value: 30
+			public const int Chip_rippleColor = 30;
 			
-			// aapt resource value: 0x31
-			public const int Chip_showMotionSpec = 49;
+			// aapt resource value: 31
+			public const int Chip_showMotionSpec = 31;
 			
-			// aapt resource value: 0x32
-			public const int Chip_textEndPadding = 50;
+			// aapt resource value: 32
+			public const int Chip_textEndPadding = 32;
 			
-			// aapt resource value: 0x33
-			public const int Chip_textStartPadding = 51;
+			// aapt resource value: 33
+			public const int Chip_textStartPadding = 33;
 			
 			// aapt resource value: { 0x7F030086,0x7F030087,0x7F0300A1,0x7F0300C3,0x7F0300C4,0x7F0300C5,0x7F0300C6,0x7F0300C7,0x7F0300C8,0x7F0300C9,0x7F030172,0x7F030174,0x7F03019B,0x7F0301E9,0x7F0301EA,0x7F0301F4 }
 			public static int[] CollapsingToolbarLayout = new int[] {
@@ -18805,34 +18998,34 @@ namespace HanselmanAndroid
 					2130903530,
 					2130903540};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int CollapsingToolbarLayout_collapsedTitleTextAppearance = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int CollapsingToolbarLayout_contentScrim = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int CollapsingToolbarLayout_expandedTitleGravity = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int CollapsingToolbarLayout_expandedTitleMargin = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int CollapsingToolbarLayout_expandedTitleMarginEnd = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int CollapsingToolbarLayout_expandedTitleMarginStart = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int CollapsingToolbarLayout_expandedTitleMarginTop = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int CollapsingToolbarLayout_expandedTitleTextAppearance = 9;
 			
 			// aapt resource value: { 0x7F03011A,0x7F03011B }
@@ -18840,29 +19033,29 @@ namespace HanselmanAndroid
 					2130903322,
 					2130903323};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
 			
-			// aapt resource value: 0x10
-			public const int CollapsingToolbarLayout_scrimAnimationDuration = 16;
+			// aapt resource value: 10
+			public const int CollapsingToolbarLayout_scrimAnimationDuration = 10;
 			
-			// aapt resource value: 0x11
-			public const int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 17;
+			// aapt resource value: 11
+			public const int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 11;
 			
-			// aapt resource value: 0x12
-			public const int CollapsingToolbarLayout_statusBarScrim = 18;
+			// aapt resource value: 12
+			public const int CollapsingToolbarLayout_statusBarScrim = 12;
 			
-			// aapt resource value: 0x13
-			public const int CollapsingToolbarLayout_title = 19;
+			// aapt resource value: 13
+			public const int CollapsingToolbarLayout_title = 13;
 			
-			// aapt resource value: 0x14
-			public const int CollapsingToolbarLayout_titleEnabled = 20;
+			// aapt resource value: 14
+			public const int CollapsingToolbarLayout_titleEnabled = 14;
 			
-			// aapt resource value: 0x15
-			public const int CollapsingToolbarLayout_toolbarId = 21;
+			// aapt resource value: 15
+			public const int CollapsingToolbarLayout_toolbarId = 15;
 			
 			// aapt resource value: { 0x10101A5,0x101031F,0x7F030029 }
 			public static int[] ColorStateListItem = new int[] {
@@ -18870,13 +19063,13 @@ namespace HanselmanAndroid
 					16843551,
 					2130903081};
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int ColorStateListItem_alpha = 2;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ColorStateListItem_android_alpha = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ColorStateListItem_android_color = 0;
 			
 			// aapt resource value: { 0x1010107,0x7F03005B,0x7F03005C }
@@ -18885,13 +19078,13 @@ namespace HanselmanAndroid
 					2130903131,
 					2130903132};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int CompoundButton_android_button = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int CompoundButton_buttonTint = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int CompoundButton_buttonTintMode = 2;
 			
 			// aapt resource value: { 0x7F030112,0x7F03019A }
@@ -18899,7 +19092,7 @@ namespace HanselmanAndroid
 					2130903314,
 					2130903450};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
 			
 			// aapt resource value: { 0x10100B3,0x7F030117,0x7F030118,0x7F030119,0x7F03011C,0x7F03011D,0x7F03011E }
@@ -18912,28 +19105,28 @@ namespace HanselmanAndroid
 					2130903325,
 					2130903326};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int CoordinatorLayout_Layout_layout_anchor = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int CoordinatorLayout_Layout_layout_anchorGravity = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int CoordinatorLayout_Layout_layout_behavior = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int CoordinatorLayout_Layout_layout_insetEdge = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int CoordinatorLayout_Layout_layout_keyline = 6;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int CoordinatorLayout_statusBarBackground = 1;
 			
 			// aapt resource value: { 0x7F030022,0x7F030023,0x7F03003A,0x7F030050,0x7F03015D,0x7F03015E,0x7F030175,0x7F030176,0x7F030177,0x7F030178,0x7F030179,0x7F0301FA,0x7F0301FF }
@@ -18952,54 +19145,54 @@ namespace HanselmanAndroid
 					2130903546,
 					2130903551};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int DefaultTimeBar_ad_marker_color = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int DefaultTimeBar_ad_marker_width = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int DefaultTimeBar_bar_height = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int DefaultTimeBar_buffered_color = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int DefaultTimeBar_played_ad_marker_color = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int DefaultTimeBar_played_color = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int DefaultTimeBar_scrubber_color = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int DefaultTimeBar_scrubber_disabled_size = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int DefaultTimeBar_scrubber_dragged_size = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int DefaultTimeBar_scrubber_drawable = 9;
 			
-			// aapt resource value: 0x10
-			public const int DefaultTimeBar_scrubber_enabled_size = 16;
+			// aapt resource value: 10
+			public const int DefaultTimeBar_scrubber_enabled_size = 10;
 			
-			// aapt resource value: 0x11
-			public const int DefaultTimeBar_touch_target_height = 17;
+			// aapt resource value: 11
+			public const int DefaultTimeBar_touch_target_height = 11;
 			
-			// aapt resource value: 0x12
-			public const int DefaultTimeBar_unplayed_color = 18;
+			// aapt resource value: 12
+			public const int DefaultTimeBar_unplayed_color = 12;
 			
 			// aapt resource value: { 0x7F030045,0x7F030046 }
 			public static int[] DesignTheme = new int[] {
 					2130903109,
 					2130903110};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int DesignTheme_bottomSheetDialogTheme = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int DesignTheme_bottomSheetStyle = 1;
 			
 			// aapt resource value: { 0x7F03002B,0x7F03002C,0x7F030039,0x7F030088,0x7F0300B5,0x7F0300E5,0x7F03018F,0x7F0301E0 }
@@ -19013,28 +19206,28 @@ namespace HanselmanAndroid
 					2130903439,
 					2130903520};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int DrawerArrowToggle_arrowHeadLength = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int DrawerArrowToggle_arrowShaftLength = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int DrawerArrowToggle_barLength = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int DrawerArrowToggle_color = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int DrawerArrowToggle_drawableSize = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int DrawerArrowToggle_gapBetweenBars = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int DrawerArrowToggle_spinBars = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
 			
 			// aapt resource value: { 0x7F030037,0x7F030038,0x7F030041,0x7F0300BC,0x7F0300CF,0x7F0300D0,0x7F0300EC,0x7F0300F6,0x7F03013A,0x7F030164,0x7F030171,0x7F030182,0x7F030200 }
@@ -19053,61 +19246,61 @@ namespace HanselmanAndroid
 					2130903426,
 					2130903552};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int FloatingActionButton_backgroundTint = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int FloatingActionButton_backgroundTintMode = 1;
 			
 			// aapt resource value: { 0x7F03003B }
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
 					2130903099};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int FloatingActionButton_borderWidth = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int FloatingActionButton_elevation = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int FloatingActionButton_fabCustomSize = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int FloatingActionButton_fabSize = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int FloatingActionButton_hideMotionSpec = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int FloatingActionButton_hoveredFocusedTranslationZ = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int FloatingActionButton_maxImageSize = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int FloatingActionButton_pressedTranslationZ = 9;
 			
-			// aapt resource value: 0x10
-			public const int FloatingActionButton_rippleColor = 16;
+			// aapt resource value: 10
+			public const int FloatingActionButton_rippleColor = 10;
 			
-			// aapt resource value: 0x11
-			public const int FloatingActionButton_showMotionSpec = 17;
+			// aapt resource value: 11
+			public const int FloatingActionButton_showMotionSpec = 11;
 			
-			// aapt resource value: 0x12
-			public const int FloatingActionButton_useCompatPadding = 18;
+			// aapt resource value: 12
+			public const int FloatingActionButton_useCompatPadding = 12;
 			
 			// aapt resource value: { 0x7F03010C,0x7F030123 }
 			public static int[] FlowLayout = new int[] {
 					2130903308,
 					2130903331};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int FlowLayout_itemSpacing = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int FlowLayout_lineSpacing = 1;
 			
 			// aapt resource value: { 0x7F0300DB,0x7F0300DC,0x7F0300DD,0x7F0300DE,0x7F0300DF,0x7F0300E0 }
@@ -19132,52 +19325,52 @@ namespace HanselmanAndroid
 					2130903267,
 					2130903550};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int FontFamilyFont_android_fontStyle = 2;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int FontFamilyFont_android_fontVariationSettings = 4;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int FontFamilyFont_android_fontWeight = 1;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int FontFamilyFont_android_ttcIndex = 3;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int FontFamilyFont_font = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int FontFamilyFont_fontStyle = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int FontFamilyFont_fontVariationSettings = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int FontFamilyFont_fontWeight = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int FontFamilyFont_ttcIndex = 9;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int FontFamily_fontProviderAuthority = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int FontFamily_fontProviderCerts = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int FontFamily_fontProviderFetchStrategy = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int FontFamily_fontProviderFetchTimeout = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int FontFamily_fontProviderPackage = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int FontFamily_fontProviderQuery = 5;
 			
 			// aapt resource value: { 0x1010109,0x1010200,0x7F0300E4 }
@@ -19186,13 +19379,13 @@ namespace HanselmanAndroid
 					16843264,
 					2130903268};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ForegroundLinearLayout_android_foreground = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ForegroundLinearLayout_android_foregroundGravity = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int ForegroundLinearLayout_foregroundInsidePadding = 2;
 			
 			// aapt resource value: { 0x101019D,0x101019E,0x10101A1,0x10101A2,0x10101A3,0x10101A4,0x1010201,0x101020B,0x1010510,0x1010511,0x1010512,0x1010513 }
@@ -19215,46 +19408,46 @@ namespace HanselmanAndroid
 					16843173,
 					16844052};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int GradientColorItem_android_color = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int GradientColorItem_android_offset = 1;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int GradientColor_android_centerColor = 7;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int GradientColor_android_centerX = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int GradientColor_android_centerY = 4;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int GradientColor_android_endColor = 1;
 			
-			// aapt resource value: 0x10
-			public const int GradientColor_android_endX = 16;
+			// aapt resource value: 10
+			public const int GradientColor_android_endX = 10;
 			
-			// aapt resource value: 0x11
-			public const int GradientColor_android_endY = 17;
+			// aapt resource value: 11
+			public const int GradientColor_android_endY = 11;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int GradientColor_android_gradientRadius = 5;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int GradientColor_android_startColor = 0;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int GradientColor_android_startX = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int GradientColor_android_startY = 9;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int GradientColor_android_tileMode = 6;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int GradientColor_android_type = 2;
 			
 			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300B1,0x7F0300B3,0x7F03013B,0x7F030181 }
@@ -19269,25 +19462,25 @@ namespace HanselmanAndroid
 					2130903355,
 					2130903425};
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int LinearLayoutCompat_android_baselineAlignedChildIndex = 3;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int LinearLayoutCompat_android_gravity = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int LinearLayoutCompat_android_orientation = 1;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int LinearLayoutCompat_android_weightSum = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int LinearLayoutCompat_divider = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int LinearLayoutCompat_dividerPadding = 6;
 			
 			// aapt resource value: { 0x10100B3,0x10100F4,0x10100F5,0x1010181 }
@@ -19297,22 +19490,22 @@ namespace HanselmanAndroid
 					16842997,
 					16843137};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int LinearLayoutCompat_Layout_android_layout_gravity = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int LinearLayoutCompat_Layout_android_layout_height = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int LinearLayoutCompat_Layout_android_layout_weight = 3;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int LinearLayoutCompat_Layout_android_layout_width = 1;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int LinearLayoutCompat_measureWithLargestChild = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int LinearLayoutCompat_showDividers = 8;
 			
 			// aapt resource value: { 0x10102AC,0x10102AD }
@@ -19320,10 +19513,10 @@ namespace HanselmanAndroid
 					16843436,
 					16843437};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ListPopupWindow_android_dropDownHorizontalOffset = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
 			
 			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030037,0x7F030038,0x7F0300A5,0x7F0300F7,0x7F0300F9,0x7F0300FA,0x7F0300FB,0x7F0300FD,0x7F0300FE,0x7F030171,0x7F03019C,0x7F03019D }
@@ -19345,63 +19538,63 @@ namespace HanselmanAndroid
 					2130903452,
 					2130903453};
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int MaterialButton_android_insetBottom = 3;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int MaterialButton_android_insetLeft = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int MaterialButton_android_insetRight = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int MaterialButton_android_insetTop = 2;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int MaterialButton_backgroundTint = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int MaterialButton_backgroundTintMode = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int MaterialButton_cornerRadius = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int MaterialButton_icon = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int MaterialButton_iconGravity = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int MaterialButton_iconPadding = 9;
 			
-			// aapt resource value: 0x10
-			public const int MaterialButton_iconSize = 16;
+			// aapt resource value: 10
+			public const int MaterialButton_iconSize = 10;
 			
-			// aapt resource value: 0x11
-			public const int MaterialButton_iconTint = 17;
+			// aapt resource value: 11
+			public const int MaterialButton_iconTint = 11;
 			
-			// aapt resource value: 0x12
-			public const int MaterialButton_iconTintMode = 18;
+			// aapt resource value: 12
+			public const int MaterialButton_iconTintMode = 12;
 			
-			// aapt resource value: 0x13
-			public const int MaterialButton_rippleColor = 19;
+			// aapt resource value: 13
+			public const int MaterialButton_rippleColor = 13;
 			
-			// aapt resource value: 0x14
-			public const int MaterialButton_strokeColor = 20;
+			// aapt resource value: 14
+			public const int MaterialButton_strokeColor = 14;
 			
-			// aapt resource value: 0x15
-			public const int MaterialButton_strokeWidth = 21;
+			// aapt resource value: 15
+			public const int MaterialButton_strokeWidth = 15;
 			
 			// aapt resource value: { 0x7F03019C,0x7F03019D }
 			public static int[] MaterialCardView = new int[] {
 					2130903452,
 					2130903453};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int MaterialCardView_strokeColor = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int MaterialCardView_strokeWidth = 1;
 			
 			// aapt resource value: { 0x7F030045,0x7F030046,0x7F03006D,0x7F030077,0x7F03007B,0x7F030089,0x7F03008A,0x7F030090,0x7F030091,0x7F030092,0x7F0300BB,0x7F0300D8,0x7F030131,0x7F030132,0x7F03014E,0x7F030173,0x7F03018C,0x7F0301C0,0x7F0301C5,0x7F0301C6,0x7F0301C7,0x7F0301C8,0x7F0301C9,0x7F0301CA,0x7F0301CB,0x7F0301CC,0x7F0301CD,0x7F0301CE,0x7F0301D3,0x7F0301D8,0x7F0301D9,0x7F0301DD }
@@ -19439,101 +19632,101 @@ namespace HanselmanAndroid
 					2130903513,
 					2130903517};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int MaterialComponentsTheme_bottomSheetStyle = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int MaterialComponentsTheme_chipGroupStyle = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int MaterialComponentsTheme_chipStandaloneStyle = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int MaterialComponentsTheme_chipStyle = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int MaterialComponentsTheme_colorAccent = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int MaterialComponentsTheme_colorBackgroundFloating = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int MaterialComponentsTheme_colorPrimary = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int MaterialComponentsTheme_colorPrimaryDark = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int MaterialComponentsTheme_colorSecondary = 9;
 			
-			// aapt resource value: 0x10
-			public const int MaterialComponentsTheme_editTextStyle = 16;
+			// aapt resource value: 10
+			public const int MaterialComponentsTheme_editTextStyle = 10;
 			
-			// aapt resource value: 0x11
-			public const int MaterialComponentsTheme_floatingActionButtonStyle = 17;
+			// aapt resource value: 11
+			public const int MaterialComponentsTheme_floatingActionButtonStyle = 11;
 			
-			// aapt resource value: 0x12
-			public const int MaterialComponentsTheme_materialButtonStyle = 18;
+			// aapt resource value: 12
+			public const int MaterialComponentsTheme_materialButtonStyle = 12;
 			
-			// aapt resource value: 0x13
-			public const int MaterialComponentsTheme_materialCardViewStyle = 19;
+			// aapt resource value: 13
+			public const int MaterialComponentsTheme_materialCardViewStyle = 13;
 			
-			// aapt resource value: 0x14
-			public const int MaterialComponentsTheme_navigationViewStyle = 20;
+			// aapt resource value: 14
+			public const int MaterialComponentsTheme_navigationViewStyle = 14;
 			
-			// aapt resource value: 0x15
-			public const int MaterialComponentsTheme_scrimBackground = 21;
+			// aapt resource value: 15
+			public const int MaterialComponentsTheme_scrimBackground = 15;
 			
-			// aapt resource value: 0x16
-			public const int MaterialComponentsTheme_snackbarButtonStyle = 22;
+			// aapt resource value: 16
+			public const int MaterialComponentsTheme_snackbarButtonStyle = 16;
 			
-			// aapt resource value: 0x17
-			public const int MaterialComponentsTheme_tabStyle = 23;
+			// aapt resource value: 17
+			public const int MaterialComponentsTheme_tabStyle = 17;
 			
-			// aapt resource value: 0x18
-			public const int MaterialComponentsTheme_textAppearanceBody1 = 24;
+			// aapt resource value: 18
+			public const int MaterialComponentsTheme_textAppearanceBody1 = 18;
 			
-			// aapt resource value: 0x19
-			public const int MaterialComponentsTheme_textAppearanceBody2 = 25;
+			// aapt resource value: 19
+			public const int MaterialComponentsTheme_textAppearanceBody2 = 19;
 			
-			// aapt resource value: 0x20
-			public const int MaterialComponentsTheme_textAppearanceButton = 32;
+			// aapt resource value: 20
+			public const int MaterialComponentsTheme_textAppearanceButton = 20;
 			
-			// aapt resource value: 0x21
-			public const int MaterialComponentsTheme_textAppearanceCaption = 33;
+			// aapt resource value: 21
+			public const int MaterialComponentsTheme_textAppearanceCaption = 21;
 			
-			// aapt resource value: 0x22
-			public const int MaterialComponentsTheme_textAppearanceHeadline1 = 34;
+			// aapt resource value: 22
+			public const int MaterialComponentsTheme_textAppearanceHeadline1 = 22;
 			
-			// aapt resource value: 0x23
-			public const int MaterialComponentsTheme_textAppearanceHeadline2 = 35;
+			// aapt resource value: 23
+			public const int MaterialComponentsTheme_textAppearanceHeadline2 = 23;
 			
-			// aapt resource value: 0x24
-			public const int MaterialComponentsTheme_textAppearanceHeadline3 = 36;
+			// aapt resource value: 24
+			public const int MaterialComponentsTheme_textAppearanceHeadline3 = 24;
 			
-			// aapt resource value: 0x25
-			public const int MaterialComponentsTheme_textAppearanceHeadline4 = 37;
+			// aapt resource value: 25
+			public const int MaterialComponentsTheme_textAppearanceHeadline4 = 25;
 			
-			// aapt resource value: 0x26
-			public const int MaterialComponentsTheme_textAppearanceHeadline5 = 38;
+			// aapt resource value: 26
+			public const int MaterialComponentsTheme_textAppearanceHeadline5 = 26;
 			
-			// aapt resource value: 0x27
-			public const int MaterialComponentsTheme_textAppearanceHeadline6 = 39;
+			// aapt resource value: 27
+			public const int MaterialComponentsTheme_textAppearanceHeadline6 = 27;
 			
-			// aapt resource value: 0x28
-			public const int MaterialComponentsTheme_textAppearanceOverline = 40;
+			// aapt resource value: 28
+			public const int MaterialComponentsTheme_textAppearanceOverline = 28;
 			
-			// aapt resource value: 0x29
-			public const int MaterialComponentsTheme_textAppearanceSubtitle1 = 41;
+			// aapt resource value: 29
+			public const int MaterialComponentsTheme_textAppearanceSubtitle1 = 29;
 			
-			// aapt resource value: 0x30
-			public const int MaterialComponentsTheme_textAppearanceSubtitle2 = 48;
+			// aapt resource value: 30
+			public const int MaterialComponentsTheme_textAppearanceSubtitle2 = 30;
 			
-			// aapt resource value: 0x31
-			public const int MaterialComponentsTheme_textInputStyle = 49;
+			// aapt resource value: 31
+			public const int MaterialComponentsTheme_textInputStyle = 31;
 			
 			// aapt resource value: { 0x101013F,0x1010140,0x7F0300CA,0x7F03013E }
 			public static int[] MediaRouteButton = new int[] {
@@ -19542,16 +19735,16 @@ namespace HanselmanAndroid
 					2130903242,
 					2130903358};
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int MediaRouteButton_android_minHeight = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int MediaRouteButton_android_minWidth = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int MediaRouteButton_externalRouteEnabledDrawable = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int MediaRouteButton_mediaRouteButtonTint = 3;
 			
 			// aapt resource value: { 0x101000E,0x10100D0,0x1010194,0x10101DE,0x10101DF,0x10101E0 }
@@ -19563,22 +19756,22 @@ namespace HanselmanAndroid
 					16843231,
 					16843232};
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int MenuGroup_android_checkableBehavior = 5;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int MenuGroup_android_enabled = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int MenuGroup_android_id = 1;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int MenuGroup_android_menuCategory = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int MenuGroup_android_orderInCategory = 4;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int MenuGroup_android_visible = 2;
 			
 			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F03002A,0x7F030095,0x7F0300FD,0x7F0300FE,0x7F03014F,0x7F030180,0x7F0301F9 }
@@ -19607,74 +19800,74 @@ namespace HanselmanAndroid
 					2130903424,
 					2130903545};
 			
-			// aapt resource value: 0x13
-			public const int MenuItem_actionLayout = 19;
+			// aapt resource value: 13
+			public const int MenuItem_actionLayout = 13;
 			
-			// aapt resource value: 0x14
-			public const int MenuItem_actionProviderClass = 20;
+			// aapt resource value: 14
+			public const int MenuItem_actionProviderClass = 14;
 			
-			// aapt resource value: 0x15
-			public const int MenuItem_actionViewClass = 21;
+			// aapt resource value: 15
+			public const int MenuItem_actionViewClass = 15;
 			
-			// aapt resource value: 0x16
-			public const int MenuItem_alphabeticModifiers = 22;
+			// aapt resource value: 16
+			public const int MenuItem_alphabeticModifiers = 16;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int MenuItem_android_alphabeticShortcut = 9;
 			
-			// aapt resource value: 0x11
-			public const int MenuItem_android_checkable = 17;
+			// aapt resource value: 11
+			public const int MenuItem_android_checkable = 11;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int MenuItem_android_checked = 3;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int MenuItem_android_enabled = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int MenuItem_android_icon = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int MenuItem_android_id = 2;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int MenuItem_android_menuCategory = 5;
 			
-			// aapt resource value: 0x10
-			public const int MenuItem_android_numericShortcut = 16;
+			// aapt resource value: 10
+			public const int MenuItem_android_numericShortcut = 10;
 			
-			// aapt resource value: 0x12
-			public const int MenuItem_android_onClick = 18;
+			// aapt resource value: 12
+			public const int MenuItem_android_onClick = 12;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int MenuItem_android_orderInCategory = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int MenuItem_android_title = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int MenuItem_android_titleCondensed = 8;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int MenuItem_android_visible = 4;
 			
-			// aapt resource value: 0x17
-			public const int MenuItem_contentDescription = 23;
+			// aapt resource value: 17
+			public const int MenuItem_contentDescription = 17;
 			
-			// aapt resource value: 0x18
-			public const int MenuItem_iconTint = 24;
+			// aapt resource value: 18
+			public const int MenuItem_iconTint = 18;
 			
-			// aapt resource value: 0x19
-			public const int MenuItem_iconTintMode = 25;
+			// aapt resource value: 19
+			public const int MenuItem_iconTintMode = 19;
 			
-			// aapt resource value: 0x20
-			public const int MenuItem_numericModifiers = 32;
+			// aapt resource value: 20
+			public const int MenuItem_numericModifiers = 20;
 			
-			// aapt resource value: 0x21
-			public const int MenuItem_showAsAction = 33;
+			// aapt resource value: 21
+			public const int MenuItem_showAsAction = 21;
 			
-			// aapt resource value: 0x22
-			public const int MenuItem_tooltipText = 34;
+			// aapt resource value: 22
+			public const int MenuItem_tooltipText = 22;
 			
 			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F030163,0x7F03019E }
 			public static int[] MenuView = new int[] {
@@ -19688,31 +19881,31 @@ namespace HanselmanAndroid
 					2130903395,
 					2130903454};
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int MenuView_android_horizontalDivider = 2;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int MenuView_android_itemBackground = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int MenuView_android_itemIconDisabledAlpha = 6;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int MenuView_android_itemTextAppearance = 1;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int MenuView_android_verticalDivider = 3;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int MenuView_android_windowAnimationStyle = 0;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int MenuView_preserveIconSpacing = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int MenuView_subMenuArrow = 8;
 			
 			// aapt resource value: { 0x10100D4,0x10100DD,0x101011F,0x7F0300BC,0x7F0300E7,0x7F030105,0x7F030106,0x7F030108,0x7F03010A,0x7F03010D,0x7F030110,0x7F030149 }
@@ -19730,41 +19923,41 @@ namespace HanselmanAndroid
 					2130903312,
 					2130903369};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int NavigationView_android_fitsSystemWindows = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int NavigationView_android_maxWidth = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int NavigationView_elevation = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int NavigationView_headerLayout = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int NavigationView_itemBackground = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int NavigationView_itemHorizontalPadding = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int NavigationView_itemIconPadding = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int NavigationView_itemIconTint = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int NavigationView_itemTextAppearance = 9;
 			
-			// aapt resource value: 0x10
-			public const int NavigationView_itemTextColor = 16;
+			// aapt resource value: 10
+			public const int NavigationView_itemTextColor = 10;
 			
-			// aapt resource value: 0x11
-			public const int NavigationView_menu = 17;
+			// aapt resource value: 11
+			public const int NavigationView_menu = 11;
 			
 			// aapt resource value: { 0x7F0300A3,0x7F0300D6,0x7F03016D,0x7F030170,0x7F030186,0x7F030187 }
 			public static int[] PlayerControlView = new int[] {
@@ -19775,22 +19968,22 @@ namespace HanselmanAndroid
 					2130903430,
 					2130903431};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int PlayerControlView_controller_layout_id = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int PlayerControlView_fastforward_increment = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int PlayerControlView_repeat_toggle_modes = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int PlayerControlView_rewind_increment = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int PlayerControlView_show_shuffle_button = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int PlayerControlView_show_timeout = 5;
 			
 			// aapt resource value: { 0x7F030033,0x7F0300A3,0x7F0300AC,0x7F0300D6,0x7F0300EF,0x7F0300F0,0x7F030111,0x7F03015F,0x7F03016D,0x7F03016E,0x7F030170,0x7F030185,0x7F030186,0x7F030187,0x7F030188,0x7F0301A5,0x7F030201,0x7F030202 }
@@ -19814,59 +20007,59 @@ namespace HanselmanAndroid
 					2130903553,
 					2130903554};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int PlayerView_auto_show = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int PlayerView_controller_layout_id = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int PlayerView_default_artwork = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int PlayerView_fastforward_increment = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int PlayerView_hide_during_ads = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int PlayerView_hide_on_touch = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int PlayerView_keep_content_on_player_reset = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int PlayerView_player_layout_id = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int PlayerView_repeat_toggle_modes = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int PlayerView_resize_mode = 9;
 			
-			// aapt resource value: 0x10
-			public const int PlayerView_rewind_increment = 16;
+			// aapt resource value: 10
+			public const int PlayerView_rewind_increment = 10;
 			
-			// aapt resource value: 0x11
-			public const int PlayerView_show_buffering = 17;
+			// aapt resource value: 11
+			public const int PlayerView_show_buffering = 11;
 			
-			// aapt resource value: 0x12
-			public const int PlayerView_show_shuffle_button = 18;
+			// aapt resource value: 12
+			public const int PlayerView_show_shuffle_button = 12;
 			
-			// aapt resource value: 0x13
-			public const int PlayerView_show_timeout = 19;
+			// aapt resource value: 13
+			public const int PlayerView_show_timeout = 13;
 			
-			// aapt resource value: 0x14
-			public const int PlayerView_shutter_background_color = 20;
+			// aapt resource value: 14
+			public const int PlayerView_shutter_background_color = 14;
 			
-			// aapt resource value: 0x15
-			public const int PlayerView_surface_type = 21;
+			// aapt resource value: 15
+			public const int PlayerView_surface_type = 15;
 			
-			// aapt resource value: 0x16
-			public const int PlayerView_use_artwork = 22;
+			// aapt resource value: 16
+			public const int PlayerView_use_artwork = 16;
 			
-			// aapt resource value: 0x17
-			public const int PlayerView_use_controller = 23;
+			// aapt resource value: 17
+			public const int PlayerView_use_controller = 17;
 			
 			// aapt resource value: { 0x1010176,0x10102C9,0x7F030150 }
 			public static int[] PopupWindow = new int[] {
@@ -19878,16 +20071,16 @@ namespace HanselmanAndroid
 			public static int[] PopupWindowBackgroundState = new int[] {
 					2130903445};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int PopupWindow_android_popupAnimationStyle = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int PopupWindow_android_popupBackground = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int PopupWindow_overlapAnchor = 2;
 			
 			// aapt resource value: { 0x7F030151,0x7F030154 }
@@ -19895,10 +20088,10 @@ namespace HanselmanAndroid
 					2130903377,
 					2130903380};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int RecycleListView_paddingBottomNoButtons = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int RecycleListView_paddingTopNoTitle = 1;
 			
 			// aapt resource value: { 0x10100C4,0x10100F1,0x7F0300D1,0x7F0300D2,0x7F0300D3,0x7F0300D4,0x7F0300D5,0x7F030116,0x7F03016F,0x7F03018E,0x7F030194 }
@@ -19915,51 +20108,51 @@ namespace HanselmanAndroid
 					2130903438,
 					2130903444};
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int RecyclerView_android_descendantFocusability = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int RecyclerView_android_orientation = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int RecyclerView_fastScrollEnabled = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int RecyclerView_fastScrollHorizontalThumbDrawable = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int RecyclerView_fastScrollHorizontalTrackDrawable = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int RecyclerView_fastScrollVerticalThumbDrawable = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int RecyclerView_fastScrollVerticalTrackDrawable = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int RecyclerView_layoutManager = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int RecyclerView_reverseLayout = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int RecyclerView_spanCount = 9;
 			
-			// aapt resource value: 0x10
-			public const int RecyclerView_stackFromEnd = 16;
+			// aapt resource value: 10
+			public const int RecyclerView_stackFromEnd = 10;
 			
 			// aapt resource value: { 0x7F030103 }
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130903299};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
 			
 			// aapt resource value: { 0x7F03003E }
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
 					2130903102};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
 			
 			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F03007C,0x7F030094,0x7F0300AB,0x7F0300E6,0x7F0300FF,0x7F030115,0x7F030167,0x7F030168,0x7F03017A,0x7F03017B,0x7F03019F,0x7F0301A4,0x7F030204 }
@@ -19982,56 +20175,56 @@ namespace HanselmanAndroid
 					2130903460,
 					2130903556};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int SearchView_android_imeOptions = 3;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int SearchView_android_inputType = 2;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int SearchView_android_maxWidth = 1;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int SearchView_closeIcon = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int SearchView_commitIcon = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int SearchView_defaultQueryHint = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int SearchView_goIcon = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int SearchView_iconifiedByDefault = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int SearchView_layout = 9;
 			
-			// aapt resource value: 0x10
-			public const int SearchView_queryBackground = 16;
+			// aapt resource value: 10
+			public const int SearchView_queryBackground = 10;
 			
-			// aapt resource value: 0x11
-			public const int SearchView_queryHint = 17;
+			// aapt resource value: 11
+			public const int SearchView_queryHint = 11;
 			
-			// aapt resource value: 0x12
-			public const int SearchView_searchHintIcon = 18;
+			// aapt resource value: 12
+			public const int SearchView_searchHintIcon = 12;
 			
-			// aapt resource value: 0x13
-			public const int SearchView_searchIcon = 19;
+			// aapt resource value: 13
+			public const int SearchView_searchIcon = 13;
 			
-			// aapt resource value: 0x14
-			public const int SearchView_submitBackground = 20;
+			// aapt resource value: 14
+			public const int SearchView_submitBackground = 14;
 			
-			// aapt resource value: 0x15
-			public const int SearchView_suggestionRowLayout = 21;
+			// aapt resource value: 15
+			public const int SearchView_suggestionRowLayout = 15;
 			
-			// aapt resource value: 0x16
-			public const int SearchView_voiceIcon = 22;
+			// aapt resource value: 16
+			public const int SearchView_voiceIcon = 16;
 			
 			// aapt resource value: { 0x7F03018C,0x7F03018D }
 			public static int[] Snackbar = new int[] {
@@ -20044,19 +20237,19 @@ namespace HanselmanAndroid
 					2130903228,
 					2130903352};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int SnackbarLayout_elevation = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int SnackbarLayout_maxActionInlineWidth = 2;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int Snackbar_snackbarButtonStyle = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int Snackbar_snackbarStyle = 1;
 			
 			// aapt resource value: { 0x10100B2,0x1010176,0x101017B,0x1010262,0x7F030161 }
@@ -20067,19 +20260,19 @@ namespace HanselmanAndroid
 					16843362,
 					2130903393};
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int Spinner_android_dropDownWidth = 3;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int Spinner_android_entries = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int Spinner_android_popupBackground = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int Spinner_android_prompt = 2;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int Spinner_popupTheme = 4;
 			
 			// aapt resource value: { 0x101011C,0x1010194,0x1010195,0x1010196,0x101030C,0x101030D }
@@ -20095,25 +20288,25 @@ namespace HanselmanAndroid
 			public static int[] StateListDrawableItem = new int[] {
 					16843161};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int StateListDrawableItem_android_drawable = 0;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int StateListDrawable_android_constantSize = 3;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int StateListDrawable_android_dither = 0;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int StateListDrawable_android_enterFadeDuration = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int StateListDrawable_android_exitFadeDuration = 5;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int StateListDrawable_android_variablePadding = 2;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int StateListDrawable_android_visible = 1;
 			
 			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F030183,0x7F030192,0x7F0301A6,0x7F0301A7,0x7F0301A9,0x7F0301E1,0x7F0301E2,0x7F0301E3,0x7F0301FB,0x7F0301FC,0x7F0301FD }
@@ -20133,47 +20326,47 @@ namespace HanselmanAndroid
 					2130903548,
 					2130903549};
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int SwitchCompat_android_textOn = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int SwitchCompat_android_thumb = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int SwitchCompat_showText = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int SwitchCompat_splitTrack = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int SwitchCompat_switchMinWidth = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int SwitchCompat_switchPadding = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int SwitchCompat_switchTextAppearance = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int SwitchCompat_thumbTextPadding = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int SwitchCompat_thumbTint = 9;
 			
-			// aapt resource value: 0x10
-			public const int SwitchCompat_thumbTintMode = 16;
+			// aapt resource value: 10
+			public const int SwitchCompat_thumbTintMode = 10;
 			
-			// aapt resource value: 0x11
-			public const int SwitchCompat_track = 17;
+			// aapt resource value: 11
+			public const int SwitchCompat_track = 11;
 			
-			// aapt resource value: 0x12
-			public const int SwitchCompat_trackTint = 18;
+			// aapt resource value: 12
+			public const int SwitchCompat_trackTint = 12;
 			
-			// aapt resource value: 0x13
-			public const int SwitchCompat_trackTintMode = 19;
+			// aapt resource value: 13
+			public const int SwitchCompat_trackTintMode = 13;
 			
 			// aapt resource value: { 0x1010002,0x10100F2,0x101014F }
 			public static int[] TabItem = new int[] {
@@ -20181,13 +20374,13 @@ namespace HanselmanAndroid
 					16842994,
 					16843087};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int TabItem_android_icon = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int TabItem_android_layout = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int TabItem_android_text = 2;
 			
 			// aapt resource value: { 0x7F0301AA,0x7F0301AB,0x7F0301AC,0x7F0301AD,0x7F0301AE,0x7F0301AF,0x7F0301B0,0x7F0301B1,0x7F0301B2,0x7F0301B3,0x7F0301B4,0x7F0301B5,0x7F0301B6,0x7F0301B7,0x7F0301B8,0x7F0301B9,0x7F0301BA,0x7F0301BB,0x7F0301BC,0x7F0301BD,0x7F0301BE,0x7F0301BF,0x7F0301C1,0x7F0301C2,0x7F0301C3 }
@@ -20218,80 +20411,80 @@ namespace HanselmanAndroid
 					2130903490,
 					2130903491};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int TabLayout_tabBackground = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int TabLayout_tabContentStart = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int TabLayout_tabGravity = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int TabLayout_tabIconTint = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int TabLayout_tabIconTintMode = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int TabLayout_tabIndicator = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int TabLayout_tabIndicatorAnimationDuration = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int TabLayout_tabIndicatorColor = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int TabLayout_tabIndicatorFullWidth = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int TabLayout_tabIndicatorGravity = 9;
 			
-			// aapt resource value: 0x10
-			public const int TabLayout_tabIndicatorHeight = 16;
+			// aapt resource value: 10
+			public const int TabLayout_tabIndicatorHeight = 10;
 			
-			// aapt resource value: 0x11
-			public const int TabLayout_tabInlineLabel = 17;
+			// aapt resource value: 11
+			public const int TabLayout_tabInlineLabel = 11;
 			
-			// aapt resource value: 0x12
-			public const int TabLayout_tabMaxWidth = 18;
+			// aapt resource value: 12
+			public const int TabLayout_tabMaxWidth = 12;
 			
-			// aapt resource value: 0x13
-			public const int TabLayout_tabMinWidth = 19;
+			// aapt resource value: 13
+			public const int TabLayout_tabMinWidth = 13;
 			
-			// aapt resource value: 0x14
-			public const int TabLayout_tabMode = 20;
+			// aapt resource value: 14
+			public const int TabLayout_tabMode = 14;
 			
-			// aapt resource value: 0x15
-			public const int TabLayout_tabPadding = 21;
+			// aapt resource value: 15
+			public const int TabLayout_tabPadding = 15;
 			
-			// aapt resource value: 0x16
-			public const int TabLayout_tabPaddingBottom = 22;
+			// aapt resource value: 16
+			public const int TabLayout_tabPaddingBottom = 16;
 			
-			// aapt resource value: 0x17
-			public const int TabLayout_tabPaddingEnd = 23;
+			// aapt resource value: 17
+			public const int TabLayout_tabPaddingEnd = 17;
 			
-			// aapt resource value: 0x18
-			public const int TabLayout_tabPaddingStart = 24;
+			// aapt resource value: 18
+			public const int TabLayout_tabPaddingStart = 18;
 			
-			// aapt resource value: 0x19
-			public const int TabLayout_tabPaddingTop = 25;
+			// aapt resource value: 19
+			public const int TabLayout_tabPaddingTop = 19;
 			
-			// aapt resource value: 0x20
-			public const int TabLayout_tabRippleColor = 32;
+			// aapt resource value: 20
+			public const int TabLayout_tabRippleColor = 20;
 			
-			// aapt resource value: 0x21
-			public const int TabLayout_tabSelectedTextColor = 33;
+			// aapt resource value: 21
+			public const int TabLayout_tabSelectedTextColor = 21;
 			
-			// aapt resource value: 0x22
-			public const int TabLayout_tabTextAppearance = 34;
+			// aapt resource value: 22
+			public const int TabLayout_tabTextAppearance = 22;
 			
-			// aapt resource value: 0x23
-			public const int TabLayout_tabTextColor = 35;
+			// aapt resource value: 23
+			public const int TabLayout_tabTextColor = 23;
 			
-			// aapt resource value: 0x24
-			public const int TabLayout_tabUnboundedRipple = 36;
+			// aapt resource value: 24
+			public const int TabLayout_tabUnboundedRipple = 24;
 			
 			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x7F0300DA,0x7F0301C4 }
 			public static int[] TextAppearance = new int[] {
@@ -20309,44 +20502,44 @@ namespace HanselmanAndroid
 					2130903258,
 					2130903492};
 			
-			// aapt resource value: 0x10
-			public const int TextAppearance_android_fontFamily = 16;
+			// aapt resource value: 10
+			public const int TextAppearance_android_fontFamily = 10;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int TextAppearance_android_shadowColor = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int TextAppearance_android_shadowDx = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int TextAppearance_android_shadowDy = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int TextAppearance_android_shadowRadius = 9;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int TextAppearance_android_textColor = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int TextAppearance_android_textColorHint = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int TextAppearance_android_textColorLink = 5;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int TextAppearance_android_textSize = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int TextAppearance_android_textStyle = 2;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int TextAppearance_android_typeface = 1;
 			
-			// aapt resource value: 0x11
-			public const int TextAppearance_fontFamily = 17;
+			// aapt resource value: 11
+			public const int TextAppearance_fontFamily = 11;
 			
-			// aapt resource value: 0x12
-			public const int TextAppearance_textAllCaps = 18;
+			// aapt resource value: 12
+			public const int TextAppearance_textAllCaps = 12;
 			
 			// aapt resource value: { 0x101009A,0x1010150,0x7F030047,0x7F030048,0x7F030049,0x7F03004A,0x7F03004B,0x7F03004C,0x7F03004D,0x7F03004E,0x7F03004F,0x7F0300A6,0x7F0300A7,0x7F0300A8,0x7F0300A9,0x7F0300BF,0x7F0300C0,0x7F0300E9,0x7F0300EA,0x7F0300EB,0x7F0300F1,0x7F0300F2,0x7F0300F3,0x7F030158,0x7F030159,0x7F03015A,0x7F03015B,0x7F03015C }
 			public static int[] TextInputLayout = new int[] {
@@ -20379,89 +20572,89 @@ namespace HanselmanAndroid
 					2130903387,
 					2130903388};
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int TextInputLayout_android_textColorHint = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int TextInputLayout_boxBackgroundColor = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int TextInputLayout_boxBackgroundMode = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int TextInputLayout_boxCollapsedPaddingTop = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int TextInputLayout_boxCornerRadiusBottomEnd = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int TextInputLayout_boxCornerRadiusBottomStart = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int TextInputLayout_boxCornerRadiusTopEnd = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int TextInputLayout_boxCornerRadiusTopStart = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int TextInputLayout_boxStrokeColor = 9;
 			
-			// aapt resource value: 0x10
-			public const int TextInputLayout_boxStrokeWidth = 16;
+			// aapt resource value: 10
+			public const int TextInputLayout_boxStrokeWidth = 10;
 			
-			// aapt resource value: 0x11
-			public const int TextInputLayout_counterEnabled = 17;
+			// aapt resource value: 11
+			public const int TextInputLayout_counterEnabled = 11;
 			
-			// aapt resource value: 0x12
-			public const int TextInputLayout_counterMaxLength = 18;
+			// aapt resource value: 12
+			public const int TextInputLayout_counterMaxLength = 12;
 			
-			// aapt resource value: 0x13
-			public const int TextInputLayout_counterOverflowTextAppearance = 19;
+			// aapt resource value: 13
+			public const int TextInputLayout_counterOverflowTextAppearance = 13;
 			
-			// aapt resource value: 0x14
-			public const int TextInputLayout_counterTextAppearance = 20;
+			// aapt resource value: 14
+			public const int TextInputLayout_counterTextAppearance = 14;
 			
-			// aapt resource value: 0x15
-			public const int TextInputLayout_errorEnabled = 21;
+			// aapt resource value: 15
+			public const int TextInputLayout_errorEnabled = 15;
 			
-			// aapt resource value: 0x16
-			public const int TextInputLayout_errorTextAppearance = 22;
+			// aapt resource value: 16
+			public const int TextInputLayout_errorTextAppearance = 16;
 			
-			// aapt resource value: 0x17
-			public const int TextInputLayout_helperText = 23;
+			// aapt resource value: 17
+			public const int TextInputLayout_helperText = 17;
 			
-			// aapt resource value: 0x18
-			public const int TextInputLayout_helperTextEnabled = 24;
+			// aapt resource value: 18
+			public const int TextInputLayout_helperTextEnabled = 18;
 			
-			// aapt resource value: 0x19
-			public const int TextInputLayout_helperTextTextAppearance = 25;
+			// aapt resource value: 19
+			public const int TextInputLayout_helperTextTextAppearance = 19;
 			
-			// aapt resource value: 0x20
-			public const int TextInputLayout_hintAnimationEnabled = 32;
+			// aapt resource value: 20
+			public const int TextInputLayout_hintAnimationEnabled = 20;
 			
-			// aapt resource value: 0x21
-			public const int TextInputLayout_hintEnabled = 33;
+			// aapt resource value: 21
+			public const int TextInputLayout_hintEnabled = 21;
 			
-			// aapt resource value: 0x22
-			public const int TextInputLayout_hintTextAppearance = 34;
+			// aapt resource value: 22
+			public const int TextInputLayout_hintTextAppearance = 22;
 			
-			// aapt resource value: 0x23
-			public const int TextInputLayout_passwordToggleContentDescription = 35;
+			// aapt resource value: 23
+			public const int TextInputLayout_passwordToggleContentDescription = 23;
 			
-			// aapt resource value: 0x24
-			public const int TextInputLayout_passwordToggleDrawable = 36;
+			// aapt resource value: 24
+			public const int TextInputLayout_passwordToggleDrawable = 24;
 			
-			// aapt resource value: 0x25
-			public const int TextInputLayout_passwordToggleEnabled = 37;
+			// aapt resource value: 25
+			public const int TextInputLayout_passwordToggleEnabled = 25;
 			
-			// aapt resource value: 0x26
-			public const int TextInputLayout_passwordToggleTint = 38;
+			// aapt resource value: 26
+			public const int TextInputLayout_passwordToggleTint = 26;
 			
-			// aapt resource value: 0x27
-			public const int TextInputLayout_passwordToggleTintMode = 39;
+			// aapt resource value: 27
+			public const int TextInputLayout_passwordToggleTintMode = 27;
 			
 			// aapt resource value: { 0x1010034,0x7F0300BD,0x7F0300BE }
 			public static int[] ThemeEnforcement = new int[] {
@@ -20469,13 +20662,13 @@ namespace HanselmanAndroid
 					2130903229,
 					2130903230};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ThemeEnforcement_android_textAppearance = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ThemeEnforcement_enforceMaterialTheme = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int ThemeEnforcement_enforceTextAppearance = 2;
 			
 			// aapt resource value: { 0x10100AF,0x1010140,0x7F030056,0x7F030084,0x7F030085,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009A,0x7F03009B,0x7F03012F,0x7F030130,0x7F030139,0x7F03014B,0x7F03014C,0x7F030161,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301E9,0x7F0301EB,0x7F0301EC,0x7F0301ED,0x7F0301EE,0x7F0301EF,0x7F0301F0,0x7F0301F1,0x7F0301F2 }
@@ -20510,92 +20703,92 @@ namespace HanselmanAndroid
 					2130903537,
 					2130903538};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int Toolbar_android_minHeight = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int Toolbar_buttonGravity = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int Toolbar_collapseContentDescription = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int Toolbar_collapseIcon = 4;
 			
-			// aapt resource value: 0x5
+			// aapt resource value: 5
 			public const int Toolbar_contentInsetEnd = 5;
 			
-			// aapt resource value: 0x6
+			// aapt resource value: 6
 			public const int Toolbar_contentInsetEndWithActions = 6;
 			
-			// aapt resource value: 0x7
+			// aapt resource value: 7
 			public const int Toolbar_contentInsetLeft = 7;
 			
-			// aapt resource value: 0x8
+			// aapt resource value: 8
 			public const int Toolbar_contentInsetRight = 8;
 			
-			// aapt resource value: 0x9
+			// aapt resource value: 9
 			public const int Toolbar_contentInsetStart = 9;
 			
-			// aapt resource value: 0x10
-			public const int Toolbar_contentInsetStartWithNavigation = 16;
+			// aapt resource value: 10
+			public const int Toolbar_contentInsetStartWithNavigation = 10;
 			
-			// aapt resource value: 0x11
-			public const int Toolbar_logo = 17;
+			// aapt resource value: 11
+			public const int Toolbar_logo = 11;
 			
-			// aapt resource value: 0x12
-			public const int Toolbar_logoDescription = 18;
+			// aapt resource value: 12
+			public const int Toolbar_logoDescription = 12;
 			
-			// aapt resource value: 0x13
-			public const int Toolbar_maxButtonHeight = 19;
+			// aapt resource value: 13
+			public const int Toolbar_maxButtonHeight = 13;
 			
-			// aapt resource value: 0x14
-			public const int Toolbar_navigationContentDescription = 20;
+			// aapt resource value: 14
+			public const int Toolbar_navigationContentDescription = 14;
 			
-			// aapt resource value: 0x15
-			public const int Toolbar_navigationIcon = 21;
+			// aapt resource value: 15
+			public const int Toolbar_navigationIcon = 15;
 			
-			// aapt resource value: 0x16
-			public const int Toolbar_popupTheme = 22;
+			// aapt resource value: 16
+			public const int Toolbar_popupTheme = 16;
 			
-			// aapt resource value: 0x17
-			public const int Toolbar_subtitle = 23;
+			// aapt resource value: 17
+			public const int Toolbar_subtitle = 17;
 			
-			// aapt resource value: 0x18
-			public const int Toolbar_subtitleTextAppearance = 24;
+			// aapt resource value: 18
+			public const int Toolbar_subtitleTextAppearance = 18;
 			
-			// aapt resource value: 0x19
-			public const int Toolbar_subtitleTextColor = 25;
+			// aapt resource value: 19
+			public const int Toolbar_subtitleTextColor = 19;
 			
-			// aapt resource value: 0x20
-			public const int Toolbar_title = 32;
+			// aapt resource value: 20
+			public const int Toolbar_title = 20;
 			
-			// aapt resource value: 0x21
-			public const int Toolbar_titleMargin = 33;
+			// aapt resource value: 21
+			public const int Toolbar_titleMargin = 21;
 			
-			// aapt resource value: 0x22
-			public const int Toolbar_titleMarginBottom = 34;
+			// aapt resource value: 22
+			public const int Toolbar_titleMarginBottom = 22;
 			
-			// aapt resource value: 0x23
-			public const int Toolbar_titleMarginEnd = 35;
+			// aapt resource value: 23
+			public const int Toolbar_titleMarginEnd = 23;
 			
-			// aapt resource value: 0x26
-			public const int Toolbar_titleMargins = 38;
+			// aapt resource value: 26
+			public const int Toolbar_titleMargins = 26;
 			
-			// aapt resource value: 0x24
-			public const int Toolbar_titleMarginStart = 36;
+			// aapt resource value: 24
+			public const int Toolbar_titleMarginStart = 24;
 			
-			// aapt resource value: 0x25
-			public const int Toolbar_titleMarginTop = 37;
+			// aapt resource value: 25
+			public const int Toolbar_titleMarginTop = 25;
 			
-			// aapt resource value: 0x27
-			public const int Toolbar_titleTextAppearance = 39;
+			// aapt resource value: 27
+			public const int Toolbar_titleTextAppearance = 27;
 			
-			// aapt resource value: 0x28
-			public const int Toolbar_titleTextColor = 40;
+			// aapt resource value: 28
+			public const int Toolbar_titleTextColor = 28;
 			
 			// aapt resource value: { 0x1010000,0x10100DA,0x7F030152,0x7F030153,0x7F0301DF }
 			public static int[] View = new int[] {
@@ -20611,13 +20804,13 @@ namespace HanselmanAndroid
 					2130903095,
 					2130903096};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ViewBackgroundHelper_android_background = 0;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ViewBackgroundHelper_backgroundTint = 1;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int ViewBackgroundHelper_backgroundTintMode = 2;
 			
 			// aapt resource value: { 0x10100D0,0x10100F2,0x10100F3 }
@@ -20626,28 +20819,28 @@ namespace HanselmanAndroid
 					16842994,
 					16842995};
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int ViewStubCompat_android_id = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int ViewStubCompat_android_inflatedId = 2;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int ViewStubCompat_android_layout = 1;
 			
-			// aapt resource value: 0x1
+			// aapt resource value: 1
 			public const int View_android_focusable = 1;
 			
-			// aapt resource value: 0x0
+			// aapt resource value: 0
 			public const int View_android_theme = 0;
 			
-			// aapt resource value: 0x2
+			// aapt resource value: 2
 			public const int View_paddingEnd = 2;
 			
-			// aapt resource value: 0x3
+			// aapt resource value: 3
 			public const int View_paddingStart = 3;
 			
-			// aapt resource value: 0x4
+			// aapt resource value: 4
 			public const int View_theme = 4;
 			
 			static Styleable()
