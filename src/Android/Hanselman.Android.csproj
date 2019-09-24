@@ -184,7 +184,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
     <PackageReference Include="glidex.forms">
-      <Version>1.0.4</Version>
+      <Version>2.0.0.336</Version>
     </PackageReference>
     <PackageReference Include="Humanizer">
       <Version>2.7.2</Version>

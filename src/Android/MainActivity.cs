@@ -36,7 +36,7 @@ namespace HanselmanAndroid
             PullToRefreshLayoutRenderer.Init();
             CrossMediaManager.Current.Init(this);
             ImageCircleRenderer.Init();
-            Android.Glide.Forms.Init();
+            Android.Glide.Forms.Init(this);
             LoadApplication(new App());
         }
 
