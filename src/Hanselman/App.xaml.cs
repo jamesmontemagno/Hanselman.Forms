@@ -16,6 +16,7 @@ using Microsoft.AppCenter.Distribute;
 // KymPhillpotts cheered 50 March 29, 2019
 // ElecticHavoc cheered 40 March 29, 2019
 // lachlanwgordon cheered 100 August 30, 2019
+// ClintonRocksmith cheered 110 September 20, 2019
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Hanselman

@@ -7,7 +7,6 @@ using Android.Content.PM;
 using Hanselman;
 using ImageCircle.Forms.Plugin.Droid;
 using Android.Runtime;
-using Refractored.XamForms.PullToRefresh.Droid;
 using Shiny;
 using MediaManager;
 
@@ -33,7 +32,6 @@ namespace HanselmanAndroid
             Forms.Init(this, bundle);
             FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
-            PullToRefreshLayoutRenderer.Init();
             CrossMediaManager.Current.Init(this);
             ImageCircleRenderer.Init();
             Android.Glide.Forms.Init();

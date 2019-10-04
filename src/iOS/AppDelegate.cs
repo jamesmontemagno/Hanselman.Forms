@@ -6,7 +6,6 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using ImageCircle.Forms.Plugin.iOS;
 using MediaManager.Forms.Platforms.iOS;
-using Refractored.XamForms.PullToRefresh.iOS;
 using MediaManager;
 
 namespace Hanselman.iOS
@@ -30,7 +29,6 @@ namespace Hanselman.iOS
             Forms.SetFlags("CollectionView_Experimental");
             Forms.Init();
             FormsMaterial.Init();
-            PullToRefreshLayoutRenderer.Init();
             CrossMediaManager.Current.Init();
             ImageCircleRenderer.Init();
 
