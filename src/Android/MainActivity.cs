@@ -34,7 +34,7 @@ namespace HanselmanAndroid
             Xamarin.Essentials.Platform.Init(this, bundle);
             CrossMediaManager.Current.Init(this);
             ImageCircleRenderer.Init();
-            Android.Glide.Forms.Init();
+            Android.Glide.Forms.Init(this);
             LoadApplication(new App());
         }
 
