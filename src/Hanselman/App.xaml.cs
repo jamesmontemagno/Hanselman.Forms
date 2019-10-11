@@ -11,12 +11,14 @@ using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Distribute;
+using Hanselman.Styles;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
 // ElecticHavoc cheered 40 March 29, 2019
 // lachlanwgordon cheered 100 August 30, 2019
 // ClintonRocksmith cheered 110 September 20, 2019
+// ClintonRocksmith cheered 1000 October 4th, 2019
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Hanselman
@@ -30,8 +32,9 @@ namespace Hanselman
 
             Barrel.ApplicationId = AppInfo.PackageName;
 
-            MainPage = new SettingsPage();
+            MainPage = new TwitterPage();
             //MainPage = new AppShell();
+
         }
 
         const string AppCenteriOS = "APPCENTER_IOS";
@@ -40,6 +43,7 @@ namespace Hanselman
 
         protected override void OnStart()
         {
+            ThemeHelper.ChangeTheme(Models.Theme.Dark, true);
 #if !DEBUG
             AppCenter.Start($"ios={AppCenteriOS};" +
                 $"android={AppCenterAndroid};" +

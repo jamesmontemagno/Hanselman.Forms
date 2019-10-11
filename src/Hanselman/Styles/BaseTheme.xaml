@@ -13,14 +13,62 @@
             <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>
             <Color x:Key="LoadingBackgroundColor">#80000000</Color>
             <Color x:Key="LoadingTextColor">White</Color>
+            <!--Label-->
+            <Color x:Key="LabelColor">#757575</Color>
+            <Color x:Key="SecondaryLabelColor">#757575</Color>
+            <Color x:Key="TertiaryLabelColor">#757575</Color>
+            <Color x:Key="SeparatorColor">#757575</Color>
+            <Color x:Key="OpaqueSeparatorColor">#757575</Color>
+            <Color x:Key="LinkColor">Blue</Color>
+            <!--Frame-->
+            <Color x:Key="FrameBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="FrameBorderColor">Default</Color>
+            <!--Entry-->
+            <Color x:Key="EntryBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="PlaceholderTextColor">#757575</Color>
         </ResourceDictionary>
         <styles:Icons/>
         <ResourceDictionary>
+
             <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
                 <On Platform="iOS" Value="Material Design Icons" />
                 <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
                 <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons" />
             </OnPlatform>
+
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{DynamicResource FrameBorderColor}"/>
+                <Setter Property="Visual" Value="Material"/>
+                <Setter Property="HasShadow" Value="True"/>
+            </Style>
+
+            <Style x:Key="PickerStyle" TargetType="Picker">
+                <Setter Property="Visual" Value="Material"/>
+                <Setter Property="BackgroundColor" Value="{DynamicResource EntryBackgroundColor}"/>
+                <Setter Property="TextColor" Value="{DynamicResource LabelColor}"/>
+            </Style>
+
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource LabelColor}"/>
+                <Setter Property="FontSize" Value="Large"/>
+            </Style>
+
+            <Style x:Key="SecondaryLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource LabelStyle}" >
+                <Setter Property="FontSize" Value="Medium"/>
+            </Style>
+
+            <Style x:Key="TertiaryLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource LabelStyle}" >
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+
+            <Style x:Key="MicroLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource LabelStyle}" >
+                <Setter Property="FontSize" Value="Micro"/>
+            </Style>
+
             <Style x:Key="DateTimeLabelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
                 <Setter Property="FontSize" Value="Small" />

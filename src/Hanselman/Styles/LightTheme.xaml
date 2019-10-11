@@ -3,13 +3,28 @@
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     x:Class="Hanselman.Styles.LightTheme">
-    <ResourceDictionary>
-        <Color x:Key="PrimaryColor">#03A9F4</Color>
-        <Color x:Key="PrimaryDarkColor">#1976D2</Color>
-        <Color x:Key="AccentColor">#FFC107</Color>
-        <Color x:Key="WindowBackgroundColor">Orange</Color>
-        <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>
-        <Color x:Key="LoadingBackgroundColor">#80000000</Color>
-        <Color x:Key="LoadingTextColor">White</Color>
-    </ResourceDictionary>
+    <Color x:Key="PrimaryColor">#03A9F4</Color>
+    <Color x:Key="PrimaryDarkColor">#1976D2</Color>
+    <Color x:Key="AccentColor">#FFC107</Color>
+    <Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
+    <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>
+    <Color x:Key="LoadingBackgroundColor">#80000000</Color>
+    <Color x:Key="LoadingTextColor">White</Color>
+    <!--Label-->
+    <Color x:Key="LabelColor">#757575</Color>
+    <Color x:Key="SecondaryLabelColor">#757575</Color>
+    <Color x:Key="TertiaryLabelColor">#757575</Color>
+    <Color x:Key="LinkColor">Blue</Color>
+    
+    <!--Seperator-->
+    <Color x:Key="SeparatorColor">#757575</Color>
+    <Color x:Key="OpaqueSeparatorColor">#757575</Color>
+    
+    <!--Frame-->
+    <Color x:Key="FrameBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="FrameBorderColor">Default</Color>
+    
+    <!--Entry-->
+    <Color x:Key="EntryBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="PlaceholderTextColor">#757575</Color>
 </ResourceDictionary>

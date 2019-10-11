@@ -14,12 +14,13 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10" Spacing="10">
-                <Label Text="Appearance" FontSize="Large"/>
-                <Frame Visual="Material">
+                <Label Text="Appearance" Style="{DynamicResource LabelStyle}"/>
+                <Frame Style="{DynamicResource FrameStyle}">
                     <StackLayout>
-                        <Label Text="Theme" FontSize="Medium" />
+                        <Label Text="Theme" Style="{DynamicResource SecondaryLabelStyle}" />
                         <Picker ItemsSource="{Binding ThemeOptions}"
-                                SelectedIndex="{Binding SelectedTheme}"/>
+                                SelectedIndex="{Binding SelectedTheme}"
+                                Style="{DynamicResource PickerStyle}"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>
