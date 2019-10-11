@@ -30,7 +30,8 @@ namespace Hanselman
 
             Barrel.ApplicationId = AppInfo.PackageName;
 
-            MainPage = new AppShell();
+            MainPage = new SettingsPage();
+            //MainPage = new AppShell();
         }
 
         const string AppCenteriOS = "APPCENTER_IOS";

@@ -21,15 +21,10 @@ namespace Hanselman.ViewModels
             if (DesignMode.IsDesignModeEnabled)
                 return;
 
-            if(DeviceInfo.Platform != DevicePlatform.UWP)
-            {
-                var minDefaultVersion = DeviceInfo.Platform == DevicePlatform.Android ? 
-                                        new Version(10, 0):
-                                        new Version(13, 0);
 
-                if (DeviceInfo.Version >= minDefaultVersion)
-                    ThemeOptions.Insert(0, "Device Default");
-            }
+            if(Settings.HasDefaultThemeOption)
+                ThemeOptions.Insert(0, "Device Default");
+            
 
             if (ThemeOptions.Count == 3)
                 SelectedTheme = (int)Settings.ThemeOption;
