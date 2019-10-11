@@ -202,19 +202,19 @@
       <Version>2.1.1</Version>
     </PackageReference>
     <PackageReference Include="MonkeyCache.FileStore">
-      <Version>1.3.0</Version>
+      <Version>1.3.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.2</Version>
     </PackageReference>
     <PackageReference Include="Plugin.MediaManager.Forms">
-      <Version>0.8.9</Version>
+      <Version>0.8.12</Version>
     </PackageReference>
     <PackageReference Include="Refractored.MvvmHelpers">
       <Version>1.5.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Core">
-      <Version>1.0.0.400-beta</Version>
+      <Version>1.0.0.425-beta</Version>
     </PackageReference>
     <PackageReference Include="System.Json">
       <Version>4.5.0</Version>
@@ -232,8 +232,8 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.2.1" />
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.819712-pre2" />
-    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.3.0.819712-pre2" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.851321-pre3" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.3.0.851321-pre3" />
   </ItemGroup>
 </Project>
