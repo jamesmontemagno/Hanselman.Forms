@@ -80,12 +80,11 @@
   <ItemGroup>
     <Compile Include="Effects\RippleEffect.cs" />
     <Compile Include="Effects\TabbedPageNoShiftEffect.cs" />
+    <Compile Include="Helpers\Environment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
-    <Compile Include="Renderers\ListImageCellRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Helpers\Color.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProguardConfiguration Include="proguard.cfg" />
@@ -236,4 +235,5 @@
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.851321-pre3" />
     <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.3.0.851321-pre3" />
   </ItemGroup>
+  <ItemGroup />
 </Project>

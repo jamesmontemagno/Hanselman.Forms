@@ -20,7 +20,9 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar Style="{StaticResource BaseStyle}" Route="sections">
+    <ShellContent ContentTemplate="{DataTemplate views:SettingsPage}"/>
+
+    <!--<TabBar Style="{StaticResource BaseStyle}" Route="sections">
         <Tab Title="About" Icon="ic_about.png" Route="tab_about">
             <ShellContent Route="about" Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
         </Tab>
@@ -30,12 +32,9 @@
         <Tab Title="Tweets" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_twitter.png" Route="tab_tweets">
             <ShellContent Route="tweets" Title="Tweets" ContentTemplate="{DataTemplate views:TwitterPage}"/>
         </Tab>
-        <!--<Tab Title="Podcasts" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_podcast.png" Route="tab_podcasts">
-            <ShellContent Route="podcasts" Title="Podcasts" ContentTemplate="{DataTemplate views:PodcastDirectoryPage}"/>
-        </Tab>-->
         <Tab Title="Media" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_video.png" Route="tab_media">
             <ShellContent Route="media" Title="Media" ContentTemplate="{DataTemplate views:MediaDirectoryPage}"/>
         </Tab>        
-    </TabBar>
+    </TabBar>-->
 
 </Shell>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Hanselman.Models;
 using Xamarin.Essentials;
 
 namespace Hanselman.Helpers
@@ -23,6 +24,12 @@ namespace Hanselman.Helpers
         {
             get => Preferences.Get(nameof(PlaybackUrl), string.Empty);
             set => Preferences.Set(nameof(PlaybackUrl), value);
+        }
+
+        public static Theme ThemeOption
+        {
+            get => (Theme)Preferences.Get(nameof(ThemeOption), (int)Theme.Default);
+            set => Preferences.Set(nameof(ThemeOption), (int)value);
         }
     }
 }

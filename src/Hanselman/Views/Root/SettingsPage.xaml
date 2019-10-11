@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+             mc:Ignorable="d"
+             x:Class="Hanselman.Views.SettingsPage"
+             x:DataType="viewmodels:SettingsViewModel"
+             BackgroundColor="{DynamicResource WindowBackgroundColor}">
+    <d:ContentPage.BindingContext>
+        <viewmodels:SettingsViewModel/>
+    </d:ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+                <Label Text="Appearance" FontSize="Large"/>
+                <Frame Visual="Material">
+                    <StackLayout>
+                        <Label Text="Theme" FontSize="Medium" />
+                        <Picker ItemsSource="{Binding ThemeOptions}"
+                                SelectedIndex="{Binding SelectedTheme}"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
