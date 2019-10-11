@@ -16,6 +16,10 @@
     <Color x:Key="TertiaryLabelColor">#757575</Color>
     <Color x:Key="LinkColor">Blue</Color>
 
+    <!--Shell-->
+    <Color x:Key="ShellTabBarBackgroundColor">#1E2222</Color>
+    <Color x:Key="ShellTabBarUnselectedColor">#999fa0</Color>
+
     <!--Seperator-->
     <Color x:Key="SeparatorColor">#757575</Color>
     <Color x:Key="OpaqueSeparatorColor">#757575</Color>
@@ -27,4 +31,8 @@
     <!--Entry-->
     <Color x:Key="EntryBackgroundColor">#3B4042</Color>
     <Color x:Key="PlaceholderTextColor">#757575</Color>
+
+    <!--RefreshView-->
+    <Color x:Key="RefreshViewBackgroundColor">Black</Color>
+    <Color x:Key="RefreshViewColor">#03A9F4</Color>
 </ResourceDictionary>

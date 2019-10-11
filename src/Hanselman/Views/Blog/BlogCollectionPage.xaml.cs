@@ -63,7 +63,10 @@ namespace Hanselman.Views
         public void OnPageVisible()
         {
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.FeedItems.Count > 0)
+            {
+                CollectionViewBlog.ItemsSource = ViewModel.FeedItems;
                 return;
+            }
 
             ViewModel.LoadCommand.Execute(null);
         }

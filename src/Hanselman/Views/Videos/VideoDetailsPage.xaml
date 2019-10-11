@@ -10,7 +10,8 @@
              xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
              xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
              xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
-             x:DataType="viewmodels:VideoDetailsViewModel">
+             x:DataType="viewmodels:VideoDetailsViewModel"
+             BackgroundColor="{DynamicResource WindowBackgroundColor}">
     <d:ContentPage.BindingContext>
         <viewmodels:VideoDetailsViewModel>
             <x:Arguments>
@@ -19,6 +20,9 @@
         </viewmodels:VideoDetailsViewModel>
     </d:ContentPage.BindingContext>
     <ContentPage.Content>
-        <mm:VideoView VerticalOptions="FillAndExpand" VideoAspect="AspectFit" ShowControls="True" />
+        <mm:VideoView VerticalOptions="FillAndExpand"
+             BackgroundColor="{DynamicResource WindowBackgroundColor}"
+                      VideoAspect="AspectFit"
+                      ShowControls="True" />
     </ContentPage.Content>
 </ContentPage>

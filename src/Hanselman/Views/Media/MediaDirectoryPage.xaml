@@ -8,14 +8,15 @@
              xmlns:models="clr-namespace:Hanselman.Models"
              xmlns:images="clr-namespace:Hanselman.Images"
              mc:Ignorable="d"
-             x:Class="Hanselman.Views.MediaDirectoryPage">
+             x:Class="Hanselman.Views.MediaDirectoryPage"
+             BackgroundColor="{DynamicResource WindowBackgroundColor}">
     <d:ContentPage.BindingContext>
         <viewmodels:MediaDirectoryViewModel/>
     </d:ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Margin="8,8,8,0" FontSize="Large" Text="Podcasts"/>
+                <Label Margin="8,8,8,0" Style="{DynamicResource LargeLabelStyle}" Text="Podcasts"/>
                 <CollectionView HeightRequest="242" d:BackgroundColor="Orange" 
                               ItemsLayout="HorizontalList"
                               SelectionMode="Single"
@@ -34,9 +35,9 @@
                                 <Frame
                                     Margin="5"
                                     Padding="0"
-                                    HasShadow="True"
                                     VerticalOptions="Start"
-                                    Visual="Material" d:BackgroundColor="Red">
+                                    d:BackgroundColor="Red"
+                                    Style="{DynamicResource FrameStyle}">
                                     <Grid Padding="0" WidthRequest="200">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="200" />
@@ -49,7 +50,8 @@
                                             d:BackgroundColor="Blue"
                                             Grid.Row="1"
                                             Margin="10,0"
-                                            Text="{Binding Title}" />
+                                            Text="{Binding Title}"
+                                            Style="{DynamicResource SmallLabelStyle}"/>
                                     </Grid>
                                 </Frame>
                             </Grid>
@@ -57,7 +59,7 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
 
-                <Label Margin="8,8,8,0" FontSize="Large" Text="Videos"/>
+                <Label Margin="8,8,8,0"  Style="{DynamicResource LargeLabelStyle}" Text="Videos"/>
                 <CollectionView HeightRequest="242"
                               d:BackgroundColor="Orange" 
                               ItemsLayout="HorizontalList"
@@ -77,9 +79,9 @@
                                 <Frame
                                     Margin="4"
                                     Padding="0"
-                                    HasShadow="True"
-                                    VerticalOptions="Start"
-                                    Visual="Material" d:BackgroundColor="Red">
+                                    VerticalOptions="Start" 
+                                    d:BackgroundColor="Red"
+                                    Style="{DynamicResource FrameStyle}">
                                     <Grid Padding="0" WidthRequest="200">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="200" />
@@ -92,15 +94,16 @@
                                             d:BackgroundColor="Blue"
                                             Grid.Row="1"
                                             Margin="10,0"
-                                            Text="{Binding Title}" />
+                                            Text="{Binding Title}"
+                                            Style="{DynamicResource SmallLabelStyle}"/>
                                     </Grid>
                                 </Frame>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-                
-                <Label Margin="8,8,8,0" FontSize="Large" Text="Books"/>
+
+                <Label Margin="8,8,8,0"  Style="{DynamicResource LargeLabelStyle}" Text="Books"/>
                 <CollectionView HeightRequest="200"
                               ItemsLayout="HorizontalList">
                     <CollectionView.ItemsSource>
@@ -117,9 +120,9 @@
                                 <Frame
                                     Margin="4"
                                     Padding="0"
-                                    HasShadow="True"
                                     VerticalOptions="Start"
-                                    Visual="Material" d:BackgroundColor="Red">
+                                    d:BackgroundColor="Red"
+                                    Style="{DynamicResource FrameStyle}">
                                     <Image HeightRequest="172"
                                            WidthRequest="136"
                                            Aspect="AspectFill"

@@ -45,7 +45,7 @@
                 <Label
                     LineBreakMode="WordWrap"
                     Text="{Binding Text}"
-                    Style="{DynamicResource TertiaryLabelStyle}"/>
+                    Style="{DynamicResource SmallLabelStyle}"/>
             </StackLayout>
         </Grid>
     </Frame>

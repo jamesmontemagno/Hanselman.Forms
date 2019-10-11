@@ -19,6 +19,7 @@ using Hanselman.Styles;
 // lachlanwgordon cheered 100 August 30, 2019
 // ClintonRocksmith cheered 110 September 20, 2019
 // ClintonRocksmith cheered 1000 October 4th, 2019
+// LotanB cheered 200 October 10, 2019
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Hanselman
@@ -31,9 +32,10 @@ namespace Hanselman
             InitializeComponent();
 
             Barrel.ApplicationId = AppInfo.PackageName;
+            
+            ThemeHelper.ChangeTheme(Models.Theme.Dark, true);
 
-            MainPage = new TwitterPage();
-            //MainPage = new AppShell();
+            MainPage = new AppShell();
 
         }
 
@@ -43,7 +45,7 @@ namespace Hanselman
 
         protected override void OnStart()
         {
-            ThemeHelper.ChangeTheme(Models.Theme.Dark, true);
+            
 #if !DEBUG
             AppCenter.Start($"ios={AppCenteriOS};" +
                 $"android={AppCenterAndroid};" +

@@ -9,7 +9,7 @@
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:viewmodel="clr-namespace:Hanselman.ViewModels"
     mc:Ignorable="d"
-    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
     x:DataType="viewmodel:PodcastEpisodeViewModel">
     <d:ContentPage.BindingContext>
         <viewmodel:PodcastEpisodeViewModel Title="Hanselminute">
@@ -32,7 +32,7 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <pancake:PancakeView
-                    Padding="0,40,0,33"
+                    Padding="{OnPlatform iOS='0,40,0,33', Default='0,0,0,33'}"
                     d:BackgroundColor="{StaticResource PrimaryColor}"
                     BackgroundColor="{OnPlatform UWP={StaticResource PrimaryColor},
                                                  Default=Transparent}"
@@ -52,12 +52,10 @@
                         <Frame
                             Grid.RowSpan="3"
                             Padding="0"
-                            BackgroundColor="Red"
                             CornerRadius="10"
-                            HasShadow="True"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            Visual="Material">
+                            Style="{DynamicResource FrameStyle}">
                             <Image
                                 Aspect="AspectFill"
                                 AutomationProperties.IsInAccessibleTree="True"
@@ -69,13 +67,14 @@
                         <Label
                             d:Text="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
                             FontAttributes="Bold"
-                            FontSize="16"
+                            Style="{DynamicResource LargeLabelStyle}"
+                            TextColor="White"
                             HorizontalTextAlignment="Center"
                             Text="{Binding Episode.Title}" />
                         <Label
                             d:Text="Hanselminutes"
                             AutomationProperties.HelpText="Name of the podcast"
-                            FontSize="14"
+                            Style="{DynamicResource MediumLabelStyle}"
                             HorizontalTextAlignment="Center"
                             Text="{Binding Title}" />                       
                     </StackLayout>
@@ -141,7 +140,7 @@
                         Grid.Row="1"
                         Grid.Column="0"
                         Margin="0,-5,0,0"
-                        FontSize="Micro"
+                        Style="{DynamicResource MicroLabelStyle}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Download" />
@@ -165,7 +164,7 @@
                         Grid.Row="1"
                         Grid.Column="1"
                         Margin="0,-5,0,0"
-                        FontSize="Micro"
+                        Style="{DynamicResource MicroLabelStyle}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Up Next" />
@@ -189,7 +188,7 @@
                         Grid.Row="1"
                         Grid.Column="3"
                         Margin="0,-5,0,0"
-                        FontSize="Micro"
+                        Style="{DynamicResource MicroLabelStyle}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Mark Played" />
@@ -212,7 +211,7 @@
                         Grid.Row="1"
                         Grid.Column="4"
                         Margin="0,-5,0,0"
-                        FontSize="Micro"
+                        Style="{DynamicResource MicroLabelStyle}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Archive" />
@@ -228,24 +227,22 @@
                     <Label
                         Grid.Row="3"
                         Grid.ColumnSpan="2"
-                        FontSize="Small"
-                        Text="{Binding Episode.Date}"
-                        TextColor="DarkGray" />
+                        Style="{DynamicResource SmallLabelStyle}"
+                        Text="{Binding Episode.Date}" />
 
                     <Label
                         Grid.Row="3"
                         Grid.Column="3"
                         Grid.ColumnSpan="2"
-                        FontSize="Small"
+                        Style="{DynamicResource SmallLabelStyle}"
                         HorizontalOptions="End"
-                        Text="{Binding Episode.Duration}"
-                        TextColor="DarkGray" />
+                        Text="{Binding Episode.Duration}" />
 
                     <Label
                         Grid.Row="4"
                         Grid.ColumnSpan="5"
                         Margin="0,5,0,0"
-                        FontSize="Medium"
+                        Style="{DynamicResource MediumLabelStyle}"
                         Text="{Binding Episode.Description}" />
                 </Grid>
 

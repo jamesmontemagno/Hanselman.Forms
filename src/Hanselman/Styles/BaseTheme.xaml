@@ -17,6 +17,13 @@
             <Color x:Key="LabelColor">#757575</Color>
             <Color x:Key="SecondaryLabelColor">#757575</Color>
             <Color x:Key="TertiaryLabelColor">#757575</Color>
+
+            <!--Shell-->
+
+            <!--Shell-->
+            <Color x:Key="ShellTabBarBackgroundColor">#F5F5F5</Color>
+            <Color x:Key="ShellTabBarUnselectedColor">#5e6162</Color>
+
             <Color x:Key="SeparatorColor">#757575</Color>
             <Color x:Key="OpaqueSeparatorColor">#757575</Color>
             <Color x:Key="LinkColor">Blue</Color>
@@ -26,6 +33,10 @@
             <!--Entry-->
             <Color x:Key="EntryBackgroundColor">#FFFFFF</Color>
             <Color x:Key="PlaceholderTextColor">#757575</Color>
+            
+            <!--RefreshView-->
+            <Color x:Key="RefreshViewBackgroundColor">White</Color>
+            <Color x:Key="RefreshViewColor">#03A9F4</Color>
         </ResourceDictionary>
         <styles:Icons/>
         <ResourceDictionary>
@@ -35,6 +46,11 @@
                 <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
                 <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons" />
             </OnPlatform>
+
+            <Style x:Key="RefreshViewStyle" TargetType="RefreshView">
+                <Setter Property="BackgroundColor" Value="{DynamicResource RefreshViewBackgroundColor}"/>
+                <Setter Property="RefreshColor" Value="{DynamicResource RefreshViewColor}"/>
+            </Style>
 
             <Style x:Key="FrameStyle" TargetType="Frame">
                 <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}"/>
@@ -49,23 +65,27 @@
                 <Setter Property="TextColor" Value="{DynamicResource LabelColor}"/>
             </Style>
 
-            <Style x:Key="LabelStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="{DynamicResource LabelColor}"/>
+            <Style x:Key="BaseLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource LabelColor}"/>                
+            </Style>
+
+            <Style x:Key="LargeLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource BaseLabelStyle}">
                 <Setter Property="FontSize" Value="Large"/>
             </Style>
 
-            <Style x:Key="SecondaryLabelStyle" TargetType="Label"
-                    BasedOn="{StaticResource LabelStyle}" >
+            <Style x:Key="MediumLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource BaseLabelStyle}" >
                 <Setter Property="FontSize" Value="Medium"/>
             </Style>
 
-            <Style x:Key="TertiaryLabelStyle" TargetType="Label"
-                    BasedOn="{StaticResource LabelStyle}" >
+            <Style x:Key="SmallLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource BaseLabelStyle}" >
                 <Setter Property="FontSize" Value="Small"/>
             </Style>
 
             <Style x:Key="MicroLabelStyle" TargetType="Label"
-                    BasedOn="{StaticResource LabelStyle}" >
+                    BasedOn="{StaticResource BaseLabelStyle}" >
                 <Setter Property="FontSize" Value="Micro"/>
             </Style>
 
@@ -77,15 +97,15 @@
 
             <Style x:Key="MaterialNormalButton" TargetType="Button">
                 <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamily}" />
-                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="TextColor" Value="{DynamicResource LabelColor}" />
                 <Setter Property="BorderColor" Value="Transparent" />
                 <Setter Property="BackgroundColor" Value="Transparent" />
             </Style>
 
             <Style x:Key="MaterialButton" TargetType="Button">
                 <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamily}" />
-                <Setter Property="FontSize" Value="42" />
-                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="FontSize" Value="40" />
+                <Setter Property="TextColor" Value="{DynamicResource LabelColor}" />
                 <Setter Property="WidthRequest" Value="65" />
                 <Setter Property="HeightRequest" Value="65" />
                 <Setter Property="VerticalOptions" Value="FillAndExpand" />
@@ -93,6 +113,7 @@
                 <Setter Property="BorderColor" Value="Transparent" />
                 <Setter Property="BackgroundColor" Value="Transparent" />
             </Style>
+            
             <Style x:Key="CloseButtonStyle" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="White" />
                 <Setter Property="FontSize" Value="12" />
@@ -101,6 +122,7 @@
                 <Setter Property="Visual" Value="Material" />
                 <Setter Property="TextColor" Value="{DynamicResource PrimaryDarkColor}" />
             </Style>
+            
             <Style x:Key="SubscribeButtonStyle" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryDarkColor}" />
                 <Setter Property="CornerRadius" Value="20" />

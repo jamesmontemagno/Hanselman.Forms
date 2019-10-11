@@ -9,10 +9,9 @@
     xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    xmlns:pulltorefresh="clr-namespace:Refractored.XamForms.PullToRefresh;assembly=Refractored.XamForms.PullToRefresh"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     Title="{Binding Title}"
-    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
     NavigationPage.HasNavigationBar="{OnPlatform Android=false,
@@ -24,8 +23,8 @@
     </d:ContentPage.BindingContext>
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <RefreshView IsRefreshing="{Binding IsBusy}"
-                     RefreshColor="Black"
-                     Command="{Binding RefreshCommand}">
+                     Command="{Binding RefreshCommand}"
+                     Style="{DynamicResource RefreshViewStyle}">
             <CollectionView
                 x:Name="CollectionViewBlog"
                 HorizontalOptions="FillAndExpand"
@@ -33,7 +32,8 @@
                 SelectionMode="None"
                 VerticalOptions="FillAndExpand">
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="{OnIdiom Phone=1, Tablet=3, Desktop=3, TV=5, Watch=1}" />
+                    <GridItemsLayout Orientation="Vertical" 
+                                     Span="{OnIdiom Phone=1, Tablet=3, Desktop=3, TV=5, Watch=1}" />
                 </CollectionView.ItemsLayout>
                 <d:CollectionView.ItemsSource>
                     <x:Array Type="{x:Type modelsShared:FeedItem}">
@@ -60,7 +60,7 @@
                             <Frame
                                 Padding="0,0,0,0"
                                 CornerRadius="8"
-                                Visual="Material">
+                                Style="{DynamicResource FrameStyle}">
                                 <Grid RowSpacing="0">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="125" />
@@ -70,7 +70,7 @@
                                     <Grid>
                                         <Image Aspect="AspectFill" Source="{Binding FirstImage}" />
                                         <pancake:PancakeView
-                                            BackgroundGradientEndColor="#99000000"
+                                            BackgroundGradientEndColor="{DynamicResource PrimaryColor}"
                                             BackgroundGradientStartColor="#10000000"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand" />
@@ -88,11 +88,11 @@
                                         Spacing="0">
                                         <Label
                                             Margin="0,4,0,0"
-                                            FontSize="Micro"
+                                            Style="{DynamicResource SmallLabelStyle}"
                                             Text="{Binding DisplayPublishDate}" />
                                         <Label
                                             Margin="0,8,0,0"
-                                            FontSize="Small"
+                                            Style="{DynamicResource SmallLabelStyle}"
                                             Text="{Binding Caption}" />
                                     </StackLayout>
                                     <StackLayout

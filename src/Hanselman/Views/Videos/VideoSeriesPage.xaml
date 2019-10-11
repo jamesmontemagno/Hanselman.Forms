@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
-    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Title="{Binding Title}"
     mc:Ignorable="d"
     Shell.NavBarIsVisible="True"
@@ -24,6 +24,7 @@
         IsRefreshing="{Binding IsBusy, Mode=OneWay}"
         ItemsSource="{Binding Episodes}"
         RefreshCommand="{Binding LoadEpisodesCommand}"
+        RefreshControlColor="{DynamicResource RefreshViewColor}"
         ItemTapped="MyListView_ItemTapped"
         ItemSelected="MyListView_ItemSelected"
         SelectionMode="Single"
@@ -38,9 +39,8 @@
                         Margin="16,8"
                         Padding="0"
                         CornerRadius="15"
-                        HasShadow="True"
                         IsClippedToBounds="True"
-                        Visual="Material">
+                        Style="{DynamicResource FrameStyle}">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width=".35*" />
@@ -48,11 +48,15 @@
                             </Grid.ColumnDefinitions>
                             <Image Aspect="AspectFill" Source="{Binding ThumbnailUrl}" />
                             <StackLayout Grid.Column="1" Padding="8">
-                                <Label FontSize="Micro" Text="{Binding DisplayDate}" />
-                                <Label Text="{Binding Title}" />
+                                <Label Style="{DynamicResource MicroLabelStyle}"
+                                       TextColor="{DynamicResource PrimaryColor}"
+                                       Text="{Binding DisplayDate}" />
+                                <Label Text="{Binding Title}"
+                                       Style="{DynamicResource SmallLabelStyle}"/>
                                 <Label
                                     HorizontalOptions="End"
                                     VerticalOptions="EndAndExpand"
+                                    Style="{DynamicResource MicroLabelStyle}"
                                     Text="{Binding Duration, StringFormat='{0:g}'}" />
                             </StackLayout>
                         </Grid>
