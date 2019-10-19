@@ -22,7 +22,7 @@
         <viewmodels:BlogFeedViewModel />
     </d:ContentPage.BindingContext>
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <RefreshView IsRefreshing="{Binding IsBusy}"
+        <RefreshView IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                      Command="{Binding RefreshCommand}"
                      Style="{DynamicResource RefreshViewStyle}">
             <CollectionView

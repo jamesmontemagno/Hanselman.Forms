@@ -10,6 +10,24 @@
     <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>
     <Color x:Key="LoadingBackgroundColor">#80000000</Color>
     <Color x:Key="LoadingTextColor">White</Color>
+
+    <Color x:Key="SystemBlue">#0A84FF</Color>
+    <Color x:Key="SystemGreen">#30D158</Color>
+    <Color x:Key="SystemIndigo">#5E5CE6</Color>
+    <Color x:Key="SystemOrange">#FF9F0A</Color>
+    <Color x:Key="SystemPink">#FF375F</Color>
+    <Color x:Key="SystemPurple">#BF5AF2</Color>
+    <Color x:Key="SystemRed">#FF453A</Color>
+    <Color x:Key="SystemTeal">#64D2FF</Color>
+    <Color x:Key="SystemYellow">#FFD60A</Color>
+
+    <Color x:Key="SystemGray">#8E8E93</Color>
+    <Color x:Key="SystemGray2">#636366</Color>
+    <Color x:Key="SystemGray3">#484848</Color>
+    <Color x:Key="SystemGray4">#3A3A3C</Color>
+    <Color x:Key="SystemGray5">#2C2C2E</Color>
+    <Color x:Key="SystemGray6">#1C1C1E</Color>
+
     <!--Label-->
     <Color x:Key="LabelColor">#CCCFCF</Color>
     <Color x:Key="SecondaryLabelColor">#757575</Color>
