@@ -10,6 +10,8 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+// ChrisNTR cheered 100 on October 18th 2019
+
 namespace Hanselman.Views
 {
     public partial class BlogCollectionPage : ContentPage, IPageHelpers
@@ -64,11 +66,10 @@ namespace Hanselman.Views
         {
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.FeedItems.Count > 0)
             {
-                CollectionViewBlog.ItemsSource = ViewModel.FeedItems;
                 return;
             }
 
-            ViewModel.LoadCommand.Execute(null);
+            ViewModel.LoadCommand.Execute(true);
         }
     }
 }

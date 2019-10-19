@@ -17,6 +17,9 @@ using Hanselman.Functions.Helpers;
 // LotanB gifted 3 subs May 17, 2019
 // ClintonRocksmith cheered 100 June 14, 2019
 // ClintonRocksmith cheered 3000 June 14, 2019
+// ChrisNTR cheered 100 October 18, 2019
+// codingwithluce cheered 200 October 18, 2019
+
 
 namespace Hanselman.Functions
 {

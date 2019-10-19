@@ -8,12 +8,12 @@
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{DynamicResource WindowBackgroundColor}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="{DynamicResource LabelColor}" />
+                <Setter Property="Shell.TitleColor" Value="{DynamicResource SystemGray}" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource ShellTabBarBackgroundColor}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="Orange"/> <!--unused :( lols-->
-                <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource ShellTabBarUnselectedColor}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource SystemGray}"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource PrimaryColor}"/>
             </Style>
             <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />

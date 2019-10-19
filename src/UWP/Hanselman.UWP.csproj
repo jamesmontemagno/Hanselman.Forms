@@ -149,7 +149,7 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Humanizer">
-      <Version>2.7.2</Version>
+      <Version>2.7.9</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.AppCenter">
       <Version>2.1.1</Version>
@@ -170,12 +170,12 @@
       <Version>1.3.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.8.12" />
+    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.8.17" />
     <PackageReference Include="Refractored.MvvmHelpers">
       <Version>1.5.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Core">
-      <Version>1.0.0.425-beta</Version>
+      <Version>1.0.0.464-beta</Version>
     </PackageReference>
     <PackageReference Include="System.Json">
       <Version>4.5.0</Version>
@@ -183,7 +183,7 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="Xamarin.Forms.PancakeView">
-      <Version>1.3.3</Version>
+      <Version>1.3.4</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.851321-pre3" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">

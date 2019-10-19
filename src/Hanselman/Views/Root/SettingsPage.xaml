@@ -23,6 +23,24 @@
                                 Style="{DynamicResource PickerStyle}"/>
                     </StackLayout>
                 </Frame>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemBlue}"/>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemGreen}"/>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemIndigo}"/>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemOrange}"/>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemPink}"/>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemPurple}"/>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemRed}"/>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemTeal}"/>
+                <BoxView HeightRequest="20" HorizontalOptions="FillAndExpand"
+                         BackgroundColor="{DynamicResource SystemYellow}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

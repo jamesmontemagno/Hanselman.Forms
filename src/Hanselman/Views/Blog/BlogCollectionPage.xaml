@@ -22,7 +22,7 @@
         <viewmodels:BlogFeedViewModel />
     </d:ContentPage.BindingContext>
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <RefreshView IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+        <RefreshView IsRefreshing="{Binding IsRefreshing}"
                      Command="{Binding RefreshCommand}"
                      Style="{DynamicResource RefreshViewStyle}">
             <CollectionView
@@ -70,7 +70,7 @@
                                     <Grid>
                                         <Image Aspect="AspectFill" Source="{Binding FirstImage}" />
                                         <pancake:PancakeView
-                                            BackgroundGradientEndColor="{DynamicResource PrimaryColor}"
+                                            BackgroundGradientEndColor="{DynamicResource SystemBlue}"
                                             BackgroundGradientStartColor="#10000000"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand" />
@@ -113,7 +113,7 @@
                                             Command="{Binding ReadCommand}"
                                             HorizontalOptions="Start"
                                             Text="READ"
-                                            TextColor="{StaticResource PrimaryColor}"
+                                            TextColor="{StaticResource SystemBlue}"
                                             VerticalOptions="End"
                                             Visual="Default" />
                                         <Button
