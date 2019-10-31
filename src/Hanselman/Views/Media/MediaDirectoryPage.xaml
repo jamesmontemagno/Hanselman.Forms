@@ -36,7 +36,9 @@
                                     Padding="0"
                                     HasShadow="True"
                                     VerticalOptions="Start"
-                                    Visual="Material" d:BackgroundColor="Red">
+                                    Visual="Material" 
+                                    InputTransparent="True"
+                                    d:BackgroundColor="Red">
                                     <Grid Padding="0" WidthRequest="200">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="200" />
@@ -78,6 +80,7 @@
                                     Margin="4"
                                     Padding="0"
                                     HasShadow="True"
+                                    InputTransparent="True"
                                     VerticalOptions="Start"
                                     Visual="Material" d:BackgroundColor="Red">
                                     <Grid Padding="0" WidthRequest="200">
@@ -118,6 +121,7 @@
                                     Margin="4"
                                     Padding="0"
                                     HasShadow="True"
+                                    InputTransparent="True"
                                     VerticalOptions="Start"
                                     Visual="Material" d:BackgroundColor="Red">
                                     <Image HeightRequest="172"
