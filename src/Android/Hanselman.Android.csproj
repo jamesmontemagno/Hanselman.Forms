@@ -15,9 +15,6 @@
     <AssemblyName>HanselmanAndroid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
   </PropertyGroup>
@@ -45,6 +42,10 @@
     <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
     <AndroidLinkTool>r8</AndroidLinkTool>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>portable</DebugType>
@@ -59,14 +60,16 @@
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
     <AndroidDexTool>d8</AndroidDexTool>
-    <AotAssemblies>true</AotAssemblies>
+    <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
-    <AndroidSupportedAbis>armeabi-v7a;arm64-v8a</AndroidSupportedAbis>
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
     <AndroidLinkTool>r8</AndroidLinkTool>
     <AndroidUseAapt2>true</AndroidUseAapt2>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <BundleAssemblies>false</BundleAssemblies>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Java.Interop" />
@@ -96,7 +99,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\refresh.png" />
     <AndroidResource Include="Resources\drawable-mdpi\refresh.png" />
     <AndroidResource Include="Resources\drawable\facebook.png" />
@@ -111,7 +114,7 @@
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values-v21\styles.xml" />
-    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\drawable\tdl_full.jpg" />
     <AndroidResource Include="Resources\drawable\ratchet_full.jpg" />
     <AndroidResource Include="Resources\drawable\hm_full.jpg" />
@@ -133,9 +136,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_stop.png" />
     <AndroidResource Include="Resources\xml\wearable_app_desc.xml" />
     <AndroidResource Include="Resources\drawable\scott159.png" />
-    <AndroidResource Include="Resources\layout\Toolbar.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidAsset Include="Assets\materialdesignicons-webfont.ttf" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_play_circle_outline.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_play_circle_outline.png" />

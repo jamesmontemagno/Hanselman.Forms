@@ -111,6 +111,7 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
     <LaunchForBackgroundFetch>false</LaunchForBackgroundFetch>
+    <ExtraLaunchArgs>--interpreter</ExtraLaunchArgs>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
