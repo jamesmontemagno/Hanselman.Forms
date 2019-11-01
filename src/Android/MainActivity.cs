@@ -17,6 +17,8 @@ using MediaManager;
 namespace HanselmanAndroid
 {
     [Activity(Label = "Hanselman",
+        Icon="@drawable/ic_launcher",
+        Theme="@style/MyTheme",
         MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : FormsAppCompatActivity

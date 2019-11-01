@@ -6,8 +6,8 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
-    mc:Ignorable="d"
-    x:DataType="modelsShared:Tweet">
+    x:DataType="modelsShared:Tweet"
+    mc:Ignorable="d">
     <Frame
         Margin="8,4"
         Padding="12"
@@ -22,6 +22,7 @@
                 Padding="0"
                 CornerRadius="22"
                 HorizontalOptions="Center"
+                InputTransparent="True"
                 VerticalOptions="Start"
                 Style="{DynamicResource FrameStyle}">
                 <Image
