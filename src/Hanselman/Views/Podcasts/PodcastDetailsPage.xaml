@@ -152,7 +152,7 @@
                                                 MaxLines="3"
                                                 Style="{DynamicResource SmallLabelStyle}"
                                                 Text="{Binding Title}" />
-                                        <Label FontSize="12" Text="{Binding Duration}" />
+                                        <Label Style="{DynamicResource MicroLabelStyle}" Text="{Binding Duration}" />
                                     </StackLayout>
                                     <Image
                                             Grid.Column="2"

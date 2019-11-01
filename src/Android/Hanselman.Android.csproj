@@ -99,12 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
-    <AndroidResource Include="Resources\drawable-hdpi\refresh.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\refresh.png" />
-    <AndroidResource Include="Resources\drawable\facebook.png" />
-    <AndroidResource Include="Resources\drawable\googleplus.png" />
-    <AndroidResource Include="Resources\drawable\instagram.png" />
-    <AndroidResource Include="Resources\drawable\twitter.png" />
     <AndroidResource Include="Resources\drawable\scott.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
@@ -117,58 +111,31 @@
     <AndroidResource Include="Resources\drawable\tdl_full.jpg" />
     <AndroidResource Include="Resources\drawable\ratchet_full.jpg" />
     <AndroidResource Include="Resources\drawable\hm_full.jpg" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_pause.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_play.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_share.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_stop.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_pause.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_play.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_share.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_stop.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_pause.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_play.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_share.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_stop.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\ic_pause.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\ic_play.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\ic_share.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\ic_stop.png" />
     <AndroidResource Include="Resources\xml\wearable_app_desc.xml" />
     <AndroidResource Include="Resources\drawable\scott159.png" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidAsset Include="Assets\materialdesignicons-webfont.ttf" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_play_circle_outline.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\ic_play_circle_outline.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_play_circle_outline.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_play_circle_outline.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_play_circle_outline.png" />
-    <AndroidResource Include="Resources\drawable\ic_play_circle_outline.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_about.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_podcast.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_rss.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\ic_twitter.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_video.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_about.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_podcast.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_rss.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\ic_twitter.png" />
     <AndroidResource Include="Resources\drawable-mdpi\ic_video.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_about.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_podcast.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_rss.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\ic_twitter.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ic_video.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_about.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_podcast.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_rss.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\ic_twitter.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_video.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_about.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_podcast.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_rss.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_twitter.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_video.png" />
-    <AndroidResource Include="Resources\drawable\shadow.png" />
     <AndroidResource Include="Resources\values\dimens.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -214,7 +181,7 @@
       <Version>1.5.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Core">
-      <Version>1.0.0.464-beta</Version>
+      <Version>1.0.0.484-beta</Version>
     </PackageReference>
     <PackageReference Include="System.Json">
       <Version>4.5.0</Version>
@@ -236,5 +203,16 @@
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
     <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.3.0.947036" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_twitter.png" />
+  </ItemGroup>
 </Project>

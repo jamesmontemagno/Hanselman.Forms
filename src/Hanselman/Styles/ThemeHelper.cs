@@ -38,6 +38,9 @@ namespace Hanselman.Styles
                 case Theme.Dark:
                     newTheme = new DarkTheme();
                     break;
+                default:
+                    newTheme = new LightTheme();
+                    break;
             }
 
             foreach (var merged in newTheme.MergedDictionaries)

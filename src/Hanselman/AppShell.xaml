@@ -22,21 +22,37 @@
 
 
     <TabBar Style="{StaticResource BaseStyle}" Route="sections">
-        <Tab Title="About" Icon="ic_about.png" Route="tab_about">
+        <Tab Title="About" Route="tab_about" Shell.NavBarIsVisible="False">
+            <Tab.Icon>
+                <FontImageSource
+                    Glyph="{StaticResource IconAbout}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </Tab.Icon>
             <ShellContent Route="about" Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
         </Tab>
-        <Tab Title="Blog" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_rss.png" Route="tab_blog">
+        <Tab Title="Blog" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_blog">
+            <Tab.Icon>
+                <FontImageSource
+                    Glyph="{StaticResource IconBlog}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </Tab.Icon>
             <ShellContent Route="blog" Title="Blog" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
         </Tab>
-        <Tab Title="Tweets" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_twitter.png" Route="tab_tweets">
+        <Tab Title="Tweets" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_tweets">
+            <Tab.Icon>
+                <FontImageSource
+                    Glyph="{StaticResource IconTwitter}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </Tab.Icon>
             <ShellContent Route="tweets" Title="Tweets" ContentTemplate="{DataTemplate views:TwitterPage}"/>
         </Tab>
-        <Tab Title="Media" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Icon="ic_video.png" Route="tab_media">
+        <Tab Title="Media" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_media">
+            <Tab.Icon>
+                <FontImageSource
+                    Glyph="{StaticResource IconMedia}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </Tab.Icon>
             <ShellContent Route="media" Title="Media" ContentTemplate="{DataTemplate views:MediaDirectoryPage}"/>
-        </Tab>
-
-        <Tab Title="Settings" Shell.NavBarIsVisible="true" Icon="ic_video.png" Route="tab_settings">
-            <ShellContent Route="settings" Title="Settings" ContentTemplate="{DataTemplate views:SettingsPage}"/>
         </Tab>
     </TabBar>
 

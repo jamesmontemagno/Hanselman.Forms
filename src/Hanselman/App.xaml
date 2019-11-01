@@ -57,6 +57,14 @@
             <x:String x:Key="IconArchived">&#xf03c;</x:String>
             <x:String x:Key="IconShare">&#xf497;</x:String>
 
+            <x:String x:Key="IconAbout">&#xf2fd;</x:String>
+            <x:String x:Key="IconTwitter">&#xf544;</x:String>
+            <x:String x:Key="IconMedia">&#xf40b;</x:String>
+            <x:String x:Key="IconSettings">&#xf8ba;</x:String>
+            <x:String x:Key="IconBlog">&#xf46b;</x:String>
+
+            <x:Int32 x:Key="CloseButtonBorderWidth">0</x:Int32>
+            
             <!--Control Themeing-->
 
             <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
@@ -134,12 +142,14 @@
             </Style>
 
             <Style x:Key="CloseButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}" />
                 <Setter Property="FontSize" Value="12" />
+                <Setter Property="BorderColor" Value="{DynamicResource FrameBorderColor}"/>
+                <Setter Property="BorderWidth" Value="{DynamicResource CloseButtonBorderWidth}"/>
                 <Setter Property="CornerRadius" Value="20" />
                 <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="Visual" Value="Material" />
-                <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+                <Setter Property="TextColor" Value="{DynamicResource SystemBlue}" />
             </Style>
 
             <Style x:Key="SubscribeButtonStyle" TargetType="Button">

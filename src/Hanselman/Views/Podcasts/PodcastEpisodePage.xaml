@@ -8,6 +8,8 @@
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:viewmodel="clr-namespace:Hanselman.ViewModels"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.ModalPresentationStyle="FormSheet"
     mc:Ignorable="d"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
     x:DataType="viewmodel:PodcastEpisodeViewModel">
@@ -46,8 +48,7 @@
                             x:Name="ButtonClose"
                             Clicked="ButtonClose_Clicked"
                             HorizontalOptions="End"
-                            Style="{OnPlatform iOS={StaticResource CloseButtonStyle},
-                                               Android={StaticResource CloseButtonStyle}}"
+                            Style="{DynamicResource CloseButtonStyle}"
                             Text="Close" />
                         <Frame
                             Grid.RowSpan="3"

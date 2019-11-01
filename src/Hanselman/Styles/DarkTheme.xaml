@@ -44,4 +44,7 @@
 
     <!--RefreshView-->
     <Color x:Key="RefreshViewBackgroundColor">Black</Color>
+
+
+    <x:Int32 x:Key="CloseButtonBorderWidth">2</x:Int32>
 </ResourceDictionary>

@@ -17,5 +17,10 @@ namespace Hanselman.Views
             InitializeComponent();
             BindingContext = new SettingsViewModel();
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
