@@ -60,7 +60,7 @@
                             <Frame
                                 Padding="0,0,0,0"
                                 CornerRadius="8"
-                                Style="{DynamicResource FrameStyle}">
+                                Style="{DynamicResource FrameStyle}"
                                 InputTransparent="True">
                                 <Grid RowSpacing="0">
                                     <Grid.RowDefinitions>

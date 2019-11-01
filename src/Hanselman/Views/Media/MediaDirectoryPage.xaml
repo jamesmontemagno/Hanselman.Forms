@@ -37,7 +37,7 @@
                                     Padding="0"
                                     VerticalOptions="Start"
                                     d:BackgroundColor="Red"
-                                    Style="{DynamicResource FrameStyle}">
+                                    Style="{DynamicResource FrameStyle}"
                                     InputTransparent="True">
                                     <Grid Padding="0" WidthRequest="200">
                                         <Grid.RowDefinitions>
@@ -82,7 +82,7 @@
                                     Padding="0"
                                     VerticalOptions="Start" 
                                     d:BackgroundColor="Red"
-                                    Style="{DynamicResource FrameStyle}">
+                                    Style="{DynamicResource FrameStyle}"
                                     InputTransparent="True">
                                     <Grid Padding="0" WidthRequest="200">
                                         <Grid.RowDefinitions>
