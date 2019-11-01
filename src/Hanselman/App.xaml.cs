@@ -36,7 +36,10 @@ namespace Hanselman
             
             ThemeHelper.ChangeTheme(Models.Theme.Dark, true);
 
-            MainPage = new AppShell();
+            if (DeviceInfo.Platform == DevicePlatform.UWP)
+                MainPage = new HomePage();
+            else
+                MainPage = new AppShell();
 
         }
 

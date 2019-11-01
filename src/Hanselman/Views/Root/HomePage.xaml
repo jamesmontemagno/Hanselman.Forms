@@ -7,36 +7,52 @@
     xmlns:effects="clr-namespace:Hanselman.Effects"
     xmlns:pages="clr-namespace:Hanselman.Views"
     xmlns:controls="clr-namespace:Hanselman.Controls"
-    android:TabbedPage.IsSwipePagingEnabled="False"
-    android:TabbedPage.ToolbarPlacement="Bottom"
     BarBackgroundColor="{OnPlatform Android=White}">
-    <TabbedPage.Effects>
-        <effects:TabbedPageNoShiftEffect />
-    </TabbedPage.Effects>
-    <controls:HanselmanNavigationPage Title="About" Icon="ic_about.png">
+
+    <controls:HanselmanNavigationPage Title="About">
+        <controls:HanselmanNavigationPage.IconImageSource>
+            <FontImageSource
+                    Glyph="{StaticResource IconAbout}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+        </controls:HanselmanNavigationPage.IconImageSource>
         <x:Arguments>
             <pages:AboutPage />
         </x:Arguments>
     </controls:HanselmanNavigationPage>
+    
+    <controls:HanselmanNavigationPage Title="Blog">
+        <controls:HanselmanNavigationPage.IconImageSource>
+            <FontImageSource
+                    Glyph="{StaticResource IconBlog}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+        </controls:HanselmanNavigationPage.IconImageSource>
+        <x:Arguments>
+            <pages:BlogCollectionPage />
+        </x:Arguments>
+    </controls:HanselmanNavigationPage>
 
+    <controls:HanselmanNavigationPage Title="Twitter">
+        <controls:HanselmanNavigationPage.IconImageSource>
+            <FontImageSource
+                    Glyph="{StaticResource IconTwitter}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+        </controls:HanselmanNavigationPage.IconImageSource>
 
-    <controls:HanselmanNavigationPage Title="Twitter" Icon="ic_twitter.png">
         <x:Arguments>
             <pages:TwitterPage />
         </x:Arguments>
     </controls:HanselmanNavigationPage>
 
 
-    <controls:HanselmanNavigationPage Title="Podcasts" Icon="ic_podcast.png">
-        <x:Arguments>
-            <pages:PodcastDirectoryPage />
-        </x:Arguments>
-    </controls:HanselmanNavigationPage>
+    <controls:HanselmanNavigationPage Title="Media">
+        <controls:HanselmanNavigationPage.IconImageSource>
+            <FontImageSource
+                    Glyph="{StaticResource IconMedia}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+        </controls:HanselmanNavigationPage.IconImageSource>
 
-
-    <controls:HanselmanNavigationPage Title="Videos" Icon="ic_video.png">
         <x:Arguments>
-            <pages:VideoDirectoryPage />
+            <pages:MediaDirectoryPage />
         </x:Arguments>
     </controls:HanselmanNavigationPage>
 </TabbedPage>

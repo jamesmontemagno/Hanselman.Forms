@@ -31,14 +31,8 @@ namespace Hanselman.Views
                 DeviceDisplay.MainDisplayInfoChanged += DeviceDisplay_MainDisplayInfoChanged;
                 SetSize();
             }
-
-            ViewModel.FeedItems.CollectionChanged += FeedItems_CollectionChanged;
         }
 
-        private void FeedItems_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            CollectionViewBlog.ItemsSource = ViewModel.FeedItems;
-        }
 
         private void DeviceDisplay_MainDisplayInfoChanged(object sender, DisplayInfoChangedEventArgs e)
         {
@@ -58,8 +52,7 @@ namespace Hanselman.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if (DeviceInfo.Platform != DevicePlatform.UWP)
-                OnPageVisible();
+            OnPageVisible();
         }
 
         public void OnPageVisible()

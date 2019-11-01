@@ -22,17 +22,6 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Command="{Binding GoToSettingsCommand}" Text="Settings">
-            <ToolbarItem.IconImageSource>
-                <FontImageSource
-                    FontFamily="{StaticResource MaterialFontFamily}"
-                    Glyph="{StaticResource IconSettings}"
-                    Color="{DynamicResource SystemGray}" />
-            </ToolbarItem.IconImageSource>
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
     <Grid RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -52,6 +41,8 @@
         <ImageButton
             Grid.Column="1"
             Margin="10"
+            WidthRequest="32"
+            HeightRequest="32"
             BackgroundColor="Transparent"
             Command="{Binding GoToSettingsCommand}">
             <ImageButton.Source>

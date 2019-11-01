@@ -16,22 +16,6 @@ namespace Hanselman.Views
         public HomePage ()
         {
             InitializeComponent();
-
-            if(DeviceInfo.Platform == DevicePlatform.UWP)
-            {
-                Children.Insert(1, new HanselmanNavigationPage(new BlogPage())
-                {
-                    Title = "Blog"
-                });
-            }
-            else
-            {
-                Children.Insert(1, new HanselmanNavigationPage(new BlogCollectionPage())
-                {
-                    Title = "Blog",
-                    IconImageSource = "ic_rss.png"
-                });
-            }
         }
 
         protected override void OnCurrentPageChanged()
