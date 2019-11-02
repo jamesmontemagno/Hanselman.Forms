@@ -29,6 +29,8 @@ namespace Hanselman.Functions.Triggers
            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
             [Blob("hanselman/video-azurefridays.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inFridays,
             [Blob("hanselman/video-events.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inEvents,
+            [Blob("hanselman/video-dotnet.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inDotNet,
+            [Blob("hanselman/video-csharp.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inCSharp,
            ILogger log)
         {
             string name = req.Query["id"];
@@ -38,6 +40,10 @@ namespace Hanselman.Functions.Triggers
                     return BlobHelpers.BlobToHttpResponseMessage(inFridays, log, name);
                 case "events":
                     return BlobHelpers.BlobToHttpResponseMessage(inEvents, log, name);
+                case "dotnet":
+                    return BlobHelpers.BlobToHttpResponseMessage(inDotNet, log, name);
+                case "csharp":
+                    return BlobHelpers.BlobToHttpResponseMessage(inCSharp, log, name);
                 default:
                     return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
@@ -48,6 +54,8 @@ namespace Hanselman.Functions.Triggers
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
             [Blob("hanselman/video-azurefridays.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outFridays,
             [Blob("hanselman/video-events.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outEvents,
+            [Blob("hanselman/video-dotnet.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outDotNet,
+            [Blob("hanselman/video-csharp.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outCSharp,
             [HttpClientFactory]HttpClient client,
             ILogger log)
         {
@@ -59,18 +67,35 @@ namespace Hanselman.Functions.Triggers
 
             var azureFridayLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/azure_friday.jpg";
             var eventsLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/scott_events.jpg";
+            var csharpLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/scott_events.jpg";
+            var dotnetLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/scott_events.jpg";
+
+            const string azureFridays = "https://s.ch9.ms/Shows/Azure-Friday/feed/mp4";
+            const string azureFridays2 = "https://s.ch9.ms/Shows/Azure-Friday/feed/mp4?page=2";
+            const string hanselmanVids = "https://s.ch9.ms/Events/Speakers/scott-hanselman/RSS/mp4";
+            const string csharp101 = "https://s.ch9.ms/Series/CSharp-101/feed/mp4";
+            const string dotnet101 = "https://s.ch9.ms/Series/NET-Core-101/feed/mp4";
 
             switch (link)
             {
-                case "https://s.ch9.ms/Niners/Glucose/Posts/RSS/mp4":
+
+                case azureFridays:
                     videoFeeds.Add(link, (outFridays, azureFridayLogo));
                     break;
-                case "https://s.ch9.ms/Events/Speakers/scott-hanselman/RSS/mp4":
+                case hanselmanVids:
                     videoFeeds.Add(link, (outEvents, eventsLogo));
                     break;
+                case csharp101:
+                    videoFeeds.Add(link, (outCSharp, csharpLogo));
+                    break;
+                case dotnet101:
+                    videoFeeds.Add(link, (outDotNet, dotnetLogo));
+                    break;
                 default:
-                    videoFeeds.Add("https://s.ch9.ms/Niners/Glucose/Posts/RSS/mp4", (outFridays, azureFridayLogo));
-                    videoFeeds.Add("https://s.ch9.ms/Events/Speakers/scott-hanselman/RSS/mp4", (outEvents, eventsLogo));
+                    videoFeeds.Add(azureFridays, (outFridays, azureFridayLogo));
+                    videoFeeds.Add(hanselmanVids, (outEvents, eventsLogo));
+                    videoFeeds.Add(csharp101, (outCSharp, csharpLogo));
+                    videoFeeds.Add(dotnet101, (outDotNet, dotnetLogo));
                     break;
             }
 
@@ -78,6 +103,10 @@ namespace Hanselman.Functions.Triggers
             {
                 var rss = await client.GetStringAsync(feed.Key);
                 var parse = FeedItemHelpers.ParseVideoFeed(rss, feed.Value.photo);
+                
+                //Get Azure Fridays page 2
+                if (rss == azureFridays)
+                    parse.AddRange(FeedItemHelpers.ParseVideoFeed(azureFridays2, feed.Value.photo));
 
                 log.LogInformation("Writting feed to blob.");
                 using (var writer = new StreamWriter(feed.Value.blob))
