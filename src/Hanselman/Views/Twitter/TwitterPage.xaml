@@ -12,7 +12,7 @@
     ios:NavigationPage.PrefersLargeTitles="True"
     ios:Page.LargeTitleDisplay="Always"
     Title="{Binding Title}"
-    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
     mc:Ignorable="d"
@@ -34,7 +34,7 @@
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ListView
             x:Name="listView"
-            BackgroundColor="{StaticResource WindowBackgroundColor}"
+            BackgroundColor="Transparent"
             d:ItemTemplate="{StaticResource TweetTemplate}"
             CachingStrategy="RecycleElement"
             HasUnevenRows="True"
@@ -62,6 +62,7 @@
             Padding="12"
             d:IsVisible="true"
             BackgroundColor="{StaticResource LoadingBackgroundColor}"
+            BorderColor="{DynamicResource FrameBorderColor}"
             CornerRadius="10"
             HasShadow="False"
             HorizontalOptions="Center"

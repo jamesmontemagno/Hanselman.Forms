@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Hanselman.Services;
+using System.Diagnostics;
 
 [assembly: Dependency(typeof(DataService))]
 namespace Hanselman.Services
@@ -69,10 +70,9 @@ namespace Hanselman.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Unable to get information from server {ex}");
+                Debug.WriteLine($"Unable to get information from server {ex}");
+                throw ex;
             }
-
-            return default;
         }
     }
 }

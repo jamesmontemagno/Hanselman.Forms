@@ -11,8 +11,7 @@
     <Frame
         Margin="8,4"
         Padding="12"
-        HasShadow="True"
-        Visual="Material">
+        Style="{DynamicResource FrameStyle}">
         <Grid ColumnSpacing="12">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
@@ -22,11 +21,10 @@
                 Margin="0"
                 Padding="0"
                 CornerRadius="22"
-                HasShadow="True"
                 HorizontalOptions="Center"
                 InputTransparent="True"
                 VerticalOptions="Start"
-                Visual="Material">
+                Style="{DynamicResource FrameStyle}">
                 <Image
                     Aspect="AspectFill"
                     HeightRequest="44"
@@ -41,13 +39,14 @@
                 VerticalOptions="Start">
                 <Label
                     FontSize="Micro"
-                    Style="{StaticResource DateTimeLabelStyle}"
+                    Style="{DynamicResource DateTimeLabelStyle}"
                     Text="{Binding DateHumanized}" />
-                <Label FontSize="Micro" Text="{Binding ScreenName}" />
+                <Label Text="{Binding ScreenName}"
+                       Style="{DynamicResource MicroLabelStyle}"/>
                 <Label
-                    FontSize="Small"
                     LineBreakMode="WordWrap"
-                    Text="{Binding Text}" />
+                    Text="{Binding Text}"
+                    Style="{DynamicResource SmallLabelStyle}"/>
             </StackLayout>
         </Grid>
     </Frame>

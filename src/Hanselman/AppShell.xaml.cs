@@ -7,6 +7,7 @@ namespace Hanselman
 {
     public partial class AppShell : Shell
     {
+        public const string Settings = "sections/tab_about/settings";
         public const string PodcastDetails = "sections/tab_podcasts/podcasts/podcast_details";
         public const string PodcastEpisode = "sections/tab_podcasts/podcasts/podcast_details/episode";
         public const string PodcastPlayback = "sections/tab_podcasts/podcasts/podcast_details/episode/playback";
@@ -19,9 +20,9 @@ namespace Hanselman
 
             Routing.RegisterRoute(PodcastDetails, typeof(PodcastDetailsPage));
             Routing.RegisterRoute(PodcastEpisode, typeof(PodcastEpisodePage));
-            Routing.RegisterRoute(PodcastPlayback, typeof(PodcastPlaybackPage));
             Routing.RegisterRoute(VideoSeriesDetails, typeof(VideoSeriesPage));
             Routing.RegisterRoute(VideoEpisodeDetails, typeof(VideoDetailsPage));
+            Routing.RegisterRoute(Settings, typeof(SettingsPage));
         }
     }
 }

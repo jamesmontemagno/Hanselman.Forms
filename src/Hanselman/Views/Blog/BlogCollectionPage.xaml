@@ -5,15 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman"
     xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    xmlns:pulltorefresh="clr-namespace:Refractored.XamForms.PullToRefresh;assembly=Refractored.XamForms.PullToRefresh"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
-    Title="{Binding Title}"
+    Title="Blog"
+    ios:Page.LargeTitleDisplay="Always"
     x:DataType="viewmodels:BlogFeedViewModel"
-    BackgroundColor="{StaticResource WindowBackgroundColor}"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
     NavigationPage.HasNavigationBar="{OnPlatform Android=false,
@@ -24,11 +25,13 @@
     </d:ContentPage.BindingContext>
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <RefreshView
+            BackgroundColor="{DynamicResource WindowBackgroundColor}"
             Command="{Binding RefreshCommand}"
-            IsRefreshing="{Binding IsBusy}"
-            RefreshColor="Black">
+            IsRefreshing="{Binding IsRefreshing}"
+            Style="{DynamicResource RefreshViewStyle}">
             <CollectionView
                 x:Name="CollectionViewBlog"
+                ItemsSource="{Binding FeedItems}"
                 HorizontalOptions="FillAndExpand"
                 ItemSizingStrategy="MeasureAllItems"
                 SelectionMode="None"
@@ -62,7 +65,7 @@
                                 Padding="0,0,0,0"
                                 CornerRadius="8"
                                 InputTransparent="True"
-                                Visual="Material">
+                                Style="{DynamicResource FrameStyle}">
                                 <Grid RowSpacing="0">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="125" />
@@ -72,7 +75,7 @@
                                     <Grid>
                                         <Image Aspect="AspectFill" Source="{Binding FirstImage}" />
                                         <pancake:PancakeView
-                                            BackgroundGradientEndColor="#99000000"
+                                            BackgroundGradientEndColor="{DynamicResource SystemBlue}"
                                             BackgroundGradientStartColor="#10000000"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand" />
@@ -90,11 +93,11 @@
                                         Spacing="0">
                                         <Label
                                             Margin="0,4,0,0"
-                                            FontSize="Micro"
+                                            Style="{DynamicResource SmallLabelStyle}"
                                             Text="{Binding DisplayPublishDate}" />
                                         <Label
                                             Margin="0,8,0,0"
-                                            FontSize="Small"
+                                            Style="{DynamicResource SmallLabelStyle}"
                                             Text="{Binding Caption}" />
                                     </StackLayout>
                                     <StackLayout
@@ -115,7 +118,7 @@
                                             Command="{Binding ReadCommand}"
                                             HorizontalOptions="Start"
                                             Text="READ"
-                                            TextColor="{StaticResource PrimaryColor}"
+                                            TextColor="{StaticResource SystemBlue}"
                                             VerticalOptions="End"
                                             Visual="Default" />
                                         <Button
