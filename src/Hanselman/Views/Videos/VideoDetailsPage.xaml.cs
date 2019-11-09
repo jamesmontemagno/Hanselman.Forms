@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Hanselman.Helpers;
 using Hanselman.Models;
 using Hanselman.ViewModels;
@@ -15,8 +11,8 @@ namespace Hanselman.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VideoDetailsPage : ContentPage
     {
-        VideoDetailsViewModel vm;
-        VideoDetailsViewModel VM => vm ?? (vm = (VideoDetailsViewModel)BindingContext);
+        VideoDetailsViewModel? vm;
+        VideoDetailsViewModel? VM => vm ??= BindingContext as VideoDetailsViewModel;
 
         public VideoDetailsPage(VideoFeedItem item) : this()
         {
@@ -34,6 +30,9 @@ namespace Hanselman.Views
 
             CrossMediaManager.Current.StateChanged += PlaybackStateChanged;
 
+            if (VM == null || VM.Video == null)
+                return;
+
             if (!CrossMediaManager.Current.IsStopped() &&
                 Settings.PlaybackId == VM.VideoId)
                 return;
@@ -46,7 +45,7 @@ namespace Hanselman.Views
             shouldSeek = seekTo > 0;
         }
 
-        private async void PlaybackStateChanged(object sender, MediaManager.Playback.StateChangedEventArgs e)
+        async void PlaybackStateChanged(object sender, MediaManager.Playback.StateChangedEventArgs e)
         {
             if(shouldSeek && e.State == MediaManager.Player.MediaPlayerState.Playing)
             {
@@ -55,7 +54,7 @@ namespace Hanselman.Views
             }
         }
 
-        protected override async void OnDisappearing()
+        protected override void OnDisappearing()
         {
             base.OnDisappearing();
             CrossMediaManager.Current.StateChanged -= PlaybackStateChanged;

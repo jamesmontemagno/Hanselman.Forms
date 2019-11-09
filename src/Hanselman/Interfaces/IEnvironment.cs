@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Hanselman.Models;
+﻿using Hanselman.Models;
 
 namespace Hanselman.Interfaces
 {

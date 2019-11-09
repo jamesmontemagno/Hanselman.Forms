@@ -1,5 +1,4 @@
-﻿using Hanselman.Helpers;
-using Hanselman.Interfaces;
+﻿using Hanselman.Interfaces;
 using Hanselman.Models;
 using Hanselman.ViewModels;
 using Xamarin.Essentials;
@@ -9,8 +8,8 @@ namespace Hanselman.Views
 {
     public partial class TwitterPage : ContentPage, IPageHelpers
     {
-        TwitterViewModel vm;
-        TwitterViewModel ViewModel => vm ?? (vm = (TwitterViewModel)BindingContext);
+        TwitterViewModel? vm;
+        TwitterViewModel? ViewModel => vm ??= BindingContext as TwitterViewModel;
 
         public TwitterPage()
         {
@@ -23,11 +22,12 @@ namespace Hanselman.Views
 
             listView.ItemSelected += (sender, args) =>
             {
-                if (listView.SelectedItem == null)
+                if (ViewModel == null)
                     return;
 
 
-                var tweet = listView.SelectedItem as Tweet;
+                if (!(listView.SelectedItem is Tweet tweet))
+                    return;
 
 
                 ViewModel.OpenTweetCommand.Execute(tweet.StatusID);

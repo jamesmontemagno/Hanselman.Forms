@@ -1,10 +1,8 @@
-﻿using Xamarin.Forms;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Linq;
 using MvvmHelpers;
 using Hanselman.Models;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using System;
 using MvvmHelpers.Commands;
 using System.Diagnostics;
@@ -16,6 +14,7 @@ using System.Diagnostics;
 // SvavaBlount cheered 10 on Oct. 18 2019
 // jorian57 cheered 10 on Oct. 18 2019
 // jorian57 cheered 20 on Oct. 18 2019
+// h0usebesuch cheered 200 on November 8th 2019
 
 namespace Hanselman.ViewModels
 {
@@ -48,27 +47,27 @@ namespace Hanselman.ViewModels
             set => SetProperty(ref isRefreshing, value);
         }
 
-        FeedItem selectedFeedItem;
+        FeedItem? selectedFeedItem;
 
-        public FeedItem SelectedFeedItem
+        public FeedItem? SelectedFeedItem
         {
             get => selectedFeedItem;
             set => SetProperty(ref selectedFeedItem, value);
         }
 
-        ICommand loadCommand;
-        ICommand refreshCommand;
-        public ICommand RefreshCommand => refreshCommand ??
-                  (refreshCommand = new AsyncCommand(()=>ExecuteLoadCommand(true)));
+        ICommand? loadCommand;
+        ICommand? refreshCommand;
+        public ICommand RefreshCommand =>
+            refreshCommand ??= new AsyncCommand(()=>ExecuteLoadCommand(true));
 
-        public ICommand LoadCommand => loadCommand ??
-                  (loadCommand = new AsyncCommand<bool>((t)=>ExecuteLoadCommand(t)));
+        public ICommand LoadCommand =>
+            loadCommand ??= new AsyncCommand<bool>((t)=>ExecuteLoadCommand(t));
 
         async Task ExecuteLoadCommand(bool forceRefresh)
         {
             if (IsBusy)
                 return;
-
+            
             IsBusy = true;
             try
             {

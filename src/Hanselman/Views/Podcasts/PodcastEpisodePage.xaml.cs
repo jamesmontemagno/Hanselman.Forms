@@ -1,9 +1,7 @@
 ﻿using System;
-using Hanselman.Helpers;
 using Hanselman.Models;
 using Hanselman.ViewModels;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views
 {

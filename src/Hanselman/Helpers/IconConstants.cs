@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Hanselman.Helpers
+﻿namespace Hanselman.Helpers
 {
     public static class IconConstants
     {

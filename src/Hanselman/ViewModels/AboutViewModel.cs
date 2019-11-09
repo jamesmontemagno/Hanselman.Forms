@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Hanselman.Helpers;
 using Hanselman.Models;
 using Hanselman.Views;
@@ -12,7 +10,7 @@ namespace Hanselman.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {
-        public AsyncCommand GoToSettingsCommand {get;set;}
+        public AsyncCommand GoToSettingsCommand { get; set; }
         public List<SocialItem> SocialItems { get; }
         public AboutViewModel()
         {

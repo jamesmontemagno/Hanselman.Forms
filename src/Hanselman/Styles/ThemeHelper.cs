@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Hanselman.Helpers;
+﻿using Hanselman.Helpers;
 using Hanselman.Interfaces;
 using Hanselman.Models;
 using Xamarin.Forms;
@@ -22,7 +19,7 @@ namespace Hanselman.Styles
             //Application.Current.Resources.MergedDictionaries.Clear();
             //Application.Current.Resources.Clear();
             var applicationResourceDictionary = Application.Current.Resources;
-            ResourceDictionary newTheme = null;
+            ResourceDictionary newTheme;
 
             if (theme == Theme.Default)
             {
@@ -38,6 +35,7 @@ namespace Hanselman.Styles
                 case Theme.Dark:
                     newTheme = new DarkTheme();
                     break;
+                case Theme.Default:
                 default:
                     newTheme = new LightTheme();
                     break;

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hanselman.Models
+﻿namespace Hanselman.Models
 {
     public enum Theme
     {
