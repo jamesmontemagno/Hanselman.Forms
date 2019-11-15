@@ -33,7 +33,7 @@ namespace Hanselman.Services
         {
             var items = await GetAsync<IEnumerable<FeedItem>>($"api/GetBlogFeed?code={Constants.BlogKey}", "blogfeed", 30, forceRefresh);
 
-            return items?.Select(i => new BlogFeedItem(i));
+            return items?.Select(i => new BlogFeedItem(i)) ?? Enumerable.Empty<BlogFeedItem>();
         }
         public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh) => 
             GetAsync<IEnumerable<PodcastEpisode>>($"api/GetPodcastEpisodes?code={Constants.PodcastEpisodesKey}&id={id}", $"pod_{id}", 180, false);

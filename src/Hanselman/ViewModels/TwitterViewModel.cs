@@ -21,25 +21,25 @@ namespace Hanselman.ViewModels
 
         public Command<string> OpenTweetCommand { get; }
 
-        Command loadCommand;
-        Command refreshCommand;
-        public Command RefreshCommand => refreshCommand ??
-                  (refreshCommand = new Command(async () =>
+        Command? loadCommand;
+        Command? refreshCommand;
+        public Command RefreshCommand =>
+            refreshCommand ??= new Command(async () =>
                   {
                       await ExecuteLoadCommand(true);
                   }, () =>
                   {
                       return !IsBusy;
-                  }));
+                  });
 
-        public Command LoadCommand => loadCommand ??
-                  (loadCommand = new Command(async () =>
+        public Command LoadCommand =>
+            loadCommand ??= new Command(async () =>
                   {
                       await ExecuteLoadCommand(false);
                   }, () =>
                   {
                       return !IsBusy;
-                  }));
+                  });
 
       
 

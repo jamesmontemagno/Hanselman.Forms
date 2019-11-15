@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Windows.Input;
-using Hanselman.Helpers;
 using Hanselman.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -17,8 +13,8 @@ namespace Hanselman.Models
             OpenUrlCommand = new Command(async () => await OpenSocialUrl());
         }
 
-        public string Icon { get; set; }
-        public string Url { get; set; }
+        public string Icon { get; set; } = string.Empty;
+        public string Url { get; set; } = string.Empty;
 
         public ICommand OpenUrlCommand { get; }
 

@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hanselman.Models;
@@ -42,8 +41,9 @@ namespace Hanselman.ViewModels
             catch (Exception ex)
             {
 #if DEBUG
-                await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
 #endif
+                Debug.WriteLine(ex.Message);
             }
             finally
             {
@@ -70,6 +70,7 @@ namespace Hanselman.ViewModels
 #if DEBUG
                 await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
 #endif
+                Debug.WriteLine(ex.Message);
             }
             finally
             {

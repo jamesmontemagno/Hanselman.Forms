@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using Hanselman.Models;
 
 // AdenEarnshaw cheered 200 August 2, 2019
@@ -10,9 +7,13 @@ namespace Hanselman.ViewModels
 {
     public class VideoDetailsViewModel : ViewModelBase
     {
+        public string VideoId { get; set; } = string.Empty;
+        public VideoFeedItem? Video { get; set; }
+
+        public string VideoUrl { get; } = string.Empty;
+
         public VideoDetailsViewModel()
         {
-
         }
 
         public VideoDetailsViewModel(VideoFeedItem video)
@@ -35,11 +36,6 @@ namespace Hanselman.ViewModels
                     VideoUrl = videos.OrderBy(v => v.FileSize).ElementAt(videos.Count / 2).Url;
             }
         }
-
-        public string VideoId { get; set; }
-        public VideoFeedItem Video { get; set; }
-
-        public string VideoUrl { get; }
 
 
     }
