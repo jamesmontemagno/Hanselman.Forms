@@ -26,7 +26,7 @@ namespace Hanselman.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            Forms.SetFlags("CollectionView_Experimental");
+            Forms.SetFlags("CarouselView_Experimental");
             Forms.Init();
             FormsMaterial.Init();
             CrossMediaManager.Current.Init();
