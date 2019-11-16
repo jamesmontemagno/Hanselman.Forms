@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sharedmodels="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+             xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+             xmlns:models="clr-namespace:Hanselman.Models"
+             xmlns:images="clr-namespace:Hanselman.Images"
+             mc:Ignorable="d"
+             Title="Media"
+             x:Class="Hanselman.Views.MediaDirectoryPage"
+             BackgroundColor="{DynamicResource WindowBackgroundColor}">
+    <d:ContentPage.BindingContext>
+        <viewmodels:MediaDirectoryViewModel/>
+    </d:ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Margin="8,8,8,0" Style="{DynamicResource LargeLabelStyle}" Text="Podcasts"/>
+                <CollectionView HeightRequest="242" d:BackgroundColor="Orange" 
+                              ItemsLayout="HorizontalList"
+                              SelectionMode="Single"
+                              SelectionChanged="CollectionViewPodcasts_SelectionChanged"
+                              ItemsSource="{Binding Podcasts}">
+                    <d:CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type sharedmodels:Podcast}">
+                            <sharedmodels:Podcast Title="Hanselminutes"/>
+                            <sharedmodels:Podcast Title="Hanselminutes"/>
+                            <sharedmodels:Podcast Title="Hanselminutes"/>
+                        </x:Array>
+                    </d:CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="sharedmodels:Podcast">
+                            <Grid>
+                                <Frame
+                                    Margin="5"
+                                    Padding="0"
+                                    VerticalOptions="Start"
+                                    d:BackgroundColor="Red"
+                                    Style="{DynamicResource FrameStyle}"
+                                    InputTransparent="True">
+                                    <Grid Padding="0" WidthRequest="200">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="200" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Image
+                                            Aspect="AspectFill"
+                                            Source="{Binding Art}" />
+                                        <Label
+                                            d:BackgroundColor="Blue"
+                                            Grid.Row="1"
+                                            Margin="10,0"
+                                            Text="{Binding Title}"
+                                            Style="{DynamicResource SmallLabelStyle}"/>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Label Margin="8,8,8,0"  Style="{DynamicResource LargeLabelStyle}" Text="Videos"/>
+                <CollectionView HeightRequest="242"
+                              d:BackgroundColor="Orange" 
+                              ItemsLayout="HorizontalList"
+                              SelectionMode="Single"
+                              SelectionChanged="CollectionViewVideos_SelectionChanged"
+                              ItemsSource="{Binding VideoSeries}">
+                    <d:CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type sharedmodels:VideoSeries}">
+                            <sharedmodels:VideoSeries Title="Hanselminutes"/>
+                            <sharedmodels:VideoSeries Title="Hanselminutes"/>
+                            <sharedmodels:VideoSeries Title="Hanselminutes"/>
+                        </x:Array>
+                    </d:CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="sharedmodels:VideoSeries">
+                            <Grid>
+                                <Frame
+                                    Margin="4"
+                                    Padding="0"
+                                    VerticalOptions="Start" 
+                                    d:BackgroundColor="Red"
+                                    Style="{DynamicResource FrameStyle}"
+                                    InputTransparent="True">
+                                    <Grid Padding="0" WidthRequest="200">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="200" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Image
+                                            Aspect="AspectFill"
+                                            Source="{Binding Art}" />
+                                        <Label
+                                            d:BackgroundColor="Blue"
+                                            Grid.Row="1"
+                                            Margin="10,0"
+                                            Text="{Binding Title}"
+                                            Style="{DynamicResource SmallLabelStyle}"/>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Label Margin="8,8,8,0"  Style="{DynamicResource LargeLabelStyle}" Text="Books"/>
+                <CollectionView HeightRequest="200"
+                              ItemsLayout="HorizontalList">
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type models:Book}">
+                            <models:Book ArtSource="{images:ImageResource Hanselman.Images.book-rh-thb.png}" />
+                            <models:Book ArtSource="{images:ImageResource Hanselman.Images.book-mvc4-thb.png}" />
+                            <models:Book ArtSource="{images:ImageResource Hanselman.Images.book-aspnet4-thb.png}" />
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Book">
+                            <Grid HeightRequest="172"
+                                  WidthRequest="136">
+                                <Frame
+                                    Margin="4"
+                                    Padding="0"
+                                    InputTransparent="True"
+                                    VerticalOptions="Start"
+                                    d:BackgroundColor="Red"
+                                    Style="{DynamicResource FrameStyle}">
+                                    <Image HeightRequest="172"
+                                           WidthRequest="136"
+                                           Aspect="AspectFill"
+                                           Source="{Binding ArtSource}" />
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="Hanselman.Views.Podcasts.PodcastEpisodePage"
+    x:Class="Hanselman.Views.PodcastEpisodePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -8,7 +8,11 @@
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:viewmodel="clr-namespace:Hanselman.ViewModels"
-    mc:Ignorable="d">
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.ModalPresentationStyle="FormSheet"
+    mc:Ignorable="d"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
+    x:DataType="viewmodel:PodcastEpisodeViewModel">
     <d:ContentPage.BindingContext>
         <viewmodel:PodcastEpisodeViewModel Title="Hanselminute">
             <x:Arguments>
@@ -24,12 +28,13 @@
     </d:ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
-            <Grid Margin="{OnPlatform iOS='0,20,0,0'}" RowSpacing="0">
+            <Grid RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <pancake:PancakeView
+                    Padding="{OnPlatform iOS='0,40,0,33', Default='0,0,0,33'}"
                     d:BackgroundColor="{StaticResource PrimaryColor}"
                     BackgroundColor="{OnPlatform UWP={StaticResource PrimaryColor},
                                                  Default=Transparent}"
@@ -43,18 +48,15 @@
                             x:Name="ButtonClose"
                             Clicked="ButtonClose_Clicked"
                             HorizontalOptions="End"
-                            Style="{OnPlatform iOS={StaticResource CloseButtonStyle},
-                                               Android={StaticResource CloseButtonStyle}}"
+                            Style="{DynamicResource CloseButtonStyle}"
                             Text="Close" />
                         <Frame
                             Grid.RowSpan="3"
                             Padding="0"
-                            BackgroundColor="Red"
                             CornerRadius="10"
-                            HasShadow="True"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            Visual="Material">
+                            Style="{DynamicResource FrameStyle}">
                             <Image
                                 Aspect="AspectFill"
                                 AutomationProperties.IsInAccessibleTree="True"
@@ -66,58 +68,16 @@
                         <Label
                             d:Text="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
                             FontAttributes="Bold"
-                            FontSize="16"
+                            Style="{DynamicResource LargeLabelStyle}"
+                            TextColor="White"
                             HorizontalTextAlignment="Center"
                             Text="{Binding Episode.Title}" />
                         <Label
                             d:Text="Hanselminutes"
                             AutomationProperties.HelpText="Name of the podcast"
-                            FontSize="14"
+                            Style="{DynamicResource MediumLabelStyle}"
                             HorizontalTextAlignment="Center"
-                            Text="{Binding Title}" />
-                        <ImageButton
-                            Margin="0,0,0,-60"
-                            Padding="8"
-                            BackgroundColor="White"
-                            Command="{Binding PlayPodcastCommand}"
-                            CornerRadius="33"
-                            HeightRequest="66"
-                            HorizontalOptions="Center"
-                            Visual="Material"
-                            WidthRequest="66">
-                            <ImageButton.Source>
-                                <FontImageSource
-                                    FontFamily="{DynamicResource MaterialFontFamily}"
-                                    Glyph="{StaticResource IconPlay}"
-                                    Size="15"
-                                    Color="{StaticResource PrimaryColor}" />
-                            </ImageButton.Source>
-                        </ImageButton>
-                        <!--<Frame
-                            Margin="0,0,0,-50"
-                            Padding="0"
-                            CornerRadius="30"
-                            HeightRequest="60"
-                            HorizontalOptions="Center"
-                            Visual="Material"
-                            WidthRequest="60">
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding PlayPodcastCommand}" NumberOfTapsRequired="1" />
-                            </Frame.GestureRecognizers>
-                            <Image
-                                Grid.Column="2"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center">
-                                <Image.Source>
-                                    <FontImageSource
-                                        FontFamily="{DynamicResource MaterialFontFamily}"
-                                        Glyph="{StaticResource IconPlay}"
-                                        Size="35"
-                                        Color="{StaticResource PrimaryColor}" />
-
-                                </Image.Source>
-                            </Image>
-                        </Frame>-->
+                            Text="{Binding Title}" />                       
                     </StackLayout>
                 </pancake:PancakeView>
                 <Grid
@@ -128,7 +88,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="24*" />
                         <ColumnDefinition Width="24*" />
-                        <ColumnDefinition Width="35*" />
+                        <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="24*" />
                         <ColumnDefinition Width="24*" />
                     </Grid.ColumnDefinitions>
@@ -143,6 +103,25 @@
                         <!--  Release Date/TimeLeft  -->
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
+                    <ImageButton
+                            Margin="20,-33,20,0"
+                            Padding="8"
+                            BackgroundColor="White"
+                            Command="{Binding PlayPodcastCommand}"
+                            CornerRadius="33"
+                            HeightRequest="66"
+                            HorizontalOptions="Center"
+                            Visual="Material"
+                            WidthRequest="66"
+                        Grid.Column="2">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{StaticResource IconPlay}"
+                                    Size="15"
+                                    Color="{StaticResource PrimaryColor}" />
+                        </ImageButton.Source>
+                    </ImageButton>
                     <ImageButton
                         Grid.Row="0"
                         Grid.Column="0"
@@ -162,7 +141,7 @@
                         Grid.Row="1"
                         Grid.Column="0"
                         Margin="0,-5,0,0"
-                        FontSize="Micro"
+                        Style="{DynamicResource MicroLabelStyle}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Download" />
@@ -186,7 +165,7 @@
                         Grid.Row="1"
                         Grid.Column="1"
                         Margin="0,-5,0,0"
-                        FontSize="Micro"
+                        Style="{DynamicResource MicroLabelStyle}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Up Next" />
@@ -210,7 +189,7 @@
                         Grid.Row="1"
                         Grid.Column="3"
                         Margin="0,-5,0,0"
-                        FontSize="Micro"
+                        Style="{DynamicResource MicroLabelStyle}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Mark Played" />
@@ -233,7 +212,7 @@
                         Grid.Row="1"
                         Grid.Column="4"
                         Margin="0,-5,0,0"
-                        FontSize="Micro"
+                        Style="{DynamicResource MicroLabelStyle}"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Text="Archive" />
@@ -249,24 +228,22 @@
                     <Label
                         Grid.Row="3"
                         Grid.ColumnSpan="2"
-                        FontSize="Small"
-                        Text="{Binding Episode.Date}"
-                        TextColor="DarkGray" />
+                        Style="{DynamicResource SmallLabelStyle}"
+                        Text="{Binding Episode.Date}" />
 
                     <Label
                         Grid.Row="3"
                         Grid.Column="3"
                         Grid.ColumnSpan="2"
-                        FontSize="Small"
+                        Style="{DynamicResource SmallLabelStyle}"
                         HorizontalOptions="End"
-                        Text="{Binding Episode.Duration}"
-                        TextColor="DarkGray" />
+                        Text="{Binding Episode.Duration}" />
 
                     <Label
                         Grid.Row="4"
                         Grid.ColumnSpan="5"
                         Margin="0,5,0,0"
-                        FontSize="Medium"
+                        Style="{DynamicResource MediumLabelStyle}"
                         Text="{Binding Episode.Description}" />
                 </Grid>
 

@@ -3,18 +3,39 @@
   <style name="MyTheme" parent="MyTheme.Base">
   </style>
   <!-- Base theme applied no matter what API -->
-  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
-    
-    <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+  <style name="MyTheme.Base" parent="Theme.AppCompat.DayNight.DarkActionBar">
+
+    <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+    <item name="windowNoTitle">true</item>
+    <!--We will be using the toolbar so no need to show ActionBar-->
+    <item name="windowActionBar">false</item>
+    <!-- Set theme colors from https://aka.ms/material-colors -->
     <!-- colorPrimary is used for the default action bar background -->
-    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
     <!-- colorPrimaryDark is used for the status bar -->
-    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="colorPrimaryDark">@color/splash_background</item>
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
-    <item name="colorAccent">@color/accent</item>
+    <item name="colorAccent">@color/colorAccent</item>
     <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight and colorSwitchThumbNormal. -->
-    <item name="android:windowBackground">@color/window_background</item>
+    <item name="windowActionModeOverlay">true</item>
+
+    <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
   </style>
+
+  <style name="AppCompatDialogStyle" parent="Theme.AppCompat.DayNight.Dialog">
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+  
+  <style name="SplashTheme.Base" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+  </style>
+
+  <style name="SplashTheme" parent="SplashTheme.Base">   
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+  
 </resources>

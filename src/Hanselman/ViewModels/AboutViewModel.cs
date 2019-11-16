@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Hanselman.Helpers;
 using Hanselman.Models;
+using Hanselman.Views;
 using MvvmHelpers;
+using MvvmHelpers.Commands;
+using Xamarin.Forms;
 
 namespace Hanselman.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {
+        public AsyncCommand GoToSettingsCommand { get; set; }
         public List<SocialItem> SocialItems { get; }
         public AboutViewModel()
         {
@@ -30,6 +32,8 @@ namespace Hanselman.ViewModels
                     Url = "https://www.instagram.com/shanselman"
                 }
             };
+
+            GoToSettingsCommand = new AsyncCommand(() => Application.Current.MainPage.Navigation.PushModalAsync(new SettingsPage()));
         }
     }
 }

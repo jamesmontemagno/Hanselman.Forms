@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hanselman.Helpers;
+using Hanselman.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -21,10 +20,8 @@ namespace Hanselman.Models
             CommentCount = item.CommentCount;
             FirstImage = item.FirstImage;
             Id = item.Id;
-            //Image = item.Image;
             Link = item.Link;
             PublishDate = item.PublishDate;
-            //ShowImage = item.ShowImage;
             Title = item.Title;
         }
         public BlogFeedItem()
@@ -43,22 +40,15 @@ namespace Hanselman.Models
             });
         }
 
-        string displayPublishDate;
         public string DisplayPublishDate
         {
             get => DateTime.TryParse(PublishDate, out var time) ? time.TwitterHumanize() : PublishDate;
-            set => displayPublishDate = value;
+            set { }
         }
 
         async Task ExecuteReadCommand()
         {
-            await Browser.OpenAsync(Link, new BrowserLaunchOptions
-            {
-                LaunchMode = BrowserLaunchMode.SystemPreferred,
-                TitleMode = BrowserTitleMode.Show,
-                PreferredControlColor = Color.White,
-                PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryColor"]
-            });
+            await ViewModelBase.OpenBrowserAsync(Link);
         }
 
         public ImageSource FirstImageSource

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hanselman.Helpers
+﻿namespace Hanselman.Helpers
 {
     public class Constants
     {

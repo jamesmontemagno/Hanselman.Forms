@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Hanselman.Services;
+using System.Diagnostics;
 
 [assembly: Dependency(typeof(DataService))]
 namespace Hanselman.Services
@@ -32,7 +33,7 @@ namespace Hanselman.Services
         {
             var items = await GetAsync<IEnumerable<FeedItem>>($"api/GetBlogFeed?code={Constants.BlogKey}", "blogfeed", 30, forceRefresh);
 
-            return items?.Select(i => new BlogFeedItem(i));
+            return items?.Select(i => new BlogFeedItem(i)) ?? Enumerable.Empty<BlogFeedItem>();
         }
         public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh) => 
             GetAsync<IEnumerable<PodcastEpisode>>($"api/GetPodcastEpisodes?code={Constants.PodcastEpisodesKey}&id={id}", $"pod_{id}", 180, false);
@@ -44,7 +45,7 @@ namespace Hanselman.Services
             GetAsync<IEnumerable<Tweet>>($"api/GetTweets?code={Constants.TweetKey}", "tweets", 15, forceRefresh);
 
         public Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh) =>
-            GetAsync<IEnumerable<VideoFeedItem>>($"api/GetVideoEpisodes?code={Constants.PodcastEpisodesKey}&id={id}", $"video_{id}", 240, false);
+            GetAsync<IEnumerable<VideoFeedItem>>($"api/GetVideoEpisodes?code={Constants.VideoEpisodesKey}&id={id}", $"video_{id}", 240, false);
 
         public Task<IEnumerable<VideoSeries>> GetVideoSeriesAsync(bool forceRefresh) =>
             mock.GetVideoSeriesAsync(forceRefresh);
@@ -69,10 +70,9 @@ namespace Hanselman.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Unable to get information from server {ex}");
+                Debug.WriteLine($"Unable to get information from server {ex}");
+                throw ex;
             }
-
-            return default;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Hanselman.Helpers;
-using Hanselman.Interfaces;
+﻿using Hanselman.Interfaces;
 using Hanselman.Models;
 using Hanselman.ViewModels;
 using Xamarin.Essentials;
@@ -9,7 +8,8 @@ namespace Hanselman.Views
 {
     public partial class TwitterPage : ContentPage, IPageHelpers
     {
-        TwitterViewModel ViewModel => BindingContext as TwitterViewModel;
+        TwitterViewModel? vm;
+        TwitterViewModel? ViewModel => vm ??= BindingContext as TwitterViewModel;
 
         public TwitterPage()
         {
@@ -17,19 +17,21 @@ namespace Hanselman.Views
 
             BindingContext = new TwitterViewModel();
 
+            listView.ItemTapped += (sender, args) =>
+                listView.SelectedItem = null;
 
-            listView.ItemTapped += async (sender, args) =>
+            listView.ItemSelected += (sender, args) =>
             {
-                if (listView.SelectedItem == null)
+                if (ViewModel == null)
                     return;
 
 
-                var tweet = listView.SelectedItem as Tweet;
+                if (!(listView.SelectedItem is Tweet tweet))
+                    return;
 
-                //try to launch twitter or tweetbot app, else launch browser
-                var launch = DependencyService.Get<ILaunchTwitter>();
-                if (launch == null || !launch.OpenStatus(tweet.StatusID.ToString()))
-                    await Browser.OpenAsync("http://twitter.com/shanselman/status/" + tweet.StatusID);
+
+                ViewModel.OpenTweetCommand.Execute(tweet.StatusID);
+
 
                 listView.SelectedItem = null;
             };

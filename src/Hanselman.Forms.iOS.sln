@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB04CAE1-9F74-40C1-A9BB-5BB7BA4ECECE}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		..\.gitignore = ..\.gitignore
 		..\README.md = ..\README.md
 		Settings.XamlStyler = Settings.XamlStyler
 	EndProjectSection
@@ -133,6 +134,7 @@ Global
 		{028799A4-E2FD-4901-B950-666C00EFBF63}.Release|Any CPU.Build.0 = Release|Any CPU
 		{028799A4-E2FD-4901-B950-666C00EFBF63}.Release|ARM.ActiveCfg = Release|Any CPU
 		{028799A4-E2FD-4901-B950-666C00EFBF63}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{028799A4-E2FD-4901-B950-666C00EFBF63}.Release|iPhone.Build.0 = Release|Any CPU
 		{028799A4-E2FD-4901-B950-666C00EFBF63}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{028799A4-E2FD-4901-B950-666C00EFBF63}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{028799A4-E2FD-4901-B950-666C00EFBF63}.Release|Mixed Platforms.Build.0 = Release|Any CPU

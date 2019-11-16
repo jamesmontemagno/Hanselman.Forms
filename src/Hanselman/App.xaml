@@ -2,23 +2,53 @@
 <Application
     x:Class="Hanselman.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:styles="clr-namespace:Hanselman.Styles">
     <Application.Resources>
         <ResourceDictionary>
-            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Material Design Icons" />
-                <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
-                <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons" />
-            </OnPlatform>
 
-            <Color x:Key="PrimaryColor">#03A9F4</Color>
-            <Color x:Key="PrimaryDarkColor">#1976D2</Color>
-            <Color x:Key="AccentColor">#FFC107</Color>
+            <!--Colors-->
+            <Color x:Key="PrimaryColor">#007AFF</Color>
+            <Color x:Key="AccentColor">#5AC8FA</Color>
             <Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
             <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>
             <Color x:Key="LoadingBackgroundColor">#80000000</Color>
             <Color x:Key="LoadingTextColor">White</Color>
 
+            <Color x:Key="SystemBlue">#007AFF</Color>
+            <Color x:Key="SystemGreen">#34C759</Color>
+            <Color x:Key="SystemIndigo">#5856D6</Color>
+            <Color x:Key="SystemOrange">#FF9500</Color>
+            <Color x:Key="SystemPink">#FF2D55</Color>
+            <Color x:Key="SystemPurple">#AF52DE</Color>
+            <Color x:Key="SystemRed">#FF3B30</Color>
+            <Color x:Key="SystemTeal">#5AC8FA</Color>
+            <Color x:Key="SystemYellow">#5AC8FA</Color>
+
+            <Color x:Key="SystemGray">#8E8E93</Color>
+            <Color x:Key="SystemGray2">#AEAEB2</Color>
+            <Color x:Key="SystemGray3">#C7C7CC</Color>
+            <Color x:Key="SystemGray4">#D1D1D6</Color>
+            <Color x:Key="SystemGray5">#E5E5EA</Color>
+            <Color x:Key="SystemGray6">#F2F2F7</Color>
+
+            <Color x:Key="SeparatorColor">#757575</Color>
+            <Color x:Key="OpaqueSeparatorColor">#757575</Color>
+            
+            <!--Shell-->
+            <Color x:Key="ShellTabBarBackgroundColor">#F5F5F5</Color>
+
+            <!--Frame-->
+            <Color x:Key="FrameBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="FrameBorderColor">Default</Color>
+            
+            <!--Entry-->
+            <Color x:Key="EntryBackgroundColor">#FFFFFF</Color>
+
+            <!--RefreshView-->
+            <Color x:Key="RefreshViewBackgroundColor">White</Color>
+
+            <!--Icons-->
             <x:String x:Key="IconPlayCircleOutline">&#xf05a;</x:String>
             <x:String x:Key="IconPlay">&#xf40a;</x:String>
             <x:String x:Key="IconDownload">&#xf1da;</x:String>
@@ -27,40 +57,105 @@
             <x:String x:Key="IconArchived">&#xf03c;</x:String>
             <x:String x:Key="IconShare">&#xf497;</x:String>
 
+            <x:String x:Key="IconAbout">&#xf2fd;</x:String>
+            <x:String x:Key="IconTwitter">&#xf544;</x:String>
+            <x:String x:Key="IconMedia">&#xf40b;</x:String>
+            <x:String x:Key="IconSettings">&#xf8ba;</x:String>
+            <x:String x:Key="IconBlog">&#xf46b;</x:String>
+
+            <x:Int32 x:Key="CloseButtonBorderWidth">0</x:Int32>
+            
+            <!--Control Themeing-->
+
+            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Material Design Icons" />
+                <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+                <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons" />
+            </OnPlatform>
+
+            <Style x:Key="RefreshViewStyle" TargetType="RefreshView">
+                <Setter Property="BackgroundColor" Value="{DynamicResource RefreshViewBackgroundColor}"/>
+                <Setter Property="RefreshColor" Value="{DynamicResource PrimaryColor}"/>
+            </Style>
+
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}"/>
+                <Setter Property="BorderColor" Value="{DynamicResource FrameBorderColor}"/>
+                <Setter Property="Visual" Value="Material"/>
+                <Setter Property="HasShadow" Value="True"/>
+            </Style>
+
+            <Style x:Key="PickerStyle" TargetType="Picker">
+                <Setter Property="Visual" Value="Material"/>
+                <Setter Property="BackgroundColor" Value="{DynamicResource EntryBackgroundColor}"/>
+                <Setter Property="TextColor" Value="{DynamicResource SystemGray}"/>
+            </Style>
+
+            <Style x:Key="BaseLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource SystemGray}"/>
+            </Style>
+
+            <Style x:Key="LargeLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource BaseLabelStyle}">
+                <Setter Property="FontSize" Value="Large"/>
+            </Style>
+
+            <Style x:Key="MediumLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource BaseLabelStyle}" >
+                <Setter Property="FontSize" Value="Medium"/>
+            </Style>
+
+            <Style x:Key="SmallLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource BaseLabelStyle}" >
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+
+            <Style x:Key="MicroLabelStyle" TargetType="Label"
+                    BasedOn="{StaticResource BaseLabelStyle}" >
+                <Setter Property="FontSize" Value="Micro"/>
+            </Style>
+
             <Style x:Key="DateTimeLabelStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
                 <Setter Property="FontSize" Value="Small" />
                 <Setter Property="LineBreakMode" Value="NoWrap" />
             </Style>
 
             <Style x:Key="MaterialNormalButton" TargetType="Button">
                 <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamily}" />
-                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="TextColor" Value="{DynamicResource SystemGray}" />
                 <Setter Property="BorderColor" Value="Transparent" />
                 <Setter Property="BackgroundColor" Value="Transparent" />
             </Style>
 
             <Style x:Key="MaterialButton" TargetType="Button">
                 <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamily}" />
-                <Setter Property="FontSize" Value="42" />
-                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="FontSize" Value="40" />
+                <Setter Property="TextColor" Value="{DynamicResource SystemGray}" />
                 <Setter Property="WidthRequest" Value="65" />
                 <Setter Property="HeightRequest" Value="65" />
                 <Setter Property="VerticalOptions" Value="FillAndExpand" />
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
                 <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="Visual" Value="Default"/>
                 <Setter Property="BackgroundColor" Value="Transparent" />
             </Style>
+
             <Style x:Key="CloseButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}" />
                 <Setter Property="FontSize" Value="12" />
+                <Setter Property="BorderColor" Value="{DynamicResource FrameBorderColor}"/>
+                <Setter Property="BorderWidth" Value="{DynamicResource CloseButtonBorderWidth}"/>
                 <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="Visual" Value="Material" />
-                <Setter Property="TextColor" Value="{StaticResource PrimaryDarkColor}" />
+                <Setter Property="TextColor" Value="{DynamicResource SystemBlue}" />
             </Style>
+
             <Style x:Key="SubscribeButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryDarkColor}" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
                 <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="Visual" Value="Material" />
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="Padding" Value="20,0" />

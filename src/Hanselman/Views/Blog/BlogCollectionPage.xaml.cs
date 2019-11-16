@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hanselman.Interfaces;
-using Hanselman.Models;
+﻿using Hanselman.Interfaces;
 using Hanselman.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+
+// ChrisNTR cheered 100 on October 18th 2019
 
 namespace Hanselman.Views
 {
     public partial class BlogCollectionPage : ContentPage, IPageHelpers
     {
         DisplayOrientation orientation;
-        BlogFeedViewModel viewModel;
-        BlogFeedViewModel ViewModel => viewModel ?? (viewModel = BindingContext as BlogFeedViewModel);
+        BlogFeedViewModel? viewModel;
+        BlogFeedViewModel? ViewModel => viewModel ??= BindingContext as BlogFeedViewModel;
         public BlogCollectionPage()
         {
             InitializeComponent();
@@ -29,16 +24,10 @@ namespace Hanselman.Views
                 DeviceDisplay.MainDisplayInfoChanged += DeviceDisplay_MainDisplayInfoChanged;
                 SetSize();
             }
-
-            ViewModel.FeedItems.CollectionChanged += FeedItems_CollectionChanged;
         }
 
-        private void FeedItems_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            CollectionViewBlog.ItemsSource = ViewModel.FeedItems;
-        }
 
-        private void DeviceDisplay_MainDisplayInfoChanged(object sender, DisplayInfoChangedEventArgs e)
+        void DeviceDisplay_MainDisplayInfoChanged(object sender, DisplayInfoChangedEventArgs e)
         {
             if(orientation != e.DisplayInfo.Orientation)
             {
@@ -56,16 +45,17 @@ namespace Hanselman.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if (DeviceInfo.Platform != DevicePlatform.UWP)
-                OnPageVisible();
+            OnPageVisible();
         }
 
         public void OnPageVisible()
         {
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.FeedItems.Count > 0)
+            {
                 return;
+            }
 
-            ViewModel.LoadCommand.Execute(null);
+            ViewModel.LoadCommand.Execute(true);
         }
     }
 }

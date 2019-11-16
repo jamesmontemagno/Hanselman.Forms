@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using MvvmHelpers;
 using Hanselman.Models;
+using Xamarin.Essentials;
 
 namespace Hanselman.ViewModels
 {
@@ -15,27 +16,30 @@ namespace Hanselman.ViewModels
             Title = "Twitter";
             Icon = "slideout.png";
             Tweets = new ObservableRangeCollection<Tweet>();
+            OpenTweetCommand = new Command<string>(async (s) => await ExecuteOpenTweetCommand(s));
         }
 
-        Command loadCommand;
-        Command refreshCommand;
-        public Command RefreshCommand => refreshCommand ??
-                  (refreshCommand = new Command(async () =>
+        public Command<string> OpenTweetCommand { get; }
+
+        Command? loadCommand;
+        Command? refreshCommand;
+        public Command RefreshCommand =>
+            refreshCommand ??= new Command(async () =>
                   {
                       await ExecuteLoadCommand(true);
                   }, () =>
                   {
                       return !IsBusy;
-                  }));
+                  });
 
-        public Command LoadCommand => loadCommand ??
-                  (loadCommand = new Command(async () =>
+        public Command LoadCommand =>
+            loadCommand ??= new Command(async () =>
                   {
                       await ExecuteLoadCommand(false);
                   }, () =>
                   {
                       return !IsBusy;
-                  }));
+                  });
 
       
 
@@ -70,6 +74,25 @@ namespace Hanselman.ViewModels
             }
 
             LoadCommand.ChangeCanExecute();
+        }
+
+        async Task ExecuteOpenTweetCommand(string statusId)
+        {
+            if (DeviceInfo.Platform == DevicePlatform.iOS)
+            {
+                if (await Launcher.CanOpenAsync("twitter://"))
+                {
+                    await Launcher.OpenAsync($"twitter://status?id={statusId}");
+                    return;
+                }
+                else if (await Launcher.CanOpenAsync("tweetbot://"))
+                {
+                    await Launcher.OpenAsync($"tweetbot:///status/{statusId}");
+                    return;
+                }
+            }
+
+            await OpenBrowserAsync("http://twitter.com/shanselman/status/" + statusId);
         }
     }
 }

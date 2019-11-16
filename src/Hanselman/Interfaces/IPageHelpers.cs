@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hanselman.Interfaces
+﻿namespace Hanselman.Interfaces
 {
     public interface IPageHelpers
     {

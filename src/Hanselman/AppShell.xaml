@@ -6,36 +6,54 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="Shell.BackgroundColor" Value="{DynamicResource WindowBackgroundColor}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="{DynamicResource SystemGray}" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource ShellTabBarBackgroundColor}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="Orange"/> <!--unused :( lols-->
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#757575"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource SystemGray}"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource PrimaryColor}"/>
             </Style>
             <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar Style="{StaticResource BaseStyle}">
-        <Tab Title="About" Icon="ic_about.png">
-            <ShellContent Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
+
+    <TabBar Style="{StaticResource BaseStyle}" Route="sections">
+        <Tab Title="About" Route="tab_about" Shell.NavBarIsVisible="False">
+            <Tab.Icon>
+                <FontImageSource
+                    Glyph="{StaticResource IconAbout}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </Tab.Icon>
+            <ShellContent Route="about" Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
         </Tab>
-        <Tab Title="Blog" Icon="ic_rss.png">
-            <ShellContent Shell.NavBarIsVisible="False"  Title="About" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
+        <Tab Title="Blog" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_blog">
+            <Tab.Icon>
+                <FontImageSource
+                    Glyph="{StaticResource IconBlog}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </Tab.Icon>
+            <ShellContent Route="blog" Title="Blog" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
         </Tab>
-        <Tab Title="Tweets" Shell.NavBarIsVisible="False" Icon="ic_twitter.png">
-            <ShellContent Title="About" ContentTemplate="{DataTemplate views:TwitterPage}"/>
+        <Tab Title="Tweets" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_tweets">
+            <Tab.Icon>
+                <FontImageSource
+                    Glyph="{StaticResource IconTwitter}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </Tab.Icon>
+            <ShellContent Route="tweets" Title="Tweets" ContentTemplate="{DataTemplate views:TwitterPage}"/>
         </Tab>
-        <Tab Title="Podcasts" Shell.NavBarIsVisible="False" Icon="ic_podcast.png">
-            <ShellContent Title="About" ContentTemplate="{DataTemplate views:PodcastDirectoryPage}"/>
+        <Tab Title="Media" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_media">
+            <Tab.Icon>
+                <FontImageSource
+                    Glyph="{StaticResource IconMedia}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </Tab.Icon>
+            <ShellContent Route="media" Title="Media" ContentTemplate="{DataTemplate views:MediaDirectoryPage}"/>
         </Tab>
-        <Tab Title="Videos" Shell.NavBarIsVisible="False" Icon="ic_video.png">
-            <ShellContent Title="About" ContentTemplate="{DataTemplate views:VideoDirectoryPage}"/>
-        </Tab>        
     </TabBar>
 
 </Shell>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Hanselman.Views.SettingsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True"
+    ios:Page.ModalPresentationStyle="FormSheet"
+    x:DataType="viewmodels:SettingsViewModel"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
+    mc:Ignorable="d">
+    <d:ContentPage.BindingContext>
+        <viewmodels:SettingsViewModel />
+    </d:ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label
+                Margin="10"
+                Style="{DynamicResource LargeLabelStyle}"
+                Text="Settings"
+                VerticalOptions="Center"
+                HorizontalOptions="{OnPlatform iOS=Center, Default=Start}"
+                Grid.ColumnSpan="2"/>
+            <Button
+                Grid.Column="1"
+                Margin="10"
+                Clicked="Button_Clicked"
+                Style="{DynamicResource CloseButtonStyle}"
+                Text="Close" />
+
+            <ScrollView Grid.Row="1" Grid.ColumnSpan="2">
+                <StackLayout Padding="10" Spacing="10">
+                    <Label
+                        Style="{DynamicResource LargeLabelStyle}"
+                        Text="Appearance"
+                        VerticalOptions="Center" />
+                    <Frame Style="{DynamicResource FrameStyle}">
+                        <StackLayout>
+                            <Label Style="{DynamicResource MediumLabelStyle}" Text="Theme" />
+                            <Picker
+                                ItemsSource="{Binding ThemeOptions}"
+                                SelectedIndex="{Binding SelectedTheme}"
+                                Style="{DynamicResource PickerStyle}" />
+                        </StackLayout>
+                    </Frame>
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemBlue}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemGreen}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemIndigo}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemOrange}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemPink}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemPurple}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemRed}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemTeal}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                    <BoxView
+                        BackgroundColor="{DynamicResource SystemYellow}"
+                        HeightRequest="20"
+                        HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

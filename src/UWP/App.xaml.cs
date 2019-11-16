@@ -30,6 +30,7 @@ namespace Hanselman.UWP
         {
             InitializeComponent();
             Suspending += OnSuspending;
+            Shiny.UwpShinyHost.Init(new Startup());
         }
 
         /// <summary>
@@ -57,8 +58,7 @@ namespace Hanselman.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
-
-                Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
+                Xamarin.Forms.Forms.SetFlags("CarouselView_Experimental", "Shell_UWP_Experimental");
                 Xamarin.Forms.Forms.Init(e);
 
                 

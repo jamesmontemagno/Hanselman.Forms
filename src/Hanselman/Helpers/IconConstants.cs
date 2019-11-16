@@ -1,9 +1,8 @@
-﻿using System;
-
-namespace Hanselman.Helpers
+﻿namespace Hanselman.Helpers
 {
     public static class IconConstants
     {
+        public const string About = "\uf2fd";
         public const string Album = "\uf025";
         public const string ArrowDown = "\uf045";
         public const string ArrowDownBoldCircleOutline = "\uf048";
@@ -23,6 +22,7 @@ namespace Hanselman.Helpers
         public const string HeartBoxOutline = "\uf2d3";
         public const string LanguageCsharp = "\uf31b";
         public const string Launch = "\uf327";
+        public const string Media = "\uf40b";
         public const string Microsoft = "\uf372";
         public const string Minecraft = "\uf373";
         public const string PauseCircle = "\uf3e5";
@@ -64,5 +64,6 @@ namespace Hanselman.Helpers
         public const string LinkedinBox = "\uf33c";
         public const string Skype = "\uf4af";
         public const string Archive = "\uf03c";
+        public const string Settings = "\uf8ba";
     }
 }

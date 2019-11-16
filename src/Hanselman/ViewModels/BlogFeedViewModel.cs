@@ -1,11 +1,20 @@
-﻿using Xamarin.Forms;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Linq;
 using MvvmHelpers;
 using Hanselman.Models;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using System;
+using MvvmHelpers.Commands;
+using System.Diagnostics;
+
+// SvavaBlount cheered 10 on Oct. 18 2019
+// SvavaBlount cheered 10 on Oct. 18 2019
+// SvavaBlount cheered 10 on Oct. 18 2019
+// SvavaBlount cheered 10 on Oct. 18 2019
+// SvavaBlount cheered 10 on Oct. 18 2019
+// jorian57 cheered 10 on Oct. 18 2019
+// jorian57 cheered 20 on Oct. 18 2019
+// h0usebesuch cheered 200 on November 8th 2019
 
 namespace Hanselman.ViewModels
 {
@@ -19,7 +28,7 @@ namespace Hanselman.ViewModels
             Title = "Blog";
             Icon = "blog.png";
             FeedItems = new ObservableRangeCollection<BlogFeedItem>();
-            BlogSelectedCommand = new Command(async () => await ExecuteBlogSelectedCommand());
+            BlogSelectedCommand = new AsyncCommand(ExecuteBlogSelectedCommand);
         }
 
         async Task ExecuteBlogSelectedCommand()
@@ -27,57 +36,41 @@ namespace Hanselman.ViewModels
             if (SelectedFeedItem == null)
                 return;
 
-            await Browser.OpenAsync(SelectedFeedItem.Link, new BrowserLaunchOptions
-            {
-                LaunchMode = BrowserLaunchMode.SystemPreferred,
-                TitleMode = BrowserTitleMode.Show,
-                PreferredControlColor = Color.White,
-                PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryColor"]
-            });
-
+            await OpenBrowserAsync(SelectedFeedItem.Link);
             SelectedFeedItem = null;
         }
 
-        FeedItem selectedFeedItem;
+        bool isRefreshing;
+        public bool IsRefreshing
+        {
+            get => isRefreshing;
+            set => SetProperty(ref isRefreshing, value);
+        }
 
-        public FeedItem SelectedFeedItem
+        FeedItem? selectedFeedItem;
+
+        public FeedItem? SelectedFeedItem
         {
             get => selectedFeedItem;
             set => SetProperty(ref selectedFeedItem, value);
         }
 
-        Command loadCommand;
-        Command refreshCommand;
-        public Command RefreshCommand => refreshCommand ??
-                  (refreshCommand = new Command(async () =>
-                  {
-                      await ExecuteLoadCommand(true);
-                  }, () =>
-                  {
-                      return !IsBusy;
-                  }));
+        ICommand? loadCommand;
+        ICommand? refreshCommand;
+        public ICommand RefreshCommand =>
+            refreshCommand ??= new AsyncCommand(()=>ExecuteLoadCommand(true));
 
-        public Command LoadCommand => loadCommand ??
-                  (loadCommand = new Command(async () =>
-                  {
-                      await ExecuteLoadCommand(false);
-                  }, () =>
-                  {
-                      return !IsBusy;
-                  }));
-
+        public ICommand LoadCommand =>
+            loadCommand ??= new AsyncCommand<bool>((t)=>ExecuteLoadCommand(t));
 
         async Task ExecuteLoadCommand(bool forceRefresh)
         {
             if (IsBusy)
                 return;
-
+            
             IsBusy = true;
             try
             {
-#if DEBUG
-                await Task.Delay(1000);
-#endif
                 var items = await DataService.GetBlogItemsAsync(forceRefresh);
                 if(items == null)
                 {
@@ -90,14 +83,14 @@ namespace Hanselman.ViewModels
             }
             catch(Exception ex)
             {
+                Debug.WriteLine(ex);
                 await DisplayAlert("Error", "Unable to load blog.", "OK");
             }
             finally
             {
                 IsBusy = false;
+                IsRefreshing = false;
             }
-
-            LoadCommand.ChangeCanExecute();
         }
 
         /// <summary>
@@ -105,7 +98,7 @@ namespace Hanselman.ViewModels
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public FeedItem GetFeedItem(int id) => FeedItems.FirstOrDefault(i => i.Id == id);
+        public FeedItem GetFeedItem(string id) => FeedItems.FirstOrDefault(i => i.Id == id);
     }
 }
 

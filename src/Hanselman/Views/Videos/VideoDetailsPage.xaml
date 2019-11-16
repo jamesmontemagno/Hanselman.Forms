@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Shell.NavBarIsVisible="true"
+             Title ="{Binding Title}"
+             x:Class="Hanselman.Views.VideoDetailsPage"
+             xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+             xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+             xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
+             x:DataType="viewmodels:VideoDetailsViewModel"
+             BackgroundColor="{DynamicResource WindowBackgroundColor}">
+    <d:ContentPage.BindingContext>
+        <viewmodels:VideoDetailsViewModel>
+            <x:Arguments>
+                <models:VideoFeedItem/>
+            </x:Arguments>
+        </viewmodels:VideoDetailsViewModel>
+    </d:ContentPage.BindingContext>
+    <ContentPage.Content>
+        <mm:VideoView VerticalOptions="FillAndExpand"
+             BackgroundColor="{DynamicResource WindowBackgroundColor}"
+                      VideoAspect="AspectFit"
+                      ShowControls="True" />
+    </ContentPage.Content>
+</ContentPage>

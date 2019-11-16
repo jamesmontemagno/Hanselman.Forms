@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -15,7 +16,7 @@ namespace Hanselman.ViewModels
     {
         public ICommand SubscribeCommand { get; set; }
         public ICommand LoadEpisodesCommand { get; set; }
-        public Podcast Podcast { get; set; }
+        public Podcast? Podcast { get; set; }
         public List<PodcastEpisode> AllEpisodes { get; set; }
         public ObservableRangeCollection<PodcastEpisode> Episodes { get; set; }
 
@@ -33,6 +34,12 @@ namespace Hanselman.ViewModels
 
         async Task ExecuteSubscribeCommand()
         {
+            if(Podcast == null)
+            {
+                Debug.WriteLine("Podcast was not set.");
+                return;
+            }
+
             var services = Podcast
                 .PodcastServices
                 .Where(s => s.SupportedPlatforms.Contains(DeviceInfo.Platform))
@@ -44,11 +51,17 @@ namespace Hanselman.ViewModels
             if (service == null)
                 return;
 
-            await Browser.OpenAsync(service.Url);
+            await OpenBrowserAsync(service.Url);
         }
 
         async Task ExecuteLoadEpisodesCommand()
         {
+            if (Podcast == null)
+            {
+                Debug.WriteLine("Podcast was not set.");
+                return;
+            }
+
             if (IsBusy)
                 return;
 

@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hanselman.Controls;
-using Hanselman.Interfaces;
-using Xamarin.Essentials;
+﻿using Hanselman.Interfaces;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views
 {
@@ -16,22 +8,6 @@ namespace Hanselman.Views
         public HomePage ()
         {
             InitializeComponent();
-
-            if(DeviceInfo.Platform == DevicePlatform.UWP)
-            {
-                Children.Insert(1, new HanselmanNavigationPage(new BlogPage())
-                {
-                    Title = "Blog"
-                });
-            }
-            else
-            {
-                Children.Insert(1, new HanselmanNavigationPage(new BlogCollectionPage())
-                {
-                    Title = "Blog",
-                    IconImageSource = "ic_rss.png"
-                });
-            }
         }
 
         protected override void OnCurrentPageChanged()

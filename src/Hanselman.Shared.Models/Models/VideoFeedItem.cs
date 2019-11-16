@@ -7,6 +7,9 @@ namespace Hanselman.Models
 {
     public class VideoFeedItem
     {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
         [JsonProperty("t")]
         public string Title { get; set; }
 

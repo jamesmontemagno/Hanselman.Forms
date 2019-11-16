@@ -3,9 +3,14 @@
     x:Class="Hanselman.Views.AboutPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True"
+    ios:Page.ModalPresentationStyle="FormSheet"
     Title="Scott Hanselman"
-    BackgroundColor="{StaticResource WindowBackgroundColor}">
+    x:DataType="viewmodels:AboutViewModel"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}">
     <ContentPage.BindingContext>
         <viewmodels:AboutViewModel />
     </ContentPage.BindingContext>
@@ -17,35 +22,70 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Label
+            Margin="10"
+            Style="{DynamicResource LargeLabelStyle}"
+            HorizontalOptions="{OnPlatform iOS=Center, Default=Start}"
+            Text="Scott Hanselman"
+            VerticalOptions="Center"
+            Grid.ColumnSpan="2"/>
+        <ImageButton
+            Grid.Column="1"
+            Margin="10"
+            WidthRequest="32"
+            HeightRequest="32"
+            BackgroundColor="Transparent"
+            Command="{Binding GoToSettingsCommand}">
+            <ImageButton.Source>
+                <FontImageSource
+                    Color="{DynamicResource SystemGray}"
+                    Glyph="{StaticResource IconSettings}"
+                    FontFamily="{StaticResource MaterialFontFamily}" />
+            </ImageButton.Source>
+        </ImageButton>
 
-    <ScrollView>
-        <StackLayout
-            Padding="10"
-            Orientation="Vertical"
-            Spacing="10">
-            <Image
-                Margin="-10,-10,-10,0"
-                Aspect="AspectFill"
-                HeightRequest="200"
-                Source="scott.png" />
-            <Label
-                Margin="0,16"
-                LineBreakMode="WordWrap"
-                Text="My name is Scott Hanselman. I'm a programmer, teacher, and speaker. I work out of my home office in Portland, Oregon for the Web Platform Team at Microsoft, but this blog, its content and opinions are my own. I blog about technology, culture, gadgets, diversity, code, the web, where we're going and where we've been. I'm excited about community, social equity, media, entrepreneurship and above all, the open web." />
+        <ScrollView Grid.Row="1" Grid.ColumnSpan="2">
             <StackLayout
-                BindableLayout.ItemsSource="{Binding SocialItems}"
-                HorizontalOptions="CenterAndExpand"
-                Orientation="Horizontal"
-                Spacing="5">
-                <BindableLayout.ItemTemplate>
-                    <DataTemplate>
-                        <Button
-                            Command="{Binding OpenUrlCommand}"
-                            Style="{StaticResource MaterialButton}"
-                            Text="{Binding Icon}" />
-                    </DataTemplate>
-                </BindableLayout.ItemTemplate>
+                Padding="10"
+                Orientation="Vertical"
+                Spacing="10">
+                <Frame Padding="0" Style="{DynamicResource FrameStyle}">
+                    <StackLayout>
+                        <Image
+                            Aspect="AspectFill"
+                            HeightRequest="200"
+                            Source="scott.png" />
+                        <Label
+                            Margin="8"
+                            LineBreakMode="WordWrap"
+                            Style="{DynamicResource SmallLabelStyle}"
+                            Text="My name is Scott Hanselman. I'm a programmer, teacher, and speaker. I work out of my home office in Portland, Oregon for the Web Platform Team at Microsoft, but this blog, its content and opinions are my own. I blog about technology, culture, gadgets, diversity, code, the web, where we're going and where we've been. I'm excited about community, social equity, media, entrepreneurship and above all, the open web." />
+                        <StackLayout
+                            BindableLayout.ItemsSource="{Binding SocialItems}"
+                            HorizontalOptions="CenterAndExpand"
+                            Orientation="Horizontal"
+                            Spacing="5">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="models:SocialItem">
+                                    <Button
+                                        Command="{Binding OpenUrlCommand}"
+                                        Style="{DynamicResource MaterialButton}"
+                                        Text="{Binding Icon}" />
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
             </StackLayout>
-        </StackLayout>
-    </ScrollView>
+        </ScrollView>
+    </Grid>
 </ContentPage>
