@@ -192,25 +192,17 @@
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.3.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.3" />
-    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.0.2-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.0.0-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.Browser" Version="1.0.0-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.Core.Utils" Version="1.0.0-preview02" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.6" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
     <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.3.0.991211" />
-  </ItemGroup>
-  <ItemGroup Condition="$([System.Version]::Parse($(XamarinAndroidVersion.Split('-')[0]))) &gt;= $([System.Version]::Parse('9.4.0'))">
-    <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.0-preview02" />
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.0.2-preview01" />
-    <PackageReference Include="Xamarin.AndroidX.Browser" Version="1.0.0-preview01" />
-    <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0-preview01" />
-    <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.0.0-preview01" />
-    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0-preview01" />
-    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0-preview01" />
+    <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.0-preview05" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\ic_twitter.png" />
