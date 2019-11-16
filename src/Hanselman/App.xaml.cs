@@ -32,7 +32,7 @@ namespace Hanselman
 
             Barrel.ApplicationId = AppInfo.PackageName;
             
-            ThemeHelper.ChangeTheme(Models.Theme.Dark, true);
+            ThemeHelper.ChangeTheme(Settings.ThemeOption, true);
 
             if (DeviceInfo.Platform == DevicePlatform.UWP)
                 MainPage = new HomePage();

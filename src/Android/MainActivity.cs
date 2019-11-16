@@ -16,10 +16,8 @@ using MediaManager;
 
 namespace HanselmanAndroid
 {
-    [Activity(Label = "Hanselman",
-        Icon="@drawable/ic_launcher",
+    [Activity(Label = "@string/app_name",
         Theme="@style/MyTheme",
-        MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : FormsAppCompatActivity
     {
@@ -30,7 +28,7 @@ namespace HanselmanAndroid
             TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
 
-            Forms.SetFlags("CollectionView_Experimental");
+            Forms.SetFlags("CarouselView_Experimental");
             Forms.Init(this, bundle);
             FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
@@ -46,5 +44,6 @@ namespace HanselmanAndroid
             AndroidShinyHost.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
     }
 }
