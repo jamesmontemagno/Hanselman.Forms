@@ -70,7 +70,9 @@
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <BundleAssemblies>false</BundleAssemblies>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
-  </PropertyGroup>
+     <AndroidLinkMode>Full</AndroidLinkMode>
+    <AndroidLinkSkip>Xamarin.Forms.Platform.Android;Xamarin.Forms.Platform;Xamarin.Forms.Core;Xamarin.Forms.Xaml;Samples;FormsViewGroup;</AndroidLinkSkip>
+ </PropertyGroup>
   <ItemGroup>
     <Reference Include="Java.Interop" />
     <Reference Include="System" />
