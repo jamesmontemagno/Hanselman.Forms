@@ -5,7 +5,6 @@ using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VideoSeriesPage : ContentPage
     {
         VideoSeriesViewModel VM => (VideoSeriesViewModel)BindingContext;

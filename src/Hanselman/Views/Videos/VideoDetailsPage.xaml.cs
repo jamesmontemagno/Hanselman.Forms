@@ -8,7 +8,6 @@ using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VideoDetailsPage : ContentPage
     {
         VideoDetailsViewModel? vm;
