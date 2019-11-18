@@ -20,10 +20,9 @@ namespace Hanselman.Styles
             //Application.Current.Resources.Clear();
             var applicationResourceDictionary = Application.Current.Resources;
             ResourceDictionary newTheme;
-
-            if (theme == Theme.Default)
-            {
-                var environment = DependencyService.Get<IEnvironment>();
+            var environment = DependencyService.Get<IEnvironment>();
+            if (theme == Theme.Default)            {
+                
                 theme = environment?.GetOSTheme() ?? Theme.Light;
             }
 
@@ -49,6 +48,9 @@ namespace Hanselman.Styles
             ManuallyCopyThemes(newTheme, applicationResourceDictionary);
 
             CurrentTheme = theme;
+
+            var background = (Color)App.Current.Resources["WindowBackgroundColor"];
+            environment?.SetStatusBarColor(background, theme != Theme.Dark);
         }
 
         static void ManuallyCopyThemes(ResourceDictionary fromResource, ResourceDictionary toResource)

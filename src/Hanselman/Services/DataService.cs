@@ -16,6 +16,7 @@ using System.Diagnostics;
 [assembly: Dependency(typeof(DataService))]
 namespace Hanselman.Services
 {
+    [Preserve(AllMembers = true)]
     public class DataService : IDataService
     {
         readonly HttpClient client;
