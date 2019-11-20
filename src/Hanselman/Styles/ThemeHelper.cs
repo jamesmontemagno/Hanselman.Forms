@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Hanselman.Helpers;
+﻿using Hanselman.Helpers;
 using Hanselman.Interfaces;
 using Hanselman.Models;
 using Xamarin.Forms;
@@ -22,11 +19,10 @@ namespace Hanselman.Styles
             //Application.Current.Resources.MergedDictionaries.Clear();
             //Application.Current.Resources.Clear();
             var applicationResourceDictionary = Application.Current.Resources;
-            ResourceDictionary newTheme = null;
-
-            if (theme == Theme.Default)
-            {
-                var environment = DependencyService.Get<IEnvironment>();
+            ResourceDictionary newTheme;
+            var environment = DependencyService.Get<IEnvironment>();
+            if (theme == Theme.Default)            {
+                
                 theme = environment?.GetOSTheme() ?? Theme.Light;
             }
 
@@ -38,6 +34,7 @@ namespace Hanselman.Styles
                 case Theme.Dark:
                     newTheme = new DarkTheme();
                     break;
+                case Theme.Default:
                 default:
                     newTheme = new LightTheme();
                     break;
@@ -51,6 +48,9 @@ namespace Hanselman.Styles
             ManuallyCopyThemes(newTheme, applicationResourceDictionary);
 
             CurrentTheme = theme;
+
+            var background = (Color)App.Current.Resources["WindowBackgroundColor"];
+            environment?.SetStatusBarColor(background, theme != Theme.Dark);
         }
 
         static void ManuallyCopyThemes(ResourceDictionary fromResource, ResourceDictionary toResource)

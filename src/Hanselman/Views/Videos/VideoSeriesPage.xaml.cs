@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Threading.Tasks;
-using Hanselman.Models;
+﻿using Hanselman.Models;
 using Hanselman.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VideoSeriesPage : ContentPage
     {
         VideoSeriesViewModel VM => (VideoSeriesViewModel)BindingContext;

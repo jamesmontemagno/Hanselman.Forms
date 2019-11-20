@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Hanselman.Controls;
-using Hanselman.Interfaces;
-using Xamarin.Essentials;
+﻿using Hanselman.Interfaces;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views
 {

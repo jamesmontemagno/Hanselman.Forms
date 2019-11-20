@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Hanselman.Helpers;
@@ -22,10 +20,8 @@ namespace Hanselman.Models
             CommentCount = item.CommentCount;
             FirstImage = item.FirstImage;
             Id = item.Id;
-            //Image = item.Image;
             Link = item.Link;
             PublishDate = item.PublishDate;
-            //ShowImage = item.ShowImage;
             Title = item.Title;
         }
         public BlogFeedItem()
@@ -44,11 +40,10 @@ namespace Hanselman.Models
             });
         }
 
-        string displayPublishDate;
         public string DisplayPublishDate
         {
             get => DateTime.TryParse(PublishDate, out var time) ? time.TwitterHumanize() : PublishDate;
-            set => displayPublishDate = value;
+            set { }
         }
 
         async Task ExecuteReadCommand()

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Drawing;
 using Hanselman.Models;
 
 namespace Hanselman.Interfaces
@@ -8,5 +6,6 @@ namespace Hanselman.Interfaces
     public interface IEnvironment
     {
         Theme GetOSTheme();
+        void SetStatusBarColor(Color color, bool darkStatusBarTint);
     }
 }

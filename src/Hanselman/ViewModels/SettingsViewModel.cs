@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
+﻿using System.Collections.ObjectModel;
 using Hanselman.Helpers;
 using Hanselman.Models;
 using Hanselman.Styles;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Hanselman.ViewModels

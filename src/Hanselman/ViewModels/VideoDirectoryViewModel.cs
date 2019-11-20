@@ -4,6 +4,7 @@ using MvvmHelpers;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace Hanselman.ViewModels
 {
@@ -33,8 +34,9 @@ namespace Hanselman.ViewModels
             catch (Exception ex)
             {
 #if DEBUG
-                await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
 #endif
+                Debug.WriteLine(ex.Message);
             }
             finally
             {

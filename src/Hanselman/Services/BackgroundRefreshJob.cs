@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Hanselman.Helpers;
 using Shiny.Jobs;
 
 namespace Hanselman.Services
 {
-    public class BackgroundRefreshJob : Shiny.Jobs.IJob
+    [Preserve(AllMembers = true)]
+    public class BackgroundRefreshJob : IJob
     {
         DataService dataService;
         public BackgroundRefreshJob()

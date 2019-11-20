@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using Hanselman.Models;
 using MvvmHelpers;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
-using Newtonsoft.Json;
+using System.Diagnostics;
 
 // ClintonRocksmith cheered 100 August 2, 2019
 
@@ -19,14 +17,14 @@ namespace Hanselman.ViewModels
     {
         public ICommand LoadEpisodesCommand { get; set; }
 
-        string id;
+        string id = string.Empty;
         public string Id
         {
             get => id;
             set => id = Uri.UnescapeDataString(value);
         }
 
-        string title;
+        string title = string.Empty;
         public new string Title
         {
             get => title;
@@ -67,9 +65,9 @@ namespace Hanselman.ViewModels
                 AllEpisodes.AddRange(episodes);
                 LoadMoreEpisodes();
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                //stuff
+                Debug.WriteLine(ex.Message);
             }
             finally
             {

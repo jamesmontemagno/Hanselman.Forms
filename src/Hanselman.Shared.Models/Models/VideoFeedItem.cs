@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 
 namespace Hanselman.Models
 {
+    [Preserve(AllMembers = true)]
     public class VideoFeedItem
     {
         [JsonProperty("id")]

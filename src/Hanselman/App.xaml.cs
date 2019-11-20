@@ -3,15 +3,13 @@ using Hanselman.Views;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using MonkeyCache.FileStore;
-using Shiny.Jobs;
 using MediaManager;
-using MediaManager.Playback;
 using Hanselman.Helpers;
+using Hanselman.Styles;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Distribute;
-using Hanselman.Styles;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
@@ -34,7 +32,7 @@ namespace Hanselman
 
             Barrel.ApplicationId = AppInfo.PackageName;
             
-            ThemeHelper.ChangeTheme(Models.Theme.Dark, true);
+            ThemeHelper.ChangeTheme(Settings.ThemeOption, true);
 
             if (DeviceInfo.Platform == DevicePlatform.UWP)
                 MainPage = new HomePage();

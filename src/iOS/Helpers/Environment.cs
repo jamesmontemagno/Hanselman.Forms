@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -61,6 +62,10 @@ namespace Hanselman.iOS.Helpers
                 viewController = viewController.PresentedViewController;
 
             return viewController;
+        }
+
+        public void SetStatusBarColor(System.Drawing.Color color, bool darkStatusBarTint)
+        {
         }
     }
 }

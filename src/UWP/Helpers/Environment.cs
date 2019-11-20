@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using Hanselman.Interfaces;
@@ -26,5 +27,8 @@ namespace Hanselman.UWP.Helpers
             return Theme.Light;
         }
 
+        public void SetStatusBarColor(System.Drawing.Color color, bool darkStatusBarTint)
+        {
+        }
     }
 }

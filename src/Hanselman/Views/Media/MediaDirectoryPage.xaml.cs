@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Hanselman.Models;
 using Hanselman.ViewModels;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views
 {
-   public partial class MediaDirectoryPage : ContentPage
+    public partial class MediaDirectoryPage : ContentPage
     {
         MediaDirectoryViewModel VM { get; }
         public MediaDirectoryPage()

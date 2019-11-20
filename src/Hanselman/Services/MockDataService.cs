@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Hanselman.Interfaces;
 using Hanselman.Models;
-using Hanselman.Services;
 using Xamarin.Essentials;
-using Xamarin.Forms;
 
 
 namespace Hanselman.Services
@@ -18,7 +17,7 @@ namespace Hanselman.Services
 
         public Task<IEnumerable<BlogFeedItem>> GetBlogItemsAsync(bool forceRefresh)
         {
-            return null;
+            return Task.FromResult(Enumerable.Empty<BlogFeedItem>());
         }
 
         public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh)
@@ -254,7 +253,7 @@ namespace Hanselman.Services
                         Url = "http://itunes.apple.com/us/podcast/this-developers-life/id389727545",
                         SupportedPlatforms = new List<DevicePlatform>
                         {
-                            DevicePlatform.iOS, 
+                            DevicePlatform.iOS,
                             DevicePlatform.UWP
                         }
                     },
@@ -303,7 +302,7 @@ namespace Hanselman.Services
 
         public Task<IEnumerable<Tweet>> GetTweetsAsync(bool forceRefresh)
         {
-            return null;
+            return Task.FromResult(Enumerable.Empty<Tweet>());
         }
 
         public Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh)

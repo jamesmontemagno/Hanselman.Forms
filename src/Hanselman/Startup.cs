@@ -1,5 +1,4 @@
-﻿using System;
-using Hanselman.Services;
+﻿using Hanselman.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Shiny;
 using Shiny.Jobs;
