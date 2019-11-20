@@ -1,21 +1,12 @@
 using System;
-using Hanselman.Models;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
-using System.Xml.Linq;
-using System.Linq;
-using Hanselman.Functions.Models;
 using System.Net.Http;
-using System.Text;
-using System.Json;
 using System.IO;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using System.Net;
 using Hanselman.Functions.Helpers;
 
 namespace Hanselman.Functions.Triggers
