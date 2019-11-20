@@ -71,7 +71,7 @@
     <BundleAssemblies>false</BundleAssemblies>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
     <AndroidLinkMode>Full</AndroidLinkMode>
-    <AndroidLinkSkip>Xamarin.Forms.Platform.Android;Xamarin.Forms.Platform;Xamarin.Forms.Core;Xamarin.Forms.Xaml;FormsViewGroup;Shiny.Core;MediaManager;MediaManager.Forms;</AndroidLinkSkip>
+    <AndroidLinkSkip>Xamarin.Forms.Platform.Android;Xamarin.Forms.Platform;Xamarin.Forms.Core;Xamarin.Forms.Xaml;FormsViewGroup;Shiny.Core;MediaManager;MediaManager.Forms;ExoPlayer;ExoPlayer.Core;ExoPlayer.Hls;ExoPlayer.UI;ExoPlayer.Dash;ExoPlayer.Ext.MediaSession;ExoPlayer.SmoothStreaming;</AndroidLinkSkip>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Java.Interop" />
