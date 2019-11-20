@@ -26,7 +26,7 @@ namespace Hanselman.Functions
                     {
                         Title = (string)item.Element("title"),
                         Caption = ((string)item.Element("description")).ExtractCaption(),
-                        FirstImage = ((string)item.Element("description")).ExtractImage(),
+                        FirstImage = ((string)item.Element("description")).ExtractImage(isBlog: true),
                         Link = (string)item.Element("link"),
                         PublishDate = (string)item.Element("pubDate"),
                         Category = (string)item.Element("category"),
@@ -173,7 +173,7 @@ namespace Hanselman.Functions
             return caption.Substring(0, Math.Min(caption.Length, 200)).Trim() + "...";            
         }
 
-        internal static string ExtractImage(this string description, string defaultImage = ScottHead)
+        internal static string ExtractImage(this string description, string defaultImage = ScottHead, bool isBlog = false)
         {
             var regx = new Regex("https://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
 
@@ -186,8 +186,17 @@ namespace Hanselman.Functions
             }
 
             string firstImage;
-            if (matches.Count == 0)
-                firstImage = defaultImage;
+            if (matches.Count == 0 || (isBlog && !matches.Any(s => s.Value.ToLowerInvariant().Contains("hanselman.com"))))
+            {
+                if (isBlog)
+                {
+                    var random = new Random();
+                    var next = random.Next(1, 4);
+                    firstImage = $"https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/hanselmanblog{next}.jpg";
+                }
+                else
+                    firstImage = defaultImage;
+            }
             else
                 firstImage = matches[0].Value;
 
