@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using Hanselman.Models;
@@ -41,7 +40,13 @@ namespace Hanselman.Functions
             foreach (var item in xdoc.Descendants("item"))
             {
                 try
-                {                    
+                {
+                    var author = (string)item.Element(ItunesExtensions.Namespace + "summary");
+                    
+                    // only grab hanselman authors
+                    if (!author?.ToLower()?.Contains("hanselman") ?? false)
+                        continue;
+
                     var mediaGroup = item.Element(MediaExtensions.Namespace + "group");
 
                     var videoUrls = new List<VideoContentItem>();
@@ -81,6 +86,18 @@ namespace Hanselman.Functions
                         ThumbnailUrl = item.Element(MediaExtensions.Namespace + "thumbnail")?.Attribute("url")?.Value ?? defaultImage,
                         Duration = TimeSpan.FromSeconds(Convert.ToInt32(item.Element(ItunesExtensions.Namespace + "duration")?.Value ?? "0"))
                     };
+
+                    var thumbs = item.Elements(MediaExtensions.Namespace + "thumbnail");
+                    
+                    // Find second largest thumb
+                    if(thumbs?.Count() > 1)
+                    {
+                        var thumb = thumbs.ElementAt(thumbs.Count() - 1)?.Attribute("url")?.Value;
+                        if(!string.IsNullOrWhiteSpace(thumb))
+                            videoFeedItem.ThumbnailUrl = thumb;
+                    }
+
+
 
                     list.Add(videoFeedItem);
 

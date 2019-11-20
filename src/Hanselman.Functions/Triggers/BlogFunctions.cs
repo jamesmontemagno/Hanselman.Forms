@@ -9,6 +9,8 @@ using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Hanselman.Functions.Helpers;
+using System.Collections.Generic;
+using Hanselman.Models;
 
 // LotanB cheered 5 May 17, 2019
 // LotanB cheered 10 May 17, 2019
@@ -51,6 +53,7 @@ namespace Hanselman.Functions
         public static async Task BlogUpdate(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
             [Blob("hanselman/blog.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outBlogBlob,
+            [Blob("hanselman/blog.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inBlogBlob,
             [Blob("hanselman/blog-lastupdate.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outLastUpdateBlog,
             [Blob("hanselman/blog-lastupdate.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inLastUpdateBlog,
             [HttpClientFactory]HttpClient client,
@@ -71,6 +74,25 @@ namespace Hanselman.Functions
                 {
                     //Send push notification
                     log.LogInformation("Parsing blog feed.");
+                }
+
+                var oldBlogs = BlobHelpers.BlobToItems<FeedItem>(inBlogBlob, log, "hanselmanblog");
+
+                //Go through the old blogs and add them into the new blogs
+                if (oldBlogs != null)
+                {
+                    foreach (var blog in oldBlogs)
+                    {
+                        //if the blogItems already has it 
+                        if (blogItems.Any(b => b.Id == blog.Id))
+                            continue;
+
+                        // add blog and then max at 30 :)
+                        blogItems.Add(blog);
+
+                        if (blogItems.Count >= 30)
+                            break;
+                    }
                 }
 
                 var json = JsonConvert.SerializeObject(blogItems, Formatting.None);
