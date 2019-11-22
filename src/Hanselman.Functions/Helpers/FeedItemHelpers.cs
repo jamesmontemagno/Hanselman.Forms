@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using Hanselman.Models;
@@ -26,7 +25,7 @@ namespace Hanselman.Functions
                     {
                         Title = (string)item.Element("title"),
                         Caption = ((string)item.Element("description")).ExtractCaption(),
-                        FirstImage = ((string)item.Element("description")).ExtractImage(),
+                        FirstImage = ((string)item.Element("description")).ExtractImage(isBlog: true),
                         Link = (string)item.Element("link"),
                         PublishDate = (string)item.Element("pubDate"),
                         Category = (string)item.Element("category"),
@@ -41,7 +40,13 @@ namespace Hanselman.Functions
             foreach (var item in xdoc.Descendants("item"))
             {
                 try
-                {                    
+                {
+                    var author = (string)item.Element(ItunesExtensions.Namespace + "summary");
+                    
+                    // only grab hanselman authors
+                    if (!author?.ToLower()?.Contains("hanselman") ?? false)
+                        continue;
+
                     var mediaGroup = item.Element(MediaExtensions.Namespace + "group");
 
                     var videoUrls = new List<VideoContentItem>();
@@ -81,6 +86,18 @@ namespace Hanselman.Functions
                         ThumbnailUrl = item.Element(MediaExtensions.Namespace + "thumbnail")?.Attribute("url")?.Value ?? defaultImage,
                         Duration = TimeSpan.FromSeconds(Convert.ToInt32(item.Element(ItunesExtensions.Namespace + "duration")?.Value ?? "0"))
                     };
+
+                    var thumbs = item.Elements(MediaExtensions.Namespace + "thumbnail");
+                    
+                    // Find second largest thumb
+                    if(thumbs?.Count() > 1)
+                    {
+                        var thumb = thumbs.ElementAt(thumbs.Count() - 1)?.Attribute("url")?.Value;
+                        if(!string.IsNullOrWhiteSpace(thumb))
+                            videoFeedItem.ThumbnailUrl = thumb;
+                    }
+
+
 
                     list.Add(videoFeedItem);
 
@@ -173,7 +190,7 @@ namespace Hanselman.Functions
             return caption.Substring(0, Math.Min(caption.Length, 200)).Trim() + "...";            
         }
 
-        internal static string ExtractImage(this string description, string defaultImage = ScottHead)
+        internal static string ExtractImage(this string description, string defaultImage = ScottHead, bool isBlog = false)
         {
             var regx = new Regex("https://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
 
@@ -186,8 +203,17 @@ namespace Hanselman.Functions
             }
 
             string firstImage;
-            if (matches.Count == 0)
-                firstImage = defaultImage;
+            if (matches.Count == 0 || (isBlog && !matches.Any(s => s.Value.ToLowerInvariant().Contains("hanselman.com"))))
+            {
+                if (isBlog)
+                {
+                    var random = new Random();
+                    var next = random.Next(1, 4);
+                    firstImage = $"https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/hanselmanblog{next}.jpg";
+                }
+                else
+                    firstImage = defaultImage;
+            }
             else
                 firstImage = matches[0].Value;
 

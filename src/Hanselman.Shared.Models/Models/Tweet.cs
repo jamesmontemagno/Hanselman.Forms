@@ -6,6 +6,7 @@ using System.Globalization;
 
 namespace Hanselman.Models
 {
+    [Preserve(AllMembers = true)]
     public partial class Tweet
     {
         public Tweet()

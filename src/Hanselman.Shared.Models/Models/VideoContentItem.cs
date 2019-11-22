@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Hanselman.Helpers;
 using Newtonsoft.Json;
 
 namespace Hanselman.Models
 {
+    [Preserve(AllMembers = true)]
     public class VideoContentItem
     {
         [JsonProperty("fs")]

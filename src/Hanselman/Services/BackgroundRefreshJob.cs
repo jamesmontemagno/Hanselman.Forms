@@ -2,10 +2,12 @@
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+using Hanselman.Helpers;
 using Shiny.Jobs;
 
 namespace Hanselman.Services
 {
+    [Preserve(AllMembers = true)]
     public class BackgroundRefreshJob : IJob
     {
         DataService dataService;
