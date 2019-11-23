@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Hanselman.Helpers;
 using Hanselman.Models;
 using Hanselman.ViewModels;
 using Xamarin.Forms;
@@ -8,7 +9,8 @@ using Xamarin.Forms.Xaml;
 // mattleibow cheered 33 on November 22nd 2019
 
 namespace Hanselman.Views
-{
+{ 
+    [Preserve(AllMembers =true)]
     public partial class VideoSeriesPage : ContentPage
     {
         VideoSeriesViewModel VM => (VideoSeriesViewModel)BindingContext;
@@ -17,6 +19,8 @@ namespace Hanselman.Views
             InitializeComponent();
             BindingContext = new VideoSeriesViewModel(series);
         }
+
+       
         public VideoSeriesPage()
         {
             InitializeComponent();
