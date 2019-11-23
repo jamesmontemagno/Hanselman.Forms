@@ -6,8 +6,9 @@
     
     <Color x:Key="PrimaryColor">#007AFF</Color>
     <Color x:Key="AccentColor">#5AC8FA</Color>
-    
+
     <Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
+    <Color x:Key="WindowForegroundColor">#1E2222</Color>
     <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>
     <Color x:Key="LoadingBackgroundColor">#80000000</Color>
     <Color x:Key="LoadingTextColor">White</Color>

@@ -7,62 +7,65 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
-    BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Title="{Binding Title}"
-    mc:Ignorable="d"
+    x:DataType="viewmodels:VideoSeriesViewModel"
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Shell.NavBarIsVisible="True"
-    x:DataType="viewmodels:VideoSeriesViewModel">
+    mc:Ignorable="d">
     <d:ContentPage.BindingContext>
         <viewmodels:VideoSeriesViewModel />
     </d:ContentPage.BindingContext>
-    <ListView
-        BackgroundColor="{StaticResource WindowBackgroundColor}"
-        x:Name="MyListView"
-        CachingStrategy="RecycleElement"
-        HasUnevenRows="True"
-        IsPullToRefreshEnabled="True"
+    <RefreshView
+        Command="{Binding LoadEpisodesCommand}"
         IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-        ItemsSource="{Binding Episodes}"
-        RefreshCommand="{Binding LoadEpisodesCommand}"
-        RefreshControlColor="{DynamicResource RefreshViewColor}"
-        ItemTapped="MyListView_ItemTapped"
-        ItemSelected="MyListView_ItemSelected"
-        SelectionMode="Single"
-        SeparatorVisibility="None">
-        <d:ListView.ItemsSource>
-            <x:Array Type="{x:Type model:VideoFeedItem}" />
-        </d:ListView.ItemsSource>
-        <ListView.ItemTemplate>
-            <DataTemplate x:DataType="models:VideoFeedItem">
-                <ViewCell>
-                    <Frame
-                        Margin="16,8"
-                        Padding="0"
-                        CornerRadius="15"
-                        IsClippedToBounds="True"
-                        Style="{DynamicResource FrameStyle}">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width=".35*" />
-                                <ColumnDefinition Width=".65*" />
-                            </Grid.ColumnDefinitions>
-                            <Image Aspect="AspectFill" Source="{Binding ThumbnailUrl}" />
-                            <StackLayout Grid.Column="1" Padding="8">
-                                <Label Style="{DynamicResource MicroLabelStyle}"
-                                       TextColor="{DynamicResource PrimaryColor}"
-                                       Text="{Binding DisplayDate}" />
-                                <Label Text="{Binding Title}"
-                                       Style="{DynamicResource SmallLabelStyle}"/>
-                                <Label
-                                    HorizontalOptions="End"
-                                    VerticalOptions="EndAndExpand"
-                                    Style="{DynamicResource MicroLabelStyle}"
-                                    Text="{Binding Duration, StringFormat='{0:g}'}" />
-                            </StackLayout>
-                        </Grid>
-                    </Frame>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+        Style="{DynamicResource RefreshViewStyle}">
+        <CollectionView
+            x:Name="CollectionViewVideos"
+            BackgroundColor="{StaticResource WindowBackgroundColor}"
+            ItemsSource="{Binding Episodes}"
+            ItemSizingStrategy="MeasureAllItems"
+            SelectionChanged="CollectionViewVideos_SelectionChanged"
+            SelectionMode="Single">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="1"/>
+            </CollectionView.ItemsLayout>
+            <d:CollectionView.ItemsSource>
+                <x:Array Type="{x:Type model:VideoFeedItem}" />
+            </d:CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:VideoFeedItem">
+                    <Grid Padding="8,4">
+                        <Frame     
+                            Padding="0"
+                            CornerRadius="15"
+                            HeightRequest="{Binding Source={RelativeSource Self}, Path=WidthRequest}"
+                            IsClippedToBounds="True"
+                            Style="{DynamicResource FrameStyle}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="160" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Image Aspect="AspectFill"
+                                       Source="{Binding ThumbnailUrl}"/>
+                                <StackLayout Grid.Row="1" Padding="8">
+                                    <Label
+                                        Style="{DynamicResource MicroLabelStyle}"
+                                        Text="{Binding DisplayDate}"
+                                        TextColor="{DynamicResource PrimaryColor}" />
+                                    <Label Style="{DynamicResource SmallLabelStyle}" Text="{Binding Title}" />
+                                    <Label
+                                        HorizontalOptions="End"
+                                        Style="{DynamicResource MicroLabelStyle}"
+                                        Text="{Binding Duration, StringFormat='{0:g}'}"
+                                        VerticalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </RefreshView>
 </ContentPage>

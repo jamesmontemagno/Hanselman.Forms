@@ -10,6 +10,8 @@ using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Distribute;
+using System.Threading.Tasks;
+using System;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
@@ -58,6 +60,38 @@ namespace Hanselman
 #endif
             // Handle when your app starts
             CrossMediaManager.Current.PositionChanged += PlaybackPositionChanged;
+            OnResume();
+        }
+
+        DisplayOrientation currentOrientation = DisplayOrientation.Unknown;
+        void DeviceDisplay_MainDisplayInfoChanged(object sender, DisplayInfoChangedEventArgs e)
+        {
+            if(DeviceInfo.DeviceType == DeviceType.Virtual)
+            {
+                Task.Delay(500).ContinueWith((t) =>
+                {
+                    SetSpans(DeviceDisplay.MainDisplayInfo);
+                }, TaskScheduler.FromCurrentSynchronizationContext());
+                return;
+            }
+
+            SetSpans(e.DisplayInfo);            
+        }
+
+        public static event EventHandler<EventArgs>? SpanChanged;
+
+        void SetSpans(DisplayInfo info)
+        {
+            if (currentOrientation == info.Orientation)
+                return;
+
+            currentOrientation = info.Orientation;
+
+            var dp = info.Width / info.Density;
+
+            App.Current.Resources["BlogSpan"] = (int)(dp / 300);
+            App.Current.Resources["VideoSpan"] = (int)(dp / 300);
+            SpanChanged?.Invoke(null, EventArgs.Empty);
         }
 
         void PlaybackPositionChanged(object sender, MediaManager.Playback.PositionChangedEventArgs e)
@@ -72,11 +106,14 @@ namespace Hanselman
         protected override void OnSleep()
         {
             // Handle when your app sleeps
+            DeviceDisplay.MainDisplayInfoChanged -= DeviceDisplay_MainDisplayInfoChanged;
         }
 
         protected override void OnResume()
         {
             // Handle when your app resumes
+            DeviceDisplay.MainDisplayInfoChanged += DeviceDisplay_MainDisplayInfoChanged;
+            SetSpans(DeviceDisplay.MainDisplayInfo);
         }
     }
 }

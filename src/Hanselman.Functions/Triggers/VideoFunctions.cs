@@ -60,8 +60,8 @@ namespace Hanselman.Functions.Triggers
 
             var azureFridayLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/azure_friday.jpg";
             var eventsLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/scott_events.jpg";
-            var csharpLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/scott_events.jpg";
-            var dotnetLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/scott_events.jpg";
+            var csharpLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/csharp101.jpg";
+            var dotnetLogo = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/dotnet101.jpg";
 
             const string azureFridays = "https://s.ch9.ms/Shows/Azure-Friday/feed/mp4";
             const string azureFridays2 = "https://s.ch9.ms/Shows/Azure-Friday/feed/mp4?page=2";

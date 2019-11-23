@@ -1,7 +1,11 @@
-﻿using Hanselman.Models;
+﻿using System.Linq;
+using Hanselman.Models;
 using Hanselman.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+
+// mattleibow cheered 33 on November 22nd 2019
 
 namespace Hanselman.Views
 {
@@ -20,24 +24,43 @@ namespace Hanselman.Views
 
         }
 
+        void SetSpan()
+        {
+            var gil = (GridItemsLayout)CollectionViewVideos.ItemsLayout;
+            gil.Span = (int)Application.Current.Resources["VideoSpan"];
+        }
+
+
+
+        void App_SpanChanged(object sender, System.EventArgs e) =>
+            SetSpan();
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            App.SpanChanged -= App_SpanChanged;
+        }
+
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
             if (VM.Episodes.Count == 0)
                 VM.LoadEpisodesCommand.Execute(null);
+
+
+            SetSpan();
+            App.SpanChanged += App_SpanChanged;
         }
 
-        private void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            ((ListView)sender).SelectedItem = null;
-        }
 
-        private async void MyListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+
+        async void CollectionViewVideos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (e.SelectedItem is VideoFeedItem item && item != null)
+            if (e.CurrentSelection.FirstOrDefault() is VideoFeedItem item && item != null)
             {
                 await Navigation.PushAsync(new VideoDetailsPage(item));
-                ((ListView)sender).SelectedItem = null;
+                ((CollectionView)sender).SelectedItem = null;
             }
         }
     }

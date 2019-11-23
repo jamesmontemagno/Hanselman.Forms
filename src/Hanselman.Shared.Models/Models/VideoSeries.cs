@@ -12,7 +12,7 @@ namespace Hanselman.Models
 
         [JsonIgnore]
         public string UriRoute =>
-            $"{nameof(Id)}={Id}&{nameof(Title)}={Title}";
+            $"{nameof(Id)}={Id}&{nameof(Title)}={Uri.EscapeDataString(Title)}";
 
         /*public string ToUriRoute() =>
             Uri.EscapeDataString(JsonConvert.SerializeObject(this));

@@ -41,8 +41,10 @@ namespace Hanselman.Functions
             {
                 try
                 {
-                    var author = (string)item.Element(ItunesExtensions.Namespace + "summary");
-                    
+                    var author = item.Element(ItunesExtensions.Namespace + "author")?.Value;
+                    if(string.IsNullOrWhiteSpace(author))
+                        author = item.Element(ItunesExtensions.Namespace + "summary")?.Value;
+
                     // only grab hanselman authors
                     if (!author?.ToLower()?.Contains("hanselman") ?? false)
                         continue;
@@ -192,15 +194,9 @@ namespace Hanselman.Functions
 
         internal static string ExtractImage(this string description, string defaultImage = ScottHead, bool isBlog = false)
         {
-            var regx = new Regex("https://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
+            var regx = new Regex("(https?)://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
 
             var matches = regx.Matches(description);
-            if (matches.Count == 0)
-            {
-                regx = new Regex("http://([\\w+?\\.\\w+])+([a-zA-Z0-9\\~\\!\\@\\#\\$\\%\\^\\&amp;\\*\\(\\)_\\-\\=\\+\\\\\\/\\?\\.\\:\\;\\'\\,]*)?.(?:jpg|bmp|gif|png)", RegexOptions.IgnoreCase);
-
-                matches = regx.Matches(description);
-            }
 
             string firstImage;
             if (matches.Count == 0 || (isBlog && !matches.Any(s => s.Value.ToLowerInvariant().Contains("hanselman.com"))))

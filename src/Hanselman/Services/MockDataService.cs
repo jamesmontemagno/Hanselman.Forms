@@ -323,6 +323,20 @@ namespace Hanselman.Services
                 },
                 new VideoSeries
                 {
+                    Id = "csharp",
+                    Title = "C# 101",
+                    Art = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/csharp101.jpg",
+                    Description = "Introductory series to C# with Scott and Kendra!"
+                },
+                new VideoSeries
+                {
+                    Id = "dotnet",
+                    Title = ".NET 101",
+                    Art = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/dotnet101.jpg",
+                    Description = "Introductory series to .NET with Scott and Kendra!"
+                },
+                new VideoSeries
+                {
                     Id = "events",
                     Title = "Scott@Events",
                     Art = "https://hanselmanformsstorage.blob.core.windows.net/hanselman-public/scott_events.jpg",

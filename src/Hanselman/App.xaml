@@ -11,6 +11,7 @@
             <Color x:Key="PrimaryColor">#007AFF</Color>
             <Color x:Key="AccentColor">#5AC8FA</Color>
             <Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
+            <Color x:Key="WindowForegroundColor">#1E2222</Color>
             <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>
             <Color x:Key="LoadingBackgroundColor">#80000000</Color>
             <Color x:Key="LoadingTextColor">White</Color>
@@ -34,6 +35,7 @@
 
             <Color x:Key="SeparatorColor">#757575</Color>
             <Color x:Key="OpaqueSeparatorColor">#757575</Color>
+            
             
             <!--Shell-->
             <Color x:Key="ShellTabBarBackgroundColor">#F5F5F5</Color>
@@ -64,6 +66,9 @@
             <x:String x:Key="IconBlog">&#xf46b;</x:String>
 
             <x:Int32 x:Key="CloseButtonBorderWidth">0</x:Int32>
+
+            <x:Int32 x:Key="BlogSpan">1</x:Int32>
+            <x:Int32 x:Key="VideoSpan">1</x:Int32>
             
             <!--Control Themeing-->
 

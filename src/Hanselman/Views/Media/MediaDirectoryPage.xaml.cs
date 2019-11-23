@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Hanselman.Models;
 using Hanselman.ViewModels;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Hanselman.Views
@@ -34,7 +35,11 @@ namespace Hanselman.Views
         {
             if (e.CurrentSelection.FirstOrDefault() is VideoSeries series)
             {
-                await Navigation.PushAsync(new VideoSeriesPage(series));
+                if (DeviceInfo.Platform == DevicePlatform.UWP)
+                    await Navigation.PushAsync(new VideoSeriesPage(series));
+                else
+                    await Shell.Current.GoToAsync($"{AppShell.VideoSeriesDetails}?{series.UriRoute}");
+
                 ((CollectionView)sender).SelectedItem = null;
             }
         }

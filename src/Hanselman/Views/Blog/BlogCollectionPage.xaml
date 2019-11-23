@@ -37,7 +37,8 @@
                 SelectionMode="None"
                 VerticalOptions="FillAndExpand">
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="{OnIdiom Phone=1, Tablet=3, Desktop=3, TV=5, Watch=1}" />
+                    <GridItemsLayout Orientation="Vertical" 
+                                     Span="1" />
                 </CollectionView.ItemsLayout>
                 <d:CollectionView.ItemsSource>
                     <x:Array Type="{x:Type modelsShared:FeedItem}">
