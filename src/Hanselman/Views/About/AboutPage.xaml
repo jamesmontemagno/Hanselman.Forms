@@ -70,8 +70,8 @@
                     Text="Featured"
                     VerticalOptions="Center" />
                 <CarouselView
-                    HeightRequest="150"
                     x:Name="CarouselFeaturedItems"
+                    HeightRequest="150"
                     IsVisible="{Binding HasData}"
                     ItemsSource="{Binding FeaturedItems}"
                     PeekAreaInsets="75">
@@ -119,11 +119,13 @@
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
                 </CarouselView>
-                <IndicatorView 
-                   IndicatorColor="{DynamicResource SystemGray}"
-                   SelectedIndicatorColor="{DynamicResource PrimaryColor}"
-                   IndicatorSize="10" HorizontalOptions="Center"
-                   IndicatorView.ItemsSourceBy="CarouselFeaturedItems"/>
+                <IndicatorView
+                    HorizontalOptions="Center"
+                    IndicatorColor="{DynamicResource SystemGray}"
+                    IndicatorSize="10"
+                    IndicatorView.ItemsSourceBy="CarouselFeaturedItems"
+                    IsVisible="{Binding HasData}"
+                    SelectedIndicatorColor="{DynamicResource PrimaryColor}" />
                 <Label
                     Margin="10,10,10,0"
                     Style="{DynamicResource LargeLabelStyle}"

@@ -21,7 +21,7 @@
     <ContentPage.Content>
         <Grid>
             <ListView
-                    BackgroundColor="{StaticResource WindowBackgroundColor}"
+                    BackgroundColor="{DynamicResource WindowBackgroundColor}"
                     CachingStrategy="RecycleElement"
                     HasUnevenRows="True"
                     ItemAppearing="ListView_ItemAppearing"
