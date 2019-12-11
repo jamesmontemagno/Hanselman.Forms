@@ -120,9 +120,10 @@
                     </CarouselView.ItemTemplate>
                 </CarouselView>
                 <IndicatorView
+                    IndicatorsShape="Circle"
                     HorizontalOptions="Center"
                     IndicatorColor="{DynamicResource SystemGray}"
-                    IndicatorSize="10"
+                    IndicatorSize="8"
                     IndicatorView.ItemsSourceBy="CarouselFeaturedItems"
                     IsVisible="{Binding HasData}"
                     SelectedIndicatorColor="{DynamicResource PrimaryColor}" />
