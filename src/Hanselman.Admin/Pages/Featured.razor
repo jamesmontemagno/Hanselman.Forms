@@ -1,0 +1,115 @@
+﻿@page "/featured"
+@inject HttpClient Http
+@using Hanselman.Models
+@using Hanselman.Admin.Components
+
+<h1>Featured Items</h1>
+
+@if (editItem != null)
+{
+    <AddEditFeaturedItemComponent/>
+}
+else
+{
+    <button @onclick="@AddNewItem" class="btn btn-primary">Add New Item</button>
+}
+
+
+
+@if (items == null)
+{
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+
+    <div class="card-deck">
+        @for (var i = 0; i < items.Count; i++)
+        {
+            var item = items[i];
+            <div class="card" style="width: 18rem;">
+                <img height="250" src="@item.Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title</h5>
+                    <p class="card-text">Order: @i</p>
+                    <p class="card-text">@item.Type</p>                    
+                </div>
+                <div class="card-footer">
+                    <a href="@item.Link" target="_blank" class="btn btn-primary">Go to link</a>
+                    <button @onclick="@(() => Edit(item))" class="btn btn-primary">Edit</button>
+                    @if (i > 0)
+                    {
+                        <button @onclick="@(() => MoveUp(item))" class="btn btn-primary">Move Up</button>
+                    }
+
+                    @if (i < items.Count - 1)
+                    {
+                        <button @onclick="@(() => MoveDown(item))" class="btn btn-primary">Move Down</button>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+}
+
+<button @onclick="@Refresh" class="btn btn-primary">Refresh Data</button>
+
+@code {
+    List<FeaturedItem> items;
+    FeaturedItem editItem;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshData();
+        editItem = new FeaturedItem();
+    }
+
+    void MoveUp(FeaturedItem item)
+    {
+        var position = items.IndexOf(item);
+        items.Insert(position - 1, item); // 1 -> 0
+                                          // 0 and 2
+        items.RemoveAt(position + 1);
+        StateHasChanged();
+    }
+
+    void MoveDown(FeaturedItem item)
+    {
+        var position = items.IndexOf(item);
+        items.Insert(position + 2, item); // 0 -> 1
+                                          // remains at 0
+        items.RemoveAt(position);
+        StateHasChanged();
+
+    }
+
+    void Edit(FeaturedItem item)
+    {
+
+    }
+
+    void AddNewItem()
+    {
+        editItem = new FeaturedItem();
+        StateHasChanged();
+    }
+
+    async Task Refresh()
+    {
+        items = null;
+        StateHasChanged();
+        await RefreshData();
+        StateHasChanged();
+    }
+
+    async Task RefreshData()
+    {
+        await Task.Delay(1000);
+        items = await Http.GetJsonAsync<List<FeaturedItem>>("sample-data/featureditems.json");
+    }
+}

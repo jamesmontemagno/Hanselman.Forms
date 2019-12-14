@@ -1,0 +1,72 @@
+﻿@using Hanselman.Models
+@using BlazorInputFile
+
+<EditForm Model="@item" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <p>
+        <label for="title">Title*</label>
+        <InputText id="title" @bind-Value="item.Title" />
+    </p>
+    <p>
+        <label for="link">Link*</label>
+        <InputText id="link" @bind-Value="item.Link" />
+
+    </p>
+    <p>
+        <label for="image">Image*</label>
+        <InputText id="image" @bind-Value="item.Image" />
+        <div class="drag-drop-zone">
+            <InputFile  OnChange="HandleFileSelected" />
+        </div>
+
+        @if (file != null)
+        {
+            <p>Name: @file.Name</p>
+            <p>Size in bytes: @file.Size</p>
+            <p>Last modified date: @file.LastModified.ToShortDateString()</p>
+            <p>Content type (not always supplied by the browser): @file.Type</p>
+        }
+    </p>
+    <p>
+        <label for="type">Type*</label>
+        <InputSelect id="type" @bind-Value="item.Type">
+            <option value="@(FeaturedItemType.Blog)">Blog</option>
+            <option value="@(FeaturedItemType.Podcast)">Podcast</option>
+            <option value="@(FeaturedItemType.Video)">Video</option>
+        </InputSelect>
+    </p>
+    <button type="submit">Add/Update Item</button>
+</EditForm>
+
+    @code {
+        private FeaturedItem item = new FeaturedItem();
+
+        int numLines;
+        IFileListEntry file;
+
+        async Task HandleFileSelected(IFileListEntry[] files)
+        {
+            file = files.FirstOrDefault();
+            await CountLines();
+        }
+
+        async Task CountLines()
+        {
+            numLines = 0;
+            using (var reader = new System.IO.StreamReader(file.Data))
+            {
+                while (await reader.ReadLineAsync() != null)
+                {
+                    numLines++;
+                }
+            }
+            StateHasChanged();
+        }
+
+        private void HandleValidSubmit()
+        {
+            Console.WriteLine("OnValidSubmit");
+        }
+    }
