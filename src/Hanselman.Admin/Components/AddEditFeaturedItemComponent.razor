@@ -1,72 +1,159 @@
 ﻿@using Hanselman.Models
 @using BlazorInputFile
+@inject HttpClient Http
+<!--AdenEarnsahw basically wrote all this code and cheered 300 bits on Dec 20th 2019-->
+<!--MattLeibow assisted with code & cheered 500 bits on Dec 20th 2019-->
 
 <EditForm Model="@item" OnValidSubmit="@HandleValidSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <p>
+    <div class="form-group">
         <label for="title">Title*</label>
-        <InputText id="title" @bind-Value="item.Title" />
-    </p>
-    <p>
+        <InputText class="form-control" id="title" @bind-Value="item.Title" />
+    </div>
+    <div class="form-group">
         <label for="link">Link*</label>
-        <InputText id="link" @bind-Value="item.Link" />
+        <InputText class="form-control" id="link" @bind-Value="item.Link" />
 
-    </p>
-    <p>
+    </div>
+    <div class="form-group">
         <label for="image">Image*</label>
-        <InputText id="image" @bind-Value="item.Image" />
-        <div class="drag-drop-zone">
-            <InputFile  OnChange="HandleFileSelected" />
-        </div>
+        <InputText class="form-control" id="image" @bind-Value="item.Image" />
+    </div>
 
-        @if (file != null)
-        {
-            <p>Name: @file.Name</p>
-            <p>Size in bytes: @file.Size</p>
-            <p>Last modified date: @file.LastModified.ToShortDateString()</p>
-            <p>Content type (not always supplied by the browser): @file.Type</p>
-        }
-    </p>
-    <p>
+    <div class="drag-drop-zone">
+        <InputFile class="form-control p-1" OnChange="HandleFileSelected" />
+    </div>
+
+    @if (isBusy)
+    {
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Uploading...
+        </button>
+    }
+    else
+    {
+        <button @onclick="@UploadPhoto" type="button" class="btn btn-primary">Upload Photo</button>
+    }
+
+    <br />
+
+
+    @if (file != null)
+    {
+        <p>Name: @file.Name</p>
+        <p>Size in bytes: @file.Size</p>
+        <p>Last modified date: @file.LastModified.ToShortDateString()</p>
+        <p>Content type (not always supplied by the browser): @file.Type</p>
+    }
+    <div class="form-group">
         <label for="type">Type*</label>
-        <InputSelect id="type" @bind-Value="item.Type">
+        <InputSelect class="form-control" id="type" @bind-Value="item.Type">
             <option value="@(FeaturedItemType.Blog)">Blog</option>
             <option value="@(FeaturedItemType.Podcast)">Podcast</option>
             <option value="@(FeaturedItemType.Video)">Video</option>
         </InputSelect>
-    </p>
-    <button type="submit">Add/Update Item</button>
+    </div>
+    @if (isBusy)
+    {
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Adding Item...</span>
+        </button>
+    }
+    else
+    {
+        <button class="btn btn-primary" type="submit">Add/Update Item</button>
+    }
 </EditForm>
 
-    @code {
-        private FeaturedItem item = new FeaturedItem();
+@code {
 
-        int numLines;
-        IFileListEntry file;
+    bool isBusy;
 
-        async Task HandleFileSelected(IFileListEntry[] files)
+    private FeaturedItem item = new FeaturedItem();
+
+    int numLines;
+    IFileListEntry file;
+
+    async Task HandleFileSelected(IFileListEntry[] files)
+    {
+        file = files.FirstOrDefault();
+        await CountLines();
+    }
+
+    async Task UploadPhoto()
+    {
+        if (file == null)
+            return;
+
+        isBusy = true;
+        StateHasChanged();
+
+        try
         {
-            file = files.FirstOrDefault();
-            await CountLines();
+            //upload image
+            //using var reader = new System.IO.StreamReader(file.Data);
+
+            item.Image = await UploadImageAsync();
+            await Task.Delay(1000);
         }
-
-        async Task CountLines()
+        catch (Exception ex)
         {
-            numLines = 0;
-            using (var reader = new System.IO.StreamReader(file.Data))
-            {
-                while (await reader.ReadLineAsync() != null)
-                {
-                    numLines++;
-                }
-            }
+            item.Image = ex.Message;
+            // pop up dialog box
+        }
+        finally
+        {
+            isBusy = false;
             StateHasChanged();
         }
 
-        private void HandleValidSubmit()
-        {
-            Console.WriteLine("OnValidSubmit");
-        }
     }
+
+    public async Task<string> UploadImageAsync()
+    {
+
+        var name = Uri.EscapeDataString(file.Name.ToLower());
+        var fileStreamContent = new StreamContent(file.Data);
+
+        fileStreamContent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data")
+        {
+            Name = "file",
+            FileName = file.Name
+        };
+        fileStreamContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+
+        var extenstion = System.IO.Path.GetExtension(file.Name);
+        using var formData = new MultipartFormDataContent();
+        formData.Add(fileStreamContent);
+        var url = $"http://localhost:7071/api/upload/{Guid.NewGuid().ToString()}{extenstion}/image";
+        var response = await Http.PostAsync(url, formData);
+        if (!response.IsSuccessStatusCode)
+        {
+            //throw new ImageUploadException(response.ReasonPhrase);
+            return "Error";
+        }
+
+        var json = await response.Content.ReadAsStringAsync();
+        return json;
+    }
+
+    async Task CountLines()
+    {
+        /*numLines = 0;
+        using var reader = new System.IO.StreamReader(file.Data);
+        while (await reader.ReadLineAsync() != null)
+        {
+            numLines++;
+        }*/
+        StateHasChanged();
+    }
+
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine("OnValidSubmit");
+    }
+}
