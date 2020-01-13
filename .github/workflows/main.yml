@@ -9,6 +9,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Android
       run: |
+        cd src
         nuget restore Hanselman.Forms.sln
         cd Android
         msbuild Hanselman.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
@@ -19,5 +20,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: iOS
       run: |
+        cd src
         nuget restore	Hanselman.Forms.sln
         msbuild iOS/Hanselman.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
