@@ -1,0 +1,23 @@
+name: CI on Push and Pull Request
+
+on: [push, pull_request]
+
+jobs:
+  Android:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Android
+      run: |
+        nuget restore Hanselman.Forms.sln
+        cd Android
+        msbuild Hanselman.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
+        
+  iOS:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: iOS
+      run: |
+        nuget restore	Hanselman.Forms.sln
+        msbuild iOS/Hanselman.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
