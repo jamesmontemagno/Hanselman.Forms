@@ -16,6 +16,10 @@ namespace Hanselman.Models
 
     public class FeaturedItem
     {
+        [JsonProperty("id")]
+        [JsonPropertyName("id")]
+        public string Id { get; set; }
+
         [JsonProperty("t")]
         [JsonPropertyName("t")]
         [Required]

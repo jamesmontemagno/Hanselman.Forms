@@ -2,6 +2,13 @@
 
 <h1>Login</h1>
 
-Welcome to Hanselman.Forms Admin. Please login below.
+Welcome to Hanselman.Forms Admin. Please login on the navigation.
 
-<!--Login with Twitter-->
+<AuthorizeView>
+    <div>
+        <img src="@context.User.FindFirst("urn:twitter:profile_image_url_https").Value" class="twitter-avatar" />
+        <span>@context.User.Identity.Name</span>
+    </div>
+</AuthorizeView>
+
+    <!--Login with Twitter-->

@@ -1,25 +1,26 @@
 ﻿@using Hanselman.Models
 @using BlazorInputFile
 @inject HttpClient Http
+@inject IJSRuntime jsRuntime
 <!--AdenEarnsahw basically wrote all this code and cheered 300 bits on Dec 20th 2019-->
 <!--MattLeibow assisted with code & cheered 500 bits on Dec 20th 2019-->
 
-<EditForm Model="@item" OnValidSubmit="@HandleValidSubmit">
+<EditForm Model="@Item" OnValidSubmit="@HandleValidSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
     <div class="form-group">
         <label for="title">Title*</label>
-        <InputText class="form-control" id="title" @bind-Value="item.Title" />
+        <InputText class="form-control" id="title" @bind-Value="Item.Title" />
     </div>
     <div class="form-group">
         <label for="link">Link*</label>
-        <InputText class="form-control" id="link" @bind-Value="item.Link" />
+        <InputText class="form-control" id="link" @bind-Value="Item.Link" />
 
     </div>
     <div class="form-group">
         <label for="image">Image*</label>
-        <InputText class="form-control" id="image" @bind-Value="item.Image" />
+        <InputText class="form-control" id="image" @bind-Value="Item.Image" />
     </div>
 
     <div class="drag-drop-zone">
@@ -50,7 +51,7 @@
     }
     <div class="form-group">
         <label for="type">Type*</label>
-        <InputSelect class="form-control" id="type" @bind-Value="item.Type">
+        <InputSelect class="form-control" id="type" @bind-Value="Item.Type">
             <option value="@(FeaturedItemType.Blog)">Blog</option>
             <option value="@(FeaturedItemType.Podcast)">Podcast</option>
             <option value="@(FeaturedItemType.Video)">Video</option>
@@ -73,15 +74,19 @@
 
     bool isBusy;
 
-    private FeaturedItem item = new FeaturedItem();
+    [Parameter]
+    public FeaturedItem Item { get; set; }
+
+    [Parameter]
+    public EventCallback<FeaturedItem> OnFinished { get; set; }
 
     int numLines;
     IFileListEntry file;
 
-    async Task HandleFileSelected(IFileListEntry[] files)
+    void HandleFileSelected(IFileListEntry[] files)
     {
         file = files.FirstOrDefault();
-        await CountLines();
+        StateHasChanged();
     }
 
     async Task UploadPhoto()
@@ -97,12 +102,12 @@
             //upload image
             //using var reader = new System.IO.StreamReader(file.Data);
 
-            item.Image = await UploadImageAsync();
+            Item.Image = await UploadImageAsync();
             await Task.Delay(1000);
         }
         catch (Exception ex)
         {
-            item.Image = ex.Message;
+            Item.Image = ex.Message;
             // pop up dialog box
         }
         finally
@@ -124,6 +129,11 @@
             Name = "file",
             FileName = file.Name
         };
+
+        var token = await LocalStorage.GetAsync<AuthToken>(jsRuntime, "authtoken");
+
+        fileStreamContent.Headers.Add("X-ZUMO-AUTH", token.AuthenticationToken);
+
         fileStreamContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
 
         var extenstion = System.IO.Path.GetExtension(file.Name);
@@ -141,19 +151,9 @@
         return json;
     }
 
-    async Task CountLines()
-    {
-        /*numLines = 0;
-        using var reader = new System.IO.StreamReader(file.Data);
-        while (await reader.ReadLineAsync() != null)
-        {
-            numLines++;
-        }*/
-        StateHasChanged();
-    }
-
-    private void HandleValidSubmit()
+    private async Task HandleValidSubmit()
     {
         Console.WriteLine("OnValidSubmit");
+        await OnFinished.InvokeAsync(Item);
     }
 }

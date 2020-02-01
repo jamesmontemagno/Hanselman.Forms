@@ -51,3 +51,13 @@ Development build available:
 ### Awesome Tools
 * [IconFont2Code](https://andreinitescu.github.io/IconFont2Code/): Turns your fonts into code!
 * [Material Design Icons](https://materialdesignicons.com/): Awesome icons for your app
+
+
+### Run Twitter Auth Locally
+* run `ngrok http 5000`
+* Update auth redirect on Azure Function
+* Update Cores on Azure Functions
+* Update Twitter App with Url
+* Update code "constants.cs" with url
+* RUN THE FUNCTION :)
+* AuthInfo extensions change url to `https://yoursite.azurewebsites.net/`
