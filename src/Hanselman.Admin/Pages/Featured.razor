@@ -1,0 +1,178 @@
+﻿@page "/featured"
+@inject HttpClient Http
+@using Hanselman.Models
+@using Hanselman.Admin.Components
+@using System.Text.Json
+<!--lachlanwgordon cheered 50 bits on January 31st 2020-->
+
+<h1>Featured Items</h1>
+
+@if (showAddEdit)
+{
+    <AddEditFeaturedItemComponent Item="@editItem" OnFinished="FinishUpdatingItem" />
+}
+else
+{
+    <button @onclick="@AddNewItem" class="btn btn-primary">Add New Item</button>
+}
+
+
+
+@if (items == null || isBusy)
+{
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+
+    <div class="card-deck">
+        @for (var i = 0; i < items.Count; i++)
+        {
+            var item = items[i];
+            <div class="card" style="width: 18rem;">
+                <img height="250" src="@item.Image" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title</h5>
+                    <p class="card-text">Order: @i</p>
+                    <p class="card-text">@item.Type</p>
+                </div>
+                <div class="card-footer">
+                    <a href="@item.Link" target="_blank" class="btn btn-primary">Go to link</a>
+                    <button @onclick="@(() => Edit(item))" class="btn btn-primary">Edit</button>
+                    <button @onclick="@(() => RemoveItem(item))" class="btn btn-primary">Remove</button>
+                    @if (i > 0)
+                    {
+                        <button @onclick="@(() => MoveUp(item))" class="btn btn-primary">Move Up</button>
+                    }
+
+                    @if (i < items.Count - 1)
+                    {
+                        <button @onclick="@(() => MoveDown(item))" class="btn btn-primary">Move Down</button>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+}
+
+<button @onclick="@Refresh" class="btn btn-primary">Refresh Data</button>
+<button @onclick="@UpdateOrder" class="btn btn-primary">Update Order</button>
+
+@code {
+    List<FeaturedItem> items;
+    FeaturedItem editItem;
+    public bool showAddEdit;
+    public bool isBusy;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshData();
+    }
+
+    void MoveUp(FeaturedItem item)
+    {
+        var position = items.IndexOf(item);
+        items.Insert(position - 1, item); // 1 -> 0
+                                          // 0 and 2
+        items.RemoveAt(position + 1);
+        StateHasChanged();
+    }
+
+    void MoveDown(FeaturedItem item)
+    {
+        var position = items.IndexOf(item);
+        items.Insert(position + 2, item); // 0 -> 1
+                                          // remains at 0
+        items.RemoveAt(position);
+        StateHasChanged();
+
+    }
+
+    void Edit(FeaturedItem item)
+    {
+        editItem = item;
+        showAddEdit = true;
+        StateHasChanged();
+    }
+
+    async Task RemoveItem(FeaturedItem item)
+    {
+        isBusy = true;
+
+
+        var content = new StringContent(item.Id);
+        await Http.PostAsync($"{Constants.RemoveFeturedItemURL}?id={item.Id}", content);
+
+        await RefreshData();
+        isBusy = false;
+        StateHasChanged();
+    }
+
+    void AddNewItem()
+    {
+        editItem = new FeaturedItem();
+        showAddEdit = true;
+        StateHasChanged();
+    }
+
+    async Task FinishUpdatingItem(FeaturedItem item)
+    {
+        isBusy = true;
+        if (string.IsNullOrWhiteSpace(item.Id))
+        {
+            item.Id = Guid.NewGuid().ToString();
+            var json = JsonSerializer.Serialize(item);
+            var content = new StringContent(json);
+            await Http.PostAsync(Constants.AddFeturedItemURL, content);
+
+        }
+        else
+        {
+            var oldItem = items.First(i => i.Id == item.Id);
+            oldItem = item;
+            var json = JsonSerializer.Serialize(oldItem);
+            var content = new StringContent(json);
+            await Http.PostAsync(Constants.UpdateFeturedItemURL, content);
+        }
+
+        isBusy = false;
+        await RefreshData();
+
+        showAddEdit = false;
+        StateHasChanged();
+    }
+
+    async Task Refresh()
+    {
+        items = null;
+        StateHasChanged();
+        await RefreshData();
+        StateHasChanged();
+    }
+
+    async Task UpdateOrder()
+    {
+        isBusy = true;
+        var json = JsonSerializer.Serialize(items);
+        var content = new StringContent(json);
+        await Http.PostAsync(Constants.UpdateAllFeturedItemURL, content);
+        await RefreshData();
+
+        isBusy = false;
+    }
+
+    async Task RefreshData()
+    {
+        isBusy = true;
+        await Task.Delay(1000);
+        //items = await Http.GetJsonAsync<List<FeaturedItem>>("sample-data/featureditems.json");
+        items = await Http.GetJsonAsync<List<FeaturedItem>>(Constants.GetFeaturedItemsURL);
+        isBusy = false;
+    }
+}

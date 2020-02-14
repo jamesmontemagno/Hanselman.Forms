@@ -20,6 +20,23 @@ namespace Hanselman.Services
             return Task.FromResult(Enumerable.Empty<BlogFeedItem>());
         }
 
+        public Task<IEnumerable<FeaturedItem>> GetFeaturedItemsAsync()
+        {
+            var items = new List<FeaturedItem>();
+
+            for (var i = 0; i < 5; i++)
+            {
+                items.Add(new FeaturedItem
+                {
+                    Title = Jeffsum.Goldblum.ReceiveTheJeff(1, Jeffsum.JeffsumType.Quotes).First(),
+                    Image = "scott.png",
+                    //Description = Jeffsum.Goldblum.ReceiveTheJeff(1, Jeffsum.JeffsumType.Paragraphs).First()
+                }); 
+            }
+
+            return Task.FromResult(items.AsEnumerable());
+        }
+
         public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh)
         {
             var episodes = new List<PodcastEpisode>();
@@ -66,7 +83,7 @@ namespace Hanselman.Services
                 });
             }
 
-            return Task.FromResult((IEnumerable<PodcastEpisode>)episodes);
+            return Task.FromResult(episodes.AsEnumerable());
         }
 
         public Task<IEnumerable<Podcast>> GetPodcastsAsync(bool forceRefresh)
@@ -297,7 +314,7 @@ namespace Hanselman.Services
                     },
                 }
             });
-            return Task.FromResult((IEnumerable<Podcast>)podcasts);
+            return Task.FromResult(podcasts.AsEnumerable());
         }
 
         public Task<IEnumerable<Tweet>> GetTweetsAsync(bool forceRefresh)
@@ -344,7 +361,7 @@ namespace Hanselman.Services
                 }
             };
 
-            return Task.FromResult((IEnumerable<VideoSeries>)series);
+            return Task.FromResult(series.AsEnumerable());
         }
     }
 }

@@ -28,7 +28,7 @@ namespace HanselmanAndroid
             TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
 
-            Forms.SetFlags("CarouselView_Experimental");
+            Forms.SetFlags("CarouselView_Experimental", "IndicatorView_Experimental");
             Forms.Init(this, bundle);
             FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);

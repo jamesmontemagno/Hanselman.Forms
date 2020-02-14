@@ -16,8 +16,6 @@ namespace Hanselman.Styles
                 return;
 
             //// clear all the resources
-            //Application.Current.Resources.MergedDictionaries.Clear();
-            //Application.Current.Resources.Clear();
             var applicationResourceDictionary = Application.Current.Resources;
             ResourceDictionary newTheme;
             var environment = DependencyService.Get<IEnvironment>();
@@ -38,11 +36,6 @@ namespace Hanselman.Styles
                 default:
                     newTheme = new LightTheme();
                     break;
-            }
-
-            foreach (var merged in newTheme.MergedDictionaries)
-            {
-                applicationResourceDictionary.MergedDictionaries.Add(merged);
             }
 
             ManuallyCopyThemes(newTheme, applicationResourceDictionary);

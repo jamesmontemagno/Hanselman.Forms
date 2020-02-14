@@ -21,6 +21,11 @@ using Hanselman.Models;
 // ClintonRocksmith cheered 3000 June 14, 2019
 // ChrisNTR cheered 100 October 18, 2019
 // codingwithluce cheered 200 October 18, 2019
+// chicken_wing subscribed for 5 months December 20th, 2019
+// MortelBox subscribed for 11 months December 20th, 2019
+// AndrewSheley subscribed for 3 months December 20th, 2019
+// ClintonRocksmith subscribed for 6 months December 20th, 2019
+// alexhedley8 subscribed for 8 months December 20th, 2019
 
 
 namespace Hanselman.Functions

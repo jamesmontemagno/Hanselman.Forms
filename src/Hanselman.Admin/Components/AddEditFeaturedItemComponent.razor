@@ -1,0 +1,159 @@
+﻿@using Hanselman.Models
+@using BlazorInputFile
+@inject HttpClient Http
+@inject IJSRuntime jsRuntime
+<!--AdenEarnsahw basically wrote all this code and cheered 300 bits on Dec 20th 2019-->
+<!--MattLeibow assisted with code & cheered 500 bits on Dec 20th 2019-->
+
+<EditForm Model="@Item" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="title">Title*</label>
+        <InputText class="form-control" id="title" @bind-Value="Item.Title" />
+    </div>
+    <div class="form-group">
+        <label for="link">Link*</label>
+        <InputText class="form-control" id="link" @bind-Value="Item.Link" />
+
+    </div>
+    <div class="form-group">
+        <label for="image">Image*</label>
+        <InputText class="form-control" id="image" @bind-Value="Item.Image" />
+    </div>
+
+    <div class="drag-drop-zone">
+        <InputFile class="form-control p-1" OnChange="HandleFileSelected" />
+    </div>
+
+    @if (isBusy)
+    {
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Uploading...
+        </button>
+    }
+    else
+    {
+        <button @onclick="@UploadPhoto" type="button" class="btn btn-primary">Upload Photo</button>
+    }
+
+    <br />
+
+
+    @if (file != null)
+    {
+        <p>Name: @file.Name</p>
+        <p>Size in bytes: @file.Size</p>
+        <p>Last modified date: @file.LastModified.ToShortDateString()</p>
+        <p>Content type (not always supplied by the browser): @file.Type</p>
+    }
+    <div class="form-group">
+        <label for="type">Type*</label>
+        <InputSelect class="form-control" id="type" @bind-Value="Item.Type">
+            <option value="@(FeaturedItemType.Blog)">Blog</option>
+            <option value="@(FeaturedItemType.Podcast)">Podcast</option>
+            <option value="@(FeaturedItemType.Video)">Video</option>
+        </InputSelect>
+    </div>
+    @if (isBusy)
+    {
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Adding Item...</span>
+        </button>
+    }
+    else
+    {
+        <button class="btn btn-primary" type="submit">Add/Update Item</button>
+    }
+</EditForm>
+
+@code {
+
+    bool isBusy;
+
+    [Parameter]
+    public FeaturedItem Item { get; set; }
+
+    [Parameter]
+    public EventCallback<FeaturedItem> OnFinished { get; set; }
+
+    int numLines;
+    IFileListEntry file;
+
+    void HandleFileSelected(IFileListEntry[] files)
+    {
+        file = files.FirstOrDefault();
+        StateHasChanged();
+    }
+
+    async Task UploadPhoto()
+    {
+        if (file == null)
+            return;
+
+        isBusy = true;
+        StateHasChanged();
+
+        try
+        {
+            //upload image
+            //using var reader = new System.IO.StreamReader(file.Data);
+
+            Item.Image = await UploadImageAsync();
+            await Task.Delay(1000);
+        }
+        catch (Exception ex)
+        {
+            Item.Image = ex.Message;
+            // pop up dialog box
+        }
+        finally
+        {
+            isBusy = false;
+            StateHasChanged();
+        }
+
+    }
+
+    public async Task<string> UploadImageAsync()
+    {
+
+        var name = Uri.EscapeDataString(file.Name.ToLower());
+        var fileStreamContent = new StreamContent(file.Data);
+
+        fileStreamContent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data")
+        {
+            Name = "file",
+            FileName = file.Name
+        };
+
+        var token = await LocalStorage.GetAsync<AuthToken>(jsRuntime, "authtoken");
+
+        fileStreamContent.Headers.Add("X-ZUMO-AUTH", token.AuthenticationToken);
+
+        fileStreamContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+
+        var extenstion = System.IO.Path.GetExtension(file.Name);
+        using var formData = new MultipartFormDataContent();
+        formData.Add(fileStreamContent);
+        var url = $"http://localhost:7071/api/upload/{Guid.NewGuid().ToString()}{extenstion}/image";
+        var response = await Http.PostAsync(url, formData);
+        if (!response.IsSuccessStatusCode)
+        {
+            //throw new ImageUploadException(response.ReasonPhrase);
+            return "Error";
+        }
+
+        var json = await response.Content.ReadAsStringAsync();
+        return json;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        Console.WriteLine("OnValidSubmit");
+        await OnFinished.InvokeAsync(Item);
+    }
+}

@@ -36,6 +36,10 @@ namespace Hanselman.Services
 
             return items?.Select(i => new BlogFeedItem(i)) ?? Enumerable.Empty<BlogFeedItem>();
         }
+
+        public Task<IEnumerable<FeaturedItem>> GetFeaturedItemsAsync() =>
+            mock.GetFeaturedItemsAsync();
+
         public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh) => 
             GetAsync<IEnumerable<PodcastEpisode>>($"api/GetPodcastEpisodes?code={Constants.PodcastEpisodesKey}&id={id}", $"pod_{id}", 180, false);
 

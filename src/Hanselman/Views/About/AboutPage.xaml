@@ -3,17 +3,22 @@
     x:Class="Hanselman.Views.AboutPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman"
-    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    ios:Page.UseSafeArea="True"
-    ios:Page.ModalPresentationStyle="FormSheet"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman"
+    xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     Title="Scott Hanselman"
+    ios:Page.ModalPresentationStyle="FormSheet"
+    ios:Page.UseSafeArea="True"
     x:DataType="viewmodels:AboutViewModel"
-    BackgroundColor="{DynamicResource WindowBackgroundColor}">
-    <ContentPage.BindingContext>
+    BackgroundColor="{DynamicResource WindowBackgroundColor}"
+    mc:Ignorable="d">
+    <d:ContentPage.BindingContext>
         <viewmodels:AboutViewModel />
-    </ContentPage.BindingContext>
+    </d:ContentPage.BindingContext>
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -32,33 +37,105 @@
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
         <Label
+            Grid.ColumnSpan="2"
             Margin="10"
+            HorizontalOptions="Center"
             Style="{DynamicResource LargeLabelStyle}"
-            HorizontalOptions="{OnPlatform iOS=Center, Default=Start}"
             Text="Scott Hanselman"
-            VerticalOptions="Center"
-            Grid.ColumnSpan="2"/>
+            VerticalOptions="Center" />
         <ImageButton
             Grid.Column="1"
             Margin="10"
-            WidthRequest="32"
-            HeightRequest="32"
             BackgroundColor="Transparent"
-            Command="{Binding GoToSettingsCommand}">
+            Command="{Binding GoToSettingsCommand}"
+            HeightRequest="32"
+            WidthRequest="32">
             <ImageButton.Source>
                 <FontImageSource
-                    Color="{DynamicResource SystemGray}"
+                    FontFamily="{StaticResource MaterialFontFamily}"
                     Glyph="{StaticResource IconSettings}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    Color="{DynamicResource SystemGray}" />
             </ImageButton.Source>
         </ImageButton>
 
+
+
         <ScrollView Grid.Row="1" Grid.ColumnSpan="2">
-            <StackLayout
-                Padding="10"
-                Orientation="Vertical"
-                Spacing="10">
-                <Frame Padding="0" Style="{DynamicResource FrameStyle}">
+
+            <StackLayout Orientation="Vertical" Spacing="0">
+                <Label
+                    Margin="10,0"
+                    IsVisible="{Binding HasData}"
+                    Style="{DynamicResource LargeLabelStyle}"
+                    Text="Featured"
+                    VerticalOptions="Center" />
+                <CarouselView
+                    x:Name="CarouselFeaturedItems"
+                    HeightRequest="150"
+                    IsVisible="{Binding HasData}"
+                    ItemsSource="{Binding FeaturedItems}"
+                    PeekAreaInsets="75">
+                    <CarouselView.EmptyView>
+                        <ActivityIndicator
+                            HorizontalOptions="CenterAndExpand"
+                            IsRunning="{Binding IsBusy}"
+                            IsVisible="{Binding IsBusy}"
+                            VerticalOptions="Center" />
+                    </CarouselView.EmptyView>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate x:DataType="modelsShared:FeaturedItem">
+                            <StackLayout>
+                                <Frame
+                                    Margin="10"
+                                    Padding="0,0,0,0"
+                                    CornerRadius="8"
+                                    InputTransparent="True"
+                                    Style="{DynamicResource FrameStyle}">
+
+                                    <Grid RowSpacing="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="125" />
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid>
+                                            <Image Aspect="AspectFill" Source="{Binding Image}" />
+                                            <pancake:PancakeView
+                                                BackgroundGradientEndColor="{DynamicResource SystemBlue}"
+                                                BackgroundGradientStartColor="#10000000"
+                                                HorizontalOptions="FillAndExpand"
+                                                VerticalOptions="FillAndExpand" />
+                                            <Label
+                                                Margin="16,8"
+                                                FontAttributes="Bold"
+                                                FontSize="Small"
+                                                Text="{Binding Title}"
+                                                TextColor="White"
+                                                VerticalOptions="End" />
+                                        </Grid>
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView
+                    IndicatorsShape="Circle"
+                    HorizontalOptions="Center"
+                    IndicatorColor="{DynamicResource SystemGray}"
+                    IndicatorSize="8"
+                    IndicatorView.ItemsSourceBy="CarouselFeaturedItems"
+                    IsVisible="{Binding HasData}"
+                    SelectedIndicatorColor="{DynamicResource PrimaryColor}" />
+                <Label
+                    Margin="10,10,10,0"
+                    Style="{DynamicResource LargeLabelStyle}"
+                    Text="About Scott"
+                    VerticalOptions="Center" />
+                <Frame
+                    Margin="10,10"
+                    Padding="0"
+                    Style="{DynamicResource FrameStyle}">
                     <StackLayout>
                         <Image
                             Aspect="AspectFill"
