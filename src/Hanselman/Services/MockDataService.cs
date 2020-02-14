@@ -30,7 +30,7 @@ namespace Hanselman.Services
                 {
                     Title = Jeffsum.Goldblum.ReceiveTheJeff(1, Jeffsum.JeffsumType.Quotes).First(),
                     Image = "scott.png",
-                    Description = Jeffsum.Goldblum.ReceiveTheJeff(1, Jeffsum.JeffsumType.Paragraphs).First()
+                    //Description = Jeffsum.Goldblum.ReceiveTheJeff(1, Jeffsum.JeffsumType.Paragraphs).First()
                 }); 
             }
 
