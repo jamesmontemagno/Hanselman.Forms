@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Shiny;
 using Shiny.Jobs;
+using Shiny.Logging;
 
 namespace Hanselman
 {
@@ -9,10 +10,14 @@ namespace Hanselman
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            var job = new JobInfo
-            {
-                Identifier = nameof(BackgroundRefreshJob),
-                Type = typeof(BackgroundRefreshJob),
+#if DEBUG
+            Log.UseConsole();
+#endif
+            var job = new JobInfo(
+                typeof(BackgroundRefreshJob),
+                nameof(BackgroundRefreshJob)
+            )
+            { 
                 BatteryNotLow = true,
                 DeviceCharging = true,
                 RequiredInternetAccess = InternetAccess.Unmetered,
