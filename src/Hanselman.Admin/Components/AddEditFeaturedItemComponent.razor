@@ -139,7 +139,7 @@
         var extenstion = System.IO.Path.GetExtension(file.Name);
         using var formData = new MultipartFormDataContent();
         formData.Add(fileStreamContent);
-        var url = $"http://localhost:7071/api/upload/{Guid.NewGuid().ToString()}{extenstion}/image";
+        var url = $"{Constants.BackendFunctionURL}/api/upload/{Guid.NewGuid().ToString()}{extenstion}/image{Constants.UploadKey}";
         var response = await Http.PostAsync(url, formData);
         if (!response.IsSuccessStatusCode)
         {
