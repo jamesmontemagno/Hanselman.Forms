@@ -5,7 +5,7 @@ namespace Hanselman.Admin.Auth
 #if DEBUG
         public static string BlazorWebsiteURL => "https://6a7046f0.ngrok.io";
 #else
-        public static string BlazorWebsiteURL => "https://127.0.0.1:5001";    
+        public static string BlazorWebsiteURL => "https://hanselmanadmin.z21.web.core.windows.net/";    
 #endif
         public static string AzureFunctionAuthURL => "https://hanselmanforms.azurewebsites.net";
 
