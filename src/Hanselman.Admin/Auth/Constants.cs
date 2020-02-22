@@ -25,7 +25,7 @@ namespace Hanselman.Admin.Auth
         public static string RemoveKey => "?code=0fGDi8Iyr5aHZhDxh7D85L/vL9TPP1E5BjRCk5DBq64aWzyFEtvSVA==";
         public static string UpdateItemKey => "?code=GqBtPqO2a7JHfZkablND0E5jZDzcTJVPK0JJOJaJCqylF8WCa/qAvw==";
         public static string UpdateAllKey => "?code=2ORW6AXso4uqxehej0jN0RzQOFiCVzcbq1AJ30xj54hS2N40aw1f1Q==";
-        public static string UploadKey => "?code=nkpF4s3q4sd9k21O1N7OGgdGOn5UKRU7zy5Xr3h29cIu1tH9C7mAOA=="
+        public static string UploadKey => "?code=nkpF4s3q4sd9k21O1N7OGgdGOn5UKRU7zy5Xr3h29cIu1tH9C7mAOA==";
 #endif
 
         public static string GetFeaturedItemsURL => $"{BackendFunctionURL}/api/GetFeaturedItems{GetKey}";
