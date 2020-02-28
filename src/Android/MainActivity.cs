@@ -1,14 +1,13 @@
 ﻿
 using Android.App;
-using Android.OS;
-using Xamarin.Forms.Platform.Android;
-using Xamarin.Forms;
 using Android.Content.PM;
-using Hanselman;
-using ImageCircle.Forms.Plugin.Droid;
+using Android.OS;
 using Android.Runtime;
-using Shiny;
+using Hanselman;
 using MediaManager;
+using Shiny;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
 
 // haavamoa cheered 1000 August 2, 2019
 // blounty cheered 100 August 16, 2019
@@ -28,12 +27,10 @@ namespace HanselmanAndroid
             TabLayoutResource = Resource.Layout.Tabbar;
             base.OnCreate(bundle);
 
-            Forms.SetFlags("CarouselView_Experimental", "IndicatorView_Experimental");
             Forms.Init(this, bundle);
             FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
             CrossMediaManager.Current.Init(this);
-            ImageCircleRenderer.Init();
             Android.Glide.Forms.Init(this);
             LoadApplication(new App());
         }

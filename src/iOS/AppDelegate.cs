@@ -4,8 +4,6 @@ using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using ImageCircle.Forms.Plugin.iOS;
-using MediaManager.Forms.Platforms.iOS;
 using MediaManager;
 
 namespace Hanselman.iOS
@@ -26,11 +24,9 @@ namespace Hanselman.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            Forms.SetFlags("CarouselView_Experimental", "IndicatorView_Experimental");
             Forms.Init();
             FormsMaterial.Init();
             CrossMediaManager.Current.Init();
-            ImageCircleRenderer.Init();
 
             Shiny.iOSShinyHost.Init(new Startup());
 

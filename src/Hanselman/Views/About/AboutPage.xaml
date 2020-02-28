@@ -74,6 +74,7 @@
                     HeightRequest="150"
                     IsVisible="{Binding HasData}"
                     ItemsSource="{Binding FeaturedItems}"
+                    IndicatorView="IndicatorViewFeaturedItems"
                     PeekAreaInsets="75">
                     <CarouselView.EmptyView>
                         <ActivityIndicator
@@ -120,11 +121,11 @@
                     </CarouselView.ItemTemplate>
                 </CarouselView>
                 <IndicatorView
+                    x:Name="IndicatorViewFeaturedItems"
                     IndicatorsShape="Circle"
                     HorizontalOptions="Center"
                     IndicatorColor="{DynamicResource SystemGray}"
                     IndicatorSize="8"
-                    IndicatorView.ItemsSourceBy="CarouselFeaturedItems"
                     IsVisible="{Binding HasData}"
                     SelectedIndicatorColor="{DynamicResource PrimaryColor}" />
                 <Label
