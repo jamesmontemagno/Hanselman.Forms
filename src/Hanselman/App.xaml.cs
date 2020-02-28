@@ -12,6 +12,7 @@ using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Distribute;
 using System.Threading.Tasks;
 using System;
+using System.Collections.Generic;
 
 // ElectricHavoc cheered 10 March 29, 2019
 // KymPhillpotts cheered 50 March 29, 2019
@@ -30,10 +31,17 @@ namespace Hanselman
         public static bool IsWindows10 { get; set; }
         public App()
         {
+            Xamarin.Forms.Device.SetFlags(new List<string>() {
+                    "StateTriggers_Experimental",
+                    "IndicatorView_Experimental",
+                    "CarouselView_Experimental",
+                    "MediaElement_Experimental"
+                });
+
             InitializeComponent();
 
             Barrel.ApplicationId = AppInfo.PackageName;
-            
+
             ThemeHelper.ChangeTheme(Settings.ThemeOption, true);
 
             if (DeviceInfo.Platform == DevicePlatform.UWP)
@@ -49,7 +57,7 @@ namespace Hanselman
 
         protected override void OnStart()
         {
-            
+
 #if !DEBUG
             AppCenter.Start($"ios={AppCenteriOS};" +
                 $"android={AppCenterAndroid};" +
@@ -66,7 +74,7 @@ namespace Hanselman
         DisplayOrientation currentOrientation = DisplayOrientation.Unknown;
         void DeviceDisplay_MainDisplayInfoChanged(object sender, DisplayInfoChangedEventArgs e)
         {
-            if(DeviceInfo.DeviceType == DeviceType.Virtual)
+            if (DeviceInfo.DeviceType == DeviceType.Virtual)
             {
                 Task.Delay(500).ContinueWith((t) =>
                 {
@@ -75,7 +83,7 @@ namespace Hanselman
                 return;
             }
 
-            SetSpans(e.DisplayInfo);            
+            SetSpans(e.DisplayInfo);
         }
 
         public static event EventHandler<EventArgs>? SpanChanged;

@@ -93,7 +93,8 @@
             <Style x:Key="PickerStyle" TargetType="Picker">
                 <Setter Property="Visual" Value="Material"/>
                 <Setter Property="BackgroundColor" Value="{DynamicResource EntryBackgroundColor}"/>
-                <Setter Property="TextColor" Value="{DynamicResource SystemGray}"/>
+                <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}"/>
+                <Setter Property="TitleColor"  Value="{DynamicResource SystemGray}"/>
             </Style>
 
             <Style x:Key="BaseLabelStyle" TargetType="Label">

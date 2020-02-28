@@ -9,10 +9,8 @@ namespace Hanselman
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            var job = new JobInfo
-            {
-                Identifier = nameof(BackgroundRefreshJob),
-                Type = typeof(BackgroundRefreshJob),
+            var job = new JobInfo(typeof(BackgroundRefreshJob), nameof(BackgroundRefreshJob))
+            { 
                 BatteryNotLow = true,
                 DeviceCharging = true,
                 RequiredInternetAccess = InternetAccess.Unmetered,
