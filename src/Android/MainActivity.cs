@@ -17,7 +17,7 @@ namespace HanselmanAndroid
 {
     [Activity(Label = "@string/app_name",
         Theme="@style/MyTheme",
-        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.UiMode | ConfigChanges.Orientation)]
     public class MainActivity : FormsAppCompatActivity
     {
 

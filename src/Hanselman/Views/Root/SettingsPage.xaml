@@ -51,7 +51,9 @@
                             <Picker
                                 ItemsSource="{Binding ThemeOptions}"
                                 SelectedIndex="{Binding SelectedTheme}"
-                                Style="{DynamicResource PickerStyle}" />
+                                Style="{DynamicResource PickerStyle}"
+                                Visual="{OnPlatform Android=Default, Default=Material}">
+                            </Picker>
                         </StackLayout>
                     </Frame>
                     <BoxView
