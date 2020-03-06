@@ -227,7 +227,7 @@
       <Version>3.0.0</Version>
     </PackageReference>
     <PackageReference Include="MonkeyCache.FileStore">
-      <Version>1.3.1-beta</Version>
+      <Version>1.4.0-beta</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Plugin.MediaManager.Forms" Version="0.9.6" />
@@ -240,13 +240,13 @@
     <PackageReference Include="System.Json">
       <Version>4.7.0</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
     <PackageReference Include="Xamarin.Forms.PancakeView">
       <Version>1.3.7</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.379-pre1" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.5.0.356</Version>
+      <Version>4.6.0.379-pre1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

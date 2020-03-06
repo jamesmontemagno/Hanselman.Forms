@@ -4,16 +4,16 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:viewmodel="clr-namespace:Hanselman.ViewModels"
-    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     ios:Page.ModalPresentationStyle="FormSheet"
-    Shell.PresentationMode="ModalNotAnimated"
-    mc:Ignorable="d"
+    x:DataType="viewmodel:PodcastEpisodeViewModel"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
-    x:DataType="viewmodel:PodcastEpisodeViewModel">
+    Shell.PresentationMode="ModalNotAnimated"
+    mc:Ignorable="d">
     <d:ContentPage.BindingContext>
         <viewmodel:PodcastEpisodeViewModel Title="Hanselminute">
             <x:Arguments>
@@ -30,8 +30,8 @@
     <ContentPage.Content>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="90"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="1" />
             </Grid.RowDefinitions>
             <ScrollView>
                 <Grid RowSpacing="0">
@@ -41,59 +41,57 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <pancake:PancakeView
-                    Padding="{OnPlatform iOS='0,40,0,33', Default='0,0,0,33'}"
-                    d:BackgroundColor="{StaticResource PrimaryColor}"
-                    BackgroundColor="{OnPlatform UWP={StaticResource PrimaryColor},
-                                                 Default=Transparent}"
-                    BackgroundGradientEndColor="{StaticResource WindowBackgroundColor}"
-                    BackgroundGradientStartColor="{StaticResource PrimaryColor}">
+                        Padding="{OnPlatform iOS='0,40,0,33',
+                                             Default='0,0,0,33'}"
+                        BackgroundGradientEndColor="{DynamicResource WindowBackgroundColor}"
+                        BackgroundGradientStartColor="{DynamicResource PrimaryColor}">
                         <StackLayout
-                        Padding="16"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="Start">
+                            Padding="16"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Start">
                             <Button
-                            x:Name="ButtonClose"
-                            Clicked="ButtonClose_Clicked"
-                            HorizontalOptions="End"
-                            Style="{DynamicResource CloseButtonStyle}"
-                            Text="Close" />
+                                x:Name="ButtonClose"
+                                Clicked="ButtonClose_Clicked"
+                                HorizontalOptions="End"
+                                Style="{DynamicResource CloseButtonStyle}"
+                                Text="Close" />
                             <Frame
-                            Grid.RowSpan="3"
-                            Padding="0"
-                            CornerRadius="10"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Style="{DynamicResource FrameStyle}">
+                                Grid.RowSpan="3"
+                                Padding="0"
+                                CornerRadius="10"
+                                HorizontalOptions="Center"
+                                Style="{DynamicResource FrameStyle}"
+                                VerticalOptions="Center">
                                 <Image
-                                Aspect="AspectFill"
-                                AutomationProperties.IsInAccessibleTree="True"
-                                AutomationProperties.Name="Podcast Artwork"
-                                HeightRequest="125"
-                                Source="{Binding Episode.ArtworkUrl}"
-                                WidthRequest="125" />
+                                    Aspect="AspectFill"
+                                    AutomationProperties.IsInAccessibleTree="True"
+                                    AutomationProperties.Name="Podcast Artwork"
+                                    HeightRequest="125"
+                                    Source="{Binding Episode.ArtworkUrl}"
+                                    WidthRequest="125" />
                             </Frame>
                             <Label
-                            d:Text="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
-                            FontAttributes="Bold"
-                            Style="{DynamicResource LargeLabelStyle}"
-                            TextColor="White"
-                            HorizontalTextAlignment="Center"
-                            Text="{Binding Episode.Title}" />
+                                d:Text="Inside a Tribe of Hackers with cryptographer Marcus J Carey"
+                                FontAttributes="Bold"
+                                HorizontalTextAlignment="Center"
+                                Style="{DynamicResource LargeLabelStyle}"
+                                Text="{Binding Episode.Title}"
+                                TextColor="White" />
                             <Label
-                            d:Text="Hanselminutes"
-                            AutomationProperties.HelpText="Name of the podcast"
-                            Style="{DynamicResource MediumLabelStyle}"
-                            HorizontalTextAlignment="Center"
-                            Text="{Binding Title}" />
+                                d:Text="Hanselminutes"
+                                AutomationProperties.HelpText="Name of the podcast"
+                                HorizontalTextAlignment="Center"
+                                Style="{DynamicResource MediumLabelStyle}"
+                                Text="{Binding Title}" />
                         </StackLayout>
                     </pancake:PancakeView>
 
-                    
+
                     <Grid
-                    Grid.Row="1"
-                    Padding="10,5"
-                    ColumnSpacing="0"
-                    RowSpacing="5">
+                        Grid.Row="1"
+                        Padding="10,5"
+                        ColumnSpacing="0"
+                        RowSpacing="5">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="24*" />
                             <ColumnDefinition Width="24*" />
@@ -102,8 +100,8 @@
                             <ColumnDefinition Width="24*" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            
+                            <RowDefinition Height="Auto" />
+
                             <RowDefinition Height="Auto" />
                             <!--  Buttons  -->
                             <RowDefinition Height="Auto" />
@@ -115,84 +113,93 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <ImageButton
+                            x:Name="PlayPauseButton"
+                            Grid.Column="2"
                             Margin="20,-33,20,0"
                             Padding="8"
                             BackgroundColor="White"
-                            Command="{Binding PlayPodcastCommand}"
+                            Clicked="PlayPauseButton_Clicked"
                             CornerRadius="33"
                             HeightRequest="66"
                             HorizontalOptions="Center"
+                            Source="{StaticResource PlayIcon}"
                             Visual="Material"
-                            WidthRequest="66"
-                        Grid.Column="2">
+                            WidthRequest="66">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="PlaybackStates">
+                                    <VisualState Name="paused">
+                                        <VisualState.Setters>
+                                            <Setter Property="Source" Value="{StaticResource PlayIcon}" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState Name="playing">
+                                        <VisualState.Setters>
+                                            <Setter Property="Source" Value="{StaticResource PauseIcon}" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </ImageButton>
+                        <ImageButton
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            d:BackgroundColor=""
+                            BackgroundColor="Transparent"
+                            HeightRequest="24"
+                            WidthRequest="24">
                             <ImageButton.Source>
                                 <FontImageSource
                                     FontFamily="{DynamicResource MaterialFontFamily}"
-                                    Glyph="{StaticResource IconPlay}"
-                                    Size="15"
+                                    Glyph="{StaticResource IconDownload}"
                                     Color="{StaticResource PrimaryColor}" />
                             </ImageButton.Source>
                         </ImageButton>
+
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Margin="0,-5,0,0"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            Style="{DynamicResource MicroLabelStyle}"
+                            Text="Download" />
+
                         <ImageButton
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        d:BackgroundColor=""
-                        BackgroundColor="Transparent"
-                        HeightRequest="24"
-                        WidthRequest="24">
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            d:BackgroundColor=""
+                            BackgroundColor="Transparent"
+                            HeightRequest="24"
+                            WidthRequest="24">
                             <ImageButton.Source>
                                 <FontImageSource
-                                FontFamily="{DynamicResource MaterialFontFamily}"
-                                Glyph="{StaticResource IconDownload}"
-                                Color="{StaticResource PrimaryColor}" />
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{StaticResource IconUpNext}"
+                                    Color="{StaticResource PrimaryColor}" />
                             </ImageButton.Source>
                         </ImageButton>
 
                         <Label
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        Margin="0,-5,0,0"
-                        Style="{DynamicResource MicroLabelStyle}"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        Text="Download" />
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="0,-5,0,0"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            Style="{DynamicResource MicroLabelStyle}"
+                            Text="Up Next" />
 
                         <ImageButton
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        d:BackgroundColor=""
-                        BackgroundColor="Transparent"
-                        HeightRequest="24"
-                        WidthRequest="24">
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            d:BackgroundColor=""
+                            BackgroundColor="Transparent"
+                            HeightRequest="24"
+                            WidthRequest="24">
                             <ImageButton.Source>
                                 <FontImageSource
-                                FontFamily="{DynamicResource MaterialFontFamily}"
-                                Glyph="{StaticResource IconUpNext}"
-                                Color="{StaticResource PrimaryColor}" />
-                            </ImageButton.Source>
-                        </ImageButton>
-
-                        <Label
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        Margin="0,-5,0,0"
-                        Style="{DynamicResource MicroLabelStyle}"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        Text="Up Next" />
-
-                        <ImageButton
-                        Grid.Row="0"
-                        Grid.Column="3"
-                        d:BackgroundColor=""
-                        BackgroundColor="Transparent"
-                        HeightRequest="24"
-                        WidthRequest="24">
-                            <ImageButton.Source>
-                                <FontImageSource
-                                FontFamily="{DynamicResource MaterialFontFamily}"
-                                Glyph="{StaticResource IconMarkPlayed}"
-                                Color="{StaticResource PrimaryColor}" />
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{StaticResource IconMarkPlayed}"
+                                    Color="{StaticResource PrimaryColor}" />
                             </ImageButton.Source>
                         </ImageButton>
 
@@ -200,85 +207,89 @@
                             Grid.Row="1"
                             Grid.Column="3"
                             Margin="0,-5,0,0"
-                            Style="{DynamicResource MicroLabelStyle}"
                             HorizontalOptions="Center"
                             HorizontalTextAlignment="Center"
+                            Style="{DynamicResource MicroLabelStyle}"
                             Text="Mark Played" />
 
                         <ImageButton
-                        Grid.Row="0"
-                        Grid.Column="4"
-                        d:BackgroundColor=""
-                        BackgroundColor="Transparent"
-                        HeightRequest="24"
-                        WidthRequest="24">
+                            Grid.Row="0"
+                            Grid.Column="4"
+                            d:BackgroundColor=""
+                            BackgroundColor="Transparent"
+                            HeightRequest="24"
+                            WidthRequest="24">
                             <ImageButton.Source>
                                 <FontImageSource
-                                FontFamily="{DynamicResource MaterialFontFamily}"
-                                Glyph="{StaticResource IconArchived}"
-                                Color="{StaticResource PrimaryColor}" />
+                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    Glyph="{StaticResource IconArchived}"
+                                    Color="{StaticResource PrimaryColor}" />
                             </ImageButton.Source>
                         </ImageButton>
                         <Label
-                        Grid.Row="1"
-                        Grid.Column="4"
-                        Margin="0,-5,0,0"
-                        Style="{DynamicResource MicroLabelStyle}"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        Text="Archive" />
+                            Grid.Row="1"
+                            Grid.Column="4"
+                            Margin="0,-5,0,0"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            Style="{DynamicResource MicroLabelStyle}"
+                            Text="Archive" />
 
                         <ProgressBar
                             Grid.Row="2"
                             Grid.ColumnSpan="5"
                             Margin="-10,10"
-                            Visual="Material"
-                            HorizontalOptions="FillAndExpand" />
+                            HorizontalOptions="FillAndExpand"
+                            Visual="Material" 
+                            x:Name="ProgressBarProgress"/>
 
                         <Label
-                        Grid.Row="3"
-                        Grid.ColumnSpan="2"
-                        Style="{DynamicResource SmallLabelStyle}"
-                        Text="{Binding Episode.Date}" />
+                            Grid.Row="3"
+                            Grid.ColumnSpan="2"
+                            Style="{DynamicResource SmallLabelStyle}"
+                            Text="{Binding Episode.Date}" />
 
                         <Label
-                        Grid.Row="3"
-                        Grid.Column="3"
-                        Grid.ColumnSpan="2"
-                        Style="{DynamicResource SmallLabelStyle}"
-                        HorizontalOptions="End"
-                        Text="{Binding Episode.Duration}" />
+                            x:Name="LabelTimeRemaining"
+                            Grid.Row="3"
+                            Grid.Column="2"
+                            Grid.ColumnSpan="3"
+                            HorizontalOptions="End"
+                            Style="{DynamicResource SmallLabelStyle}"
+                            Text="{Binding Episode.Duration}" />
 
                         <Label
-                        Grid.Row="4"
-                        Grid.ColumnSpan="5"
-                        Margin="0,5,0,0"
-                        Style="{DynamicResource MediumLabelStyle}"
-                        Text="{Binding Episode.Description}" />
+                            Grid.Row="4"
+                            Grid.ColumnSpan="5"
+                            Margin="0,5,0,0"
+                            Style="{DynamicResource MediumLabelStyle}"
+                            Text="{Binding Episode.Description}" />
                     </Grid>
                     <ActivityIndicator
-                    Grid.Row="1"
-                    d:IsRunning="True"
-                    d:IsVisible="False"
-                    HorizontalOptions="CenterAndExpand"
-                    IsRunning="{Binding IsBusy}"
-                    IsVisible="{Binding IsBusy}"
-                    VerticalOptions="CenterAndExpand"
-                    Visual="Material"
-                    Color="{StaticResource AccentColor}" />
+                        Grid.Row="1"
+                        d:IsRunning="True"
+                        d:IsVisible="False"
+                        HorizontalOptions="CenterAndExpand"
+                        IsRunning="{Binding IsBusy}"
+                        IsVisible="{Binding IsBusy}"
+                        VerticalOptions="CenterAndExpand"
+                        Visual="Material"
+                        Color="{StaticResource AccentColor}" />
                 </Grid>
             </ScrollView>
 
 
 
 
-            <MediaElement  Grid.Row="1"
-                           HorizontalOptions="FillAndExpand"
-                           Source="{Binding Episode.Mp3Url}"
-                           ShowsPlaybackControls="True"
-                           AutoPlay="False"
-                           IsVisible="True"
-                           BackgroundColor="{DynamicResource WindowBackgroundColor}"/>
+            <MediaElement
+                x:Name="MediaElementAudio"
+                Grid.Row="1"
+                AutoPlay="False"
+                BackgroundColor="{DynamicResource WindowBackgroundColor}"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="True"
+                ShowsPlaybackControls="False"
+                Source="{Binding Episode.Mp3Url}"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

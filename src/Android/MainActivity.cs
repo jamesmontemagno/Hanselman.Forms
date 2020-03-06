@@ -1,9 +1,11 @@
 ﻿
 using Android.App;
 using Android.Content.PM;
+using Android.Content.Res;
 using Android.OS;
 using Android.Runtime;
 using Hanselman;
+using Hanselman.Styles;
 using MediaManager;
 using Shiny;
 using Xamarin.Forms;
@@ -40,6 +42,13 @@ namespace HanselmanAndroid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             AndroidShinyHost.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        public override void OnConfigurationChanged(Configuration newConfig)
+        {
+            base.OnConfigurationChanged(newConfig);
+
+            ThemeHelper.ChangeTheme(Hanselman.Helpers.Settings.ThemeOption, true);
         }
 
     }

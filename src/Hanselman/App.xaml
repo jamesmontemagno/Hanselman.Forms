@@ -53,6 +53,7 @@
             <!--Icons-->
             <x:String x:Key="IconPlayCircleOutline">&#xf05a;</x:String>
             <x:String x:Key="IconPlay">&#xf40a;</x:String>
+            <x:String x:Key="IconPause">&#xf3e4;</x:String>
             <x:String x:Key="IconDownload">&#xf1da;</x:String>
             <x:String x:Key="IconUpNext">&#xfb8d;</x:String>
             <x:String x:Key="IconMarkPlayed">&#xf134;</x:String>
@@ -64,12 +65,28 @@
             <x:String x:Key="IconMedia">&#xf40b;</x:String>
             <x:String x:Key="IconSettings">&#xf8ba;</x:String>
             <x:String x:Key="IconBlog">&#xf46b;</x:String>
+            
+            
 
             <x:Int32 x:Key="CloseButtonBorderWidth">0</x:Int32>
 
             <x:Int32 x:Key="BlogSpan">1</x:Int32>
             <x:Int32 x:Key="VideoSpan">1</x:Int32>
-            
+
+            <FontImageSource
+                x:Key="PlayIcon"
+                FontFamily="{DynamicResource MaterialFontFamily}"
+                Glyph="{StaticResource IconPlay}"
+                Size="15"
+                Color="{StaticResource PrimaryColor}"/>
+
+            <FontImageSource
+                x:Key="PauseIcon"
+                FontFamily="{DynamicResource MaterialFontFamily}"
+                Glyph="{StaticResource IconPause}"
+                Size="15"
+                Color="{StaticResource PrimaryColor}"/>
+
             <!--Control Themeing-->
 
             <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
