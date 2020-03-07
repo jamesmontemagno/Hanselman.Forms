@@ -6,7 +6,6 @@ using Android.OS;
 using Android.Runtime;
 using Hanselman;
 using Hanselman.Styles;
-using MediaManager;
 using Shiny;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -32,7 +31,6 @@ namespace HanselmanAndroid
             Forms.Init(this, bundle);
             FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
-            CrossMediaManager.Current.Init(this);
             Android.Glide.Forms.Init(this);
             LoadApplication(new App());
         }

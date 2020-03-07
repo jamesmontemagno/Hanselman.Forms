@@ -117,7 +117,7 @@
                             Grid.Column="2"
                             Margin="20,-33,20,0"
                             Padding="8"
-                            BackgroundColor="White"
+                            BackgroundColor="{DynamicResource WindowBackgroundColor}"
                             Clicked="PlayPauseButton_Clicked"
                             CornerRadius="33"
                             HeightRequest="66"

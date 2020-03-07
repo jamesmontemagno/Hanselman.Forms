@@ -230,7 +230,6 @@
       <Version>1.4.0-beta</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.9.6" />
     <PackageReference Include="Refractored.MvvmHelpers">
       <Version>1.6.1-beta</Version>
     </PackageReference>

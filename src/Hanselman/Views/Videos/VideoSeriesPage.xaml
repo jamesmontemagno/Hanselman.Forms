@@ -21,7 +21,7 @@
         Style="{DynamicResource RefreshViewStyle}">
         <CollectionView
             x:Name="CollectionViewVideos"
-            BackgroundColor="{StaticResource WindowBackgroundColor}"
+            BackgroundColor="{DynamicResource WindowBackgroundColor}"
             ItemsSource="{Binding Episodes}"
             ItemSizingStrategy="MeasureAllItems"
             SelectionChanged="CollectionViewVideos_SelectionChanged"

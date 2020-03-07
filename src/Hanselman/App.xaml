@@ -64,9 +64,10 @@
             <x:String x:Key="IconTwitter">&#xf544;</x:String>
             <x:String x:Key="IconMedia">&#xf40b;</x:String>
             <x:String x:Key="IconSettings">&#xf8ba;</x:String>
-            <x:String x:Key="IconBlog">&#xf46b;</x:String>
-            
-            
+            <x:String x:Key="IconBlog">&#xf46b;</x:String> >
+            <x:String x:Key="IconClose">&#xf156;</x:String>
+
+
 
             <x:Int32 x:Key="CloseButtonBorderWidth">0</x:Int32>
 
@@ -84,6 +85,13 @@
                 x:Key="PauseIcon"
                 FontFamily="{DynamicResource MaterialFontFamily}"
                 Glyph="{StaticResource IconPause}"
+                Size="15"
+                Color="{StaticResource PrimaryColor}"/>
+
+            <FontImageSource
+                x:Key="CloseIcon"
+                FontFamily="{DynamicResource MaterialFontFamily}"
+                Glyph="{StaticResource IconClose}"
                 Size="15"
                 Color="{StaticResource PrimaryColor}"/>
 
