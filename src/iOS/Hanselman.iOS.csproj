@@ -140,7 +140,6 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\Environment.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Renderers\DefaultPageRenderer.cs" />
@@ -247,6 +246,9 @@
     <PackageReference Include="Xamarin.Forms.Visual.Material">
       <Version>4.6.0.379-pre1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

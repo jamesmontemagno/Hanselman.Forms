@@ -4,7 +4,6 @@ using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-using MediaManager;
 
 namespace Hanselman.iOS
 {
@@ -26,7 +25,6 @@ namespace Hanselman.iOS
         {
             Forms.Init();
             FormsMaterial.Init();
-            CrossMediaManager.Current.Init();
 
             Shiny.iOSShinyHost.Init(new Startup());
 

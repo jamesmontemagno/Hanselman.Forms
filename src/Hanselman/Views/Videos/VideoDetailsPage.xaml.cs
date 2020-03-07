@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
@@ -41,7 +42,7 @@ namespace Hanselman.Views
             inactivityTimer.Start();
         }
 
-        protected override void OnDisappearing()
+        protected override async void OnDisappearing()
         {
             base.OnDisappearing();
             var current = MediaElementVideo.Position.Ticks;
@@ -49,6 +50,8 @@ namespace Hanselman.Views
             MediaElementVideo.Stop();
             inactivityTimer.Elapsed -= OnInactivityTimerElapsed;
             inactivityTimer.Stop();
+            if (Navigation.ModalStack.Any())
+                await Navigation.PopModalAsync();
         }
 
         async void OnInactivityTimerElapsed(object sender, ElapsedEventArgs e)

@@ -7,7 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     Title="{Binding Title}"
+    ios:Page.ModalPresentationStyle="FormSheet"
     x:DataType="viewmodels:VideoDetailsViewModel"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Shell.NavBarIsVisible="true"
@@ -19,10 +21,11 @@
             </x:Arguments>
         </viewmodels:VideoDetailsViewModel>
     </d:ContentPage.BindingContext>
-    <Grid CascadeInputTransparent="True">
+    <Grid>
         <Grid.GestureRecognizers>
             <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
         </Grid.GestureRecognizers>
+
         <MediaElement
             x:Name="MediaElementVideo"
             Aspect="AspectFit"
@@ -32,10 +35,11 @@
             MediaOpened="MediaElementVideo_MediaOpened"
             ShowsPlaybackControls="True"
             Source="{Binding VideoUrl}"
-            VerticalOptions="FillAndExpand" />
+            VerticalOptions="FillAndExpand">
+        </MediaElement>
 
         <ImageButton Clicked="Button_Clicked"
-                     Margin="12"
+                     Margin="{OnPlatform iOS=36, Default=12}"
                      BackgroundColor="{DynamicResource WindowBackgroundColor}"
                      CornerRadius="15"
                      WidthRequest="30"

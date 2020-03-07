@@ -42,8 +42,6 @@ namespace Hanselman
 
             Barrel.ApplicationId = AppInfo.PackageName;
 
-            ThemeHelper.ChangeTheme(Settings.ThemeOption, true);
-
             if (DeviceInfo.Platform == DevicePlatform.UWP)
                 MainPage = new HomePage();
             else
@@ -111,6 +109,7 @@ namespace Hanselman
             // Handle when your app resumes
             DeviceDisplay.MainDisplayInfoChanged += DeviceDisplay_MainDisplayInfoChanged;
             SetSpans(DeviceDisplay.MainDisplayInfo);
+            ThemeHelper.ChangeTheme(Settings.ThemeOption, true);
         }
     }
 }

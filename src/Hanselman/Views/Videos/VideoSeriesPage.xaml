@@ -41,6 +41,7 @@
                             CornerRadius="15"
                             HeightRequest="{Binding Source={RelativeSource Self}, Path=WidthRequest}"
                             IsClippedToBounds="True"
+                            InputTransparent="True"
                             Style="{DynamicResource FrameStyle}">
                             <Grid>
                                 <Grid.RowDefinitions>

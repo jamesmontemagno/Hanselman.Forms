@@ -11,29 +11,6 @@ namespace HanselmanAndroid.Helpers
 {
     public class Environment : IEnvironment
     {
-        public Theme GetOSTheme()
-        {
-            //Ensure the device is running Android Froyo or higher because UIMode was added in Android Froyo, API 8.0
-            if (Build.VERSION.SdkInt >= BuildVersionCodes.Froyo)
-            {
-                var uiModelFlags = Android.App.Application.Context.Resources.Configuration.UiMode & UiMode.NightMask;
-
-                switch (uiModelFlags)
-                {
-                    case UiMode.NightYes:
-                        return Theme.Dark;
-                    case UiMode.NightNo:
-                        return Theme.Light;
-                    default:
-                        throw new NotSupportedException($"UiMode {uiModelFlags} not supported");
-                }
-            }
-            else
-            {
-                return Theme.Light;
-            }
-        }
-
         public void SetStatusBarColor(System.Drawing.Color color, bool darkStatusBarTint)
         {
             if (Build.VERSION.SdkInt < Android.OS.BuildVersionCodes.Lollipop)
