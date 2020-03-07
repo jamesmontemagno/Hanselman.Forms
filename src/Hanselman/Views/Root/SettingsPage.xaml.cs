@@ -22,8 +22,10 @@ namespace Hanselman.Views
         protected override async void OnDisappearing()
         {
             base.OnDisappearing();
+#if !DEBUG
             if (Navigation.ModalStack.Any())
                 await Navigation.PopModalAsync();
+#endif
         }
     }
 }

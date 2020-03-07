@@ -11,6 +11,9 @@
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     ios:Page.UseSafeArea="True"
+    Title="{Binding Podcast.Title}"
+    NavigationPage.BackButtonTitle=""
+    S
     x:DataType="viewmodels:PodcastDetailsViewModel"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Shell.NavBarIsVisible="{OnPlatform iOS=true,

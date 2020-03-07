@@ -50,8 +50,10 @@ namespace Hanselman.Views
             MediaElementVideo.Stop();
             inactivityTimer.Elapsed -= OnInactivityTimerElapsed;
             inactivityTimer.Stop();
+#if !DEBUG
             if (Navigation.ModalStack.Any())
                 await Navigation.PopModalAsync();
+#endif
         }
 
         async void OnInactivityTimerElapsed(object sender, ElapsedEventArgs e)

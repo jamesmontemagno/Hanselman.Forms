@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Timers;
 using Hanselman.Models;
 using Hanselman.ViewModels;
@@ -41,12 +42,17 @@ namespace Hanselman.Views
             await Navigation.PopModalAsync();
         }
 
-        protected override void OnDisappearing()
+        protected override async void OnDisappearing()
         {
             base.OnDisappearing();
             MediaElementAudio.StateRequested -= MediaElementAudio_StateRequested;
             if (MediaElementAudio.CurrentState == MediaElementState.Playing)
                 Stop();
+
+#if !DEBUG
+            if (Navigation.ModalStack.Any())
+                await Navigation.PopModalAsync();
+#endif
         } 
         
         void Start()

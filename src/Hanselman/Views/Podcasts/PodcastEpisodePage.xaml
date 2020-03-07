@@ -124,7 +124,9 @@
                             HorizontalOptions="Center"
                             Source="{StaticResource PlayIcon}"
                             Visual="Material"
-                            WidthRequest="66">
+                            WidthRequest="66"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit">
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup Name="PlaybackStates">
                                     <VisualState Name="paused">
@@ -145,6 +147,9 @@
                             Grid.Column="0"
                             d:BackgroundColor=""
                             BackgroundColor="Transparent"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit"
                             HeightRequest="24"
                             WidthRequest="24">
                             <ImageButton.Source>
@@ -170,7 +175,10 @@
                             d:BackgroundColor=""
                             BackgroundColor="Transparent"
                             HeightRequest="24"
-                            WidthRequest="24">
+                            WidthRequest="24"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit">
                             <ImageButton.Source>
                                 <FontImageSource
                                     FontFamily="{DynamicResource MaterialFontFamily}"
@@ -194,7 +202,10 @@
                             d:BackgroundColor=""
                             BackgroundColor="Transparent"
                             HeightRequest="24"
-                            WidthRequest="24">
+                            WidthRequest="24"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit">
                             <ImageButton.Source>
                                 <FontImageSource
                                     FontFamily="{DynamicResource MaterialFontFamily}"
@@ -218,7 +229,10 @@
                             d:BackgroundColor=""
                             BackgroundColor="Transparent"
                             HeightRequest="24"
-                            WidthRequest="24">
+                            WidthRequest="24"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit">
                             <ImageButton.Source>
                                 <FontImageSource
                                     FontFamily="{DynamicResource MaterialFontFamily}"
@@ -238,6 +252,7 @@
                         <ProgressBar
                             Grid.Row="2"
                             Grid.ColumnSpan="5"
+                            HeightRequest="5"
                             Margin="-10,10"
                             HorizontalOptions="FillAndExpand"
                             Visual="Material" 
