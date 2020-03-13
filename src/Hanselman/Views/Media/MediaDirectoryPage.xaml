@@ -8,6 +8,7 @@
              xmlns:models="clr-namespace:Hanselman.Models"
              xmlns:images="clr-namespace:Hanselman.Images"
              mc:Ignorable="d"
+             NavigationPage.BackButtonTitle=""
              Title="Media"
              x:Class="Hanselman.Views.MediaDirectoryPage"
              BackgroundColor="{DynamicResource WindowBackgroundColor}">

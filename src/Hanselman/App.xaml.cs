@@ -3,7 +3,6 @@ using Hanselman.Views;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using MonkeyCache.FileStore;
-using MediaManager;
 using Hanselman.Helpers;
 using Hanselman.Styles;
 using Microsoft.AppCenter;
@@ -22,6 +21,7 @@ using System.Collections.Generic;
 // ClintonRocksmith cheered 1000 October 4th, 2019
 // LotanB cheered 200 October 10, 2019
 // mjfreelancing cheered 250 October 18, 2019
+// Instafluff raided with 60 people on March 6 2020
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Hanselman
@@ -41,8 +41,6 @@ namespace Hanselman
             InitializeComponent();
 
             Barrel.ApplicationId = AppInfo.PackageName;
-
-            ThemeHelper.ChangeTheme(Settings.ThemeOption, true);
 
             if (DeviceInfo.Platform == DevicePlatform.UWP)
                 MainPage = new HomePage();
@@ -66,8 +64,6 @@ namespace Hanselman
                 typeof(Crashes),
                 typeof(Distribute));
 #endif
-            // Handle when your app starts
-            CrossMediaManager.Current.PositionChanged += PlaybackPositionChanged;
             OnResume();
         }
 
@@ -102,15 +98,6 @@ namespace Hanselman
             SpanChanged?.Invoke(null, EventArgs.Empty);
         }
 
-        void PlaybackPositionChanged(object sender, MediaManager.Playback.PositionChangedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(Settings.PlaybackId) || !CrossMediaManager.Current.IsPlaying())
-                return;
-
-            var current = e.Position.Ticks;
-            Settings.SavePlaybackPosition(Settings.PlaybackId, current);
-        }
-
         protected override void OnSleep()
         {
             // Handle when your app sleeps
@@ -122,6 +109,7 @@ namespace Hanselman
             // Handle when your app resumes
             DeviceDisplay.MainDisplayInfoChanged += DeviceDisplay_MainDisplayInfoChanged;
             SetSpans(DeviceDisplay.MainDisplayInfo);
+            ThemeHelper.ChangeTheme(Settings.ThemeOption, true);
         }
     }
 }

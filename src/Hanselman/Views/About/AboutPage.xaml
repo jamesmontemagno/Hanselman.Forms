@@ -75,6 +75,7 @@
                     IsVisible="{Binding HasData}"
                     ItemsSource="{Binding FeaturedItems}"
                     IndicatorView="IndicatorViewFeaturedItems"
+                    HorizontalScrollBarVisibility="Never"
                     PeekAreaInsets="75">
                     <CarouselView.EmptyView>
                         <ActivityIndicator

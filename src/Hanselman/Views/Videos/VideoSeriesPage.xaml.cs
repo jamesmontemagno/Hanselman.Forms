@@ -59,11 +59,12 @@ namespace Hanselman.Views
 
 
 
+
         async void CollectionViewVideos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (e.CurrentSelection.FirstOrDefault() is VideoFeedItem item && item != null)
             {
-                await Navigation.PushAsync(new VideoDetailsPage(item));
+                await Navigation.PushModalAsync(new VideoDetailsPage(item));
                 ((CollectionView)sender).SelectedItem = null;
             }
         }

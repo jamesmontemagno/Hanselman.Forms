@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Hanselman.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,6 +17,15 @@ namespace Hanselman.Views
         private async void Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
+        }
+
+        protected override async void OnDisappearing()
+        {
+            base.OnDisappearing();
+#if !DEBUG
+            if (Navigation.ModalStack.Any())
+                await Navigation.PopModalAsync();
+#endif
         }
     }
 }

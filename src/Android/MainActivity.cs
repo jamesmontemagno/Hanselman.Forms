@@ -1,10 +1,11 @@
 ﻿
 using Android.App;
 using Android.Content.PM;
+using Android.Content.Res;
 using Android.OS;
 using Android.Runtime;
 using Hanselman;
-using MediaManager;
+using Hanselman.Styles;
 using Shiny;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -30,7 +31,6 @@ namespace HanselmanAndroid
             Forms.Init(this, bundle);
             FormsMaterial.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
-            CrossMediaManager.Current.Init(this);
             Android.Glide.Forms.Init(this);
             LoadApplication(new App());
         }
@@ -40,6 +40,13 @@ namespace HanselmanAndroid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             AndroidShinyHost.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        public override void OnConfigurationChanged(Configuration newConfig)
+        {
+            base.OnConfigurationChanged(newConfig);
+
+            ThemeHelper.ChangeTheme(Hanselman.Helpers.Settings.ThemeOption, true);
         }
 
     }

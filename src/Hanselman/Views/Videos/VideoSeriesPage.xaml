@@ -21,7 +21,7 @@
         Style="{DynamicResource RefreshViewStyle}">
         <CollectionView
             x:Name="CollectionViewVideos"
-            BackgroundColor="{StaticResource WindowBackgroundColor}"
+            BackgroundColor="{DynamicResource WindowBackgroundColor}"
             ItemsSource="{Binding Episodes}"
             ItemSizingStrategy="MeasureAllItems"
             SelectionChanged="CollectionViewVideos_SelectionChanged"
@@ -41,6 +41,7 @@
                             CornerRadius="15"
                             HeightRequest="{Binding Source={RelativeSource Self}, Path=WidthRequest}"
                             IsClippedToBounds="True"
+                            InputTransparent="True"
                             Style="{DynamicResource FrameStyle}">
                             <Grid>
                                 <Grid.RowDefinitions>

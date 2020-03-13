@@ -94,7 +94,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\Environment.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -167,26 +166,25 @@
       <Version>6.2.9</Version>
     </PackageReference>
     <PackageReference Include="MonkeyCache.FileStore">
-      <Version>1.3.1-beta</Version>
+      <Version>1.4.0-beta</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.9.6" />
     <PackageReference Include="Refractored.MvvmHelpers">
       <Version>1.6.1-beta</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Core">
-      <Version>1.0.0.1182</Version>
+      <Version>1.1.0.1449</Version>
     </PackageReference>
     <PackageReference Include="System.Json">
       <Version>4.7.0</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
     <PackageReference Include="Xamarin.Forms.PancakeView">
       <Version>1.3.7</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.379-pre1" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.5.0.356</Version>
+      <Version>4.6.0.379-pre1</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

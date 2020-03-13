@@ -29,6 +29,8 @@
         public const string PauseCircleOutline = "\uf3e6";
         public const string Pinterest = "\uf407";
         public const string PinterestBox = "\uf408";
+        public const string Play = "\uf40a";
+        public const string Pause = "\uf3e4";
         public const string PlayCircleOutline = "\uf40d";
         public const string Plus = "\uf415";
         public const string PlusBox = "\uf416";

@@ -1,6 +1,7 @@
 ﻿using Hanselman.Helpers;
 using Hanselman.Interfaces;
 using Hanselman.Models;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Hanselman.Styles
@@ -18,10 +19,9 @@ namespace Hanselman.Styles
             //// clear all the resources
             var applicationResourceDictionary = Application.Current.Resources;
             ResourceDictionary newTheme;
-            var environment = DependencyService.Get<IEnvironment>();
             if (theme == Theme.Default)            {
                 
-                theme = environment?.GetOSTheme() ?? Theme.Light;
+                theme = AppInfo.RequestedTheme == AppTheme.Dark ? Theme.Dark : Theme.Light;
             }
 
             switch (theme)
@@ -43,6 +43,8 @@ namespace Hanselman.Styles
             CurrentTheme = theme;
 
             var background = (Color)App.Current.Resources["WindowBackgroundColor"];
+
+            var environment = DependencyService.Get<IEnvironment>(); 
             environment?.SetStatusBarColor(background, theme != Theme.Dark);
         }
 
