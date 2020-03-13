@@ -26,7 +26,7 @@
             <Tab.Icon>
                 <FontImageSource
                     Glyph="{StaticResource IconAbout}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}" />
             </Tab.Icon>
             <ShellContent Route="about" Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
         </Tab>
@@ -34,7 +34,7 @@
             <Tab.Icon>
                 <FontImageSource
                     Glyph="{StaticResource IconBlog}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}" />
             </Tab.Icon>
             <ShellContent Route="blog" Title="Blog" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
         </Tab>
@@ -42,7 +42,7 @@
             <Tab.Icon>
                 <FontImageSource
                     Glyph="{StaticResource IconTwitter}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}" />
             </Tab.Icon>
             <ShellContent Route="tweets" Title="Tweets" ContentTemplate="{DataTemplate views:TwitterPage}"/>
         </Tab>
@@ -50,7 +50,7 @@
             <Tab.Icon>
                 <FontImageSource
                     Glyph="{StaticResource IconMedia}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}" />
             </Tab.Icon>
             <ShellContent Route="media" Title="Media" ContentTemplate="{DataTemplate views:MediaDirectoryPage}"/>
         </Tab>

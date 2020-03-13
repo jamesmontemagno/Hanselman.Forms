@@ -114,7 +114,6 @@
     <AndroidResource Include="Resources\drawable\hm_full.jpg" />
     <AndroidResource Include="Resources\drawable\scott159.png" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
-    <AndroidAsset Include="Assets\materialdesignicons-webfont.ttf" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_about.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_podcast.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_rss.png" />

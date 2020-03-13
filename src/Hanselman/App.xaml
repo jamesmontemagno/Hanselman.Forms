@@ -62,10 +62,21 @@
 
             <x:String x:Key="IconAbout">&#xf2fd;</x:String>
             <x:String x:Key="IconTwitter">&#xf544;</x:String>
+            <x:String x:Key="IconTwitterBox">&#xf546;</x:String>
+            <x:String x:Key="IconInstagram">&#xf2fe;</x:String>
+            <x:String x:Key="IconFacebook">&#xf20d;</x:String>
             <x:String x:Key="IconMedia">&#xf40b;</x:String>
             <x:String x:Key="IconSettings">&#xf8ba;</x:String>
-            <x:String x:Key="IconBlog">&#xf46b;</x:String> >
+            <x:String x:Key="IconBlog">&#xf46b;</x:String>
             <x:String x:Key="IconClose">&#xf156;</x:String>
+
+            <x:String x:Key="MaterialFontFamily">Material Design Icons</x:String>
+            
+            <OnPlatform x:Key="MaterialFontFamilyIcon" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Material Design Icons" />
+                <On Platform="Android" Value="materialdesignicons-webfont.ttf" />
+                <On Platform="UWP" Value="materialdesignicons-webfont.ttf" />
+            </OnPlatform>
 
 
 
@@ -76,33 +87,32 @@
 
             <FontImageSource
                 x:Key="PlayIcon"
-                FontFamily="{DynamicResource MaterialFontFamily}"
+                FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                 Glyph="{StaticResource IconPlay}"
                 Size="15"
                 Color="{StaticResource PrimaryColor}"/>
 
             <FontImageSource
                 x:Key="PauseIcon"
-                FontFamily="{DynamicResource MaterialFontFamily}"
+                FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                 Glyph="{StaticResource IconPause}"
                 Size="15"
                 Color="{StaticResource PrimaryColor}"/>
 
             <FontImageSource
                 x:Key="CloseIcon"
-                FontFamily="{DynamicResource MaterialFontFamily}"
+                FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                 Glyph="{StaticResource IconClose}"
                 Size="15"
                 Color="{StaticResource PrimaryColor}"/>
 
+            
+
             <!--Control Themeing-->
+            
 
-            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Material Design Icons" />
-                <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
-                <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons" />
-            </OnPlatform>
 
+            
             <Style x:Key="RefreshViewStyle" TargetType="RefreshView">
                 <Setter Property="BackgroundColor" Value="{DynamicResource RefreshViewBackgroundColor}"/>
                 <Setter Property="RefreshColor" Value="{DynamicResource PrimaryColor}"/>
@@ -153,14 +163,14 @@
             </Style>
 
             <Style x:Key="MaterialNormalButton" TargetType="Button">
-                <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamily}" />
+                <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamilyIcon}" />
                 <Setter Property="TextColor" Value="{DynamicResource SystemGray}" />
                 <Setter Property="BorderColor" Value="Transparent" />
                 <Setter Property="BackgroundColor" Value="Transparent" />
             </Style>
 
             <Style x:Key="MaterialButton" TargetType="Button">
-                <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamily}" />
+                <Setter Property="FontFamily" Value="{StaticResource MaterialFontFamilyIcon}" />
                 <Setter Property="FontSize" Value="40" />
                 <Setter Property="TextColor" Value="{DynamicResource SystemGray}" />
                 <Setter Property="WidthRequest" Value="65" />

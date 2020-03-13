@@ -22,16 +22,15 @@ namespace Hanselman.UWP
             InitializeComponent();
             LoadApplication(new Hanselman.App());
 
-            CrossMediaManager.Current.Init();
             ApplicationView.PreferredLaunchViewSize = new Size(480, 600);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(480, 600));
             uiSettings.ColorValuesChanged += UISettings_ColorValuesChanged;
         }
 
-        private void UISettings_ColorValuesChanged(UISettings sender, object args)
+        void UISettings_ColorValuesChanged(UISettings sender, object args)
         {
-            ThemeHelper.ChangeTheme(Application.Current.RequestedTheme == Windows.UI.Xaml.ApplicationTheme.Dark ? Models.Theme.Dark : Models.Theme.Light);
+            ThemeHelper.ChangeTheme(Hanselman.Helpers.Settings.ThemeOption, true);
         }
     }
 }

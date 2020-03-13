@@ -25,17 +25,17 @@ namespace Hanselman.ViewModels
             {
                 new SocialItem
                 {
-                    Icon = IconConstants.TwitterCircle,
+                    Icon = (string)App.Current.Resources["IconTwitterBox"],
                     Url = "https://www.twitter.com/shanselman"
                 },
                 new SocialItem
                 {
-                    Icon = IconConstants.FacebookBox,
+                    Icon = (string)App.Current.Resources["IconFacebook"],
                     Url = "https://www.facebook.com/shanselman"
                 },
                 new SocialItem
                 {
-                    Icon = IconConstants.Instagram,
+                    Icon = (string)App.Current.Resources["IconInstagram"],
                     Url = "https://www.instagram.com/shanselman"
                 }
             };

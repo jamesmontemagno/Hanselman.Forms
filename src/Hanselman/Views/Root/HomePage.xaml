@@ -13,7 +13,7 @@
         <controls:HanselmanNavigationPage.IconImageSource>
             <FontImageSource
                     Glyph="{StaticResource IconAbout}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}" />
         </controls:HanselmanNavigationPage.IconImageSource>
         <x:Arguments>
             <pages:AboutPage />
@@ -24,7 +24,7 @@
         <controls:HanselmanNavigationPage.IconImageSource>
             <FontImageSource
                     Glyph="{StaticResource IconBlog}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}" />
         </controls:HanselmanNavigationPage.IconImageSource>
         <x:Arguments>
             <pages:BlogCollectionPage />
@@ -35,7 +35,7 @@
         <controls:HanselmanNavigationPage.IconImageSource>
             <FontImageSource
                     Glyph="{StaticResource IconTwitter}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}" />
         </controls:HanselmanNavigationPage.IconImageSource>
 
         <x:Arguments>
@@ -48,7 +48,7 @@
         <controls:HanselmanNavigationPage.IconImageSource>
             <FontImageSource
                     Glyph="{StaticResource IconMedia}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}" />
         </controls:HanselmanNavigationPage.IconImageSource>
 
         <x:Arguments>

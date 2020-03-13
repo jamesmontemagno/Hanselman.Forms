@@ -162,7 +162,7 @@
                                         WidthRequest="44">
                                         <Image.Source>
                                             <FontImageSource
-                                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                                FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                                                 Glyph="{StaticResource IconPlayCircleOutline}"
                                                 Size="44"
                                                 Color="{StaticResource PrimaryColor}" />

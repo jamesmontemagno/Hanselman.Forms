@@ -31,14 +31,13 @@
             Style="{DynamicResource RefreshViewStyle}">
             <CollectionView
                 x:Name="CollectionViewBlog"
-                ItemsSource="{Binding FeedItems}"
                 HorizontalOptions="FillAndExpand"
                 ItemSizingStrategy="MeasureAllItems"
+                ItemsSource="{Binding FeedItems}"
                 SelectionMode="None"
                 VerticalOptions="FillAndExpand">
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" 
-                                     Span="1" />
+                    <GridItemsLayout Orientation="Vertical" Span="1" />
                 </CollectionView.ItemsLayout>
                 <d:CollectionView.ItemsSource>
                     <x:Array Type="{x:Type modelsShared:FeedItem}">
@@ -122,16 +121,23 @@
                                             TextColor="{StaticResource SystemBlue}"
                                             VerticalOptions="End"
                                             Visual="Default" />
-                                        <Button
-                                            Margin="{OnPlatform Android='0,0,-20,0'}"
-                                            Padding="0"
+                                        <ImageButton
+                                            Padding="8"
+                                            BackgroundColor="Transparent"
+                                            BorderColor="Transparent"
+                                            BorderWidth="0"
                                             Command="{Binding ShareCommand}"
-                                            FontSize="24"
                                             HorizontalOptions="EndAndExpand"
-                                            Style="{StaticResource MaterialNormalButton}"
-                                            Text="{StaticResource IconShare}"
-                                            VerticalOptions="End"
-                                            Visual="Default" />
+                                            VerticalOptions="Center"
+                                            Visual="Default">
+                                            <ImageButton.Source>
+                                                <FontImageSource
+                                                    FontFamily="{DynamicResource MaterialFontFamilyIcon}"
+                                                    Glyph="{StaticResource IconShare}"
+                                                    Size="24"
+                                                    Color="{StaticResource PrimaryColor}" />
+                                            </ImageButton.Source>
+                                        </ImageButton>
                                     </StackLayout>
                                 </Grid>
                             </Frame>

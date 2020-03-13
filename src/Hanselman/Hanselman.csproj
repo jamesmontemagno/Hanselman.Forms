@@ -10,9 +10,13 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Fonts\materialdesignicons-webfont.ttf" />
     <None Remove="Images\book-aspnet4-thb.png" />
     <None Remove="Images\book-mvc4-thb.png" />
     <None Remove="Images\book-rh-thb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\materialdesignicons-webfont.ttf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\book-aspnet4-thb.png" />
