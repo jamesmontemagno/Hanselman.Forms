@@ -13,7 +13,6 @@
     ios:Page.UseSafeArea="True"
     Title="{Binding Podcast.Title}"
     NavigationPage.BackButtonTitle=""
-    S
     x:DataType="viewmodels:PodcastDetailsViewModel"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Shell.NavBarIsVisible="{OnPlatform iOS=true,
