@@ -17,7 +17,7 @@ namespace Hanselman.ViewModels
         public AsyncCommand GoToSettingsCommand { get; set; }
         public List<SocialItem> SocialItems { get; }
         public ObservableRangeCollection<FeaturedItem> FeaturedItems { get; } = new ObservableRangeCollection<FeaturedItem>();
-        
+
 
         public AboutViewModel()
         {
@@ -40,7 +40,8 @@ namespace Hanselman.ViewModels
                 }
             };
 
-            GoToSettingsCommand = new AsyncCommand(() => Application.Current.MainPage.Navigation.PushModalAsync(new SettingsPage()));
+            GoToSettingsCommand = new AsyncCommand(
+                () => Shell.Current.GoToAsync(AppShell.Settings));
         }
 
         bool hasData;

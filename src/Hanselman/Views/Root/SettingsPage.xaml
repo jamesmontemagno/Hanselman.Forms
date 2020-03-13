@@ -9,6 +9,7 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     ios:Page.UseSafeArea="True"
     ios:Page.ModalPresentationStyle="FormSheet"
+    Shell.PresentationMode="ModalAnimated"
     x:DataType="viewmodels:SettingsViewModel"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
     mc:Ignorable="d">

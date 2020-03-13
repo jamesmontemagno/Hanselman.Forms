@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MvvmHelpers;
+using Newtonsoft.Json;
 
 namespace Hanselman.Models
 {
@@ -36,5 +37,10 @@ namespace Hanselman.Models
         public string TwitterUrl { get; set; }
 
         public List<PodcastService> PodcastServices { get; set; }
+
+        [JsonIgnore]
+        public string UriRoute =>
+            $"{nameof(Id)}={Uri.EscapeDataString(Id)}&{nameof(Title)}={Uri.EscapeDataString(Title)}";
+
     }
 }

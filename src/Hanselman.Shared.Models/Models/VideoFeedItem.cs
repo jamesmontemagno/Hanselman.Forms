@@ -39,5 +39,8 @@ namespace Hanselman.Models
             get => DateTimeOffset.TryParse(Date, out var time) ? time.PodcastEpisodeHumanize() : Date;
             set => displayDate = value;
         }
+
+        public string UriRoute(string seriesId) =>
+            $"{nameof(Id)}={Uri.EscapeDataString(Id)}&SeriesId={Uri.EscapeDataString(seriesId)}";
     }
 }

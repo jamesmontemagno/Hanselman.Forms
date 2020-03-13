@@ -15,11 +15,7 @@ namespace Hanselman.Views
         public PodcastDetailsPage()
         {
             InitializeComponent();
-        }
-
-        public PodcastDetailsPage(Podcast podcast) : this()
-        {
-            BindingContext = new PodcastDetailsViewModel(podcast);
+            BindingContext = new PodcastDetailsViewModel();
         }
 
         protected override void OnAppearing()
