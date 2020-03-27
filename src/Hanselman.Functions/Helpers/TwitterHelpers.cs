@@ -37,7 +37,7 @@ namespace Hanselman.Functions
             var accessToken = await GetAccessToken(client);
 
             var requestUserTimeline = new HttpRequestMessage(HttpMethod.Get,
-                $"https://api.twitter.com/1.1/statuses/user_timeline.json?count=100&screen_name=shanselman&trim_user=0&exclude_replies=1");
+                $"https://api.twitter.com/1.1/statuses/user_timeline.json?count=200&tweet_mode=extended&screen_name=shanselman&trim_user=0&exclude_replies=1");
 
             requestUserTimeline.Headers.Add("Authorization", "Bearer " + accessToken);
 
