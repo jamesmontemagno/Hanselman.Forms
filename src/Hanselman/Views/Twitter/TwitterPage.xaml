@@ -44,6 +44,82 @@
             ItemsSource="{Binding Tweets}"
             RefreshCommand="{Binding RefreshCommand}"
             SeparatorColor="Transparent">
+            <ListView.Header>
+                <StackLayout>
+                    <Label Margin="8,8,8,0" Text="Tweet Sentiment" Style="{DynamicResource MediumLabelStyle}"/>
+                    <Frame Margin="8,0,8,4" Style="{DynamicResource FrameStyle}">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".75*"/>
+                                    <ColumnDefinition Width=".25*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid HeightRequest="32" ColumnSpacing="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width=".8*"/>
+                                        <ColumnDefinition Width=".05*"/>
+                                        <ColumnDefinition Width=".15*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <BoxView HorizontalOptions="Fill"
+                                             BackgroundColor="{DynamicResource SystemGreen}"/>
+                                    <BoxView Grid.Column="1" HorizontalOptions="Fill"
+                                             BackgroundColor="{DynamicResource SystemBlue}"/>
+                                    <BoxView Grid.Column="2" HorizontalOptions="Fill"
+                                             BackgroundColor="{DynamicResource SystemRed}"/>
+                                </Grid>
+                                <Label Grid.Column="1" VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Text="Mixed"
+                                       Style="{DynamicResource MediumLabelStyle}"/>
+                            </Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <BoxView WidthRequest="16"
+                                             HeightRequest="16"
+                                             BackgroundColor="{DynamicResource SystemGreen}"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="Start"/>
+                                    <Label Text="80%" Style="{DynamicResource MicroLabelStyle}" VerticalOptions="Center"/>
+                                </StackLayout>
+
+                                <Label Grid.Row="1" Text="Positive" Style="{DynamicResource SmallLabelStyle}"/>
+
+                                <StackLayout Grid.Column="1" Orientation="Horizontal">
+                                    <BoxView WidthRequest="16"
+                                             HeightRequest="16"
+                                             BackgroundColor="{DynamicResource SystemBlue}"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="Start"/>
+                                    <Label Text="5%" Style="{DynamicResource MicroLabelStyle}" VerticalOptions="Center"/>
+                                </StackLayout>
+                                <Label Grid.Row="1" Grid.Column="1" Text="Neutral" Style="{DynamicResource SmallLabelStyle}"/>
+
+                                <StackLayout Grid.Column="2" Orientation="Horizontal">
+                                    <BoxView WidthRequest="16"
+                                             HeightRequest="16"
+                                             BackgroundColor="{DynamicResource SystemRed}"
+                                             VerticalOptions="Center"
+                                             HorizontalOptions="Start"/>
+                                    <Label Text="15%" Style="{DynamicResource MicroLabelStyle}" VerticalOptions="Center"/>
+                                </StackLayout>
+                                <Label Grid.Row="1" Grid.Column="2" Text="Negative" Style="{DynamicResource SmallLabelStyle}"/>
+
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                <Label Margin="8,8,8,0" Text="Tweets" Style="{DynamicResource MediumLabelStyle}"/>
+                </StackLayout>
+            </ListView.Header>
             <d:ListView.ItemsSource>
                 <x:Array Type="{x:Type modelsShared:Tweet}">
                     <modelsShared:Tweet

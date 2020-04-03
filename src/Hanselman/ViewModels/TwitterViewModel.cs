@@ -3,12 +3,14 @@ using System.Threading.Tasks;
 using MvvmHelpers;
 using Hanselman.Models;
 using Xamarin.Essentials;
+using Hanselman.Shared.Models;
 
 namespace Hanselman.ViewModels
 {
     public class TwitterViewModel : ViewModelBase
     {
 
+        public TweetSentiment Sentiment { get; set; }
         public ObservableRangeCollection<Tweet> Tweets { get; set; }
 
         public TwitterViewModel()
@@ -16,6 +18,7 @@ namespace Hanselman.ViewModels
             Title = "Twitter";
             Icon = "slideout.png";
             Tweets = new ObservableRangeCollection<Tweet>();
+            Sentiment = new TweetSentiment();
             OpenTweetCommand = new Command<string>(async (s) => await ExecuteOpenTweetCommand(s));
         }
 
