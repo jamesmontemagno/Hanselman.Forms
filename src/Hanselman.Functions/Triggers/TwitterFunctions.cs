@@ -26,6 +26,15 @@ namespace Hanselman.Functions.Triggers
 {
     public static class TwitterFunctions
     {
+        [FunctionName(nameof(GetTweetSentiment))]
+        public static HttpResponseMessage GetTweetSentiment(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)]HttpRequest req,
+            [Blob("hanselman/twitter-sentiment.json", FileAccess.Read, Connection = "AzureWebJobsStorage")]Stream inBlob,
+            ILogger log)
+        {
+            return BlobHelpers.BlobToHttpResponseMessage(inBlob, log, "tweets-sentiment");
+        }
+
         [FunctionName(nameof(GetTweets))]
         public static HttpResponseMessage GetTweets(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)]HttpRequest req,
@@ -39,6 +48,7 @@ namespace Hanselman.Functions.Triggers
         public static async Task TwitterUpdate(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req,
             [Blob("hanselman/twitter.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outTwitterBlob,
+            [Blob("hanselman/twitter-sentiment.json", FileAccess.Write, Connection = "AzureWebJobsStorage")]Stream outSentiment,
             [HttpClientFactory]HttpClient client,
             ILogger log)
         {
@@ -59,8 +69,21 @@ namespace Hanselman.Functions.Triggers
 
                 log.LogInformation("Twitter function finished.");
 
-                var scores = GetSentimentOnTweets(tweetsRaw);
-
+                var document = GetSentimentOnTweets(tweetsRaw);
+                if (document != null)
+                {
+                    using (var writer = new StreamWriter(outSentiment))
+                    {
+                        json = JsonConvert.SerializeObject(new Shared.Models.TweetSentiment
+                        {
+                            Negative = document.ConfidenceScores.Negative,
+                            Neutral = document.ConfidenceScores.Neutral,
+                            Positive = document.ConfidenceScores.Positive,
+                            Overall = document.Sentiment.ToString()
+                        });
+                        writer.Write(json);
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -69,7 +92,7 @@ namespace Hanselman.Functions.Triggers
         }
 
 
-        static SentimentConfidenceScores GetSentimentOnTweets(List<Tweet> tweets)
+        static DocumentSentiment GetSentimentOnTweets(List<Tweet> tweets)
         {
             var analyticsKey = Environment.GetEnvironmentVariable("TEXT_ANALYTICS_KEY");
             var analyticsEndpoint = Environment.GetEnvironmentVariable("TEXT_ANALYTICS_ENDPOINT");
@@ -80,8 +103,7 @@ namespace Hanselman.Functions.Triggers
 
             //only tweets from today.
             var todayTweets = tweets.Where(t => t.ScreenName == "shanselman" &&
-                t.CreatedAt.DayOfYear == DateTime.UtcNow.DayOfYear &&
-                t.CreatedAt.Year == DateTime.UtcNow.Year &&
+                t.CreatedAt > DateTime.UtcNow.AddDays(-1) &&
                 !t.Text.StartsWith('@'));
 
             var count = todayTweets.Count();
@@ -103,7 +125,7 @@ namespace Hanselman.Functions.Triggers
                     $"Neutral: {sentiment.ConfidenceScores.Neutral}" +
                     $"Positive: {sentiment.ConfidenceScores.Positive}");
 
-                return sentiment.ConfidenceScores;
+                return sentiment;
             }
             catch(Exception ex)
             {

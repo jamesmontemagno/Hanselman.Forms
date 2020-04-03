@@ -16,9 +16,11 @@ namespace Hanselman.Functions
 
         static async Task<string> GetAccessToken(HttpClient client)
         {
-            var request = new HttpRequestMessage(HttpMethod.Post, "https://api.twitter.com/oauth2/token ");
+            var twitterKey = Environment.GetEnvironmentVariable("TWITTER_KEY");
+
+            var request = new HttpRequestMessage(HttpMethod.Post, "https://api.twitter.com/oauth2/token");
             var customerInfo = Convert.ToBase64String(new UTF8Encoding()
-                                      .GetBytes("ZTmEODUCChOhLXO4lnUCEbH2I" + ":" + "Y8z2Wouc5ckFb1a0wjUDT9KAI6DUat5tFNdmIkPLl8T4Nyaa2J"));
+                                      .GetBytes(twitterKey));
             request.Headers.Add("Authorization", "Basic " + customerInfo);
             request.Content = new StringContent("grant_type=client_credentials",
                                                     Encoding.UTF8, "application/x-www-form-urlencoded");
