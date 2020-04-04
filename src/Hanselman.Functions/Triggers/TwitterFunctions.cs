@@ -103,15 +103,15 @@ namespace Hanselman.Functions.Triggers
 
             //only tweets from today.
             var todayTweets = tweets.Where(t => t.ScreenName == "shanselman" &&
-                t.CreatedAt > DateTime.UtcNow.AddDays(-1) &&
-                !t.Text.StartsWith('@'));
+                t.CreatedAt > DateTime.UtcNow.AddDays(-1));
 
             var count = todayTweets.Count();
 
             var builder = new StringBuilder();
             foreach (var tweet in todayTweets)
             {
-                builder.Append(SanitizeTweet(tweet.Text));
+                builder.Append(SanitizeTweet(tweet.Text).Replace("RT", string.Empty));
+                builder.Append(" ");
             }
 
             try
