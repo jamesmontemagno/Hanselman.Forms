@@ -11,7 +11,11 @@ namespace Hanselman.ViewModels
     {
 
         public TweetSentiment Sentiment { get; set; }
+        public GridLength PositiveGridLength { get; set; } = GridLength.Star;
+        public GridLength NeutralGridLength { get; set; } = GridLength.Star;
+        public GridLength NegativeGridLength { get; set; } = GridLength.Star;
         public ObservableRangeCollection<Tweet> Tweets { get; set; }
+        
 
         public TwitterViewModel()
         {
@@ -66,6 +70,15 @@ namespace Hanselman.ViewModels
                 {
                     Tweets.ReplaceRange(items);
                 }
+
+                Sentiment = await DataService.GetTwitterSentiment();
+                PositiveGridLength = new GridLength(Sentiment.Positive, GridUnitType.Star);
+                NeutralGridLength = new GridLength(Sentiment.Neutral, GridUnitType.Star);
+                NegativeGridLength = new GridLength(Sentiment.Negative, GridUnitType.Star);
+                OnPropertyChanged(nameof(Sentiment));
+                OnPropertyChanged(nameof(PositiveGridLength));
+                OnPropertyChanged(nameof(NeutralGridLength));
+                OnPropertyChanged(nameof(NegativeGridLength));
             }
             catch
             {

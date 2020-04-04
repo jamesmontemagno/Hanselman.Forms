@@ -51,7 +51,7 @@ namespace Hanselman.Services
             GetAsync<IEnumerable<Tweet>>($"api/GetTweets?code={Constants.TweetKey}", "tweets", 15, forceRefresh);
 
         public Task<TweetSentiment> GetTwitterSentiment() =>
-            GetAsync<IEnumerable<Tweet>>($"api/GetTweetSentiment?code={Constants.TweetSentimentKey}", "tweets", 15, forceRefresh);
+            GetAsync<TweetSentiment>($"api/GetTweetSentiment?code={Constants.TweetSentimentKey}", "tweetsentiment", 15, false);
 
         public Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh) =>
             GetAsync<IEnumerable<VideoFeedItem>>($"api/GetVideoEpisodes?code={Constants.VideoEpisodesKey}&id={id}", $"video_{id}", 240, false);
