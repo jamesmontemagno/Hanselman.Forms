@@ -33,7 +33,6 @@
     </MtouchExtraArgs>
     <CodesignKey>iPhone Developer</CodesignKey>
     <LangVersion>latest</LangVersion>
-    <DeviceSpecificBuild>true</DeviceSpecificBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -114,7 +113,6 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
     <LaunchForBackgroundFetch>false</LaunchForBackgroundFetch>
-    <ExtraLaunchArgs>--interpreter</ExtraLaunchArgs>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
