@@ -3,19 +3,26 @@ using System.Threading.Tasks;
 using MvvmHelpers;
 using Hanselman.Models;
 using Xamarin.Essentials;
+using Hanselman.Shared.Models;
 
 namespace Hanselman.ViewModels
 {
     public class TwitterViewModel : ViewModelBase
     {
 
+        public TweetSentiment Sentiment { get; set; }
+        public GridLength PositiveGridLength { get; set; } = GridLength.Star;
+        public GridLength NeutralGridLength { get; set; } = GridLength.Star;
+        public GridLength NegativeGridLength { get; set; } = GridLength.Star;
         public ObservableRangeCollection<Tweet> Tweets { get; set; }
+        
 
         public TwitterViewModel()
         {
             Title = "Twitter";
             Icon = "slideout.png";
             Tweets = new ObservableRangeCollection<Tweet>();
+            Sentiment = new TweetSentiment();
             OpenTweetCommand = new Command<string>(async (s) => await ExecuteOpenTweetCommand(s));
         }
 
@@ -63,6 +70,15 @@ namespace Hanselman.ViewModels
                 {
                     Tweets.ReplaceRange(items);
                 }
+
+                Sentiment = await DataService.GetTwitterSentiment();
+                PositiveGridLength = new GridLength(Sentiment.Positive, GridUnitType.Star);
+                NeutralGridLength = new GridLength(Sentiment.Neutral, GridUnitType.Star);
+                NegativeGridLength = new GridLength(Sentiment.Negative, GridUnitType.Star);
+                OnPropertyChanged(nameof(Sentiment));
+                OnPropertyChanged(nameof(PositiveGridLength));
+                OnPropertyChanged(nameof(NeutralGridLength));
+                OnPropertyChanged(nameof(NegativeGridLength));
             }
             catch
             {

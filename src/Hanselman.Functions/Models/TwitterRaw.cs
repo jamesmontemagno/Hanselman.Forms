@@ -24,7 +24,7 @@ namespace Hanselman.Functions.Models
         [JsonProperty("id_str")]
         public string IdStr { get; set; }
 
-        [JsonProperty("text")]
+        [JsonProperty("full_text")]
         public string Text { get; set; }
 
         [JsonProperty("user")]
