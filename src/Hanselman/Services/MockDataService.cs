@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Hanselman.Interfaces;
 using Hanselman.Models;
+using Hanselman.Shared.Models;
 using Xamarin.Essentials;
 
 
@@ -320,6 +321,11 @@ namespace Hanselman.Services
         public Task<IEnumerable<Tweet>> GetTweetsAsync(bool forceRefresh)
         {
             return Task.FromResult(Enumerable.Empty<Tweet>());
+        }
+
+        public Task<TweetSentiment> GetTwitterSentiment()
+        {
+            throw new System.NotImplementedException();
         }
 
         public Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh)
