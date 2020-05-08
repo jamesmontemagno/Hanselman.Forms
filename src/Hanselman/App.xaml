@@ -70,13 +70,9 @@
             <x:String x:Key="IconBlog">&#xf46b;</x:String>
             <x:String x:Key="IconClose">&#xf156;</x:String>
 
-            <x:String x:Key="MaterialFontFamily">Material Design Icons</x:String>
+            <x:String x:Key="MaterialFontFamily">MaterialDesignIcons</x:String>
             
-            <OnPlatform x:Key="MaterialFontFamilyIcon" x:TypeArguments="x:String">
-                <On Platform="iOS" Value="Material Design Icons" />
-                <On Platform="Android" Value="materialdesignicons-webfont.ttf" />
-                <On Platform="UWP" Value="materialdesignicons-webfont.ttf" />
-            </OnPlatform>
+            <x:String x:Key="MaterialFontFamilyIcon">MaterialDesignIcons</x:String>
 
 
 
