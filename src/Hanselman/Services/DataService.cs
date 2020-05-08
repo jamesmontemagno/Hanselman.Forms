@@ -12,6 +12,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Hanselman.Services;
 using System.Diagnostics;
+using Hanselman.Shared.Models;
 
 [assembly: Dependency(typeof(DataService))]
 namespace Hanselman.Services
@@ -58,7 +59,6 @@ namespace Hanselman.Services
         public Task<IEnumerable<Tweet>> GetTweetsAsync(bool forceRefresh) =>
             GetAsync<IEnumerable<Tweet>>($"api/GetTweets?code={Constants.TweetKey}", "tweets", 15, forceRefresh);
 
-
         Dictionary<string, IEnumerable<VideoFeedItem>> videoSeriesCache = new Dictionary<string, IEnumerable<VideoFeedItem>>();
         public VideoFeedItem? GetVideoEpisode(string seriesId, string id)
         {
@@ -81,6 +81,12 @@ namespace Hanselman.Services
                 videoSeriesCache.Add(id, videos);
             return videos;
         }
+
+        public Task<TweetSentiment> GetTwitterSentiment() =>
+            GetAsync<TweetSentiment>($"api/GetTweetSentiment?code={Constants.TweetSentimentKey}", "tweetsentiment", 15, false);
+
+        public Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh) =>
+            GetAsync<IEnumerable<VideoFeedItem>>($"api/GetVideoEpisodes?code={Constants.VideoEpisodesKey}&id={id}", $"video_{id}", 240, false);
 
         public Task<IEnumerable<VideoSeries>> GetVideoSeriesAsync(bool forceRefresh) =>
             mock.GetVideoSeriesAsync(forceRefresh);

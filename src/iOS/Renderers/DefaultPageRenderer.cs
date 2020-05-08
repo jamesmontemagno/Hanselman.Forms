@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Foundation;
 using Hanselman.Helpers;
 using Hanselman.iOS.Renderers;
 using Hanselman.Models;
 using Hanselman.Styles;
 using UIKit;
 using Xamarin.Forms;
-using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(ContentPage), typeof(DefaultPageRenderer))]
 namespace Hanselman.iOS.Renderers

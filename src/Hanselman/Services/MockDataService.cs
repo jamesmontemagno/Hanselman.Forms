@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Hanselman.Interfaces;
 using Hanselman.Models;
+using Hanselman.Shared.Models;
 using Xamarin.Essentials;
 
 
@@ -328,6 +329,11 @@ namespace Hanselman.Services
         }
 
         public VideoFeedItem? GetVideoEpisode(string seriesId, string id)
+        {
+            throw new System.NotImplementedException();
+        }
+        
+        public Task<TweetSentiment> GetTwitterSentiment()
         {
             throw new System.NotImplementedException();
         }
