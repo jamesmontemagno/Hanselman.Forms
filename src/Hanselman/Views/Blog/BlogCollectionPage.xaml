@@ -24,6 +24,7 @@
         <viewmodels:BlogFeedViewModel />
     </d:ContentPage.BindingContext>
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
         <RefreshView
             BackgroundColor="{DynamicResource WindowBackgroundColor}"
             Command="{Binding RefreshCommand}"
@@ -36,28 +37,20 @@
                 ItemsSource="{Binding FeedItems}"
                 SelectionMode="None"
                 VerticalOptions="FillAndExpand">
+                <CollectionView.Header>
+                    <StackLayout>
+                        <Label
+                            Margin="{OnPlatform iOS='0,44,0,0',
+                                                Default='8'}"
+                            FontSize="100"
+                            HorizontalOptions="Center"
+                            Style="{DynamicResource LargeLabelStyle}"
+                            Text="Blog Feed" />
+                    </StackLayout>
+                </CollectionView.Header>
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" Span="1" />
                 </CollectionView.ItemsLayout>
-                <d:CollectionView.ItemsSource>
-                    <x:Array Type="{x:Type modelsShared:FeedItem}">
-                        <modelsShared:FeedItem
-                            Title="Awesome Title"
-                            Caption="This is a caption of the blog article."
-                            FirstImage="scott.png"
-                            PublishDate="Today" />
-                        <modelsShared:FeedItem
-                            Title="Awesome Title"
-                            Caption="This is a caption of the blog article."
-                            FirstImage="scott.png"
-                            PublishDate="Today" />
-                        <modelsShared:FeedItem
-                            Title="Awesome Title"
-                            Caption="This is a caption of the blog article."
-                            FirstImage="scott.png"
-                            PublishDate="Today" />
-                    </x:Array>
-                </d:CollectionView.ItemsSource>
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:BlogFeedItem">
                         <Grid Padding="8">

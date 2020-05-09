@@ -40,12 +40,7 @@ namespace Hanselman.ViewModels
             SelectedFeedItem = null;
         }
 
-        bool isRefreshing;
-        public bool IsRefreshing
-        {
-            get => isRefreshing;
-            set => SetProperty(ref isRefreshing, value);
-        }
+        
 
         FeedItem? selectedFeedItem;
 

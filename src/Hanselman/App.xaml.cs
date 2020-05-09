@@ -34,7 +34,8 @@ namespace Hanselman
                     "StateTriggers_Experimental",
                     "IndicatorView_Experimental",
                     "CarouselView_Experimental",
-                    "MediaElement_Experimental"
+                    "MediaElement_Experimental",
+                    "Expander_Experimental"
                 });
 
             InitializeComponent();

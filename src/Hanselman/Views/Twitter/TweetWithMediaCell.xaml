@@ -1,68 +1,69 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ViewCell
+<ContentView
     x:Class="Hanselman.Views.Twitter.TweetWithMediaCell"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:sharpando="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
     x:DataType="modelsShared:Tweet"
     mc:Ignorable="d">
-    <Frame
-        Margin="8,4"
-        Padding="12"
-        Style="{DynamicResource FrameStyle}">
-        <Grid ColumnSpacing="12">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Frame
-                Margin="0"
-                Padding="0"
-                CornerRadius="22"
-                HorizontalOptions="Center"
-                InputTransparent="True"
-                IsClippedToBounds="True"
-                VerticalOptions="Start"
-                Style="{DynamicResource FrameStyle}">
+    <Grid Padding="12">
+        <sharpando:MaterialFrame Style="{DynamicResource MaterialFrameStyle}">
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Frame
+                    Margin="0"
+                    Padding="0"
+                    CornerRadius="22"
+                    HorizontalOptions="Center"
+                    InputTransparent="True"
+                    IsClippedToBounds="True"
+                    Style="{DynamicResource FrameStyle}"
+                    VerticalOptions="Start">
+                    <Image
+                        Aspect="AspectFill"
+                        HeightRequest="44"
+                        Source="{Binding Image}"
+                        VerticalOptions="Center"
+                        WidthRequest="44" />
+                </Frame>
+                <StackLayout
+                    Grid.Column="1"
+                    Padding="0"
+                    Spacing="4"
+                    VerticalOptions="Start">
+                    <Label
+                        FontSize="Micro"
+                        Style="{DynamicResource DateTimeLabelStyle}"
+                        Text="{Binding DateHumanized}" />
+                    <Label Style="{DynamicResource MicroLabelStyle}" Text="{Binding ScreenName}" />
+                    <Label
+                        x:Name="TweetText"
+                        LineBreakMode="WordWrap"
+                        Style="{DynamicResource SmallLabelStyle}"
+                        Text="{Binding Text}" />
+                </StackLayout>
                 <Image
-                    Aspect="AspectFill"
-                    HeightRequest="44"
-                    Source="{Binding Image}"
-                    VerticalOptions="Center"
-                    WidthRequest="44" />
-            </Frame>
-            <StackLayout
-                Grid.Column="1"
-                Padding="0"
-                Spacing="4"
-                VerticalOptions="Start">
-                <Label
-                    FontSize="Micro"
-                    Style="{DynamicResource DateTimeLabelStyle}"
-                    Text="{Binding DateHumanized}" />
-                <Label Text="{Binding ScreenName}"
-                       Style="{DynamicResource MicroLabelStyle}"/>
-                <Label
-                    x:Name="TweetText"
-                    LineBreakMode="WordWrap"
-                    Text="{Binding Text}" 
-                    Style="{DynamicResource SmallLabelStyle}"/>
-            </StackLayout>
-            <Image
-                Grid.Row="1"
-                Grid.ColumnSpan="2"
-                Aspect="AspectFit"
-                HeightRequest="100"
-                HorizontalOptions="CenterAndExpand"
-                Source="{Binding MediaUrl}"
-                VerticalOptions="Start"
-                WidthRequest="250" />
-        </Grid>
-    </Frame>
-</ViewCell>
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Aspect="AspectFit"
+                    HeightRequest="100"
+                    HorizontalOptions="CenterAndExpand"
+                    Source="{Binding MediaUrl}"
+                    VerticalOptions="Start"
+                    WidthRequest="250" />
+            </Grid>
+
+        </sharpando:MaterialFrame>
+    </Grid>
+
+</ContentView>

@@ -241,6 +241,9 @@
     <PackageReference Include="Xamarin.Forms.Visual.Material">
       <Version>4.6.0.726</Version>
     </PackageReference>
+    <PackageReference Include="Sharpnado.MaterialFrame">
+      <Version>1.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />

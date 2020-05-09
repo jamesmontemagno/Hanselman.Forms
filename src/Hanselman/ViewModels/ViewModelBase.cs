@@ -24,5 +24,12 @@ namespace Hanselman.ViewModels
                 PreferredControlColor = Color.White,
                 PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryColor"]
             });
+
+        bool isRefreshing;
+        public bool IsRefreshing
+        {
+            get => isRefreshing;
+            set => SetProperty(ref isRefreshing, value);
+        }
     }
 }

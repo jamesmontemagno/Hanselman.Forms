@@ -4,7 +4,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Hanselman.Views.Twitter
 {
-    public partial class TweetCell : ViewCell
+    public partial class TweetCell : ContentView
     {
         public TweetCell()
         {

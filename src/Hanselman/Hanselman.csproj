@@ -9,14 +9,12 @@
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="Fonts\materialdesignicons-webfont.ttf" />
-    <None Remove="Images\book-aspnet4-thb.png" />
-    <None Remove="Images\book-mvc4-thb.png" />
-    <None Remove="Images\book-rh-thb.png" />
-  </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Fonts\materialdesignicons-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\fa-brands-400.ttf" />
+    <EmbeddedResource Include="Fonts\fa-regular-400.ttf" />
+    <EmbeddedResource Include="Fonts\fa-solid-900.ttf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\book-aspnet4-thb.png" />
@@ -39,16 +37,9 @@
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.4.2" />
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
     <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.726" />
+    <PackageReference Include="Sharpnado.MaterialFrame" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hanselman.Shared.Models\Hanselman.Shared.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Styles\DarkTheme.xaml.cs">
-      <DependentUpon>DarkTheme.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Styles\LightTheme.xaml.cs">
-      <DependentUpon>LightTheme.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>

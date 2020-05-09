@@ -1,53 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ViewCell
+<ContentView
     x:Class="Hanselman.Views.Twitter.TweetCell"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
+    xmlns:sharpando="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
     x:DataType="modelsShared:Tweet"
     mc:Ignorable="d">
-    <Frame
-        Margin="8,4"
-        Padding="12"
-        Style="{DynamicResource FrameStyle}">
-        <Grid ColumnSpacing="12">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Frame
-                Margin="0"
-                Padding="0"
-                CornerRadius="22"
-                HorizontalOptions="Center"
-                InputTransparent="True"
-                VerticalOptions="Start"
-                Style="{DynamicResource FrameStyle}">
-                <Image
-                    Aspect="AspectFill"
-                    HeightRequest="44"
-                    Source="{Binding Image}"
-                    VerticalOptions="Center"
-                    WidthRequest="44" />
-            </Frame>
-            <StackLayout
-                Grid.Column="1"
-                Padding="0"
-                Spacing="4"
-                VerticalOptions="Start">
-                <Label
-                    FontSize="Micro"
-                    Style="{DynamicResource DateTimeLabelStyle}"
-                    Text="{Binding DateHumanized}" />
-                <Label Text="{Binding ScreenName}"
-                       Style="{DynamicResource MicroLabelStyle}"/>
-                <Label
-                    LineBreakMode="WordWrap"
-                    Text="{Binding Text}"
-                    Style="{DynamicResource SmallLabelStyle}"/>
-            </StackLayout>
-        </Grid>
-    </Frame>
-</ViewCell>
+    <Grid Padding="12">
+        <sharpando:MaterialFrame Style="{DynamicResource MaterialFrameStyle}">
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame
+                    Margin="0"
+                    Padding="0"
+                    CornerRadius="22"
+                    HorizontalOptions="Center"
+                    InputTransparent="True"
+                    Style="{DynamicResource FrameStyle}"
+                    VerticalOptions="Start">
+                    <Image
+                        Aspect="AspectFill"
+                        HeightRequest="44"
+                        Source="{Binding Image}"
+                        VerticalOptions="Center"
+                        WidthRequest="44" />
+                </Frame>
+                <StackLayout
+                    Grid.Column="1"
+                    Padding="0"
+                    Spacing="4"
+                    VerticalOptions="Start">
+                    <Label
+                        FontSize="Micro"
+                        Style="{DynamicResource DateTimeLabelStyle}"
+                        Text="{Binding DateHumanized}" />
+                    <Label Style="{DynamicResource MicroLabelStyle}" Text="{Binding ScreenName}" />
+                    <Label
+                        LineBreakMode="WordWrap"
+                        Style="{DynamicResource SmallLabelStyle}"
+                        Text="{Binding Text}" />
+                </StackLayout>
+            </Grid>
+        </sharpando:MaterialFrame>
+    </Grid>
+</ContentView>
