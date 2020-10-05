@@ -1,4 +1,4 @@
-﻿Hanselman.Forms: Hanselman Everywhere
+Hanselman.Forms: Hanselman Everywhere
 ===============
 The most awesome Hanselman app built originall in about 4 hours to showcase a sample of Xamarin.Forms. Be sure to read [Scott's blog](http://www.hanselman.com/blog/XamarinFormsWriteOnceRunEverywhereANDBeNative.aspx) on the app. 
 
@@ -44,9 +44,9 @@ Development build available:
 * [PancakeView for Xamarin.Forms](https://github.com/sthewissen/Xamarin.Forms.PancakeView)
 * [Pull to Refresh Plugin for Xamarin.Forms](https://github.com/jamesmontemagno/Xamarin.Forms-PullToRefreshLayout)
 * [Shiny](https://github.com/shinyorg/shiny)
-* [Xamarin.Essentials](https://docs.microsoft.com/xamarin/essentials)
+* [Xamarin.Essentials](https://docs.microsoft.com/xamarin/essentials?WT.mc_id=hanselman.forms-github-jamont)
 * [Xamarin.Forms](https://xamarin.com/forms)
-* [Xamarin.Forms Visual](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/visual/)
+* [Xamarin.Forms Visual](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/visual/?WT.mc_id=hanselman.forms-github-jamont)
 
 ### Awesome Tools
 * [IconFont2Code](https://andreinitescu.github.io/IconFont2Code/): Turns your fonts into code!
