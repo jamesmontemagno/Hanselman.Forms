@@ -64,7 +64,8 @@ namespace Hanselman.Views
         {
             if (e.CurrentSelection.FirstOrDefault() is VideoFeedItem item && item != null)
             {
-                await Navigation.PushModalAsync(new VideoDetailsPage(item));
+
+                await Shell.Current.GoToAsync($"{AppShell.VideoEpisodeDetails}?{item.UriRoute(VM.Id)}");
                 ((CollectionView)sender).SelectedItem = null;
             }
         }

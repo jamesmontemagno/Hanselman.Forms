@@ -4,6 +4,7 @@ using MvvmHelpers;
 using Hanselman.Models;
 using Xamarin.Essentials;
 using Hanselman.Shared.Models;
+using MvvmHelpers.Commands;
 
 namespace Hanselman.ViewModels
 {
@@ -23,32 +24,22 @@ namespace Hanselman.ViewModels
             Icon = "slideout.png";
             Tweets = new ObservableRangeCollection<Tweet>();
             Sentiment = new TweetSentiment();
-            OpenTweetCommand = new Command<string>(async (s) => await ExecuteOpenTweetCommand(s));
+            OpenTweetCommand = new AsyncCommand<string>(ExecuteOpenTweetCommand);
         }
 
-        public Command<string> OpenTweetCommand { get; }
+        public AsyncCommand<string> OpenTweetCommand { get; }
 
-        Command? loadCommand;
-        Command? refreshCommand;
-        public Command RefreshCommand =>
-            refreshCommand ??= new Command(async () =>
-                  {
-                      await ExecuteLoadCommand(true);
-                  }, () =>
-                  {
-                      return !IsBusy;
-                  });
+        AsyncCommand? loadCommand;
+        AsyncCommand? refreshCommand;
+        public AsyncCommand RefreshCommand =>
+            refreshCommand ??= new AsyncCommand(Refresh);
 
-        public Command LoadCommand =>
-            loadCommand ??= new Command(async () =>
-                  {
-                      await ExecuteLoadCommand(false);
-                  }, () =>
-                  {
-                      return !IsBusy;
-                  });
+        public AsyncCommand LoadCommand =>
+            loadCommand ??= new AsyncCommand(Load);
 
-      
+
+        Task Refresh() => ExecuteLoadCommand(true);
+        Task Load() => ExecuteLoadCommand(false);
 
         public async Task ExecuteLoadCommand(bool forceRefresh)
         {
@@ -87,9 +78,8 @@ namespace Hanselman.ViewModels
             finally
             {
                 IsBusy = false;
+                IsRefreshing = false;
             }
-
-            LoadCommand.ChangeCanExecute();
         }
 
         async Task ExecuteOpenTweetCommand(string statusId)

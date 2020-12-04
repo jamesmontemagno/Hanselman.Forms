@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,11 +13,30 @@ using Xamarin.Forms;
 
 namespace Hanselman.ViewModels
 {
+    [QueryProperty(nameof(Id), nameof(Id))]
     public class PodcastDetailsViewModel : ViewModelBase
     {
         public ICommand SubscribeCommand { get; set; }
         public ICommand LoadEpisodesCommand { get; set; }
-        public Podcast? Podcast { get; set; }
+        
+        string id = string.Empty;
+        public string Id
+        {
+            get => id;
+            set
+            {
+                id = Uri.UnescapeDataString(value);
+                Podcast = DataService.GetPodcast(id);
+            }
+        }
+
+        Podcast? podcast;
+        public Podcast? Podcast
+        {
+            get => podcast;
+            set => SetProperty(ref podcast, value);
+        }
+
         public List<PodcastEpisode> AllEpisodes { get; set; }
         public ObservableRangeCollection<PodcastEpisode> Episodes { get; set; }
 
@@ -25,13 +45,8 @@ namespace Hanselman.ViewModels
             SubscribeCommand = new Command(async () => await ExecuteSubscribeCommand());
             LoadEpisodesCommand = new Command(async () => await ExecuteLoadEpisodesCommand());
             Episodes = new ObservableRangeCollection<PodcastEpisode>();
-            AllEpisodes = new List<PodcastEpisode>();
+            AllEpisodes = new List<PodcastEpisode>();                 
         }
-        public PodcastDetailsViewModel(Podcast podcast) : this()
-        {
-            Podcast = podcast;
-        }
-
         async Task ExecuteSubscribeCommand()
         {
             if(Podcast == null)
@@ -56,7 +71,7 @@ namespace Hanselman.ViewModels
 
         async Task ExecuteLoadEpisodesCommand()
         {
-            if (Podcast == null)
+            if (string.IsNullOrWhiteSpace(Id))
             {
                 Debug.WriteLine("Podcast was not set.");
                 return;
@@ -70,8 +85,9 @@ namespace Hanselman.ViewModels
                 IsBusy = true;
 #if DEBUG
                 await Task.Delay(1000);
-#endif
-                var episodes = await DataService.GetPodcastEpisodesAsync(Podcast.Id, false);
+#endif               
+
+                var episodes = await DataService.GetPodcastEpisodesAsync(Id, false);
 
                 AllEpisodes.Clear();
                 Episodes.Clear();

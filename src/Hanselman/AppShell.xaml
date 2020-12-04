@@ -1,7 +1,8 @@
-﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
-       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       x:Class="Hanselman.AppShell"
-       xmlns:views="clr-namespace:Hanselman.Views">
+﻿<Shell
+    x:Class="Hanselman.AppShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Hanselman.Views">
 
     <Shell.Resources>
         <ResourceDictionary>
@@ -12,47 +13,65 @@
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource ShellTabBarBackgroundColor}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="Orange"/> <!--unused :( lols-->
-                <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource SystemGray}"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource PrimaryColor}"/>
+                <Setter Property="Shell.TabBarForegroundColor" Value="Orange" />
+                <!--  unused :( lols  -->
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource SystemGray}" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource PrimaryColor}" />
             </Style>
-            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+            <Style BasedOn="{StaticResource BaseStyle}" TargetType="ShellItem" />
         </ResourceDictionary>
     </Shell.Resources>
 
 
-    <TabBar Style="{StaticResource BaseStyle}" Route="sections">
-        <Tab Title="About" Route="tab_about" Shell.NavBarIsVisible="False">
+    <TabBar Route="sections" Style="{StaticResource BaseStyle}">
+        <Tab
+            Title="About"
+            Route="tab_about"
+            Shell.NavBarIsVisible="False">
             <Tab.Icon>
-                <FontImageSource
-                    Glyph="{StaticResource IconAbout}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                <FontImageSource FontFamily="{StaticResource MaterialFontFamilyIcon}" Glyph="{StaticResource IconAbout}" />
             </Tab.Icon>
-            <ShellContent Route="about" Title="About" ContentTemplate="{DataTemplate views:AboutPage}"/>
+            <ShellContent
+                Title="About"
+                ContentTemplate="{DataTemplate views:AboutPage}"
+                Route="about" />
         </Tab>
-        <Tab Title="Blog" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_blog">
+        <Tab
+            Title="Blog"
+            Route="tab_blog"
+            Shell.NavBarIsVisible="False">
             <Tab.Icon>
-                <FontImageSource
-                    Glyph="{StaticResource IconBlog}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                <FontImageSource FontFamily="{StaticResource MaterialFontFamilyIcon}" Glyph="{StaticResource IconBlog}" />
             </Tab.Icon>
-            <ShellContent Route="blog" Title="Blog" ContentTemplate="{DataTemplate views:BlogCollectionPage}"/>
+            <ShellContent
+                Title="Blog"
+                ContentTemplate="{DataTemplate views:BlogCollectionPage}"
+                Route="blog" />
         </Tab>
-        <Tab Title="Tweets" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_tweets">
+        <Tab
+            Title="Tweets"
+            Route="tab_tweets"
+            Shell.NavBarIsVisible="False">
             <Tab.Icon>
-                <FontImageSource
-                    Glyph="{StaticResource IconTwitter}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                <FontImageSource FontFamily="{StaticResource MaterialFontFamilyIcon}" Glyph="{StaticResource IconTwitter}" />
             </Tab.Icon>
-            <ShellContent Route="tweets" Title="Tweets" ContentTemplate="{DataTemplate views:TwitterPage}"/>
+            <ShellContent
+                Title="Tweets"
+                ContentTemplate="{DataTemplate views:TwitterPage}"
+                Route="tweets" />
         </Tab>
-        <Tab Title="Media" Shell.NavBarIsVisible="{OnPlatform Android=false, iOS=true}" Route="tab_media">
+        <Tab
+            Title="Media"
+            Route="tab_media"
+            Shell.NavBarIsVisible="{OnPlatform Android=false,
+                                               iOS=true}">
             <Tab.Icon>
-                <FontImageSource
-                    Glyph="{StaticResource IconMedia}"
-                    FontFamily="{StaticResource MaterialFontFamily}" />
+                <FontImageSource FontFamily="{StaticResource MaterialFontFamilyIcon}" Glyph="{StaticResource IconMedia}" />
             </Tab.Icon>
-            <ShellContent Route="media" Title="Media" ContentTemplate="{DataTemplate views:MediaDirectoryPage}"/>
+            <ShellContent
+                Title="Media"
+                ContentTemplate="{DataTemplate views:MediaDirectoryPage}"
+                Route="media" />
         </Tab>
     </TabBar>
 

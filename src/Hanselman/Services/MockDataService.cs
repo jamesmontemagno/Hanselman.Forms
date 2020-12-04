@@ -38,6 +38,11 @@ namespace Hanselman.Services
             return Task.FromResult(items.AsEnumerable());
         }
 
+        public Podcast? GetPodcast(string id)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh)
         {
             var episodes = new List<PodcastEpisode>();
@@ -323,6 +328,11 @@ namespace Hanselman.Services
             return Task.FromResult(Enumerable.Empty<Tweet>());
         }
 
+        public VideoFeedItem? GetVideoEpisode(string seriesId, string id)
+        {
+            throw new System.NotImplementedException();
+        }
+        
         public Task<TweetSentiment> GetTwitterSentiment()
         {
             throw new System.NotImplementedException();

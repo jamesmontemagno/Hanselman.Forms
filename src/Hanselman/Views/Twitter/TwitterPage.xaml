@@ -6,24 +6,33 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:modelsShared="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
-    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
+    xmlns:sharpnado="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
     xmlns:twitter="clr-namespace:Hanselman.Views.Twitter"
-    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    ios:NavigationPage.PrefersLargeTitles="True"
-    ios:Page.LargeTitleDisplay="Always"
+    xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
     Title="{Binding Title}"
+    x:DataType="viewmodels:TwitterViewModel"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
     Icon="{Binding Icon}"
     IsBusy="{Binding IsBusy}"
-    mc:Ignorable="d"
-    x:DataType="viewmodels:TwitterViewModel">
+    mc:Ignorable="d">
+    <d:ContentPage.BindingContext>
+        <viewmodels:TwitterViewModel />
+    </d:ContentPage.BindingContext>
     <ContentPage.Resources>
         <ResourceDictionary>
-            <DataTemplate x:Key="TweetTemplate">
-                <twitter:TweetCell />
+            <DataTemplate x:Key="TweetTemplate" x:DataType="modelsShared:Tweet">
+                <twitter:TweetCell>
+                    <twitter:TweetCell.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:TwitterViewModel}}, Path=OpenTweetCommand}" CommandParameter="{Binding StatusID}" />
+                    </twitter:TweetCell.GestureRecognizers>
+                </twitter:TweetCell>
             </DataTemplate>
-            <DataTemplate x:Key="TweetWithMediaTemplate">
-                <twitter:TweetWithMediaCell />
+            <DataTemplate x:Key="TweetWithMediaTemplate" x:DataType="modelsShared:Tweet">
+                <twitter:TweetWithMediaCell>
+                    <twitter:TweetWithMediaCell.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:TwitterViewModel}}, Path=OpenTweetCommand}" CommandParameter="{Binding StatusID}" />
+                    </twitter:TweetWithMediaCell.GestureRecognizers>
+                </twitter:TweetWithMediaCell>
             </DataTemplate>
             <twitter:TweetDataTemplateSelector
                 x:Key="TweetDataTemplateSelector"
@@ -31,110 +40,158 @@
                 TweetWithMediaTemplate="{StaticResource TweetWithMediaTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
+
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <ListView
-            x:Name="listView"
-            BackgroundColor="Transparent"
-            d:ItemTemplate="{StaticResource TweetTemplate}"
-            CachingStrategy="RecycleElement"
-            HasUnevenRows="True"
-            IsPullToRefreshEnabled="True"
-            IsRefreshing="{Binding IsBusy, Mode=OneWay}"
-            ItemTemplate="{StaticResource TweetDataTemplateSelector}"
-            ItemsSource="{Binding Tweets}"
-            RefreshCommand="{Binding RefreshCommand}"
-            SeparatorColor="Transparent">
-            <ListView.Header>
-                <StackLayout BindingContext="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:TwitterViewModel}}}" x:DataType="viewmodels:TwitterViewModel">
-                    <Label Margin="8,8,8,0" Text="Tweet Sentiment (last 24 hours)" Style="{DynamicResource MediumLabelStyle}"/>
-                    <Frame Margin="8,0,8,4" Style="{DynamicResource FrameStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout x:DataType="viewmodels:TwitterViewModel" BindingContext="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:TwitterViewModel}}}">
+            <Label
+                Margin="{OnPlatform iOS='0,32,0,0',
+                                    Default='8'}"
+                FontSize="Title"
+                HorizontalOptions="Center"
+                Style="{DynamicResource LargeLabelStyle}"
+                Text="Tweets" />
+            <Expander>
+                <Expander.Header>
+                    <Grid Padding="24,0">
+                        <Label Style="{DynamicResource LargeLabelStyle}" Text="24 Hour Sentiment" />
+                        <Label
+                            FontFamily="FA-S"
+                            HorizontalOptions="End"
+                            Style="{DynamicResource MediumLabelStyle}"
+                            Text="{StaticResource IconChevDown}"
+                            VerticalOptions="Center">
+                            <Label.Triggers>
+                                <DataTrigger
+                                    Binding="{Binding Source={RelativeSource AncestorType={x:Type Expander}}, Path=IsExpanded}"
+                                    TargetType="Label"
+                                    Value="True">
+                                    <Setter Property="Text" Value="{x:StaticResource IconChevUp}" />
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                    </Grid>
+                </Expander.Header>
+                <Grid Padding="8,12">
+                    <sharpnado:MaterialFrame Margin="8" Style="{DynamicResource MaterialFrameStyle}">
                         <StackLayout>
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width=".736*"/>
-                                    <ColumnDefinition Width=".264*"/>
+                                    <ColumnDefinition Width=".736*" />
+                                    <ColumnDefinition Width=".264*" />
                                 </Grid.ColumnDefinitions>
-                                <Grid HeightRequest="32" ColumnSpacing="0">
+                                <Grid ColumnSpacing="0" HeightRequest="32">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="{Binding PositiveGridLength}"/>
-                                        <ColumnDefinition Width="{Binding NeutralGridLength}"/>
-                                        <ColumnDefinition Width="{Binding NegativeGridLength}"/>
+                                        <ColumnDefinition Width="{Binding PositiveGridLength}" />
+                                        <ColumnDefinition Width="{Binding NeutralGridLength}" />
+                                        <ColumnDefinition Width="{Binding NegativeGridLength}" />
                                     </Grid.ColumnDefinitions>
-                                    <BoxView HorizontalOptions="Fill"
-                                             BackgroundColor="{DynamicResource SystemGreen}"/>
-                                    <BoxView Grid.Column="1" HorizontalOptions="Fill"
-                                             BackgroundColor="{DynamicResource SystemBlue}"/>
-                                    <BoxView Grid.Column="2" HorizontalOptions="Fill"
-                                             BackgroundColor="{DynamicResource SystemRed}"/>
+                                    <BoxView BackgroundColor="{DynamicResource SystemGreen}" HorizontalOptions="Fill" />
+                                    <BoxView
+                                        Grid.Column="1"
+                                        BackgroundColor="{DynamicResource SystemBlue}"
+                                        HorizontalOptions="Fill" />
+                                    <BoxView
+                                        Grid.Column="2"
+                                        BackgroundColor="{DynamicResource SystemRed}"
+                                        HorizontalOptions="Fill" />
                                 </Grid>
-                                <Label Grid.Column="1" VerticalOptions="Center"
-                                       HorizontalOptions="Center"
-                                       Text="{Binding Sentiment.Overall}"
-                                       Style="{DynamicResource MediumLabelStyle}"/>
+                                <Label
+                                    Grid.Column="1"
+                                    HorizontalOptions="Center"
+                                    Style="{DynamicResource MediumLabelStyle}"
+                                    Text="{Binding Sentiment.Overall}"
+                                    VerticalOptions="Center" />
                             </Grid>
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
                                 </Grid.RowDefinitions>
 
                                 <StackLayout Orientation="Horizontal">
-                                    <BoxView WidthRequest="16"
-                                             HeightRequest="16"
-                                             BackgroundColor="{DynamicResource SystemGreen}"
-                                             VerticalOptions="Center"
-                                             HorizontalOptions="Start"/>
-                                    <Label Text="{Binding Sentiment.PositivePercentage}" Style="{DynamicResource MicroLabelStyle}" VerticalOptions="Center"/>
+                                    <BoxView
+                                        BackgroundColor="{DynamicResource SystemGreen}"
+                                        HeightRequest="16"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        WidthRequest="16" />
+                                    <Label
+                                        Style="{DynamicResource MicroLabelStyle}"
+                                        Text="{Binding Sentiment.PositivePercentage}"
+                                        VerticalOptions="Center" />
                                 </StackLayout>
 
-                                <Label Grid.Row="1" Text="Positive" Style="{DynamicResource SmallLabelStyle}"/>
+                                <Label
+                                    Grid.Row="1"
+                                    Style="{DynamicResource SmallLabelStyle}"
+                                    Text="Positive" />
 
                                 <StackLayout Grid.Column="1" Orientation="Horizontal">
-                                    <BoxView WidthRequest="16"
-                                             HeightRequest="16"
-                                             BackgroundColor="{DynamicResource SystemBlue}"
-                                             VerticalOptions="Center"
-                                             HorizontalOptions="Start"/>
-                                    <Label Text="{Binding Sentiment.NeutralPercentage}" Style="{DynamicResource MicroLabelStyle}" VerticalOptions="Center"/>
+                                    <BoxView
+                                        BackgroundColor="{DynamicResource SystemBlue}"
+                                        HeightRequest="16"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        WidthRequest="16" />
+                                    <Label
+                                        Style="{DynamicResource MicroLabelStyle}"
+                                        Text="{Binding Sentiment.NeutralPercentage}"
+                                        VerticalOptions="Center" />
                                 </StackLayout>
-                                <Label Grid.Row="1" Grid.Column="1" Text="Neutral" Style="{DynamicResource SmallLabelStyle}"/>
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Style="{DynamicResource SmallLabelStyle}"
+                                    Text="Neutral" />
 
                                 <StackLayout Grid.Column="2" Orientation="Horizontal">
-                                    <BoxView WidthRequest="16"
-                                             HeightRequest="16"
-                                             BackgroundColor="{DynamicResource SystemRed}"
-                                             VerticalOptions="Center"
-                                             HorizontalOptions="Start"/>
-                                    <Label Text="{Binding Sentiment.NegativePercentage}" Style="{DynamicResource MicroLabelStyle}" VerticalOptions="Center"/>
+                                    <BoxView
+                                        BackgroundColor="{DynamicResource SystemRed}"
+                                        HeightRequest="16"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        WidthRequest="16" />
+                                    <Label
+                                        Style="{DynamicResource MicroLabelStyle}"
+                                        Text="{Binding Sentiment.NegativePercentage}"
+                                        VerticalOptions="Center" />
                                 </StackLayout>
-                                <Label Grid.Row="1" Grid.Column="2" Text="Negative" Style="{DynamicResource SmallLabelStyle}"/>
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="2"
+                                    Style="{DynamicResource SmallLabelStyle}"
+                                    Text="Negative" />
 
                             </Grid>
                         </StackLayout>
-                    </Frame>
-                <Label Margin="8,8,8,0" Text="Tweets" Style="{DynamicResource MediumLabelStyle}"/>
-                </StackLayout>
-            </ListView.Header>
-            <d:ListView.ItemsSource>
-                <x:Array Type="{x:Type modelsShared:Tweet}">
-                    <modelsShared:Tweet
-                        Image="scott.png"
-                        MediaUrl="scott.png"
-                        ScreenName="scotthanselman"
-                        Text="Hello world this is a tweet, james is pretty awesome, and this app is amazing!!!!" />
-                    <modelsShared:Tweet
-                        Image="scott.png"
-                        ScreenName="scotthanselman"
-                        Text="Hello world this is a tweet, james is pretty awesome, and this app is amazing!!!!" />
-                </x:Array>
-            </d:ListView.ItemsSource>
-        </ListView>
+                    </sharpnado:MaterialFrame>
+                </Grid>
+            </Expander>
+        </StackLayout>
+        <RefreshView
+            Grid.Row="1"
+            BackgroundColor="{DynamicResource WindowBackgroundColor}"
+            Command="{Binding RefreshCommand}"
+            IsRefreshing="{Binding IsRefreshing}"
+            Style="{DynamicResource RefreshViewStyle}"
+            VerticalOptions="Start">
+
+            <CollectionView
+                x:Name="listView"
+                ItemTemplate="{StaticResource TweetDataTemplateSelector}"
+                ItemsSource="{Binding Tweets}" />
+        </RefreshView>
         <Frame
+            Grid.RowSpan="2"
             Padding="12"
             d:IsVisible="true"
             BackgroundColor="{StaticResource LoadingBackgroundColor}"

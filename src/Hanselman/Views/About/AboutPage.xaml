@@ -52,7 +52,7 @@
             WidthRequest="32">
             <ImageButton.Source>
                 <FontImageSource
-                    FontFamily="{StaticResource MaterialFontFamily}"
+                    FontFamily="{StaticResource MaterialFontFamilyIcon}"
                     Glyph="{StaticResource IconSettings}"
                     Color="{DynamicResource SystemGray}" />
             </ImageButton.Source>
@@ -72,10 +72,10 @@
                 <CarouselView
                     x:Name="CarouselFeaturedItems"
                     HeightRequest="150"
+                    HorizontalScrollBarVisibility="Never"
+                    IndicatorView="IndicatorViewFeaturedItems"
                     IsVisible="{Binding HasData}"
                     ItemsSource="{Binding FeaturedItems}"
-                    IndicatorView="IndicatorViewFeaturedItems"
-                    HorizontalScrollBarVisibility="Never"
                     PeekAreaInsets="75">
                     <CarouselView.EmptyView>
                         <ActivityIndicator
@@ -86,9 +86,10 @@
                     </CarouselView.EmptyView>
                     <CarouselView.ItemTemplate>
                         <DataTemplate x:DataType="modelsShared:FeaturedItem">
+
                             <StackLayout>
                                 <Frame
-                                    Margin="10"
+                                    Margin="8"
                                     Padding="0,0,0,0"
                                     CornerRadius="8"
                                     InputTransparent="True"
@@ -117,16 +118,43 @@
                                         </Grid>
                                     </Grid>
                                 </Frame>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="CurrentItem">
+                                            <VisualState.Setters>
+                                                <Setter Property="Scale" Value="1" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="PreviousItem">
+                                            <VisualState.Setters>
+                                                <Setter Property="Opacity" Value="0.4" />
+                                                <Setter Property="Scale" Value=".9" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="NextItem">
+                                            <VisualState.Setters>
+                                                <Setter Property="Opacity" Value="0.4" />
+                                                <Setter Property="Scale" Value=".9" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="DefaultItem">
+                                            <VisualState.Setters>
+                                                <Setter Property="Opacity" Value="0.25" />
+                                                <Setter Property="Scale" Value=".9" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
                             </StackLayout>
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
                 </CarouselView>
                 <IndicatorView
                     x:Name="IndicatorViewFeaturedItems"
-                    IndicatorsShape="Circle"
                     HorizontalOptions="Center"
                     IndicatorColor="{DynamicResource SystemGray}"
                     IndicatorSize="8"
+                    IndicatorsShape="Circle"
                     IsVisible="{Binding HasData}"
                     SelectedIndicatorColor="{DynamicResource PrimaryColor}" />
                 <Label
@@ -155,10 +183,20 @@
                             Spacing="5">
                             <BindableLayout.ItemTemplate>
                                 <DataTemplate x:DataType="models:SocialItem">
-                                    <Button
-                                        Command="{Binding OpenUrlCommand}"
-                                        Style="{DynamicResource MaterialButton}"
-                                        Text="{Binding Icon}" />
+                                    <ImageButton
+                                        Padding="8"
+                                        BackgroundColor="Transparent"
+                                        BorderColor="Transparent"
+                                        BorderWidth="0"
+                                        Command="{Binding OpenUrlCommand}">
+                                        <ImageButton.Source>
+                                            <FontImageSource
+                                                FontFamily="{DynamicResource MaterialFontFamilyIcon}"
+                                                Glyph="{Binding Icon}"
+                                                Size="36"
+                                                Color="{DynamicResource SystemGray}" />
+                                        </ImageButton.Source>
+                                    </ImageButton>
                                 </DataTemplate>
                             </BindableLayout.ItemTemplate>
                         </StackLayout>

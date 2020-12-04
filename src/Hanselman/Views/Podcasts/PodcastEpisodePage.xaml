@@ -154,7 +154,7 @@
                             WidthRequest="24">
                             <ImageButton.Source>
                                 <FontImageSource
-                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                                     Glyph="{StaticResource IconDownload}"
                                     Color="{StaticResource PrimaryColor}" />
                             </ImageButton.Source>
@@ -181,7 +181,7 @@
                             Aspect="AspectFit">
                             <ImageButton.Source>
                                 <FontImageSource
-                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                                     Glyph="{StaticResource IconUpNext}"
                                     Color="{StaticResource PrimaryColor}" />
                             </ImageButton.Source>
@@ -208,7 +208,7 @@
                             Aspect="AspectFit">
                             <ImageButton.Source>
                                 <FontImageSource
-                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                                     Glyph="{StaticResource IconMarkPlayed}"
                                     Color="{StaticResource PrimaryColor}" />
                             </ImageButton.Source>
@@ -235,7 +235,7 @@
                             Aspect="AspectFit">
                             <ImageButton.Source>
                                 <FontImageSource
-                                    FontFamily="{DynamicResource MaterialFontFamily}"
+                                    FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                                     Glyph="{StaticResource IconArchived}"
                                     Color="{StaticResource PrimaryColor}" />
                             </ImageButton.Source>

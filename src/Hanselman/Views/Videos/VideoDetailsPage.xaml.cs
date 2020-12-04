@@ -15,36 +15,42 @@ namespace Hanselman.Views
         VideoDetailsViewModel? vm;
         VideoDetailsViewModel? VM => vm ??= BindingContext as VideoDetailsViewModel;
         System.Timers.Timer inactivityTimer;
-        public VideoDetailsPage(VideoFeedItem item) : this()
-        {
-            BindingContext = new VideoDetailsViewModel(item);
-        }
+    
         public VideoDetailsPage()
         {
             InitializeComponent();
+            BindingContext = new VideoDetailsViewModel();
+
             inactivityTimer = new System.Timers.Timer(TimeSpan.FromSeconds(3).TotalMilliseconds);
         }
+
+        void VM_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if(VM != null && e.PropertyName != nameof(VM.VideoUrl))
+            {
+                Settings.PlaybackId = VM.Id;
+                Settings.PlaybackUrl = VM.VideoUrl;
+                seekTo = Settings.GetPlaybackPosition(VM.Id);
+                shouldSeek = seekTo > 0;
+                inactivityTimer.Elapsed += OnInactivityTimerElapsed;
+                inactivityTimer.Start();
+            }
+        }
+
         bool shouldSeek;
         long seekTo;
         protected override void OnAppearing()
         {
             base.OnAppearing();
-                    
 
-            if (VM?.Video == null)
-                return;
-
-            Settings.PlaybackId = VM.VideoId;
-            Settings.PlaybackUrl = VM.VideoUrl;
-            seekTo = Settings.GetPlaybackPosition(VM.Video.Id);
-            shouldSeek = seekTo > 0;
-            inactivityTimer.Elapsed += OnInactivityTimerElapsed;
-            inactivityTimer.Start();
+            VM.PropertyChanged += VM_PropertyChanged;
+            VM?.LoadVideoCommand.Execute(null);
         }
 
         protected override async void OnDisappearing()
         {
             base.OnDisappearing();
+            VM.PropertyChanged -= VM_PropertyChanged;
             var current = MediaElementVideo.Position.Ticks;
             Settings.SavePlaybackPosition(Settings.PlaybackId, current);
             MediaElementVideo.Stop();

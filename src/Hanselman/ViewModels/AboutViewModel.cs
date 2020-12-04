@@ -17,7 +17,7 @@ namespace Hanselman.ViewModels
         public AsyncCommand GoToSettingsCommand { get; set; }
         public List<SocialItem> SocialItems { get; }
         public ObservableRangeCollection<FeaturedItem> FeaturedItems { get; } = new ObservableRangeCollection<FeaturedItem>();
-        
+
 
         public AboutViewModel()
         {
@@ -25,22 +25,23 @@ namespace Hanselman.ViewModels
             {
                 new SocialItem
                 {
-                    Icon = IconConstants.TwitterCircle,
+                    Icon = (string)App.Current.Resources["IconTwitterBox"],
                     Url = "https://www.twitter.com/shanselman"
                 },
                 new SocialItem
                 {
-                    Icon = IconConstants.FacebookBox,
+                    Icon = (string)App.Current.Resources["IconFacebook"],
                     Url = "https://www.facebook.com/shanselman"
                 },
                 new SocialItem
                 {
-                    Icon = IconConstants.Instagram,
+                    Icon = (string)App.Current.Resources["IconInstagram"],
                     Url = "https://www.instagram.com/shanselman"
                 }
             };
 
-            GoToSettingsCommand = new AsyncCommand(() => Application.Current.MainPage.Navigation.PushModalAsync(new SettingsPage()));
+            GoToSettingsCommand = new AsyncCommand(
+                () => Shell.Current.GoToAsync(AppShell.Settings));
         }
 
         bool hasData;

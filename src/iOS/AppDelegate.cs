@@ -27,7 +27,7 @@ namespace Hanselman.iOS
             FormsMaterial.Init();
 
             Shiny.iOSShinyHost.Init(new Startup());
-
+            Sharpnado.MaterialFrame.iOS.iOSMaterialFrameRenderer.Init();
             LoadApplication(new App());
 
 

@@ -44,17 +44,46 @@ namespace Hanselman.Services
         public Task<IEnumerable<PodcastEpisode>> GetPodcastEpisodesAsync(string id, bool forceRefresh) => 
             GetAsync<IEnumerable<PodcastEpisode>>($"api/GetPodcastEpisodes?code={Constants.PodcastEpisodesKey}&id={id}", $"pod_{id}", 180, false);
 
-        public Task<IEnumerable<Podcast>> GetPodcastsAsync(bool forceRefresh) =>
-            mock.GetPodcastsAsync(forceRefresh);
+        IEnumerable<Podcast> podcastCache;
+        public async Task<IEnumerable<Podcast>> GetPodcastsAsync(bool forceRefresh)
+        {
+            if(forceRefresh || podcastCache == null)
+                podcastCache = await mock.GetPodcastsAsync(forceRefresh);
+
+            return podcastCache;
+        }
+
+        public Podcast? GetPodcast(string id) =>
+            podcastCache?.FirstOrDefault(p => p.Id == id);
 
         public Task<IEnumerable<Tweet>> GetTweetsAsync(bool forceRefresh) =>
             GetAsync<IEnumerable<Tweet>>($"api/GetTweets?code={Constants.TweetKey}", "tweets", 15, forceRefresh);
 
+        Dictionary<string, IEnumerable<VideoFeedItem>> videoSeriesCache = new Dictionary<string, IEnumerable<VideoFeedItem>>();
+        public VideoFeedItem? GetVideoEpisode(string seriesId, string id)
+        {
+            if (!videoSeriesCache.ContainsKey(seriesId))
+                return null;
+
+            return videoSeriesCache[seriesId].FirstOrDefault(v => v.Id == id);
+        }
+
+        public async Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh)
+        {
+            if (!forceRefresh && videoSeriesCache.ContainsKey(id))
+                return videoSeriesCache[id];
+
+            var videos = await GetAsync<IEnumerable<VideoFeedItem>>($"api/GetVideoEpisodes?code={Constants.VideoEpisodesKey}&id={id}", $"video_{id}", 240, false);
+
+            if (videoSeriesCache.ContainsKey(id))
+                videoSeriesCache[id] = videos;
+            else
+                videoSeriesCache.Add(id, videos);
+            return videos;
+        }
+
         public Task<TweetSentiment> GetTwitterSentiment() =>
             GetAsync<TweetSentiment>($"api/GetTweetSentiment?code={Constants.TweetSentimentKey}", "tweetsentiment", 15, false);
-
-        public Task<IEnumerable<VideoFeedItem>> GetVideoEpisodesAsync(string id, bool forceRefresh) =>
-            GetAsync<IEnumerable<VideoFeedItem>>($"api/GetVideoEpisodes?code={Constants.VideoEpisodesKey}&id={id}", $"video_{id}", 240, false);
 
         public Task<IEnumerable<VideoSeries>> GetVideoSeriesAsync(bool forceRefresh) =>
             mock.GetVideoSeriesAsync(forceRefresh);
@@ -83,5 +112,6 @@ namespace Hanselman.Services
                 throw ex;
             }
         }
+
     }
 }

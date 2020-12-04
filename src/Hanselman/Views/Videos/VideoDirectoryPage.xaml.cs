@@ -37,10 +37,7 @@ namespace Hanselman.Views
         {
             if (e.SelectedItem is VideoSeries series && series != null)
             {
-                if (DeviceInfo.Platform == DevicePlatform.UWP)
-                    await Navigation.PushAsync(new VideoSeriesPage(series));
-                else
-                    await Shell.Current.GoToAsync($"{AppShell.VideoSeriesDetails}?{series.UriRoute}");
+                await Shell.Current.GoToAsync($"{AppShell.VideoSeriesDetails}?{series.UriRoute}");
                 ((ListView)sender).SelectedItem = null;
             }
         }

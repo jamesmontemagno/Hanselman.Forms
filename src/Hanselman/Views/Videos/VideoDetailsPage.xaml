@@ -12,6 +12,7 @@
     ios:Page.ModalPresentationStyle="FormSheet"
     x:DataType="viewmodels:VideoDetailsViewModel"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
+    Shell.PresentationMode="ModalAnimated"
     Shell.NavBarIsVisible="true"
     mc:Ignorable="d">
     <d:ContentPage.BindingContext>

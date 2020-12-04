@@ -103,7 +103,6 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="Assets\Fonts\materialdesignicons-webfont.ttf" />
     <None Include="Hanselman.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

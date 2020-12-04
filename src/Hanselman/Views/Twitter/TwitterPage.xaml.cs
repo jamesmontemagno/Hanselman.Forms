@@ -16,25 +16,6 @@ namespace Hanselman.Views
             InitializeComponent();
 
             BindingContext = new TwitterViewModel();
-
-            listView.ItemTapped += (sender, args) =>
-                listView.SelectedItem = null;
-
-            listView.ItemSelected += (sender, args) =>
-            {
-                if (ViewModel == null)
-                    return;
-
-
-                if (!(listView.SelectedItem is Tweet tweet))
-                    return;
-
-
-                ViewModel.OpenTweetCommand.Execute(tweet.StatusID);
-
-
-                listView.SelectedItem = null;
-            };
         }
 
 
@@ -50,7 +31,7 @@ namespace Hanselman.Views
             if (ViewModel == null || !ViewModel.CanLoadMore || ViewModel.IsBusy || ViewModel.Tweets.Count > 0)
                 return;
 
-            ViewModel.LoadCommand.Execute(null);
+            ViewModel.LoadCommand.ExecuteAsync().ContinueWith(t => { });
         }
     }
 }

@@ -26,7 +26,7 @@ namespace Hanselman.Views
         {
             if (e.CurrentSelection.FirstOrDefault() is Podcast podcast)
             {
-                await Navigation.PushAsync(new PodcastDetailsPage(podcast));
+                await Shell.Current.GoToAsync($"{AppShell.PodcastDetails}?{podcast.UriRoute}");
                 ((CollectionView)sender).SelectedItem = null;
             }
         }
@@ -35,10 +35,7 @@ namespace Hanselman.Views
         {
             if (e.CurrentSelection.FirstOrDefault() is VideoSeries series)
             {
-                if (DeviceInfo.Platform == DevicePlatform.UWP)
-                    await Navigation.PushAsync(new VideoSeriesPage(series));
-                else
-                    await Shell.Current.GoToAsync($"{AppShell.VideoSeriesDetails}?{series.UriRoute}");
+                await Shell.Current.GoToAsync($"{AppShell.VideoSeriesDetails}?{series.UriRoute}");
 
                 ((CollectionView)sender).SelectedItem = null;
             }

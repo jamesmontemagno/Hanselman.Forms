@@ -9,10 +9,12 @@
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+
   <ItemGroup>
-    <None Remove="Images\book-aspnet4-thb.png" />
-    <None Remove="Images\book-mvc4-thb.png" />
-    <None Remove="Images\book-rh-thb.png" />
+    <EmbeddedResource Include="Fonts\materialdesignicons-webfont.ttf" />
+    <EmbeddedResource Include="Fonts\fa-brands-400.ttf" />
+    <EmbeddedResource Include="Fonts\fa-regular-400.ttf" />
+    <EmbeddedResource Include="Fonts\fa-solid-900.ttf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\book-aspnet4-thb.png" />
@@ -21,30 +23,23 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Jeffsum" Version="0.0.2-beta" />
-    <PackageReference Include="Microsoft.AppCenter" Version="3.0.0" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.0.0" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.0.0" />
-    <PackageReference Include="Microsoft.AppCenter.Distribute" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AppCenter" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AppCenter.Distribute" Version="3.2.1" />
     <PackageReference Include="MonkeyCache.FileStore" Version="1.4.0-beta" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.1-beta" />
-    <PackageReference Include="Shiny.Core" Version="1.1.0.1449" />
+    <PackageReference Include="Shiny.Core" Version="1.1.0.1570" />
     <PackageReference Include="System.Json" Version="4.7.0" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
     <PackageReference Include="Humanizer" Version="2.7.9" />
-    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.7" />
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.379-pre1" />
-    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.379-pre1" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.4.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.726" />
+    <PackageReference Include="Sharpnado.MaterialFrame" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hanselman.Shared.Models\Hanselman.Shared.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Styles\DarkTheme.xaml.cs">
-      <DependentUpon>DarkTheme.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Styles\LightTheme.xaml.cs">
-      <DependentUpon>LightTheme.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 ﻿using Hanselman.Helpers;
 using Hanselman.Interfaces;
 using Hanselman.Models;
+using Sharpnado.MaterialFrame;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -46,6 +47,9 @@ namespace Hanselman.Styles
 
             var environment = DependencyService.Get<IEnvironment>(); 
             environment?.SetStatusBarColor(background, theme != Theme.Dark);
+
+            App.Current.Resources["DynamicMaterialFrameTheme"] = theme == Theme.Dark ? MaterialFrame.Theme.Dark : MaterialFrame.Theme.Acrylic;
+
         }
 
         static void ManuallyCopyThemes(ResourceDictionary fromResource, ResourceDictionary toResource)

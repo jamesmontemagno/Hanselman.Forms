@@ -10,11 +10,11 @@
     xmlns:models="clr-namespace:Hanselman.Models;assembly=Hanselman.Shared"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:viewmodels="clr-namespace:Hanselman.ViewModels"
-    ios:Page.UseSafeArea="True"
     Title="{Binding Podcast.Title}"
-    NavigationPage.BackButtonTitle=""
+    ios:Page.UseSafeArea="True"
     x:DataType="viewmodels:PodcastDetailsViewModel"
     BackgroundColor="{DynamicResource WindowBackgroundColor}"
+    NavigationPage.BackButtonTitle=""
     Shell.NavBarIsVisible="{OnPlatform iOS=true,
                                        Default=false}"
     mc:Ignorable="d">
@@ -162,7 +162,7 @@
                                         WidthRequest="44">
                                         <Image.Source>
                                             <FontImageSource
-                                                FontFamily="{DynamicResource MaterialFontFamily}"
+                                                FontFamily="{DynamicResource MaterialFontFamilyIcon}"
                                                 Glyph="{StaticResource IconPlayCircleOutline}"
                                                 Size="44"
                                                 Color="{StaticResource PrimaryColor}" />
@@ -177,9 +177,6 @@
             </ListView>
             <pancake:PancakeView
                 x:Name="StackLayoutInfo"
-                d:BackgroundColor="{StaticResource PrimaryColor}"
-                d:IsVisible="True"
-                d:Opacity="1"
                 BackgroundColor="{OnPlatform UWP={StaticResource PrimaryColor},
                                              Default=Transparent}"
                 BackgroundGradientEndColor="{StaticResource TransparentWindowBackgroundColor}"

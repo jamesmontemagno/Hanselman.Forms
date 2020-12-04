@@ -23,7 +23,6 @@ using System.Collections.Generic;
 // mjfreelancing cheered 250 October 18, 2019
 // Instafluff raided with 60 people on March 6 2020
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Hanselman
 {
     public partial class App : Application
@@ -35,7 +34,8 @@ namespace Hanselman
                     "StateTriggers_Experimental",
                     "IndicatorView_Experimental",
                     "CarouselView_Experimental",
-                    "MediaElement_Experimental"
+                    "MediaElement_Experimental",
+                    "Expander_Experimental"
                 });
 
             InitializeComponent();
