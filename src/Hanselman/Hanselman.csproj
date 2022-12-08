@@ -26,7 +26,7 @@
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.0.0" />
     <PackageReference Include="Microsoft.AppCenter.Distribute" Version="3.0.0" />
     <PackageReference Include="MonkeyCache.FileStore" Version="1.4.0-beta" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.1-beta" />
     <PackageReference Include="Shiny.Core" Version="1.1.0.1449" />
     <PackageReference Include="System.Json" Version="4.7.0" />
