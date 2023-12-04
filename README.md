@@ -54,7 +54,33 @@ Development build available:
 
 
 ### Run Twitter Auth Locally
-* run `ngrok http 5000`
+
+You have the choice between using two different tunneling tools: [Tunnelmole](https://github.com/robbie-cahill/tunnelmole-client), an open-source tunneling tool, or [ngrok](https://ngrok.com/), a popular closed source tunneling tool.
+
+#### Using Tunnelmole
+
+* Install Tunnelmole. For Linux, Mac and Windows Subsystem for Linux, copy and paste the following into a terminal:
+
+```bash
+curl -O https://tunnelmole.com/sh/install.sh && sudo bash install.sh
+```
+
+For Windows without WSL, [Download tmole.exe](https://tunnelmole.com/downloads/tmole.exe) and put it somewhere in your [PATH](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows).
+
+* Run `tmole 5000`
+
+```bash
+➜  ~ tmole 5000
+http://bvdo5f-ip-49-183-170-144.tunnelmole.net is forwarding to localhost:5000
+https://bvdo5f-ip-49-183-170-144.tunnelmole.net is forwarding to localhost:5000
+```
+
+#### Using ngrok
+
+* Run `ngrok http 5000`
+
+After setting up your preferred tunneling tool, continue with the following steps:
+
 * Update auth redirect on Azure Function
 * Update Cores on Azure Functions
 * Update Twitter App with Url
